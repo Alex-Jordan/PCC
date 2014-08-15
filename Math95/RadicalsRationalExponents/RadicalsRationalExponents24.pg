@@ -1,0 +1,75 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextLimitedPowers.pl",
+  "contextFraction.pl",
+
+);
+
+##############################################
+TEXT(beginproblem());
+
+$n = random(3,10,1);
+Context("Fraction");
+$m = Fraction("$n+2","$n*2");
+
+
+Context("Numeric");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0);
+
+
+Context()->operators->undefine('*');
+Context()->operators->undefine('+');
+Context()->functions->undefine('sqrt','abs');
+#LimitedPowers::OnlyIntegers();
+
+
+$ans = Formula("$var^($m)");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Simplify the expression.  For this problem you may assume that all variables are positive.$BR
+
+
+$PAR
+
+
+\[ \sqrt{$var}\sqrt[$n]{$var}\]
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+
+ANS( $ans->cmp());
+
+
+ENDDOCUMENT();

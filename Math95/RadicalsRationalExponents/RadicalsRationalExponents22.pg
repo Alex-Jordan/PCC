@@ -1,0 +1,97 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextLimitedPowers.pl",
+  "bizarroArithmetic.pl",
+  "contextFraction.pl",
+  "unionTables.pl",
+  
+);
+
+##############################################
+TEXT(beginproblem());
+
+$n = random(3,6,1);
+
+
+Context("Fraction");
+$m = Fraction("1","$n**2");
+
+Context("Numeric");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0);
+
+
+
+
+Context()->operators->undefine('*');
+Context()->operators->undefine('+');
+Context()->functions->undefine('sqrt');
+#LimitedPowers::OnlyIntegers();
+
+
+Context()->operators->set(
+'**' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+'^' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+);
+
+$ans = Formula("($var^($m))");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Simplify the expression and write it using a single exponent.  For this problem you may assume that all variables are positive.$BR
+
+
+$PAR
+
+
+\[ \sqrt[$n]{\sqrt[$n]{$var}}\]
+
+$PAR
+
+\{ans_rule(10)\}
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+
+ANS($ans -> cmp(
+   checker=>sub{
+      my ( $correct, $student, $ansHash ) = @_;
+      return 0 if $ansHash->{isPreview} || $correct != $student;
+      $student = $ansHash->{student_formula};
+      $correct = $correct->{original_formula} if defined $correct->{original_formula};
+      $student = Formula("$student"); $correct = Formula("$correct");
+      return 0 unless ($correct == $student);
+      Context()->flags->set(bizarroPow=>1);
+      delete $correct->{test_values}, $student->{test_values};
+      Value->Error("Your answer is correct, but please simplify it further") unless (($correct == $student) or ($student == $correct));
+      Context()->flags->set(bizarroPow=>0);
+      return 1;
+})); 
+
+
+ENDDOCUMENT();

@@ -1,0 +1,76 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextLimitedPowers.pl",
+  
+);
+
+##############################################
+TEXT(beginproblem());
+
+Context("Numeric");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0);
+
+$b = random(2,15,1);
+$a = random(2,15,1);
+$a = $a/gcd($a,$b);
+while ($a == 1) 
+{$a = random(2,15,1);
+$a = $a/gcd($a,$b);}
+
+$display = Formula("($var^(-($b/$a)))^($a/$b)");
+
+Context()->operators->undefine('*');
+#Context()->functions->undefine('sqrt','abs');
+LimitedPowers::OnlyIntegers();
+
+
+$ans = Formula("1/$var");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Simplify the expression.  For this problem you may assume that all variables are positive.$BR
+
+
+$PAR
+
+
+\[ $display \]
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+
+ANS( $ans->cmp());
+
+
+ENDDOCUMENT();

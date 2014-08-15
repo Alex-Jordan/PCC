@@ -1,0 +1,84 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "unionTables.pl",
+
+);
+
+##############################################
+TEXT(beginproblem());
+
+Context("Numeric");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->reductions->set('(-x)+y'=>0,'(-x)-y'=>0);
+Context()->flags->set(reduceConstants=>0);
+
+$m = random(2,5,1);
+$n = $m+1;
+
+$display = Formula("$var^($m/$n)");
+
+
+
+Context()->texStrings;
+
+   $ansblanks =
+   BeginTable(center=>0).
+     Row([
+       ans_rule(4).$BR.$BR.$BR,'\(\sqrt{\phantom{\Bigg|}}\)',ans_rule(10)],separation=>2).
+   EndTable();
+
+ 
+Context()->normalStrings;
+
+
+
+$ans[0] = Formula("$n");
+$ans[1] = Formula("$var^($m)");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Convert the expression to radical notation.  
+
+\[$display\]
+
+$PAR
+
+$ansblanks
+
+
+
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+
+ANS( $ans[0]->cmp());
+ANS( $ans[1]->cmp());
+
+
+ENDDOCUMENT();

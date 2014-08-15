@@ -1,0 +1,78 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+      "PGstandard.pl", 
+      "MathObjects.pl",
+      "contextFraction.pl",
+
+    );
+
+
+##############################################
+TEXT(beginproblem());
+
+Context("Numeric");
+Context()->reductions->set('(-x)+y'=>0, '(-x)-y'=>0);
+
+$a = non_zero_random(1,100,1);
+$b = random(2,80,1);
+$c = random(2,80,1);
+
+
+$f = Formula("(x+$c)/sqrt($b x^2+$a)")->reduce;
+
+Context("Fraction");
+$r = Fraction("-$a","$b");
+
+Context("Interval");
+$answer = Compute("(-inf,inf)");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+Find the domain of the function \(f\) where
+
+\[f(x)=$f\]
+
+$PAR
+Express the domain in interval notation. $BR
+
+\{ans_rule(15)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+
+ANS($answer->cmp());
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+ENDDOCUMENT();

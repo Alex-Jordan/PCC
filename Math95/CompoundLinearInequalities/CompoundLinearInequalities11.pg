@@ -1,0 +1,58 @@
+## DESCRIPTION
+##  Algebra - Inequalities
+## ENDDESCRIPTION
+
+## KEYWORDS('Algebra','Inequalities')
+## Tagged by dgt5v
+
+## DBsubject('Algebra')
+## DBchapter('Equations and Inequalities')
+## DBsection('Linear Inequalities')
+## Date('')
+## Author('')
+## Institution('Rochester')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+
+DOCUMENT();        # This should be the first executable line in the problem.
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGcourse.pl",           # Customization file for the course
+);
+
+TEXT(beginproblem());
+
+
+###################################
+# Setup
+
+$a = random(-10,-1,1);
+$b = random(1,10,1);
+
+###################################
+# Main text
+
+BEGIN_TEXT
+Express the following inequality using interval notation. If you need to use the \(\infty\) symbol, type $BBOLD INF$EBOLD. If you need to use the union symbol \(\cup\), type $BBOLD U$EBOLD.
+\[$a \leq x \mbox{ and } x < $b\]
+\(x\) is in \{ans_rule(35)\}
+$PAR
+$INFINITY_UNION_MESSAGE
+END_TEXT
+
+###################################
+# Answers
+
+$showPartialCorrectAnswers = 0;
+
+$ans1="[$a,$b)";
+ANS(Union($ans1)->cmp);
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.;
+
+

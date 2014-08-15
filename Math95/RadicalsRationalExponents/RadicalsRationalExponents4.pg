@@ -1,0 +1,73 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextLimitedPowers.pl",
+  
+);
+
+##############################################
+TEXT(beginproblem());
+
+Context("Numeric");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->reductions->set('(-x)+y'=>0,'(-x)-y'=>0);
+
+$a = non_zero_random(-5,5,1);
+$b = non_zero_random(-10,10,1);
+
+$internal = Formula("($a $var + $b)^3")->reduce;
+
+
+Context()->functions->undefine('sqrt');
+LimitedPowers::OnlyNonNegativeIntegers();
+
+
+$ans = Formula("$a $var + $b");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Simplify the expression.  $PAR
+To enter \(\sqrt{x}\), type $BBOLD sqrt(x)$EBOLD. $BR
+To enter \(x^y\), type $BBOLD x$CARET\(\)y$EBOLD. $BR
+To enter \(|x|\), type $BBOLD |x|$EBOLD or $BBOLD abs(x)$EBOLD. $BR
+If a value is not defined as a real number or function, type $BBOLD DNE$EBOLD for "does not exist".
+
+
+\[\sqrt[3]{$internal}\]
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+
+ANS( $ans->cmp());
+
+
+ENDDOCUMENT();

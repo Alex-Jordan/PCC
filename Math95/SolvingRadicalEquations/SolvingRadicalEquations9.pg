@@ -1,0 +1,62 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",  
+  "contextFraction.pl",
+);
+
+TEXT(beginproblem());
+
+##############################################
+
+Context("Numeric");
+Context()->variables->are(L=>'Real',R=>'Real',Z=>'Real');
+
+$left = Formula("Z");
+$right = Formula("sqrt(L^2+R^2)");
+
+$ans = Formula("sqrt(Z^2-L^2)");
+
+##############################################
+
+
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Solve the equation for \(R\). 
+
+\[$left = $right \]
+
+$PAR
+
+If you need to use a square root, type $BBOLD sqrt(23)$EBOLD for \(\sqrt{23}\) (for example). 
+$PAR
+
+$SPACE $SPACE $SPACE \(R = \) $SPACE \{ans_rule(20)\}.
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+ANS( $ans->cmp());
+
+
+
+
+
+ENDDOCUMENT();

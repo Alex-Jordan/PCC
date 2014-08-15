@@ -1,0 +1,99 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextRationalFunction.pl",
+  "contextArbitraryString.pl",
+  
+);
+
+##############################################
+TEXT(beginproblem());
+
+
+Context("Numeric");
+$index = random(0,4,1);
+$var[0] = ('x','a','s','p','m')[$index];
+$var[1] = ('y','b','t','q','n')[$index];
+$var[2] = ('z','c','u','r','k')[$index];
+Context()->variables->are($var[0]=>'Real',$var[1]=>'Real',$var[2]=>'Real');
+
+$a = random(2,10,1);
+$b = non_zero_random(2,10,1);
+
+
+$num = Formula("$a+1/$var[0]")->reduce;
+$den = Formula("$var[0]+$b")->reduce;
+
+
+Context("RationalFunction");
+Context()->variables->are($var[0]=>'Real',$var[1]=>'Real',$var[2]=>'Real');
+$ans = Formula("($a $var[0]+1)/($var[0]*($var[0]+$b))")->reduce;
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+
+Simplify the complex fraction.  
+
+\[\frac{$num}{$den}\]
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+
+$PAR
+
+There may be some values where the simplification is not valid.  If there are any such values, what are they?  (You may leave an entry blank if there are no such values. If there is more than one value for an answer blank, use commas to separate them.)
+
+$PAR
+
+$SPACE $SPACE $SPACE \($var[0]\neq\) $SPACE\{ans_rule(5)\} $BR
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+ANS( $ans->cmp());
+
+Context("ArbitraryString");
+
+ANS( Compute("")->cmp(typeMatch=>List,checker => sub {
+my ($correct,$student,$ans) = @_;
+$correct = $correct->value; # get perl string from String object
+$student = $student->value; # ditto
+
+Context("Interval");
+my $smallSet = Set("{}");
+my $largeSet = Set("0,-$b");
+
+$student = Set("{$student}");
+
+return $student->contains($smallSet) && $student->isSubsetOf($largeSet);
+
+
+
+
+}));
+
+
+
+
+ENDDOCUMENT();

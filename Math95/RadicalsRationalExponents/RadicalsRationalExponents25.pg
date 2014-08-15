@@ -1,0 +1,79 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextLimitedPowers.pl",
+  "contextFraction.pl",
+
+);
+
+##############################################
+TEXT(beginproblem());
+
+$a = random(2,10,1);
+$b = $a+1;
+Context("Fraction");
+$m[0] = Fraction("$a","$b");
+$m[1] = Fraction("1","$b");
+$m[2] = Fraction("$a+1","$b");
+$m[3] = Fraction("$a-1","$b");
+
+
+Context("Numeric");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0);
+
+
+Context()->operators->undefine('*');
+#Context()->operators->undefine('+');
+Context()->functions->undefine('sqrt','abs');
+#LimitedPowers::OnlyIntegers();
+
+
+$ans = Formula("$var^($m[2])+$var^($m[3])");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Simplify the expression.  For this problem you may assume that all variables are positive.$BR
+
+
+$PAR
+
+
+\[ $var^{$m[0]}\left($var^{$m[1]}+$var^{-$m[1]}\right)\]
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+
+ANS( $ans->cmp());
+
+
+ENDDOCUMENT();

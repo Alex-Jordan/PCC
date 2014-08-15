@@ -1,0 +1,55 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "parserAssignment.pl",
+  
+);
+
+
+
+##############################################
+
+
+Context("Numeric");
+parser::Assignment->Allow;
+parser::Assignment->Function("f");
+
+$fun = Formula("f(x)=500");
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+Suppose that \(f\) is the function that gives the total cost (in dollars) of downhill skiing \(x\) times during a season with a $DOLLAR\(\)500 season pass.  Write a symbolic representation for \(f\).  You need to write the entire formula, including $BBOLD f(x)=$EBOLD.
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(15)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+ANS($fun->cmp());
+
+
+
+
+
+ENDDOCUMENT();

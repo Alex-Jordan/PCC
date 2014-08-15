@@ -1,0 +1,75 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextLimitedPowers.pl",
+
+);
+
+##############################################
+TEXT(beginproblem());
+
+$n = random(1,10,1);
+$n42 = $n*4+2;
+$n21 = $n*2+1;
+
+
+
+Context("Numeric");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0);
+
+
+#Context()->operators->undefine('/');
+#Context()->operators->undefine('+');
+Context()->functions->undefine('sqrt');
+LimitedPowers::OnlyIntegers();
+
+
+$ans = Formula("|$var^($n21)|");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Simplify the expression.  $BR
+
+
+$PAR
+
+
+\[ \sqrt{$var^{$n42}}\]
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+
+ANS( $ans->cmp());
+
+
+ENDDOCUMENT();

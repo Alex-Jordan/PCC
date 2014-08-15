@@ -1,0 +1,74 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextLimitedPowers.pl",
+  
+);
+
+##############################################
+
+Context("Numeric");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0);
+
+$a = random(2,10,1);
+$a2 = $a**2;
+$b = random(1,5,1);
+$b4 = $b*4;
+$b2 = $b*2;
+
+$display = Formula("sqrt($a2 $var^($b4))");
+
+Context()->operators->undefine('/');
+Context()->functions->undefine('sqrt');
+LimitedPowers::OnlyIntegers();
+
+
+$ans = Formula("$a $var^($b2)");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Simplify the expression.  For this problem you may assume that all variables are positive.$BR
+
+
+$PAR
+
+
+\[ $display \]
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+
+ANS( $ans->cmp());
+
+
+ENDDOCUMENT();

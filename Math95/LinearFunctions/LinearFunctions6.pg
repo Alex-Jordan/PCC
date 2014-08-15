@@ -1,0 +1,56 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "parserAssignment.pl",
+  
+);
+
+
+
+##############################################
+
+
+Context("Numeric");
+Context()->variables->are(t=>'Real');
+parser::Assignment->Allow;
+parser::Assignment->Function("f");
+
+$fun = Formula("f(t)=4.95+0.10t");
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+Suppose that \(f\) is the function that the phone company uses to determine what your bill will be (in dollars) for a long-distance phone call that lasts \(t\) minutes.  Each call costs a fixed price of $DOLLAR\(\)4.95 plus 10 cents per minute.  Write a symbolic representation for this linear function \(f\).  You need to write the entire formula, including $BBOLD f(t)=$EBOLD.
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(15)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+ANS($fun->cmp());
+
+
+
+
+
+ENDDOCUMENT();

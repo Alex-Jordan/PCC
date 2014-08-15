@@ -1,0 +1,74 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextLimitedPowers.pl",
+  
+);
+
+##############################################
+TEXT(beginproblem());
+
+Context("Numeric");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0);
+
+$n = random(2,10,1);
+$n2 = $n**2;
+
+$display = Formula("sqrt($var)");
+
+Context()->functions->undefine('sqrt');
+
+
+
+$ans = Formula("$var^(1/2)");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Use rational exponents to write the expression.  $BR
+To enter \(\sqrt{x}\), type $BBOLD sqrt(x)$EBOLD. $BR
+To enter \(x^y\), type $BBOLD x$CARET\(\)y$EBOLD. $BR
+To enter \(|x|\), type $BBOLD |x|$EBOLD or $BBOLD abs(x)$EBOLD. $BR
+If a value is not defined as a real number or function, type $BBOLD DNE$EBOLD for "does not exist".
+
+$PAR
+
+
+\[$display\]
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+
+ANS( $ans->cmp());
+
+
+ENDDOCUMENT();

@@ -1,0 +1,75 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextLimitedPowers.pl",
+
+);
+
+##############################################
+TEXT(beginproblem());
+
+$a = random(1,10,1);
+$a2 = $a*2;
+$aa = $a**2;
+
+
+
+Context("Numeric");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0);
+
+
+#Context()->operators->undefine('/');
+#Context()->operators->undefine('+');
+Context()->functions->undefine('sqrt');
+LimitedPowers::OnlyIntegers();
+
+
+$ans = Formula("|$var+$a|");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Simplify the expression.  $BR
+
+
+$PAR
+
+
+\[ \sqrt{$var^{2}+$a2 $var +$aa}\]
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+
+ANS( $ans->cmp());
+
+
+ENDDOCUMENT();

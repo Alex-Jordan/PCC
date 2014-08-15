@@ -1,0 +1,104 @@
+# WeBWorK problem written by Alex Jordan, 2011
+# Portland Community College
+#
+# Evaluate a function. Function is linear.
+#
+# Last updated: Jordan 12/22/13;
+# ENDDESCRIPTION
+ 
+## DBsubject('')
+## DBchapter('')
+## DBsection('')
+## KEYWORDS('')
+## DBCCSS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGgraphmacros.pl",
+  "PCCmacros.pl",
+  "PCCgraphMacros.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+  
+);
+
+
+
+##############################################
+TEXT(beginproblem());
+
+$fname = RandomVariableName(type=>function);
+
+Context("Numeric");
+$a = non_zero_random(1,3,1);
+$q = random(2,4,1);
+$s = random(0,$q);
+
+
+$f = Formula("$a sin(2*pi*(x-$s)/(4*$q))");
+
+$x1 = $s-random(0,3)*$q;
+$x2 = $s+random(0,3)*$q;
+
+$y1 = $f->eval(x=>$x1);
+$y2 = $f->eval(x=>$x2);
+
+
+$xmin = min($x1-2,-5);
+$xmax = max($x2+3,5);
+$ymin = -5;
+$ymax = 5;
+
+
+$gr = init_graph($xmin,$ymin,$xmax,$ymax,
+axes=>[0,0],
+grid=>[$xmax-$xmin,$ymax-$ymin],
+size=>[400,400]
+);
+
+add_functions($gr, "$f for x in <$xmin,$xmax>" . 
+  " using color:blue and weight:1");
+
+$peak = $q+$s;
+$trough = $peak+$q;
+
+$ALT = "a graph of a wave moving up and down as we read it left to right; there is a peak at ($peak,$a) and then the first trough after that is at ($trough,-$a)";
+
+##############################################
+
+BEGIN_PGML
+Use the graph of [`[$fname]`] below to evaluate the given expressions. (Estimates are OK.)
+
+[@EnlargeImageStatementPGML()@]**
+
+>>[@image(insertGraph($gr), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT' title = '$ALT'")@]*<<
+
+
+    [`[$fname]([$x1])={}`][_____]{$y1->cmp(tolType=>absolute, tolerance=>0.1)}
+
+    [`[$fname]([$x2])={}`][_____]{$y2->cmp(tolType=>absolute, tolerance=>0.1)}
+
+
+END_PGML
+
+
+##############################################
+
+
+
+
+ENDDOCUMENT();

@@ -1,0 +1,81 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",  
+  "contextFraction.pl",
+);
+
+
+
+##############################################
+TEXT(beginproblem());
+
+Context("Numeric");
+$var = list_random('a','b','c','d','h','k','m','n','p','q','r','t','v','w','x','y','z');
+Context()->variables->are($var=>'Real');
+
+$a = non_zero_random(-15,15,1);
+$b = random(1,8,1);
+
+
+$d = ($b-$a)**3;
+
+$left = Formula("($b - $var)^3")->reduce;
+$right = Formula("$d")->reduce;
+
+
+$r[0] = Compute("$a");
+
+
+
+Context("Interval");
+Context()->parens->set('{'=>{type=>'Set'});
+Context()->flags->set(formatStudentAnswer=>'parsed');
+$ans = Compute("{$r[0]}");
+
+##############################################
+
+
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Solve the equation for \($var\). Enter the solution set using set notation.  For example: \($LBRACE 1,2$RBRACE\).  $PAR
+
+
+\[$left = $right \]
+
+$PAR
+
+If you need to use a square root, type $BBOLD sqrt(23)$EBOLD for \(\sqrt{23}\) (for example). 
+$BR
+If the equation has no solutions, you can still use set notation by entering \($LBRACE$RBRACE\).
+$PAR
+
+The solution set is \{ans_rule(10)\}.
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+ANS( $ans->cmp(tolerance=>0));
+
+
+
+
+
+ENDDOCUMENT();

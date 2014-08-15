@@ -1,0 +1,75 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextLimitedPowers.pl",
+
+);
+
+##############################################
+TEXT(beginproblem());
+
+$n = random(1,10,1);
+$n2 = $n*2;
+$n4 = $n*4;
+
+
+
+Context("Numeric");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0);
+
+
+#Context()->operators->undefine('/');
+#Context()->operators->undefine('+');
+Context()->functions->undefine('sqrt');
+LimitedPowers::OnlyIntegers();
+
+
+$ans = Formula("$var^($n2)");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Simplify the expression.  For this problem you may assume that all variables are positive.$BR
+
+
+$PAR
+
+
+\[ \sqrt{$var^{$n4}}\]
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+$showPartialCorrectAnswers = 1;
+
+
+ANS( $ans->cmp());
+
+
+ENDDOCUMENT();
