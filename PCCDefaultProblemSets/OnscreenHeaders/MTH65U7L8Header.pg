@@ -57,15 +57,15 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U7L8_ParabolaMinMaxApplications.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on maximum/minimum value applications.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=Qs_WqhoVBDI&feature=youtu.be
 !,"here", "TARGET='_blank'") \} for the first video lecture on maximum/minimum value applications.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=-SQirLL_pqU
 !,"here", "TARGET='_blank'") \} for the second video lecture on maximum/minimum value applications.
 $PAR

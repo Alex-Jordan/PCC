@@ -57,13 +57,13 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U8L1_SolveProportions.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on solving proportions.
+!,"lecture notes on solving proportions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=l_s3t5zgnOs
-!,"here", "TARGET='_blank'") \} for a video lecture on solving proportions.
+!,"a video lecture on solving proportions", "TARGET='_blank'") \} 
 
 EOT
 

@@ -57,17 +57,17 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L8_LinearEquationApplications.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on linear equation applications.
+!,"lecture notes on linear equation applications", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=sc6folGNeiY
-!,"here", "TARGET='_blank'") \} for the first video lecture on linear equation applications.
+!,"the first video lecture on linear equation applications", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=LT6-O-4pjg4
-!,"here", "TARGET='_blank'") \} for the second video lecture on linear equation applications.
+!,"the second video lecture on linear equation applications", "TARGET='_blank'") \} 
 $PAR
 
 EOT

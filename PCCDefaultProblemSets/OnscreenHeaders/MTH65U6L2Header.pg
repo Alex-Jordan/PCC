@@ -57,19 +57,19 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U6L2_SolveQuadraticEquationsByFactoring.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on solving quadratic equation by factoring.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=2ZzuZvz33X0
 !,"here", "TARGET='_blank'") \} for the first video lecture on solving quadratic equation by factoring.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=04RpkdaNzr8
 !,"here", "TARGET='_blank'") \} for the second video lecture on solving quadratic equation by factoring.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=vl9o9XEfXtw
 !,"here", "TARGET='_blank'") \} for the third video lecture on solving quadratic equation by factoring.
 

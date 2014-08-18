@@ -57,13 +57,13 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U11L1_IntroductionToFunctions.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on functions.
+!,"lecture notes on functions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=JZmIsxayvxY
-!,"here", "TARGET='_blank'") \} for a video lecture on functions.
+!,"a video lecture on functions", "TARGET='_blank'") \} 
 
 EOT
 

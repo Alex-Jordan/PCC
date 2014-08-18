@@ -57,17 +57,17 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L5_EvaluateExpressions.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on evaluating expressions.
+!,"lecture notes on evaluating expressions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=Sa6bBkztsoo
-!,"here", "TARGET='_blank'") \} for the first video lecture on evaluating expressions.
+!,"the first video lecture on evaluating expressions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=7vt6IerxYdw
-!,"here", "TARGET='_blank'") \} for the second video lecture on evaluating expressions.
+!,"the second video lecture on evaluating expressions", "TARGET='_blank'") \} 
 $PAR
 
 EOT

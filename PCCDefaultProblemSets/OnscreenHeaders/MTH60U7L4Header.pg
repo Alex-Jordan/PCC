@@ -57,25 +57,25 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U7L4_MixtureProblems.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on mixture word problems.
+!,"lecture notes on mixture word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=OBVGQt1Eeug
-!,"here", "TARGET='_blank'") \} for the first video lecture on mixture  word problems.
+!,"the first video lecture on mixture  word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=JVlfQEhzLMM
-!,"here", "TARGET='_blank'") \} for the second video lecture on mixture  word problems.
+!,"the second video lecture on mixture  word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=QKiN9K2DXBI
-!,"here", "TARGET='_blank'") \} for the third video lecture on mixture  word problems.
+!,"the third video lecture on mixture  word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=o1XpzeUpcRI
-!,"here", "TARGET='_blank'") \} for the fourth video lecture on mixture  word problems.
+!,"the fourth video lecture on mixture  word problems", "TARGET='_blank'") \} 
 
 EOT
 

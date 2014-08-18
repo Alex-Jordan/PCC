@@ -57,25 +57,25 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U4L3_SolveMultiStepLinearEquations.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on solving multi-step equations.
+!,"lecture notes on solving multi-step equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=MA2-tCfmQnw
-!,"here", "TARGET='_blank'") \} for the first video lecture on solving multi-step equations.
+!,"the first video lecture on solving multi-step equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=VDIXnZH6q00
-!,"here", "TARGET='_blank'") \} for the second video lecture on solving multi-step equations.
+!,"the second video lecture on solving multi-step equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=5lZDQnRcAVc
-!,"here", "TARGET='_blank'") \} for the third video lecture on solving multi-step equations.
+!,"the third video lecture on solving multi-step equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=typP7RBQ6ps
-!,"here", "TARGET='_blank'") \} for a video lecture of a summary of solving linear equations.
+!,"a video lecture of a summary of solving linear equations", "TARGET='_blank'") \} 
 
 EOT
 

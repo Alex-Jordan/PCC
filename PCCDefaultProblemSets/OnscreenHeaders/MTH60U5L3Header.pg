@@ -57,21 +57,21 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U5L3_RateAndStartingValueWordProblems.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on Rate and Starting Value word problems.
+!,"lecture notes on Rate and Starting Value word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=qs-5b2IBvB8#t=11m23s
-!,"here", "TARGET='_blank'") \} for the first video lecture on Rate and Starting Value word problems (watch from 11:23 till 16:17).
+!,"the first video lecture on Rate and Starting Value word problems (watch from 11:23 till 16:17)", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=cxGw0C9kXek
-!,"here", "TARGET='_blank'") \} for the second video lecture on Rate and Starting Value word problems.
+!,"the second video lecture on Rate and Starting Value word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=qPx7i1jwXX4
-!,"here", "TARGET='_blank'") \} for the third video lecture on Rate and Starting Value word problems.
+!,"the third video lecture on Rate and Starting Value word problems", "TARGET='_blank'") \} 
 
 EOT
 

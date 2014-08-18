@@ -57,19 +57,19 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U7L9_FallingObjectApplication.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on falling object applications.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=3PfiCtfmJA8&feature=youtu.be
 !,"here", "TARGET='_blank'") \} for the first video lecture on falling object applications.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=F--p_CeKJNQ
 !,"here", "TARGET='_blank'") \} for the second video lecture on falling object applications.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=cNU8mnAlGus
 !,"here", "TARGET='_blank'") \} for the third video lecture on falling object applications.
 $PAR

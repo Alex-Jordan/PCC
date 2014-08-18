@@ -57,25 +57,25 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L3_Slope.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on slope.
+!,"lecture notes on slope", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=fCIuiQz2Zv4
-!,"here", "TARGET='_blank'") \} for the first video lecture on slope.
+!,"the first video lecture on slope", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=SM3bj7zA0FM
-!,"here", "TARGET='_blank'") \} for the second video lecture on slope.
+!,"the second video lecture on slope", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=bploNzF7cxg
-!,"here", "TARGET='_blank'") \} for the third video lecture on slope.
+!,"the third video lecture on slope", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=hPryexyt6Sg
-!,"here", "TARGET='_blank'") \} for the fourth video lecture on slope.
+!,"the fourth video lecture on slope", "TARGET='_blank'") \} 
 
 EOT
 

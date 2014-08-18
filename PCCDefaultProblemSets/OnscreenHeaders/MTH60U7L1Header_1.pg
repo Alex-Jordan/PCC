@@ -57,13 +57,13 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U7L1_BasicPercentProblems.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on basic percentage word problems.
+!,"lecture notes on basic percentage word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=qs-5b2IBvB8
-!,"here", "TARGET='_blank'") \} for a video lecture on basic percentage word problems (watch the first 8 minutes).
+!,"a video lecture on basic percentage word problems (watch the first 8 minutes)", "TARGET='_blank'") \} 
 $PAR
 
 EOT

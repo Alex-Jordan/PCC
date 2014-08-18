@@ -57,13 +57,13 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L3_IntroductionToExponents.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on exponent basics.
+!,"lecture notes on exponent basics", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=AneubQTnoL4
-!,"here", "TARGET='_blank'") \} for a video lecture on exponent basics.
+!,"a video lecture on exponent basics", "TARGET='_blank'") \} 
 $PAR
 
 EOT

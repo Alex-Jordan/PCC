@@ -57,21 +57,21 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U2L3_MultiplyDivideFractions.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on multiplying/dividing fractions.
+!,"lecture notes on multiplying/dividing fractions", "TARGET='_blank'") \}
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=rxISl5boIuE
-!,"here", "TARGET='_blank'") \} for a video lecture on multiplying fractions.
+!,"a video lecture on multiplying fractions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=zQMU-lsMb3U
-!,"here", "TARGET='_blank'") \} for a video lecture on dividing fractions.
+!,"a video lecture on dividing fractions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=8zWZnNpEFY4
-!,"here", "TARGET='_blank'") \} for a video lecture on all fraction operations.
+!,"", "TARGET='_blank'") \} 
 $PAR
 
 EOT

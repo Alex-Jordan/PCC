@@ -56,17 +56,17 @@ EOT
 ####################################################
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L3_ThreeExponentRules.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on exponent rules.
+!,"lecture notes on exponent rules", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=jjajaVnVQKY
-!,"here", "TARGET='_blank'") \} for a video lecture on product rule of exponents.
+!,"a video lecture on product rule of exponents", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=Y967TsThSGA
-!,"here", "TARGET='_blank'") \} for a video lecture on some other exponent rules.
+!,"a video lecture on some other exponent rules", "TARGET='_blank'") \} 
 $PAR
 
 EOT

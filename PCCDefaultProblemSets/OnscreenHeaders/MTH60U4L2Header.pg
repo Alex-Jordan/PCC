@@ -57,21 +57,21 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U4L2_SolveTwoStepLinearEquations.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on solving two-step equations.
+!,"lecture notes on solving two-step equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=XdKQIKjV_LY
-!,"here", "TARGET='_blank'") \} for the first video lecture on solving two-step equations.
+!,"the first video lecture on solving two-step equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=1c5HY3z4k8M
-!,"here", "TARGET='_blank'") \} for the second video lecture on solving two-step equations.
+!,"the second video lecture on solving two-step equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=f15zA0PhSek
-!,"here", "TARGET='_blank'") \} for the third video lecture on solving two-step equations.
+!,"the third video lecture on solving two-step equations", "TARGET='_blank'") \} 
 $PAR
 
 EOT

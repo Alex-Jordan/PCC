@@ -57,21 +57,21 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L9_ParallelAndPerpendicularLines.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on parallel and perpendicular lines.
+!,"lecture notes on parallel and perpendicular lines", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=9hryH94KFJA
-!,"here", "TARGET='_blank'") \} for the first video lecture on parallel and perpendicular lines.
+!,"the first video lecture on parallel and perpendicular lines", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=O397kMqSBKI
-!,"here", "TARGET='_blank'") \} for the second video lecture on parallel and perpendicular lines.
+!,"the second video lecture on parallel and perpendicular lines", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=Ad9fwGCJ6WU
-!,"here", "TARGET='_blank'") \} for the third video lecture on parallel and perpendicular lines.
+!,"the third video lecture on parallel and perpendicular lines", "TARGET='_blank'") \} 
 $PAR
 
 EOT

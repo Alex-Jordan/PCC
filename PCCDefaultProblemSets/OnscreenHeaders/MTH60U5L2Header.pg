@@ -57,13 +57,13 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U5L2_GivenSumFindPartsWordProblems.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on "Given Sum, Find Parts" word problems.
+!,"lecture notes on 'Given Sum, Find Parts' word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=GQhGGZc772E
-!,"here", "TARGET='_blank'") \} for a video lecture on "Given Sum, Find Parts" word problems.
+!,"a video lecture on 'Given Sum, Find Parts' word problems", "TARGET='_blank'") \} 
 
 EOT
 

@@ -57,25 +57,25 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
-http://spot.pcc.edu/~cyao/MTH60Docs/U10L5_StandardFormEquation.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on standard-form equations.
+\{ htmlLink(qq!
+http://spot.pcc.edu/~cyao/MTH60Docs/U10L5_StandardFormEquation.pdf/
+!,"lecture notes on standard-form equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=V6Xynlqc_tc
-!,"here", "TARGET='_blank'") \} for the first video lecture on standard-form equations.
+!,"the first video lecture on standard-form equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=dZT203NHvaM
-!,"here", "TARGET='_blank'") \} for the second video lecture on standard-form equations.
+!,"the second video lecture on standard-form equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L5_GraphLineByIntercepts.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on graphing a line by intercepts.
+!,"lecture notes on graphing a line by intercepts", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=0o4gps38dBU
-!,"here", "TARGET='_blank'") \} for a video lecture on on graphing a line by intercepts.
+!,"a video lecture on on graphing a line by intercepts", "TARGET='_blank'") \} 
 
 EOT
 

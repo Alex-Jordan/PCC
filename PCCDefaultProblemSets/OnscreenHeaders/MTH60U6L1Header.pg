@@ -57,13 +57,13 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U6L1_SolveInequalities.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on solving inequalities.
+!,"lecture notes on solving inequalities", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=XFggbIhEvvE
-!,"here", "TARGET='_blank'") \} for a video lecture on solving inequalities.
+!,"a video lecture on solving inequalities", "TARGET='_blank'") \} 
 
 EOT
 

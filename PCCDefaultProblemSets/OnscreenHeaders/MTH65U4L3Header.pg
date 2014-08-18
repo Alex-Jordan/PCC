@@ -57,19 +57,19 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U4L3_FactorTrinomialsPart1.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on factoring trinomials when a=1.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=06RdArZXthg
 !,"here", "TARGET='_blank'") \} for the first video lecture on factoring trinomials when a=1.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=BQaOVcJ7KmE
 !,"here", "TARGET='_blank'") \} for the second video lecture on factoring trinomials when a=1.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=BG53n9Ef4fM
 !,"here", "TARGET='_blank'") \} for the third video lecture on factoring trinomials when a=1.
 $PAR

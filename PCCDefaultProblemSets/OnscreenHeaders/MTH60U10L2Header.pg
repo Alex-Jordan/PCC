@@ -57,29 +57,29 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L2_GraphLineByTable.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on graphing a line by table.
+!,"lecture notes on graphing a line by table", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=8OUvFd-jMGY
-!,"here", "TARGET='_blank'") \} for a video lecture on graphing a line by table.
+!,"a video lecture on graphing a line by table", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L2_VerticalAndHorizontalLines.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on vertical and horizontal lines.
+!,"lecture notes on vertical and horizontal lines", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=IqARktjSSs0
-!,"here", "TARGET='_blank'") \} for a video lecture on vertical and horizontal lines.
+!,"a video lecture on vertical and horizontal lines", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L2_IsPointOnLine.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on whether a point is on a line.
+!,"lecture notes on whether a point is on a line", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=l2veOwP9xr4#t=4m50s
-!,"here", "TARGET='_blank'") \} for a video lecture on whether a point is on a line. (start from 4:50)
+!,"a video lecture on whether a point is on a line. (start from 4:50)", "TARGET='_blank'") \} 
 
 EOT
 

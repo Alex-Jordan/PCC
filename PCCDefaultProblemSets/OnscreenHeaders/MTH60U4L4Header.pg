@@ -57,25 +57,25 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U4L4_SpecialLinearEquations.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on solving linear equations with special solutions.
+!,"lecture notes on solving linear equations with special solutions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=GM76QU5Tr9k
-!,"here", "TARGET='_blank'") \} for the first video lecture on solving linear equations with special solutions.
+!,"the first video lecture on solving linear equations with special solutions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 https://www.khanacademy.org/math/algebra/solving-linear-equations-and-inequalities/basic-equation-practice/v/number-of-solutions-to-linear-equations
-!,"here", "TARGET='_blank'") \} for the second video lecture on solving linear equations with special solutions.
+!,"the second video lecture on solving linear equations with special solutions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 https://www.khanacademy.org/math/algebra/solving-linear-equations-and-inequalities/basic-equation-practice/v/number-of-solutions-to-linear-equations-ex-2
-!,"here", "TARGET='_blank'") \} for the third video lecture on solving linear equations with special solutions.
+!,"the third video lecture on solving linear equations with special solutions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 https://www.khanacademy.org/math/algebra/solving-linear-equations-and-inequalities/basic-equation-practice/v/number-of-solutions-to-linear-equations-ex-3
-!,"here", "TARGET='_blank'") \} for the fourth video lecture of a summary of solving linear equations with special solutions.
+!,"the fourth video lecture of a summary of solving linear equations with special solutions", "TARGET='_blank'") \} 
 
 EOT
 

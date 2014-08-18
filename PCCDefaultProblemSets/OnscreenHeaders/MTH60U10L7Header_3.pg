@@ -57,21 +57,21 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L7_GivenTwoPointsFindEquation.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on finding equation by two points.
+!,"lecture notes on finding equation by two points", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=U1oZU8Xzoik
-!,"here", "TARGET='_blank'") \} for the first video lecture on finding equation by two points.
+!,"the first video lecture on finding equation by two points", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=Ltapa5XJAkI
-!,"here", "TARGET='_blank'") \} for the second video lecture on finding equation by two points.
+!,"the second video lecture on finding equation by two points", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=gvwKv6F69F0
-!,"here", "TARGET='_blank'") \} for the third video lecture on finding equation by two points.
+!,"the third video lecture on finding equation by two points", "TARGET='_blank'") \} 
 $PAR
 
 EOT

@@ -57,25 +57,25 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U9L1_PerimeterAndCircumference.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on perimeter and circumference.
+!,"lecture notes on perimeter and circumference", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=CPNGuZsjDxA
-!,"here", "TARGET='_blank'") \} for a video lecture on perimeter and circumference.
+!,"a video lecture on perimeter and circumference", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U9L2_AreaOfCommonShapes.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on area of common shapes.
+!,"lecture notes on area of common shapes", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=kqqmJiJez6o
-!,"here", "TARGET='_blank'") \} for a video lecture on area of rectangles and triangles.
+!,"a video lecture on area of rectangles and triangles", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=tCrDyJsSFok
-!,"here", "TARGET='_blank'") \} for a video lecture on area of circles.
+!,"a video lecture on area of circles", "TARGET='_blank'") \} 
 
 EOT
 

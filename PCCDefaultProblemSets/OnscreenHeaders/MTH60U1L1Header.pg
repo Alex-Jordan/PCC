@@ -59,9 +59,9 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!http://spot.pcc.edu/~cyao/MTH60Docs/U1L1_MultiplyDivideIntegers.pdf!,"Lecture notes on how to multiply/divide integers", "TARGET='_blank'") \}
 $PAR
-Click \{ htmlLink(qq!http://spot.pcc.edu/~cyao/MTH60Docs/U1L1_AddSubtractIntegers.pdf!,"here", "TARGET='_blank'") \} for lecture notes on how to add/subtract integers.
+\{ htmlLink(qq!http://spot.pcc.edu/~cyao/MTH60Docs/U1L1_AddSubtractIntegers.pdf!,"lecture notes on how to add/subtract integers", "TARGET='_blank'") \}
 $PAR
-Click \{ htmlLink(qq!http://www.youtube.com/watch?v=JvoAnytWm7A!,"here", "TARGET='_blank'") \} for video lecture on integer operations.
+\{ htmlLink(qq!http://www.youtube.com/watch?v=JvoAnytWm7A!,"video lecture on integer operations", "TARGET='_blank'") \}
 $PAR
 
 EOT

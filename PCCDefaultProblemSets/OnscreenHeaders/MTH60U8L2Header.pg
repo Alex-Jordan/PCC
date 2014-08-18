@@ -57,17 +57,17 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U8L2_ProportionWordProblems.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on proportion word problems.
+!,"lecture notes on proportion word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=89H0Vsn7oC4
-!,"here", "TARGET='_blank'") \} for the first video lecture on proportion word problems.
+!,"the first video lecture on proportion word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=PoEzBw7hJVU
-!,"here", "TARGET='_blank'") \} for the second video lecture on proportion word problems.
+!,"the second video lecture on proportion word problems", "TARGET='_blank'") \} 
 
 EOT
 

@@ -57,17 +57,17 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U6L3_InequalityApplications.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on inequality applications.
+!,"lecture notes on inequality applications", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=yzv1JyywmSk
-!,"here", "TARGET='_blank'") \} for the first video lecture on inequality applications.
+!,"the first video lecture on inequality applications", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=2dSExvlPj3Y
-!,"here", "TARGET='_blank'") \} for the second video lecture on inequality applications.
+!,"the second video lecture on inequality applications", "TARGET='_blank'") \} 
 
 EOT
 

@@ -57,25 +57,25 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L4_SlopeInterceptFormEquations.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on slope-intercept equations.
+!,"lecture notes on slope-intercept equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=U6x-L49_P0k
-!,"here", "TARGET='_blank'") \} for the first video lecture on slope-intercept equations.
+!,"the first video lecture on slope-intercept equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=OxAlSHlEpwk#t=07m08s
-!,"here", "TARGET='_blank'") \} for the second video lecture on slope-intercept equations (watch from 7:08 to 13:50).
+!,"the second video lecture on slope-intercept equations (watch from 7:08 to 13:50)", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L4_GraphWithPointAndSlope.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on graphing a line by slope and y-intercept.
+!,"lecture notes on graphing a line by slope and y-intercept", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=DBr4o6SVE2k
-!,"here", "TARGET='_blank'") \} for a video lecture on on graphing a line by slope and y-intercept.
+!,"a video lecture on on graphing a line by slope and y-intercept", "TARGET='_blank'") \} 
 
 EOT
 

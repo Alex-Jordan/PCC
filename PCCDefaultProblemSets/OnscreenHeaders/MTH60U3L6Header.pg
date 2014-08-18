@@ -57,17 +57,17 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L6_SimplifyExpressions.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on simplifying expressions.
+!,"lecture notes on simplifying expressions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=xqLDbfbL7pI
-!,"here", "TARGET='_blank'") \} for the first video lecture on simplifying expressions.
+!,"the first video lecture on simplifying expressions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=YURDKBg9-Aw
-!,"here", "TARGET='_blank'") \} for the second video lecture on simplifying expressions.
+!,"the second video lecture on simplifying expressions", "TARGET='_blank'") \} 
 $PAR
 
 EOT

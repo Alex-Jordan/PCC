@@ -57,21 +57,21 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L4_OrderOfOperations.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on order of operations.
+!,"lecture notes on order of operations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=vDaIKB19TvY
-!,"here", "TARGET='_blank'") \} for a video lecture on using the multiplication sign.
+!,"", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=si_OegYqXDo
-!,"here", "TARGET='_blank'") \} for a video lecture on order of operations.
+!,"a video lecture on order of operations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=OlVvUd1XVVg&list=TLS6VNnm8sYOw
-!,"here", "TARGET='_blank'") \} for a video lecture on order of operations involving absolute values.
+!,"a video lecture on order of operations involving absolute values", "TARGET='_blank'") \} 
 $PAR
 
 EOT

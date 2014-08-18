@@ -57,15 +57,15 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U6L1_SolveQuadraticEquationsBySquareRootProperty.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on solving quadratic equation by square root property.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=6QTNwvnIoDk
 !,"here", "TARGET='_blank'") \} for the first video lecture on solving quadratic equation by square root property.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=lpscRx-Mfdk#t=03m37s
 !,"here", "TARGET='_blank'") \} for the second video lecture on solving quadratic equation by square root property (start from 3:37).
 
