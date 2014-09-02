@@ -1,0 +1,81 @@
+## DESCRIPTION
+## DBsubject('Introduction to Statistics')
+## DBchapter('Part 1: Exploring Data')
+## DBsection('Chapter 3: The Normal Distributions')
+## KEYWORDS('statistic', 'normal distribution', 'z score')
+## TitleText1('The Basic Practice of Statistics')
+## EditionText1('5e')
+## AuthorText1('David Moore')
+## Section1('Chapter 3: The Normal Distributions')
+## Problem1('')
+## Author('R Cruz, L Danielson, J Guild')
+## Institution('The College of Idaho')
+
+DOCUMENT();        # This should be the first executable line in the problem.  
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGchoicemacros.pl",
+  "contextPercent.pl",
+  "parserNumberWithUnits.pl",
+  );
+
+TEXT(beginproblem());
+
+######################################
+#  Setup
+
+@question = ("About what percent of men are taller than 74?",
+	  "About what percent of men are shorter than 66.5 inches?",
+	  "About what percent of men are taller than 69 inches?",
+	  "About what percent of men are between 69 and 74 inches?",
+	  "About what percent of men are between 64 and 66.5 inches?",
+	  "Fill in the blank: About 2.5 percent of all men are shorter than $US$US$US$US$US$US$US.");
+
+Context("Percent");
+@percents = (Percent("2.5 %"), Percent("16 %"), Percent("50 %"), Percent("47.5 %"), Percent("13.5 %"));
+
+Context("Numeric");
+@inches = NumberWithUnits("64 in");
+
+@ans = (@percents, @inches);
+
+
+@slice = NchooseK(6,3);
+@squestion = (@question[@slice]);
+@sans = (@ans[@slice]);
+
+#################################################
+#  Main
+
+BEGIN_TEXT
+The distribution of heights of adult men in the U.S. is approximately Normal with mean 69 inches and standard deviation 2.5 inches.  Use what you know about a Normal distribution $BITALIC and the 68-95-99.7 rule$EITALIC to answer the following. 
+$PAR
+
+(a) $squestion[0] 
+$BR
+ \{ans_rule(20)\} 
+
+$PAR
+(b) $squestion[1] 
+$BR
+ \{ans_rule(20)\} 
+
+$PAR
+(c) $squestion[2] 
+$BR
+ \{ans_rule(20)\} 
+END_TEXT
+
+######################################
+#  Answers
+
+$showPartialCorrectAnswers = 1;
+
+ANS($sans[0]->cmp);
+ANS($sans[1]->cmp);
+ANS($sans[2]->cmp);
+
+ENDDOCUMENT();       # This should be the last executable line in the problem.
+
