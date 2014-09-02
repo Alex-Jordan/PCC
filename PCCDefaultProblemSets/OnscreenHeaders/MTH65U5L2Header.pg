@@ -57,19 +57,19 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U5L2_SimplifySquareRoot.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on simplifying square roots.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=ZDyScPdbTNs
 !,"here", "TARGET='_blank'") \} for the first video lecture on simplifying square roots.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=uL4uJ3BrTJw#t=02m08s
 !,"here", "TARGET='_blank'") \} for the second video lecture on simplifying square roots (watch from 2:08 to 4:48).
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=OhzCKJt4uQI
 !,"here", "TARGET='_blank'") \} for a video lecture on Quotient Rule of Radicals (watch till 3:20).
 $PAR

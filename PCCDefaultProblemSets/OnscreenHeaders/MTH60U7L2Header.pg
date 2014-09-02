@@ -57,17 +57,17 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U7L2_DistanceWordProblems.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on distance word problems.
+!,"lecture notes on distance word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=SBTAFvqMlfk
-!,"here", "TARGET='_blank'") \} for the first video lecture on distance word problems.
+!,"the first video lecture on distance word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=jcETNCbcGsY
-!,"here", "TARGET='_blank'") \} for the second video lecture on distance word problems.
+!,"the second video lecture on distance word problems", "TARGET='_blank'") \} 
 $PAR
 
 EOT

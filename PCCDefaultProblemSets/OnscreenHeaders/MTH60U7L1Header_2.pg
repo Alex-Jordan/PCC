@@ -57,13 +57,13 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U7L1_PercentOfIncreaseAndDecrease.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on percent of increase/decrease word problems.
+!,"lecture notes on percent of increase/decrease word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=qs-5b2IBvB8#t=16m23s
-!,"here", "TARGET='_blank'") \} for a video lecture on on percent of increase/decrease word problems (watch from 16:23).
+!,"a video lecture on on percent of increase/decrease word problems (watch from 16:23)", "TARGET='_blank'") \} 
 
 EOT
 

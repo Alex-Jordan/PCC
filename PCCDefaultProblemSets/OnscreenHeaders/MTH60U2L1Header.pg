@@ -57,13 +57,13 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!http://spot.pcc.edu/~cyao/MTH60Docs/U2L1_MixedNumbersAndEquivalentFractions.pdf!,"here", "TARGET='_blank'") \} for lecture notes on mixed numbers and how to reduce fractions.
+\{ htmlLink(qq!http://spot.pcc.edu/~cyao/MTH60Docs/U2L1_MixedNumbersAndEquivalentFractions.pdf!,"lecture notes on mixed numbers and how to reduce fractions", "TARGET='_blank'") \}
 $PAR
-Click \{ htmlLink(qq!http://www.youtube.com/watch?v=87DiYdRXZDI!,"here", "TARGET='_blank'") \} for a video lecture on fraction basics.
+\{ htmlLink(qq!http://www.youtube.com/watch?v=87DiYdRXZDI!,"a video lecture on fraction basics", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!http://www.youtube.com/watch?v=HkELb2btWQQ!,"here", "TARGET='_blank'") \} for a video lecture on mixed numbers.
+\{ htmlLink(qq!http://www.youtube.com/watch?v=HkELb2btWQQ!,"a video lecture on mixed numbers", "TARGET='_blank'") \}
 $PAR
-Click \{ htmlLink(qq!http://www.youtube.com/watch?v=eAzfN0o3CgY!,"here", "TARGET='_blank'") \} for a video lecture on equivalent fractions.
+\{ htmlLink(qq!http://www.youtube.com/watch?v=eAzfN0o3CgY!,"a video lecture on equivalent fractions", "TARGET='_blank'") \}
 $PAR
 
 EOT

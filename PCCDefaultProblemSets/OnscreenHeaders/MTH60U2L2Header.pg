@@ -57,11 +57,11 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!http://spot.pcc.edu/~cyao/MTH60Docs/U2L2_AddSubtractFractions.pdf!,"here", "TARGET='_blank'") \} for lecture notes on adding/subtracting fractions.
+\{ htmlLink(qq!http://spot.pcc.edu/~cyao/MTH60Docs/U2L2_AddSubtractFractions.pdf!,"lecture notes on adding/subtracting fractions", "TARGET='_blank'") \}
 $PAR
-Click \{ htmlLink(qq!http://www.youtube.com/watch?v=89eHMYsw8MU!,"here", "TARGET='_blank'") \} for the first video lecture on adding fractions.
+\{ htmlLink(qq!http://www.youtube.com/watch?v=89eHMYsw8MU!,"the first video lecture on adding fractions", "TARGET='_blank'") \}
 $PAR
-Click \{ htmlLink(qq!http://www.youtube.com/watch?v=GgWnw4L9POA!,"here", "TARGET='_blank'") \} for the second video lecture on adding fractions.
+\{ htmlLink(qq!http://www.youtube.com/watch?v=GgWnw4L9POA!,"the second video lecture on adding fractions", "TARGET='_blank'") \}
 $PAR
 
 EOT

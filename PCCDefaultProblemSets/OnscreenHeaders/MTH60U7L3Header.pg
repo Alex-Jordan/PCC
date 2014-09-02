@@ -57,17 +57,17 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U7L3_AccountInterestProblems.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on account interest word problems.
+!,"lecture notes on account interest word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=7i_35zNMsjg
-!,"here", "TARGET='_blank'") \} for the first video lecture on account interest word problems.
+!,"the first video lecture on account interest word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=ieCNfN7Uwog
-!,"here", "TARGET='_blank'") \} for the second video lecture on account interest word problems.
+!,"the second video lecture on account interest word problems", "TARGET='_blank'") \} 
 $PAR
 
 EOT

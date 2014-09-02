@@ -57,21 +57,21 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L7_GivenPointSlopeFindEquation.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on finding equation by point and slope.
+!,"lecture notes on finding equation by point and slope", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=9h78OnmH6gk
-!,"here", "TARGET='_blank'") \} for the first video lecture on finding equation by point and slope.
+!,"the first video lecture on finding equation by point and slope", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=GNEKDFKVBOc
-!,"here", "TARGET='_blank'") \} for the second video lecture on finding equation by point and slope.
+!,"the second video lecture on finding equation by point and slope", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=YGAN_b2anv0
-!,"here", "TARGET='_blank'") \} for a video lecture on point-slope form equations.
+!,"a video lecture on point-slope form equations", "TARGET='_blank'") \} 
 $PAR
 
 EOT

@@ -57,19 +57,19 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U4L5_FactorSpecialPolynomials.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on factoring special polynomials.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=LdOgluTLBxQ
 !,"here", "TARGET='_blank'") \} for the first video lecture on factoring special polynomials.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=Fwqh9vq0sq8
 !,"here", "TARGET='_blank'") \} for the second video lecture on factoring special polynomials.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=icm6zjdOYek
 !,"here", "TARGET='_blank'") \} for the third video lecture on factoring special polynomials.
 $PAR

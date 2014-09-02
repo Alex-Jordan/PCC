@@ -57,13 +57,13 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U9L3_VolumeOfCommonSolids.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on volume.
+!,"lecture notes on volume", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=b_JhWim9mR0
-!,"here", "TARGET='_blank'") \} for a video lecture on volume.
+!,"a video lecture on volume", "TARGET='_blank'") \} 
 
 EOT
 

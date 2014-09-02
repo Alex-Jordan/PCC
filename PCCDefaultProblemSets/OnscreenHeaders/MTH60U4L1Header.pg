@@ -57,25 +57,25 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U4L1_SolveOneStepLinearEquations.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on solving one-step equations.
+!,"lecture notes on solving one-step equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=BmzsG2LMUnI
-!,"here", "TARGET='_blank'") \} for a video lecture on how to check solutions.
+!,"a video lecture on how to check solutions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=g6jeSuHYhyY
-!,"here", "TARGET='_blank'") \} for a video lecture on solving one-step equations.
+!,"a video lecture on solving one-step equations", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=jWlEyVkqw_Q
-!,"here", "TARGET='_blank'") \} for the first video lecture on solving one-step equations with fractions.
+!,"the first video lecture on solving one-step equations with fractions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=LWV7bjoh4rQ
-!,"here", "TARGET='_blank'") \} for the second video lecture on solving one-step equations with fractions.
+!,"the second video lecture on solving one-step equations with fractions", "TARGET='_blank'") \} 
 
 EOT
 

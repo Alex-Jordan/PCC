@@ -57,15 +57,15 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U3L3_DivideMonomials.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on dividing polynomials.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=OZjqWAaUkFU
 !,"here", "TARGET='_blank'") \} for the first video lecture on dividing polynomials.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=uERRlY-WmmU
 !,"here", "TARGET='_blank'") \} for the second video lecture on dividing polynomials.
 $PAR

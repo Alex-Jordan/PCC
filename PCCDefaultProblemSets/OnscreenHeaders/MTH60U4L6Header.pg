@@ -57,21 +57,21 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U4L6_SolveForVariable.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on solving for a variable.
+!,"lecture notes on solving for a variable", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=OQBJep7Gctw
-!,"here", "TARGET='_blank'") \} for the first video lecture on solving for a variable.
+!,"the first video lecture on solving for a variable", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=rS4JPQE4WHw
-!,"here", "TARGET='_blank'") \} for the second video lecture on solving for a variable.
+!,"the second video lecture on solving for a variable", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=IaE5RTnL8C8
-!,"here", "TARGET='_blank'") \} for the third video lecture on solving for a variable.
+!,"the third video lecture on solving for a variable", "TARGET='_blank'") \} 
 $PAR
 
 EOT

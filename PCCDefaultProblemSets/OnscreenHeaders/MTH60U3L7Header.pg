@@ -57,17 +57,17 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L7_TranslateWordsIntoAlgebraicExpressions.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on translating words to Algebraic expressions.
+!,"lecture notes on translating words to Algebraic expressions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=Gm8AaLLMepU
-!,"here", "TARGET='_blank'") \} for the first video lecture on translating words to Algebraic expressions.
+!,"the first video lecture on translating words to Algebraic expressions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=g6jeSuHYhyY
-!,"here", "TARGET='_blank'") \} for the second video lecture on translating words to Algebraic expressions.
+!,"", "TARGET='_blank'") \} 
 $PAR
 
 EOT

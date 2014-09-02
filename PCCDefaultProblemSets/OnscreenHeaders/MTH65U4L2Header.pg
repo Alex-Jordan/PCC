@@ -57,15 +57,15 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U4L2_FactorByGrouping.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on factoring by grouping.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=N9Yg6pVGP7A
 !,"here", "TARGET='_blank'") \} for the first video lecture on factoring by grouping.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=2MtsZRjxjMo
 !,"here", "TARGET='_blank'") \} for the second video lecture on factoring by grouping.
 $PAR

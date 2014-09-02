@@ -57,15 +57,15 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U5L1_IntroductionToSquareRoot.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on square roots.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=yVUtSYPYM5M
 !,"here", "TARGET='_blank'") \} for the first video lecture on square roots.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=CCd1HrPizmw
 !,"here", "TARGET='_blank'") \} for the second video lecture on square roots.
 $PAR

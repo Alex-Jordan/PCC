@@ -57,29 +57,29 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U5L1_BasicWordProblems.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on basic word problems.
+!,"lecture notes on basic word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=0Z5k2I-0mHo
-!,"here", "TARGET='_blank'") \} for the first video lecture on number word problems.
+!,"the first video lecture on number word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=UvOwDgZzxvw
-!,"here", "TARGET='_blank'") \} for the second video lecture on number word problems.
+!,"the second video lecture on number word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=o5T6PYD5zmY
-!,"here", "TARGET='_blank'") \} for a video lecture on consecutive integers word problems.
+!,"a video lecture on consecutive integers word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=d8De3xcVmnw
-!,"here", "TARGET='_blank'") \} for a video lecture on consecutive odd/even integers word problems.
+!,"a video lecture on consecutive odd/even integers word problems", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=ja-g2qB9P9Y
-!,"here", "TARGET='_blank'") \} for a video lecture on rectangle perimeter word problems.
+!,"a video lecture on rectangle perimeter word problems", "TARGET='_blank'") \} 
 $PAR
 
 EOT

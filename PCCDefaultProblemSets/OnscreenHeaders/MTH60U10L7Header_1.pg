@@ -57,13 +57,13 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L7_WriteLinearEquationByGraph.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on finding equation by graph.
+!,"lecture notes on finding equation by graph", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=9wOalujeZf4
-!,"here", "TARGET='_blank'") \} for a video lecture on finding equation by graph.
+!,"a video lecture on finding equation by graph", "TARGET='_blank'") \} 
 $PAR
 
 EOT

@@ -57,13 +57,13 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L2_AbsoluteValue.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on absolute value.
+!,"lecture notes on absolute value", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=L8fGfc7Wcco
-!,"here", "TARGET='_blank'") \} for a video lecture on absolute value.
+!,"a video lecture on absolute value", "TARGET='_blank'") \} 
 $PAR
 
 EOT

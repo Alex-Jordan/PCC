@@ -57,27 +57,27 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U6L3_SolveQuadraticEquationsByQuadraticFormula.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on solving quadratic equation by Quadratic Formula.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=LkmjnxZ-FuU
 !,"here", "TARGET='_blank'") \} for the first video lecture on solving quadratic equation by Quadratic Formula.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=uhHWlBLpvWA
 !,"here", "TARGET='_blank'") \} for the second video lecture on solving quadratic equation by Quadratic Formula.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=CLrImGKeuEI
 !,"here", "TARGET='_blank'") \} for the third video lecture on solving quadratic equation by Quadratic Formula.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U6L3_NumberOfSolutionsOfQuadraticEquation.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on the number of solutions of a quadratic equation.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=QOqA8KQMJhE
 !,"here", "TARGET='_blank'") \} for a video lecture on the number of solutions of a quadratic equation.
 

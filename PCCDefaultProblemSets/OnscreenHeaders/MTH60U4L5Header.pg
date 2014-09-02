@@ -57,17 +57,17 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U4L5_SolveLinearEquationsWithFractions.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on solving linear equations with fractions.
+!,"lecture notes on solving linear equations with fractions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=c8H1kqK1XnA
-!,"here", "TARGET='_blank'") \} for the first video lecture on solving linear equations with fractions.
+!,"the first video lecture on solving linear equations with fractions", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=1jjlful2BBY
-!,"here", "TARGET='_blank'") \} for the second video lecture on solving linear equations with fractions.
+!,"the second video lecture on solving linear equations with fractions", "TARGET='_blank'") \} 
 $PAR
 
 EOT

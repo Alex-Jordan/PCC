@@ -57,11 +57,11 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U7L5_ParabolaAxisAndVertex.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on parabola axis and vertex.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=RkLSWfoYg98
 !,"here", "TARGET='_blank'") \} for a video lecture on parabola axis and vertex.
 $PAR

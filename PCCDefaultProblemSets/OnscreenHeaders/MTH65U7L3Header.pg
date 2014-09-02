@@ -57,11 +57,11 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U7L3_ParabolaLeftRight.pdf
 !,"here", "TARGET='_blank'") \} for lecture notes on parabolas shifting left or right.
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=g_FXRRKg3UM
 !,"here", "TARGET='_blank'") \} for a video lecture on parabolas shifting left or right.
 $PAR

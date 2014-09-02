@@ -57,13 +57,13 @@ EOT
 TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L1_SubsetsOfRealNumbers.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on subsets of real numbers.
+!,"lecture notes on subsets of real numbers", "TARGET='_blank'") \} 
 $PAR
-Click \{ htmlLink(qq!
+\{ htmlLink(qq!
 http://www.youtube.com/watch?v=4FyqMDHAo48
-!,"here", "TARGET='_blank'") \} for a video lecture on subsets of real numbers.
+!,"a video lecture on subsets of real numbers", "TARGET='_blank'") \} 
 $PAR
 
 EOT
