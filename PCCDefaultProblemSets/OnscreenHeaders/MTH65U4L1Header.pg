@@ -59,15 +59,15 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U4L1_CommonFactors.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on factoring out common factors.
+!,"lecture notes on factoring out common factors", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=WOCCSoaZRv8
-!,"here", "TARGET='_blank'") \} for the first video lecture on factoring out common factors.
+!,"the first video lecture on factoring out common factors", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=bLI6NOZ8kdY
-!,"here", "TARGET='_blank'") \} for the second video lecture on factoring out common factors.
+!,"the second video lecture on factoring out common factors", "TARGET='_blank'") \} 
 $PAR
 
 

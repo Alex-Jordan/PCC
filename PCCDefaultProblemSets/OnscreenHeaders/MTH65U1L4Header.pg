@@ -59,11 +59,11 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U1L4_SolveSystemsByElimination.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on solving system equations by elimination.
+!,"lecture notes on solving system equations by elimination", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=sZJIzbxBQSg
-!,"here", "TARGET='_blank'") \} for a video lecture on solving system equations by elimination.
+!,"a video lecture on solving system equations by elimination", "TARGET='_blank'") \} 
 $PAR
 
 EOT

@@ -59,11 +59,11 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U3L1_AddAndSubtractPolynomials.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on adding/subtracting polynomials.
+!,"lecture notes on adding/subtracting polynomials", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=ZN-IzpUR8WQ
-!,"here", "TARGET='_blank'") \} for a video lecture on adding/subtracting polynomials.
+!,"a video lecture on adding/subtracting polynomials", "TARGET='_blank'") \} 
 EOT
 
 ####################################################

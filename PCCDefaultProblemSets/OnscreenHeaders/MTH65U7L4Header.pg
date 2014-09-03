@@ -59,15 +59,15 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U7L4_ParabolaMovementPatterns.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on parabola movement summary.
+!,"lecture notes on parabola movement summary", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=HC5DDlEwTJw
-!,"here", "TARGET='_blank'") \} for the first video lecture on parabola movement summary.
+!,"the first video lecture on parabola movement summary", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=Fw8vuktklwE
-!,"here", "TARGET='_blank'") \} for the second video lecture on parabola movement summary.
+!,"the second video lecture on parabola movement summary", "TARGET='_blank'") \} 
 $PAR
 
 

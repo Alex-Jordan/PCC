@@ -59,11 +59,11 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L6_SummaryOfGraphingLines.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on summary of graphing lines.
+!,"lecture notes on summary of graphing lines", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=hs7BxU2strY
-!,"here", "TARGET='_blank'") \} for a video lecture on summary of graphing lines.
+!,"a video lecture on summary of graphing lines", "TARGET='_blank'") \}
 $PAR
 
 EOT

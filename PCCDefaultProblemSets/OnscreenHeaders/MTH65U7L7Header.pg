@@ -59,15 +59,15 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U7L7_SketchingParabolas.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on sketching parabolas.
+!,"lecture notes on sketching parabolas", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=BXkLUY5JxAE
-!,"here", "TARGET='_blank'") \} for the first video lecture on sketching parabolas.
+!,"the first video lecture on sketching parabolas", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=9HE1kWHMTEI
-!,"here", "TARGET='_blank'") \} for the second video lecture on sketching parabolas.
+!,"the second video lecture on sketching parabolas", "TARGET='_blank'") \} 
 $PAR
 
 

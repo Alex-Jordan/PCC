@@ -59,15 +59,15 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U1L3_SolveSystemBySubstitution.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on solving system equations by substitution.
+!,"lecture notes on solving system equations by substitution", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=Y3lx2S8uCX4
-!,"here", "TARGET='_blank'") \} for the first video lecture on solving system equations by substitution.
+!,"the first video lecture on solving system equations by substitution", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=ZqEDFqX4OwE
-!,"here", "TARGET='_blank'") \} for the second video lecture on solving system equations by substitution.
+!,"the second video lecture on solving system equations by substitution", "TARGET='_blank'") \} 
 $PAR
 
 EOT

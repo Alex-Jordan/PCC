@@ -59,15 +59,15 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U5L3_SquareRootOperations.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on square root operations.
+!,"lecture notes on square root operations", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=-4Z3cfQbSCk
-!,"here", "TARGET='_blank'") \} for the first video lecture on square root operations.
+!,"the first video lecture on square root operations", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=hmr73HQqEa0
-!,"here", "TARGET='_blank'") \} for the second video lecture on square root operations.
+!,"the second video lecture on square root operations", "TARGET='_blank'") \} 
 $PAR
 
 

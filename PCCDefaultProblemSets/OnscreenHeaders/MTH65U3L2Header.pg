@@ -59,27 +59,27 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U3L2_MultiplyPolynomials.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on multiplying polynomials.
+!,"lecture notes on multiplying polynomials", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=7eifTvsbU38
-!,"here", "TARGET='_blank'") \} for the first video lecture on multiplying polynomials.
+!,"the first video lecture on multiplying polynomials", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=iQ6NaQOECTA
-!,"here", "TARGET='_blank'") \} for the second video lecture on multiplying polynomials.
+!,"the second video lecture on multiplying polynomials", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U3L2_SpecialProductOfPolynomials.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on special product of polynomials.
+!,"lecture notes on special product of polynomials", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=AecdR8wpIWM
-!,"here", "TARGET='_blank'") \} for the first video lecture on special product of polynomials.
+!,"the first video lecture on special product of polynomials", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=bRonwACbTnc
-!,"here", "TARGET='_blank'") \} for the second video lecture on special product of polynomials.
+!,"the second video lecture on special product of polynomials", "TARGET='_blank'") \} 
 $PAR
 
 

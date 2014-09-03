@@ -59,15 +59,15 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U3L3_DivideMonomials.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on dividing polynomials.
+!,"lecture notes on dividing polynomials", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=OZjqWAaUkFU
-!,"here", "TARGET='_blank'") \} for the first video lecture on dividing polynomials.
+!,"the first video lecture on dividing polynomials", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=uERRlY-WmmU
-!,"here", "TARGET='_blank'") \} for the second video lecture on dividing polynomials.
+!,"the second video lecture on dividing polynomials", "TARGET='_blank'") \} 
 $PAR
 
 

@@ -59,19 +59,19 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U1L2_SolveSystemByGraphing.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on solving system equations by graphing.
+!,"lecture notes on solving system equations by graphing", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=3VbpmoGCWPA
-!,"here", "TARGET='_blank'") \} for a video lecture on solving system equations by graphing.
+!,"a video lecture on solving system equations by graphing", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U1L2_CheckSolutionOfSystemEquation.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on checking solution of a system equation.
+!,"lecture notes on checking solution of a system equation", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=Pe-7dgD6bRE
-!,"here", "TARGET='_blank'") \} for a video lecture on checking solution of a system equation.
+!,"a video lecture on checking solution of a system equation", "TARGET='_blank'") \} 
 $PAR
 
 EOT

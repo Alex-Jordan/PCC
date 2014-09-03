@@ -59,23 +59,23 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U4L4_FactorTrinomialsPart2.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on factoring ax^2+bx+c.
+!,"lecture notes on factoring ax^2+bx+c", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=thMv6JovewA
-!,"here", "TARGET='_blank'") \} for the first video lecture on factoring ax^2+bx+c.
+!,"the first video lecture on factoring ax^2+bx+c", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=85a9bkP85ag
-!,"here", "TARGET='_blank'") \} for the second video lecture on factoring ax^2+bx+c.
+!,"the second video lecture on factoring ax^2+bx+c", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=ld4VT_ml3Nk
-!,"here", "TARGET='_blank'") \} for the third video lecture on factoring ax^2+bx+c.
+!,"the third video lecture on factoring ax^2+bx+c", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=a1VOMsR8iZo
-!,"here", "TARGET='_blank'") \} for the fourth video lecture on factoring ax^2+bx+c.
+!,"the fourth video lecture on factoring ax^2+bx+c", "TARGET='_blank'") \} 
 $PAR
 
 

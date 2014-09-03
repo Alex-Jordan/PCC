@@ -59,11 +59,11 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U7L5_ParabolaAxisAndVertex.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on parabola axis and vertex.
+!,"lecture notes on parabola axis and vertex", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=RkLSWfoYg98
-!,"here", "TARGET='_blank'") \} for a video lecture on parabola axis and vertex.
+!,"a video lecture on parabola axis and vertex", "TARGET='_blank'") \} 
 $PAR
 
 

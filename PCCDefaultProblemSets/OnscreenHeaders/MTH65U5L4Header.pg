@@ -59,11 +59,11 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U5L4_RationalizeDenominator.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on rationalizing denominator.
+!,"lecture notes on rationalizing denominator", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=mYiN8KzQ5n8
-!,"here", "TARGET='_blank'") \} for a video lecture on rationalizing denominator.
+!,"a video lecture on rationalizing denominator.", "TARGET='_blank'") \} 
 
 
 EOT

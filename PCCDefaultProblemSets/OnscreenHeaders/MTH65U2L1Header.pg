@@ -59,27 +59,28 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U2L1_MoreExponentRules.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on exponent rules.
+!,"lecture notes on exponent rules", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U2L1_UseMultipleExponentRules.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on using exponent rules.
+!,"lecture notes on using exponent rules", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=5oJobyGnhDk
-!,"here", "TARGET='_blank'") \} for the first video lecture on exponent rules (watch till 23:00).
+!,"the first video lecture on exponent rules (watch till 23:00)", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=oHNe8AK0E9M
-!,"here", "TARGET='_blank'") \} for the second video lecture on exponent rules.
+!,"the second video lecture on exponent rules", "TARGET='_blank'") \} 
+ddfor the second video lecture on exponent rules.
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=heUUBzvYA1o
-!,"here", "TARGET='_blank'") \} for the third video lecture on exponent rules.
+!,"the third video lecture on exponent rules", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=CrJEOQh5UXg
-!,"here", "TARGET='_blank'") \} for the fourth video lecture on exponent rules.
+!,"the fourth video lecture on exponent rules", "TARGET='_blank'") \} 
 $PAR
 
 EOT

@@ -59,15 +59,15 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U6L4_QuadraticEquationApplications.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on quadratic equation applications.
+!,"lecture notes on quadratic equation applications", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=uoT5gmF1HoQ
-!,"here", "TARGET='_blank'") \} for the first video lecture on quadratic equation applications.
+!,"the first video lecture on quadratic equation applications", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=haJJLYT6lro
-!,"here", "TARGET='_blank'") \} for the second video lecture on quadratic equation applications.
+!,"the second video lecture on quadratic equation applications", "TARGET='_blank'") \} 
 $PAR
 
 

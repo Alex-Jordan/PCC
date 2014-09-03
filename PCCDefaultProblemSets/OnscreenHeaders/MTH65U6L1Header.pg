@@ -59,15 +59,15 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U6L1_SolveQuadraticEquationsBySquareRootProperty.pdf
-!,"here", "TARGET='_blank'") \} for lecture notes on solving quadratic equation by square root property.
+!,"lecture notes on solving quadratic equation by square root property", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=6QTNwvnIoDk
-!,"here", "TARGET='_blank'") \} for the first video lecture on solving quadratic equation by square root property.
+!,"the first video lecture on solving quadratic equation by square root property", "TARGET='_blank'") \} 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=lpscRx-Mfdk#t=03m37s
-!,"here", "TARGET='_blank'") \} for the second video lecture on solving quadratic equation by square root property (start from 3:37).
+!,"the second video lecture on solving quadratic equation by square root property (start from 3:37)", "TARGET='_blank'") \} 
 
 EOT
 
