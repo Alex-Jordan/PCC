@@ -1,0 +1,24 @@
+
+openDate          = 12/31/2013 at 11:00pm PST
+dueDate           = 12/31/2015 at 11:11pm PST
+answerDate        = 12/31/2016 at 11:00pm PST
+paperHeaderFile   = HeaderFiles_Yao/MTH20HardCopyHeader_Yao.pg
+screenHeaderFile  = HeaderFiles_Yao/MTH20U3L3Header.pg
+description       = multiplying fractions; applications
+problemList       = 
+PCC-Precollege-Algebra/FractionArithmetic/MultiplyFractions10.pg, 1, -1 
+BasicMath/FractionsCalculation/MultiplyFractions15.pg, 1, -1 
+BasicMath/FractionsCalculation/MultiplyFractions16.pg, 1, -1 
+BasicMath/FractionsCalculation/MultiplyThreeFractions10.pg, 1, -1 
+BasicMath/FractionsCalculation/MultiplyThreeFractions20.pg, 1, -1 
+PCC-Precollege-Algebra/FractionArithmetic/MultiplyFractions80.pg, 1, -1 
+PCC-Precollege-Algebra/FractionArithmetic/MultiplyFractions50.pg, 1, -1 
+BasicMath/FractionsCalculation/MultiplyFractions69.pg, 1, -1 
+BasicMath/FractionApplication/FractionMultiplicationWordProblems10.pg, 1, -1 
+BasicMath/FractionApplication/FractionMultiplicationWordProblems20.pg, 1, -1 
+BasicMath/FractionApplication/FractionMultiplicationWordProblems30.pg, 1, -1 
+BasicMath/FractionApplication/FractionMultiplicationWordProblems40.pg, 1, -1 
+BasicMath/FractionApplication/FractionMultiplicationWordProblems50.pg, 1, -1 
+BasicMath/FractionApplication/FractionMultiplicationWordProblems60.pg, 1, -1 
+BasicMath/FractionApplication/FractionMultiplicationWordProblems70.pg, 1, -1 
+

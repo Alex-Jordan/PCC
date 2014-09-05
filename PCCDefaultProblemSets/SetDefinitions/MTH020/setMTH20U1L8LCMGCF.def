@@ -1,0 +1,20 @@
+
+openDate          = 12/31/2013 at 11:00pm PST
+dueDate           = 12/31/2015 at 11:04pm PST
+answerDate        = 12/31/2016 at 11:00pm PST
+paperHeaderFile   = HeaderFiles_Yao/MTH20HardCopyHeader_Yao.pg
+screenHeaderFile  = HeaderFiles_Yao/MTH20U1L7Header.pg
+description       = greatest common factors; least common multiples
+problemList       = 
+BasicMath/PrimeLCMGCF/GCF10.pg, 1, -1 
+BasicMath/PrimeLCMGCF/GCF20.pg, 1, -1 
+BasicMath/PrimeLCMGCF/GCF30.pg, 1, -1 
+BasicMath/PrimeLCMGCF/LCM10.pg, 1, -1 
+BasicMath/PrimeLCMGCF/LCM10.pg, 1, -1 
+BasicMath/PrimeLCMGCF/LCM20.pg, 1, -1 
+BasicMath/PrimeLCMGCF/LCM20.pg, 1, -1 
+BasicMath/PrimeLCMGCF/LCM25.pg, 1, -1 
+BasicMath/PrimeLCMGCF/LCM30.pg, 1, -1 
+BasicMath/PrimeLCMGCF/LCM30.pg, 1, -1 
+BasicMath/PrimeLCMGCF/LCM40.pg, 1, -1 
+
