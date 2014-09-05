@@ -79,32 +79,27 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U1L7GCFAndLCM.pdf
-!,"here", "TARGET='_blank'") \} for 
-Greatest Common Factor and Least Common Multiple Lecture Notes.
+!,"Greatest Common Factor and Least Common Multiple Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=ECFmsS7z9sE
-!,"here", "TARGET='_blank'") \} for 
-Greatest Common Factor Video Lecture.
+!,"Greatest Common Factor Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=D6yHKOYJiso
-!,"here", "TARGET='_blank'") \} for 
-Least Common Multiple Video Lecture 1.
+!,"Least Common Multiple Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=znmPfDfsir8
-!,"here", "TARGET='_blank'") \} for 
-Least Common Multiple Video Lecture 2.
+!,"Least Common Multiple Video Lecture 2", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=w_GwBDOSNp4
-!,"here", "TARGET='_blank'") \} for 
-Least Common Multiple Video Lecture 3.
+!,"Least Common Multiple Video Lecture 3", "TARGET='_blank'") \}.
 
 EOT
 

@@ -79,14 +79,12 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U4L6MeanMedianMode.pdf
-!,"here", "TARGET='_blank'") \} for 
-Mean, Median and Mode Lecture Notes.
+!,"Mean, Median and Mode Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=pk8_c0hAuRI
-!,"here", "TARGET='_blank'") \} for 
-Mean, Median and Mode Video Lecture.
+!,"Mean, Median and Mode Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

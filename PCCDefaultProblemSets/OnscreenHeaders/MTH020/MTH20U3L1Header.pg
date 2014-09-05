@@ -79,32 +79,27 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U3L1FractionDefinition.pdf
-!,"here", "TARGET='_blank'") \} for 
-Fraction Definition and Equivalent Fractions Lecture Notes.
+!,"Fraction Definition and Equivalent Fractions Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=cmBdd_GmFh4
-!,"here", "TARGET='_blank'") \} for 
-Definition of Fractions Video Lecture.
+!,"Definition of Fractions Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=eAzfN0o3CgY
-!,"here", "TARGET='_blank'") \} for 
-Reduce Fractions Video Lecture 1.
+!,"Reduce Fractions Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=sznPsgkHEyA
-!,"here", "TARGET='_blank'") \} for 
-Reduce Fractions Video Lecture 2.
+!,"Reduce Fractions Video Lecture 2", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=nt-83HOnQHU
-!,"here", "TARGET='_blank'") \} for 
-Compare Fractions Video Lecture.
+!,"Compare Fractions Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

@@ -79,32 +79,27 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U4L2DecimalAdditionSubtraction.pdf
-!,"here", "TARGET='_blank'") \} for 
-Add/Subtract Decimals Lecture Notes.
+!,"Add/Subtract Decimals Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=-wJXRgTDghA
-!,"here", "TARGET='_blank'") \} for 
-Add Decimals Video Lecture.
+!,"Add Decimals Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=kMD7M9MSbO0
-!,"here", "TARGET='_blank'") \} for 
-Subtract Decimals Video Lecture.
+!,"Subtract Decimals Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=7QEmT3iJBtU
-!,"here", "TARGET='_blank'") \} for 
-Add/Subtract Decimals Involving Negative Numbers Video Lecture 1.
+!,"Add/Subtract Decimals Involving Negative Numbers Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=qJzYcLE7_Mg
-!,"here", "TARGET='_blank'") \} for 
-Add/Subtract Decimals Involving Negative Numbers Video Lecture 2.
+!,"Add/Subtract Decimals Involving Negative Numbers Video Lecture 2", "TARGET='_blank'") \}.
 
 EOT
 

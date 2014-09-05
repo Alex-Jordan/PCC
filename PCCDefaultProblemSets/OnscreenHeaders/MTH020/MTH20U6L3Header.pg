@@ -79,26 +79,22 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U6L3PercentWordProblem.pdf
-!,"here", "TARGET='_blank'") \} for 
-Percent Word Problems Lecture Notes.
+!,"Percent Word Problems Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=cAPXFDev8B4
-!,"here", "TARGET='_blank'") \} for 
-Percent Word Problem Video Lecture 1.
+!,"Percent Word Problem Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=STMZeuWT4Ss
-!,"here", "TARGET='_blank'") \} for 
-Percent Word Problem Video Lecture 2.
+!,"Percent Word Problem Video Lecture 2", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=1LtBcfk1uHg
-!,"here", "TARGET='_blank'") \} for 
-Percent Word Problem Video Lecture 3.
+!,"Percent Word Problem Video Lecture 3", "TARGET='_blank'") \}.
 
 EOT
 

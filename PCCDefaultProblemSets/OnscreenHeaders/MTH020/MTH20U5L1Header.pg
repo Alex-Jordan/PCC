@@ -79,20 +79,17 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U5L1RateAndRatio.pdf
-!,"here", "TARGET='_blank'") \} for 
-Rate and Ratio Lecture Notes.
+!,"Rate and Ratio Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=MTzTqvzWzm8
-!,"here", "TARGET='_blank'") \} for 
-Ratio Video Lecture.
+!,"Ratio Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=8Ft5iHhauJ0
-!,"here", "TARGET='_blank'") \} for 
-Rate and Ratio Video Lecture.
+!,"Rate and Ratio Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

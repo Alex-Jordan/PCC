@@ -79,26 +79,22 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U1L2Multiplication.pdf
-!,"here", "TARGET='_blank'") \} for 
-Multiplication Lecture Notes.
+!,"Multiplication Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=mvOkMYCygps
-!,"here", "TARGET='_blank'") \} for 
-Multiplication Video Lecture.
+!,"Multiplication Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=xO_1bYgoQvA
-!,"here", "TARGET='_blank'") \} for 
-Multiplication Table Video Lecture 1.
+!,"Multiplication Table Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=qihoczo1Ujk
-!,"here", "TARGET='_blank'") \} for 
-Multiplication Table Video Lecture 2.
+!,"Multiplication Table Video Lecture 2", "TARGET='_blank'") \}.
 
 EOT
 

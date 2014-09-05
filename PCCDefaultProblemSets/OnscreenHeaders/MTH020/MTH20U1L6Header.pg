@@ -79,32 +79,27 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U1L6PrimeNumber.pdf
-!,"here", "TARGET='_blank'") \} for 
-Prime Number Lecture Notes.
+!,"Prime Number Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=vcn2ruTOwFo
-!,"here", "TARGET='_blank'") \} for 
-Find Factors Video Lecture.
+!,"Find Factors Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=mIStB5X4U8M
-!,"here", "TARGET='_blank'") \} for 
-Prime Number Video Lecture 1.
+!,"Prime Number Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=3h4UK62Qrbo
-!,"here", "TARGET='_blank'") \} for 
-Prime Number Video Lecture 2.
+!,"Prime Number Video Lecture 2", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=XpUCTicRBjQ
-!,"here", "TARGET='_blank'") \} for 
-Prime Factor Video Lecture.
+!,"Prime Factor Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

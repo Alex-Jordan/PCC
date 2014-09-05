@@ -79,14 +79,12 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U3L5MixedNumberDefinition.pdf
-!,"here", "TARGET='_blank'") \} for 
-Introduction to Mixed Numbers Lecture Notes.
+!,"Introduction to Mixed Numbers Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=HkELb2btWQQ
-!,"here", "TARGET='_blank'") \} for 
-Introduction to Mixed Numbers Video Lecture.
+!,"Introduction to Mixed Numbers Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

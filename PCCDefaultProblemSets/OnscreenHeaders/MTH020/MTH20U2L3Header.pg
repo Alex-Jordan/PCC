@@ -79,20 +79,17 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U2L3MultiplyDivideIntegers.pdf
-!,"here", "TARGET='_blank'") \} for 
-Multiply and Divide Integers Lecture Notes.
+!,"Multiply and Divide Integers Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=d8lP5tR2R3Q
-!,"here", "TARGET='_blank'") \} for 
-Multiply and Divide Integers Video Lecture.
+!,"Multiply and Divide Integers Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=AneubQTnoL4
-!,"here", "TARGET='_blank'") \} for 
-Negative Number and Exponent Video Lecture.
+!,"Negative Number and Exponent Video Lecture", "TARGET='_blank'") \}.
 
 
 EOT

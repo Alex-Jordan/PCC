@@ -79,20 +79,17 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U3L7MultiplyDivideMixedNumbers.pdf
-!,"here", "TARGET='_blank'") \} for 
-Multiply/Divide Mixed Numbers Lecture Notes.
+!,"Multiply/Divide Mixed Numbers Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=BhUwTsPEZuM
-!,"here", "TARGET='_blank'") \} for 
-Multiply Mixed Numbers Video Lecture.
+!,"Multiply Mixed Numbers Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=vVx7qwUf5KU
-!,"here", "TARGET='_blank'") \} for 
-Multiply/Divide Mixed Numbers Video Lecture.
+!,"Multiply/Divide Mixed Numbers Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

@@ -79,26 +79,22 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U1L8OrderOfOperations_1.pdf
-!,"here", "TARGET='_blank'") \} for 
-Order of Operations Part I (involving positive numbers only) Lecture Notes.
+!,"Order of Operations Part I (involving positive numbers only) Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=ahwlw4OCEAc
-!,"here", "TARGET='_blank'") \} for 
-Order of Operations Video Lecture 1.
+!,"Order of Operations Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=NCixeuWvLS0
-!,"here", "TARGET='_blank'") \} for 
-Order of Operations Video Lecture 2.
+!,"Order of Operations Video Lecture 2", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=wTHSBsoDDqY
-!,"here", "TARGET='_blank'") \} for 
-Order of Operations Video Lecture 3.
+!,"Order of Operations Video Lecture 3", "TARGET='_blank'") \}.
 
 EOT
 

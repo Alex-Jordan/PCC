@@ -79,38 +79,32 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U6L1PercentDefinition.pdf
-!,"here", "TARGET='_blank'") \} for 
-Introduction to Percent Lecture Notes.
+!,"Introduction to Percent Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=xB7d4SqI25M
-!,"here", "TARGET='_blank'") \} for 
-Introduction to Percent Video Lecture.
+!,"Introduction to Percent Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=KBtjkblzbrw
-!,"here", "TARGET='_blank'") \} for 
-Change Percent to Decimal Video Lecture.
+!,"Change Percent to Decimal Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=17sdYa0y1wo
-!,"here", "TARGET='_blank'") \} for 
-Change Percent to Fraction Video Lecture.
+!,"Change Percent to Fraction Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=eLBMph6iSiY
-!,"here", "TARGET='_blank'") \} for 
-Change Decimals/Fractions to Percent Video Lecture.
+!,"Change Decimals/Fractions to Percent Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=Hkwfibux88s
-!,"here", "TARGET='_blank'") \} for 
-Percent, Fraction and Decimal Conversions Video Lecture.
+!,"Percent, Fraction and Decimal Conversions Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

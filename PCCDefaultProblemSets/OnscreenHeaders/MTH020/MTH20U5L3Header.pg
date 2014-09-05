@@ -79,32 +79,27 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U5L3UnitConversion.pdf
-!,"here", "TARGET='_blank'") \} for 
-Unit Conversion Lecture Notes.
+!,"Unit Conversion Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=bcM5J-wYHjE
-!,"here", "TARGET='_blank'") \} for 
-American Sytem Unit Conversion Video Lecture.
+!,"American Sytem Unit Conversion Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=6sBmVPIJwrw
-!,"here", "TARGET='_blank'") \} for 
-Metric System Video Lecture.
+!,"Metric System Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=OL7liIliMD0
-!,"here", "TARGET='_blank'") \} for 
-Unit Cancelation Method Video Lecture 1.
+!,"Unit Cancellation Method Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=daVdxGfchWI
-!,"here", "TARGET='_blank'") \} for 
-Unit Cancelation Method Video Lecture 2.
+!,"Unit Cancellation Method Video Lecture 2", "TARGET='_blank'") \}.
 
 EOT
 

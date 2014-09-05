@@ -79,32 +79,27 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U4L4DecimalAndFraction.pdf
-!,"here", "TARGET='_blank'") \} for 
-Decimals and Fractions Lecture Notes.
+!,"Decimals and Fractions Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=bA5ZoFW1ztE
-!,"here", "TARGET='_blank'") \} for 
-Change Decimal to Fraction Video Lecture 1.
+!,"Change Decimal to Fraction Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=iOvxUXl3flc
-!,"here", "TARGET='_blank'") \} for 
-Change Decimal to Fraction Video Lecture 2.
+!,"Change Decimal to Fraction Video Lecture 2", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=I7L-vNLki5w
-!,"here", "TARGET='_blank'") \} for 
-Change Fraction to Decimal Video Lecture.
+!,"Change Fraction to Decimal Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=5PYVMuI3qoc
-!,"here", "TARGET='_blank'") \} for 
-Convert between Fractions and Decimals Video Lecture.
+!,"Convert between Fractions and Decimals Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

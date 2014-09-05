@@ -79,20 +79,17 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U2L1IntegersAndAbsoluteValue.pdf
-!,"here", "TARGET='_blank'") \} for 
-Integers and Absolute Value Lecture Notes.
+!,"Integers and Absolute Value Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=Hlal9ME2Aig
-!,"here", "TARGET='_blank'") \} for 
-Introduction to Negative Numbers Video Lecture.
+!,"Introduction to Negative Numbers Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=L8fGfc7Wcco
-!,"here", "TARGET='_blank'") \} for 
-Absolute Value Video Lecture.
+!,"Absolute Value Video Lecture", "TARGET='_blank'") \}.
 
 
 EOT
