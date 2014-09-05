@@ -1,0 +1,15 @@
+openDate          = 01/01/2014 at 12:30am PST
+dueDate           = 06/30/2015 at 01:30am PDT
+answerDate        = 06/30/2015 at 01:30am PDT
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20U2L1Header.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/IntegersAndAbsoluteValue.pg
+description       = introduction to negative numbers and absolute value
+problemList       = 
+BasicAlgebra/NumberBasics/NumberLine10.pg, 1, -1 
+BasicAlgebra/NumberBasics/NumberLine10.pg, 1, -1 
+BasicMath/IntegerAndSquareRoot/CompareNumbers50.pg, 1, -1 
+BasicAlgebra/ComparisonsAndBasicInequalities/CompareNumbers40.pg, 1, -1 
+BasicAlgebra/NumberBasics/AbsoluteValue10.pg, 1, -1 
+BasicMath/IntegerAndSquareRoot/AbsoluteValue11.pg, 1, -1 
+BasicAlgebra/NumberBasics/SignedNumberInterpretations10.pg, 1, -1 
+
