@@ -45,11 +45,11 @@ You could certainly enter [`[$c]`]. But does it surprise you to learn that you c
 On the other hand, here that ability has been turned off; try entering the answer unsimplified:
     [`[$d]+[$e]=`] [_____]{$f}
 
-Are you paying attention to the feedback messages that WeBWorK gives you? Try entering:
+Are you paying attention to the feedback messages that WeBWorK gives you? Try entering the following _without_ simplifying:
     [``\frac{2}{6}=``] [_____]{$g}
 and WeBWorK will tell you that your answer has not yet been simplified.
 
-You might know that [`\sqrt{12}`] can be simplified to [`2\sqrt{3}`]. (This is considered simpler because what is inside the radical is smaller.) But try literally typing [`\sqrt{12}`] and seeing what the feedback message is:
+You might know that [`\sqrt{12}`] can be simplified to [`2\sqrt{3}`]. (This is considered simpler because what is inside the radical is smaller.) But try entering  [`\sqrt{12}`] without any simplification and seeing what the feedback message is:
     [`\sqrt{12}=`] [_____]{$h}
 
 

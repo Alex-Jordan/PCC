@@ -24,16 +24,20 @@ BEGIN_PGML
 
 That's enough for now about how you enter your answers. Let's spend some time learning how to navigate WeBWorK so that you can use it more effectively.
 
-By now you've had experience with the _Next_ button above. The _Prev_ button takes you to the previous problem, and the _Up_ button takes you back to the beginning of this problem set.
+By now you've had experience with the _Next_ button above. The _Previous_ button takes you to the previous problem, and the _Problem List_ button takes you back to the beginning of this problem set.
 
 At the bottom of a problem screen, you may see how many times you have attempted a problem, and how many times you have left. Sometimes you also see whether or not partial credit is possible, and if so how much do you have. This particular problem is lying about how many attempts you have used. How many attempts does it _say_ that you have used so far? [______]{Compute($a)} 
 
 On the left of the screen there are three panels. The middle panel is just a quick way for you to jump to other problems in the problem set. The top panel lets you find your way to 
 * *Homework Sets*: this is the screen you were at when you first logged in. It shows you all of the homework sets that have been assigned to you and when they are due.
-* *Password/Email*: If you would like to change your password, go here. You may also change your contact email to something that you find more convenient here. However the law requires that your instructor is only permitted to communicate with you about grades using your official school email address. So we recommend that you leave your email address alone. Check your school email address often.
+* *User Settings*:  
+    * If you would like to change your password, go here.  
+    * You may also change your contact email to something that you find more convenient here. However the law requires that your instructor is only permitted to communicate with you about grades using your official school email address. So we recommend that you leave your email address alone. Check your school email address often.  
+    * There are some other settings that you can save for your account.
 * *Grades*: Go here to see how you have performed in your assignments.
+* *Achievements*: If your instructor is using Math Achievements, then you can earn badges and level up as you complete homework problems. Go here to view your level and badges. Also, if you have earned any items that can be applied to your homework sets, you will see them here.
 
-The lower panel on the left of your screen is for adjusting display options. You may change the mechanism that is used to display the mathematical expressions here. Try changing the display option to images, MathJax, LaTeXMathML, or something that it is not already, and click the *Apply Options* button to see the different ways the following are rendered:
+The lower panel on the left of your screen is for adjusting display options. You may change the mechanism that is used to display the mathematical expressions here. Try changing the display option to images, MathJax, images, or plainText and click the *Apply Options* button to see the different ways the following math is rendered:
     [``\frac{x^2+1}{2^x+\sin(y)}\qquad y=\frac{23}{2}x+\frac{3}{22}\qquad \int_0^x\sqrt{e^{3t}}\,dt``]
 
 Why are there different options? Some web browsers will work well with some options, but not with others. If you have impaired vision, MathJax is the best option (and see your instructor in person to learn how to get the most out of it.)
