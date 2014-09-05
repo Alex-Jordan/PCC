@@ -79,38 +79,32 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U6L2PercentFormula.pdf
-!,"here", "TARGET='_blank'") \} for 
-Percent Formula Lecture Notes.
+!,"Percent Formula Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=dKVOGoHMsfc
-!,"here", "TARGET='_blank'") \} for 
-Type I Percent Formula Problems Video Lecture.
+!,"Type I Percent Formula Problems Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=N4kDzoQOngY
-!,"here", "TARGET='_blank'") \} for 
-Type II Percent Formula Problems Video Lecture.
+!,"Type II Percent Formula Problems Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=DAikW24_O0A
-!,"here", "TARGET='_blank'") \} for 
-Type III Percent Formula Problems Video Lecture.
+!,"Type III Percent Formula Problems Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=T8dAK1RDexI
-!,"here", "TARGET='_blank'") \} for 
-Solve Percent Problems with Proportion Video Lecture 1.
+!,"Solve Percent Problems with Proportion Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=vuSMdL0Mke4
-!,"here", "TARGET='_blank'") \} for 
-Solve Percent Problems with Proportion Video Lecture 2.
+!,"Solve Percent Problems with Proportion Video Lecture 2", "TARGET='_blank'") \}.
 
 EOT
 

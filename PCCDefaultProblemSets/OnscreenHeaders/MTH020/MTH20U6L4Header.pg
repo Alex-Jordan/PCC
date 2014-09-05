@@ -79,26 +79,22 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U6L4PercentOfIncreaseDecrease.pdf
-!,"here", "TARGET='_blank'") \} for 
-Percent of Increase/Decrease Lecture Notes.
+!,"Percent of Increase/Decrease Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=KVfRWj5CU5E
-!,"here", "TARGET='_blank'") \} for 
-Percent of Increase/Decrease Video Lecture 1.
+!,"Percent of Increase/Decrease Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=LP9UJmBxAnw
-!,"here", "TARGET='_blank'") \} for 
-Percent of Increase/Decrease Video Lecture 2.
+!,"Percent of Increase/Decrease Video Lecture 2", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=wzLUsEU_fvE
-!,"here", "TARGET='_blank'") \} for 
-Percent of Increase/Decrease Video Lecture 3.
+!,"Percent of Increase/Decrease Video Lecture 3", "TARGET='_blank'") \}.
 
 EOT
 

@@ -79,20 +79,17 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U2L4OrderOfOperations_2.pdf
-!,"here", "TARGET='_blank'") \} for 
-Order of Operations Part II Lecture Notes (involving negative numbers and absolute values).
+!,"Order of Operations Part II Lecture Notes (involving negative numbers and absolute values)", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=a329hvX8yDA
-!,"here", "TARGET='_blank'") \} for 
-Order of Operations Involving Negative Numbers Video Lecture.
+!,"Order of Operations Involving Negative Numbers Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=UzQZfvYPlzI
-!,"here", "TARGET='_blank'") \} for 
-Order of Operations Involving Absolute Value Video Lecture.
+!,"Order of Operations Involving Absolute Value Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

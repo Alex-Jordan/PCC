@@ -79,26 +79,22 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U4L1DecimalDefinition.pdf
-!,"here", "TARGET='_blank'") \} for 
-Introduction to Decimals Lecture Notes.
+!,"Introduction to Decimals Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=oCnZ6ZpafNg
-!,"here", "TARGET='_blank'") \} for 
-Introduction to Decimals Video Lecture.
+!,"Introduction to Decimals Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=VmaY9mNy4ak
-!,"here", "TARGET='_blank'") \} for 
-Compare Decimals Video Lecture.
+!,"Compare Decimals Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=g8hRCisK8to
-!,"here", "TARGET='_blank'") \} for 
-Round Decimals Video Lecture.
+!,"Round Decimals Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

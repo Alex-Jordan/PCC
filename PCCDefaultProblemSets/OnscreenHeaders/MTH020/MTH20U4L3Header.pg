@@ -79,32 +79,27 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U4L3DecimalMultiplicationDivision.pdf
-!,"here", "TARGET='_blank'") \} for 
-Multiply/Divide Decimals Lecture Notes.
+!,"Multiply/Divide Decimals Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=mV0RxDZG05A
-!,"here", "TARGET='_blank'") \} for 
-Multiply by Power of 10 Video Lecture.
+!,"Multiply by Power of 10 Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=W_VhVHRal6o
-!,"here", "TARGET='_blank'") \} for 
-Divide by Power of 10 Video Lecture.
+!,"Divide by Power of 10 Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=xpuZIC3nolQ
-!,"here", "TARGET='_blank'") \} for 
-Multiply Decimals Video Lecture.
+!,"Multiply Decimals Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=wYh0eUCdJWQ
-!,"here", "TARGET='_blank'") \} for 
-Divide Decimals Video Lecture.
+!,"Divide Decimals Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

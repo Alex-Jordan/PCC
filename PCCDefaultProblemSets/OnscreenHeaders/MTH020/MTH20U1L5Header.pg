@@ -79,14 +79,12 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U1L5DivisivilityTest.pdf
-!,"here", "TARGET='_blank'") \} for 
-Divisibility Test Lecture Notes.
+!,"Divisibility Test Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=Df9h5t64NlQ
-!,"here", "TARGET='_blank'") \} for 
-Divisibility Test Video Lecture.
+!,"Divisibility Test Video Lecture", "TARGET='_blank'") \}.
 
 
 EOT

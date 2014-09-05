@@ -79,32 +79,27 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U1L3Division.pdf
-!,"here", "TARGET='_blank'") \} for 
-Division Lecture Notes.
+!,"Division Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=MTzTqvzWzm8
-!,"here", "TARGET='_blank'") \} for 
-Division Video Lecture 1.
+!,"Division Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=8Ft5iHhauJ0
-!,"here", "TARGET='_blank'") \} for 
-Division Video Lecture 2.
+!,"Division Video Lecture 2", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=fjAbh_LCxcI
-!,"here", "TARGET='_blank'") \} for 
-Remainder Video Lecture.
+!,"Remainder Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=UjRob36yuJI
-!,"here", "TARGET='_blank'") \} for 
-Divide by Zero Video Lecture.
+!,"Divide by Zero Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

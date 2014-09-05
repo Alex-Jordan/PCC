@@ -79,20 +79,17 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U3L8OrderOfOperations_3.pdf
-!,"here", "TARGET='_blank'") \} for 
-Order of Operations involving Fractions Lecture Notes.
+!,"Order of Operations involving Fractions Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=EpX9ohiti6o
-!,"here", "TARGET='_blank'") \} for 
-Order of Operations involving Fractions Video Lecture 1.
+!,"Order of Operations involving Fractions Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=a329hvX8yDA
-!,"here", "TARGET='_blank'") \} for 
-Order of Operations involving Fractions Video Lecture 2.
+!,"Order of Operations involving Fractions Video Lecture 2", "TARGET='_blank'") \}.
 
 EOT
 

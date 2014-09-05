@@ -79,26 +79,22 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U5L2Proportion.pdf
-!,"here", "TARGET='_blank'") \} for 
-Proportion Lecture Notes.
+!,"Proportion Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=EdM-jYtAtAM
-!,"here", "TARGET='_blank'") \} for 
-Solve Proportions Video Lecture.
+!,"Solve Proportions Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=89H0Vsn7oC4
-!,"here", "TARGET='_blank'") \} for 
-Solve Proportions Word Problem Video Lecture 1.
+!,"Solve Proportions Word Problem Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=KaxpT_R9a-c
-!,"here", "TARGET='_blank'") \} for 
-Solve Proportions Word Problem Video Lecture 2.
+!,"Solve Proportions Word Problem Video Lecture 2", "TARGET='_blank'") \}.
 
 EOT
 

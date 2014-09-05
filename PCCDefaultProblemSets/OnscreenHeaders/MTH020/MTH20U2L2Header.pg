@@ -79,26 +79,22 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U2L2AddSubtractIntegers.pdf
-!,"here", "TARGET='_blank'") \} for 
-Add and Subtract Integers Lecture Notes.
+!,"Add and Subtract Integers Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=C38B33ZywWs&noredirect=1
-!,"here", "TARGET='_blank'") \} for 
-First Method to Add/Subtract Integers Video Lecture.
+!,"First Method to Add/Subtract Integers Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=AIWPLvTNhXs
-!,"here", "TARGET='_blank'") \} for 
-Second Method to Add Integers Video Lecture.
+!,"Second Method to Add Integers Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=0sMIJkFV1uw
-!,"here", "TARGET='_blank'") \} for 
-Second Method to Subtract Integers Video Lecture.
+!,"Second Method to Subtract Integers Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

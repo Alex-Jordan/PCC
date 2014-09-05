@@ -79,50 +79,42 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U3L6AddSubtractMixedNumbers.pdf
-!,"here", "TARGET='_blank'") \} for 
-Add/Subtract Mixed Numbers Lecture Notes.
+!,"Add/Subtract Mixed Numbers Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=MBZrYacUDyc
-!,"here", "TARGET='_blank'") \} for 
-Add Mixed Numbers with Common Denominators Video Lecture.
+!,"Add Mixed Numbers with Common Denominators Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=CfBYGFm5gPA
-!,"here", "TARGET='_blank'") \} for 
-Add Mixed Numbers with Different Denominators Video Lecture.
+!,"Add Mixed Numbers with Different Denominators Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=Pj2LGQ2gHgw
-!,"here", "TARGET='_blank'") \} for 
-Add Mixed Numbers with Common Denominators Involving Negative Numbers Video Lecture.
+!,"Add Mixed Numbers with Common Denominators Involving Negative Numbers Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=MwqgHvdKlmQ
-!,"here", "TARGET='_blank'") \} for 
-dd Mixed Numbers with Uncommon Denominators Involving Negative Numbers Video Lecture.
+!,"Add Mixed Numbers with Uncommon Denominators Involving Negative Numbers Video Lecture", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=WF7L2waDwLw
-!,"here", "TARGET='_blank'") \} for 
-Subtract Mixed Numbers Video Lecture 1.
+!,"Subtract Mixed Numbers Video Lecture 1", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=4LYtLMmDuzw
-!,"here", "TARGET='_blank'") \} for 
-Subtract Mixed Numbers Video Lecture 2.
+!,"Subtract Mixed Numbers Video Lecture 2", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=ZpdTfe30N1s
-!,"here", "TARGET='_blank'") \} for 
-Subtract a Fraction from a Whole Number Video Lecture.
+!,"Subtract a Fraction from a Whole Number Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

@@ -79,14 +79,12 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U1L4GeometryBasics.pdf
-!,"here", "TARGET='_blank'") \} for 
-Geometry Basics Lecture Notes.
+!,"Geometry Basics Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=kqqmJiJez6o
-!,"here", "TARGET='_blank'") \} for 
-Geometry Basics Video Lecture.
+!,"Geometry Basics Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

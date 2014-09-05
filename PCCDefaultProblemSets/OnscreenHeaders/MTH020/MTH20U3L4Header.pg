@@ -79,14 +79,12 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH20Docs/U3L4DivideFractions.pdf
-!,"here", "TARGET='_blank'") \} for 
-Divide Fractions Lecture Notes.
+!,"Divide Fractions Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
 \{ htmlLink(qq!
 http://www.youtube.com/watch?v=7VGgnESa498
-!,"here", "TARGET='_blank'") \} for 
-Divide Fractions Video Lecture.
+!,"Divide Fractions Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 
