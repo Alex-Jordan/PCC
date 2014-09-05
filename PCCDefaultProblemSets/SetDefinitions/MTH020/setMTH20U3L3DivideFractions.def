@@ -1,0 +1,20 @@
+
+openDate          = 12/31/2013 at 11:00pm PST
+dueDate           = 12/31/2015 at 11:12pm PST
+answerDate        = 12/31/2016 at 11:00pm PST
+paperHeaderFile   = HeaderFiles_Yao/MTH20HardCopyHeader_Yao.pg
+screenHeaderFile  = HeaderFiles_Yao/MTH20U3L4Header.pg
+description       = dividing fractions; applications
+problemList       = 
+PCC-Precollege-Algebra/FractionArithmetic/DivideFractions10.pg, 1, -1 
+BasicMath/FractionsCalculation/DivideFractions11.pg, 1, -1 
+BasicMath/FractionsCalculation/DivideFractions12.pg, 1, -1 
+BasicMath/FractionsCalculation/DivideFractions32.pg, 1, -1 
+BasicMath/FractionsCalculation/DivideFractions42.pg, 1, -1 
+BasicMath/FractionApplication/FractionDivisionWordProblems10.pg, 1, -1 
+BasicMath/FractionApplication/FractionDivisionWordProblems20.pg, 1, -1 
+BasicMath/FractionApplication/FractionDivisionWordProblems30.pg, 1, -1 
+BasicMath/FractionApplication/FractionDivisionWordProblems40.pg, 1, -1 
+BasicMath/FractionApplication/FractionDivisionWordProblems50.pg, 1, -1 
+BasicMath/FractionApplication/FractionDivisionWordProblems60.pg, 1, -1 
+

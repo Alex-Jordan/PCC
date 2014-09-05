@@ -14,6 +14,26 @@ TEXT($BEGIN_ONE_COLUMN);
 
 ####################################################
 #
+# Anything between the BEGIN_TEXT AND END_TEXT lines
+# will be printed in both screen and hardcopy output
+#
+####################################################
+
+BEGIN_TEXT
+$BBOLD This assignment (\{ protect_underbar($setNumber) \} ) 
+is due :  $formattedDueDate. $EBOLD
+
+$PAR
+
+More information about your course can be found in MyPCC or DesireToLearn: 
+\{ 
+htmlLink(qq!http://my.pcc.edu/!,"MyPCC") 
+\}. 
+$PAR
+END_TEXT
+
+####################################################
+#
 # The item below printed out only when a hardcopy is made.
 #
 ####################################################
@@ -58,29 +78,33 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
 \{ htmlLink(qq!
-http://spot.pcc.edu/~cyao/MTH65Docs/U2L1_MoreExponentRules.pdf
-!,"lecture notes on exponent rules", "TARGET='_blank'") \} 
+http://spot.pcc.edu/~cyao/MTH20Docs/U1L7GCFAndLCM.pdf
+!,"here", "TARGET='_blank'") \} for 
+Greatest Common Factor and Least Common Multiple Lecture Notes.
+
 $PAR
 \{ htmlLink(qq!
-http://spot.pcc.edu/~cyao/MTH65Docs/U2L1_UseMultipleExponentRules.pdf
-!,"lecture notes on using exponent rules", "TARGET='_blank'") \} 
+http://www.youtube.com/watch?v=ECFmsS7z9sE
+!,"here", "TARGET='_blank'") \} for 
+Greatest Common Factor Video Lecture.
+
 $PAR
 \{ htmlLink(qq!
-http://www.youtube.com/watch?v=5oJobyGnhDk
-!,"the first video lecture on exponent rules (watch till 23:00)", "TARGET='_blank'") \} 
+http://www.youtube.com/watch?v=D6yHKOYJiso
+!,"here", "TARGET='_blank'") \} for 
+Least Common Multiple Video Lecture 1.
+
 $PAR
 \{ htmlLink(qq!
-http://www.youtube.com/watch?v=oHNe8AK0E9M
-!,"the second video lecture on exponent rules", "TARGET='_blank'") \} 
+http://www.youtube.com/watch?v=znmPfDfsir8
+!,"here", "TARGET='_blank'") \} for 
+Least Common Multiple Video Lecture 2.
+
 $PAR
 \{ htmlLink(qq!
-http://www.youtube.com/watch?v=heUUBzvYA1o
-!,"the third video lecture on exponent rules", "TARGET='_blank'") \} 
-$PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=CrJEOQh5UXg
-!,"the fourth video lecture on exponent rules", "TARGET='_blank'") \} 
-$PAR
+http://www.youtube.com/watch?v=w_GwBDOSNp4
+!,"here", "TARGET='_blank'") \} for 
+Least Common Multiple Video Lecture 3.
 
 EOT
 
@@ -98,16 +122,6 @@ EOT
 #
 ####################################################
 
-####################################################
-#
-# Anything between the BEGIN_TEXT AND END_TEXT lines
-# will be printed in both screen and hardcopy output
-#
-####################################################
-
-BEGIN_TEXT
-
-END_TEXT
 
 
 TEXT($END_ONE_COLUMN);

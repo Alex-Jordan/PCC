@@ -1,0 +1,18 @@
+
+openDate          = 12/31/2013 at 11:00pm PST
+dueDate           = 12/31/2015 at 11:01pm PST
+answerDate        = 12/31/2016 at 11:00pm PST
+paperHeaderFile   = local/GenericMTH20HardcopyHeader.pg
+screenHeaderFile  = local/GenericMTH20Header.pg
+description       = divisibility of whole numbers by whole numbers
+problemList       = 
+BasicMath/PrimeLCMGCF/divisibility10.pg, 1, -1 
+BasicMath/PrimeLCMGCF/divisibility20.pg, 1, -1 
+BasicMath/PrimeLCMGCF/divisibility30.pg, 1, -1 
+BasicMath/PrimeLCMGCF/divisibility40.pg, 1, -1 
+BasicMath/PrimeLCMGCF/divisibility50.pg, 1, -1 
+BasicMath/PrimeLCMGCF/divisibility60.pg, 1, -1 
+BasicMath/PrimeLCMGCF/divisibility70.pg, 1, -1 
+BasicMath/PrimeLCMGCF/divisibility80.pg, 1, -1 
+BasicMath/PrimeLCMGCF/divisibility80.pg, 1, -1 
+

@@ -1,0 +1,23 @@
+
+openDate          = 12/31/2013 at 11:00pm PST
+dueDate           = 12/31/2015 at 11:03pm PST
+answerDate        = 12/31/2016 at 11:00pm PST
+paperHeaderFile   = local/GenericMTH20HardcopyHeader.pg
+screenHeaderFile  = local/GenericMTH20Header.pg
+description       = prime numbers; prime factorization; raising to whole number powers
+problemList       = 
+BasicMath/PrimeLCMGCF/ListFactors10.pg, 1, -1 
+BasicMath/PrimeLCMGCF/ListFactors20.pg, 1, -1 
+BasicMath/PrimeLCMGCF/ListFactors30.pg, 1, -1 
+BasicMath/PrimeLCMGCF/ListFactors40.pg, 1, -1 
+BasicMath/PrimeLCMGCF/primeOrComposite10.pg, 1, -1 
+BasicMath/PrimeLCMGCF/primeOrComposite10.pg, 1, -1 
+PCC-Precollege-Algebra/NumberBasics/FactorInteger10.pg, 1, -1 
+PCC-Precollege-Algebra/NumberBasics/FactorInteger20.pg, 1, -1 
+PCC-Precollege-Algebra/NumberBasics/FactorInteger30.pg, 1, -1 
+PCC-Precollege-Algebra/NumberBasics/FactorInteger40.pg, 1, -1 
+PCC-Precollege-Algebra/NumberBasics/FactorInteger60.pg, 1, -1 
+BasicMath/Miscellaneous/ExponentDefinition05.pg, 1, -1 
+BasicMath/Miscellaneous/ExponentDefinition05.pg, 1, -1 
+BasicMath/Miscellaneous/ExponentDefinition15.pg, 1, -1 
+

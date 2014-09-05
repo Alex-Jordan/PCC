@@ -1,0 +1,21 @@
+
+openDate          = 12/31/2013 at 11:00pm PST
+dueDate           = 12/31/2015 at 11:21pm PST
+answerDate        = 12/31/2016 at 11:00pm PST
+paperHeaderFile   = HeaderFiles_Yao/MTH20HardCopyHeader_Yao.pg
+screenHeaderFile  = HeaderFiles_Yao/MTH20U4L4Header.pg
+description       = converting between fractions and decimals
+problemList       = 
+BasicMath/FractionPercentDecimal/FractionToDecimal50.pg, 1, -1 
+BasicMath/FractionPercentDecimal/FractionToDecimal60.pg, 1, -1 
+BasicMath/FractionPercentDecimal/FractionToDecimal70.pg, 1, -1 
+BasicMath/FractionPercentDecimal/FractionToDecimal80.pg, 1, -1 
+BasicMath/FractionPercentDecimal/FractionToDecimal90.pg, 1, -1 
+BasicMath/FractionPercentDecimal/DecimalToFraction10.pg, 1, -1 
+BasicMath/FractionPercentDecimal/DecimalToFraction20.pg, 1, -1 
+BasicMath/FractionPercentDecimal/DecimalToFraction30.pg, 1, -1 
+BasicMath/FractionPercentDecimal/DecimalToFraction35.pg, 1, -1 
+BasicMath/FractionPercentDecimal/DecimalToFraction40.pg, 1, -1 
+BasicMath/FractionPercentDecimal/DecimalToFraction50.pg, 1, -1 
+BasicMath/FractionPercentDecimal/DecimalToFraction60.pg, 1, -1 
+

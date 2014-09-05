@@ -1,0 +1,28 @@
+
+openDate          = 12/31/2013 at 11:00pm PST
+dueDate           = 12/31/2015 at 11:27pm PST
+answerDate        = 12/31/2016 at 11:00pm PST
+paperHeaderFile   = HeaderFiles_Yao/MTH20HardCopyHeader_Yao.pg
+screenHeaderFile  = HeaderFiles_Yao/MTH20U6L1Header.pg
+description       = converting between percents, decimals, and fractions
+problemList       = 
+PCC-Precollege-Algebra/NumberBasics/PercentDecimalConversion10.pg, 1, -1 
+PCC-Precollege-Algebra/NumberBasics/PercentDecimalConversion20.pg, 1, -1 
+PCC-Precollege-Algebra/NumberBasics/PercentDecimalConversion30.pg, 1, -1 
+PCC-Precollege-Algebra/NumberBasics/PercentDecimalConversion40.pg, 1, -1 
+PCC-Precollege-Algebra/NumberBasics/PercentDecimalConversion50.pg, 1, -1 
+PCC-Precollege-Algebra/NumberBasics/PercentDecimalConversion60.pg, 1, -1 
+PCC-Precollege-Algebra/NumberBasics/PercentDecimalConversion70.pg, 1, -1 
+PCC-Precollege-Algebra/NumberBasics/PercentDecimalConversion80.pg, 1, -1 
+BasicMath/FractionPercentDecimal/FractionToPercent10.pg, 1, -1 
+BasicMath/FractionPercentDecimal/FractionToPercent20.pg, 1, -1 
+BasicMath/FractionPercentDecimal/FractionToPercent30.pg, 1, -1 
+BasicMath/FractionPercentDecimal/FractionToPercent40.pg, 1, -1 
+BasicMath/FractionPercentDecimal/PercentToFraction10.pg, 1, -1 
+BasicMath/FractionPercentDecimal/PercentToFraction20.pg, 1, -1 
+BasicMath/FractionPercentDecimal/PercentToFraction30.pg, 1, -1 
+BasicMath/FractionPercentDecimal/PercentToFraction40.pg, 1, -1 
+BasicMath/FractionPercentDecimal/FractionPercentDecimal10.pg, 1, -1 
+BasicMath/FractionPercentDecimal/FractionPercentDecimal10.pg, 1, -1 
+BasicMath/FractionPercentDecimal/FractionPercentDecimal10.pg, 1, -1 
+
