@@ -33,7 +33,11 @@ WeBWorK understands the order of operations very well, and interprets what you t
 
     [`5^{2t}=`] [_____]{Compute("5^(2t)")}
 
-but try entering it as [|5^2t|], which is incorrect. Go ahead and push the _Submit Answers_ button. Note how the *Answer Preview* column is showing you what WeBWorK thinks you entered. It treats the [$CARET] as higher priority than the multiplication, and computes [`5^2`]. _Then_ it multiplies this by [`t`]. The correct way to enter this expression is [|5^(2t)|], using parentheses to change the priorities according to the order of operations.
+but try entering it as:
+:       5^2t
+which is incorrect. Go ahead and push the _Submit Answers_ button. Note how the *Answer Preview* column is showing you what WeBWorK thinks you entered. It treats the [$CARET] as higher priority than the multiplication, and computes [`5^2`]. _Then_ it multiplies this by [`t`]. So it sees [`5^2t`]. The correct way to enter [`5^{2t}`] is:
+:       5^(2t)
+using parentheses to change the priorities according to the order of operations.
 
 The lesson is that if your answer is marked incorrect, along with looking for any feedback messages, you should also look at the *Answer Preview* column and you may see that you have not used grouping symbols well.
 

@@ -38,11 +38,11 @@ Imagine that the true answer to a problem is [:1/3:]. As you may know, this frac
 
 Sometimes, your instructor will require you to enter the answer _exactly_. In that case your only option is to enter [:1/3=:] [_________]{$a}.
 
-Sometimes, you will be allowed to get away with decimal _approximations_ to the real answer. So for instance, here we can get away with typing [`0.3333`] even thought that is slightly different from the true value: [:1/3=:] [_________]{$b}.
+Sometimes, you will be allowed to get away with decimal _approximations_ to the real answer. So for instance, in _this_ answer blank we can get away with typing [`0.3333`] even thought that is slightly different from the true value: [:1/3=:] [_________]{$b}.
 
-Here is what you need to note: _If_ a decimal approximation is acceptable at all, then your answer will be counted correct if you have the first four significant digits correct. You _might_ be able to get away with fewer digits, but four is the safe number. 
+Here is what you need to know: _If_ a decimal approximation is acceptable at all, then your answer will be counted correct if you have the first _four_ significant digits correct. You _might_ be able to get away with fewer digits, but four is the safe number. 
 
-Take out a calculator and enter decimal approximations for these values. At first, try rounding your calculator's outputs to only two significant digits. Then move up to three. Finally, four significant digits will be required for each and every one of these to count as correct.
+Take out a calculator and enter decimal approximations for these values. At first, try rounding your calculator's outputs to only two significant digits. Then move up to three. Finally, four significant digits will be required for each and every one of these to count as correct. _These questions are trying to teach you that you should be in the habit of using four significant digits when entering decimal answers._ 
 
     [:1/9 =:] [_________]{$c}
 
@@ -54,7 +54,7 @@ Take out a calculator and enter decimal approximations for these values. At firs
 
     [:0.002038 =:] [_________]{0.002038}
 
-With the last question, students often feel they should be able to get away with [|0.002|], since that is only off by [`0.000038`]. However, percentage-wise this would be off by over [`1.8%`], which is generally considered unacceptable. By always answering using four significant digits, your relative error will always be very small.
+With the last question, students often feel they should be able to get away with [`0.002`], since that is only off by [`0.000038`]. However, percentage-wise this would be off by over [`1.8%`], which is generally considered unacceptable. By always answering using four significant digits, your percentage error will always be very small.
 
 When you are ready, move on to the next question.
 
