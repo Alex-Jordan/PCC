@@ -1,0 +1,19 @@
+
+openDate          = 09/22/2013 at 12:00am PDT
+dueDate           = 10/01/2015 at 10:00pm PDT
+answerDate        = 10/01/2015 at 10:00pm PDT
+paperHeaderFile   = SetDefinitions/Orientation/PCCOrientationHeader.pg
+screenHeaderFile  = SetDefinitions/Orientation/PCCOrientationHeader.pg
+description	  = problems to train students on how to use WeBWorK
+problemList       = 
+SetDefinitions/Orientation/NewOrientation01.pg, 1, -1 
+SetDefinitions/Orientation/NewOrientation02.pg, 1, -1 
+SetDefinitions/Orientation/NewOrientation03.pg, 1, -1 
+SetDefinitions/Orientation/NewOrientation04.pg, 1, -1 
+SetDefinitions/Orientation/NewOrientation05.pg, 1, -1 
+SetDefinitions/Orientation/NewOrientation06.pg, 1, -1 
+SetDefinitions/Orientation/NewOrientation07.pg, 1, -1 
+SetDefinitions/Orientation/NewOrientation08.pg, 1, -1 
+SetDefinitions/Orientation/NewOrientation09.pg, 1, -1 
+SetDefinitions/Orientation/NewOrientation10.pg, 1, -1 
+

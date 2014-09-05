@@ -1,0 +1,51 @@
+DOCUMENT();
+
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGML.pl",
+);
+
+TEXT(beginproblem());
+
+######################################
+
+
+Context("Numeric");
+
+
+
+######################################
+
+
+BEGIN_PGML
+## Seeking Help ##
+
+The primary purpose of WeBWorK is that it allows you to practice some math problems and immediately get feedback about your answers. This is much better than waiting a full week to learn about your answers from written homework. WeBWorK will even often give you _intelligent_ feedback if you are reading the feedback messages.
+
+If you become stuck on a problem, cannot get the answer correct, do not understand what the problem asks, think there is a bug with the problem, or all of the above, then...
+1. Check that you have read any feedback messages WeBWorK is giving, and that you have not rounded your answer too much.
+2. Reread the problem carefully to see if there are any instructions that you did not notice. 
+3. Check your textbook and notes to see if you can learn from them.
+4. There is an *Email Instructor* button below: use it.
+
+When you use this button, you should write a message to your instructor (or TA) explaining what you have tried. It will help a lot of you write down the steps of the math that you have worked out too. Then the instructor gets your message along with a link to the problem from _your perspective_, and they can also see all of your previously attempted answers. This way your instructor can write you back with good help/hints.
+
+Writing for help is OK! Yes, it is last on this list, but that is just because it is good for you to try to be self sufficient. There is a lot you can gain from WeBWorK's feedback, your textbook, and your notes. If you feel it is appropriate to contact your instructor for help, then do so!
+
+This answer blank is expecting a certain answer: [___________]{Real(112358)->cmp(tolType=>absolute,tolerance=>0.1)}. The only way to get the answer is to use the *Email Instructor* button and politely ask for it. (Instructors: you can check the _Show correct answers_ box to see the answer and write a response to your student.)
+
+
+
+
+
+END_PGML
+
+
+######################################
+
+
+
+
+ENDDOCUMENT();
+
