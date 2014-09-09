@@ -1,0 +1,24 @@
+
+openDate          = 03/30/2014 at 12:00am PDT
+dueDate           = 05/27/2014 at 10:00pm PDT
+answerDate        = 05/27/2014 at 10:00pm PDT
+paperHeaderFile   = local/Fall8HardcopyHeader.pg
+screenHeaderFile  = local/Fall8Header.pg
+description       = confidence intervals for population proportion
+problemList       = 
+local/Library/Rochester/setStatistics3Estimates/ur_stt_3_14.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust50.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust51.pg, 1, -1 
+local/Library/Rochester/setStatistics3Estimates/ur_stt_3_13.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust52.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa49.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa50.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa51.pg, 1, -1 
+Library/ASU-topics/setStat/kolossa55.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch19InferencePropn/19Stats_04_InferencePropn.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch19InferencePropn/19Stats_07_InferencePropn.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch19InferencePropn/19Stats_08_InferencePropn.pg, 1, -1 
+local/Library/Rochester/setStatistics3Estimates/ur_stt_3_15.pg, 1, -1 
+local/Library/Rochester/setStatistics3Estimates/ur_stt_3_18.pg, 1, -1 
+local/Library/Rochester/setStatistics3Estimates/ur_stt_3_19.pg, 1, -1 
+

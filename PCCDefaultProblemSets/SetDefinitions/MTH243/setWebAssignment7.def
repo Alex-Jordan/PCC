@@ -1,0 +1,40 @@
+
+openDate          = 03/30/2014 at 12:00am PDT
+dueDate           = 05/20/2014 at 10:00pm PDT
+answerDate        = 05/20/2014 at 10:00pm PDT
+paperHeaderFile   = local/Fall7HardcopyHeader.pg
+screenHeaderFile  = local/Fall7Header.pg
+description       = distribution of the sample mean; parameters versus statistics; the Central Limit Theorem; sample proportion
+problemList       = 
+local/Library/Rochester/setProbability8BinomialDist/ur_pb_8_6.pg, 1, -1 
+local/Library/Rochester/setProbability11CentralLimitTh/ur_pb_11_1.pg, 1, -1 
+local/Library/ASU-topics/setStat/di1.pg, 1, -1 
+local/Library/ASU-topics/setStat/di2.pg, 1, -1 
+local/Library/ASU-topics/setStat/di3.pg, 1, -1 
+local/Library/ASU-topics/setStat/di4.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck7_3_4.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa47.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch11SamplingDistributions/11Stats_01_SamplingDistns.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch11SamplingDistributions/11Stats_02_SamplingDistns.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch11SamplingDistributions/11Stats_03_SamplingDistns.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch11SamplingDistributions/11Stats_05_SamplingDistns.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch11SamplingDistributions/11Stats_06_SamplingDistns.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch11SamplingDistributions/11Stats_07_SamplingDistns.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch11SamplingDistributions/11Stats_08_SamplingDistns.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch11SamplingDistributions/11Stats_10_SamplingDistns.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch11SamplingDistributions/11Stats_13_SamplingDistns.pg, 1, -1 
+local/Library/NAU/setStatistics/central_limit_theorem1.pg, 1, -1 
+local/Library/NAU/setStatistics/central_limit_theorem2.pg, 1, -1 
+local/Library/Rochester/setProbability11CentralLimitTh/ur_pb_11_4.pg, 1, -1 
+local/Library/Rochester/setProbability11CentralLimitTh/ur_pb_11_5.pg, 1, -1 
+Library/Rochester/setProbability11CentralLimitTh/ur_pb_11_6.pg, 1, -1 
+Library/UVA-Stat/setStat212-Homework07/stat212-HW07-03.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework07/stat212-HW07-04.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework07/stat212-HW07-05.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework07/stat212-HW07-06.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework07/stat212-HW07-08.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework07/stat212-HW07-09.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework07/stat212-HW07-12.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch19InferencePropn/19Stats_01_InferencePropn.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa48.pg, 1, -1 
+

@@ -1,0 +1,56 @@
+
+openDate          = 03/30/2014 at 12:00am PDT
+dueDate           = 04/26/2014 at 10:00pm PDT
+answerDate        = 04/26/2014 at 10:00pm PDT
+paperHeaderFile   = local/Fall3Header.pg
+screenHeaderFile  = local/Fall3Header.pg
+description       = surveys; population versus sample; sampling methods; sources of bias; parameters versus statistics; experiments and observational studies; factors, levels, and treatments; basic probability
+problemList       = 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch08Sampling/08Stats_08_Sampling.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch08Sampling/08Stats_07_Sampling.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch08Sampling/08Stats_06_Sampling.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch08Sampling/08Stats_05_Sampling.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch08Sampling/08Stats_03_Sampling.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch08Sampling/08Stats_02_Sampling.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch08Sampling/08Stats_01_Sampling.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework03/stat212-HW03-02.pg, 1, -1 
+Library/UVA-Stat/setStat212-Homework03/stat212-HW03-01.pg, 1, -1 
+local/Library/NAU/setStatistics/stat_inference2.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa19.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust25.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust9.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck1_4_1.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck1_4_2.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck1_4_3.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck1_4_5.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck1_5_1.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck1_5_2.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck1_5_3.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck1_5_4.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck1_5_5.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch09Experiments/09Stats_09_Experiments.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch09Experiments/09Stats_08_Experiments.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch09Experiments/09Stats_07_Experiments.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch09Experiments/09Stats_06_Experiments.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch09Experiments/09Stats_05_Experiments.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch09Experiments/09Stats_04_Experiments.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch09Experiments/09Stats_03_Experiments.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch09Experiments/09Stats_02_Experiments.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch09Experiments/09Stats_01_Experiments.pg, 1, -1 
+local/Library/NAU/setStatistics/stat_inference4.pg, 1, -1 
+local/Library/NAU/setStatistics/stat_inference1.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa59.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck5_1_2.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck5_1_5.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa5.pg, 1, -1 
+Library/CollegeOfIdaho/setStatistics_Ch10Probability/10Stats_01_Probability.pg, 1, -1 
+local/Library/CollegeOfIdaho/setStatistics_Ch10Probability/10Stats_02_Probability.pg, 1, -1 
+local/Library/CollegeOfIdaho/setStatistics_Ch10Probability/10Stats_04_Probability.pg, 1, -1 
+local/Library/CollegeOfIdaho/setStatistics_Ch10Probability/10Stats_12_Probability.pg, 1, -1 
+local/Library/Rochester/setDiscrete9Counting/ur_dis_9_17.pg, 1, -1 
+local/Library/Rochester/setProbability3Events/ur_dis_9_19.pg, 1, -1 
+local/Library/Rochester/setProbability5RandomSample/ur_pb_5_2.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework03/stat212-HW03-17.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework03/stat212-HW03-20.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework04/stat212-HW04-03.pg, 1, -1 
+

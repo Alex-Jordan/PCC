@@ -1,0 +1,69 @@
+
+openDate          = 05/26/2014 at 12:00am PDT
+dueDate           = 05/26/2014 at 12:00am PDT
+answerDate        = 05/26/2014 at 12:00am PDT
+paperHeaderFile   = local/Exam3PracticeHardcopyHeader.pg
+screenHeaderFile  = local/Exam3PracticeHeader.pg
+description       = practice exercises over material from chapters 19-21, 7, and 8
+problemList       = 
+local/Library/Rochester/setStatistics3Estimates/ur_stt_3_14.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust50.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust51.pg, 1, -1 
+local/Library/Rochester/setStatistics3Estimates/ur_stt_3_13.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust52.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa49.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa50.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa51.pg, 1, -1 
+Library/ASU-topics/setStat/kolossa55.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch19InferencePropn/19Stats_04_InferencePropn.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch19InferencePropn/19Stats_07_InferencePropn.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch19InferencePropn/19Stats_08_InferencePropn.pg, 1, -1 
+local/Library/Rochester/setStatistics3Estimates/ur_stt_3_15.pg, 1, -1 
+local/Library/Rochester/setStatistics3Estimates/ur_stt_3_18.pg, 1, -1 
+local/Library/Rochester/setStatistics3Estimates/ur_stt_3_19.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa54.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa56.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa57.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa58.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch19InferencePropn/19Stats_03_InferencePropn.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch19InferencePropn/19Stats_05_InferencePropn.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch19InferencePropn/19Stats_09_InferencePropn.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch19InferencePropn/19Stats_10_InferencePropn.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch19InferencePropn/19Stats_12_InferencePropn.pg, 1, -1 
+Library/Rochester/setStatistics4HypothesisTesting/ur_stt_4_4.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck9_3_1.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa30.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa33.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch14InferenceIntro/14Stats_07_InferenceIntro.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch14InferenceIntro/14Stats_08_InferenceIntro.pg, 1, -1 
+Library/ASU-topics/setStat/di12.pg, 1, -1 
+Library/ASU-topics/setStat/di13.pg, 1, -1 
+local/Library/ASU-topics/setStat/di14.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck9_2_1.pg, 1, -1 
+local/Library/Rochester/setStatistics4HypothesisTesting/ur_stt_4_10.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust24.pg, 1, -1 
+Library/NAU/setStatistics/Scatterplot.pg, 1, -1 
+local/Library/Rochester/setStatistics6CorrelationRegression/ur_stt_6_2.pg, 1, -1 
+local/Library/Rochester/setStatistics6CorrelationRegression/ur_stt_6_1.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust16.pg, 1, -1 
+local/Library/ASU-topics/setStat/lines5.pg, 1, -1 
+local/Library/ASU-topics/setStat/lines4.pg, 1, -1 
+local/Library/ASU-topics/setStat/lines3.pg, 1, -1 
+Library/ASU-topics/setStat/lines2.pg, 1, -1 
+local/Library/ASU-topics/setStat/lines1.pg, 1, -1 
+Library/ASU-topics/setStat/dueck4_2_2.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck4_2_4.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust17.pg, 1, -1 
+Library/ASU-topics/setStat/gust18.pg, 1, -1 
+Library/ASU-topics/setStat/gust19.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust22.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust23.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust32.pg, 1, -1 
+Library/CollegeOfIdaho/setStatistics_Ch05Regression/05Stats_01_Regression.pg, 1, -1 
+local/Library/CollegeOfIdaho/setStatistics_Ch05Regression/05Stats_02_Regression.pg, 1, -1 
+local/Library/CollegeOfIdaho/setStatistics_Ch05Regression/05Stats_03_Regression.pg, 1, -1 
+local/Library/CollegeOfIdaho/setStatistics_Ch05Regression/05Stats_04_Regression.pg, 1, -1 
+local/Library/CollegeOfIdaho/setStatistics_Ch05Regression/05Stats_08_Regression.pg, 1, -1 
+local/Library/CollegeOfIdaho/setStatistics_Ch05Regression/05Stats_09_Regression.pg, 1, -1 
+Library/CollegeOfIdaho/setStatistics_Ch05Regression/05Stats_12_Regression.pg, 1, -1 
+
