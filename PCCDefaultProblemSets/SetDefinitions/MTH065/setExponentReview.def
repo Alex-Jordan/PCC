@@ -1,9 +1,8 @@
-
 openDate          = 12/11/2013 at 02:42am PST
 dueDate           = 06/30/2014 at 03:15am PDT
 answerDate        = 06/30/2014 at 03:15am PDT
 paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH065/MTH65HardCopyHeader_Yao.pg
-screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/ExponentRules.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/ExponentReview.pg
 description       = rules of working with exponents
 problemList       = 
 BasicAlgebra/Exponents/ExponentDefinition30.pg, 1, -1 
