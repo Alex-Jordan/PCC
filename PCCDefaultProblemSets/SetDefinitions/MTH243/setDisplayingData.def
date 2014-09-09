@@ -1,0 +1,31 @@
+
+openDate          = 03/30/2014 at 12:00am PDT
+dueDate           = 04/08/2014 at 10:00pm PDT
+answerDate        = 04/08/2014 at 10:00pm PDT
+paperHeaderFile   = local/Fall1HardcopyHeader.pg
+screenHeaderFile  = local/Fall1Header.pg
+description       = types of data; frequency and relative frequency; graphical displays; tabular displays; mean, median, mode; range, quartiles, inter-quartile range, standard deviation;
+problemList       = 
+Statistics/DisplayingData/gust11.pg, 1, -1 
+Statistics/DisplayingData/01Stats_10_PictDistnsWGraphs.pg, 1, -1 
+Statistics/DisplayingData/01Stats_11_PictDistnsWGraphs.pg, 1, -1 
+Statistics/DisplayingData/ur_stt_1_5.pg, 1, -1 
+Statistics/DisplayingData/01Stats_06_PictDistnsWGraphs.pg, 1, -1 
+Statistics/DisplayingData/01Stats_07_PictDistnsWGraphs.pg, 1, -1 
+Statistics/DisplayingData/01Stats_08_PictDistnsWGraphs.pg, 1, -1 
+Statistics/DisplayingData/01Stats_09_PictDistnsWGraphs.pg, 1, -1 
+Statistics/DisplayingData/stat212-HW02-01.pg, 1, -1 
+Statistics/DisplayingData/02Stats_01_DescrData.pg, 1, -1 
+Statistics/DisplayingData/stat212-HW01-18.pg, 1, -1 
+Statistics/DisplayingData/stat212-HW01-17.pg, 1, -1 
+Statistics/DisplayingData/histogram1.pg, 1, -1 
+Statistics/DisplayingData/easy_histogram.pg, 1, -1 
+Statistics/BasicOneVarStats/CenterMeasureFromStemAndLeaf.pg, 1, -1 
+Statistics/DisplayingData/gust30.pg, 1, -1 
+Statistics/DisplayingData/BoxPlotPercentBetween.pg, 1, -1 
+Statistics/DisplayingData/Boxplot.pg, 1, -1 
+Statistics/DisplayingData/FiveNumAndPlot.pg, 1, -1 
+Statistics/DisplayingData/FiveNumFromPlot.pg, 1, -1 
+Statistics/DisplayingData/01Stats_05_PictDistnsWGraphs.pg, 1, -1 
+Statistics/DisplayingData/02Stats_08_DescrData.pg, 1, -1 
+Statistics/DisplayingData/02Stats_07_DescrData.pg, 1, -1 
