@@ -1,7 +1,7 @@
 openDate          = 01/01/2014 at 12:39am PST
 dueDate           = 06/30/2015 at 01:39am PDT
 answerDate        = 06/30/2015 at 01:39am PDT
-paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20U2L4Header.pg
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHeader_Yao.pg
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/OrderOfOperations_2.pg
 description       = order of operations problems involving positive and negative integers
 problemList       = 
