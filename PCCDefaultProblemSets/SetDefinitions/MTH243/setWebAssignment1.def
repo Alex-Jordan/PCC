@@ -1,0 +1,59 @@
+
+openDate          = 03/30/2014 at 12:00am PDT
+dueDate           = 04/08/2014 at 10:00pm PDT
+answerDate        = 04/08/2014 at 10:00pm PDT
+paperHeaderFile   = local/Fall1HardcopyHeader.pg
+screenHeaderFile  = local/Fall1Header.pg
+description       = types of data; frequency and relative frequency; graphical displays; tabular displays; mean, median, mode; range, quartiles, inter-quartile range, standard deviation;
+problemList       = 
+Statistics/DataTypes1.pg, 1, -1 
+Statistics/DataTypes2.pg, 1, -1 
+Statistics/DataTypes3.pg, 1, -1 
+Statistics/DataTypes4.pg, 1, -1 
+Statistics/DataTypes6.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch01PicturingDistributionsWithGraphs/01Stats_04_PictDistnsWGraphs.pg, 1, -1 
+Library/UVA-Stat/setStat212-Homework01/stat212-HW01-02.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust11.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch01PicturingDistributionsWithGraphs/01Stats_10_PictDistnsWGraphs/01Stats_10_PictDistnsWGraphs.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch01PicturingDistributionsWithGraphs/01Stats_11_PictDistnsWGraphs/01Stats_11_PictDistnsWGraphs.pg, 1, -1 
+local/Library/Rochester/setStatistics1Data/ur_stt_1_5.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework02/stat212-HW02-17.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck3_1_6.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch01PicturingDistributionsWithGraphs/01Stats_02_PictDistnsWGraphs.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch01PicturingDistributionsWithGraphs/01Stats_06_PictDistnsWGraphs.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework02/stat212-HW02-11.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch01PicturingDistributionsWithGraphs/01Stats_07_PictDistnsWGraphs/01Stats_07_PictDistnsWGraphs.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch01PicturingDistributionsWithGraphs/01Stats_08_PictDistnsWGraphs/01Stats_08_PictDistnsWGraphs.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework02/stat212-HW02-10.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch01PicturingDistributionsWithGraphs/01Stats_09_PictDistnsWGraphs/01Stats_09_PictDistnsWGraphs.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework02/stat212-HW02-08.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework02/stat212-HW02-05.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework02/stat212-HW02-01.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch02DescribingData/02Stats_01_DescrData/02Stats_01_DescrData.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework01/stat212-HW01-18.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch02DescribingData/02Stats_02_DescrData.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework01/stat212-HW01-17.pg, 1, -1 
+Library/NAU/setStatistics/histogram1.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch02DescribingData/02Stats_05_DescrData.pg, 1, -1 
+Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch02DescribingData/02Stats_10_DescrData.pg, 1, -1 
+Library/NAU/setStatistics/skew_dist1.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch03NormalDistribution/03Stats_01_NormalDist/03Stats_01_NormalDist.pg, 1, -1 
+local/Library/NAU/setStatistics/easy_histogram.pg, 1, -1 
+local/Library/NAU/setStatistics/data2.pg, 1, -1 
+local/Library/NAU/setStatistics/MeanStdDev.pg, 1, -1 
+local/Library/NAU/setStatistics/FiveNum.pg, 1, -1 
+local/Library/NAU/setStatistics/CenterMeasureFromStemAndLeaf.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa10.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa8.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust30.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck3_4_3.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck3_2_1.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck3_4_4.pg, 1, -1 
+Library/NAU/setStatistics/BoxPlotPercentBetween.pg, 1, -1 
+local/Library/NAU/setStatistics/Boxplot.pg, 1, -1 
+local/Library/NAU/setStatistics/FiveNumAndPlot.pg, 1, -1 
+local/Library/NAU/setStatistics/FiveNumFromPlot.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch01PicturingDistributionsWithGraphs/01Stats_05_PictDistnsWGraphs/01Stats_05_PictDistnsWGraphs.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch02DescribingData/02Stats_08_DescrData/02Stats_08_DescrData.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch02DescribingData/02Stats_07_DescrData/02Stats_07_DescrData.pg, 1, -1 
+

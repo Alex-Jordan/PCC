@@ -1,0 +1,42 @@
+
+openDate          = 03/30/2014 at 12:00am PDT
+dueDate           = 04/15/2014 at 10:00pm PDT
+answerDate        = 04/15/2014 at 10:00pm PDT
+paperHeaderFile   = local/Fall2HardcopyHeader.pg
+screenHeaderFile  = local/Fall2Header.pg
+description       = z-scores; Normal distribution; percentiles
+problemList       = 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch03NormalDistribution/03Stats_05_NormalDist.pg, 1, -1 
+local/Library/NAU/setStatistics/normprob6.pg, 1, -1 
+local/Library/ASU-topics/setStat/kolossa20.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch03NormalDistribution/03Stats_07_NormalDist.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch03NormalDistribution/03Stats_06_NormalDist.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch03NormalDistribution/03Stats_04_NormalDist.pg, 1, -1 
+local/Library/UVA-Stat/setStat212-Homework02/stat212-HW02-03.pg, 1, -1 
+local/Library/NAU/setStatistics/empirical_rule1.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust36.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust34.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust33.pg, 1, -1 
+local/Library/NAU/setStatistics/empirical_rule2.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust40.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch03NormalDistribution/03Stats_02_NormalDist.pg, 1, -1 
+local/Library/NAU/setStatistics/normprob1.pg, 1, -1 
+local/Library/NAU/setStatistics/normal_dist3.pg, 1, -1 
+local/Library/NAU/setStatistics/normal_dist2.pg, 1, -1 
+local/Library/NAU/setStatistics/empirical_rule5.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust41.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust39.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust38.pg, 1, -1 
+local/Library/ASU-topics/setStat/gust37.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck6_3_3.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck6_3_1.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch03NormalDistribution/03Stats_11_NormalDist.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch03NormalDistribution/03Stats_10_NormalDist.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch03NormalDistribution/03Stats_09_NormalDist.pg, 1, -1 
+local/Library/CollegeOfIdaho/Intro_to_Statistics/setStatistics_Ch03NormalDistribution/03Stats_12_NormalDist.pg, 1, -1 
+local/Library/ASU-topics/setStat/dueck6_2_5.pg, 1, -1 
+local/Library/NAU/setStatistics/empirical_rule3.pg, 1, -1 
+local/Library/NAU/setStatistics/normal_quartile1.pg, 1, -1 
+local/Library/NAU/setStatistics/normprob2.pg, 1, -1 
+local/Library/NAU/setStatistics/normprob3.pg, 1, -1 
+
