@@ -32,6 +32,13 @@ $score = 100 + 3* ($tag + 1);
 $diff = Compute($score - 100);
 $zscore = Compute($diff / 15);
 
+@solutions = ("The difference between $Name[$tag]'s IQ and the mean is \(121 - 100 = 21\)",
+
+"The \(z\)-score for $Name[$tag]'s IQ is \(z = \frac{121 - 100}{15} = 1.4\)",)
+;
+ 
+@ssols = (@solutions);
+
 #################################################
 #  Main
 
@@ -50,6 +57,19 @@ $BR
 END_TEXT
 
 ######################################
+
+BEGIN_SOLUTION
+
+(a) $ssols[0]
+
+$PAR
+
+(b)  $ssols[1]
+
+$PAR 
+
+END_SOLUTION
+
 #  Answers
 
 $showPartialCorrectAnswers = 1;
