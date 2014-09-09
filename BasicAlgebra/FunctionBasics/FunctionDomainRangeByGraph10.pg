@@ -37,7 +37,7 @@ loadMacros(
 ##############################################
 TEXT(beginproblem());
 
-Context("Numeric");
+Context("Interval");
 $refreshCachedImages=1;
 
 #Decide the number of points in the graph.
@@ -58,12 +58,14 @@ $dup0 = random(0,$numPoints-1);
 do {$dup1=random(0,$numPoints-1);} until ($dup0!=$dup1);
 $py[$dup0]=$py[$dup1];
 
-Context("Interval");
+
 $domain=Set();
 $range=Set();
 for my $i (0..$numPoints-1) {
-   $domain = Set($domain + Set($px[$i]));
-   $range = Set($range + Set($py[$i]));
+   $domain = $domain + Set($px[$i]);
+   $domain = Set($domain->value);
+   $range = $range + Set($py[$i]);
+   $range = Set($range->value);
 }
 
 @domarray = ($domain->value);
