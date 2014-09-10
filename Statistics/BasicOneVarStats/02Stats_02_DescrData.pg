@@ -59,7 +59,7 @@ random(1.30,1.38,.01));
 BEGIN_TEXT
 Animals and people that take in more energy than they expend will get fatter. Here are data on 12 rhesus monkeys: 6 lean monkeys (4$PERCENT to 9$PERCENT body fat) and 6 obese monkeys (13$PERCENT to 14$PERCENT body fat). The data report the energy expended in 24 hours (kilojoules per minute) and the lean body mass (kilograms, leaving out fat) for each monkey.
 $PAR
-$BCENTER
+
 \{DataTable(
 [
 [['Lean Monkeys Lean Body Mass (kg)',headerrow=>1,midrule=>1], 'Lean Monkeys Energy (kJ/min)', 'Obese Monkeys Lean Body Mass (kg)', 'Obese Monkeys Energy (kJ/min)'],
