@@ -1,0 +1,21 @@
+
+openDate          = 03/30/2014 at 12:00am PDT
+dueDate           = 04/26/2014 at 10:00pm PDT
+answerDate        = 04/26/2014 at 10:00pm PDT
+paperHeaderFile   = local/Fall3Header.pg
+screenHeaderFile  = local/Fall3Header.pg
+description       = surveys; population versus sample; sampling methods; sources of bias; parameters versus statistics; experiments and observational studies; factors, levels, and treatments; basic probability
+problemList       = 
+Statistics/BasicProbability/dueck5_1_2.pg, 1, -1 
+Statistics/BasicProbability/dueck5_1_5.pg, 1, -1 
+Statistics/BasicProbability/kolossa5.pg, 1, -1 
+Statistics/BasicProbability/10Stats_01_Probability.pg, 1, -1 
+Statistics/BasicProbability/10Stats_02_Probability.pg, 1, -1 
+Statistics/BasicProbability/10Stats_04_Probability.pg, 1, -1 
+Statistics/BasicProbability/10Stats_12_Probability.pg, 1, -1 
+Statistics/BasicProbability/ur_dis_9_17.pg, 1, -1 
+Statistics/BasicProbability/ur_dis_9_19.pg, 1, -1 
+Statistics/BasicProbability/ur_pb_5_2.pg, 1, -1 
+Statistics/BasicProbability/stat212-HW03-17.pg, 1, -1 
+Statistics/BasicProbability/stat212-HW03-20.pg, 1, -1 
+Statistics/BasicProbability/stat212-HW04-03.pg, 1, -1 
