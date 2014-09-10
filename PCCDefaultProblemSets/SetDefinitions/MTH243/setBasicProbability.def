@@ -2,8 +2,8 @@
 openDate          = 03/30/2014 at 12:00am PDT
 dueDate           = 04/26/2014 at 10:00pm PDT
 answerDate        = 04/26/2014 at 10:00pm PDT
-paperHeaderFile   = local/Fall3Header.pg
-screenHeaderFile  = local/Fall3Header.pg
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243HardcopyHeader.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
 description       = surveys; population versus sample; sampling methods; sources of bias; parameters versus statistics; experiments and observational studies; factors, levels, and treatments; basic probability
 problemList       = 
 Statistics/BasicProbability/dueck5_1_2.pg, 1, -1 

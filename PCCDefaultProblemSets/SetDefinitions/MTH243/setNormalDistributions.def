@@ -2,8 +2,8 @@
 openDate          = 03/30/2014 at 12:00am PDT
 dueDate           = 04/15/2014 at 10:00pm PDT
 answerDate        = 04/15/2014 at 10:00pm PDT
-paperHeaderFile   = local/Fall2HardcopyHeader.pg
-screenHeaderFile  = local/Fall2Header.pg
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243HardcopyHeader.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
 description       = z-scores; Normal distribution; percentiles
 problemList       = 
 Statistics/zScoreEmpiricalRule/gust36.pg, 1, -1 

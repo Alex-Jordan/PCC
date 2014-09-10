@@ -2,8 +2,8 @@
 openDate          = 03/30/2014 at 12:00am PDT
 dueDate           = 04/08/2014 at 10:00pm PDT
 answerDate        = 04/08/2014 at 10:00pm PDT
-paperHeaderFile   = local/Fall1HardcopyHeader.pg
-screenHeaderFile  = local/Fall1Header.pg
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243HardcopyHeader.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
 description       = types of data; frequency and relative frequency; graphical displays; tabular displays; mean, median, mode; range, quartiles, inter-quartile range, standard deviation;
 problemList       = 
 Statistics/BasicOneVarStats/stat212-HW02-17.pg, 1, -1 
