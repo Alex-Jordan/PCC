@@ -1,7 +1,7 @@
 
-openDate          = 03/30/2014 at 12:00am PDT
-dueDate           = 05/13/2014 at 10:00pm PDT
-answerDate        = 05/13/2014 at 10:00pm PDT
+openDate          = 03/30/2015 at 12:00am PDT
+dueDate           = 05/13/2015 at 10:00pm PDT
+answerDate        = 05/13/2015 at 10:00pm PDT
 paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243HardcopyHeader.pg
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
 description       = exponential distribution; geometric distribution; binomial distribution; Normal approximation of the binomial distribution; continuity correction

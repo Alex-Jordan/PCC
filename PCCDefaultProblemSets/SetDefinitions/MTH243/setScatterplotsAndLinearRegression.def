@@ -1,7 +1,7 @@
 
-openDate          = 03/30/2014 at 12:00am PDT
-dueDate           = 06/10/2014 at 10:00pm PDT
-answerDate        = 06/10/2014 at 10:00pm PDT
+openDate          = 03/30/2015 at 12:00am PDT
+dueDate           = 06/10/2015 at 10:00pm PDT
+answerDate        = 06/10/2015 at 10:00pm PDT
 paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243HardcopyHeader.pg
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
 description       = scatter plots; correlation; least-squares regression lines

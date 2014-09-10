@@ -1,10 +1,10 @@
 
-openDate          = 03/30/2014 at 12:00am PDT
-dueDate           = 04/15/2014 at 10:00pm PDT
-answerDate        = 04/15/2014 at 10:00pm PDT
+openDate          = 03/30/2015 at 12:00am PDT
+dueDate           = 04/15/2015 at 10:00pm PDT
+answerDate        = 04/15/2015 at 10:00pm PDT
 paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243HardcopyHeader.pg
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
-description       = z-scores; Normal distribution; percentiles
+description       = calculating and interpreting z-scores
 problemList       = 
 Statistics/zScoreEmpiricalRule/03Stats_05_NormalDist.pg, 1, -1 
 Statistics/zScoreEmpiricalRule/normprob6.pg, 1, -1 
