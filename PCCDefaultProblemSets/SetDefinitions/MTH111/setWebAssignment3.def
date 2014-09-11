@@ -1,0 +1,53 @@
+
+openDate          = 06/23/2014 at 12:00am PDT
+dueDate           = 07/16/2014 at 10:00pm PDT
+answerDate        = 07/16/2014 at 10:00pm PDT
+paperHeaderFile   = local/Assignment3HardcopyHeader.pg
+screenHeaderFile  = local/Assignment3Header.pg
+description       = function transformations; graphs of polynomial and rational functions
+problemList       = 
+local/CollegeAlgebra/Transformations/Shifting10.pg, 1, -1 
+local/CollegeAlgebra/Transformations/Shifting20.pg, 1, -1 
+local/CollegeAlgebra/Transformations/Shifting30.pg, 1, -1 
+local/CollegeAlgebra/Transformations/Shifting40.pg, 1, -1 
+local/CollegeAlgebra/Transformations/Shifting50.pg, 1, -1 
+local/CollegeAlgebra/Transformations/Shifting60.pg, 1, -1 
+local/CollegeAlgebra/Transformations/ScalingAndReflecting10.pg, 1, -1 
+local/CollegeAlgebra/Transformations/GeneralTransformations10.pg, 1, -1 
+local/CollegeAlgebra/Transformations/ScalingAndReflecting20.pg, 1, -1 
+local/CollegeAlgebra/Transformations/ScalingAndReflecting30.pg, 1, -1 
+Math111/setShiftsAndReflections/MatchGraphsReflected.pg, 1, -1 
+local/CollegeAlgebra/Transformations/GeneralTransformations20.pg, 1, -1 
+local/CollegeAlgebra/Transformations/GeneralTransformations30.pg, 1, -1 
+local/CollegeAlgebra/Transformations/GeneralTransformations40.pg, 1, -1 
+local/CollegeAlgebra/Transformations/Symmetry10.pg, 1, -1 
+Math111/setShiftsAndReflections/Symmetry1.pg, 1, -1 
+Math111/setShiftsAndReflections/MatchGraphs2.pg, 1, -1 
+Math111/setShiftsAndReflections/General1.pg, 1, -1 
+Math111/setShiftsAndReflections/General3.pg, 1, -1 
+Math111/setScaling/ChooseGraph2.pg, 1, -1 
+Math111/setScaling/MatchGraphs1.pg, 1, -1 
+Math111/setScaling/Painting.pg, 1, -1 
+Math111/setPolynomials/Polynomials1.pg, 1, -1 
+Math111/setPolynomials/Polynomials6.pg, 1, -1 
+Math111/setPolynomials/Polynomials9.pg, 1, -1 
+Math111/setPolynomials/Polynomials12.pg, 1, -1 
+Math111/setPolynomials/Polynomials13.pg, 1, -1 
+Math111/setPolynomials/Polynomials14.pg, 1, -1 
+Math111/setPolynomials/Polynomials15.pg, 1, -1 
+Math111/setPolynomials/Polynomials16.pg, 1, -1 
+Math111/setPolynomials/Polynomials19.pg, 1, -1 
+Math111/setPolynomials/Polynomials20.pg, 1, -1 
+Math111/setPolynomials/Polynomials21.pg, 1, -1 
+Math111/setPolynomials/Polynomials22.pg, 1, -1 
+Math111/setPolynomials/Polynomials23.pg, 1, -1 
+Math111/setPolynomials/Polynomials24.pg, 1, -1 
+Math111/setPolynomials/Polynomials25.pg, 1, -1 
+Math111/setPolynomials/Polynomials26.pg, 1, -1 
+Math111/setPolynomials/Polynomials27.pg, 1, -1 
+Math111/setPolynomials/Polynomials28.pg, 1, -1 
+Math111/setPowerFunctionsAndPolynomials/Sullivan2ed3_1_49.pg, 1, -1 
+Math111/setPowerFunctionsAndPolynomials/Sullivan2ed3_1_97.pg, 1, -1 
+Math111/setPolynomials/Polynomials29.pg, 1, -1 
+Math111/setPolynomials/Polynomials30.pg, 1, -1 
+

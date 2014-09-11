@@ -1,0 +1,95 @@
+# WeBWorK problem written by Alex Jordan
+# Portland Community College
+#
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Coordinates and Graphs')
+## DBsection('Graphs of Equations')
+## KEYWORDS('function','table','graph')
+## DBCCSS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextRationalFunction.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+  "contextFraction.pl",
+);
+
+##############################################
+
+TEXT(&beginproblem);
+
+$showPartialCorrectAnswers = 1;
+
+Context("RationalFunction");
+
+$d = list_random(11, 13, 17, 19, 23);
+do {$a = random(6,22);} until $d - $a > 0 && $d - $a < 6; 
+# make sure the answers a + b and c + b are relatively prime
+$b=$d - $a;
+$c = random(2,4);
+
+$f = RandomVariableName(type=>'function');
+
+Context("Fraction");
+$s = Fraction($c-$a,$c+$b);
+($sa, $sb) = $s->value;
+$sign = ($sa/abs($sa) == 1) ? '-' : '+';
+$sa = abs($sa);
+
+Context("RationalFunction");
+
+$t = Compute("-$a*$sb$sign$sa*$b");
+$ans = Formula("(($sb$sign$sa)x+$t)/($sb(x+$b)(x-$c))")->reduce;
+
+##############################################
+
+BEGIN_PGML
+
+Consider the function [`[$f]`] defined by [`\displaystyle [$f](x) = \frac{x-[$a]}{x+[$b]}`].
+Evaluate and simplify the expression [`\displaystyle\frac{[$f](x)-[$f]([$c])}{x-[$c]}`].
+
+
+    [`\displaystyle \frac{[$f](x)-[$f]([$c])}{x-[$c]} ={}`][___________________________________________]{$ans}
+
+END_PGML
+
+##############################################
+Context("Fraction");
+$s = Fraction($c-$a,$c+$b);
+($sa, $sb) = $s->value;
+$sign = ($sa/abs($sa) == 1) ? '-' : '+';
+$sa = abs($sa);
+
+
+BEGIN_PGML_SOLUTION
+
+    [``\begin{aligned}
+\frac{[$f](x)-[$f]([$c])}{x-[$c]}
+&= \frac{\frac{x-[$a]}{x+[$b]}-\frac{[$c]-[$a]}{[$c]+[$b]}}{x-[$c]}\\
+&= \frac{\frac{x-[$a]}{x+[$b]}[$sign]\frac{[$sa]}{[$sb]}}{x-[$c]}\\
+&= \frac{\frac{x-[$a]}{x+[$b]}[$sign]\frac{[$sa]}{[$sb]}}{x-[$c]}\frac{[$sb](x+[$b])}{[$sb](x+[$b])}\\
+&= \frac{[$sb](x-[$a])[$sign][$sa](x+[$b])}{[$sb](x+[$b])(x-[$c])}\\
+&= [$ans]\\
+\end{aligned}``]
+
+END_PGML_SOLUTION
+
+
+ENDDOCUMENT();        

@@ -1,0 +1,38 @@
+
+openDate          = 06/23/2014 at 12:00am PDT
+dueDate           = 07/09/2014 at 10:00pm PDT
+answerDate        = 07/09/2014 at 10:00pm PDT
+paperHeaderFile   = local/Assignment2HardcopyHeader.pg
+screenHeaderFile  = local/Assignment2Header.pg
+description       = arithmetic of functions; piecewise-defined functions; composition of functions; simplifying the difference quotient; 
+problemList       = 
+local/CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains10.pg, 1, -1 
+local/CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains20.pg, 1, -1 
+local/CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains30.pg, 1, -1 
+local/CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains40.pg, 1, -1 
+local/CollegeAlgebra/FunctionBasics/Piecewise10.pg, 1, -1 
+local/CollegeAlgebra/FunctionBasics/Piecewise30.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition10.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition20.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/DifferenceQuotient10.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/DifferenceQuotient20.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/DifferenceQuotient40.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/DifferenceQuotient50.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/DifferenceQuotient60.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition30.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition40.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition50.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition60.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition70.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition80.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition90.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition100.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition110.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition115.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition120.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition130.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition140.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition150.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition160.pg, 1, -1 
+local/CollegeAlgebra/FunctionComposition/FunctionComposition170.pg, 1, -1 
+

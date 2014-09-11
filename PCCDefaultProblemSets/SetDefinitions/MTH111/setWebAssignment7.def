@@ -1,0 +1,46 @@
+
+openDate          = 06/23/2014 at 12:00am PDT
+dueDate           = 08/13/2014 at 10:00pm PDT
+answerDate        = 08/13/2014 at 10:00pm PDT
+paperHeaderFile   = local/Assignment5HardcopyHeader.pg
+screenHeaderFile  = local/Assignment5Header.pg
+description       = Euler's constant e; natural logarithm ln; continuous relative growth rate; interest
+problemList       = 
+Math111/setEulersConstantAndInterest/MatchGraphs2.pg, 1, -1 
+Math111/setEulersConstantAndInterest/MatchGraphs3.pg, 1, -1 
+Math111/setEulersConstantAndInterest/MatchGraphs.pg, 1, -1 
+Math111/setLogarithmIntro/CalculatorFreeLogs.pg, 1, -1 
+Math111/setLogarithmIntro/ExponentsToLns.pg, 1, -1 
+Math111/setLogarithmIntro/ExponentsToLogs2.pg, 1, -1 
+Math111/setLogarithmIntro/LnsToExponents2.pg, 1, -1 
+Math111/setLogarithmIntro/LnsToExponents.pg, 1, -1 
+Math111/setLogarithmIntro/Simplify2.pg, 1, -1 
+Math111/setLogarithmIntro/Simplify3.pg, 1, -1 
+Math111/setLogarithmIntro/Simplify.pg, 1, -1 
+Math111/setLogarithmIntro/SolveUsingLogs7.pg, 1, -1 
+Math111/setLogarithmIntro/SolveUsingLogs8.pg, 1, -1 
+Math111/setLogarithmAsFunction/MatchLogGraphs.pg, 1, -1 
+Math111/setLogarithmAndExponentialModels/GrowthRates1.pg, 1, -1 
+Math111/setLogarithmAndExponentialModels/GrowthRates2.pg, 1, -1 
+Math111/setLogarithmAndExponentialModels/GrowthRates3.pg, 1, -1 
+Math111/setLogarithmAndExponentialModels/Solve.pg, 1, -1 
+Math111/setLogarithmAndExponentialModels/bForm1.pg, 1, -1 
+Math111/setLogarithmAndExponentialModels/bForm2.pg, 1, -1 
+Math111/setLogarithmAndExponentialModels/bForm3.pg, 1, -1 
+Math111/setLogarithmAndExponentialModels/eForm1.pg, 1, -1 
+Math111/setLogarithmAsFunction/Domain2.pg, 1, -1 
+Math111/setLogarithmAsFunction/Domain3.pg, 1, -1 
+Math111/setLogarithmAsFunction/Domain.pg, 1, -1 
+Math111/setEulersConstantAndInterest/ContPopulation.pg, 1, -1 
+Math111/setEulersConstantAndInterest/RadioDecay.pg, 1, -1 
+Math111/setLogarithmAndExponentialModels/HalvingTime.pg, 1, -1 
+Math111/setEulersConstantAndInterest/Nominal.pg, 1, -1 
+Math111/setEulersConstantAndInterest/InterestChoice.pg, 1, -1 
+Math111/setEulersConstantAndInterest/FindRate.pg, 1, -1 
+Math111/setEulersConstantAndInterest/EffectiveRate.pg, 1, -1 
+Math111/setEulersConstantAndInterest/ContVersusAnnual.pg, 1, -1 
+Math111/setEulersConstantAndInterest/ContInterest.pg, 1, -1 
+Math111/setEulersConstantAndInterest/Compounding.pg, 1, -1 
+Math111/setEulersConstantAndInterest/Compounding2.pg, 1, -1 
+Math111/setLogarithmAndExponentialModels/Internet.pg, 1, -1 
+

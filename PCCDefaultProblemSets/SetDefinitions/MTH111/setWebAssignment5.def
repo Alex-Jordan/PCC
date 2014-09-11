@@ -1,0 +1,35 @@
+
+openDate          = 06/23/2014 at 12:00am PDT
+dueDate           = 07/30/2014 at 10:00pm PDT
+answerDate        = 07/30/2014 at 10:00pm PDT
+paperHeaderFile   = local/Assignment5HardcopyHeader.pg
+screenHeaderFile  = local/Assignment5Header.pg
+description       = concavity; exponential functions;
+problemList       = 
+local/CollegeAlgebra/Concavity/ConcavityInContext10.pg, 1, -1 
+local/CollegeAlgebra/Concavity/ConcavityInContext20.pg, 1, -1 
+local/CollegeAlgebra/Concavity/ConcavityFromTable10.pg, 1, -1 
+local/CollegeAlgebra/ExponentialFunctions/ExponentialBasics10.pg, 1, -1 
+local/CollegeAlgebra/Percentage10.pg, 1, -1 
+local/CollegeAlgebra/Percentage20.pg, 1, -1 
+local/CollegeAlgebra/ExponentialFunctions/ExponentialBasics20.pg, 1, -1 
+local/CollegeAlgebra/ExponentialFunctions/CalculatorExponential10.pg, 1, -1 
+local/CollegeAlgebra/Concavity/ConcavityFromGraph10.pg, 1, -1 
+local/CollegeAlgebra/ExponentialFunctions/Modeling10.pg, 1, -1 
+local/CollegeAlgebra/ExponentialFunctions/Modeling20.pg, 1, -1 
+local/CollegeAlgebra/ExponentialFunctions/Modeling30.pg, 1, -1 
+local/CollegeAlgebra/ExponentialFunctions/AverageRateOfChange10.pg, 1, -1 
+Math111/setConcavityAndExponential/GrowthFactor2.pg, 1, -1 
+Math111/setConcavityAndExponential/GrowthFactor.pg, 1, -1 
+local/CollegeAlgebra/ExponentialFunctions/RelativeGrowthRate10.pg, 1, -1 
+local/CollegeAlgebra/ExponentialFunctions/FitCurveToTwoPoints100.pg, 1, -1 
+Math111/setLinearVsExpAndExpGraphs/CompareGraphs2.pg, 1, -1 
+Math111/setLinearVsExpAndExpGraphs/CompareGraphs3.pg, 1, -1 
+Math111/setLinearVsExpAndExpGraphs/ExponentialTable.pg, 1, -1 
+local/CollegeAlgebra/ExponentialFunctions/FitCurveToTwoPoints10.pg, 1, -1 
+local/CollegeAlgebra/ExponentialFunctions/FitCurveToTwoPoints20.pg, 1, -1 
+Math111/setLinearVsExpAndExpGraphs/FindExponentialFromGraph.pg, 1, -1 
+Math111/setLinearVsExpAndExpGraphs/LinearTable.pg, 1, -1 
+Math111/setLinearVsExpAndExpGraphs/LinearVsExponential.pg, 1, -1 
+Math111/setEulersConstantAndInterest/FindRate2.pg, 1, -1 
+
