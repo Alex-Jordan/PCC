@@ -1,0 +1,104 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Functions')
+## DBsection('Exponential')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextFraction.pl",
+  "PGgraphmacros.pl",
+  "parserAssignment.pl",
+
+);
+
+
+TEXT(beginproblem());
+
+##############################################
+
+
+Context("Fraction");
+Context()->flags->set(reduceConstants=>0);
+
+$x[0] = Compute(0);
+$x[1] = Compute(2);
+
+$y[0] = random(0.6,2.6,0.1);
+
+$factor = list_random(Fraction(3,2),Fraction(2,3),Compute(2),Compute(3));
+
+$y[1] = Real($y[0]*($factor**2));
+
+Context("Numeric");
+parser::Assignment->Allow;
+parser::Assignment->Function("f");
+
+$exponential = Compute("$y[0]*$factor^x");
+
+
+$gr = init_graph(-1,-1,4,$y[1]+2, axes=>[0,0], size=>[400,400]);
+
+add_functions($gr, "$exponential for x in <-1,4> " .
+    "using color:blue and weight:2");
+
+$gr->lb( new Label($x[0]-0.5,$y[0],"($x[0],$y[0])",
+    'black','center','middle'));
+
+$gr->lb( new Label($x[1]-0.5,$y[1],"($x[1],$y[1])",
+    'black','center','middle'));
+
+$gr->stamps( closed_circle($x[0],$y[0],'black') );
+$gr->stamps( closed_circle($x[1],$y[1],'black') );
+
+
+
+$exponential = Compute("f(x)=$y[0]*$factor^x");
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Find the formula for the exponential function with this graph:
+$PAR
+
+\{ image( insertGraph($gr), width=>400, 
+    height=>400, tex_size=>800 ) \}
+
+
+$PAR
+
+\{ans_rule(30)\}
+$BR(Your answer must be in the form $BBOLD f(x)=...$EBOLD.)
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $exponential->cmp() );
+
+ENDDOCUMENT();

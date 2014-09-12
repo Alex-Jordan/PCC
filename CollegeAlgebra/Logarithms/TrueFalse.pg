@@ -1,0 +1,116 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Functions')
+## DBsection('Exponential')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "unionTables.pl",
+  "parserRadioButtons.pl",
+);
+
+
+TEXT(beginproblem());
+
+##############################################
+
+
+Context("Numeric");
+
+
+$radioTrue = RadioButtons(
+  ["True","False"],
+  "True", 
+  last => ["False"],
+);
+
+$radioFalse = RadioButtons(
+  ["True","False"],
+  "False", 
+  last => ["False"],
+);
+
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Are each of these statements true or false?  Be careful - you only get a limited number of attempts, and if you have incorrect parts, you will not be shown which ones are incorrect.
+
+$PAR
+$BBOLD(a.)$EBOLD \(\log(AB) = \log(A)+\log(B)\)$BR
+\{ $radioTrue->buttons() \}
+
+$PAR
+$BBOLD(b.)$EBOLD \(\log(A + B) = \log(A)+\log(B)\)$BR
+\{ $radioFalse->buttons() \}
+
+$PAR
+$BBOLD(c.)$EBOLD \(\log(A + B) = \log(A)\cdot\log(B)\)$BR
+\{ $radioFalse->buttons() \}
+
+$PAR
+$BBOLD(d.)$EBOLD \(\frac{\log(A)}{\log(B)} = \log(A)-\log(B)\)$BR
+\{ $radioFalse->buttons() \}
+
+$PAR
+$BBOLD(e.)$EBOLD \(p\log(A) = \log(A^p)\)$BR
+\{ $radioTrue->buttons() \}
+
+$PAR
+$BBOLD(f.)$EBOLD \(\log\Big(\frac{1}{A}\Big) = -\log(A)\)$BR
+\{ $radioTrue->buttons() \}
+
+$PAR
+$BBOLD(g.)$EBOLD \(\sqrt{\log(A)}) = \log(A^{1/2})\)$BR
+\{ $radioFalse->buttons() \}
+
+$PAR
+$BBOLD(h.)$EBOLD \(\log(\sqrt{A}) = \frac12\log(A)\)$BR
+\{ $radioTrue->buttons() \}
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 0;
+
+
+
+ANS( $radioTrue->cmp() );
+ANS( $radioFalse->cmp() );
+ANS( $radioFalse->cmp() );
+ANS( $radioFalse->cmp() );
+ANS( $radioTrue->cmp() );
+ANS( $radioTrue->cmp() );
+ANS( $radioFalse->cmp() );
+ANS( $radioTrue->cmp() );
+
+
+
+
+ENDDOCUMENT();

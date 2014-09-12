@@ -1,0 +1,75 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Functions')
+## DBsection('Exponential')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+);
+
+
+TEXT(beginproblem());
+
+##############################################
+
+
+Context("Numeric");
+Context()->flags->set(reduceConstants=>0);
+
+$a = random(2,20,1);
+$b = random(4,30,1);
+
+$f = Formula("ln($a ln(x)+$b)");
+
+Context("Interval");
+$domain = Compute("(e^(-$b/$a),INF)");
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Find the domain of the function.  If you need to enter \(\infty\), type $BBOLD INF$EBOLD.  If you need to use the union symbol (\(\cup\)), type $BBOLD U$EBOLD.
+
+$PAR
+\[f(x)=$f\]
+
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(15)\}
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 1;
+
+
+
+ANS( $domain->cmp );
+
+ENDDOCUMENT();

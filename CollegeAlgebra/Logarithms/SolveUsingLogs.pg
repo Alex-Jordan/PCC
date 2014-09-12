@@ -1,0 +1,78 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Functions')
+## DBsection('Exponential')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "parserAssignment.pl",
+);
+
+
+TEXT(beginproblem());
+
+##############################################
+
+
+Context("Numeric");
+Context()->flags->set(reduceConstants=>0);
+parser::Assignment->Allow;
+
+$a = random(1,100,1);
+$b = random(2,12,1);
+$c = random(40,1000,1);
+
+$ans = ln($c/$a)/ln($b);
+
+$ans = Formula("x=$ans");
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Solve the equation by using logarithms.  Remember, when solving an equation for \(x\), your answer should be in the form $BBOLD x=...$EBOLD.  When exponents are involved, it becomes very important to be precise.  Use at least four significant digits in your answers.
+
+\[$a($b)^x=$c\]
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(15)\}
+
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 1;
+
+Context()->flags->set(formatStudentAnswers=>parsed);
+
+ANS($ans->cmp);
+
+ENDDOCUMENT();
