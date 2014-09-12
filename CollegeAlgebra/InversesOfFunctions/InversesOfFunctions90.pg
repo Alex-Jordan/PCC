@@ -96,7 +96,7 @@ for($i = 0; $i < @slice; $i++ )
 	}
 }
 
-$popup = PopUp(["?", "A", "B", "C"], $ans[$correctIndex]);
+$popup = PopUp(["?", "A", "B", "C", "D"], $ans[$correctIndex]);
 
 ############################################
 $refreshCachedImages = 1;

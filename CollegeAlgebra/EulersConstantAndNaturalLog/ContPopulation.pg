@@ -1,0 +1,97 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Functions')
+## DBsection('Exponential')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "unionTables.pl",
+  "parserAssignment.pl",
+
+);
+
+
+TEXT(beginproblem());
+
+##############################################
+
+
+Context("Numeric");
+Context()->flags->set(reduceConstants=>0);
+Context()->variables->are(t=>'Real');
+
+$initial = random(15000,45000,1000);
+$r = random(3,8,0.1);
+ 
+
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+A population grows from an initial level of $initial at a continuous growth rate of $r$PERCENT per year.
+
+$PAR
+
+$BBOLD(a.)$EBOLD Find a formula for \(P(t)\), the poulation in year \(t\).  Your answer should be in the form $BBOLD P(t)=...$EBOLD.
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+
+
+$PAR
+
+$BBOLD(b.)$EBOLD By what percent does the population increase each year?
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}$PERCENT
+
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric")->variables->are(t=>"Real");
+parser::Assignment->Allow;
+parser::Assignment->Function("P");
+Context()->flags->set(tolType=>absolute,tolerance=>0.001);
+
+$ans1 = Formula("P(t)=$initial*e^($r/100*t)")->reduce;
+$ans2 = (2.718281828**($r/100)-1)*100;
+
+
+ANS( $ans1->cmp );
+
+ANS( Compute($ans2)->cmp );
+
+ENDDOCUMENT();

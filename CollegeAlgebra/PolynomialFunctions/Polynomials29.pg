@@ -1,0 +1,99 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Polynomial and Rational Functions')
+## DBsection('Polynomial Functions and their Graphs')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "unionTables.pl",
+  "contextFraction.pl",
+  "parserMultiAnswer.pl",
+
+);
+TEXT(beginproblem());
+
+
+
+##############################################
+
+
+Context("Numeric");
+
+$r[0] = random(-8,-2,1);
+for my $i (1,2)
+{
+$r[$i] = $r[$i-1]+random(2,4,1);
+}
+
+Context("Fraction");
+$c = Fraction(6,random(2,10,1));
+
+
+Context("Numeric");
+$p = Compute("(x-$r[0])*(x-$r[1])*(x-$r[2])")->reduce;
+Context()->flags->set(reduceConstants=>0);
+$p = Compute("$c*$p");
+
+$d = $p->D;
+
+for my $i (0..2)
+{
+$slope[$i] = $d->eval(x=>$r[$i]);
+}
+
+
+
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Suppose that \(f\) is given by \(f(x)=$p\). $PAR
+
+Find the slope of the curve \(y=$p\) at each of the zeros of \(f\). $BR
+
+\{ 
+BeginTable(border=>1, tex_border=>"1pt", spacing=>0, padding=>4).
+AlignedRow(["zero","slope"], align=>LEFT, separation=>0).
+AlignedRow(["$r[0]",ans_rule(10)], separation=>0).
+AlignedRow(["$r[1]",ans_rule(10)], separation=>0).
+AlignedRow(["$r[2]",ans_rule(10)], separation=>0).
+EndTable()
+\}
+END_TEXT
+
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 0;
+
+for my $i (0..2)
+{
+ANS( $slope[$i]->cmp() ); 
+}
+
+ENDDOCUMENT();

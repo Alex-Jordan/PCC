@@ -1,0 +1,89 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Functions')
+## DBsection('')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "parserAssignment.pl",
+
+);
+
+
+TEXT(beginproblem());
+
+##############################################
+
+
+Context("Numeric");
+
+
+$a = random(2,5,1);
+
+$b = random(6,10,1);
+
+$shift = $b-$a;
+
+$c = $a*$b;
+
+
+
+Context("LimitedNumeric");
+parser::Assignment->Allow;
+
+
+
+$ans = Formula("x=$a");
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Solve the equation.
+\[\log_{10}(x)+\log_{10}(x+$shift)=\log_{10}($c)\]
+
+
+$PAR
+
+$BCENTER
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+$ECENTER
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 1;
+
+
+
+
+
+ANS( $ans->cmp() );
+
+
+ENDDOCUMENT();

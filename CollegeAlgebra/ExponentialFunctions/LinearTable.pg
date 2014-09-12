@@ -1,0 +1,87 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Functions')
+## DBsection('Exponential')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "unionTables.pl",
+  "parserRadioButtons.pl",
+);
+
+
+TEXT(beginproblem());
+
+##############################################
+
+
+Context("Numeric");
+
+$b = random(0.12,3.12,0.2);
+
+@x = (1,2,4,5,8,9);
+
+for my $i (0..5) { 
+$fOfx[$i] = 58.23-($x[$i]*$b);
+};
+
+
+$radio = RadioButtons(
+  ["Yes, this could be an exponential function.","No, this couldn't be an exponential function."],
+  "No, this couldn't be an exponential function.", # correct answer
+  last => ["No, this couldn't be an exponential function."], # can be a list
+);
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Could the function whose values are in the table be an exponential function? $PAR
+
+\{ 
+BeginTable(border=>1, tex_border=>"1pt", spacing=>0, padding=>4).
+AlignedRow(["\(x\)","$x[0]","$x[1]","$x[2]","$x[3]","$x[4]","$x[5]"],align=>LEFT, separation=>0).
+AlignedRow(["\(f(x)\)","$fOfx[0]","$fOfx[1]","$fOfx[2]","$fOfx[3]","$fOfx[4]","$fOfx[5]"], separation=>0).
+EndTable()
+\}
+
+
+$PAR
+\{ $radio->buttons() \}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $radio->cmp() );
+
+
+ENDDOCUMENT();

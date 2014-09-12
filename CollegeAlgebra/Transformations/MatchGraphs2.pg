@@ -1,0 +1,113 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+
+
+##############################################
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"PGgraphmacros.pl",
+"PGunion.pl",
+"imageChoice.pl",
+"MathObjects.pl",
+);
+
+TEXT(beginproblem());
+$refreshCachedImages = 1;
+
+
+
+##############################################
+
+Context("Numeric");
+Context()->flags->set(reduceConstants=>0);
+
+$a = random(1.5,3,0.1);
+$b = $a + random(-1,1,2);
+$c = $a+$b;
+
+
+$f[0] = Formula("1/2x^2");
+$f[1] = Formula("1/2x^2-$a");
+$f[2] = Formula("1/2(x-$a)^2");
+$f[3] = Formula("1/2(x+$c)^2+$b");
+$f[4] = Formula("1/2(x+$c)^2-$a");
+$f[5] = Formula("1/2(x-$c)^2+$a");
+
+
+# make graphs for each
+@gr = ();
+foreach my $i (0..5) {
+    $gr[$i] = init_graph(-10,-10,10,10,'axes'=>[0,0],'grid'=>[1,1]);
+    add_functions($gr[$i], "$f[$i] for x in <-10,10>" . 
+  " using color:blue and weight:2");
+
+}
+Context()->texStrings;
+@QA = ();
+foreach my $i (0..5) { push( @QA, "\(y=$f[$i]\)",  $gr[$i] ); }
+Context()->normalStrings;
+
+$ml = new_image_match_list(
+  link => 1,                #  do not link to separate image
+  size => [200,200],        #  image size in pixels
+  tex_size => 450,          #  tex size in precent times 10
+  columns => 2,             #  number of columns
+  separation => 20,         #  separation between image columns 
+);
+
+$ml->rf_print_q(~~&pop_up_list_print_q); # use pop-up-lists
+$ml->ra_pop_up_list([ No_answer=>"?", A=>"A", B=>"B", C=>"C", D=>"D", E=>"E", F=>"F"] );
+
+$ml->qa(@QA);               #  set the questions and answers
+$ml->choose(6);             #  select 4 of them
+
+
+
+
+
+##############################################
+Context()->texStrings;
+
+BEGIN_TEXT
+\{
+ColumnTable(
+"Match the graphs with the corresponding formulas.".
+$ml->print_q() # no period!
+, # comma!
+$BCENTER.
+$ml->print_a().
+$BR.
+"(Click on a graph to enlarge it)".
+$ECENTER # no period!
+, # comma!
+indent => 0, separation => 30, valign => "TOP"
+)
+\}
+END_TEXT
+
+Context()->normalStrings;
+##############################################
+
+install_problem_grader(~~&std_problem_grader);
+$showPartialCorrectAnswers = 0;
+
+ANS(str_cmp($ml->ra_correct_ans));
+
+foreach my $i (0..3) {
+  $a[$i] = $ml->ra_correct_ans->[$i];
+}
+
+
+
+
+
+
+
+ENDDOCUMENT();
