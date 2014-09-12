@@ -1,0 +1,91 @@
+# WeBWorK problem written by Alex Jordan an Debbie Neft
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "unionTables.pl",
+  "contextPolynomialFactors.pl",
+  "contextLimitedPowers.pl",
+
+
+
+);
+
+
+
+##############################################
+
+
+Context("Numeric");
+
+$r1 = random(-9,-1,1);
+$r2 = random(1,9,1);
+
+$b = -($r1+$r2);
+$c = $r1*$r2;
+
+Context()->reductions->set("(-x)+y"=>0,"(-x)-y"=>0);
+
+$f = Compute("x^3+$b x^2+$c x")->reduce;
+
+
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Let \(f(x)=$f\).
+
+$PAR
+
+$BBOLD(a.)$EBOLD What are the zeros of \(f\)?  Give your answer as a comma-separated list.
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(15)\}
+
+$PAR
+
+$BBOLD(b)$EBOLD What is \(\displaystyle\lim_{x\rightarrow\infty}f(x)\)?  If you need to enter \(\infty\) or \(-\infty\), type $BBOLD INF$EBOLD.
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(5)\}
+
+$PAR 
+
+$BBOLD(c)$EBOLD What is \(\displaystyle\lim_{x\rightarrow-\infty}f(x)\)?  If you need to enter \(\infty\) or \(-\infty\), type $BBOLD INF$EBOLD.
+
+$PAR
+
+$SPACE $SPACE $SPACE \{ans_rule(5)\}
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 1;
+
+
+ANS( List("$r1,0,$r2")->cmp() ); 
+ANS( Compute("INF")->cmp() ); 
+ANS( Compute("-INF")->cmp() ); 
+
+
+ENDDOCUMENT();

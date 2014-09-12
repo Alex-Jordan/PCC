@@ -1,0 +1,12 @@
+
+openDate          = 06/23/2014 at 12:00am PDT
+dueDate           = 07/09/2014 at 10:00pm PDT
+answerDate        = 07/09/2014 at 10:00pm PDT
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH111/GenericMTH111HardcopyHeader.pg
+paperHeaderFile   = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
+description       = adding, subtracting, multiplying, and dividing functions; the domain of the result
+problemList       = 
+CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains10.pg, 1, -1 
+CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains20.pg, 1, -1 
+CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains30.pg, 1, -1 
+CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains40.pg, 1, -1 

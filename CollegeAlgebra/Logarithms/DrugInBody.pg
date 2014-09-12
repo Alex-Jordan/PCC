@@ -1,0 +1,98 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Functions')
+## DBsection('Exponential')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "parserNumberWithUnits.pl"
+
+);
+
+
+TEXT(beginproblem());
+
+##############################################
+
+
+Context("Numeric");
+
+
+
+$initial = random(20,30,1);
+
+$factor = random(0.81,0.95,0.02);
+
+$percent = 100*(1-$factor);
+
+$after10 = $initial*(($factor)**10);
+
+$timeTo1 = round(log(1/$initial)/log($factor)); 
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+The amount (in mg) of a drug in the body \(t\) hours after taking a pill is given by \[A(t) = $initial($factor)^t\]
+$PAR
+
+$SPACE $SPACE $SPACE $BBOLD(a)$EBOLD What is the initial dose given?
+$BR
+$SPACE $SPACE $SPACE \{ans_rule(20)\} 
+
+$PAR
+
+$SPACE $SPACE $SPACE $BBOLD(b)$EBOLD What percent of the drug leaves the body each hour?
+$BR
+$SPACE $SPACE $SPACE \{ans_rule(20)\} $PERCENT
+
+$PAR
+
+$SPACE $SPACE $SPACE $BBOLD(c)$EBOLD What is the amount left in the body after 10 hours?
+$BR
+$SPACE $SPACE $SPACE \{ans_rule(20)\} 
+
+$PAR
+
+$SPACE $SPACE $SPACE $BBOLD(d)$EBOLD After how many hours (to the nearest whole number) is there less than 1 mg left in the body?  
+$BR
+$SPACE $SPACE $SPACE \{ans_rule(20)\} 
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers=1;
+
+
+ANS( NumberWithUnits($initial, "mg") -> cmp() );
+ANS( Compute("$percent")->cmp() );
+ANS( NumberWithUnits($after10, "mg") -> cmp() ); 
+ANS( Compute("$timeTo1")->cmp() );
+
+
+
+ENDDOCUMENT();

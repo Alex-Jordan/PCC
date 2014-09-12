@@ -1,0 +1,82 @@
+## DESCRIPTION
+## Algebra
+## ENDDESCRIPTION
+
+
+## Date('')
+## Author('')
+## Institution('ASU')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+
+DOCUMENT();        # This should be the first executable line in the problem.
+
+loadMacros(
+"PG.pl",
+"PGbasicmacros.pl",
+"PGchoicemacros.pl",
+"PGanswermacros.pl",
+"PGauxiliaryFunctions.pl"
+);
+
+install_problem_grader(~~&std_problem_grader);
+#TEXT(&beginproblem);
+$showPartialCredit = 1;
+$showPartialCredit = 1;
+
+
+TEXT(EV2(<<EOT));
+
+
+For each function below enter the letter $BBOLD E$EBOLD if the function is
+even, the letter $BBOLD O$EBOLD if it's odd, and the
+letter $BBOLD N$EBOLD if it's neither even nor odd.
+
+
+$BR   \{ ans_rule(4) \} \(f(x) = x^4+x^2.\)
+EOT
+&ANS(str_cmp("E"));
+
+TEXT(EV2(<<EOT));
+$BR   \{ ans_rule(4) \} \(f(x) = x^5+x^3. \)
+EOT
+&ANS(str_cmp("O"));
+
+
+TEXT(EV2(<<EOT));
+$BR   \{ ans_rule(4) \}  \(f(x) = x^4 + x^5.\)
+EOT
+&ANS(str_cmp("N"));
+
+TEXT(EV2(<<EOT));
+$BR   \{ ans_rule(4) \}  \(f(x) = |x|.\)
+EOT
+&ANS(str_cmp("E"));
+
+TEXT(EV2(<<EOT));
+$BR   \{ ans_rule(4) \}  \(f(x) = |x|^3.\)
+EOT
+&ANS(str_cmp("E"));
+
+TEXT(EV2(<<EOT));
+$BR   \{ ans_rule(4) \}  \(f(x) = \frac{x^2}{x^2+1}.\)
+EOT
+&ANS(str_cmp("E"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.
+

@@ -1,0 +1,87 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Functions')
+## DBsection('')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "parserAssignment.pl",
+
+);
+
+
+TEXT(beginproblem());
+
+##############################################
+
+
+Context("Numeric");
+
+$k = random(2,8,1);
+$a = random(10,20,1);
+
+$b = random(2,9,1);
+
+
+$ans = (1-ln($a-$b))/$k;
+
+
+Context("LimitedNumeric");
+parser::Assignment->Allow;
+Context()->variables->add(t=>'Real');
+
+
+$ans = Formula("t=$ans");
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Solve the equation.
+\[$a\textrm{e}^{$k t} - \textrm{e} = $b\textrm{e}^{$k t}\]
+
+
+$PAR
+
+$BCENTER
+$SPACE $SPACE $SPACE \{ans_rule(10)\}
+$ECENTER
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 1;
+
+
+
+
+
+ANS( $ans->cmp() );
+
+
+ENDDOCUMENT();

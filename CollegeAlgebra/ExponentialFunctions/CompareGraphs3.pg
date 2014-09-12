@@ -1,0 +1,137 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Functions')
+## DBsection('Exponential')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGgraphmacros.pl",
+  "parserPopUp.pl",
+);
+
+
+TEXT(beginproblem());
+
+##############################################
+
+
+Context("Numeric");
+Context()->flags->set(reduceConstants=>0);
+
+
+$f[0] = Formula("2*2^x");
+$f[1] = Formula("2*1.5^x");
+$f[2] = Formula("3*0.8^x");
+$f[3] = Formula("4*0.3^x");
+
+
+
+$gr = init_graph(-3,-1,3,5, axes=>[0,0], grid=>[6,6],size=>[400,400]);
+
+add_functions($gr, "$f[0] for x in <-3,3> " .
+    "using color:blue and weight:2");
+add_functions($gr, "$f[1] for x in <-3,3> " .
+    "using color:red and weight:2");
+add_functions($gr, "$f[2] for x in <-3,3> " .
+    "using color:green and weight:2");
+add_functions($gr, "$f[3] for x in <-3,3> " .
+    "using color:black and weight:2");
+
+ 
+$gr->lb( new Label(0.75,4,'A','blue','center','middle'));
+$gr->lb( new Label(1.75,4.5,'B','red','center','middle'));
+$gr->lb( new Label(2.25,1.9,'C','green','center','middle'));
+$gr->lb( new Label(2.75,0.25,'D','black','center','middle'));
+
+
+$popupA = PopUp(
+  ["?","A","B","C","D"],
+  "A",
+);
+$popupB = PopUp(
+  ["?","A","B","C","D"],
+  "B",
+);
+$popupC = PopUp(
+  ["?","A","B","C","D"],
+  "C",
+);
+$popupD = PopUp(
+  ["?","A","B","C","D"],
+  "D",
+);
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Here are the graphs of four functions.  All of the equations for \(A\), \(B\), \(C\), and \(D\) can be written in the form \(y=ab^x\).
+$PAR
+
+\{ image( insertGraph($gr), width=>400, 
+    height=>400, tex_size=>800 ) \}
+
+
+$PAR
+
+Which function has the largest value for \(a\)?
+$BR \{ $popupD->menu() \}
+
+$PAR
+
+Which two functions have the same value for \(a\)?
+$BR $SPACE $SPACE $SPACE\{ans_rule(10)\}
+$BR (Enter them as a list, with a comma separating them.)
+
+$PAR
+
+Which function has the lowest value for \(b\)?
+$BR \{ $popupD->menu() \}
+
+$PAR
+
+Which function has the highest value for \(b\)?
+$BR \{ $popupA->menu() \}
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 1;
+
+
+
+ANS( $popupD->cmp() );
+
+
+Context()->strings->add(A=>{},B=>{},C=>{},D=>{});
+ANS( List("A,B")->cmp);
+
+ANS( $popupD->cmp() );
+
+ANS( $popupA->cmp() );
+
+ENDDOCUMENT();

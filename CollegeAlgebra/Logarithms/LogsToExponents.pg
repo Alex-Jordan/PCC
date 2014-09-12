@@ -1,0 +1,93 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Functions')
+## DBsection('Exponential')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "unionTables.pl",
+  "unorderedAnswer.pl",
+);
+
+
+TEXT(beginproblem());
+
+##############################################
+
+
+Context("Numeric");
+Context()->flags->set(reduceConstants=>0);
+
+$a = random(18,92);
+$b = round(log10($a)*1000)/1000;
+
+
+$ans = Formula("10^x");
+
+
+                                   
+Context()->operators->undefine('*','+','-','/');        
+Context()->flags->set(formatStudentAnswer=>'parsed');   
+Context()->flags->set(tolerance=>0); 
+$ans = $ans->substitute(x=>$b);
+$ans = Compute($ans);
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+Rewrite the statement using exponents instead of logarithms.
+
+$PAR
+
+\{ 
+BeginTable(border=>0, tex_border=>"0pt", spacing=>0, padding=>4).
+AlignedRow(["\(\log $a\)","\(=\)","\($b\)"], align=>LEFT, separation=>0).
+AlignedRow([ans_rule(6),"\(=\)",ans_rule(6)], align=>LEFT, separation=>0).
+
+EndTable()
+\}
+
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 1;
+
+Context()->flags->set(formatStudentAnswers=>parsed);
+
+UNORDERED_ANS( 
+Compute($a)->cmp(), 
+$ans->cmp(checker=>sub {
+my ( $correct, $student, $ansHash ) = @_;
+return $correct eq $student;
+}), 
+);
+
+
+ENDDOCUMENT();

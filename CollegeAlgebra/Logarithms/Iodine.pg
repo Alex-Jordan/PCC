@@ -1,0 +1,101 @@
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Functions')
+## DBsection('')
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author('Alex Jordan')
+## Institution('PCC')
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "parserAssignment.pl",
+  "parserNumberWithUnits.pl",
+);
+
+
+TEXT(beginproblem());
+
+##############################################
+
+
+Context("Numeric");
+Context()->variables->are(t=>'Real');
+parser::Assignment->Allow;
+parser::Assignment->Function("A");
+
+
+$halfLife = 13;
+$halfLifeHrs = NumberWithUnits("$halfLife", "hr");
+
+$a = 50;
+$amg = NumberWithUnits("$a","mg");
+
+
+$k = ln(2)/$halfLife;
+
+$A = Formula("A(t)=$a*e^(-$k t)");
+
+$final = random(1,15,1);
+$finalmg = NumberWithUnits("$final","mg");
+
+
+$ans = ln($final/$a)/(-$k);
+$ans = NumberWithUnits("$ans","hr");
+
+
+
+
+##############################################
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+The half-life of Iodine-123 is about \($halfLifeHrs\).  You begin with \($amg\) of Iodine-123.
+
+$PAR
+
+$BBOLD(a.)$EBOLD Find a formula for \(A\), the amount of Iodine-123 (in mg) remaining after \(t\) hours. Your answer should be in the form $BBOLD A(t)=...$EBOLD. $PAR 
+
+$SPACE $SPACE $SPACE \{ans_rule(20)\}
+
+$PAR
+$BBOLD(b.)$EBOLD How long until you only have \($finalmg\)? Use $BBOLD hr$EBOLD for hours.$PAR 
+
+$SPACE $SPACE $SPACE \{ans_rule(10)\}
+
+
+
+END_TEXT
+
+Context()->normalStrings;
+
+##############################################
+
+$showPartialCorrectAnswers = 1;
+
+
+
+ANS( $A->cmp() );
+
+ANS( $ans->cmp() );
+
+
+
+
+ENDDOCUMENT();
