@@ -82,9 +82,10 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U3L3MultiplyFractions.pdf
 !,"Multiply Fractions Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=rxISl5boIuE
-!,"Multiply Fractions Video Lecture", "TARGET='_blank'") \}.
+\{ scalableiframe("//
+www.youtube.com/embed/rxISl5boIuE
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

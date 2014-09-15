@@ -61,17 +61,20 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U5L3_RateAndStartingValueWordProblems.pdf
 !,"lecture notes on Rate and Starting Value word problems", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=qs-5b2IBvB8#t=11m23s
-!,"the first video lecture on Rate and Starting Value word problems (watch from 11:23 till 16:17)", "TARGET='_blank'") \} 
+First video lecture on Rate and Starting Value word problems (watch from 11:23 till 16:17)
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=cxGw0C9kXek
-!,"the second video lecture on Rate and Starting Value word problems", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/qs-5b2IBvB8?start=683
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=qPx7i1jwXX4
-!,"the third video lecture on Rate and Starting Value word problems", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/cxGw0C9kXek
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/qPx7i1jwXX4
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

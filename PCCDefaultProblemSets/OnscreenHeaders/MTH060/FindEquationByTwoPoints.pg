@@ -61,17 +61,18 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L7_GivenTwoPointsFindEquation.pdf
 !,"lecture notes on finding equation by two points", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=U1oZU8Xzoik
-!,"the first video lecture on finding equation by two points", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/U1oZU8Xzoik
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=Ltapa5XJAkI
-!,"the second video lecture on finding equation by two points", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/Ltapa5XJAkI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=gvwKv6F69F0
-!,"the third video lecture on finding equation by two points", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/gvwKv6F69F0
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 EOT

@@ -61,9 +61,12 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U3L1_AddAndSubtractPolynomials.pdf
 !,"lecture notes on adding/subtracting polynomials", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=ZN-IzpUR8WQ
-!,"a video lecture on adding/subtracting polynomials", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/ZN-IzpUR8WQ
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
+
 EOT
 
 ####################################################

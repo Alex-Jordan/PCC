@@ -59,9 +59,14 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!http://spot.pcc.edu/~cyao/MTH60Docs/U2L2_AddSubtractFractions.pdf!,"lecture notes on adding/subtracting fractions", "TARGET='_blank'") \}
 $PAR
-\{ htmlLink(qq!http://www.youtube.com/watch?v=89eHMYsw8MU!,"the first video lecture on adding fractions", "TARGET='_blank'") \}
+
+\{ scalableiframe("//
+www.youtube.com/embed/89eHMYsw8MU
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!http://www.youtube.com/watch?v=GgWnw4L9POA!,"the second video lecture on adding fractions", "TARGET='_blank'") \}
+\{ scalableiframe("//
+www.youtube.com/embed/GgWnw4L9POA
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 EOT

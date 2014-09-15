@@ -82,24 +82,36 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U3L1FractionDefinition.pdf
 !,"Fraction Definition and Equivalent Fractions Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=cmBdd_GmFh4
-!,"Definition of Fractions Video Lecture", "TARGET='_blank'") \}.
+Definition of Fractions Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/cmBdd_GmFh4
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=eAzfN0o3CgY
-!,"Reduce Fractions Video Lecture 1", "TARGET='_blank'") \}.
+Reduce Fractions Video Lecture 1
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/eAzfN0o3CgY
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=sznPsgkHEyA
-!,"Reduce Fractions Video Lecture 2", "TARGET='_blank'") \}.
+Reduce Fractions Video Lecture 2
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/sznPsgkHEyA
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=nt-83HOnQHU
-!,"Compare Fractions Video Lecture", "TARGET='_blank'") \}.
+Compare Fractions Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/nt-83HOnQHU
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

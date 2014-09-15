@@ -61,11 +61,10 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U7L6_ParabolaIntercepts.pdf
 !,"lecture notes on parabola intercepts", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=Ep2Tdu6Xn5E
-!,"a video lecture on parabola intercepts", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/Ep2Tdu6Xn5E
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-
 
 EOT
 

@@ -61,17 +61,18 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L4_OrderOfOperations.pdf
 !,"lecture notes on order of operations", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=vDaIKB19TvY
-!,"", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/vDaIKB19TvY
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=si_OegYqXDo
-!,"a video lecture on order of operations", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/si_OegYqXDo
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=OlVvUd1XVVg&list=TLS6VNnm8sYOw
-!,"a video lecture on order of operations involving absolute values", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/OlVvUd1XVVg
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 EOT

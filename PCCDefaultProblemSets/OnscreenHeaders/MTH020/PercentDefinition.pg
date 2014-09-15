@@ -82,29 +82,45 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U6L1PercentDefinition.pdf
 !,"Introduction to Percent Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=xB7d4SqI25M
-!,"Introduction to Percent Video Lecture", "TARGET='_blank'") \}.
+Introduction to Percent Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/xB7d4SqI25M
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=KBtjkblzbrw
-!,"Change Percent to Decimal Video Lecture", "TARGET='_blank'") \}.
+Change Percent to Decimal Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/KBtjkblzbrw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=17sdYa0y1wo
-!,"Change Percent to Fraction Video Lecture", "TARGET='_blank'") \}.
+Change Percent to Fraction Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/17sdYa0y1wo
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=eLBMph6iSiY
-!,"Change Decimals/Fractions to Percent Video Lecture", "TARGET='_blank'") \}.
+Change Decimals/Fractions to Percent Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/eLBMph6iSiY
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=Hkwfibux88s
-!,"Percent, Fraction and Decimal Conversions Video Lecture", "TARGET='_blank'") \}.
+Percent, Fraction and Decimal Conversions Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/Hkwfibux88s
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

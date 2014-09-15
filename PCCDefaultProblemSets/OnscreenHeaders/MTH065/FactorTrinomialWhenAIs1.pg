@@ -61,17 +61,17 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U4L3_FactorTrinomialsPart1.pdf
 !,"lecture notes on factoring trinomials with leading coefficient 1", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=06RdArZXthg
-!,"the first video lecture on factoring trinomials with leading coefficient 1", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/06RdArZXthg
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=BQaOVcJ7KmE
-!,"the second video lecture on factoring trinomials with leading coefficient 1", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/BQaOVcJ7KmE
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=BG53n9Ef4fM
-!,"the third video lecture on factoring trinomials with leading coefficient 1", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/BG53n9Ef4fM
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 

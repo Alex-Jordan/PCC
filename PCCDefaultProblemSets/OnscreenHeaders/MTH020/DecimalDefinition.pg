@@ -82,19 +82,29 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U4L1DecimalDefinition.pdf
 !,"Introduction to Decimals Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=oCnZ6ZpafNg
-!,"Introduction to Decimals Video Lecture", "TARGET='_blank'") \}.
+Introduction to Decimals Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/oCnZ6ZpafNg
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=VmaY9mNy4ak
-!,"Compare Decimals Video Lecture", "TARGET='_blank'") \}.
+Compare Decimals Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/VmaY9mNy4ak
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=g8hRCisK8to
-!,"Round Decimals Video Lecture", "TARGET='_blank'") \}.
+Round Decimals Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/g8hRCisK8to
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

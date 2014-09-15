@@ -61,9 +61,11 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U8L1_SolveProportions.pdf
 !,"lecture notes on solving proportions", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=l_s3t5zgnOs
-!,"a video lecture on solving proportions", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/l_s3t5zgnOs
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

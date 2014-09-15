@@ -61,14 +61,16 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L5_EvaluateExpressions.pdf
 !,"lecture notes on evaluating expressions", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=Sa6bBkztsoo
-!,"the first video lecture on evaluating expressions", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/Sa6bBkztsoo
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=7vt6IerxYdw
-!,"the second video lecture on evaluating expressions", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/7vt6IerxYdw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
+
 
 EOT
 

@@ -61,25 +61,36 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L2_GraphLineByTable.pdf
 !,"lecture notes on graphing a line by table", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=8OUvFd-jMGY
-!,"a video lecture on graphing a line by table", "TARGET='_blank'") \} 
+
+Video lecture on graphing a line by table
 $PAR
+\{ scalableiframe("//
+www.youtube.com/embed/8OUvFd-jMGY
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L2_VerticalAndHorizontalLines.pdf
 !,"lecture notes on vertical and horizontal lines", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=IqARktjSSs0
-!,"a video lecture on vertical and horizontal lines", "TARGET='_blank'") \} 
+
+Video lecture on vertical and horizontal lines
 $PAR
+\{ scalableiframe("//
+www.youtube.com/embed/8OUvFd-jMGY
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L2_IsPointOnLine.pdf
 !,"lecture notes on whether a point is on a line", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=l2veOwP9xr4#t=4m50s
-!,"a video lecture on whether a point is on a line. (start from 4:50)", "TARGET='_blank'") \} 
+Video lecture on whether a point is on a line (start from 4:50)
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/l2veOwP9xr4?start=290
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

@@ -61,9 +61,10 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L2_AbsoluteValue.pdf
 !,"lecture notes on absolute value", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=L8fGfc7Wcco
-!,"a video lecture on absolute value", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/L8fGfc7Wcco
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 EOT

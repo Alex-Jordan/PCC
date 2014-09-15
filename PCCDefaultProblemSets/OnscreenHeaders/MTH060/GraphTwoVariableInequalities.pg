@@ -61,9 +61,11 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L10_GraphTwoVariableInequalities.pdf
 !,"lecture notes on graphing two-variable inequalities", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=_E0GKBVkins
-!,"a video lecture on graphing two-variable inequalities", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/_E0GKBVkins
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

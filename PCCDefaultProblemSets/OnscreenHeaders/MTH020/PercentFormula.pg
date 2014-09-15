@@ -82,29 +82,44 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U6L2PercentFormula.pdf
 !,"Percent Formula Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=dKVOGoHMsfc
-!,"Type I Percent Formula Problems Video Lecture", "TARGET='_blank'") \}.
+Type I Percent Formula Problems Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/dKVOGoHMsfc
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=N4kDzoQOngY
-!,"Type II Percent Formula Problems Video Lecture", "TARGET='_blank'") \}.
+Type II Percent Formula Problems Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/N4kDzoQOngY
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=DAikW24_O0A
-!,"Type III Percent Formula Problems Video Lecture", "TARGET='_blank'") \}.
+Type III Percent Formula Problems Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/DAikW24_O0A
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=T8dAK1RDexI
-!,"Solve Percent Problems with Proportion Video Lecture 1", "TARGET='_blank'") \}.
+Solve Percent Problems with Proportion Video Lecture 1
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/T8dAK1RDexI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=vuSMdL0Mke4
-!,"Solve Percent Problems with Proportion Video Lecture 2", "TARGET='_blank'") \}.
+Solve Percent Problems with Proportion Video Lecture 2
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/vuSMdL0Mke4
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

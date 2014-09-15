@@ -82,14 +82,20 @@ http://spot.pcc.edu/~cyao/MTH20DocsU4L5SquareRoot.pdf
 !,"Square Root Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=yVUtSYPYM5M
-!,"Introduction to Square Root Video Lecture", "TARGET='_blank'") \}.
+Introduction to Square Root Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/yVUtSYPYM5M
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=CCd1HrPizmw
-!,"Evaluate Square Root Video Lecture", "TARGET='_blank'") \}.
+Evaluate Square Root Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/CCd1HrPizmw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

@@ -61,9 +61,10 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L3_IntroductionToExponents.pdf
 !,"lecture notes on exponent basics", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=AneubQTnoL4
-!,"a video lecture on exponent basics", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/AneubQTnoL4
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 EOT

@@ -65,21 +65,21 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U2L1_UseMultipleExponentRules.pdf
 !,"lecture notes on using exponent rules", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=5oJobyGnhDk
-!,"the first video lecture on exponent rules (watch till 23:00)", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/5oJobyGnhDk
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=oHNe8AK0E9M
-!,"the second video lecture on exponent rules", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/oHNe8AK0E9M
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=heUUBzvYA1o
-!,"the third video lecture on exponent rules", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/heUUBzvYA1o
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=CrJEOQh5UXg
-!,"the fourth video lecture on exponent rules", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/CrJEOQh5UXg
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 EOT

@@ -82,19 +82,20 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U6L4PercentOfIncreaseDecrease.pdf
 !,"Percent of Increase/Decrease Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=KVfRWj5CU5E
-!,"Percent of Increase/Decrease Video Lecture 1", "TARGET='_blank'") \}.
-
+\{ scalableiframe("//
+www.youtube.com/embed/KVfRWj5CU5E
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=LP9UJmBxAnw
-!,"Percent of Increase/Decrease Video Lecture 2", "TARGET='_blank'") \}.
-
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=wzLUsEU_fvE
-!,"Percent of Increase/Decrease Video Lecture 3", "TARGET='_blank'") \}.
+\{ scalableiframe("//
+www.youtube.com/embed/LP9UJmBxAnw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/wzLUsEU_fvE
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

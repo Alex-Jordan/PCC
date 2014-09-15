@@ -59,12 +59,22 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!http://spot.pcc.edu/~cyao/MTH60Docs/U2L1_MixedNumbersAndEquivalentFractions.pdf!,"lecture notes on mixed numbers and how to reduce fractions", "TARGET='_blank'") \}
 $PAR
-\{ htmlLink(qq!http://www.youtube.com/watch?v=87DiYdRXZDI!,"a video lecture on fraction basics", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/87DiYdRXZDI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!http://www.youtube.com/watch?v=HkELb2btWQQ!,"a video lecture on mixed numbers", "TARGET='_blank'") \}
+
+\{ scalableiframe("//
+www.youtube.com/embed/HkELb2btWQQ
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!http://www.youtube.com/watch?v=eAzfN0o3CgY!,"a video lecture on equivalent fractions", "TARGET='_blank'") \}
+
+\{ scalableiframe("//
+www.youtube.com/embed/eAzfN0o3CgY
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
+
 
 EOT
 

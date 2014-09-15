@@ -61,14 +61,15 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U3L6_SimplifyExpressions.pdf
 !,"lecture notes on simplifying expressions", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=xqLDbfbL7pI
-!,"the first video lecture on simplifying expressions", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/xqLDbfbL7pI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=YURDKBg9-Aw
-!,"the second video lecture on simplifying expressions", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/YURDKBg9-Aw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
+
 
 EOT
 

@@ -61,19 +61,18 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U4L5_FactorSpecialPolynomials.pdf
 !,"lecture notes on factoring special polynomials", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=LdOgluTLBxQ
-!,"the first video lecture on factoring special polynomials", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/LdOgluTLBxQ
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=Fwqh9vq0sq8
-!,"the second video lecture on factoring special polynomials", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/Fwqh9vq0sq8
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=icm6zjdOYek
-!,"the third video lecture on factoring special polynomials", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/icm6zjdOYek
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-
 
 EOT
 

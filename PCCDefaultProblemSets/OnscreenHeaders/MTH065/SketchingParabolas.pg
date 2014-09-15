@@ -61,15 +61,14 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U7L7_SketchingParabolas.pdf
 !,"lecture notes on sketching parabolas", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=BXkLUY5JxAE
-!,"the first video lecture on sketching parabolas", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/BXkLUY5JxAE
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=9HE1kWHMTEI
-!,"the second video lecture on sketching parabolas", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/9HE1kWHMTEI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-
 
 EOT
 

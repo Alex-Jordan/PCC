@@ -82,14 +82,20 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U5L1RateAndRatio.pdf
 !,"Rate and Ratio Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=MTzTqvzWzm8
-!,"Ratio Video Lecture", "TARGET='_blank'") \}.
+Ratio Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/MTzTqvzWzm8
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=8Ft5iHhauJ0
-!,"Rate and Ratio Video Lecture", "TARGET='_blank'") \}.
+Rate and Ratio Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/8Ft5iHhauJ0
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

@@ -61,21 +61,25 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L5_StandardFormEquation.pdf/
 !,"lecture notes on standard-form equations", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=V6Xynlqc_tc
-!,"the first video lecture on standard-form equations", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/V6Xynlqc_tc
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=dZT203NHvaM
-!,"the second video lecture on standard-form equations", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/dZT203NHvaM
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
+
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L5_GraphLineByIntercepts.pdf
 !,"lecture notes on graphing a line by intercepts", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=0o4gps38dBU
-!,"a video lecture on on graphing a line by intercepts", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/0o4gps38dBU
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

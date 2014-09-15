@@ -61,21 +61,26 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U7L4_MixtureProblems.pdf
 !,"lecture notes on mixture word problems", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=OBVGQt1Eeug
-!,"the first video lecture on mixture  word problems", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/OBVGQt1Eeug
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=JVlfQEhzLMM
-!,"the second video lecture on mixture  word problems", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/JVlfQEhzLMM
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=QKiN9K2DXBI
-!,"the third video lecture on mixture  word problems", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/QKiN9K2DXBI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=o1XpzeUpcRI
-!,"the fourth video lecture on mixture  word problems", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/o1XpzeUpcRI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

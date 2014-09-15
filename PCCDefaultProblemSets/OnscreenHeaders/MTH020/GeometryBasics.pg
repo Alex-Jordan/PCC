@@ -82,9 +82,10 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U1L4GeometryBasics.pdf
 !,"Geometry Basics Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=kqqmJiJez6o
-!,"Geometry Basics Video Lecture", "TARGET='_blank'") \}.
+\{ scalableiframe("//
+www.youtube.com/embed/kqqmJiJez6o
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

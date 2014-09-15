@@ -61,9 +61,11 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U5L2_GivenSumFindPartsWordProblems.pdf
 !,"lecture notes on 'Given Sum, Find Parts' word problems", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=GQhGGZc772E
-!,"a video lecture on 'Given Sum, Find Parts' word problems", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/GQhGGZc772E
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

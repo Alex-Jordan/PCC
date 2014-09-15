@@ -82,9 +82,10 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U3L5MixedNumberDefinition.pdf
 !,"Introduction to Mixed Numbers Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=HkELb2btWQQ
-!,"Introduction to Mixed Numbers Video Lecture", "TARGET='_blank'") \}.
+\{ scalableiframe("//
+www.youtube.com/embed/HkELb2btWQQ
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

@@ -61,10 +61,12 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L6_SummaryOfGraphingLines.pdf
 !,"lecture notes on summary of graphing lines", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=hs7BxU2strY
-!,"a video lecture on summary of graphing lines", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/hs7BxU2strY
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
+
 
 EOT
 
