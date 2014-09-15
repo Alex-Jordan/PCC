@@ -80,6 +80,17 @@ www.khanacademy.org/embed/Dq0xFgQB9qo
 ", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
+\{ htmlLink(qq!
+https://www.khanacademy.org/math/algebra/solving-linear-equations-and-inequalities/basic-equation-practice/v/number-of-solutions-to-linear-equations
+!,"the second video lecture on solving linear equations with special solutions", "TARGET='_blank'") \} 
+$PAR
+\{ htmlLink(qq!
+https://www.khanacademy.org/math/algebra/solving-linear-equations-and-inequalities/basic-equation-practice/v/number-of-solutions-to-linear-equations-ex-2
+!,"the third video lecture on solving linear equations with special solutions", "TARGET='_blank'") \} 
+$PAR
+\{ htmlLink(qq!
+https://www.khanacademy.org/math/algebra/solving-linear-equations-and-inequalities/basic-equation-practice/v/number-of-solutions-to-linear-equations-ex-3
+!,"the fourth video lecture of a summary of solving linear equations with special solutions", "TARGET='_blank'") \} 
 
 EOT
 
