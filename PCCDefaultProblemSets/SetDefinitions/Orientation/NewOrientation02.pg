@@ -47,7 +47,7 @@ BEGIN_PGML
 ## Basic Operations  ##
 
 The four basic arithmetic operations are: 
-    [``+, -, \times, \div``]
+    [`+, -, \times, \div`]
 
 Each of these has a corresponding character on the keyboard. The first two are found in the upper right area of most keyboards. For [`\times`] (which is also often denoted with [`\cdot`] on paper), we use the asterisk character:
 :       \*
@@ -83,7 +83,9 @@ Another common basic operation is the square root, which is denoted with [`\sqrt
 :       sqrt
 and parentheses, as in:
 :       sqrt(x)
- for [`\sqrt{x}`]. Try entering the following:
+for [`\sqrt{x}`]. 
+
+Try entering the following:
 
     [::[$h]=::] [_________]{$h}
 
