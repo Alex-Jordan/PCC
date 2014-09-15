@@ -61,25 +61,26 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U3L2_MultiplyPolynomials.pdf
 !,"lecture notes on multiplying polynomials", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=7eifTvsbU38
-!,"the first video lecture on multiplying polynomials", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/7eifTvsbU38
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=iQ6NaQOECTA
-!,"the second video lecture on multiplying polynomials", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/iQ6NaQOECTA
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
+
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U3L2_SpecialProductOfPolynomials.pdf
 !,"lecture notes on special product of polynomials", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=AecdR8wpIWM
-!,"the first video lecture on special product of polynomials", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/AecdR8wpIWM
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=bRonwACbTnc
-!,"the second video lecture on special product of polynomials", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/bRonwACbTnc
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 

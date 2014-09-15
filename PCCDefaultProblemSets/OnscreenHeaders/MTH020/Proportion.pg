@@ -82,19 +82,28 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U5L2Proportion.pdf
 !,"Proportion Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=EdM-jYtAtAM
-!,"Solve Proportions Video Lecture", "TARGET='_blank'") \}.
+Solve Proportions Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/EdM-jYtAtAM
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=89H0Vsn7oC4
-!,"Solve Proportions Word Problem Video Lecture 1", "TARGET='_blank'") \}.
+Solve Proportions Word Problem Video Lecture 1
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/89H0Vsn7oC4
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=KaxpT_R9a-c
-!,"Solve Proportions Word Problem Video Lecture 2", "TARGET='_blank'") \}.
+Solve Proportions Word Problem Video Lecture 2
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/KaxpT_R9a-c
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

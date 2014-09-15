@@ -82,24 +82,36 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U1L3Division.pdf
 !,"Division Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=MTzTqvzWzm8
-!,"Division Video Lecture 1", "TARGET='_blank'") \}.
+Division Video Lecture 1
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/MTzTqvzWzm8
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=8Ft5iHhauJ0
-!,"Division Video Lecture 2", "TARGET='_blank'") \}.
+Division Video Lecture 2
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/8Ft5iHhauJ0
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=fjAbh_LCxcI
-!,"Remainder Video Lecture", "TARGET='_blank'") \}.
+Remainder Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/fjAbh_LCxcI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=UjRob36yuJI
-!,"Divide by Zero Video Lecture", "TARGET='_blank'") \}.
+Divide by Zero Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/UjRob36yuJI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

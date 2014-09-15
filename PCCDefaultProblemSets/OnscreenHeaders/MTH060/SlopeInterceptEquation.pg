@@ -61,21 +61,25 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L4_SlopeInterceptFormEquations.pdf
 !,"lecture notes on slope-intercept equations", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=U6x-L49_P0k
-!,"the first video lecture on slope-intercept equations", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/U6x-L49_P0k
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=OxAlSHlEpwk#t=07m08s
-!,"the second video lecture on slope-intercept equations (watch from 7:08 to 13:50)", "TARGET='_blank'") \} 
+Second video lecture on slope-intercept equations (watch from 7:08 to 13:50)
 $PAR
+\{ scalableiframe("//
+www.youtube.com/embed/OxAlSHlEpwk?start=428
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L4_GraphWithPointAndSlope.pdf
 !,"lecture notes on graphing a line by slope and y-intercept", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=DBr4o6SVE2k
-!,"a video lecture on on graphing a line by slope and y-intercept", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/DBr4o6SVE2k
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

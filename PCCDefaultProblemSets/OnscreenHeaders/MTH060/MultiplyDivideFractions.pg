@@ -61,18 +61,28 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U2L3_MultiplyDivideFractions.pdf
 !,"lecture notes on multiplying/dividing fractions", "TARGET='_blank'") \}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=rxISl5boIuE
-!,"a video lecture on multiplying fractions", "TARGET='_blank'") \} 
+
+Video lecture on multiplying fractions
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=zQMU-lsMb3U
-!,"a video lecture on dividing fractions", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/rxISl5boIuE
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=8zWZnNpEFY4
-!,"", "TARGET='_blank'") \} 
+
+Video lecture on dividing fractions
 $PAR
+\{ scalableiframe("//
+www.youtube.com/embed/zQMU-lsMb3U
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
+Video lecture on multiplying and dividing fractions
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/8zWZnNpEFY4
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
 
 EOT
 

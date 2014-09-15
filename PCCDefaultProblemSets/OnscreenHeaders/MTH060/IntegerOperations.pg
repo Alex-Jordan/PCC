@@ -61,7 +61,10 @@ $PAR
 $PAR
 \{ htmlLink(qq!http://spot.pcc.edu/~cyao/MTH60Docs/U1L1_AddSubtractIntegers.pdf!,"lecture notes on how to add/subtract integers", "TARGET='_blank'") \}
 $PAR
-\{ htmlLink(qq!http://www.youtube.com/watch?v=JvoAnytWm7A!,"video lecture on integer operations", "TARGET='_blank'") \}
+
+\{ scalableiframe("//
+www.youtube.com/embed/JvoAnytWm7A
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 EOT

@@ -61,21 +61,34 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U4L1_SolveOneStepLinearEquations.pdf
 !,"lecture notes on solving one-step equations", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=BmzsG2LMUnI
-!,"a video lecture on how to check solutions", "TARGET='_blank'") \} 
+Video lecture on how to check solutions
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=g6jeSuHYhyY
-!,"a video lecture on solving one-step equations", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/BmzsG2LMUnI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=jWlEyVkqw_Q
-!,"the first video lecture on solving one-step equations with fractions", "TARGET='_blank'") \} 
+
+Video lecture on solving one-step equations
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=LWV7bjoh4rQ
-!,"the second video lecture on solving one-step equations with fractions", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/g6jeSuHYhyY
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
+First video lecture on solving one-step equations with fractions
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/jWlEyVkqw_Q
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
+Second video lecture on solving one-step equations with fractions
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/LWV7bjoh4rQ
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
 
 EOT
 

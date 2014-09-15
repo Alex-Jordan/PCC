@@ -61,9 +61,10 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U5L4_RationalizeDenominator.pdf
 !,"lecture notes on rationalizing denominator", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=mYiN8KzQ5n8
-!,"a video lecture on rationalizing denominator.", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/mYiN8KzQ5n8
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 
 EOT

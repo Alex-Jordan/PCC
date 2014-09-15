@@ -61,17 +61,18 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U1L2_SolveSystemByGraphing.pdf
 !,"lecture notes on solving system equations by graphing", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=3VbpmoGCWPA
-!,"a video lecture on solving system equations by graphing", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/3VbpmoGCWPA
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
+
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U1L2_CheckSolutionOfSystemEquation.pdf
 !,"lecture notes on checking solution of a system equation", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=Pe-7dgD6bRE
-!,"a video lecture on checking solution of a system equation", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/Pe-7dgD6bRE
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 EOT

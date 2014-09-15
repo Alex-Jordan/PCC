@@ -61,9 +61,11 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U7L1_PercentOfIncreaseAndDecrease.pdf
 !,"lecture notes on percent of increase/decrease word problems", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=qs-5b2IBvB8#t=16m23s
-!,"a video lecture on on percent of increase/decrease word problems (watch from 16:23)", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/qs-5b2IBvB8?start=983
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

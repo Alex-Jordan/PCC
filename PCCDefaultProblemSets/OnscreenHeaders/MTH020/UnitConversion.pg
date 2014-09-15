@@ -82,24 +82,36 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U5L3UnitConversion.pdf
 !,"Unit Conversion Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=bcM5J-wYHjE
-!,"American Sytem Unit Conversion Video Lecture", "TARGET='_blank'") \}.
+American Sytem Unit Conversion Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/bcM5J-wYHjE
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=6sBmVPIJwrw
-!,"Metric System Video Lecture", "TARGET='_blank'") \}.
+Metric System Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/6sBmVPIJwrw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=OL7liIliMD0
-!,"Unit Cancellation Method Video Lecture 1", "TARGET='_blank'") \}.
+Unit Cancellation Method Video Lecture 1
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/OL7liIliMD0
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=daVdxGfchWI
-!,"Unit Cancellation Method Video Lecture 2", "TARGET='_blank'") \}.
+Unit Cancellation Method Video Lecture 2
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/daVdxGfchWI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

@@ -61,19 +61,28 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U5L2_SimplifySquareRoot.pdf
 !,"lecture notes on simplifying square roots", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=ZDyScPdbTNs
-!,"the first video lecture on simplifying square roots", "TARGET='_blank'") \} 
+First video lecture on simplifying square roots
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=uL4uJ3BrTJw#t=02m08s
-!,"the second video lecture on simplifying square roots (watch from 2:08 to 4:48)", "TARGET='_blank'") \} 
-$PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=OhzCKJt4uQI
-!,"a video lecture on Quotient Rule of Radicals (watch till 3:20)", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/ZDyScPdbTNs
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
+$PAR
+Second video lecture on simplifying square roots (watch from 2:08 to 4:48)
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/uL4uJ3BrTJw?start=128
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
+$PAR
+Video lecture on Quotient Rule of Radicals (watch till 3:20)
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/OhzCKJt4uQI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

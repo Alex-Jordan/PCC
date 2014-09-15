@@ -82,14 +82,17 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U3L7MultiplyDivideMixedNumbers.pdf
 !,"Multiply/Divide Mixed Numbers Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=BhUwTsPEZuM
-!,"Multiply Mixed Numbers Video Lecture", "TARGET='_blank'") \}.
+\{ scalableiframe("//
+www.youtube.com/embed/BhUwTsPEZuM
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=vVx7qwUf5KU
-!,"Multiply/Divide Mixed Numbers Video Lecture", "TARGET='_blank'") \}.
+\{ scalableiframe("//
+www.youtube.com/embed/vVx7qwUf5KU
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

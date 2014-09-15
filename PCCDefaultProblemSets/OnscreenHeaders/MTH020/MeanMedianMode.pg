@@ -82,9 +82,11 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U4L6MeanMedianMode.pdf
 !,"Mean, Median and Mode Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=pk8_c0hAuRI
-!,"Mean, Median and Mode Video Lecture", "TARGET='_blank'") \}.
+\{ scalableiframe("//
+www.youtube.com/embed/pk8_c0hAuRI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
 
 EOT
 

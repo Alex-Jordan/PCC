@@ -82,24 +82,36 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U4L4DecimalAndFraction.pdf
 !,"Decimals and Fractions Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=bA5ZoFW1ztE
-!,"Change Decimal to Fraction Video Lecture 1", "TARGET='_blank'") \}.
+Change Decimal to Fraction Video Lecture 1
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/bA5ZoFW1ztE
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=iOvxUXl3flc
-!,"Change Decimal to Fraction Video Lecture 2", "TARGET='_blank'") \}.
+Change Decimal to Fraction Video Lecture 2
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/iOvxUXl3flc
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=I7L-vNLki5w
-!,"Change Fraction to Decimal Video Lecture", "TARGET='_blank'") \}.
+Change Fraction to Decimal Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/I7L-vNLki5w
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=5PYVMuI3qoc
-!,"Convert between Fractions and Decimals Video Lecture", "TARGET='_blank'") \}.
+Convert between Fractions and Decimals Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/5PYVMuI3qoc
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

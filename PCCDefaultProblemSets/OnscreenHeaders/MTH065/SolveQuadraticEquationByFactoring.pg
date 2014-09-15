@@ -61,17 +61,18 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U6L2_SolveQuadraticEquationsByFactoring.pdf
 !,"lecture notes on solving quadratic equation by factoring", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=2ZzuZvz33X0
-!,"the first video lecture on solving quadratic equation by factoring", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/2ZzuZvz33X0
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=04RpkdaNzr8
-!,"the second video lecture on solving quadratic equation by factoring", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/04RpkdaNzr8
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=vl9o9XEfXtw
-!,"the third video lecture on solving quadratic equation by factoring", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/vl9o9XEfXtw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

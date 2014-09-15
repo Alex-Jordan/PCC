@@ -81,10 +81,10 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH20Docs/U3L4DivideFractions.pdf
 !,"Divide Fractions Lecture Notes", "TARGET='_blank'") \}.
 
+\{ scalableiframe("//
+www.youtube.com/embed/7VGgnESa498
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=7VGgnESa498
-!,"Divide Fractions Video Lecture", "TARGET='_blank'") \}.
 
 EOT
 

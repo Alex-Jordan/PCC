@@ -61,9 +61,11 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L1_CoordinateSystemBasics.pdf
 !,"lecture notes on coordinate system basics", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=dzNHVMQVy84
-!,"a video lecture on coordinate system basics", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/dzNHVMQVy84
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

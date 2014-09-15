@@ -61,25 +61,40 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U5L1_BasicWordProblems.pdf
 !,"lecture notes on basic word problems", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=0Z5k2I-0mHo
-!,"the first video lecture on number word problems", "TARGET='_blank'") \} 
+
+First video lecture on number word problems
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=UvOwDgZzxvw
-!,"the second video lecture on number word problems", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/0Z5k2I-0mHo
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=o5T6PYD5zmY
-!,"a video lecture on consecutive integers word problems", "TARGET='_blank'") \} 
+
+Second video lecture on number word problems
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=d8De3xcVmnw
-!,"a video lecture on consecutive odd/even integers word problems", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/UvOwDgZzxvw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=ja-g2qB9P9Y
-!,"a video lecture on rectangle perimeter word problems", "TARGET='_blank'") \} 
+
+Video lecture on consecutive integers word problems
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/o5T6PYD5zmY
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
+Video lecture on consecutive odd/even integers word problems
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/d8De3xcVmnw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
+Video lecture on rectangle perimeter word problems
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/ja-g2qB9P9Y
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 EOT

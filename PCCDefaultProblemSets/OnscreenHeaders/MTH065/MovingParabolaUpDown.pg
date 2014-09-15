@@ -61,11 +61,10 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U7L1_ParabolaUpDown.pdf
 !,"lecture notes on moving parabola up/down", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=33CYnBnYsyk
-!,"a video lecture on moving parabola up/down", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/33CYnBnYsyk
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-
 
 
 EOT

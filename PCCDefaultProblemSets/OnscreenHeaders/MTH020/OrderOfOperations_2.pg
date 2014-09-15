@@ -82,14 +82,16 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U2L4OrderOfOperations_2.pdf
 !,"Order of Operations Part II Lecture Notes (involving negative numbers and absolute values)", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=a329hvX8yDA
-!,"Order of Operations Involving Negative Numbers Video Lecture", "TARGET='_blank'") \}.
+\{ scalableiframe("//
+www.youtube.com/embed/a329hvX8yDA
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=UzQZfvYPlzI
-!,"Order of Operations Involving Absolute Value Video Lecture", "TARGET='_blank'") \}.
+\{ scalableiframe("//
+www.youtube.com/embed/UzQZfvYPlzI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

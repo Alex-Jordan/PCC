@@ -82,24 +82,36 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U1L6PrimeNumber.pdf
 !,"Prime Number Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=vcn2ruTOwFo
-!,"Find Factors Video Lecture", "TARGET='_blank'") \}.
+Find Factors Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/vcn2ruTOwFo
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=mIStB5X4U8M
-!,"Prime Number Video Lecture 1", "TARGET='_blank'") \}.
+Prime Number Video Lecture 1
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/mIStB5X4U8M
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=3h4UK62Qrbo
-!,"Prime Number Video Lecture 2", "TARGET='_blank'") \}.
+Prime Number Video Lecture 2
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/3h4UK62Qrbo
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=XpUCTicRBjQ
-!,"Prime Factor Video Lecture", "TARGET='_blank'") \}.
+Prime Factor Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/XpUCTicRBjQ
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

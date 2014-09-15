@@ -61,21 +61,26 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U9L1_PerimeterAndCircumference.pdf
 !,"lecture notes on perimeter and circumference", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=CPNGuZsjDxA
-!,"a video lecture on perimeter and circumference", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/CPNGuZsjDxA
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
+
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U9L2_AreaOfCommonShapes.pdf
 !,"lecture notes on area of common shapes", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=kqqmJiJez6o
-!,"a video lecture on area of rectangles and triangles", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/kqqmJiJez6o
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=tCrDyJsSFok
-!,"a video lecture on area of circles", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/tCrDyJsSFok
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
 
 EOT
 

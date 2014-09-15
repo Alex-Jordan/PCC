@@ -61,21 +61,22 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U10L3_Slope.pdf
 !,"lecture notes on slope", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=fCIuiQz2Zv4
-!,"the first video lecture on slope", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/fCIuiQz2Zv4
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=SM3bj7zA0FM
-!,"the second video lecture on slope", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/SM3bj7zA0FM
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=bploNzF7cxg
-!,"the third video lecture on slope", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/bploNzF7cxg
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=hPryexyt6Sg
-!,"the fourth video lecture on slope", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/hPryexyt6Sg
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

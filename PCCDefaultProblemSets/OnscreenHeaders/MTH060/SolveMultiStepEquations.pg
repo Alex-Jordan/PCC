@@ -61,21 +61,23 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U4L3_SolveMultiStepLinearEquations.pdf
 !,"lecture notes on solving multi-step equations", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=MA2-tCfmQnw
-!,"the first video lecture on solving multi-step equations", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/MA2-tCfmQnw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=VDIXnZH6q00
-!,"the second video lecture on solving multi-step equations", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/VDIXnZH6q00
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=5lZDQnRcAVc
-!,"the third video lecture on solving multi-step equations", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/5lZDQnRcAVc
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=typP7RBQ6ps
-!,"a video lecture of a summary of solving linear equations", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/typP7RBQ6ps
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

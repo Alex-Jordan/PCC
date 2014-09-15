@@ -61,25 +61,27 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH65Docs/U6L3_SolveQuadraticEquationsByQuadraticFormula.pdf
 !,"lecture notes on solving quadratic equation by Quadratic Formula", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=LkmjnxZ-FuU
-!,"the first video lecture on solving quadratic equation by Quadratic Formula", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/LkmjnxZ-FuU
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=uhHWlBLpvWA
-!,"the second video lecture on solving quadratic equation by Quadratic Formula", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/uhHWlBLpvWA
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=CLrImGKeuEI
-!,"the third video lecture on solving quadratic equation by Quadratic Formula", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/CLrImGKeuEI
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
+
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH65Docs/U6L3_NumberOfSolutionsOfQuadraticEquation.pdf
 !,"lecture notes on the number of solutions of a quadratic equation", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=QOqA8KQMJhE
-!,"a video lecture on the number of solutions of a quadratic equation", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/QOqA8KQMJhE
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

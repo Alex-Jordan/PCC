@@ -82,19 +82,28 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U1L2Multiplication.pdf
 !,"Multiplication Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=mvOkMYCygps
-!,"Multiplication Video Lecture", "TARGET='_blank'") \}.
+Multiplication Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/mvOkMYCygps
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=xO_1bYgoQvA
-!,"Multiplication Table Video Lecture 1", "TARGET='_blank'") \}.
+Multiplication Table Video Lecture 1
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/xO_1bYgoQvA
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=qihoczo1Ujk
-!,"Multiplication Table Video Lecture 2", "TARGET='_blank'") \}.
+Multiplication Table Video Lecture 2
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/qihoczo1Ujk
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

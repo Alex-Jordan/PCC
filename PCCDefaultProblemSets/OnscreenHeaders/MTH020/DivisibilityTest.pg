@@ -81,10 +81,10 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH20Docs/U1L5DivisivilityTest.pdf
 !,"Divisibility Test Lecture Notes", "TARGET='_blank'") \}.
 
+\{ scalableiframe("//
+www.youtube.com/embed/Df9h5t64NlQ
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=Df9h5t64NlQ
-!,"Divisibility Test Video Lecture", "TARGET='_blank'") \}.
 
 
 EOT

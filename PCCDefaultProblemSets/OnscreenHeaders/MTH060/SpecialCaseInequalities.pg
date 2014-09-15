@@ -61,9 +61,10 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U6L2_SpecialCaseInequalities.pdf
 !,"lecture notes on solving inequalities with special solutions", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=jNomYBR5rMU
-!,"a video lecture on solving inequalities with special solutions", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/v=jNomYBR5rMU
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

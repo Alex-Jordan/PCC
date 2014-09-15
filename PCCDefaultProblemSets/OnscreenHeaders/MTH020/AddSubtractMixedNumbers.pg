@@ -82,39 +82,60 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U3L6AddSubtractMixedNumbers.pdf
 !,"Add/Subtract Mixed Numbers Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=MBZrYacUDyc
-!,"Add Mixed Numbers with Common Denominators Video Lecture", "TARGET='_blank'") \}.
+Add Mixed Numbers with Common Denominators Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/MBZrYacUDyc
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=CfBYGFm5gPA
-!,"Add Mixed Numbers with Different Denominators Video Lecture", "TARGET='_blank'") \}.
+Add Mixed Numbers with Different Denominators Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/CfBYGFm5gPA
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=Pj2LGQ2gHgw
-!,"Add Mixed Numbers with Common Denominators Involving Negative Numbers Video Lecture", "TARGET='_blank'") \}.
+Add Mixed Numbers with Common Denominators Involving Negative Numbers Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/Pj2LGQ2gHgw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=MwqgHvdKlmQ
-!,"Add Mixed Numbers with Uncommon Denominators Involving Negative Numbers Video Lecture", "TARGET='_blank'") \}.
+Add Mixed Numbers with Uncommon Denominators Involving Negative Numbers Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/MwqgHvdKlmQ
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=WF7L2waDwLw
-!,"Subtract Mixed Numbers Video Lecture 1", "TARGET='_blank'") \}.
+Subtract Mixed Numbers Video Lecture 1
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/WF7L2waDwLw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=4LYtLMmDuzw
-!,"Subtract Mixed Numbers Video Lecture 2", "TARGET='_blank'") \}.
+Subtract Mixed Numbers Video Lecture 2
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/4LYtLMmDuzw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=ZpdTfe30N1s
-!,"Subtract a Fraction from a Whole Number Video Lecture", "TARGET='_blank'") \}.
+Subtract a Fraction from a Whole Number Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/ZpdTfe30N1s
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 EOT
 

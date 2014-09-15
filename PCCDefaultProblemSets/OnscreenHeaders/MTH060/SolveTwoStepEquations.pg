@@ -61,17 +61,18 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U4L2_SolveTwoStepLinearEquations.pdf
 !,"lecture notes on solving two-step equations", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=XdKQIKjV_LY
-!,"the first video lecture on solving two-step equations", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/XdKQIKjV_LY
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=1c5HY3z4k8M
-!,"the second video lecture on solving two-step equations", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/1c5HY3z4k8M
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=f15zA0PhSek
-!,"the third video lecture on solving two-step equations", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/f15zA0PhSek
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 EOT

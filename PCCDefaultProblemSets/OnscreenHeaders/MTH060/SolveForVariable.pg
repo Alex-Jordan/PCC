@@ -61,17 +61,18 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U4L6_SolveForVariable.pdf
 !,"lecture notes on solving for a variable", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=OQBJep7Gctw
-!,"the first video lecture on solving for a variable", "TARGET='_blank'") \} 
+
+\{ scalableiframe("//
+www.youtube.com/embed/OQBJep7Gctw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=rS4JPQE4WHw
-!,"the second video lecture on solving for a variable", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/rS4JPQE4WHw
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=IaE5RTnL8C8
-!,"the third video lecture on solving for a variable", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/IaE5RTnL8C8
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
 
 EOT

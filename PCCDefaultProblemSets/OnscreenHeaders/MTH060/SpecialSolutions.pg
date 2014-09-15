@@ -61,21 +61,25 @@ $PAR
 http://spot.pcc.edu/~cyao/MTH60Docs/U4L4_SpecialLinearEquations.pdf
 !,"lecture notes on solving linear equations with special solutions", "TARGET='_blank'") \} 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=GM76QU5Tr9k
-!,"the first video lecture on solving linear equations with special solutions", "TARGET='_blank'") \} 
+First video lecture on solving linear equations with special solutions
 $PAR
-\{ htmlLink(qq!
-https://www.khanacademy.org/math/algebra/solving-linear-equations-and-inequalities/basic-equation-practice/v/number-of-solutions-to-linear-equations
-!,"the second video lecture on solving linear equations with special solutions", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.youtube.com/embed/GM76QU5Tr9k
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-https://www.khanacademy.org/math/algebra/solving-linear-equations-and-inequalities/basic-equation-practice/v/number-of-solutions-to-linear-equations-ex-2
-!,"the third video lecture on solving linear equations with special solutions", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.khanacademy.org/embed/qsL_5Y8uWPU
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
 $PAR
-\{ htmlLink(qq!
-https://www.khanacademy.org/math/algebra/solving-linear-equations-and-inequalities/basic-equation-practice/v/number-of-solutions-to-linear-equations-ex-3
-!,"the fourth video lecture of a summary of solving linear equations with special solutions", "TARGET='_blank'") \} 
+\{ scalableiframe("//
+www.khanacademy.org/embed/uQs100shv-A
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+\{ scalableiframe("//
+www.khanacademy.org/embed/Dq0xFgQB9qo
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
+
 
 EOT
 

@@ -82,14 +82,20 @@ http://spot.pcc.edu/~cyao/MTH20Docs/U2L3MultiplyDivideIntegers.pdf
 !,"Multiply and Divide Integers Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=d8lP5tR2R3Q
-!,"Multiply and Divide Integers Video Lecture", "TARGET='_blank'") \}.
+Multiply and Divide Integers Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/d8lP5tR2R3Q
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 $PAR
-\{ htmlLink(qq!
-http://www.youtube.com/watch?v=AneubQTnoL4
-!,"Negative Number and Exponent Video Lecture", "TARGET='_blank'") \}.
+Negative Number and Exponent Video Lecture
+$PAR
+\{ scalableiframe("//
+www.youtube.com/embed/AneubQTnoL4
+", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
+$PAR
 
 
 EOT
