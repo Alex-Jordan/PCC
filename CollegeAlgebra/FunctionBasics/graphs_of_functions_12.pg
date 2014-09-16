@@ -1,16 +1,17 @@
  DOCUMENT();        # This should be the first executable line in the problem.
 
 loadMacros(
-"PG.pl",
-"PGbasicmacros.pl",
+"PGstandard.pl",
+"MathObjects.pl",
+"PGML.pl",
 "PGchoicemacros.pl",
-"PGanswermacros.pl",
-"PGauxiliaryFunctions.pl",
 "PGgraphmacros.pl",
-"extraAnswerEvaluators.pl",
-"PGasu.pl"
+"PCCgraphMacros.pl",
+"PGcourse.pl",
 );
 
+
+##################################################
 
 TEXT(beginproblem());
 $showPartialCorrectAnswers = 1;
@@ -45,26 +46,60 @@ $b = $a1*non_zero_random(-10,10)*0.01;
 
 $xgrid=2*$xgriddom;
 $graph = init_graph(-$xgriddom,$ymin,$xgriddom,$ymax,'axes'=>[0,0],'grid'=>[$xgrid, $ymax - $ymin]);
-$f = FEQ("$a2*(-0.25*$a1*x + sin(pi/$a3*x)) for x in [-$xdom1,$xdom1] using color:black and weight:2");
+$f = FEQ("$a2*(-0.25*$a1*x + sin(pi/$a3*x)) for x in [-$xdom1,$xdom1] using color:blue and weight:1");
 ($fref) = plot_functions( $graph, $f);
 
-BEGIN_TEXT
-\{ image(insertGraph($graph), height=>300, width=>300) \} $BR
-Use the the graph of \(g\) to answer the questions.  Assume the domain of \(g\) is \([-$xdom1,$xdom1]\). $PAR
+##################################################
 
-a) \(g($x1) =\) \{ans_rule(10)\}
-$BR
-b) \(g($x2) =\) \{ans_rule(10)\}
-$BR
-c) For how many values of \(x\) does \(g(x) = $b\)? \{ans_rule(10)\}
-$BR
-d) On what interval or union of intervals is \(g\) $str? \{ans_rule(30)\} (You may round to the nearest half of a unit)
+BEGIN_PGML
+Use the the graph of [`g`] to answer the questions. Assume the domain of [`g`] is [`[-[$xdom1],[$xdom1]]`].
 
-END_TEXT
+[@EnlargeImageStatementPGML()@]**
 
-ANS(num_cmp($g1, tol=>0.2, tolType => "absolute"));
-ANS(num_cmp($g2, tol=>0.2, tolType => "absolute"));
-ANS(num_cmp(3));
-ANS(interval_cmp("(-$int1,0)U($int1,$xdom1)", sloppy=>"yes"));
+>>[@ image(insertGraph($graph), height=>400, width=>400) @]* <<
+
+
+a) [`g([$x1]) ={}`][_______________]
+
+a) [`g([$x2]) ={}`][_______________]
+
+a) For _how many_ values of [`x`] does [`g(x) = [$b]`]?  
+
+    [______]
+
+a) On what interval or union of intervals is [`g`] [$str]? (You may round to the nearest half of a unit.)   
+
+    [_____________________________] 
+
+END_PGML
+
+##################################################
+
+Context("Numeric");
+Context()->flags->set(tolerance=>0.2);
+Context()->flags->set(tolType=>'absolute');
+ANS(Compute($g1)->cmp());
+ANS(Compute($g2)->cmp());
+
+ANS(Compute(3)->cmp(tolerance=>0.0001));
+
+Context("Interval");
+Context()->flags->set(ignoreEndpointTypes => 1);
+ANS(Compute("(-$int1,0)U($int1,$xdom1)")->cmp());
+
+##################################################
+
+BEGIN_PGML_SOLUTION
+
+a) To find  [`g([$x1])`], locate [`[$x1]`] on the horizontal axis. Then move straight up or down until you find the curve. The point where this happens has coordinates [`([$x1],[$g1])`]. So [`g([$x1])=[$g1]`].
+
+a) To find  [`g([$x2])`], locate [`[$x2]`] on the horizontal axis. Then move straight up or down until you find the curve. The point where this happens has coordinates [`([$x2],[$g2])`]. So [`g([$x2])=[$g2]`].
+
+a) If we were trying to solve [`g(x)=[$b]`], we would consider the horizontal line [`y=[$b]`]. This line crosses the graph of [`g`] in [`3`] places, so there are [`3`] solutions to [`g(x)=[$b]`].
+
+a) There are two segments of the curve where [`g`] is [$str]. One is the hump from [`x=-[$int1]`] to [`x=0`], and the other is the tail from [`x=[$int1]`] to [`x=[$xdom1]`]. So the region on which [`g`] is [$str] is [`(-[$int1],0)\cup([$int1],[$xdom1])`].
+
+END_PGML_SOLUTION
+
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.
