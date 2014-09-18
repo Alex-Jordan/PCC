@@ -6,10 +6,10 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH111/GenericMTH111Ha
 paperHeaderFile   = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
 description       = simplifying the difference quotient; some warm-up questions first
 problemList       = 
-CollegeAlgebra/FunctionComposition/FunctionComposition10.pg, 1, -1 
-CollegeAlgebra/FunctionComposition/FunctionComposition20.pg, 1, -1 
-CollegeAlgebra/FunctionComposition/DifferenceQuotient10.pg, 1, -1 
-CollegeAlgebra/FunctionComposition/DifferenceQuotient20.pg, 1, -1 
-CollegeAlgebra/FunctionComposition/DifferenceQuotient40.pg, 1, -1 
-CollegeAlgebra/FunctionComposition/DifferenceQuotient50.pg, 1, -1 
-CollegeAlgebra/FunctionComposition/DifferenceQuotient60.pg, 1, -1 
+CollegeAlgebra/FunctionComposition/FunctionComposition10.pg, 1, -1, 2
+CollegeAlgebra/FunctionComposition/FunctionComposition20.pg, 1, -1, 2
+CollegeAlgebra/FunctionComposition/DifferenceQuotient10.pg, 1, -1, 2
+CollegeAlgebra/FunctionComposition/DifferenceQuotient20.pg, 1, -1, 2
+CollegeAlgebra/FunctionComposition/DifferenceQuotient40.pg, 1, -1, 2
+CollegeAlgebra/FunctionComposition/DifferenceQuotient50.pg, 1, -1, 2
+CollegeAlgebra/FunctionComposition/DifferenceQuotient60.pg, 1, -1, 2

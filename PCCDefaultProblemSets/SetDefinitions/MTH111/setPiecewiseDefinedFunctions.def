@@ -6,8 +6,8 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH111/GenericMTH111Ha
 paperHeaderFile   = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
 description       = piecewise-defined functions 
 problemList       = 
-CollegeAlgebra/FunctionBasics/Piecewise10.pg, 1, -1 
-CollegeAlgebra/FunctionBasics/Piecewise20.pg, 1, -1
-CollegeAlgebra/FunctionBasics/Piecewise30.pg, 1, -1
-CollegeAlgebra/FunctionBasics/Piecewise40.pg, 1, -1 
+CollegeAlgebra/FunctionBasics/Piecewise10.pg, 1, -1, 2
+CollegeAlgebra/FunctionBasics/Piecewise20.pg, 1, -1, 2
+CollegeAlgebra/FunctionBasics/Piecewise30.pg, 1, -1, 2
+CollegeAlgebra/FunctionBasics/Piecewise40.pg, 1, -1, 2
 
