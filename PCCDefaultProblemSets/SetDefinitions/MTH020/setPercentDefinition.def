@@ -5,23 +5,23 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/PercentDefinition.pg
 description       = introduction to percent
 problemList       = 
-BasicAlgebra/NumberBasics/PercentDecimalConversion10.pg, 1, -1 
-BasicAlgebra/NumberBasics/PercentDecimalConversion20.pg, 1, -1 
-BasicAlgebra/NumberBasics/PercentDecimalConversion30.pg, 1, -1 
-BasicAlgebra/NumberBasics/PercentDecimalConversion40.pg, 1, -1 
-BasicAlgebra/NumberBasics/PercentDecimalConversion50.pg, 1, -1 
-BasicAlgebra/NumberBasics/PercentDecimalConversion60.pg, 1, -1 
-BasicAlgebra/NumberBasics/PercentDecimalConversion70.pg, 1, -1 
-BasicAlgebra/NumberBasics/PercentDecimalConversion80.pg, 1, -1 
-BasicMath/FractionPercentDecimal/FractionToPercent10.pg, 1, -1 
-BasicMath/FractionPercentDecimal/FractionToPercent20.pg, 1, -1 
-BasicMath/FractionPercentDecimal/FractionToPercent30.pg, 1, -1 
-BasicMath/FractionPercentDecimal/FractionToPercent40.pg, 1, -1 
-BasicMath/FractionPercentDecimal/PercentToFraction10.pg, 1, -1 
-BasicMath/FractionPercentDecimal/PercentToFraction20.pg, 1, -1 
-BasicMath/FractionPercentDecimal/PercentToFraction30.pg, 1, -1 
-BasicMath/FractionPercentDecimal/PercentToFraction40.pg, 1, -1 
-BasicMath/FractionPercentDecimal/FractionPercentDecimal10.pg, 1, -1 
-BasicMath/FractionPercentDecimal/FractionPercentDecimal10.pg, 1, -1 
-BasicMath/FractionPercentDecimal/FractionPercentDecimal10.pg, 1, -1 
+BasicAlgebra/NumberBasics/PercentDecimalConversion10.pg, 1, -1, 2
+BasicAlgebra/NumberBasics/PercentDecimalConversion20.pg, 1, -1, 2
+BasicAlgebra/NumberBasics/PercentDecimalConversion30.pg, 1, -1, 2
+BasicAlgebra/NumberBasics/PercentDecimalConversion40.pg, 1, -1, 2
+BasicAlgebra/NumberBasics/PercentDecimalConversion50.pg, 1, -1, 2
+BasicAlgebra/NumberBasics/PercentDecimalConversion60.pg, 1, -1, 2
+BasicAlgebra/NumberBasics/PercentDecimalConversion70.pg, 1, -1, 2
+BasicAlgebra/NumberBasics/PercentDecimalConversion80.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/FractionToPercent10.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/FractionToPercent20.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/FractionToPercent30.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/FractionToPercent40.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/PercentToFraction10.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/PercentToFraction20.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/PercentToFraction30.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/PercentToFraction40.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/FractionPercentDecimal10.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/FractionPercentDecimal10.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/FractionPercentDecimal10.pg, 1, -1, 2
 

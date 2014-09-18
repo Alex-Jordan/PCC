@@ -6,9 +6,9 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH065/MTH65HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/MaximumMinimumApplications.pg
 description       = applications of quadratic expressions to finding a maximal or minimal value
 problemList       = 
-BasicAlgebra/QuadraticApplications/MaxMinApplication10.pg, 1, -1 
-BasicAlgebra/QuadraticApplications/MaxMinApplication20.pg, 1, -1 
-BasicAlgebra/QuadraticApplications/MaxMinApplication30.pg, 1, -1 
-BasicAlgebra/QuadraticApplications/MaxMinApplication40.pg, 1, -1 
-BasicAlgebra/QuadraticApplications/MaxMinApplication50.pg, 1, -1 
+BasicAlgebra/QuadraticApplications/MaxMinApplication10.pg, 1, -1, 2
+BasicAlgebra/QuadraticApplications/MaxMinApplication20.pg, 1, -1, 2
+BasicAlgebra/QuadraticApplications/MaxMinApplication30.pg, 1, -1, 2
+BasicAlgebra/QuadraticApplications/MaxMinApplication40.pg, 1, -1, 2
+BasicAlgebra/QuadraticApplications/MaxMinApplication50.pg, 1, -1, 2
 

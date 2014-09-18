@@ -5,15 +5,15 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/GCFAndLCM.pg
 description       = find Great Common Factor and Least Common Multiple of a group of numbers
 problemList       = 
-BasicMath/PrimeLCMGCF/GCF10.pg, 1, -1 
-BasicMath/PrimeLCMGCF/GCF20.pg, 1, -1 
-BasicMath/PrimeLCMGCF/GCF30.pg, 1, -1 
-BasicMath/PrimeLCMGCF/LCM10.pg, 1, -1 
-BasicMath/PrimeLCMGCF/LCM10.pg, 1, -1 
-BasicMath/PrimeLCMGCF/LCM20.pg, 1, -1 
-BasicMath/PrimeLCMGCF/LCM20.pg, 1, -1 
-BasicMath/PrimeLCMGCF/LCM25.pg, 1, -1 
-BasicMath/PrimeLCMGCF/LCM30.pg, 1, -1 
-BasicMath/PrimeLCMGCF/LCM30.pg, 1, -1 
-BasicMath/PrimeLCMGCF/LCM40.pg, 1, -1 
+BasicMath/PrimeLCMGCF/GCF10.pg, 1, -1, 2
+BasicMath/PrimeLCMGCF/GCF20.pg, 1, -1, 2
+BasicMath/PrimeLCMGCF/GCF30.pg, 1, -1, 2
+BasicMath/PrimeLCMGCF/LCM10.pg, 1, -1, 2
+BasicMath/PrimeLCMGCF/LCM10.pg, 1, -1, 2
+BasicMath/PrimeLCMGCF/LCM20.pg, 1, -1, 2
+BasicMath/PrimeLCMGCF/LCM20.pg, 1, -1, 2
+BasicMath/PrimeLCMGCF/LCM25.pg, 1, -1, 2
+BasicMath/PrimeLCMGCF/LCM30.pg, 1, -1, 2
+BasicMath/PrimeLCMGCF/LCM30.pg, 1, -1, 2
+BasicMath/PrimeLCMGCF/LCM40.pg, 1, -1, 2
 

@@ -6,11 +6,11 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243Ha
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
 description       = types of data 
 problemList       = 
-Statistics/TypesOfData/DataTypes1.pg, 1, -1 
-Statistics/TypesOfData/DataTypes2.pg, 1, -1 
-Statistics/TypesOfData/DataTypes3.pg, 1, -1 
-Statistics/TypesOfData/DataTypes4.pg, 1, -1 
-Statistics/TypesOfData/DataTypes6.pg, 1, -1 
-Statistics/TypesOfData/01Stats_04_PictDistnsWGraphs.pg, 1, -1 
-Statistics/TypesOfData/stat212-HW01-02.pg, 1, -1 
-Statistics/DisplayingData/01Stats_02_PictDistnsWGraphs.pg, 1, -1 
+Statistics/TypesOfData/DataTypes1.pg, 1, -1, 2
+Statistics/TypesOfData/DataTypes2.pg, 1, -1, 2
+Statistics/TypesOfData/DataTypes3.pg, 1, -1, 2
+Statistics/TypesOfData/DataTypes4.pg, 1, -1, 2
+Statistics/TypesOfData/DataTypes6.pg, 1, -1, 2
+Statistics/TypesOfData/01Stats_04_PictDistnsWGraphs.pg, 1, -1, 2
+Statistics/TypesOfData/stat212-HW01-02.pg, 1, -1, 2
+Statistics/DisplayingData/01Stats_02_PictDistnsWGraphs.pg, 1, -1, 2

@@ -6,10 +6,10 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/DistanceWordProblems.pg
 description       = word problems involving distance traveled
 problemList       = 
-BasicAlgebra/LinearEquationApplications/DistanceWordProblemWithTable10.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/DistanceWordProblemWithTable20.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/DistanceWordProblemWithTable30.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/DistanceWordProblem10.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/DistanceWordProblem20.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/DistanceWordProblem30.pg, 1, -1 
+BasicAlgebra/LinearEquationApplications/DistanceWordProblemWithTable10.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/DistanceWordProblemWithTable20.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/DistanceWordProblemWithTable30.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/DistanceWordProblem10.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/DistanceWordProblem20.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/DistanceWordProblem30.pg, 1, -1, 2
 

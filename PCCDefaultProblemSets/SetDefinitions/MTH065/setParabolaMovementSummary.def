@@ -6,12 +6,12 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH065/MTH65HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/ParabolaMovementSummary.pg
 description       = summary of graph transformations to a parabola
 problemList       = 
-BasicAlgebra/GraphingQuadratics/ShiftParabola90.pg, 1, -1 
-BasicAlgebra/GraphingQuadratics/ShiftParabola100.pg, 1, -1 
-BasicAlgebra/GraphingQuadratics/ShiftParabola110.pg, 1, -1 
-BasicAlgebra/GraphingQuadratics/ShiftParabola120.pg, 1, -1 
-BasicAlgebra/GraphingQuadratics/ShiftParabola130.pg, 1, -1 
-BasicAlgebra/GraphingQuadratics/ShiftParabola100.pg, 1, -1 
-BasicAlgebra/GraphingQuadratics/ShiftParabola110.pg, 1, -1 
-BasicAlgebra/GraphingQuadratics/ShiftParabola130.pg, 1, -1 
+BasicAlgebra/GraphingQuadratics/ShiftParabola90.pg, 1, -1, 2
+BasicAlgebra/GraphingQuadratics/ShiftParabola100.pg, 1, -1, 2
+BasicAlgebra/GraphingQuadratics/ShiftParabola110.pg, 1, -1, 2
+BasicAlgebra/GraphingQuadratics/ShiftParabola120.pg, 1, -1, 2
+BasicAlgebra/GraphingQuadratics/ShiftParabola130.pg, 1, -1, 2
+BasicAlgebra/GraphingQuadratics/ShiftParabola100.pg, 1, -1, 2
+BasicAlgebra/GraphingQuadratics/ShiftParabola110.pg, 1, -1, 2
+BasicAlgebra/GraphingQuadratics/ShiftParabola130.pg, 1, -1, 2
 

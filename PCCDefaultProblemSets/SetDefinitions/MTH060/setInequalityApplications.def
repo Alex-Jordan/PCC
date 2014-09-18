@@ -6,8 +6,8 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/InequalityApplications.pg
 description       = applications of inequalities
 problemList       = 
-BasicAlgebra/LinearInequalities/InequalityWordProblem10.pg, 1, -1 
-BasicAlgebra/LinearInequalities/InequalityWordProblem10.pg, 1, -1 
-BasicAlgebra/LinearInequalities/InequalityWordProblem20.pg, 1, -1 
-BasicAlgebra/LinearInequalities/InequalityWordProblem20.pg, 1, -1 
+BasicAlgebra/LinearInequalities/InequalityWordProblem10.pg, 1, -1, 2
+BasicAlgebra/LinearInequalities/InequalityWordProblem10.pg, 1, -1, 2
+BasicAlgebra/LinearInequalities/InequalityWordProblem20.pg, 1, -1, 2
+BasicAlgebra/LinearInequalities/InequalityWordProblem20.pg, 1, -1, 2
 

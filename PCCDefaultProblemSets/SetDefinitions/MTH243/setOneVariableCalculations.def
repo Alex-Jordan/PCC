@@ -6,22 +6,22 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243Ha
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
 description       = mean, median, mode; range, quartiles, inter-quartile range, standard deviation
 problemList       = 
-Statistics/BasicOneVarStats/stat212-HW02-17.pg, 1, -1 
-Statistics/BasicOneVarStats/dueck3_1_6.pg, 1, -1 
-Statistics/BasicOneVarStats/stat212-HW02-11.pg, 1, -1 
-Statistics/BasicOneVarStats/stat212-HW02-10.pg, 1, -1 
-Statistics/BasicOneVarStats/stat212-HW02-08.pg, 1, -1 
-Statistics/BasicOneVarStats/stat212-HW02-05.pg, 1, -1 
-Statistics/BasicOneVarStats/02Stats_02_DescrData.pg, 1, -1 
-Statistics/BasicOneVarStats/02Stats_05_DescrData.pg, 1, -1 
-Statistics/DisplayingData/02Stats_10_DescrData.pg, 1, -1 
-Statistics/DisplayingData/skew_dist1.pg, 1, -1 
-Statistics/DisplayingData/03Stats_01_NormalDist.pg, 1, -1 
-Statistics/BasicOneVarStats/data2.pg, 1, -1 
-Statistics/BasicOneVarStats/MeanStdDev.pg, 1, -1 
-Statistics/BasicOneVarStats/FiveNum.pg, 1, -1 
-Statistics/BasicOneVarStats/kolossa10.pg, 1, -1 
-Statistics/BasicOneVarStats/kolossa8.pg, 1, -1 
-Statistics/BasicOneVarStats/dueck3_4_3.pg, 1, -1 
-Statistics/BasicOneVarStats/dueck3_2_1.pg, 1, -1 
-Statistics/BasicOneVarStats/dueck3_4_4.pg, 1, -1 
+Statistics/BasicOneVarStats/stat212-HW02-17.pg, 1, -1, 2
+Statistics/BasicOneVarStats/dueck3_1_6.pg, 1, -1, 2
+Statistics/BasicOneVarStats/stat212-HW02-11.pg, 1, -1, 2
+Statistics/BasicOneVarStats/stat212-HW02-10.pg, 1, -1, 2
+Statistics/BasicOneVarStats/stat212-HW02-08.pg, 1, -1, 2
+Statistics/BasicOneVarStats/stat212-HW02-05.pg, 1, -1, 2
+Statistics/BasicOneVarStats/02Stats_02_DescrData.pg, 1, -1, 2
+Statistics/BasicOneVarStats/02Stats_05_DescrData.pg, 1, -1, 2
+Statistics/DisplayingData/02Stats_10_DescrData.pg, 1, -1, 2
+Statistics/DisplayingData/skew_dist1.pg, 1, -1, 2
+Statistics/DisplayingData/03Stats_01_NormalDist.pg, 1, -1, 2
+Statistics/BasicOneVarStats/data2.pg, 1, -1, 2
+Statistics/BasicOneVarStats/MeanStdDev.pg, 1, -1, 2
+Statistics/BasicOneVarStats/FiveNum.pg, 1, -1, 2
+Statistics/BasicOneVarStats/kolossa10.pg, 1, -1, 2
+Statistics/BasicOneVarStats/kolossa8.pg, 1, -1, 2
+Statistics/BasicOneVarStats/dueck3_4_3.pg, 1, -1, 2
+Statistics/BasicOneVarStats/dueck3_2_1.pg, 1, -1, 2
+Statistics/BasicOneVarStats/dueck3_4_4.pg, 1, -1, 2

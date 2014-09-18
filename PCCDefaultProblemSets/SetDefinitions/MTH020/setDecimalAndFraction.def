@@ -5,16 +5,16 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/DecimalAndFraction.pg
 description       = convert between decimal and fraction
 problemList       = 
-BasicMath/FractionPercentDecimal/FractionToDecimal50.pg, 1, -1 
-BasicMath/FractionPercentDecimal/FractionToDecimal60.pg, 1, -1 
-BasicMath/FractionPercentDecimal/FractionToDecimal70.pg, 1, -1 
-BasicMath/FractionPercentDecimal/FractionToDecimal80.pg, 1, -1 
-BasicMath/FractionPercentDecimal/FractionToDecimal90.pg, 1, -1 
-BasicMath/FractionPercentDecimal/DecimalToFraction10.pg, 1, -1 
-BasicMath/FractionPercentDecimal/DecimalToFraction20.pg, 1, -1 
-BasicMath/FractionPercentDecimal/DecimalToFraction30.pg, 1, -1 
-BasicMath/FractionPercentDecimal/DecimalToFraction35.pg, 1, -1 
-BasicMath/FractionPercentDecimal/DecimalToFraction40.pg, 1, -1 
-BasicMath/FractionPercentDecimal/DecimalToFraction50.pg, 1, -1 
-BasicMath/FractionPercentDecimal/DecimalToFraction60.pg, 1, -1 
+BasicMath/FractionPercentDecimal/FractionToDecimal50.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/FractionToDecimal60.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/FractionToDecimal70.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/FractionToDecimal80.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/FractionToDecimal90.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/DecimalToFraction10.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/DecimalToFraction20.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/DecimalToFraction30.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/DecimalToFraction35.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/DecimalToFraction40.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/DecimalToFraction50.pg, 1, -1, 2
+BasicMath/FractionPercentDecimal/DecimalToFraction60.pg, 1, -1, 2
 

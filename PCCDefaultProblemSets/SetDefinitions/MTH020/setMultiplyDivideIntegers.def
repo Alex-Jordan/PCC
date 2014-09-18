@@ -5,14 +5,14 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/MultiplyDivideIntegers.pg
 description       = multiply and divide positive and negative numbers
 problemList       = 
-BasicAlgebra/SignedNumbersArithemtic/MultiplyWithNegativeIntegers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/MultiplyWithNegativeIntegers20.pg, 1, -1 
-BasicMath/IntegerAndSquareRoot/MultiplyWithNegativeIntegers30.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/DivideWithNegativeIntegers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/DivideWithNegativeIntegers20.pg, 1, -1 
-BasicMath/MultiplicationDivision/DivideByZero10.pg, 1, -1 
-BasicAlgebra/Exponents/ExponentDefinition10.pg, 1, -1 
-BasicAlgebra/Exponents/ExponentDefinition20.pg, 1, -1 
-BasicAlgebra/Exponents/ExponentDefinition30.pg, 1, -1 
-BasicAlgebra/Exponents/ExponentDefinition40.pg, 1, -1 
+BasicAlgebra/SignedNumbersArithemtic/MultiplyWithNegativeIntegers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/MultiplyWithNegativeIntegers20.pg, 1, -1, 2
+BasicMath/IntegerAndSquareRoot/MultiplyWithNegativeIntegers30.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/DivideWithNegativeIntegers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/DivideWithNegativeIntegers20.pg, 1, -1, 2
+BasicMath/MultiplicationDivision/DivideByZero10.pg, 1, -1, 2
+BasicAlgebra/Exponents/ExponentDefinition10.pg, 1, -1, 2
+BasicAlgebra/Exponents/ExponentDefinition20.pg, 1, -1, 2
+BasicAlgebra/Exponents/ExponentDefinition30.pg, 1, -1, 2
+BasicAlgebra/Exponents/ExponentDefinition40.pg, 1, -1, 2
 

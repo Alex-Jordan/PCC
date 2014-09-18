@@ -6,8 +6,8 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH065/MTH65HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/FallingObjectApplications.pg
 description       = applications of quadratic expressions to falling objects
 problemList       = 
-BasicAlgebra/QuadraticApplications/FlyingObjectApp10.pg, 1, -1 
-BasicAlgebra/QuadraticApplications/FlyingObjectApp20.pg, 1, -1 
-BasicAlgebra/QuadraticApplications/FlyingObjectApp10.pg, 1, -1 
-BasicAlgebra/QuadraticApplications/FlyingObjectApp20.pg, 1, -1 
+BasicAlgebra/QuadraticApplications/FlyingObjectApp10.pg, 1, -1, 2
+BasicAlgebra/QuadraticApplications/FlyingObjectApp20.pg, 1, -1, 2
+BasicAlgebra/QuadraticApplications/FlyingObjectApp10.pg, 1, -1, 2
+BasicAlgebra/QuadraticApplications/FlyingObjectApp20.pg, 1, -1, 2
 

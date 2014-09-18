@@ -6,9 +6,9 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/CoordinateSystem.pg
 description       = the basics of the Cartesian coordinate system
 problemList       = 
-BasicAlgebra/GraphingPointsAndLines/GraphOrderedPairs10.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/GraphOrderedPairs20.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/GraphOrderedPairs30.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/GraphOrderedPairs40.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/Quadrant10.pg, 1, -1 
+BasicAlgebra/GraphingPointsAndLines/GraphOrderedPairs10.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/GraphOrderedPairs20.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/GraphOrderedPairs30.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/GraphOrderedPairs40.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/Quadrant10.pg, 1, -1, 2
 
