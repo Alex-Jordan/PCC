@@ -5,23 +5,23 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/AddSubtractIntegers.pg
 description       = add and subtract positive and negative numbers
 problemList       = 
-BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers20.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers20.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers30.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers30.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers20.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers20.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers30.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers30.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers20.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers30.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers40.pg, 1, -1 
-BasicAlgebra/NumberBasics/AbsoluteValue20.pg, 1, -1 
-BasicAlgebra/NumberBasics/AbsoluteValue30.pg, 1, -1 
+BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers20.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers20.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers30.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers30.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers20.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers20.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers30.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers30.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers20.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers30.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers40.pg, 1, -1, 2
+BasicAlgebra/NumberBasics/AbsoluteValue20.pg, 1, -1, 2
+BasicAlgebra/NumberBasics/AbsoluteValue30.pg, 1, -1, 2
 

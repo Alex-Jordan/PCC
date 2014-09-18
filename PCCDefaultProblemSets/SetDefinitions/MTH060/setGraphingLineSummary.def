@@ -6,18 +6,18 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/GraphingLineSummary.pg
 description       = a summary of techniques that can be used to graph a line from its equation
 problemList       = 
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByTwoPoints50.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByTwoPoints60.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope70.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope80.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/StandardToSlopeInterceptAndGraph30.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/StandardToSlopeInterceptAndGraph50.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/StandardToSlopeInterceptAndGraph70.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/StandardToSlopeInterceptAndGraph80.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/StandardToSlopeInterceptAndGraph110.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/StandardToSlopeInterceptAndGraph120.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByTwoPoints90.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByTwoPoints95.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByTwoPoints100.pg, 1, -1 
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByTwoPoints110.pg, 1, -1 
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByTwoPoints50.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByTwoPoints60.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope70.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope80.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/StandardToSlopeInterceptAndGraph30.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/StandardToSlopeInterceptAndGraph50.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/StandardToSlopeInterceptAndGraph70.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/StandardToSlopeInterceptAndGraph80.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/StandardToSlopeInterceptAndGraph110.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/StandardToSlopeInterceptAndGraph120.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByTwoPoints90.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByTwoPoints95.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByTwoPoints100.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByTwoPoints110.pg, 1, -1, 2
 

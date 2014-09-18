@@ -6,7 +6,7 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH111/GenericMTH111Ha
 paperHeaderFile   = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
 description       = adding, subtracting, multiplying, and dividing functions; the domain of the result
 problemList       = 
-CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains10.pg, 1, -1 
-CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains20.pg, 1, -1 
-CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains30.pg, 1, -1 
-CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains40.pg, 1, -1 
+CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains10.pg, 1, -1, 2
+CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains20.pg, 1, -1, 2
+CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains30.pg, 1, -1, 2
+CollegeAlgebra/FunctionArithmetic/FunctionArithmeticDomains40.pg, 1, -1, 2

@@ -6,17 +6,17 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/ExponentRules.pg
 description       = the rules of working with exponents
 problemList       = 
-BasicAlgebra/Exponents/exponentsMultiplication10.pg, 1, -1 
-BasicAlgebra/Exponents/exponentsMultiplication09.pg, 1, -1 
-BasicAlgebra/Exponents/exponentsMultiplication0.pg, 1, -1 
-BasicAlgebra/Exponents/exponentsMultiplication5.pg, 1, -1 
-BasicAlgebra/Exponents/exponentsMultiplication15.pg, 1, -1 
-BasicAlgebra/Exponents/exponentsMultiplication20.pg, 1, -1 
-BasicAlgebra/Exponents/exponentsMultiplication23.pg, 1, -1 
-BasicAlgebra/Exponents/exponentsMultiplication24.pg, 1, -1 
-BasicAlgebra/Exponents/exponentsMultiplication25.pg, 1, -1 
-BasicAlgebra/Exponents/exponentsMultiplication30.pg, 1, -1 
-BasicAlgebra/Exponents/exponentsMultiplication40.pg, 1, -1 
-BasicAlgebra/Exponents/exponentsMultiplication45.pg, 1, -1 
-BasicAlgebra/Exponents/exponentsMultiplication50.pg, 1, -1 
+BasicAlgebra/Exponents/exponentsMultiplication10.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentsMultiplication09.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentsMultiplication0.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentsMultiplication5.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentsMultiplication15.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentsMultiplication20.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentsMultiplication23.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentsMultiplication24.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentsMultiplication25.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentsMultiplication30.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentsMultiplication40.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentsMultiplication45.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentsMultiplication50.pg, 1, -1, 2
 

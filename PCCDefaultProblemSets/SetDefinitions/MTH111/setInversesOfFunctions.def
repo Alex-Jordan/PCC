@@ -6,26 +6,26 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH111/GenericMTH111Ha
 paperHeaderFile   = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
 description       = inverses of functions
 problemList       = 
-CollegeAlgebra/FunctionComposition/FunctionComposition180.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions10.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions20.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/OneToOne10.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions30.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions40.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions50.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions60.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions70.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions80.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions90.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions100.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions110.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions120.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions130.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions140.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions150.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions160.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions170.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions180.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/OneToOne20.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions190.pg, 1, -1 
-CollegeAlgebra/InversesOfFunctions/InversesOfFunctions200.pg, 1, -1 
+CollegeAlgebra/FunctionComposition/FunctionComposition180.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions10.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions20.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/OneToOne10.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions30.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions40.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions50.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions60.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions70.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions80.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions90.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions100.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions110.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions120.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions130.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions140.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions150.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions160.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions170.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions180.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/OneToOne20.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions190.pg, 1, -1, 2
+CollegeAlgebra/InversesOfFunctions/InversesOfFunctions200.pg, 1, -1, 2

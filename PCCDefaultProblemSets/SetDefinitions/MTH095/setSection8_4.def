@@ -5,17 +5,17 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95Har
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/GenericMTH95Header.pg
 description       = the quadratic formula; applications
 problemList       = 
-BasicAlgebra/QuadraticEquations/solveQuad145.pg, 1, -1 
-BasicAlgebra/QuadraticEquations/solveQuad150.pg, 1, -1 
-BasicAlgebra/QuadraticEquations/solveQuad160.pg, 1, -1 
-BasicAlgebra/QuadraticEquations/solveQuad170.pg, 1, -1 
-BasicAlgebra/QuadraticEquations/solveQuad176.pg, 1, -1 
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts90.pg, 1, -1 
-BasicAlgebra/GraphingQuadratics/SketchParabola40.pg, 1, -1 
-BasicAlgebra/GraphingQuadratics/SketchParabola50.pg, 1, -1 
-BasicAlgebra/QuadraticApplications/FlyingObjectApp10.pg, 1, -1 
-BasicAlgebra/QuadraticApplications/FlyingObjectApp20.pg, 1, -1 
-BasicAlgebra/QuadraticApplications/QuadraticEquationApplication20.pg, 1, -1 
-BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg, 1, -1 
-BasicAlgebra/QuadraticApplications/QuadraticEquationApplication50.pg, 1, -1 
+BasicAlgebra/QuadraticEquations/solveQuad145.pg, 1, -1, 2
+BasicAlgebra/QuadraticEquations/solveQuad150.pg, 1, -1, 2
+BasicAlgebra/QuadraticEquations/solveQuad160.pg, 1, -1, 2
+BasicAlgebra/QuadraticEquations/solveQuad170.pg, 1, -1, 2
+BasicAlgebra/QuadraticEquations/solveQuad176.pg, 1, -1, 2
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts90.pg, 1, -1, 2
+BasicAlgebra/GraphingQuadratics/SketchParabola40.pg, 1, -1, 2
+BasicAlgebra/GraphingQuadratics/SketchParabola50.pg, 1, -1, 2
+BasicAlgebra/QuadraticApplications/FlyingObjectApp10.pg, 1, -1, 2
+BasicAlgebra/QuadraticApplications/FlyingObjectApp20.pg, 1, -1, 2
+BasicAlgebra/QuadraticApplications/QuadraticEquationApplication20.pg, 1, -1, 2
+BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg, 1, -1, 2
+BasicAlgebra/QuadraticApplications/QuadraticEquationApplication50.pg, 1, -1, 2
 

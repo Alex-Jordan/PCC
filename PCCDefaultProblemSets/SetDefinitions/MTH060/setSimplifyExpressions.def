@@ -6,19 +6,19 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/SimplifyExpressions.pg
 description       = simplifying expressions 
 problemList       = 
-BasicAlgebra/PolynomialBasics/SimplifyExpression10.pg, 1, -1 
-BasicAlgebra/PolynomialBasics/SimplifyExpression20.pg, 1, -1 
-BasicAlgebra/PolynomialBasics/SimplifyExpression30.pg, 1, -1 
-BasicAlgebra/PolynomialBasics/SimplifyExpression40.pg, 1, -1 
-BasicAlgebra/AlgebraicProperties/DistributiveProperty10.pg, 1, -1 
-BasicAlgebra/AlgebraicProperties/DistributiveProperty20.pg, 1, -1 
-BasicAlgebra/AlgebraicProperties/DistributiveProperty30.pg, 1, -1 
-BasicAlgebra/AlgebraicProperties/DistributiveProperty40.pg, 1, -1 
-BasicAlgebra/AlgebraicProperties/DistributiveProperty50.pg, 1, -1 
-BasicAlgebra/AlgebraicProperties/DistributiveProperty60.pg, 1, -1 
-BasicAlgebra/AlgebraicProperties/DistributiveProperty70.pg, 1, -1 
-BasicAlgebra/PolynomialBasics/PolyAddSubtract80.pg, 1, -1 
-BasicAlgebra/AlgebraicProperties/DistributiveProperty80.pg, 1, -1 
-BasicAlgebra/AlgebraicProperties/DistributiveProperty90.pg, 1, -1 
-BasicAlgebra/AlgebraicProperties/SimplifyInContext10.pg, 1, -1 
+BasicAlgebra/PolynomialBasics/SimplifyExpression10.pg, 1, -1, 2
+BasicAlgebra/PolynomialBasics/SimplifyExpression20.pg, 1, -1, 2
+BasicAlgebra/PolynomialBasics/SimplifyExpression30.pg, 1, -1, 2
+BasicAlgebra/PolynomialBasics/SimplifyExpression40.pg, 1, -1, 2
+BasicAlgebra/AlgebraicProperties/DistributiveProperty10.pg, 1, -1, 2
+BasicAlgebra/AlgebraicProperties/DistributiveProperty20.pg, 1, -1, 2
+BasicAlgebra/AlgebraicProperties/DistributiveProperty30.pg, 1, -1, 2
+BasicAlgebra/AlgebraicProperties/DistributiveProperty40.pg, 1, -1, 2
+BasicAlgebra/AlgebraicProperties/DistributiveProperty50.pg, 1, -1, 2
+BasicAlgebra/AlgebraicProperties/DistributiveProperty60.pg, 1, -1, 2
+BasicAlgebra/AlgebraicProperties/DistributiveProperty70.pg, 1, -1, 2
+BasicAlgebra/PolynomialBasics/PolyAddSubtract80.pg, 1, -1, 2
+BasicAlgebra/AlgebraicProperties/DistributiveProperty80.pg, 1, -1, 2
+BasicAlgebra/AlgebraicProperties/DistributiveProperty90.pg, 1, -1, 2
+BasicAlgebra/AlgebraicProperties/SimplifyInContext10.pg, 1, -1, 2
 

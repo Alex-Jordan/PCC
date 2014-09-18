@@ -5,16 +5,16 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95Har
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/GenericMTH95Header.pg
 description       = arithmetic with complex numbers; counting real and nonreal roots of quadratic polynomials
 problemList       = 
-Math95/ComplexNumbers/ComplexNumbers1.pg, 1, -1
-Math95/ComplexNumbers/ComplexNumbers2.pg, 1, -1
-Math95/ComplexNumbers/ComplexNumbers3.pg, 1, -1
-Math95/ComplexNumbers/ComplexNumbers4.pg, 1, -1
-Math95/ComplexNumbers/ComplexNumbers5.pg, 1, -1
-Math95/ComplexNumbers/ComplexNumbers6.pg, 1, -1
-Math95/ComplexNumbers/ComplexNumbers7.pg, 1, -1
-Math95/ComplexNumbers/ComplexNumbers8.pg, 1, -1
-Math95/ComplexRoots/ComplexRoots1.pg, 1, -1
-Math95/ComplexRoots/ComplexRoots1.pg, 1, -1
-Math95/ComplexRoots/ComplexRoots1.pg, 1, -1
-Math95/ComplexRoots/ComplexRoots1.pg, 1, -1 
+Math95/ComplexNumbers/ComplexNumbers1.pg, 1, -1, 2
+Math95/ComplexNumbers/ComplexNumbers2.pg, 1, -1, 2
+Math95/ComplexNumbers/ComplexNumbers3.pg, 1, -1, 2
+Math95/ComplexNumbers/ComplexNumbers4.pg, 1, -1, 2
+Math95/ComplexNumbers/ComplexNumbers5.pg, 1, -1, 2
+Math95/ComplexNumbers/ComplexNumbers6.pg, 1, -1, 2
+Math95/ComplexNumbers/ComplexNumbers7.pg, 1, -1, 2
+Math95/ComplexNumbers/ComplexNumbers8.pg, 1, -1, 2
+Math95/ComplexRoots/ComplexRoots1.pg, 1, -1, 2
+Math95/ComplexRoots/ComplexRoots1.pg, 1, -1, 2
+Math95/ComplexRoots/ComplexRoots1.pg, 1, -1, 2
+Math95/ComplexRoots/ComplexRoots1.pg, 1, -1, 2
 

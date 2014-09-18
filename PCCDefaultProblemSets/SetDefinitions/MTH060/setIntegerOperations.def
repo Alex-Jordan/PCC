@@ -6,19 +6,19 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/IntegerOperations.pg
 description       = multiplying, dividing, adding, and subtracting with both positive and negative integers
 problemList       = 
-BasicAlgebra/SignedNumbersArithemtic/MultiplyWithNegativeIntegers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/MultiplyWithNegativeIntegers20.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/DivideWithNegativeIntegers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/DivideWithNegativeIntegers20.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers20.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers30.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers20.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers30.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers20.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers30.pg, 1, -1 
-BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers40.pg, 1, -1 
-BasicAlgebra/NumberBasics/SignedNumberInterpretations10.pg, 1, -1 
+BasicAlgebra/SignedNumbersArithemtic/MultiplyWithNegativeIntegers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/MultiplyWithNegativeIntegers20.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/DivideWithNegativeIntegers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/DivideWithNegativeIntegers20.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers20.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AdditionWithNegativeNumbers30.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers20.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/SubtractionWithNegativeNumbers30.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers10.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers20.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers30.pg, 1, -1, 2
+BasicAlgebra/SignedNumbersArithemtic/AddSubtractNegativeNumbers40.pg, 1, -1, 2
+BasicAlgebra/NumberBasics/SignedNumberInterpretations10.pg, 1, -1, 2
 

@@ -6,24 +6,24 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/Functions.pg
 description       = an introduction to functions
 problemList       = 
-BasicAlgebra/FunctionBasics/FunctionDefinition10.pg, 1, -1 
-BasicAlgebra/FunctionBasics/FunctionDefinition10.pg, 1, -1 
-BasicAlgebra/FunctionBasics/FunctionOrNotByGraph10.pg, 1, -1 
-BasicAlgebra/FunctionBasics/FunctionOrNotByGraph20.pg, 1, -1 
-BasicAlgebra/FunctionBasics/FunctionOrNotByGraph30.pg, 1, -1 
-BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph10.pg, 1, -1 
-BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph20.pg, 1, -1 
-BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph30.pg, 1, -1 
-BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph40.pg, 1, -1 
-BasicAlgebra/FunctionBasics/EvaluateFunction10.pg, 1, -1 
-BasicAlgebra/FunctionBasics/EvaluateFunction20.pg, 1, -1 
-BasicAlgebra/FunctionBasics/EvaluateFunction30.pg, 1, -1 
-BasicAlgebra/FunctionBasics/EvaluateFunction40.pg, 1, -1 
-BasicAlgebra/FunctionBasics/EvaluateFunction50.pg, 1, -1 
-BasicAlgebra/FunctionBasics/EvaluateFunction60.pg, 1, -1 
-BasicAlgebra/FunctionBasics/EvaluateFunction70.pg, 1, -1 
-BasicAlgebra/FunctionBasics/EvaluateFunction80.pg, 1, -1 
-BasicAlgebra/FunctionBasics/EvaluateFunction100.pg, 1, -1 
-BasicAlgebra/FunctionBasics/Functions100.pg, 1, -1 
-BasicAlgebra/FunctionBasics/Functions100.pg, 1, -1 
+BasicAlgebra/FunctionBasics/FunctionDefinition10.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/FunctionDefinition10.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/FunctionOrNotByGraph10.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/FunctionOrNotByGraph20.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/FunctionOrNotByGraph30.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph10.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph20.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph30.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph40.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/EvaluateFunction10.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/EvaluateFunction20.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/EvaluateFunction30.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/EvaluateFunction40.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/EvaluateFunction50.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/EvaluateFunction60.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/EvaluateFunction70.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/EvaluateFunction80.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/EvaluateFunction100.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/Functions100.pg, 1, -1, 2
+BasicAlgebra/FunctionBasics/Functions100.pg, 1, -1, 2
 

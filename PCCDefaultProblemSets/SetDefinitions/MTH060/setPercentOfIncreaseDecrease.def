@@ -6,13 +6,13 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/PercentOfIncreaseDecrease.pg
 description       = calculating the percent increase or decrease of a change
 problemList       = 
-BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease10.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease20.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease30.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease40.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease50.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease60.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease70.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease80.pg, 1, -1 
-BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease90.pg, 1, -1 
+BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease10.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease20.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease30.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease40.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease50.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease60.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease70.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease80.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/PercentIncreaseDecrease90.pg, 1, -1, 2
 
