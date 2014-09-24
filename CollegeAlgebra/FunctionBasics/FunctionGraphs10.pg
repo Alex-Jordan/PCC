@@ -105,7 +105,7 @@ BEGIN_PGML
 
 Use the graph of [`[$f]`] in the figure to fill in the table.
 
-[@EnlargeImageStatementPGML()@]
+[@EnlargeImageStatementPGML()@]**
 
 >> [@ image( insertGraph($gr), 
 width=>400,height=>400,tex_size=>400, extra_html_tags => "alt = '$alt'" ) @]* <<
