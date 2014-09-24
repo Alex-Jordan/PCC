@@ -27,8 +27,10 @@ loadMacros(
   "PGML.pl",
   "contextRationalFunction.pl",
   "PCCmacros.pl",
-  "PGcourse.pl",
   "contextFraction.pl",
+  "bizarroArithmetic.pl",
+  "PGcourse.pl",
+
 );
 
 ##############################################
@@ -37,7 +39,8 @@ TEXT(&beginproblem);
 
 $showPartialCorrectAnswers = 1;
 
-Context("RationalFunction");
+
+
 
 $d = list_random(11, 13, 17, 19, 23);
 do {$a = random(6,22);} until $d - $a > 0 && $d - $a < 6; 
@@ -54,9 +57,26 @@ $sign = ($sa/abs($sa) == 1) ? '-' : '+';
 $sa = abs($sa);
 
 Context("RationalFunction");
+Parser::Number::NoDecimals();
+Context()->operators->set(
+'+' => {class => 'bizarro::BOP::add', isCommand => 1},
+'-' => {class => 'bizarro::BOP::subtract', isCommand => 1},
+'*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+' *' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+'* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+'/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+'/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+'//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+'**' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+'^' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+);
 
 $t = Compute("-$a*$sb$sign$sa*$b");
-$ans = Formula("(($sb$sign$sa)x+$t)/($sb(x+$b)(x-$c))")->reduce;
+$apb = $a+$b;
+$cpb = $c+$b;
+
+$ans = Formula("$apb/($cpb(x+$b))")->reduce;
 
 ##############################################
 
@@ -66,11 +86,29 @@ Consider the function [`[$f]`] defined by [`\displaystyle [$f](x) = \frac{x-[$a]
 Evaluate and simplify the expression [`\displaystyle\frac{[$f](x)-[$f]([$c])}{x-[$c]}`].
 
 
-    [`\displaystyle \frac{[$f](x)-[$f]([$c])}{x-[$c]} ={}`][___________________________________________]{$ans}
+    [`\displaystyle \frac{[$f](x)-[$f]([$c])}{x-[$c]} ={}`][___________________________________________]
 
 END_PGML
 
 ##############################################
+
+ANS($ans -> cmp(
+checker=>sub{
+my ( $correct, $student, $ansHash ) = @_;
+return 0 if $ansHash->{isPreview} || $correct != $student;
+$student = $ansHash->{student_formula};
+$correct = $correct->{original_formula} if defined $correct->{original_formula};
+$student = Formula("$student"); $correct = Formula("$correct");
+return 0 unless ($correct == $student);
+Context()->flags->set(bizarroDiv =>1 );
+delete $correct->{test_values}, $student->{test_values};
+my $OK = (($correct == $student) or ($student == $correct));
+Context()->flags->set(bizarroDiv =>0);
+Value::Error("Your answer is correct so far, but please simplify it further") unless $OK;
+return $OK;
+})); 
+
+
 Context("Fraction");
 $s = Fraction($c-$a,$c+$b);
 ($sa, $sb) = $s->value;
@@ -86,6 +124,7 @@ BEGIN_PGML_SOLUTION
 &= \frac{\frac{x-[$a]}{x+[$b]}[$sign]\frac{[$sa]}{[$sb]}}{x-[$c]}\\
 &= \frac{\frac{x-[$a]}{x+[$b]}[$sign]\frac{[$sa]}{[$sb]}}{x-[$c]}\frac{[$sb](x+[$b])}{[$sb](x+[$b])}\\
 &= \frac{[$sb](x-[$a])[$sign][$sa](x+[$b])}{[$sb](x+[$b])(x-[$c])}\\
+&= \frac{[$apb](x-[$c])}{[$sb](x+[$b])(x-[$c])}\\
 &= [$ans]\\
 \end{aligned}``]
 
