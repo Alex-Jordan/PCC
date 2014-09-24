@@ -89,14 +89,14 @@ $PAR
 \{
 LayoutTable(
 [["$BBOLD(a)$EBOLD 
-  $BITALIC Using function notation$EITALIC, express the car's position after \($t1\) hours. The answer here is not a formula, it's just something using function notation like $LQ f(8)$RQ.",
+  $BITALIC Using function notation$EITALIC, express the car's position after \($t1\) hours. The answer here is not a formula, it's just something using function notation like $LQ"."f(8)$RQ.",
 ans_rule(25)],
 ["$BBOLD(b)$EBOLD 
 Where is the car then? The answer here is a number with units.", ans_rule(25)],
 ["$BBOLD(c)$EBOLD 
-$BITALIC Use function notation $EITALIC to express the question, $LQ\(\)When is the car going \($vel1\)?$RQ The answer is an equation to be solved that uses function notation; something like $LQ f(x)=23$RQ. You are not being asked to actually solve an equation.",ans_rule(25)],
+$BITALIC Use function notation $EITALIC to express the question, $LQ\(\)When is the car going \($vel1\)?$RQ The answer is an equation to be solved that uses function notation; something like $LQ"."f(x)=23$RQ. You are not being asked to actually solve an equation, just to write down the equation.",ans_rule(25)],
 ["$BBOLD(d)$EBOLD 
-Where is the car when it is going \($vel2\)? The answer here is a number with units.",ans_rule(25)]],
+Where is the car when it is going \($vel2\)? The answer here is a number with units. You are being asked a question about its position, but have been given information about its speed.",ans_rule(25)]],
 texalignment=>'Xl',
 allcellcss=>"text-align:left; padding-left: 6pt; padding-right:6 pt; border:solid; border-width:1px; vertical-align:middle;",
 );
