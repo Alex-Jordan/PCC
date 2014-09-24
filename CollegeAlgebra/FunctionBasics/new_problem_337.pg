@@ -1,16 +1,16 @@
  DOCUMENT();        # This should be the first executable line in the problem.
 
 loadMacros(
-"PG.pl",
-"PGbasicmacros.pl",
-"PGchoicemacros.pl",
-"PGanswermacros.pl",
-"PGauxiliaryFunctions.pl",
+"PGstandard.pl",
+"MathObjects.pl",
+"PGML.pl",
+"PCCmacros.pl",
 "PGgraphmacros.pl",
-"extraAnswerEvaluators.pl",
-"PGasu.pl"
+"PCCgraphMacros.pl",
+"PGcourse.pl",
 );
 
+##################################################
 
 TEXT(beginproblem());
 $showPartialCorrectAnswers = 1;
@@ -30,44 +30,73 @@ $xmax = max($relmin + 2,$relmax + 2);
 $ymin = $sign*($a*($relmin)**3 - $b*($relmin));
 $ymax = $sign*($a*($relmax)**3 - $b*($relmax));
 
-$graph = init_graph($xmin,$ymin,$xmax,$ymax,'axes'=>[0,0],'grid'=>[$xmax - $xmin, ($ymax - $ymin)/2]);
-$f = FEQ("$sign*($a*x^3-$b*x) for x in [$xmin,$xmax] using color:black and weight:2");
+$graph = init_graph($xmin,2*$ymin,$xmax,2*$ymax,'axes'=>[0,0],'grid'=>[$xmax - $xmin, 2*$ymax - 2*$ymin]);
+$f = FEQ("$sign*($a*x^3-$b*x) for x in [$xmin,$xmax] using color:blue and weight:1");
 
 ($fref) = plot_functions( $graph, $f);
 
+$fname = RandomVariableName(type=>'function');
 
-BEGIN_TEXT
-\{ image(insertGraph($graph),height=>250,width=>250) \} $BR
-Use the complete graph of \(f\) to fill in the blanks and complete each sentence.  Assume that the domain of \(f\) is \((-\infty,\infty)\). $PAR
-a) \(f\) has a relative minimum at \(x = \) \{ans_rule(10)\} with a value of \{ans_rule(10)\}. $PAR
-b) \(f\) has a relative maximum at \(x = \) \{ans_rule(10)\} with a value of \{ans_rule(10)\}. $PAR
-c) \(f\) is decreasing on the interval(s) \{ans_rule(20)\}. $BR
-Note:  If there is more than one interval for an answer, write them separated by commas, e.g. [1,2], [3,4].  Write infinity for \(\infty\) and -infinity for \(-\infty\).$PAR
+##################################################
 
-d) \(f\) is increasing on the interval(s) \{ans_rule(20)\}. $BR
-Note:  If there is more than one interval for an answer, write them separated by commas, e.g. [1,2], [3,4].  Write infinity for \(\infty\) and -infinity for \(-\infty\).
+BEGIN_PGML
 
-END_TEXT
+Use the graph of [`[$fname]`] to fill in the blanks and complete each sentence.  Assume that the domain of [`[$fname]`] is [`(-\infty,\infty)`]. 
 
+[@EnlargeImageStatementPGML()@]**
+
+>> [@ image(insertGraph($graph),height=>400,width=>400) @]* <<
+
+
+a) [`[$fname]`] has a relative minimum at [`x = {}`][________] with a value of [________].
+
+a) [`[$fname]`] has a relative maximum at [`x = {}`][________] with a value of [________].
+
+a) In the following question, if there is more than one interval for the answer, write the answer using the union symbol. For example, write [|[1,2]U[3,4]|] for [`[1,2]\cup[3,4]`].  Write [|inf|] for [`\infty`] and [|-inf|] for [`-\infty`]. Remember to assume that the domain of [`[$fname]`] is [`(-\infty,\infty)`]. 
+
+    [`[$fname]`] is decreasing on the interval(s) [________________________].
+
+a) In the following question, if there is more than one interval for the answer, write the answer using the union symbol. For example, write [|[1,2]U[3,4]|] for [`[1,2]\cup[3,4]`].  Write [|inf|] for [`\infty`] and [|-inf|] for [`-\infty`]. Remember to assume that the domain of [`[$fname]`] is [`(-\infty,\infty)`]. 
+
+    [`[$fname]`] is increasing on the interval(s) [________________________].
+
+END_PGML
+
+##################################################
 Context("Interval");
 Context()->flags->set(ignoreEndpointTypes=>1);
 
 
 
 if ($sign < 0) {
-$ansc = List(Interval("(-infinity,$relmin)"),Interval("($relmax,infinity)"));
-$ansd = List(Interval("($relmin,$relmax)"));
+$ansc = Compute("(-infinity,$relmin)U($relmax,infinity)");
+$ansd = Compute("($relmin,$relmax)");
 }
 else {
-$ansc = List(Interval("($relmax,$relmin)"));
-$ansd = List(Interval("(-infinity,$relmax)"),Interval("($relmin,infinity)"));
+$ansc = Compute("($relmax,$relmin)");
+$ansd = Compute("(-infinity,$relmax)U($relmin,infinity)");
 }
 
-ANS(num_cmp($relmin));
-ANS(num_cmp($ymin));
-ANS(num_cmp($relmax));
-ANS(num_cmp($ymax));
+ANS(Compute($relmin)->cmp);
+ANS(Compute($ymin)->cmp);
+ANS(Compute($relmax)->cmp);
+ANS(Compute($ymax)->cmp);
 ANS($ansc->cmp());
 ANS($ansd->cmp());
+
+##################################################
+
+BEGIN_PGML_SOLUTION
+
+a) A relative minimum happens where the graph of a function, as read from left to right, changes from moving downward to moving upward. In the graph of [`[$fname]`] we see this happening at [`x=[$relmin]`]. And the graph show us that [`[$fname]([$relmin])=[$ymin]`].
+
+a) A relative maximum happens where the graph of a function, as read from left to right, changes from moving upward to moving downward. In the graph of [`[$fname]`] we see this happening at [`x=[$relmax]`]. And the graph show us that [`[$fname]([$relmax])=[$ymax]`].
+
+a) [`[$fname]`] is decreasing on [`[$ansc]`].
+
+a) [`[$fname]`] is increasing on [`[$ansd]`].
+
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.

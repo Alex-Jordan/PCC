@@ -1,17 +1,16 @@
  DOCUMENT();        # This should be the first executable line in the problem.
 
 loadMacros(
-"PG.pl",
-"PGbasicmacros.pl",
-"PGchoicemacros.pl",
-"PGanswermacros.pl",
-"PGauxiliaryFunctions.pl",
+"PGstandard.pl",
+"MathObjects.pl",
+"PGML.pl",
+"PCCmacros.pl",
 "PGgraphmacros.pl",
-"extraAnswerEvaluators.pl",
-"PGasu.pl"
+"PCCgraphMacros.pl",
+"PGcourse.pl",
 );
 
-
+##################################################
 TEXT(beginproblem());
 $showPartialCorrectAnswers = 1;
 
@@ -25,7 +24,10 @@ $c = random($b+1,5);
 $xmin = $a - 1;
 $xmax = $c + 1;
 
-$f = FEQ("x^2*(1/5*x^3 - ($a + $b + $c)/4*x^2+($a*$b + $a*$c + $b*$c)/3*x - $a*$b*$c/2) for x in [$xmin,$xmax] using color:blue and weight:3");
+$pmax = $xmax+1;
+$pmin = $xmin-1;
+
+$f = FEQ("x^2*(1/5*x^3 - ($a + $b + $c)/4*x^2+($a*$b + $a*$c + $b*$c)/3*x - $a*$b*$c/2) for x in [$pmin,$pmax] using color:blue and weight:1");
 
 $ymin = 
 min(
@@ -46,18 +48,42 @@ $graph = init_graph($xmin,$ymin,$xmax,$ymax,'axes'=>[0,0],'grid'=>[$xmax - $xmin
 
 ($fref) = plot_functions( $graph, $f);
 
+$fname = RandomVariableName(type=>'function');
 
-BEGIN_TEXT
-\{ image(insertGraph($graph),height=>250,width=>250) \} $BR
-Use the complete graph of \(f\) to fill in the blanks and complete each sentence.  Assume that the domain of \(f\) is \((-\infty,\infty)\). $PAR
-a) \(f\) has relative minima at \(x = \) \{ans_rule(20)\}.  Enter your answers as a comma separated list, e.g. 1,2 $PAR
-b) \(f\) has relative maxima at \(x = \) \{ans_rule(20)\}.  Enter your answers as a comma separated list, e.g. 1,2 $PAR
-c) \(f\) has a y-intercept at \(x=\) \{ans_rule(10)\}.
+##################################################
+BEGIN_PGML
 
-END_TEXT
+Use the graph of [`[$fname]`] to fill in the blanks and complete each sentence.  Assume that the domain of [`[$fname]`] is [`(-\infty,\infty)`]. 
 
-ANS(number_list_cmp("0,$c"));
-ANS(number_list_cmp("$a,$b"));
-ANS(num_cmp(0));
+[@EnlargeImageStatementPGML()@]**
+
+>> [@ image(insertGraph($graph),height=>400,width=>400) @]* <<
+
+
+a) [`[$fname]`] has relative minima at [`x`] in the set [`\Big\{`] [___________]  [`\Big\}`].  (Use commas to separate members of the set.)
+
+a) [`[$fname]`] has relative maxima at [`x`] in the set [`\Big\{`] [___________]  [`\Big\}`].  (Use commas to separate members of the set.)
+
+a) [`[$fname]`] has a [`y`]-intercept at [`x={}`] [____________].
+
+END_PGML
+
+##################################################
+
+ANS(Compute("0,$c")->cmp);
+ANS(Compute("$a,$b")->cmp);
+ANS(Compute(0)->cmp);
+
+##################################################
+
+BEGIN_PGML_SOLUTION
+
+a) A relative minimum happens where the graph of a function, as read from left to right, changes from moving downward to moving upward. In the graph of [`[$fname]`] we see this happening at [`x=0`] and at [`x=[$c]`].
+
+a) A relative maximum happens where the graph of a function, as read from left to right, changes from moving upward to moving downward. In the graph of [`[$fname]`] we see this happening at [`x=[$a]`] and at [`x=[$b]`].
+
+a) The [`y`]-intercept of a function is a point on the [`y`]-axis where the graph crosses it (if there even is such a point). So by definition, if there even is a [`y`]-intercept, it happens where [`x=0`].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.
