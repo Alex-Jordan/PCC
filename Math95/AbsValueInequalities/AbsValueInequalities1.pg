@@ -90,7 +90,7 @@ $x[3] = pi;
 $left[3] = Formula("|$a[3](z - $b[3])|");
 $right[3] = Formula("$c[3]")->reduce;
 $comp[3] = "$LTS";
-if ($left[3]->eval(z=>$x[3]) < $right[3]->eval(z=>$x[3]))
+if ($left[3]->eval(z=>3.1415926) < $right[3]->eval(z=>3.1415926))
 {$ans[3] = $yes;}
 else {$ans[3] = $no;};
 $x[3] = "\pi";
