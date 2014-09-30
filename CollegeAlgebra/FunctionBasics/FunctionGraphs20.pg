@@ -28,6 +28,7 @@ loadMacros(
   "PGML.pl",
   "parserAssignment.pl",
   "PCCgraphMacros.pl",
+  "answerHints.pl",
   "PGcourse.pl",
 );
 
@@ -111,7 +112,7 @@ $gr->lineTo(1.26,0.05,'black',1);
 
 
 Context("Point");
-Context()->variables->are(x=>'Real',h=>'Real',a=>'Real',b=>'Real',c=>'Real',d=>'Real',e=>'Real');
+Context()->variables->are(x=>'Real',h=>'Real',a=>'Real',b=>'Real',c=>'Real',d=>'Real',e=>'Real',P=>'Real', Q=>'Real');
 
 
 
@@ -173,7 +174,10 @@ $showPartialCorrectAnswers=1;
 
 ANS( $ans[0]-> cmp );
 ANS( $ans[1]-> cmp );
-ANS( $ans[2]-> cmp );
+ANS( $ans[2]-> cmp->withPostFilter(AnswerHints( 
+  Formula("P") => "P is a point, not an output of the function",
+  Formula("Q") => "Q is a point, not an output of the function", 
+)) );
 ANS( $ans[3]-> cmp );
 ANS( $ans[4]-> cmp );
 
