@@ -50,7 +50,7 @@ $f = RandomVariableName();
 
 BEGIN_PGML
 
-For [`[$f]`] defined by [`[$f](x)= \left|[$a]x +[$b]\right |+[$c]`], solve the equation [`[$f](x) = [$d]`].
+For [`[$f]`] defined by [`[$f](x)= \left|[$a]x +[$b]\right |+[$c]`], solve the equation [`[$f](x) = [$d]`]. Remember that when you are asked to solve an equation for [`x`], the answer should be in the form *x=23*, and not simply give the numerical value of the solution, like 23.  If there are two solutions, use the word *or*, as in *x=23 or x=12*.  
 
     [__________________]
 
