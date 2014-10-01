@@ -98,7 +98,7 @@ If [`y=f([$givenx])`], then we have
     [`\begin{aligned}
 y
 &=f([$givenx])\\
-&=\frac{[$top]}{[$botConst]+[$botSign]([$givenx]^3)}\\
+&=\frac{[$top]}{[$botConst]+[$botSign]([$givenx])^3}\\
 &=\frac{[$top]}{[$botConst]+[$botSign]([$givenx**3])}\\
 &=\frac{[$top]}{[$botConst]+[$botSign*$givenx**3]}\\
 &=\frac{[$top]}{[$botConst+$botSign*$givenx**3]}\\
