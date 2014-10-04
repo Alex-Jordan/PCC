@@ -26,6 +26,16 @@ TEXT(beginproblem());
 
 $w = random(56,77,1);
 $m = random(60,84,1);
+$zw = ($w - 64) / 2.7;
+$zm = ($m - 69.3) / 2.8;
+$zm = Real($zm);
+$zw = Real($zw);
+@solutions = ("Using the \(z\)-score formula with regards to the data for women, we find, \(z_{$w} = \frac{$w - 64}{2.7} = $zw\).",
+
+"Again using the \(z\)-score formula with regards to the data for men, we find, \(z_{$m} = \frac{$m - 69.3}{2.8} = $zm\)",)
+;
+ 
+@ssols = (@solutions);
 
 #################################################
 #  Main
@@ -38,9 +48,26 @@ $BR \(z_{$w}\) = \{ans_rule(4)\}
 $PAR
 (b) What is the \(z\)-score for a man $m inches tall?
 $BR  \(z_{$m}\) = \{ans_rule(4)\}
+
 END_TEXT
 
 #################################################
+
+######################################
+
+BEGIN_SOLUTION
+
+(a) $ssols[0]
+
+$PAR
+
+(b)  $ssols[1]
+
+$PAR 
+
+END_SOLUTION
+
+
 #  Answers
 
 $showPartialCorrectAnswers = 1;
