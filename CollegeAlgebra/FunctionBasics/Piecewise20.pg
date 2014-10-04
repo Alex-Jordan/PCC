@@ -148,7 +148,7 @@ f([$b])
 
 
 a) To solve the equation [`f(x)=[$y]`], it can help to create a graph of [`f`].  
-[@EnlargeImageStatementPGML()@]  
+[@EnlargeImageStatementPGML()@]**  
 >>[@image( insertGraph($gr), 
 width=>400,height=>400,tex_size=>800, extra_html_tags=>"alt = '$altb'" )@]* <<
     We can see that the only solutions happen in the part of the domain where the first and second rules are used. So we set up equations to solve:  
