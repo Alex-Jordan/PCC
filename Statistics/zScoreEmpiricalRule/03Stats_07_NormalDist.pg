@@ -55,6 +55,18 @@ if ($sz[4] > $sz[$best]) { $best = 4;}
 
 $popup = PopUp(["?", @ssub], $ssub[$best]);
 
+
+@solutions = ("Using the \(z\)-score formula with regards to the data for $ssub[1], we find, \(z_{$ssub[1]} = \frac{$grade1 - $smean[1]}{$sdev[1]} = $sz[1]\).",
+
+"Using the \(z\)-score formula with regards to the data for $ssub[2], we find, \(z_{$ssub[2]} = \frac{$grade2 - $smean[2]}{$sdev[2]} = $sz[2]\).",
+
+"Using the \(z\)-score formula with regards to the data for $ssub[3], we find, \(z_{$ssub[3]} = \frac{$grade3 - $smean[3]}{$sdev[3]} = $sz[3]\).",
+
+"Using the \(z\)-score formula with regards to the data for $ssub[4], we find, \(z_{$ssub[4]} = \frac{$grade4 - $smean[4]}{$sdev[4]} = $sz[4]\).",)
+;
+ 
+@ssols = (@solutions);
+
 #################################################
 #  Main
 
@@ -77,6 +89,33 @@ On what exam did $Name[$tag] have the highest score relative to other exam taker
 END_TEXT
 
 ######################################
+BEGIN_SOLUTION
+
+Recall that all classes in which Joe has taken an exam will have their own \(z\)-score.  As such, we will find \(z_{$ssub[1]}\), \(z_{$ssub[2]}\), \(z_{$ssub[3]}\), \(z_{$ssub[4]}\)
+
+$PAR
+
+(a) $ssols[0]
+
+$PAR
+
+(b)  $ssols[1]
+
+$PAR 
+
+(c) $ssols[2]
+
+$PAR
+
+(d) $ssols[3]
+
+$PAR
+
+(e)  Knowing the highest score relative to other exam takers would entail finding the highest positive \(z\)-score.  In this case, it $sz[$best], which is his $ssub[$best] class.
+
+END_SOLUTION
+
+#
 #  Answers
 
 $showPartialCorrectAnswers = 1;
