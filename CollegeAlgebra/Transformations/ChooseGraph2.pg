@@ -24,15 +24,16 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "PGML.pl",
   "PGgraphmacros.pl",
+  "PCCgraphMacros.pl",
   "parserPopUp.pl",
+  "niceTables.pl",
+  "PGcourse.pl",
 
 );
 
  $refreshCachedImages = 1;
-
-
-
 
 
 ##############################################
@@ -146,74 +147,72 @@ $pop = PopUp( [qw(? 1 2 3 4 5 6 7 8 9 10 11 12)], $zero+1 );
 
 
 
-$size = 200;
+$size = 180;
+$texsize = 100;
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
+Choose the graph of the equation [`y=f\left(\frac{1}{[$horscale]}x\right)`] if [`f(x)=|x|`].
+
+    The correct graph is graph number [@ $pop->menu() @]*.
+
+[@EnlargeImageStatementPGML()@]**
+
+END_PGML
 
 BEGIN_TEXT
-Choose the graph of the equation \(y=f\left(\frac{1}{$horscale}x\right)\) if \(f(x)=|x|\).
-
-\{ $pop->menu() \}
-
-$PAR
-${BITALIC}(Click on a graph to enlarge it.)$EITALIC
 $PAR
 
-
-\{ begintable(4) \}
-\{ row( "${BBOLD}1.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{0} ] ), tex_size=>100,
+\{LayoutTable(
+[
+['1.'.image(insertGraph( $graphs[ $shuffle->{0} ] ), tex_size=>$texsize,
 	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}2.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{1} ] ), tex_size=>100,
+'2.'.image(insertGraph( $graphs[ $shuffle->{1} ] ), tex_size=>$texsize,
 	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}3.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{2} ] ), tex_size=>100,
+'3.'.image(insertGraph( $graphs[ $shuffle->{2} ] ), tex_size=>$texsize,
 	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}4.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{3} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"') ) \}
-\{ row( "${BBOLD}5.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{4} ] ), tex_size=>100,
+'4.'.image(insertGraph( $graphs[ $shuffle->{3} ] ), tex_size=>$texsize,
+	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"')],
+['5.'.image(insertGraph( $graphs[ $shuffle->{4} ] ), tex_size=>$texsize,
 	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}6.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{5} ] ), tex_size=>100,
+'6.'.image(insertGraph( $graphs[ $shuffle->{5} ] ), tex_size=>$texsize,
 	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}7.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{6} ] ), tex_size=>100,
+'7.'.image(insertGraph( $graphs[ $shuffle->{6} ] ), tex_size=>$texsize,
 	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}8.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{7} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"') ) \}
-\{ row( "${BBOLD}9.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{8} ] ), tex_size=>100,
+'8.'.image(insertGraph( $graphs[ $shuffle->{7} ] ), tex_size=>$texsize,
+	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"')],
+['9.'.image(insertGraph( $graphs[ $shuffle->{8} ] ), tex_size=>$texsize,
 	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}10.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{9} ] ), tex_size=>100,
+'10.'.image(insertGraph( $graphs[ $shuffle->{9} ] ), tex_size=>$texsize,
 	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}11.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{10} ] ), tex_size=>100,
+'11.'.image(insertGraph( $graphs[ $shuffle->{10} ] ), tex_size=>$texsize,
 	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}12.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{11} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"') ) \}
-\{ endtable() \}
-
-
- 
-
-
-
+'12.'.image(insertGraph( $graphs[ $shuffle->{11} ] ), tex_size=>$texsize,
+	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"')],
+],
+align=>'>{\bfseries}l>{\bfseries}l>{\bfseries}l>{\bfseries}l',
+allcellcss=>'padding: 10px;',
+);
+\}
 
 END_TEXT
 
-Context()->normalStrings;
 
 ##############################################
 
 ANS( $pop->cmp() );
 
+##############################################
+
+$answer = $zero+1;
+
+BEGIN_PGML_SOLUTION
+
+[`y=f\left(\frac{1}{[$horscale]}x\right)`] has had a horizontal transformation from [`y=f\left(x\right)`], since the _input_ has been affected. Horizontal transformations are "counterintuitive", in the sense that while [`\frac{1}{[$horscale]}`] often suggests making something [`\frac{1}{[$horscale]}`] as large, here we will make the graph [`[$horscale]`] times as large (in the horizontal direction.) 
+
+So the familiar "V" shape of [`y=\left|x\right|`] is stretched horizontally away from the [`y`]-axis by a factor of  [`[$horscale]`], giving us graph [`[$answer]`].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();
