@@ -60,7 +60,7 @@ $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U11L1_IntroductionToFunctions.pdf
 !,"lecture notes on functions", "TARGET='_blank'") \} 
-$PAR
+
 \{ scalableiframe("//
 www.youtube.com/embed/JZmIsxayvxY
 ", style=>'position: relative; width: 100%; height: 0px; padding-bottom: 62%;' )\}
