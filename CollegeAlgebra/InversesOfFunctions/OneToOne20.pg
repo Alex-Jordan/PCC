@@ -105,9 +105,12 @@ ANS( $radio->cmp() );
 
 ##############################################
 
+if ($answer[$index] eq 'not') {$explanation = 'The graph shows us that the function does not pass the horizontal line test. That is, a horizontal line can intersect the graph at more than one point. Therefore the function is not one-to-one.'}
+else {$explanation = 'The graph shows us that the function passes the horizontal line test. That is, a horizontal never intersects the graph at more than one point. Therefore the function is one-to-one.'}
+
 BEGIN_PGML_SOLUTION
 
-The graph shows us that the function does not pass the horizontal line test. That is, a horizontal line can intersect the graph at more than one point. Therefore the function is not one-to-one.
+[$explanation]
 
 END_PGML_SOLUTION
 
