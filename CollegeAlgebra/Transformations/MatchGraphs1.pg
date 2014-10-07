@@ -23,7 +23,9 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "PGML.pl",
   "PGgraphmacros.pl",
+  "PCCgraphMacros.pl",
   "PGchoicemacros.pl",
   "unionTables.pl",
   "PGgraders.pl",
@@ -101,34 +103,25 @@ $ml->choose(4);
 
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
-Here is the graph of \(y=x^{1.5}\). $PAR
+BEGIN_PGML
+Here is the graph of [`y=x^{1.5}`]. 
 
-\{ image( insertGraph($gr0), width=>400, 
-    height=>400, tex_size=>800 ) \}
-$PAR
+[@EnlargeImageStatementPGML()@]**
+
+>>[@ image( insertGraph($gr0), width=>400, 
+    height=>400, tex_size=>800 ) @]* <<
 
 Match each function with its graph.
 
-$PAR
 
-\{ image( insertGraph($gr), width=>400, 
-    height=>400, tex_size=>800 ) \}
+>>[@ image( insertGraph($gr), width=>400, 
+    height=>400, tex_size=>800 ) @]* <<
 
+[@ ColumnMatchTable($ml) @]*
 
+END_PGML
 
-
-
-\{ ColumnMatchTable($ml) \}
-
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 
@@ -139,5 +132,21 @@ $showPartialCorrectAnswers = 1;
 install_problem_grader(~~&std_problem_grader);
 
 ANS( str_cmp( $ml->ra_correct_ans ) );
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+The blue graph has been shifted down, so this is the graph of [`[@$f[0]->TeX@]`].
+
+The red graph has been shifted right, so this is the graph of [`[@$f[1]->TeX@]`].
+
+The green graph has been reflected vertically over the [`x`]-axis and shifted down, so this is the graph of [`[@$f[2]->TeX@]`].
+
+The black graph has been compressed vertically toward the [`x`]-axis, so this is the graph of [`[@$f[3]->TeX@]`].
+
+
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

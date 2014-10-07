@@ -21,11 +21,10 @@
 DOCUMENT();        # This should be the first executable line in the problem.
 
 loadMacros(
-"PG.pl",
-"PGbasicmacros.pl",
-"PGchoicemacros.pl",
-"PGanswermacros.pl",
-"PGauxiliaryFunctions.pl"
+"PGstandard.pl",
+"MathObjects.pl",
+"PGML.pl",
+"PGcourse.pl"
 );
 
 #TEXT(beginproblem());
@@ -35,30 +34,34 @@ $showHint = 3;
 $a=random(2,15,2);
 $b=random(3,30,2);
 
-BEGIN_TEXT
-Start with \(f\), where \(f(x)=\sqrt{x} \). Let \(g\) be the function that we have after performing the following transformations:
-shift to the left $a units, scale horizontally by a factor of
-\($b\), and reflect over the \(x\)-axis. $PAR
-The new function
-\(g(x)=\) \{ans_rule(15) \}
-$BR
-$BBOLD
-Use sqrt(x) for \(\sqrt{x}\).
-$EBOLD
-END_TEXT
+BEGIN_PGML
+Start with [`f`], where [`f(x)=\sqrt{x} `]. Let [`g`] be the function that we have after performing the following transformations:
+shift to the left [`[$a]`] units, scale horizontally by a factor of
+[`[$b]`], and reflect over the [`x`]-axis.
+
+Using [|sqrt(x)|] for [`\sqrt{x}`], The new function has formula
+
+    [`g(x)={}`][_____________________] 
+
+END_PGML
 
 $ans1 = "-sqrt(1/$b *x + $a)";
 
 ANS(fun_cmp($ans1));
 
-HINT(EV3(<<'EOF'));
-$HINT $BR
-Remember that horizontal transformations do the exact opposite of what intuition dictates.  "Scaling horizontally by a factor of a" means you're  making the graph wider which means you have to multiply \(x\) by the reciprocal of a.
-EOF
 
-SOLUTION(EV4(<<'EOF'));
-$SOL $BR
-After a shift of $a units to the left, the function looks like \(f(x + $a) = \sqrt{x + $a}\). $BR The subsequent scaling is the hardest part.  Two things to remember:  $BR a) horizontal scaling works the exact opposite of what intuition dictates, so scaling by a factor of $b means the graph is compressing toward the \(y\)-axis by a factor of \(1 / $b\).  $BR b) The scaling factor affects only the \(x\).  $PAR Thus the function looks like \(f(\frac{1}{$b} x + $a) = \sqrt{\frac{1}{$b} x + $a}\). $PAR Finally, when reflecting through the \(x\)-axis, we have \(g(x) = - \sqrt{\frac{1}{$b} x + $a}\).
-EOF
+BEGIN_PGML_SOLUTION
+
+After a shift of [`[$a]`] units to the left, the function looks like [`f(x + [$a])`], which is [`\sqrt{x + [$a]}`]. 
+
+The subsequent scaling is the hardest part.  There are two things to remember:  
+a) horizontal scaling works in the opposite way from what intuition dictates, so scaling by a factor of [`[$b]`] means the graph is compressing toward the [`y`]-axis by a factor of [`\frac{1}{[$b]}`].  
+
+a) The scaling factor affects only the [`x`], not the [`x + [$a]`]. 
+
+Thus the function now looks like [`f\left(\frac{1}{[$b]} x + [$a]\right)`], which is [`\sqrt{\frac{1}{[$b]} x + [$a]}`]. 
+
+Finally, when reflecting through the [`x`]-axis, a _vertical_ reflection, we have [`g(x) = -{\sqrt{\frac{1}{[$b]} x + [$a]}}`].
+END_PGML_SOLUTION
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.
