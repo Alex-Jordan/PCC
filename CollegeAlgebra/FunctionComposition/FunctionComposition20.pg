@@ -44,7 +44,7 @@ Context()->variables->are(x=>'Real',t=>'Real');
 
 $constant = non_zero_random(-9,9,1);
 
-do {$fname = RandomVariableName()} until ($fname ne "x");
+do {$fname = RandomVariableName()} until ($fname ne "x" and $fname ne "t");
 $f = Formula("x/(x+$constant)")->reduce;
 
 $b = random(1,5,1);

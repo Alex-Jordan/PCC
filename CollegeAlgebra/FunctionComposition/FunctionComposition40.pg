@@ -30,7 +30,7 @@ Context()->noreduce('(-x)-y', '(-x)+y');
 Context()->flags->set(reduceConstants=>0);
 
 
-
+do{
 $a = non_zero_random(-3,3,1);
 $b = non_zero_random(-3,3,1);
 $c = non_zero_random(-3,3,1);
@@ -46,6 +46,8 @@ $ae = $a*$e;
 $ah = $a*$h;
 $bdpch = $b*$d+$c*$h;
 $ce = $c*$e;
+
+} until (gcd(gcd($ae,$ah ),$ce) == 1);
 
 $ans = Formula("($ae x+$ah)/($ce x+$bdpch)")->reduce;
 
