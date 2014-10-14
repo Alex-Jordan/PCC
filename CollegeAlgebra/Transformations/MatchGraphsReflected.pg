@@ -13,9 +13,12 @@ DOCUMENT();
 loadMacros(
 "PGstandard.pl",
 "PGgraphmacros.pl",
+"PCCgraphMacros.pl",
 "PGunion.pl",
 "imageChoice.pl",
 "MathObjects.pl",
+"PGML.pl",
+"PGcourse.pl",
 );
 
 TEXT(beginproblem());
@@ -89,14 +92,15 @@ $ml->choose(6);             #  select 4 of them
 ##############################################
 Context()->texStrings;
 
+BEGIN_PGML
+
+The graph of [`f`] is given in the first image below. [@EnlargeImageStatementPGML()@]** 
+
+>>[@ image( insertGraph($fgraph), tex_size=>450, width=>200, height=>200 ) @]* <<
+
+END_PGML
 BEGIN_TEXT
-
-The graph of \(f\) is 
-
 $PAR
-  \{ image( insertGraph($fgraph), tex_size=>450, width=>200, height=>200 ) \}
-$PAR
-
 
 \{
 ColumnTable(
@@ -126,8 +130,42 @@ foreach my $i (0..3) {
   $a[$i] = $ml->ra_correct_ans->[$i];
 }
 
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+The graph of [`y=f(x)+[$a]`] is the graph of [`y=f(x)`] after having been shifted up by [`[$a]`] units. So that is the graph
+
+>>[@image( insertGraph($gr[0]), 
+width=>200,height=>200,tex_size=>800 )@]* <<
+
+The graph of [`y=-f(x-$b)`] is the graph of [`y=f(x)`] after having been reflected vertically over the [`x`]-axis and shifted right by [`[$b]`] units. So that is the graph
+
+>>[@image( insertGraph($gr[1]), 
+width=>200,height=>200,tex_size=>800 )@]* <<
+
+The graph of [`y=f(x+$c)`] is the graph of [`y=f(x)`] after having been shifted left by [`[$c]`] units. So that is the graph
+
+>>[@image( insertGraph($gr[2]), 
+width=>200,height=>200,tex_size=>800 )@]* <<
+
+The graph of [`y=-f(x)+$a`] is the graph of [`y=f(x)`] after having been reflected vertically over the [`x`]-axis and shifted up by [`[$a]`] units. Both of these transformations are vertical, so they apply in the order consistent with the order of operations: first reflect, then shift. So that is the graph
+
+>>[@image( insertGraph($gr[3]), 
+width=>200,height=>200,tex_size=>800 )@]* <<
+
+The graph of [`y=f(x-$a)+$b`] is the graph of [`y=f(x)`] after having been shifted up [`[$b]`] units and shifted right by [`[$a]`] units. So that is the graph
+
+>>[@image( insertGraph($gr[4]), 
+width=>200,height=>200,tex_size=>800 )@]* <<
+
+The graph of [`y=-f(x)`] is the graph of [`y=f(x)`] after having been reflected vertically over the [`x`]-axis. So that is the graph
+
+>>[@image( insertGraph($gr[5]), 
+width=>200,height=>200,tex_size=>800 )@]* <<
 
 
+END_PGML_SOLUTION
 
 
 
