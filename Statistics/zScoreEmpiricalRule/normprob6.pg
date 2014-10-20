@@ -20,6 +20,7 @@ loadMacros(
 "PGanswermacros.pl",
 "PGauxiliaryFunctions.pl",
 "PGasu.pl",
+"MathObjects.pl",
 "PGnumericalmacros.pl",
 "PGstatisticsmacros.pl",
 "PGcommonFunctions.pl",
@@ -52,6 +53,9 @@ $score3 = random(50,100,1);
 $z1 = ($score1-$mu1)/$sig1;
 $z2 = ($score2-$mu2)/$sig2;
 $z3 = ($score3-$mu3)/$sig3;
+$realz1 = Real($z1);
+$realz2 = Real($z2);
+$realz3 = Real($z3);
 @scores = ($z1,$z2,$z3);}
 
 $best = max(@scores);
@@ -72,6 +76,31 @@ $PAR
 \{ $popup->menu() \} has the highest relative standing.
 
 END_TEXT
+
+######################################
+
+BEGIN_SOLUTION
+
+As we are interested in the highest relative standing in terms of test scores, we need to find the \(z\)-score for all three candidates and see who has the highest.
+
+$PAR
+
+\(z_{Colleen} = \frac{$score1 - $mu1}{$sig1} = $realz1\)
+
+$PAR
+
+\(z_{Teresa} = \frac{$score2 - $mu2}{$sig2} = $realz2\)
+
+$PAR 
+
+\(z_{Mary} = \frac{$score3 - $mu3}{$sig3} = $realz3\)
+
+$PAR 
+
+As the \(z\)-score of \($best\) belongs $ans, $ans has the highest relative standing for all the test takers.
+
+END_SOLUTION
+
 
 ANS($popup->cmp());
 

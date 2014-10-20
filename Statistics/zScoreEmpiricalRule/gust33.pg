@@ -46,6 +46,15 @@ BEGIN_TEXT
 \{ $mc->print_a \}
 
 END_TEXT
+
+######################################
+
+BEGIN_SOLUTION
+
+Recall that spread helps us think about how far each data value is from the mean.  As we are working with Normal distributions, the widest spread will have the largest standard deviation.  Therefore, the distribution with standard deviation 3 has the widest spread.
+
+END_SOLUTION
+
 ANS(radio_cmp($mc->correct_ans));
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.

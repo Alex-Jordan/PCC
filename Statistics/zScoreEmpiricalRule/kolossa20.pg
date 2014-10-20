@@ -75,6 +75,23 @@ $BR$HR$BR
 
 END_TEXT
 
+######################################
+
+BEGIN_SOLUTION
+
+(1) C.  When not standardized, values for mean and standard deviation can always vary.  However, when working with a Normal distribution, all standardized variables have a mean of 0 and a standard deviation of 1.
+
+$PAR
+
+(2)  A.  The definition of a \(z\)-score is the number of standard deviations that the observation is from the mean.
+
+$PAR 
+
+(3) A.  When working with Normal distributions and \(z\)-scores, any observation above the mean will be seen as a "positive" deviation and thus have a positive \(z\)-score.
+
+END_SOLUTION
+
+
 ANS(radio_cmp($mc->correct_ans));
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
