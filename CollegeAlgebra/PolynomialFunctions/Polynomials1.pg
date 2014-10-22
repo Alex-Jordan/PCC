@@ -68,7 +68,7 @@ END_PGML
 ANS(Compute($degg)->cmp()->withPostFilter(AnswerHints( 
   Compute("$degf+$degg") => "You have computed deg(f)+deg(g); this is not the same as deg(f+g).",
 )));
-ANS(Compute($degf)->cmp()->withPostFilter(AnswerHints( 
+ANS(Compute($degg)->cmp()->withPostFilter(AnswerHints( 
   Compute("$degf-$degg") => "You have computed deg(f)-deg(g); this is not the same as deg(f-g).",
 )));
 ANS(Compute($degf+$degg)->cmp()->withPostFilter(AnswerHints( 
