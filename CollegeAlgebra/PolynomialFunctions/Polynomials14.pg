@@ -21,19 +21,20 @@
 # First comes some stuff that appears at the beginning of every problem
 #
 
+##############################################
 DOCUMENT();        # This should be the first executable line in the problem.
 
 loadMacros(
-"PG.pl",
-"PGbasicmacros.pl",
-"PGchoicemacros.pl",
-"PGanswermacros.pl",
-"PGauxiliaryFunctions.pl",
+"PGstandard.pl",
+"MathObjects.pl",
+"PGML.pl",
 "PGgraphmacros.pl",
-"PGasu.pl"
+"PCCgraphMacros.pl",
+"PGcourse.pl",
 );
 TEXT(beginproblem());
 
+##############################################
 
 
 $a=random(-3, -1,1);
@@ -57,28 +58,47 @@ $f = FEQ("$lead*(x-$a)*(x-$b)*(x-$c)*(x-$d) for x in <-$xdom,$xdom> using color:
 ($fref) = plot_functions( $graph, $f);
 $val = $lead*(5-$a)*(5-$b)*(5-$c)*(5-$d);
 
+$graph->stamps( closed_circle(5,$val,'blue') );
+$graph->lb( new Label(5,$val,"(5,$val)",
+    'black','left','bottom'));
+
+##############################################
 
 
-BEGIN_TEXT
-\{ image(insertGraph($graph), width=>200, height=>200) \} $BR
-To get a better look at the graph, you can click on it.
-$BR
-The curve above is the graph of a degree 4 polynomial.  It goes through
-the point \( (5, $val) \).  Find the polynomial.
-$BR
-        \(f(x) = \) \{ans_rule(60)\}
-$PAR
-$BBOLD Note: $EBOLD You should assume that any coordinates on the graph that appear to be integers actually are integers.
-END_TEXT
+BEGIN_PGML
 
-#
-# Tell WeBWork how to test if answers are right.  These should come in the
-# same order as the answer blanks above.  You tell WeBWork both the type of
-# "answer evaluator" to use, and the correct answer.
-#
-$ans = "$lead*(x-$a)*(x-$b)*(x-$c)*(x-$d)";
+The curve below is the graph of a degree four polynomial.  It passes through the point [`(5, [$val])`]. You should assume that any coordinates on the graph that appear to be integers actually are integers.
 
-ANS(fun_cmp($ans, limits=>[-$xdom,$xdom], vars=>"x"));
+[@EnlargeImageStatementPGML()@]**
+
+>> [@image(insertGraph($graph), width=>400, height=>400) @]* <<
+
+Find a formula for the polynomial.
+
+    [`p(x)={}`][_________________________________________________________]{Formula("$lead*(x-$a)*(x-$b)*(x-$c)*(x-$d)")->reduce}
+
+END_PGML
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+The graph indicates that each of [`[$a]`], [`[$b]`], [`[$c]`], and [`[$d]`] are zeros of degree one. So there are factors [`(x-[$a])`],  [`(x-[$b])`],  [`(x-[$c])`], and  [`(x-[$d])`]. There cannot be any more factors involving [`x`], because the polynomial is degree four. But there can be a constant factor [`c`]. So we have established that for some [`c`], 
+
+    [`p(x)=c(x-[$a])(x-[$b])(x-[$c])(x-[$d])`]
+
+Now we also know that [`p(5)=[$val]`]. This tells us that
+
+    [`\begin{aligned}
+p(5) &= [$val]\\
+c(5-[$a])(5-[$b])(5-[$c])(5-[$d]) &= [$val]\\
+c([@(5-$a)*(5-$b)*(5-$c)*(5-$d)@]) &= [$val]\\
+c&=[$lead]
+\end{aligned}`]
+
+So [`p(x)=[$lead](x-[$a])(x-[$b])(x-[$c])(x-[$d])`].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.
 
