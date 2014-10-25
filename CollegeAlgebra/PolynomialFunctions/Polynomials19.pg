@@ -23,8 +23,8 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
-
+  "PGML.pl",
+  "PGcourse.pl",
 );
 TEXT(beginproblem());
 
@@ -43,17 +43,14 @@ $p = Compute("(x-$r[0])*(x-$r[1])**2")->reduce;
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+Find a formula for a degree three polynomial function [`f`] whose zeros are [`[@$r[0]@]`] with multiplicity [`1`], and [`[@$r[1]@]`] with multiplicity [`2`]. There are many possible correct answers to this question.
 
-Find a formula for a degree three polynomial function \(f\) whose zeros are \($r[0]\) with multiplicity \(1\), and \($r[1]\) with multiplicity \(2\). $PAR
+    [`f(x)={}`][____________________________________]
 
-\(f(x)\) = \{ans_rule(50)\}
+END_PGML
 
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 
@@ -72,5 +69,15 @@ ANS( $p->cmp(checker => sub {
     }
 ) );
 
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+Since [`[@$r[0]@]`] is a zero with multiplicity [`1`], [`(x-[@$r[0]@])`] is a factor. And since [`[@$r[1]@]`] is a zero with multiplicity [`2`], [`(x-[@$r[1]@])^2`] is a factor. The polynomial is degree three, so there can be no more factors involving [`x`]. There might be an additional constant factor, so we can say that for some [`c\neq 0`], [`f(x)=c(x-[@$r[0]@])(x-[@$r[1]@])^2`]. You could take [`c=1`] for instance, and [`f(x)=(x-[@$r[0]@])(x-[@$r[1]@])^2`] is a formula that meets the necessary conditions.
+
+
+
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

@@ -23,9 +23,11 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
+  "niceTables.pl",
+  "PGML.pl",
   "contextFraction.pl",
   "parserMultiAnswer.pl",
+  "PGcourse.pl",
 
 );
 TEXT(beginproblem());
@@ -73,25 +75,27 @@ $multians = MultiAnswer($r[0], $m[0], $r[1], $m[1])->with(
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
+
+Suppose that [`f`] is given by [`f(x)=[$p]`]. 
+
+List the zeros of [`f`] and their multiplicities.
+
+END_PGML
 
 BEGIN_TEXT
+$PAR
+\{DataTable(
+[
+[["zero",headerrow=>1],"multiplicity"],
+[$multians->ans_rule(5),$multians->ans_rule(5)],
+[$multians->ans_rule(5),$multians->ans_rule(5)],
+],
+allcellcss => "border: solid 1px;",
+)\}
 
-Suppose that \(f\) is given by \(f(x)=$p\). $PAR
-
-List the zeros of \(p\) and their multiplicities. $BR
-
-\{ 
-BeginTable(border=>1, tex_border=>"1pt", spacing=>0, padding=>4).
-AlignedRow(["zero","multiplicity"], align=>LEFT, separation=>0).
-AlignedRow([$multians->ans_rule(5),$multians->ans_rule(5)], separation=>0).
-AlignedRow([$multians->ans_rule(5),$multians->ans_rule(5)], separation=>0).
-EndTable()
-\}
 END_TEXT
 
-
-Context()->normalStrings;
 
 ##############################################
 
@@ -99,5 +103,12 @@ $showPartialCorrectAnswers = 0;
 
 ANS( $multians->cmp() ); 
 
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We can see from the formula that [`[@$r[0]@]`] is a zero of multiplicity [`[@$m[0]@]`], and [`[@$r[1]@]`] is a zero of multiplicity [`[@$m[1]@]`].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();
