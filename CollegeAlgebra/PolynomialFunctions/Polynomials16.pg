@@ -23,7 +23,8 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 
 );
 TEXT(beginproblem());
@@ -45,21 +46,16 @@ $p = Compute("(x-$r[0])*(x-$r[1])*(x-$r[2])")->reduce;
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+Find a formula for a degree three polynomial function [`f`] whose zeros are [`[@$r[0]@]`], [`[@$r[1]@]`], and [`[@$r[2]@]`]. Technically, there are many correct answers for this question.
 
-Find a formula for a degree three polynomial function \(f\) whose zeros are \($r[0]\), \($r[1]\), and \($r[2]\). $PAR
+    [`f(x) = {}`][________________________________________]
 
-\(f(x)\) = \{ans_rule(50)\}
+END_PGML
 
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
-
-$showPartialCorrectAnswers = 1;
 
 ANS( $p->cmp(checker => sub {
       my ( $correct, $student, $self ) = @_;
@@ -74,5 +70,14 @@ ANS( $p->cmp(checker => sub {
     }
 ) );
 
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+Since the zeros are [`[@$r[0]@]`], [`[@$r[1]@]`], and [`[@$r[2]@]`], there are corresponding factors [`(x-[@$r[0]@])`], [`(x-[@$r[1]@])`], and [`(x-[@$r[2]@])`]. Since the polynomial is degree [`3`], there cannot be any more factors that use [`x`]. But there could be a constant factor. So any answer of the form [`c(x-[@$r[0]@])(x-[@$r[1]@])(x-[@$r[2]@])`] with [`c\neq0`] works. In particular, [`(x-[@$r[0]@])(x-[@$r[1]@])(x-[@$r[2]@])`] is one correct answer.
+
+
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

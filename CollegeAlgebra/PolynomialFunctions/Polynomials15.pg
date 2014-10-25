@@ -21,24 +21,23 @@
 # First comes some stuff that appears at the beginning of every problem
 #
 
+################################################
+
 DOCUMENT();        # This should be the first executable line in the problem.
 
 loadMacros(
-"PG.pl",
-"PGbasicmacros.pl",
-"PGchoicemacros.pl",
-"PGanswermacros.pl",
-"PGauxiliaryFunctions.pl",
+"PGstandard.pl",
+"MathObjects.pl",
+"PGML.pl",
 "PGgraphmacros.pl",
-"PGasu.pl",
-"extraAnswerEvaluators.pl",
-"MathObjects.pl"
+"PCCgraphMacros.pl",
+"PGcourse.pl",
+"parserPopUp.pl",
 );
 TEXT(beginproblem());
 
 
-
-
+################################################
 
 
 $a=list_random(-1,1);
@@ -64,34 +63,59 @@ $graph = init_graph(-$xdom,$y1dom,$xdom,$y2dom,'axes'=>[0,0],'grid'=>[$xgrid]);
 $f = FEQ("$func for x in <-$xdom,$xdom> using color:blue and weight:2");
 $fref = plot_functions( $graph, $f);
 
+$evenodd = PopUp(['?','even','odd'], 'even');
 
-BEGIN_TEXT
-\{ image(insertGraph($graph), width=>200, height=>200) \} $BR
-To get a better look at the graph, you can click on it.
-$BR
-The curve above is the complete graph of the polynomial function \(p(x)\).  Use the graph to answer the following questions.
-$BR
-(A)  Is the degree of \(p(x)\) even or odd? \{pop_up_list(['?','even','odd'])\} 
-$BR
-(B)  Is the leading coefficient of \(p(x)\) positive or negative? \{pop_up_list(['?','positive','negative'])\} 
-$BR
-(C) List the real roots of \(p(x)\) in increasing order (i.e. 2, 3, 4).
-\{ans_rule(30)\}
-$BR
-(D) What is the smallest possible degree of \(p(x)\)? \{ans_rule(10)\} 
-END_TEXT
-
-$ans1 = "even";
 $ans2 = "positive";
 if ($a != 1) {$ans2 = "negative";}
+$posneg = PopUp(['?','positive','negative'], $ans2);
 
+################################################
 
-ANS(std_cs_str_cmp($ans1));
-ANS(std_cs_str_cmp($ans2));
-ANS(number_list_cmp("$b,$c,$d,$e"));
-ANS(num_cmp(6));
+BEGIN_PGML
+The curve below is a graph of the polynomial function [`p`].  Use the graph to answer the questions that follow.
 
+[@EnlargeImageStatementPGML()@]**
 
+>>[@ image(insertGraph($graph), width=>400, height=>400) @]* <<
+
+a.  Is the degree of [`p`] even or odd? [@$evenodd->menu@]* 
+
+a. Is the leading coefficient of [`p`] positive or negative? [@$posneg->menu@]* 
+
+a. List the real roots of [`p`]. [________________]
+
+a. What is the smallest possible degree of [`p`]? [_______]
+
+END_PGML
+
+################################################
+$Roots = List("$b,$c,$d,$e");
+
+ANS($evenodd->cmp);
+ANS($posneg->cmp);
+ANS($Roots->cmp);
+ANS(Real(6)->cmp);
+
+################################################
+
+$dir = ($a > 0) ? "up" : "down";
+$lim =  ($a > 0) ? "\infty" : "-\infty";
+
+BEGIN_PGML_SOLUTION
+
+a. Since both arms of [`p`] point in the same direction ([$dir]), [`p`] has an even degree.
+
+a. Since [`p(x)\to[$lim]`] as [`x\to\infty`], the leading coefficient of [`p`] is [$ans2]. In other words, since the arm on the right points [$dir], the leading coefficient of [`p`] is [$ans2].
+
+a. Roots are the [`x`]-values where the curve touches the [`x`]-axis. This happens at [`[$Roots]`].
+
+a. At [`x=[$b]`] and [`x=[$d]`], the curve crosses through the [`x`] axis just like a linear function would. So the corresponding factors [`(x-[$b])`] and [`(x-[$d])`] are degree [`1`]. That is, they are not raised to a power (other than [`1`]).
+
+    At [`x=[$c]`] and [`x=[$e]`], the curve touches the [`x`] axis and turns around. This tells us that the corresponding factors [`(x-[$c])`] and [`(x-[$e])`] are raised to an even power [`2`] or more. Each of them might be raised to [`2`], [`4`], or some such positive even power.
+
+    All together this means that the total degree of [`p`] is at least [`1+1+2+2`], or [`6`].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.
 
