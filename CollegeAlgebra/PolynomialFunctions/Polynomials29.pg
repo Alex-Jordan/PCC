@@ -23,9 +23,10 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
+  "niceTables.pl",
+  "PGML.pl",
   "contextFraction.pl",
-  "parserMultiAnswer.pl",
+  "PGcourse.pl",
 
 );
 TEXT(beginproblem());
@@ -44,7 +45,8 @@ $r[$i] = $r[$i-1]+random(2,4,1);
 }
 
 Context("Fraction");
-$c = Fraction(6,random(2,10,1));
+do {$den = random(2,10,1)} until ($den != 6);
+$c = Fraction(6,$den);
 
 
 Context("Numeric");
@@ -60,32 +62,28 @@ $slope[$i] = $d->eval(x=>$r[$i]);
 }
 
 
-
-
-
-
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
+
+Suppose that [`f`] is given by [`f(x)=[$p]`]. 
+
+Find the slope of the curve [`y=[$p]`] at each of the zeros of [`f`]. 
+END_PGML
 
 BEGIN_TEXT
-
-Suppose that \(f\) is given by \(f(x)=$p\). $PAR
-
-Find the slope of the curve \(y=$p\) at each of the zeros of \(f\). $BR
-
+$PAR
 \{ 
-BeginTable(border=>1, tex_border=>"1pt", spacing=>0, padding=>4).
-AlignedRow(["zero","slope"], align=>LEFT, separation=>0).
-AlignedRow(["$r[0]",ans_rule(10)], separation=>0).
-AlignedRow(["$r[1]",ans_rule(10)], separation=>0).
-AlignedRow(["$r[2]",ans_rule(10)], separation=>0).
-EndTable()
+DataTable([
+[["zero",headerrow=>1],"slope"],
+["$r[0]",ans_rule(10)],
+["$r[1]",ans_rule(10)], 
+["$r[2]",ans_rule(10)],
+],
+allcellcss=>"border: solid 1px;",
+)
 \}
 END_TEXT
-
-
-Context()->normalStrings;
 
 ##############################################
 
@@ -95,5 +93,55 @@ for my $i (0..2)
 {
 ANS( $slope[$i]->cmp() ); 
 }
+
+##############################################
+
+$r0 = $r[0];
+$r1 = $r[1];
+$r2 = $r[2];
+
+Context()->variables->add(y=>'Real');
+$p0 = Compute("(x-$r[0])*(y-$r[1])*(y-$r[2])")->reduce;
+$p1 = Compute("(y-$r[0])*(x-$r[1])*(y-$r[2])")->reduce;
+$p2 = Compute("(y-$r[0])*(y-$r[1])*(x-$r[2])")->reduce;
+
+$f0 = Compute("(x-$r[0])")->reduce;
+$f1 = Compute("(x-$r[1])")->reduce;
+$f2 = Compute("(x-$r[2])")->reduce;
+
+BEGIN_PGML_SOLUTION
+
+Each of the three zeros is a degree one zero. So we can determine the slope at each zero by preserving that zero's corresponding factor, and substituting in the zero in other factors. 
+
+At [`x=[$r0]`],
+
+    [`\begin{aligned}
+[$p] &\longrightarrow [$c][@$p0->substitute(y=>Formula("$r0"))->TeX@]
+= [@$slope[0]@]([$f0])\\
+\end{aligned}`]
+
+So the slope at [`x=[$r0]`] is [`[@$slope[0]@]`]. Basically, this has told us that for [`x`]-values close to [`[$r0]`], our function is very much like [`[@$slope[0]@]([$f0])`], which is a line with slope [`[@$slope[0]@]`] that has been shifted to cross the [`x`]-axis at [`[$r0]`].
+
+At [`x=[$r1]`],
+
+    [`\begin{aligned}
+[$p] &\longrightarrow [$c][@$p1->substitute(y=>Formula("$r1"))->TeX@]
+= [@$slope[1]@]([$f1])\\
+\end{aligned}`]
+
+So the slope at [`x=[$r1]`] is [`[@$slope[1]@]`].
+
+At [`x=[$r2]`],
+
+    [`\begin{aligned}
+[$p] &\longrightarrow [$c][@$p2->substitute(y=>Formula("$r2"))->TeX@]
+= [@$slope[2]@]([$f2])\\
+\end{aligned}`]
+
+So the slope at [`x=[$r2]`] is [`[@$slope[2]@]`].
+
+
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

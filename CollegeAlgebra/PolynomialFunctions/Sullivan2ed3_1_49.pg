@@ -12,9 +12,10 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
-  "parserRadioButtons.pl",
+  "niceTables.pl",
+  "PGML.pl",
   "parserMultiAnswer.pl",
+  "PGcourse.pl",
 );
 
 
@@ -37,19 +38,6 @@ $touches = "touches";
 
 Context()->strings->add("crosses"=>{},"touches"=>{});
 
-$radiocross = RadioButtons(
-  [$crosses,$touches],
-  $crosses, # correct answer
-  last => [$crosses,$touches], # can be a list
-);
-
-$radiotouch = RadioButtons(
-  [$crosses,$touches],
-  $touches, # correct answer
-  last => [$crosses,$touches], # can be a list
-);
-
-
 $multians = MultiAnswer(Compute("$b"), Compute("1"),Compute("$crosses"),Compute("$c"), Compute("2"),Compute("$touches"))->with(
   singleResult => 1,
   checker => sub {
@@ -66,63 +54,54 @@ $multians = MultiAnswer(Compute("$b"), Compute("1"),Compute("$crosses"),Compute(
 
 if ($a > 0)
 {$right = Compute("INF");
-$left = Compute("-INF");}
+$left = Compute("-INF");
+$rdir = 'an upward';
+$ldir = 'a downward';}
 else {$right = Compute("-INF");
-$left = Compute("INF")};
+$left = Compute("INF");
+$ldir = 'an upward';
+$rdir = 'a downward';
+};
 
 
 
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
+Let [`f(x)=[$f]`].
+
+
+Fill out the table below.  In the third column, type the word *crosses* for a zero where the curve crosses through to the other side of the [`x`]-axis, or *touches* for a zero where the curve approaches the [`x`]-axis, touches it, and reverses direction without crossing over it.
+
+END_PGML
 BEGIN_TEXT
-
-Let \(f(x)=$f\).
-
-$PAR
-
-$BBOLD(a.)$EBOLD Fill out the table below.  In the third column, type the word $BBOLD crosses$EBOLD or $BBOLD touches $EBOLD.
-
 $PAR
 
 \{ 
-BeginTable(border=>1, tex_border=>"1pt", spacing=>0, padding=>4).
-AlignedRow(["zero","multiplicity","crosses or touches the x-axis"], align=>LEFT, separation=>0).
-AlignedRow([$multians->ans_rule(5),$multians->ans_rule(5),$multians->ans_rule(15)], separation=>0).
-AlignedRow([$multians->ans_rule(5),$multians->ans_rule(5),$multians->ans_rule(15)], separation=>0).
-EndTable()
+DataTable([
+[["zero",headerrow=>1],"multiplicity","crosses or touches the \(x\)-axis"], [$multians->ans_rule(5),$multians->ans_rule(5),$multians->ans_rule(15)], [$multians->ans_rule(5),$multians->ans_rule(5),$multians->ans_rule(15)],
+],
+allcellcss=> 'border: solid 1px;',
+)
 \}
 
 $PAR
-
-$BBOLD (b)$EBOLD What is the maximum number of turning points of the graph of \(f\)?
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(5)\}
-
-$PAR 
-
-$BBOLD(c)$EBOLD What is \(\displaystyle\lim_{x\rightarrow\infty}f(x)\)?  If you need to enter \(\infty\) or \(-\infty\), type $BBOLD INF$EBOLD.
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(5)\}
-
-$PAR 
-
-$BBOLD(d)$EBOLD What is \(\displaystyle\lim_{x\rightarrow-\infty}f(x)\)?  If you need to enter \(\infty\) or \(-\infty\), type $BBOLD INF$EBOLD.
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(5)\}
-
-
 END_TEXT
 
-Context()->normalStrings;
+BEGIN_PGML
+
+What is the number of turning points of the graph of [`f`]? (A turning point is a point where the curve changes from increasing to decreasing, or from decreasing to increasing.)
+
+     [________________________]
+
+As [`x\to\infty,\quad f(x)\to{}`][______________]  
+
+As [`x\to-\infty,\quad f(x)\to{}`][______________]  
+
+
+END_PGML
 
 ##############################################
 
@@ -133,5 +112,25 @@ ANS( $multians->cmp() );
 ANS( Compute("2")->cmp() );
 ANS( $right->cmp() );
 ANS( $left->cmp() );
+
+##############################################
+
+$lt = Compute("$a x^3")->reduce;
+
+BEGIN_PGML_SOLUTION
+
+The zero at [`[$b]`] has degree [`1`], and since this is odd, the curve crosses the [`x`]-axis there.
+
+The zero at [`[$c]`] has degree [`2`], and since this is even, the curve touches the [`x`]-axis there and turns around.
+
+We can now sketch a rough graph of [`f`], and see that there would have to be [`2`] turning points (one in between [`[$b]`] and [`[$c]`], and one _at_ [`[$c]`]).
+
+Since the leading term is [`[$lt]`], the long-term behavior of the graph on the right is [$rdir] pointing arm. So as [`x\to\infty,\quad f(x)\to[$right]`].
+
+And the long-term behavior of the graph on the left is [$ldir] pointing arm. So as [`x\to-\infty,\quad f(x)\to[$left]`].
+
+
+END_PGML_SOLUTION
+
 
 ENDDOCUMENT();
