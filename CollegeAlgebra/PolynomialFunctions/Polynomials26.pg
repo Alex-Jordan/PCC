@@ -24,8 +24,12 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "PGML.pl",
   "PGgraphmacros.pl",
+  "PCCgraphMacros.pl",
   "parserPopUp.pl",
+  "niceTables.pl",
+  "PGcourse.pl",
 
 );
 TEXT(beginproblem());
@@ -57,16 +61,9 @@ for my $i ($r[0]..$r[2]-1)
 
 $ymax = 3*max(@vals);
 
-
-
-
-
 $horshift = non_zero_random(-4,4,2);
 $vershift = non_zero_random(-5,5,10);
 $horscale = 2;
-
-
-
 
 $f[1] = $p->substitute(x=>Formula("x/$horscale"));
 $f[7] = $p->substitute(x=>Formula("x+$horshift"));
@@ -78,7 +75,7 @@ $f[6] = $p->substitute(x=>Formula("$horscale*x"));
 $f[5] = -$p;
 $f[8] = -($p->substitute(x=>Formula("x+$horshift")));
 $f[9] = -($p->substitute(x=>Formula("x-$horshift")));
-$f[10] = $p->substitute(x=>Formula("-$horscale*x"));
+$f[10] = $p**2/50;
 $f[11] = -($p->substitute(x=>Formula("x/$horscale")));
 
 $xmin = -10;         #The viewing window
@@ -88,52 +85,30 @@ $ymax = $ymax;
 
 
 @graphs = ();             
-
-
 #  Start making the graphs
 
-for ( my $i=0; $i<16; $i++ ) {
+for ( my $i=0; $i<12; $i++ ) {
 
 
 #  Background
+$size = 220;
 
    $graphs[$i] = init_graph($xmin,$ymin,$xmax,$ymax,
-          grid=>[$xmax-$xmin,10],axes=>[0,0],pixels=>[300,300]);
+          grid=>[$xmax-$xmin,10],axes=>[0,0],pixels=>[$size,$size]);
 
 
 #  Labels
 
    $graphs[$i]->lb('reset');
-   foreach my $j (1..9) {
+   foreach my $j (2,4,6,8) {
 #      $graphs[$i]->lb( new Label(-9.7,  $j, $j,'black','center','middle'));
 #      $graphs[$i]->lb( new Label(-9.7, -$j,-$j,'black','center','middle'));
-      $graphs[$i]->lb( new Label(  $j,-$ymax*0.95, $j,'black','center','middle'));
-      $graphs[$i]->lb( new Label( -$j,-$ymax*0.95,-$j,'black','center','middle'));
+      $graphs[$i]->lb( new Label(  $j, 0, $j,'black','center','top'));
+      $graphs[$i]->lb( new Label( -$j, 0, "-$j",'black','center','top'));
    }
-   $graphs[$i]->lb( new Label(9.7,0.2,'x','black','center','middle'));
-   $graphs[$i]->lb( new Label(0.2,0.95*$ymax,'y','black','center','middle'));
-
-
-#  Define new graph colors
-
-   $graphs[$i]->new_color("lightblue", 214,230,244); # RGB
-   $graphs[$i]->new_color("darkblue",  100,100,255); 
-   $graphs[$i]->new_color("lightgreen",156,215,151); # other color options
-   $graphs[$i]->new_color("darkgreen",   0, 86, 34); # for future author use 
-   $graphs[$i]->new_color("lightred",  245,234,229); # light red-purple
-   $graphs[$i]->new_color("darkred",   159, 64, 16); # red-brown
-
-   $graphs[$i]->new_color("white",   255, 255, 255); # needed to seal off
-                                                     # areas bordered with 
-                                                     # dashed lines
-
-#  Choose colors
-
-   $light[$i] = "lightblue";      # Graphs will all be blue
-   $dark[$i] = "darkblue";        # This could be modified to give different
-                                  # graphs different colors.
+   $graphs[$i]->lb( new Label(9.7,0,'x','black','center','top'));
+   $graphs[$i]->lb( new Label(0.2,0.95*$ymax,'y','black','left','middle'));
    
-
 add_functions($graphs[$i], "$f[$i] for x in <-10,10> " .
     "using color:blue and weight:2");
 
@@ -167,74 +142,60 @@ $pop = PopUp( [qw(? 1 2 3 4 5 6 7 8 9 10 11 12)], $zero+1 );
 
 
 
-$size = 200;
+
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
+On paper, sketch the graph of [`f`], where [`f(x)=[$p]`]. (During exams, you may be required to actually sketch graphs, and cannot rely on multiple choices.) Once you have your graph, find it among these choices.
+
+[@EnlargeImageStatementPGML()@]**
+
+END_PGML
 
 BEGIN_TEXT
-On paper, sketch the graph of \(f\), where \(f(x)=$p\). (During exams, you will be required to actually sketch graphs.) Once you have your graph, find it in this array.
-
-\{ $pop->menu() \}
-
-$PAR
-${BITALIC}(Click on a graph to enlarge it.)$EITALIC
 $PAR
 
-
-\{ begintable(4) \}
-\{ row( "${BBOLD}1.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{0} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}2.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{1} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}3.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{2} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}4.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{3} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"') ) \}
-\{ row( "${BBOLD}5.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{4} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}6.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{5} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}7.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{6} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}8.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{7} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"') ) \}
-\{ row( "${BBOLD}9.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{8} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}10.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{9} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}11.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{10} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
-	"${BBOLD}12.$EBOLD" .
-	image(insertGraph( $graphs[ $shuffle->{11} ] ), tex_size=>100,
-	      height=>$size, width=>$size, extra_html_tags=>'alt="graph"') ) \}
-\{ endtable() \}
-
-
- 
-
-
-
+\{LayoutTable(
+[
+["${BBOLD}1.$EBOLD".image(insertGraph( $graphs[ $shuffle->{0} ] ), tex_size=>100, height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
+"${BBOLD}2.$EBOLD".image(insertGraph( $graphs[ $shuffle->{1} ] ), tex_size=>100, height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
+"${BBOLD}3.$EBOLD".image(insertGraph( $graphs[ $shuffle->{2} ] ), tex_size=>100, height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),],
+["${BBOLD}4.$EBOLD" .image(insertGraph( $graphs[ $shuffle->{3} ] ), tex_size=>100, height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
+"${BBOLD}5.$EBOLD".image(insertGraph( $graphs[ $shuffle->{4} ] ), tex_size=>100, height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
+"${BBOLD}6.$EBOLD".image(insertGraph( $graphs[ $shuffle->{5} ] ), tex_size=>100, height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),],
+["${BBOLD}7.$EBOLD".image(insertGraph( $graphs[ $shuffle->{6} ] ), tex_size=>100, height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
+"${BBOLD}8.$EBOLD" .image(insertGraph( $graphs[ $shuffle->{7} ] ), tex_size=>100, height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
+"${BBOLD}9.$EBOLD".image(insertGraph( $graphs[ $shuffle->{8} ] ), tex_size=>100, height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),],
+["${BBOLD}10.$EBOLD".image(insertGraph( $graphs[ $shuffle->{9} ] ), tex_size=>100, height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
+"${BBOLD}11.$EBOLD".image(insertGraph( $graphs[ $shuffle->{10} ] ), tex_size=>100, height=>$size, width=>$size, extra_html_tags=>'alt="graph"'),
+"${BBOLD}12.$EBOLD" .image(insertGraph( $graphs[ $shuffle->{11} ] ), tex_size=>100, height=>$size, width=>$size, extra_html_tags=>'alt="graph"') ],
+],
+allcellcss => "padding:5pt;",
+)\}
 
 END_TEXT
 
-Context()->normalStrings;
+
+BEGIN_PGML
+    The correct graph is graph [@$pop->menu() @]*.
+
+END_PGML
 
 ##############################################
 
 ANS( $pop->cmp() );
 
+##############################################
+
+$dir = ($c>0) ? "an upward" : "a downward";
+
+BEGIN_PGML_SOLUTION
+
+The formula tells us that the zeros are at [`[@$r[0]@]`], [`[@$r[1]@]`], and [`[@$r[2]@]`]. The formula also tells us that each of these zeros are degree one. So when the graph reaches the [`x`]-intercepts, it will pass through the [`x`]-axis in a way similar to how a straight line would pass through.
+
+Also, the leading coefficient is [`[$c]`], which tells us that the right arm of the graph should point in [$dir] direction. We use all this to sketch a graph that looks like graph [@$zero+1@].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

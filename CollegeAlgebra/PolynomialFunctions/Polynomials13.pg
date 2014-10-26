@@ -45,9 +45,14 @@ do {
 $var = RandomVariableName()
 } until ($var ne 'x');
 
+Context("Numeric");
+Context()->variables->are(x=>'Real', $var=>'Real');
+Context()->noreduce('(-x)+y'=>0, '(-x)-y'=>0);
+$poly = Formula("x^4+[$b][$var]x^3 + [$var]^2 x^2 +[$c] x+[$d]")->reduce;
+
 BEGIN_PGML
 
-Find a negative number [`[$var]`], so that [`(x-1)`] is a factor of [`x^4+[$b][$var]x^3 + [$var]^2 x^2 +[$c] x+[$d]`].
+Find a negative number [`[$var]`], so that [`(x-1)`] is a factor of [`[$poly]`].
 
     [`[$var]={}`][________________]{-$r2}
 
