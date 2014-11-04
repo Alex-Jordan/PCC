@@ -128,4 +128,17 @@ ANS( $popupD->cmp() );
 
 ANS( $popupA->cmp() );
 
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+a. [`a`] is the initial value of an exponential function, so we are looking for the curve with the highest [`y`]-intercept. This is curve [`D`].
+
+a. Again since [`a`] is the initial value of an exponential function, we are looking for the two curves that have the same [`y`]-intercept. These are the curves [`A,B`].
+
+a. Curves [`C`] and [`D`] have growth factors smaller than [`1`], so the curve with the lowest value for [`b`] must be one of these two. [`D`] seems to have a much smaller growth factor, since it drops beneath [`C`] despite starting above [`C`]. So [`D`] has the smallest value for [`b`].
+
+a. Curves [`A`] and [`B`] have growth factors larger than [`1`], so the curve with the largest value for [`b`] must be one of these two. The both have the same initial value, so it is easy to see that [`A`] has the largest value for [`b`].
+
+END_PGML_SOLUTION
 ENDDOCUMENT();
