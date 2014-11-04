@@ -95,7 +95,7 @@ $refreshCachedImages = 1;
 BEGIN_PGML
 Below is the graph of a function [`f`] and three other graphs.
 
-[@EnlargeImageStatementPGML()@]*
+[@EnlargeImageStatementPGML()@]**
 
 [@LayoutTable(
 [

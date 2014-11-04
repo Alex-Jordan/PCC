@@ -60,9 +60,15 @@ foreach my $i (1..$xmax) {
   $gr -> lb(new Label (-$i,-0.5,-$i,'black','center','middle'));
 }
 
-add_functions($gr, "$p for x in <-5,$r[1]> using color:blue and weight:1");
-add_functions($gr, "$p for x in <$r[1],$r[2]> using color:blue and weight:1");
-add_functions($gr, "$p for x in <$r[2],$xmax> using color:blue and weight:1");
+$r1low = $r[1] - 0.0001;
+$r1high = $r[1] + 0.0001;
+
+$r2low = $r[2] - 0.0001;
+$r2high = $r[2] + 0.0001;
+
+add_functions($gr, "$p for x in <-5,$r1low> using color:blue and weight:1");
+add_functions($gr, "$p for x in <$r1high,$r2low> using color:blue and weight:1");
+add_functions($gr, "$p for x in <$r2high,$xmax> using color:blue and weight:1");
 
 $gr->stamps( closed_circle($r[0],0,'black') );
 $gr->stamps( closed_circle($r[3],0,'black') );

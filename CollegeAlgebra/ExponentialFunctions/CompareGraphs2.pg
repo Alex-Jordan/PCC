@@ -24,9 +24,12 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGgraphmacros.pl",
+  "PCCgraphMacros.pl",
   "PGchoicemacros.pl",
   "unionTables.pl",
+  "PGML.pl",
   "PGgraders.pl",
+  "PGcourse.pl",
 );
 
 
@@ -38,9 +41,9 @@ TEXT(beginproblem());
 Context("Numeric");
 Context()->flags->set(reduceConstants=>0);
 
-$b[0] = 0.7;
-$b[1] = 0.8;
-$b[2] = 0.85;
+$b[0] = random(0.6,0.7,0.01);
+$b[1] = $b[0]+random(0.08,0.12,0.01);
+$b[2] = $b[1]+random(0.08,0.12,0.01);
 
 $f[0] = Formula("$b[0]^x");
 $f[1] = Formula("$b[1]^x");
@@ -84,17 +87,18 @@ $ml->choose(3);
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
+
+The graphs of [`y=f(x)=[@$b[0]@]^x`], [`y=g(x)=[@$b[1]@]^x`], and [`y=h(x)=[@$b[2]@]^x`] are shown below.
+
+[@EnlargeImageStatementPGML()@]**
+
+>> [@ image( insertGraph($gr), width=>400, 
+    height=>400, tex_size=>800 ) @]* <<
+
+END_PGML
 
 BEGIN_TEXT
-
-The graphs of \(f(x)=$b[0]^x\), \(g(x)=$b[1]^x\), and \(h(x)=$b[2]^x\) are shown.
-$PAR
-
-\{ image( insertGraph($gr), width=>400, 
-    height=>400, tex_size=>800 ) \}
-
-
 $PAR
 
 Match each function with its color.
@@ -105,7 +109,6 @@ Match each function with its color.
 
 END_TEXT
 
-Context()->normalStrings;
 
 ##############################################
 
@@ -116,5 +119,17 @@ $showPartialCorrectAnswers = 0;
 install_problem_grader(~~&std_problem_grader);
 
 ANS( str_cmp( $ml->ra_correct_ans ) );
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+These three exponential functions all have the same initial value of [`1`]. We can tell them apart by their growth factors. The growth factors are all smaller than [`1`] since the cures are not actually growing from left to right. The blue curve has the smallest growth factor, so it must be [`y=[@$f[0]@]`].
+
+The green curve has the largest growth factor, so it must be [`y=[@$f[2]@]`].
+
+And so the red curve must be [`y=[@$f[1]@]`].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

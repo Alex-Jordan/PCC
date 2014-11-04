@@ -24,7 +24,10 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGgraphmacros.pl",
+  "PCCgraphMacros.pl",
+  "PGML.pl",
   "parserPopUp.pl",
+  "PGcourse.pl",
 );
 
 
@@ -51,14 +54,14 @@ add_functions($gr, "$f[0] for x in <-3,3> " .
 add_functions($gr, "$f[1] for x in <-3,3> " .
     "using color:red and weight:2");
 add_functions($gr, "$f[2] for x in <-3,3> " .
-    "using color:green and weight:2");
+    "using color:orange and weight:2");
 add_functions($gr, "$f[3] for x in <-3,3> " .
     "using color:black and weight:2");
 
  
 $gr->lb( new Label(0.75,4,'A','blue','center','middle'));
 $gr->lb( new Label(1.75,4.5,'B','red','center','middle'));
-$gr->lb( new Label(2.25,1.9,'C','green','center','middle'));
+$gr->lb( new Label(2.25,1.9,'C','orange','center','middle'));
 $gr->lb( new Label(2.75,0.25,'D','black','center','middle'));
 
 
@@ -82,41 +85,32 @@ $popupD = PopUp(
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+Below are the graphs of four functions.  All of the equations for curves [`A`], [`B`], [`C`], and [`D`] can be written in the form [`y=a\,b^x`].
 
-Here are the graphs of four functions.  All of the equations for \(A\), \(B\), \(C\), and \(D\) can be written in the form \(y=ab^x\).
-$PAR
+[@EnlargeImageStatementPGML()@]**
 
-\{ image( insertGraph($gr), width=>400, 
-    height=>400, tex_size=>800 ) \}
+>> [@image( insertGraph($gr), width=>400, 
+    height=>400, tex_size=>800 ) @]* <<
 
+a. Which curve has the largest value for [`a`]?
 
-$PAR
+    [@ $popupD->menu() @]*
 
-Which function has the largest value for \(a\)?
-$BR \{ $popupD->menu() \}
+a. Which two curves (Out of [`A`], [`B`], [`C`], or [`D`]) have the same value for [`a`]? Enter them as a list, with commas for separation.
 
-$PAR
+    [__________________]
 
-Which two functions have the same value for \(a\)?
-$BR $SPACE $SPACE $SPACE\{ans_rule(10)\}
-$BR (Enter them as a list, with a comma separating them.)
+a. Which function has the lowest value for [`b`]?
 
-$PAR
+    [@ $popupD->menu() @]*
 
-Which function has the lowest value for \(b\)?
-$BR \{ $popupD->menu() \}
+a. Which function has the highest value for [`b`]?
 
-$PAR
+    [@ $popupA->menu() @]*
 
-Which function has the highest value for \(b\)?
-$BR \{ $popupA->menu() \}
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
 
