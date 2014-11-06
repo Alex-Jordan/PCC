@@ -28,6 +28,7 @@ $m = Fraction("$n+2","$n*2");
 Context("Numeric");
 $var = list_random('x','y','z','t','r','m','n','a','b','c');
 Context()->variables->are($var=>'Real');
+Context()->variables->set($var=>{limits=>[1,4]});
 Context()->flags->set(reduceConstants=>0);
 
 
