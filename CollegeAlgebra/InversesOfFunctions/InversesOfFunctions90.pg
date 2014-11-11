@@ -108,8 +108,9 @@ Below is the graph of a function [`f`] and three other graphs.
 
 [@LayoutTable(
 [
-["y=f(x)".$BR.image(insertGraph($graph_object1), width=>400, height=>400,tex_size=>400), "Graph A".$BR.image(insertGraph($randomGraph[0]), width=>400, height=>400,tex_size=>400)],
-["Graph B ".$BR.image(insertGraph($randomGraph[1]), width=>400, height=>400,tex_size=>400), "Graph C ".$BR.image(insertGraph($randomGraph[2]), width=>400, height=>400,tex_size=>400)],
+["y=f(x)".$BR.image(insertGraph($graph_object1), width=>400, height=>400,tex_size=>400), ],
+["Graph A".$BR.image(insertGraph($randomGraph[0]), width=>400, height=>400,tex_size=>400),"Graph B ".$BR.image(insertGraph($randomGraph[1]), width=>400, height=>400,tex_size=>400), ],
+["Graph C ".$BR.image(insertGraph($randomGraph[2]), width=>400, height=>400,tex_size=>400),"Graph D ".$BR.image(insertGraph($randomGraph[3]), width=>400, height=>400,tex_size=>400), ],
 ],
 allcellcss => "padding:6pt;text-align:left;vertical-align:top;font-weight:bold;"
 )@]*
