@@ -47,6 +47,14 @@ BEGIN_TEXT
 
 END_TEXT
 
+######################################
+
+BEGIN_SOLUTION
+
+D.  Parameters for the normal curve correspond to the population mean and population standard deviation.
+
+END_SOLUTION
+
 ANS(radio_cmp($mc->correct_ans));
 
 
