@@ -85,7 +85,7 @@ In a long-distance relay contest, Team A completed the race in [`[$hrA]`] hours,
 
 *Question 1:* It took Team A [_________]{$ansHr} hours longer to complete the race. Use fraction in your answer.
 
-*Question 2:* It took Team A [_________]{$ansMin} hours longer to complete the race.
+*Question 2:* It took Team A [_________]{$ansMin} minutes longer to complete the race.
 
 END_PGML
 
