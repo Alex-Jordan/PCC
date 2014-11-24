@@ -26,6 +26,9 @@ loadMacros(
   "contextFraction.pl",
   "PGgraphmacros.pl",
   "parserAssignment.pl",
+  "PGML.pl",
+  "PCCgraphMacros.pl",
+  "PGcourse.pl",
 
 );
 
@@ -39,13 +42,13 @@ Context("Fraction");
 Context()->flags->set(reduceConstants=>0);
 
 $x[0] = Compute(0);
-$x[1] = Compute(2);
+$x[1] = Compute(random(2,4,1));
 
 $y[0] = random(0.6,2.6,0.1);
 
 $factor = list_random(Fraction(3,2),Fraction(2,3),Compute(2),Compute(3));
 
-$y[1] = Real($y[0]*($factor**2));
+$y[1] = Real($y[0]*($factor**($x[1])));
 
 Context("Numeric");
 parser::Assignment->Allow;
@@ -56,7 +59,8 @@ $exponential = Compute("$y[0]*$factor^x");
 
 $gr = init_graph(-1,-1,4,$y[1]+2, axes=>[0,0], size=>[400,400]);
 
-add_functions($gr, "$exponential for x in <-1,4> " .
+$xmax = max(4,$x[1]+2);
+add_functions($gr, "$exponential for x in <-1,$xmax> " .
     "using color:blue and weight:2");
 
 $gr->lb( new Label($x[0]-0.5,$y[0],"($x[0],$y[0])",
@@ -75,30 +79,48 @@ $exponential = Compute("f(x)=$y[0]*$factor^x");
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+Find the formula for the exponential function with the graph below
 
-Find the formula for the exponential function with this graph:
-$PAR
+[@EnlargeImageStatementPGML()@]**
 
-\{ image( insertGraph($gr), width=>400, 
-    height=>400, tex_size=>800 ) \}
+>>[@image( insertGraph($gr), width=>400, 
+    height=>400, tex_size=>800 ) @]* <<
 
+Your answer must be in the form *f(x)=...*.
 
-$PAR
+    [_____________________________________]
 
-\{ans_rule(30)\}
-$BR(Your answer must be in the form $BBOLD f(x)=...$EBOLD.)
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
 
 $showPartialCorrectAnswers = 0;
 
 ANS( $exponential->cmp() );
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We can see from the graph that the initial value of this exponential function is [`[@$y[0]@]`]. So we know that for some value of [`b`] that we have to find, that 
+
+    [`f(x)=[@$y[0]@] (b^x)`]
+
+Using the second data point on the graph, we have
+
+    [`\begin{aligned}
+[@$y[1]@] & = [@$y[0]@] (b^[@$x[1]@])\\
+[@$y[1]/$y[0]@] & = b^[@$x[1]@]\\
+[@$y[1]/$y[0]@]^{1/[@$x[1]@]} & = b\\
+b&=[@($y[1]/$y[0])**(1/$x[1])@]
+\end{aligned}`]
+
+So [`[$exponential]`].
+
+END_PGML_SOLUTION
+
+
 
 ENDDOCUMENT();

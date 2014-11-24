@@ -23,6 +23,9 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "PGML.pl",
+  "contextPercent.pl",
+  "PGcourse.pl",
 
 );
 
@@ -41,37 +44,45 @@ $time = random(4,10,1);
 
 $r = ((1+$multiYearRate/100)**(1/$time)-1)*100;
 
+$bigb = 1+$multiYearRate/100;
 
-
-
-##############################################
-
-Context()->texStrings;
-
-BEGIN_TEXT
-
-An investment grows by $multiYearRate$PERCENT over a $time-year period.  What is its effective annual interest rate?
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(4)\}$PERCENT
-
-
-
-
-END_TEXT
-
-Context()->normalStrings;
+Context("Percent");
+$ans = Percent($r/100);
 
 ##############################################
 
-$showPartialCorrectAnswers = 1;
+BEGIN_PGML
 
-Context("Numeric");
-Context()->flags->set(tolType=>absolute,tolerance=>0.05);
+An investment grows by a total of [`[$multiYearRate]%`] over a [`[$time]`]-year period.  What is its effective annual interest rate?
 
+    [________________________]
 
+END_PGML
 
-ANS( Compute($r)->cmp() );
+##############################################
+
+ANS( $ans->cmp() );
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+Let's call the annual growth factor [`[b]`]. Each year, the balance in the account is multiplied by [`b`]. So after  [`[$time]`] years, it will have been multiplied by [`b^[$time]`]. And we have been told that after all that time, we have multiplied our original investment by [`[$bigb]`]. This tells us that:
+
+    [`\begin{aligned}
+b^[$time] &= [$bigb]\\
+b &= [$bigb]^{1/[$time]}\\
+b &= [@$bigb**(1/$time)@]
+\end{aligned}`]
+
+We have been asked to find the annual growth _rate_, and right now we have found the annual growth _factor_.
+
+    [`\begin{aligned}
+r &= b-1\\
+&=[@$bigb**(1/$time)@] - 1\\
+&=[@$bigb**(1/$time)-1@]\\
+&=[@($ans->value)*100@]%
+\end{aligned}`]
+END_PGML_SOLUTION
 
 ENDDOCUMENT();
