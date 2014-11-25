@@ -24,6 +24,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "parserAssignment.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 
 );
 
@@ -53,30 +55,20 @@ $exponential = Formula("P(t)=$initial*($factor)^t");
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+A population has size [`[$initial]`] at time [`t=0`], with [`t`] in years. 
 
-A population has size $initial at time \(t=0\), with \(t\) in years. $PAR
+a. If the population decreases by [`[$absoluteDecrease]`] per year, find a formula for the population [`P`] at time [`t`].   Write your answer using function notation, in the form *P(t) = ...*.
 
-$BBOLD(a.)$EBOLD If the population decreases by $absoluteDecrease per year, find a formula for the population \(P\) at time \(t\).   $BR Write your answer using function notation, in the form $BBOLD P(t) = ...$EBOLD.
+    [_________________________________]
 
-$PAR
+a. If the population decreases by [`[$percentDecrease]%`] per year, find a formula for the population [`P`] at time [`t`].  Write your answer using function notation, in the form *P(t) = ...*.
 
-$SPACE $SPACE $SPACE \{ans_rule(20)\} $PAR
-
-$BBOLD(b.)$EBOLD If the population decreases by $percentDecrease$PERCENT per year, find a formula for the population \(P\) at time \(t\).  $BR Write your answer using function notation, in the form $BBOLD P(t) = ...$EBOLD.
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
+    [_________________________________]
 
 
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
 
@@ -85,5 +77,18 @@ $showPartialCorrectAnswers=1;
 
 ANS( $linear->cmp() );
 ANS( $exponential->cmp() );
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+a. The population is decreases by [`[$absoluteDecrease]`] _individuals_ per year. This means that we have a linear function. Its initial value is [`[$initial]`] and its slope is [`-[$absoluteDecrease]`]. So [`[$linear]`].
+
+a. The population is decreases by [`[$percentDecrease]`] _percent_ per year. This means that we have an exponential function. Its initial value is [`[$initial]`] and its growth factor is [`1-[$percentDecrease/100]`], which is [`[$factor]`]. So [`[$exponential]`].
+
+
+
+END_PGML_SOLUTION
+
 
 ENDDOCUMENT();

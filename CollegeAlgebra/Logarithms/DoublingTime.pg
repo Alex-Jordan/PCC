@@ -23,8 +23,9 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
-  "parserNumberWithUnits.pl"
+  "parserNumberWithUnits.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 
@@ -53,34 +54,38 @@ $doublingTime = NumberWithUnits("$doublingTime","yr");
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+A city is growing by [`[$r]%`] per year.  Find the time it takes for the population to double.  Use *yr* for years.
 
-A city is growing by \($r\)$PERCENT per year.  Find the time it takes for the population to double.  Use $BBOLD yr$EBOLD for years.
-
-
-$PAR
-
-$BCENTER
-$SPACE $SPACE $SPACE \{ans_rule(10)\}
-$ECENTER
+    [____________________]
 
 
 
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
 
-$showPartialCorrectAnswers = 1;
-
-
-
-
-
 ANS( $doublingTime->cmp() );
 
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We know that [`P(t)=P_0(1+[@$r/100@])^t`]. So we need to solve:
+
+    [`\begin{aligned}
+2P_0 &=P_0([@1+$r/100@])^t\\
+2 &=[@1+$r/100@]^t\\
+\log(2) &= \log\left([@1+$r/100@]^t\right)\\
+\log(2) &= t\cdot\log\left([@1+$r/100@]\right)\\
+\frac{\log(2)}{\log\left([@1+$r/100@]\right)} &= t\\
+t &= \frac{\log(2)}{\log\left([@1+$r/100@]\right)}\\
+t &= [@$doublingTime->value@]
+\end{aligned}`]
+
+So the doubling time is [`[$doublingTime]`].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();
