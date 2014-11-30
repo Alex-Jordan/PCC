@@ -24,6 +24,9 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "parserAssignment.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+
 );
 
 
@@ -53,31 +56,38 @@ $ans = Formula("x=$ans");
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+Solve the equation.  Remember, when solving an equation for [`x`], your answer should be in the form *x=...*.  When exponents are involved, it becomes very important to be precise.  Use at least four significant digits in your answers.
 
-Solve the equation.  Remember, when solving an equation for \(x\), your answer should be in the form $BBOLD x=...$EBOLD.  When exponents are involved, it becomes very important to be precise.  Use at least four significant digits in your answers.
+    [`[$a]\cdot[$m]^x+[$b]=[$c]`]
 
-\[$a\cdot$m^x+$b=$c\]
+    [________________________]
 
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(15)\}
-
-
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
-
-$showPartialCorrectAnswers = 1;
 
 Context()->flags->set(formatStudentAnswers=>parsed);
 
 ANS($ans->cmp);
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+Before applying any logarithms, we can combine like terms if they are moved to the same side of the equation:
+
+    [`\begin{aligned}
+[$a]\cdot[$m]^x+[$b]&=[$c]\\
+[$a]\cdot[$m]^x&=[@$c-$b@]\\
+[$m]^x&=\frac{[@$c-$b@]}{[$a]}\\
+\log\left([$m]^x\right)&=\log\left(\frac{[@$c-$b@]}{[$a]}\right)\\
+x\log([$m])&=\log\left(\frac{[@$c-$b@]}{[$a]}\right)\\
+x&=\frac{\log\left(\frac{[@$c-$b@]}{[$a]}\right)}{\log([$m])}\\
+x&\approx[@ln(($c-$b)/$a)/ln($m)@]
+\end{aligned}`]
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

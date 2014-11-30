@@ -24,6 +24,9 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "parserAssignment.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+
 );
 
 
@@ -36,8 +39,8 @@ Context("Numeric");
 Context()->flags->set(reduceConstants=>0);
 parser::Assignment->Allow;
 
-$a = random(1,100,1);
-$m = random(1,100,1);
+$a = random(2,100,1);
+$m = random(2,100,1);
 
 $b = random(10,50,0.01);
 
@@ -53,31 +56,43 @@ $ans = Formula("x=$ans");
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+Solve the equation.  Remember, when solving an equation for [`x`], your answer should be in the form *x=...*.  When exponents are involved, it becomes very important to be precise.  Use at least four significant digits in your answers.
 
-Solve the equation.  Remember, when solving an equation for \(x\), your answer should be in the form $BBOLD x=...$EBOLD.  When exponents are involved, it becomes very important to be precise.  Use at least four significant digits in your answers.
+    [`[$a]\log([$m] x+[$b])=[$c]`]
 
-\[$a\log($m x+$b)=$c\]
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(15)\}
+    [________________________]
 
 
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
-
-$showPartialCorrectAnswers = 1;
 
 Context()->flags->set(formatStudentAnswers=>parsed);
 
 ANS($ans->cmp);
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We can begin with division so that the left side is only a logarithm of an expression:
+
+    [`\begin{aligned}
+[$a]\log([$m] x+[$b])&=[$c]\\
+\log([$m] x+[$b])&=\frac{[$c]}{[$a]}\\
+\underset{\hookrightarrow}{\log}([$m] x+[$b])&=\frac{[$c]}{[$a]}\\
+[$m] x+[$b] &= 10^{[$c]/[$a]}\\
+[$m] x &= 10^{[$c]/[$a]}-[$b]\\
+x &= \frac{10^{[$c]/[$a]}-[$b]}{[$m]}\\
+x&\approx[@(10**($c/$a)-$b)/$m@]
+\end{aligned}`]
+
+
+
+
+END_PGML_SOLUTION
+
 
 ENDDOCUMENT();

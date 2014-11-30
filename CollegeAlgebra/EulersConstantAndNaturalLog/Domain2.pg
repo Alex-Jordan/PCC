@@ -23,6 +23,9 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+
 );
 
 
@@ -45,31 +48,27 @@ $domain = Compute("(-INF,INF)");
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+Find the domain of the function, using interval notation.  If you need to enter [`\infty`], type *INF*.  If you need to use the union symbol [`\cup`], type *U*.
 
-Find the domain of the function.  If you need to enter \(\infty\), type $BBOLD INF$EBOLD.  If you need to use the union symbol (\(\cup\)), type $BBOLD U$EBOLD.
+    [`f(x)=[$f]`]
 
-$PAR
-\[f(x)=$f\]
+    [_________________________]
 
+END_PGML
 
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(15)\}
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 
-$showPartialCorrectAnswers = 1;
-
-
-
 ANS( $domain->cmp );
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+For the [`\ln`] to have an acceptable input, we need [`[$a] x^2+[$b]>0`]. But since [`x^2`] is nonnegative no matter what [`x`] is, and since both [`[$a]`] and [`[$b]`] are positive, it is automatic that [`[$a] x^2+[$b]>0`] no matter what [`x`] is. So any [`x`]-value is a valid input, and the domain of [`f`] is [`[$domain]`].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

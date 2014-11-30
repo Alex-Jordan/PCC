@@ -23,6 +23,9 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+
 );
 
 
@@ -45,31 +48,34 @@ $domain = Compute("($b,INF)");
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+Find the domain of the function, using interval notation.  If you need to enter [`\infty`], type *INF*.  If you need to use the union symbol [`\cup`], type *U*.
 
-Find the domain of the function.  If you need to enter \(\infty\), type $BBOLD INF$EBOLD.  If you need to use the union symbol (\(\cup\)), type $BBOLD U$EBOLD.
+    [`f(x)=[$f]`]
 
-$PAR
-\[f(x)=$f\]
+    [________________________]
 
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(15)\}
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
 
-$showPartialCorrectAnswers = 1;
-
-
-
 ANS( $domain->cmp );
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+For the [`\ln`] to have an acceptable input, we need [`x-[$b]>0`]. 
+
+    [`\begin{aligned}
+x-[$b]&>0\\
+x&>[$b]
+\end{aligned}`]
+
+So the domain of [`f`] is [`[$domain]`].
+
+END_PGML_SOLUTION
+
 
 ENDDOCUMENT();

@@ -23,9 +23,12 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
-  "unorderedAnswer.pl",
   "parserMultiAnswer.pl",
+  "parserFunction.pl",
+  "niceTables.pl",
+  "PGML.pl",
+  "unorderedAnswer.pl",
+  "PGcourse.pl",
 );
 
 
@@ -62,39 +65,36 @@ $multians = MultiAnswer(Formula("x"), Formula("ln(y)"))->with(
 
 ##############################################
 
-Context()->texStrings;
-
-BEGIN_TEXT
+BEGIN_PGML
 
 Rewrite the statements using logarithms instead of exponents.  
 
+END_PGML
+BEGIN_TEXT
 $PAR
 
-\{ 
-BeginTable(border=>0, tex_border=>"0pt", spacing=>0, padding=>4).
-AlignedRow(["\(e^x\)","\(=\)","\(y\)"], align=>RIGHT, separation=>0).
-AlignedRow([$multians->ans_rule(6)
-,"\(=\)",$multians->ans_rule(6)
-], align=>RIGHT, separation=>0).
-
-EndTable()
-\}
+\{
+LayoutTable(
+[
+["\(e^x\)","\(=\)","\(y\)"],
+[$multians->ans_rule(6),"\(=\)",$multians->ans_rule(6)],
+],
+allcellcss=>"padding:0pt;", 
+)\}
 
 $PAR
 
-\{ 
-BeginTable(border=>0, tex_border=>"0pt", spacing=>0, padding=>4).
-AlignedRow(["\(10^t\)","\(=\)","\(P\)"], align=>RIGHT, separation=>0).
-AlignedRow([ans_rule(6),"\(=\)",ans_rule(6)], align=>RIGHT, separation=>0).
-
-EndTable()
-\}
-
+\{
+LayoutTable(
+[
+["\(10^t\)","\(=\)","\(P\)"],
+[ans_rule(6),"\(=\)",ans_rule(6)],
+], 
+allcellcss=>"padding:0pt;", 
+)\}
 
 
 END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 
@@ -110,4 +110,25 @@ Formula("t")->cmp(),
 Formula("log(P)")->cmp(), 
 );
 
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+When one side of an equation is a number raised to a power, then that base can be moved to the other side of the equation in the form of a logarithm. That is
+
+    [`\begin{aligned}
+b^{\text{left}}&=\text{right}\\
+\underset{\hookrightarrow}{b}^{\text{left}}&=\text{right}\\
+\text{left} &= \log_b(\text{right})
+\end{aligned}`]
+
+So we have the equations 
+
+    [`x=\ln(y)`]
+
+and
+
+    [`t=\log(P)`]
+
+END_PGML_SOLUTION
 ENDDOCUMENT();
