@@ -23,15 +23,15 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
-  "unorderedAnswer.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+
 );
 
 
 TEXT(beginproblem());
 
 ##############################################
-
 
 Context("Numeric");
 Context()->functions->undefine("ln","log","log10");
@@ -47,23 +47,15 @@ $ans = Formula("1/$n($k*x+$c)");
 
 ##############################################
 
-Context()->texStrings;
-
-BEGIN_TEXT
+BEGIN_PGML
 
 Simplify the expression.  
 
-\[\ln\sqrt[$n]{\textrm{e}^{$k x+$c}}\]
+    [``\ln\sqrt[[$n]]{\textrm{e}^{[$k] x+[$c]}}``]
 
-$PAR
+    This expression is equivalent to  [_____________].
 
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
 
@@ -73,7 +65,19 @@ Context()->flags->set(formatStudentAnswers=>parsed);
 
 ANS( $ans->cmp);
 
+##############################################
 
+BEGIN_PGML_SOLUTION
 
+It may help to first apply some rules of radicals and expoenents:
+
+    [`\begin{aligned}\ln\sqrt[[$n]]{\textrm{e}^{[$k] x+[$c]}}
+&=\ln\left(\left(\textrm{e}^{[$k] x+[$c]}\right)^{1/[$n]}\right)\\
+&=\ln\left(\textrm{e}^{([$k] x+[$c])/[$n]}\right)
+\end{aligned}`]
+
+Remember that exponentiating base [`e`] and taking a logarithm base [`e`] are inverse functions. So the expression simplifies to [`\frac{[$k]x+[$c]}{[$n]}`].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

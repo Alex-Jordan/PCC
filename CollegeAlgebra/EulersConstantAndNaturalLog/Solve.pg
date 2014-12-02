@@ -24,6 +24,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "parserAssignment.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 
 );
 
@@ -42,7 +44,7 @@ $b = random(2,9,1);
 
 
 $ans = (1-ln($a-$b))/$k;
-
+$app = $ans;
 
 Context("LimitedNumeric");
 parser::Assignment->Allow;
@@ -53,35 +55,40 @@ $ans = Formula("t=$ans");
 
 ##############################################
 
-Context()->texStrings;
-
-BEGIN_TEXT
+BEGIN_PGML
 
 Solve the equation.
-\[$a\textrm{e}^{$k t} - \textrm{e} = $b\textrm{e}^{$k t}\]
 
+    [`[$a]e^{[$k]t} - e = [$b]e^{[$k] t}`]
 
-$PAR
+    [_______________________]
 
-$BCENTER
-$SPACE $SPACE $SPACE \{ans_rule(10)\}
-$ECENTER
-
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
 
 $showPartialCorrectAnswers = 1;
 
-
-
-
-
 ANS( $ans->cmp() );
 
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We can start by arranging terms so that like terms can be combined.
+
+    [`\begin{aligned}
+[$a]e^{[$k]t} - e &= [$b]e^{[$k] t}\\
+[$a]e^{[$k]t} - [$b]e^{[$k] t} &= e\\
+[@$a-$b@]e^{[$k]t} &= e\\
+\ln\left([@$a-$b@]e^{[$k]t}\right) &= \ln(e)\\
+\ln([@$a-$b@])+\ln\left(e^{[$k]t}\right) &= \ln(e)\\
+\ln([@$a-$b@])+[$k]t &= 1\\
+[$k]t &= 1-\ln([@$a-$b@])\\
+t &= \frac{1-\ln([@$a-$b@])}{[$k]}\\
+t&\approx[$app]
+\end{aligned}`]
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

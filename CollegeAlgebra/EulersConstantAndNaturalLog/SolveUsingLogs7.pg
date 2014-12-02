@@ -24,6 +24,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "parserAssignment.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 
@@ -45,32 +47,24 @@ $c = $b+random(100,500,0.01);
 
 
 
-$ans = (ln($c)-$b)/$m;
+$app = (ln($c)-$b)/$m;
 
-$ans = Formula("x=$ans");
+
+$ans = Formula("x=$app");
 
 
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+Solve the equation.  Remember, when solving an equation for [`x`], your answer should be in the form *x=...*.  When exponents are involved, it becomes very important to be precise.  Use at least four significant digits in your answers.
 
-Solve the equation.  Remember, when solving an equation for \(x\), your answer should be in the form $BBOLD x=...$EBOLD.  When exponents are involved, it becomes very important to be precise.  Use at least four significant digits in your answers.
+    [`e^{[$m] x+[$b]} = [$c]`]
 
-\[\textrm{e}^{$m x+$b} = $c\]
+    [_______________________]
 
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(15)\}
-
-
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
 
@@ -79,5 +73,21 @@ $showPartialCorrectAnswers = 1;
 Context()->flags->set(formatStudentAnswers=>parsed);
 
 ANS($ans->cmp);
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We can slide the exponentiation with base [`e`] on the left over to the right, in the form of a logarithm with base [`e`]:
+
+    [`\begin{aligned}
+e^{[$m] x+[$b]} &= [$c]\\
+[$m] x+[$b] &= \ln([$c])\\
+[$m] x &= \ln([$c])-[$b]\\
+x &= \frac{\ln([$c])-[$b]}{[$m]}\\
+x&\approx[$app]
+\end{aligned}`]
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

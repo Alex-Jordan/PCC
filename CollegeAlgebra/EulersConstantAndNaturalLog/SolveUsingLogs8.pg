@@ -24,6 +24,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "parserAssignment.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 
@@ -45,32 +47,25 @@ $c = round($b)+random(100,500,1);
 
 
 
-$ans = (ln($c)-$b)/($m-ln($a));
+$app = (ln($c)-$b)/($m-ln($a));
 
-$ans = Formula("x=$ans");
+$ans = Formula("x=$app");
 
 
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+Solve the equation.  Remember, when solving an equation for [`x`], your answer should be in the form *x=...*.  When exponents are involved, it becomes very important to be precise.  Use at least four significant digits in your answers.
 
-Solve the equation.  Remember, when solving an equation for \(x\), your answer should be in the form $BBOLD x=...$EBOLD.  When exponents are involved, it becomes very important to be precise.  Use at least four significant digits in your answers.
+    [`e^{[$m] x+[$b]} = [$c]\cdot[$a]^x`]
 
-\[\textrm{e}^{$m x+$b} = $c\cdot$a^x\]
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(15)\}
+    [__________________________]
 
 
 
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
 
@@ -79,5 +74,24 @@ $showPartialCorrectAnswers = 1;
 Context()->flags->set(formatStudentAnswers=>parsed);
 
 ANS($ans->cmp);
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We can begin by applying any logarithm to both sides. The natural logarithm is a good choice since base [`e`] is present.
+
+    [`\begin{aligned}
+e^{[$m] x+[$b]} &= [$c]\cdot[$a]^x\\
+\ln\left(e^{[$m] x+[$b]}\right) &= \ln\left([$c]\cdot[$a]^x\right)\\
+[$m] x+[$b] &= \ln([$c])+\ln\left([$a]^x\right)\\
+[$m] x+[$b] &= \ln([$c])+x\ln([$a])\\
+[$m] x-x\ln([$a]) &= \ln([$c])-[$b]\\
+x([$m]-\ln([$a])) &= \ln([$c])-[$b]\\
+x &= \frac{\ln([$c])-[$b]}{[$m]-\ln([$a])}\\
+x &\approx[$app]
+\end{aligned}`]
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

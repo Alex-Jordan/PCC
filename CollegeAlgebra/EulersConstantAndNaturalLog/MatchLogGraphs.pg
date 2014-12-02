@@ -27,7 +27,11 @@ loadMacros(
   "PGchoicemacros.pl",
   "unionTables.pl",
   "PGgraders.pl",
+  "PGML.pl",
+  "PCCgraphMacros.pl",
+  "PGcourse.pl",
 );
+
 
 
 TEXT(beginproblem());
@@ -91,44 +95,46 @@ $ml->qa(
 Context()->normalStrings;
 $ml->choose(5);
 
- 
-
-
-
-
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+The graphs of five functions are shown below.
 
-The graphs of five functions are shown.
-$PAR
+[@EnlargeImageStatementPGML()@]**
 
-\{ image( insertGraph($gr), width=>400, 
-    height=>400, tex_size=>800 ) \}
+>>[@ image( insertGraph($gr), width=>400, 
+    height=>400, tex_size=>800 ) @]* <<
 
-
-$PAR
 
 Match each function with its color without using a calculator.
+
+END_PGML
+BEGIN_TEXT
+$PAR
 \{ ColumnMatchTable($ml) \}
-
-
-
 
 END_TEXT
 
-Context()->normalStrings;
 
 ##############################################
 
 $showPartialCorrectAnswers = 1;
 
-
-
 install_problem_grader(~~&std_problem_grader);
 
 ANS( str_cmp( $ml->ra_correct_ans ) );
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We can see in the graph that we have two logarithmic functions, two increasing exponential functions, and one decreasing exponential function. The decreasing exponential function, the black curve, must be [`h`].
+
+To compare the two increasing exponential curves, note that the red one has a larger continuous relative growth rate. So the red one must be [`f`] and the blues one must be [`g`].
+
+To compare the two logarithmic curves, note that the green one is growing more slowly. Since [`\log`] base [`10`] has a larger base than [`\ln`], it must be the more slowly growing curve. So the green curve is [`m`] and the orange curve is [`k`].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

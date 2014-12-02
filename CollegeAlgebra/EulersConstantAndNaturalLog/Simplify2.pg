@@ -23,8 +23,9 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
-  "unorderedAnswer.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+
 );
 
 
@@ -44,23 +45,16 @@ $ans = Formula("$k*x+$c");
 
 ##############################################
 
-Context()->texStrings;
-
-BEGIN_TEXT
+BEGIN_PGML
 
 Simplify the expression.  
 
-\[\textrm{e}^{\ln($k x+$c)}\]
+    [``e^{\ln([$k] x+[$c])}``]
 
-$PAR
+    This expression is undefined for [`x`] in [_____________] (use interval notation).   
+    Otherwise, it is equivalent to  [_____________].
 
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
 
@@ -68,7 +62,27 @@ $showPartialCorrectAnswers = 1;
 
 Context()->flags->set(formatStudentAnswers=>parsed);
 
+Context("Interval");
+ANS(Compute("(-inf,-$c/$k]")->cmp);
 ANS( $ans->cmp);
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+Since the expression asks us to take [`\ln`] of [`[$k] x+[$c]`], we need 
+
+    [`\begin{aligned}
+[$k] x+[$c] &>0\\
+[$k] x &>-[$c]\\
+x &>-{\frac{[$c]}{[$k]}}
+\end{aligned}`]
+
+So to be defined, we must have [`x`] in [`\left(-{\frac{[$c]}{[$k]}},\infty\right)`]. That means that the expression is undefined if [`x`] is in [`\left(-\infty,-{\frac{[$c]}{[$k]}}\right]`].
+
+Once we've cleared that hurdle, remember that exponentiating base [`e`] and taking a logarithm base [`e`] are inverse functions. So the expression simplifies to [`[$k]x+[$c]`].
+
+END_PGML_SOLUTION
 
 
 

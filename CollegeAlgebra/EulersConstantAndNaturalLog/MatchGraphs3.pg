@@ -27,6 +27,9 @@ loadMacros(
   "PGchoicemacros.pl",
   "unionTables.pl",
   "PGgraders.pl",
+  "PGML.pl",
+  "PCCgraphMacros.pl",
+  "PGcourse.pl",
 );
 
 
@@ -87,44 +90,52 @@ $ml->qa(
 Context()->normalStrings;
 $ml->choose(4);
 
- 
-
-
 
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+The graphs of [`f(x)=[@$f[0]->TeX@]`], [`g(x)=[@$f[1]->TeX@]`], [`h(x)=[@$f[2]->TeX@]`], and  [`k(x)=[@$f[3]->TeX@]`] are shown below.
 
-The graphs of \(f(x)=$f[0]\), \(g(x)=$f[1]\), \(h(x)=$f[2]\), and \(k(x)=$f[3]\) are shown.
-$PAR
+[@EnlargeImageStatementPGML()@]**
 
-\{ image( insertGraph($gr), width=>400, 
-    height=>400, tex_size=>800 ) \}
+>>[@ image( insertGraph($gr), width=>400, 
+    height=>400, tex_size=>800 ) @]* <<
 
-
-$PAR
 
 Match each function with its color without using a calculator.
+
+END_PGML
+BEGIN_TEXT
+$PAR
 \{ ColumnMatchTable($ml) \}
-
-
-
 
 END_TEXT
 
-Context()->normalStrings;
 
 ##############################################
 
 $showPartialCorrectAnswers = 1;
 
-
-
 install_problem_grader(~~&std_problem_grader);
 
 ANS( str_cmp( $ml->ra_correct_ans ) );
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We can see in the graph that we three decreasing exponential functions, and one increasing exponential function. Clearly [`f`], with its positive continuous relative growth rate of [`[@$k[0]/100@]`] has the increasing graph, the blue graph.
+
+We need to compare the other three formulas somehow. They are all showing us their continuous relative growth rates (which are all negative). The largest continuous relative _decay_ rate is [`[@$k[3]*-1@]`] (with continuous relative _growth_ rate [`[@$k[3]@]`]), so [`k`] is the black curve. 
+
+The smallest continuous relative _decay_ rate is [`1`] (with continuous relative _growth_ rate [`-1`]), so [`g`] is the red curve.
+
+And in the middle, [`h`] is the green curve.
+
+
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

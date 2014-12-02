@@ -23,9 +23,11 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
-  "unorderedAnswer.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+
 );
+
 
 
 TEXT(beginproblem());
@@ -44,23 +46,15 @@ $ans = Formula("$k*x+$c");
 
 ##############################################
 
-Context()->texStrings;
-
-BEGIN_TEXT
+BEGIN_PGML
 
 Simplify the expression.  
 
-\[\ln\left(\textrm{e}^{$k x+$c}\right)\]
+    [``\ln\left(e^{[$k] x+[$c]}\right)``]
 
-$PAR
+    This expression is equivalent to  [_____________].
 
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
 
@@ -70,6 +64,13 @@ Context()->flags->set(formatStudentAnswers=>parsed);
 
 ANS( $ans->cmp);
 
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+Remember that exponentiating base [`e`] and taking a logarithm base [`e`] are inverse functions. So the expression simplifies to [`[$k]x+[$c]`].
+
+END_PGML_SOLUTION
 
 
 

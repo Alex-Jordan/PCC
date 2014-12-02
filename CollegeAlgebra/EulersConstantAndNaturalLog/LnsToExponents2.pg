@@ -23,9 +23,13 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
-  "unorderedAnswer.pl",
+  "pccTables.pl",
+  "parserMultiAnswer.pl",
+  "bizarroArithmetic.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 );
+
 
 
 TEXT(beginproblem());
@@ -39,52 +43,85 @@ Context()->flags->set(reduceConstants=>0);
 $a = random(0.2,0.9,0.01);
 $b = round(ln($a)*10000)/10000;
 
+Context()->operators->set(
+'**' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+'^' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+);
 
-$ans = Formula("e^x");
+Context()->flags->set(bizarroPow=>1);
 
-
-Context("Numeric");                                     
-Context()->operators->undefine('*','+','-','/');        
 Context()->flags->set(formatStudentAnswer=>'parsed');   
-Context()->flags->set(tolerance=>0); 
-$ans = $ans->substitute(x=>Formula("$b"));
-$ans = Compute($ans);
+Context()->flags->set(reduceConstantFunctions=>0);
+Context()->operators->undefine('*','+','-','/');        
+
+
+$multians = MultiAnswer(
+Compute($a), 
+Compute("e^($b)"))
+->with(
+  singleResult => 1,
+  checker => sub {
+      my ( $correct, $student, $self ) = @_;
+      my ( $f1stu, $f2stu ) = @{$student};
+      my ( $f1, $f2 ) = @{$correct};
+      if ( ($f1 == $f1stu && $f2 == $f2stu) ||
+           ($f1 == $f2stu && $f2 == $f1stu) ) {
+          return 1;
+      } else {
+          if ($f1stu == $f2stu) {
+              Value::Error("This equation is a true equation, but it is not what was asked for.");
+          } else {
+              return 0;
+          }
+      }
+  }
+);
+
 
 ##############################################
 
-Context()->texStrings;
-
-BEGIN_TEXT
+BEGIN_PGML
 
 Rewrite the statement using exponents instead of logarithms.
 
-$PAR
+END_PGML
+BEGIN_TEXT
+$PAR    
 
 \{ 
-BeginTable(border=>0, tex_border=>"0pt", spacing=>0, padding=>4).
-AlignedRow(["\(\ln $a\)","\(=\)","\($b\)"], align=>LEFT, separation=>0).
-AlignedRow([ans_rule(6),"\(=\)",ans_rule(6)], align=>LEFT, separation=>0).
-
-EndTable()
+LayoutTable(
+[
+["\(\ln $a\)","\({}={}\)","\($b\)"],
+[$multians->ans_rule(6),"\({}={}\)",$multians->ans_rule(12)], 
+],
+allcellcss=>'padding:0px; padding-bottom:6px;'
+)
 \}
-
-
-
 
 END_TEXT
 
-Context()->normalStrings;
+##############################################
+
+ANS( $multians->cmp() ); 
 
 ##############################################
 
-$showPartialCorrectAnswers = 1;
+BEGIN_PGML_SOLUTION
 
-Context()->flags->set(formatStudentAnswers=>parsed);
+When one side of an equation is a logarithm with base [`b`] of something, then [`b`] can be moved to the other side of the equation in the form of an exponential base. That is
 
-UNORDERED_ANS( 
-Compute($a)->cmp(), 
-$ans->cmp(), 
-);
+    [`\begin{aligned}
+\log_b(\text{left})&=\text{right}\\
+\underset{\hookrightarrow}{\log_b}(\text{left})&=\text{right}\\
+\text{left} &=b^{\text{right}}
+\end{aligned}`]
+
+So we have the equation 
+
+    [`[$a]=e^{[$b]}`]
+
+END_PGML_SOLUTION
+
 
 
 ENDDOCUMENT();
