@@ -23,8 +23,10 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
   "parserAssignment.pl",
+  "contextPercent.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 
 );
 
@@ -42,40 +44,21 @@ $initial = random(15000,45000,1000);
 $r = random(3,8,0.1);
  
 
-
-
-
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+A population grows from an initial level of [`[$initial]`] individuals at a continuous growth rate of [`[$r]%`] per year.
 
-A population grows from an initial level of $initial at a continuous growth rate of $r$PERCENT per year.
+a) Find a formula for [`P(t)`], the population in year [`t`].  Your answer should be in the form *P(t)=...*.
 
-$PAR
+    [_____________________]
 
-$BBOLD(a.)$EBOLD Find a formula for \(P(t)\), the poulation in year \(t\).  Your answer should be in the form $BBOLD P(t)=...$EBOLD.
+a) By what relative growth rate does the population increase each year?
 
-$PAR
+    [_____________________]
 
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-$PAR
-
-$BBOLD(b.)$EBOLD By what percent does the population increase each year?
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}$PERCENT
-
-
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
 
@@ -87,11 +70,32 @@ parser::Assignment->Function("P");
 Context()->flags->set(tolType=>absolute,tolerance=>0.001);
 
 $ans1 = Formula("P(t)=$initial*e^($r/100*t)")->reduce;
-$ans2 = (2.718281828**($r/100)-1)*100;
+$ans2 = (2.718281828**($r/100)-1);
 
 
 ANS( $ans1->cmp );
 
-ANS( Compute($ans2)->cmp );
+Context("Percent");
+Context()->flags->set(decimalPlaces => 3);
+Context()->flags->set(tolerance => .000005,);
+ANS( Percent($ans2)->cmp );
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We've been asked for an exponential formula and have an initial value and a continuous growth rate. So we should use the form [`P(t)=a\,e^{kt}`]. We have [`P(t)=[$initial]\,e^{[@$r/100@]t}`].
+
+Next we are asked for the (regular, not continuous) relative growth rate, often referred to as [`r`]. Using the basic relations between the quantities that arise when working with exponential quantities:
+
+    [`\begin{aligned}
+r&=b-1\\
+&=e^k-1\\
+&=e^{[@$r/100@]}-1\\
+&\approx[$ans2]\\
+&\approx[@Percent($ans2)@]
+\end{aligned}`]
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

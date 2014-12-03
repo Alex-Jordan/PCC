@@ -23,7 +23,10 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
+  "niceTables.pl",
+  "contextPercent.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 
 );
 
@@ -41,36 +44,22 @@ $k = random(0.2,0.9,0.01);
 
 $r = exp($k)-1;
 
-
-
-
-
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+Give the initial value [`a`], the relative growth rate [`r`], and the continuous relative growth rate [`k`].
 
-Give the initial value \(a\), the growth rate \(r\), and the continuous growth rate \(k\).
+    [`Q=[$a]\,e^{[$k]t}`]
 
-\[Q=$a(\textrm{e}^{$k})^t\]
+    [`a={}`][______________]
 
-$PAR
+    [`r={}`][______________]
 
-\{ 
-BeginTable(border=>0, tex_border=>"0pt", spacing=>0, padding=>4).
-AlignedRow(["\(a\)","\(=\)",ans_rule(6)], align=>RIGHT, separation=>0).
-AlignedRow(["\(r\)","\(=\)",ans_rule(6),"$PERCENT"], align=>RIGHT, separation=>0).
-AlignedRow(["\(k\)","\(=\)",ans_rule(6),"$PERCENT"], align=>RIGHT, separation=>0).
-EndTable()
-\}
+    [`k={}`][______________]
 
+END_PGML
 
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 
@@ -78,14 +67,32 @@ $showPartialCorrectAnswers = 1;
 
 Context("LimitedNumeric");                                     
 $a = Compute("$a");
-$k = Compute("$k"*100);
-$r = Compute("$r"*100);
+
+Context("Percent");
+Context()->flags->set(decimalPlaces => 3);
+Context()->flags->set(tolType => "relative", tolerance=>0.001);
+$k = Percent("$k");
+$r = Percent("$r");
 
 
 ANS($a->cmp);
 ANS($r->cmp);
 ANS($k->cmp);
 
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+From the given formula, we can simply read that [`a=[$a]`] and [`k=[@($k->value)*100@]%`]. For [`r`]:
+
+    [`\begin{aligned}
+r &= b-1\\
+&= e^k-1\\
+&=e^{[@$k->value@]}-1\\
+&=[@Real(($r->value)*100)@]%
+\end{aligned}`]
+
+END_PGML_SOLUTION
 
 
 ENDDOCUMENT();

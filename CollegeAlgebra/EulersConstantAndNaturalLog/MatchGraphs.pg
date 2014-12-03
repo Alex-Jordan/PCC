@@ -26,7 +26,9 @@ loadMacros(
   "PGgraphmacros.pl",
   "PGchoicemacros.pl",
   "unionTables.pl",
-  "PGgraders.pl",
+  "PCCgraphMacros.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 
@@ -38,9 +40,9 @@ TEXT(beginproblem());
 Context("Numeric");
 Context()->flags->set(reduceConstants=>0);
 
-$b[0] = 2;
+$b[0] = random(1.8,2.5,0.1);
 $b[1] = 2.718281;
-$b[2] = 3;
+$b[2] = random(3,3.5,0.1);
 
 $f[0] = Formula("$b[0]^x");
 $f[1] = Formula("$b[1]^x");
@@ -77,44 +79,44 @@ $ml->qa(
 );
 $ml->choose(3);
 
- 
-
-
-
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
+The graphs of [`f(x)=[@$b[0]@]^x`], [`g(x)=e^x`], and [`h(x)=[@$b[2]@]`] are shown below.
+
+[@EnlargeImageStatementPGML()@]**
+
+
+>>[@ image( insertGraph($gr), width=>400, 
+    height=>400, tex_size=>800 ) @]* <<
+
+END_PGML
 BEGIN_TEXT
-
-The graphs of \(f(x)=$b[0]^x\), \(g(x)=\textrm{e}^x\), and \(h(x)=$b[2]^x\) are shown.
-$PAR
-
-\{ image( insertGraph($gr), width=>400, 
-    height=>400, tex_size=>800 ) \}
-
 
 $PAR
 
 Match each function with its color.
 \{ ColumnMatchTable($ml) \}
 
-
-
-
 END_TEXT
 
-Context()->normalStrings;
 
 ##############################################
 
 $showPartialCorrectAnswers = 0;
 
-
-
 install_problem_grader(~~&std_problem_grader);
 
 ANS( str_cmp( $ml->ra_correct_ans ) );
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We can see in the graph that there are three exponentially increasing functions, all with the same initial value but different rates of growth. We can compare the three formulas by looking at their growth factors. If we know that [`e\approx2.718\ldots`], then we can see that [`f`] has the smallest growth factor, [`g`] has the second smallest, and [`h`] has the largest growth factor. So [`f`] has the blue graph, [`g`] has the red graph, and [`h`] has the green graph.
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();
