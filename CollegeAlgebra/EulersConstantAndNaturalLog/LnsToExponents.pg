@@ -55,7 +55,7 @@ Context()->operators->undefine('*','+','-','/');
 
 $multians = MultiAnswer(
 Compute($a), 
-Compute("10^($b)"))
+Compute("e^($b)"))
 ->with(
   singleResult => 1,
   checker => sub {
