@@ -40,6 +40,8 @@ TEXT(beginproblem());
 Context("Numeric");
 Context()->flags->set(reduceConstants=>0);
 Context()->variables->are(x=>'Real',y=>'Real',t=>'Real',P=>'Real');
+Context()->variables->set(y=>{limits=>[0.1,10]});
+Context()->variables->set(P=>{limits=>[0.1,10]});
 
 $multians = MultiAnswer(Formula("x"), Formula("ln(y)"))->with(
   singleResult => 0,
