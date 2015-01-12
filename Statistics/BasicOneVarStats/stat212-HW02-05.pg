@@ -56,7 +56,7 @@ and 3rd quartiles and dividing that value by 2.",
 "F",
 "The standard deviation is expressed in terms of the original units of 
 measurement but the variance is not.",
-"F",
+"T",
 "The value of the standard deviation may be either positive or negative, 
 while the value of the variance will always be positive.",
 "F",
