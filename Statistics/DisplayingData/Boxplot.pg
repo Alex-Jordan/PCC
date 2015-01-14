@@ -87,9 +87,10 @@ else{
   push @incorr, ("The data for ". join " ", $datasets[0], " has a greater median value than the data for ", $datasets[2], ".");
 }
 
+
 #The fourth answer.  
-if ((abs(ln(($Q3[1] - $medn[1]) / ($medn[1] - $Q1[1]))) <= .2) 
-&& (abs(ln(($high[1] - $Q3[1]) / ($Q1[1] - $low[1]))) <= .2)){
+if ((abs(ln(($Q3[1] - $medn[1]) / ($medn[1] - $Q1[1]))) <= .25) 
+&& (abs(ln(($high[1] - $Q3[1]) / ($Q1[1] - $low[1]))) <= .25)){
   push @corr, ("The data represented in $datasets[1] is roughly symmetric.");
 }else{
   push @incorr, ("The data represented in $datasets[1] is roughly symmetric.");
