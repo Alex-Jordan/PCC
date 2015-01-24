@@ -1,9 +1,8 @@
-
 openDate          = 12/11/2013 at 01:24am PST
 dueDate           = 06/30/2014 at 02:36am PDT
 answerDate        = 06/30/2014 at 02:36am PDT
 paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHeader_Yao.pg
-screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/Functions.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/FunctionsIntro.pg
 description       = an introduction to functions
 problemList       = 
 BasicAlgebra/FunctionBasics/FunctionDefinition10.pg, 1, -1, 2

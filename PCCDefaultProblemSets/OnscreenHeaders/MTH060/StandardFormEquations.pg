@@ -58,7 +58,7 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
 \{ htmlLink(qq!
-http://spot.pcc.edu/~cyao/MTH60Docs/U10L5_StandardFormEquation.pdf/
+http://spot.pcc.edu/~cyao/MTH60Docs/U10L5_StandardFormEquation.pdf
 !,"lecture notes on standard-form equations", "TARGET='_blank'") \} 
 $PAR
 
