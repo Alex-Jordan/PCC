@@ -60,9 +60,9 @@ END_PGML
 
 Context("Fraction");
 $e=$d-$c-$b;
-$f=-$d+$c-$b;
+$g=-$d+$c-$b;
 $ans1 = Fraction($e,$a);
-$ans2= Fraction($f,$a);
+$ans2= Fraction($g,$a);
 
 $refreshCachedImages=1;
 Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0, formatStudentAnswer=>parsed);
