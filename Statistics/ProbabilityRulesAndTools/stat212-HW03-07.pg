@@ -38,7 +38,7 @@ $showPartialCorrectAnswers = 1;  # Change to 0 to shut off separate answer displ
 
 do {$a = random(.15,.35,.01);
 $b = random(.59,.89,.01);
-$banda = random(.26,.44,.01);} until (($banda < $a) and ($banda < $b));
+$banda = random(.26,.44,.01);} until (($banda < $a) and ($banda < $b) and ($a + $b - $banda) < 1);
 # edited this way to preserve existing, unbroken versions
 
 BEGIN_TEXT
