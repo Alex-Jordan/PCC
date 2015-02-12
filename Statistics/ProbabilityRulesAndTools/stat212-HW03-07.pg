@@ -38,7 +38,8 @@ $showPartialCorrectAnswers = 1;  # Change to 0 to shut off separate answer displ
 
 $a = random(.15,.35,.01);
 $b = random(.59,.89,.01);
-$banda = random(.26,.44,.01);
+do {$banda = random(.26,.44,.01);} until (($banda < $a) and ($banda < $b));
+# edited this way to preserve existing, unbroken versions
 
 BEGIN_TEXT
 Suppose that \(A\) and \(B\) are two events for which
