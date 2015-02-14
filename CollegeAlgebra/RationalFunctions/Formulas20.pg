@@ -53,7 +53,7 @@ $f = RandomVariableName(type=>'function');
 
 BEGIN_PGML
 
-Find a formula for a rational function [`[$f]`] whose only solutions to [`f(x)=0`] are [`x=[@$r[0]@]`] and [`x=[@$r[1]@]`], whose graph at those [`x`]-values has a nonzero slope, and that is undefined at [`x=[@$r[2]@]`] with a degree-2 vertical asymptote in its graph. 
+Find a formula for a rational function [`[$f]`] whose only solutions to [`f(x)=0`] are [`x=[@$r[0]@]`] and [`x=[@$r[1]@]`], whose graph at those [`x`]-values has a nonzero slope, and that is undefined at [`x=[@$r[2]@]`] with a degree-two vertical asymptote in its graph. 
 
     [`[$f](x)={}`][______________________________________]
 
