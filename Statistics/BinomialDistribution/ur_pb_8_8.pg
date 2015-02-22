@@ -46,7 +46,7 @@ for ($i = $k; $i<($n+1); $i++){
 BEGIN_TEXT
 
 A man claims to have extrasensory perception. As a test, a fair coin is flipped \($n\) times, and the man is asked to predict the outcome in
-advance. He gets \($k\) out of \($n\) correct. What is the probability that he would have done at least this well if he had no ESP? $BR
+advance. He gets \($k\) out of \($n\) correct. What is the probability that he would have done at least this well if he had no ESP? Do not try to use Normal approximation.$BR
 
 \{ans_rule(20)\}
 
