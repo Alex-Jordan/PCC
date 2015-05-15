@@ -24,7 +24,7 @@ Context("Fraction");
 $a = random(1,8,1);
 $b = random(1,10,1);
 $c = random(1,10,1);
-$d = non_zero_random(-10,10,1);
+do {$d = non_zero_random(-10,10,1);} until ($b != $d);
 $e = random(1,8,1);
 $f = random(1,4,1)+$e;
 
