@@ -31,7 +31,7 @@ $a3 = $a**3;
 
 
 Context()->functions->undefine('sqrt','abs');
-
+Context()->flags->set(limits=>[2,5]);
 
 
 $ans = Formula("$a $var^(2/3)");
