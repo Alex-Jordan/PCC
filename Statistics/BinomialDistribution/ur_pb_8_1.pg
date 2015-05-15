@@ -71,7 +71,7 @@ $BR
 $BR
 \(P(X=k) =\) \{ans_rule(10)\}
 END_TEXT
-Context("Percent")->flags->set(decimalPlaces=>3,tolerance=>0.000005,trimTrailingZeros=>1);
+Context("Percent")->flags->set(decimalPlaces=>3,tolerance=>0.00005,trimTrailingZeros=>1);
 ANS(Percent($prob[0])->cmp);
 ANS(Percent($prob[1])->cmp);
 ANS(Percent($prob[2])->cmp);
