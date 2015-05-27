@@ -40,7 +40,7 @@ Context()->operators->undefine('*');
 Context()->functions->undefine('sqrt','abs');
 #LimitedPowers::OnlyIntegers();
 
-
+Context()->variables->set(x=>{limits=>[1,6]});
 $ans = Formula("$var^($m[2])+$var^($m[3])");
 
 
