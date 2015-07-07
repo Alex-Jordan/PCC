@@ -60,7 +60,7 @@ $BR
 \{ans_rule(10)\}
 
 $PAR
-(b)  For a SRS of $n[$sampleSize-3] of these chocolate bars, what is the level \( L \) such that there is
+(b)  For a SRS of $n[$sampleSize-3] of these chocolate bars, what is the weight \( L \) such that there is
 a $p$PERCENT chance that the average weight is less than \( L \) ounces per bar?
 $BR
 \{ans_rule(10)\} 
