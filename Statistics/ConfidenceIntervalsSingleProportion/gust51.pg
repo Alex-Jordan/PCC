@@ -30,10 +30,15 @@ loadMacros(
 "PGchoicemacros.pl",
 "PGanswermacros.pl",
 "PGauxiliaryFunctions.pl",
-"PGasu.pl"
+"PGasu.pl",
+"contextPercent.pl"
 );
 
 TEXT(beginproblem());
+
+Context("Percent");
+$z= Real(1.644853627);
+$z95 = Real(1.959963985);
 
 $mc = new_multiple_choice();
 
@@ -48,6 +53,25 @@ BEGIN_TEXT
 
 END_TEXT
 ANS(radio_cmp($mc->correct_ans));
+#################################################
+#  Answers
+
+######################################
+
+BEGIN_SOLUTION
+
+Option \(D\).  Consider a sample of size \(n=100\), with \(\hat{p}=0.5\) and \(\hat{q}=0.5\) and \(z^{*} =$z\), for \(90$PERCENT\) confidence.  This gives us,
+$PAR
+\(\text{MOE}= $z\sqrt{\frac{(0.5)(0.5)}{100}} \approx 0.082\) or \(8.2$PERCENT\).
+$PAR
+If we raise our confidence level to \(95$PERCENT\), or, \(z^{*}=$z95\), we find,
+$PAR
+\(\text{MOE}= $z95\sqrt{\frac{(0.5)(0.5)}{100}} \approx 0.098\) or, \(9.8$PERCENT\).  
+$PAR
+Increasing the confidence level increases the margin of error, therefore options \(A\) and \(B\) are not true.  Also, since are a larger confidence level has a larger margin of error, we also have a larger interval which \(p\) could be in.  This means we have less precision.
+
+
+END_SOLUTION
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.
 

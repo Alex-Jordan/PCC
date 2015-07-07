@@ -33,6 +33,9 @@ loadMacros(
 );
 
 TEXT(beginproblem());
+
+Context("Percent");
+
 $showPartialCorrectAnswers = 1;
 
 $perc = 99;
@@ -40,10 +43,12 @@ $perc = 99;
 $n = random(100,1000,100);
 $x = random(50,(4*$n/5));
 
-$p = $x/$n;
+$p = Real($x/$n);
 $q = 1- $p;
-$z = normal_distr($perc/200);
-$e = $z * sqrt($p*$q/$n);
+$z = Real(normal_distr($perc/200));
+$e = $z*sqrt($p*$q/$n);
+$lower = Percent($p - $e);
+$upper = Percent($p + $e); 
 $ans1 = $p-$e;
 $ans2 = $p+$e;
 
@@ -66,8 +71,8 @@ ANS(Percent($ans2)->cmp);
 $mc = new_multiple_choice();
 
 $mc->qa("Which of the following is the correct interpretation for your answer in part (a)?", 
-"We can be 99$PERCENT confident that the percentage of successes in the population lies in the interval");
-$mc->extra("There is a 99$PERCENT chance that the percentage of successes in the population lies in the interval", "We can be 99$PERCENT confident that the percentage of successes in the sample lies in the interval");
+"We can be \(99$PERCENT\) confident that the percentage of successes in the population lies in the interval");
+$mc->extra("There is a \(99$PERCENT\) chance that the percentage of successes in the population lies in the interval", "We can be \(99$PERCENT\) confident that the percentage of successes in the sample lies in the interval");
 $mc->makeLast("None of the above");
 
 BEGIN_TEXT
@@ -78,6 +83,25 @@ BEGIN_TEXT
 END_TEXT
 
 ANS(radio_cmp($mc->correct_ans));
+
+
+#################################################
+#  Answers
+#################################################
+
+BEGIN_SOLUTION
+
+(a)  We know that \(\hat{p}=$p\), therefore \(\hat{q}=$q\) and for \( $perc\)$PERCENT we have \(z^{*}\approx $z\).  
+$PAR
+To create a confidence interval for \(p\) we need the margin of error, which is \(\text{MOE} = z^{*}\sqrt{\frac{\hat{p}\hat{q}}{n}}\).  Using this, we obtain,
+$PAR 
+\(\text{MOE} = $z\sqrt{\frac{($p)($q)}{$n}} \approx $e\).  
+$PAR
+Therefore, our interval is \($lower < p < $upper\).
+$PAR
+(b) Option \(C\). This interval was meant to estimate a population proportion, \(p\), this rules out Option \(A\) which is about a sample.  We can also rule out Option \(B\) since we have no ability or right to make a statement about the specific percent chance that \(p\) is in our interval.  However, we are allowed to say we are \(99$PERCENT\) confident the value of \(p\) is in our interval.
+
+END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 

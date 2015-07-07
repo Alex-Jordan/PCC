@@ -56,6 +56,20 @@ Context("Percent");
 ANS(Percent($p)->cmp);
 ANS(Percent($e)->cmp);
 
+#################################################
+#  Answers
+#################################################
+
+BEGIN_SOLUTION
+
+(a)  As we know our interval in question is \($min < p < $max\), we can find \(\hat{p}\) using symmetry.  A confidence interval is centered at \(\hat{p}\) and then created by finding a margin of error and going the same distance on either side of \(\hat{p}\).  This means that the interval is centered exactly halfway between the lower and upper bounds of the interval.  In our case, this would be \(\hat{p}=\frac{$min+$max}{2} = $p\)
+$PAR
+(b)  Since we know the center of the our interval is \($p\), this means \(\hat{p}=$p\).  We know that the lower bound of our interval is \(\text{Lower} = \hat{p} -\text{MOE}\).  Using this we obtain,
+$PAR
+\($min = $p - \text{MOE}\), which can be solved to find \(\text{MOE} = $e\).  Therefore our margin of error is \($e\).
+$PAR
+
+END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 

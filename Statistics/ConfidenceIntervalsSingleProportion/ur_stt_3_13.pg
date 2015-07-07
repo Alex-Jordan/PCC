@@ -31,6 +31,9 @@ loadMacros(
 );
 
 TEXT(beginproblem());
+
+Context("Percent");
+
 $showPartialCorrectAnswers = 1;
 
 $a = random(300,400,1);
@@ -51,11 +54,13 @@ $z4 = normal_distr(.49);
 $z5 = normal_distr(.495);
 
 @z = ($z1, $z2, $z3, $z4, $z5);
-@sz = @z[@slice];
-$p = $a/$b;
+@sz = Real(@z[@slice]);
+$p = Real($a/$b);
+$q = (1-$p);
+$moe = ($sz[0]*sqrt($p*(1-$p)/$b));
 
-$ans1 = ($p)-$sz[0]*sqrt($p*(1-$p)/$b);
-$ans2 = ($p)+$sz[0]*sqrt($p*(1-$p)/$b);
+$ans1 = Percent(($p)-$sz[0]*sqrt($p*(1-$p)/$b));
+$ans2 = Percent(($p)+$sz[0]*sqrt($p*(1-$p)/$b));
  
 BEGIN_TEXT
 A poll is taken in which \($a\) out of \($b\) randomly selected voters indicated their preference for a certain
@@ -68,5 +73,22 @@ Context("Percent");
 
 ANS(Percent($ans1)->cmp);
 ANS(Percent($ans2)->cmp);
+
+#################################################
+#  Answers
+#################################################
+
+BEGIN_SOLUTION
+
+(a)   Since we know \($a\) out of \($b\) randomly selected voters indicated their preference for a certain candidate, we know that \(\hat{p}=$p\) and \(\hat{q}=$q\).  We desire a $sconf[0] confidence interval, which corresponds to \(z^{*}\approx$sz[0]\).  
+$PAR
+To create a confidence interval for \(p\), we need the margin of error, which is found with the formula \(\text{MOE} = z^{*}\sqrt{\frac{\hat{p}\hat{q}}{n}}\).  Using this, we obtain,
+$PAR 
+\(\text{MOE} = $sz[0]\sqrt{\frac{($p)($q)}{$b}} \approx $moe\).  
+$PAR
+Therefore, our interval is \($ans1 \leq p \leq $ans2\).
+$PAR
+
+END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
