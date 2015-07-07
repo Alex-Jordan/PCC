@@ -31,6 +31,9 @@ loadMacros(
 );
 
 TEXT(beginproblem());
+
+Context("Percent");
+
 $showPartialCorrectAnswers = 1;
 
 $a = random(300,400,1);
@@ -51,8 +54,13 @@ $z4 = normal_distr(.49);
 $z5 = normal_distr(.495);
 
 @z = ($z1, $z2, $z3, $z4, $z5);
-@sz = @z[@slice];
-$p = $a/$b;
+@sz = Real(@z[@slice]);
+$p = Real($a/$b);
+$q = (1-($a/$b));
+$moe = (sqrt($p*(1-$p)/$b)*$sz[0]);
+$moeper = Percent(sqrt($p*(1-$p)/$b)*$sz[0]);
+$lower = Percent($p - $moe);
+$upper = Percent($p + $moe);
 
 $ans1 = ($p)-$sz[0]*sqrt($p*(1-$p)/$b);
 $ans2 = ($p)+$sz[0]*sqrt($p*(1-$p)/$b);
@@ -88,6 +96,26 @@ BEGIN_TEXT
 $BR $BR
 END_TEXT
 ANS(radio_cmp($mc->correct_ans));
+
+#################################################
+#  Answers
+#################################################
+
+BEGIN_SOLUTION
+
+(a)  We know that \(\hat{p}=$p\) and for $sconf[0] confidence we have \(z^{*}\approx $sz[0]\).  
+$PAR
+To create a confidence interval for \(p\) we need the margin of error, which is \(\text{MOE} = z^{*}\sqrt{\frac{\hat{p}\hat{q}}{n}}\).  Using this, we obtain,
+$PAR 
+\(\text{MOE} = $sz[0]\sqrt{\frac{($p)($q)}{$b}} \approx $moe\).  
+$PAR
+Therefore, our interval is \($lower \leq p \leq $upper\).
+$PAR
+(b) Using our work from the previous question we know that \(\text{MOE} \approx $moeper\).
+$PAR
+(c) Option \(A\). Without doing work, we know that a smaller level of confidence, assuming all other variables stay the same, will result in a smaller confidence interval.  A smaller confidence interval means we have a smaller margin of error.
+
+END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 

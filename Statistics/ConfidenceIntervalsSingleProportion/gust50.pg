@@ -30,10 +30,16 @@ loadMacros(
 "PGchoicemacros.pl",
 "PGanswermacros.pl",
 "PGauxiliaryFunctions.pl",
-"PGasu.pl"
+"PGasu.pl",
+"contextPercent.pl"
 );
 
 TEXT(beginproblem());
+
+
+Context("Percent");
+$z= Real(1.644853627);
+$z95 = Real(1.959963985);
 
 $mc = new_multiple_choice();
 
@@ -49,6 +55,24 @@ BEGIN_TEXT
 
 END_TEXT
 ANS(radio_cmp($mc->correct_ans));
+#################################################
+#  Answers
+
+######################################
+
+BEGIN_SOLUTION
+
+Option \(C\).  Consider a sample of size \(n=100\), with \(\hat{p}=0.5\) and \(\hat{q}=0.5\) and \(z^{*} =$z95\), for \(95$PERCENT\) confidence.  This gives us,
+$PAR
+\(\text{MOE}= $z95\sqrt{\frac{(0.5)(0.5)}{100}} \approx 0.098\) or \(9.8$PERCENT\).
+$PAR
+If we lower our confidence level to \(90$PERCENT\), or, \(z^{*}\approx$z\), we find,
+$PAR
+\(\text{MOE}= $z\sqrt{\frac{(0.5)(0.5)}{100}} \approx 0.082\) or, \(8.2$PERCENT\).  
+$PAR
+This immediately rules out option \(B\).  A lower level of confidence gives us a smaller margin of error and thus a smaller interval which \(p\) could be in.  Therefore our precision is increased.
+
+END_SOLUTION
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.
 
