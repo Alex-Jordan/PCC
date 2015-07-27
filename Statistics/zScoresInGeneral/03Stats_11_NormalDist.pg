@@ -38,14 +38,14 @@ $pval2 = .0001*int(10000*(uprob(abs($zscore4))+.00005));
 
 BEGIN_TEXT
 The temperature at any random location in a kiln used in the manufacture of bricks 
-is Normally distributed with a mean of $meanF and a standard deviation of $sigmaF degrees.
+is Normally distributed with a mean of \($meanF\) and a standard deviation of \($sigmaF\) degrees.
 $PAR
-If bricks are fired at a temperature above $temp1, they will crack and must 
+If bricks are fired at a temperature above \($temp1\), they will crack and must 
 be disposed of.  If the bricks are placed randomly throughout the kiln, the 
 proportion of bricks that crack during the firing process is closest to
 \{ ans_rule(10) \}.
 $PAR
-(Note: The answer can be entered in percentage or decimal form. For example, 5.02$PERCENT or 0.0502.) 
+(Note: The answer can be entered in percentage or decimal form. For example, \(5.02$PERCENT\) or \(0.0502)\).
 END_TEXT
 
 ######################################

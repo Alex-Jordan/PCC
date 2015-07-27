@@ -54,7 +54,7 @@ $ans2 = $p+$e;
 
 BEGIN_TEXT
 
-Construct the \( $perc\)$PERCENT confidence interval estimate of the population proportion 
+Construct the \( $perc$PERCENT\) confidence interval estimate of the population proportion 
 \( p \) if the sample size is \( n = $n \) and the number of successes in the sample is 
 \( x = $x. \) $PAR
 $BCENTER

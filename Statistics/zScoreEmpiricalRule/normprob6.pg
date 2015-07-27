@@ -69,8 +69,8 @@ $ans = $names[$ind];
 $popup = PopUp(["?", @names], $ans);
 
 BEGIN_TEXT
-Colleen, Teresa, and Mary are vying for a position as an administrator. Applicants must take an exam for this position.  For the sake of the integrity of the exam, it is altered after each time it is given. Colleen, who is tested with group I, gets a score of $score1 on her test; Teresa, who is tested with group II, gets a score of $score2; and Mary, who is tested with group III, 
-gets a score of $score3.  If the average score for group I is $mu1, for group II is $mu2, and for group III is $mu3, and if the standard deviations for each of the groups are $sig1, $sig2, and $sig3 respectively, which person has the highest relative standing?
+Colleen, Teresa, and Mary are vying for a position as an administrator. Applicants must take an exam for this position.  For the sake of the integrity of the exam, it is altered after each time it is given. Colleen, who is tested with group I, gets a score of \($score1\) on her test; Teresa, who is tested with group II, gets a score of \($score2\); and Mary, who is tested with group III, 
+gets a score of \($score3\).  If the average score for group I is \($mu1\), for group II is \($mu2\), and for group III is \($mu3\), and if the standard deviations for each of the groups are \($sig1\), \($sig2\), and \($sig3\) respectively, which person has the highest relative standing?
 
 $PAR
 \{ $popup->menu() \} has the highest relative standing.

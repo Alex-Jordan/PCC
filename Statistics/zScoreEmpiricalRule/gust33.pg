@@ -37,8 +37,8 @@ TEXT(beginproblem());
 $mc = new_multiple_choice();
 
 $mc->qa("Which of the following Normal distributions has the widest spread?", 
-"A Normal distribution with mean 1 and standard deviation 3");
-$mc->extra("A Normal distribution with mean 0 and standard deviation 2", "A Normal distribution with mean 2 and standard deviation 1", "A Normal distribution with mean 3 and standard deviation 2");
+"A Normal distribution with mean \(1\) and standard deviation \(3\)");
+$mc->extra("A Normal distribution with mean \(0\) and standard deviation \(2\)", "A Normal distribution with mean \(2\) and standard deviation \(1\)", "A Normal distribution with mean \(3\) and standard deviation \(2\)");
 $mc->makeLast("None of the above");
 
 BEGIN_TEXT
@@ -51,7 +51,7 @@ END_TEXT
 
 BEGIN_SOLUTION
 
-Recall that spread helps us think about how far each data value is from the mean.  As we are working with Normal distributions, the widest spread will have the largest standard deviation.  Therefore, the distribution with standard deviation 3 has the widest spread.
+Recall that spread helps us think about how far each data value is from the mean.  As we are working with Normal distributions, the widest spread will have the largest standard deviation.  Therefore, the distribution with standard deviation \(3\) has the widest spread.
 
 END_SOLUTION
 

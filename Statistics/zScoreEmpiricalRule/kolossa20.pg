@@ -33,8 +33,8 @@ $showPartialCorrectAnswers = 1;
 $mc = new_multiple_choice();
 
 $mc->qa("A standardized variable always has",
-"mean 0 and standard deviation 1");
-$mc->extra(" changing mean and standard deviation 1", "mean 0 and changing standard deviation");
+"mean \(0\) and standard deviation \(1\)");
+$mc->extra(" changing mean and standard deviation \(1\)", "mean \(0\) and changing standard deviation");
 $mc->makeLast(" changing mean and changing standard deviation");
 
 BEGIN_TEXT
@@ -79,15 +79,15 @@ END_TEXT
 
 BEGIN_SOLUTION
 
-(1) C.  When not standardized, values for mean and standard deviation can always vary.  However, when working with a Normal distribution, all standardized variables have a mean of 0 and a standard deviation of 1.
+(a) Option \(C\).  When not standardized, values for mean and standard deviation can always vary.  However, when working with a Normal distribution, all standardized variables have a mean of \(0\) and a standard deviation of \(1\).
 
 $PAR
 
-(2)  A.  The definition of a \(z\)-score is the number of standard deviations that the observation is from the mean.
+(b)  Option \(A\).  The definition of a \(z\)-score is the number of standard deviations that the observation is from the mean.
 
 $PAR 
 
-(3) A.  When working with Normal distributions and \(z\)-scores, any observation above the mean will be seen as a "positive" deviation and thus have a positive \(z\)-score.
+(c) Option \(A\).  When working with Normal distributions and \(z\)-scores, any observation above the mean will be seen as a "positive" deviation and thus have a positive \(z\)-score.
 
 END_SOLUTION
 

@@ -51,7 +51,7 @@ BEGIN_TEXT
 
 College officials want to estimate the percentage of students who carry a gun, knife, or
 other such weapon. How many randomly selected students must be surveyed in order to be 
-\( $perc\)$PERCENT  confident that the sample percentage has a margin of error of 
+\( $perc$PERCENT\)  confident that the sample percentage has a margin of error of 
 \( $e \) percentage points? $PAR
 
 (a) \( \ \) Assume that there is no available information that could be used as an estimate 
@@ -59,7 +59,7 @@ of \( \hat{p} \). $PAR
 
 \(n=\) \{ ans_rule(15) \} $PAR
 
-(b) \( \ \) Assume that another study indicated that \( $a\)$PERCENT  of college 
+(b) \( \ \) Assume that another study indicated that \( $a$PERCENT\)  of college 
 students carry weapons.$PAR
 
 \(n=\) \{ ans_rule(15) \} $PAR

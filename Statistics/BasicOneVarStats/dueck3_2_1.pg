@@ -64,4 +64,11 @@ END_TEXT
 ANS(Compute($sum)->cmp);
 ANS(Compute($n)->cmp);
 
+###################################################
+BEGIN_SOLUTION
+
+
+END_SOLUTION
+###################################################
+
 ENDDOCUMENT();       # This should be the last executable line in the problem.

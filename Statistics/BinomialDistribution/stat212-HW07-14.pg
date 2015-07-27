@@ -27,6 +27,7 @@ loadMacros(
 "PGnumericalmacros.pl",
 "PGstatisticsmacros.pl",
 "PGauxiliaryFunctions.pl",
+"PGnauStats.pl",
 "MathObjects.pl",
 "contextPercent.pl",
 "parserOneOf.pl",
@@ -40,7 +41,10 @@ $a = random(62,64,0.1);
 $b = random(400,600,10);
 $c = random(58,60,0.1);
 
-$sigma = sqrt($a/100*(1-$a/100)*$b);
+$sucdec = ($a/100);
+$faildec = (1-$sucdec);
+
+$sigma = Real(sqrt($a/100*(1-$a/100)*$b));
 $mu = $a/100*$b;
 
 $c1 = $c/100*$b;
@@ -57,6 +61,9 @@ for my $j (1..$i) {
 	$exact= $exact+ $multiplier*(($a/100)**$i)*((1-$a/100)**($b-$i));
 }
 
+
+$diagram = DrawNormalDist($z, -99, $z, "", outside=>1);
+
 $ans1 = normal_prob('-infty', $z, mean=>0, deviation=>1);
 $ans2 = normal_prob('-infty', $z2, mean=>0, deviation=>1);
 
@@ -67,21 +74,32 @@ BEGIN_TEXT
 $PAR
 A manufacturer of aspirin claims that the proportion of 
 headache sufferers who get relief with just two aspirins 
-is $a$PERCENT.  What is the probability that in a random 
-sample of $b headache sufferers, less than $c$PERCENT obtain relief?
+is \($a$PERCENT\).  What is the probability that in a random 
+sample of \($b\) headache sufferers, less than \($c$PERCENT\) obtain relief?
 $PAR
 \{ans_rule(15)\}
 $PAR
-
 
 END_TEXT
 
 ANS($ans->cmp());
 
+###################################################
+BEGIN_SOLUTION
 
+As we have large sample size, it would make sense to use the normal approximation of the binomial model if our "pass / fail" condition hold.  Since \($b\cdot$sucdec >10\) and \($b\cdot$faildec >10\) we can can use our normal model approximation.
+$PAR
+With our normal model we have mean \(\mu=np\) and \(\sigma = \sqrt{npq}\).  Thus, \(\mu=$mu\) and \(\sigma = $sigma\).
+$PAR
+The probability that less than \($c$PERCENT\) of surfers will have relief, in a sample of \($b\), is the same saying less than \($c1\) people will receive relief.  This allows us to find \(z=\frac{$c1-$mu}{$sigma} = $z\).
+$PAR
+Using our normal curve, seen below, with \(z<$z\).
+$PAR
+\{Plot($diagram, tex_size=>900)\}
+$PAR
+We find that the probability is \($ans1\)
 
-
-
-
+END_SOLUTION
+###################################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

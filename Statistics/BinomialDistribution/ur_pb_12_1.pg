@@ -49,8 +49,8 @@ $ans[4] = normal_prob('-infty', $n1, mean=>50, deviation=>5);
 
 BEGIN_TEXT
 
-Use normal approximation with the continuity correction to estimate the probability of getting $quest[$tag] $n
-girls in 100 births. 
+Use normal approximation with the continuity correction to estimate the probability of getting $quest[$tag] \($n\)
+girls in \(100\) births. 
 Assume that boys and girls are equally likely. $BR
 
 \{ans_rule(10)\}
@@ -58,6 +58,12 @@ Assume that boys and girls are equally likely. $BR
 END_TEXT
 Context("Percent")->flags->set(decimalPlaces=>3,tolType=>relative,tolerance=>0.001,trimTrailingZeros=>1);
 ANS(Percent($ans[$tag])->cmp);
+
+###################################################
+BEGIN_SOLUTION
+
+END_SOLUTION
+###################################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 

@@ -48,8 +48,8 @@ while ($b4 == $b3) {
     $b4 = random(8,12,1);
 }
 $c4 = (($b1*$a1)+($b2*$a2)+($b3*$a3)+($b4*$a4));
-$c5 = (((($b1-$c4)**2)*$a1)+((($b2-$c4)**2)*$a2)+((($b3-$c4)**2)*$a3)+((($b4-$c4)**2)*$a4));
-$c6 = ($c5)**(0.5);
+$c5 = Real(((($b1-$c4)**2)*$a1)+((($b2-$c4)**2)*$a2)+((($b3-$c4)**2)*$a3)+((($b4-$c4)**2)*$a4));
+$c6 = Real($c5)**(0.5);
 
 BEGIN_TEXT
 $PAR 
@@ -80,5 +80,18 @@ ANS(Compute($c4)->cmp);
 ANS(Compute($c5)->cmp);
 ANS(Compute($c6)->cmp);
 
+BEGIN_SOLUTION
+For a smaller model like this, we can find all values in question by hand.
+$PAR
+(a) \(\text{E}(X)=\mu = ($b1 \cdot $a1 ) +($b2 \cdot $a2 ) + ($b3 \cdot $a3 ) + ($b4 \cdot $a4 ) = $c4\)
+$PAR
+(b) If desired, we can find the variance by hand,
+$PAR
+\(\text{VAR}(X) = $a1($b1-$c4)^2 + $a2($b2-$c4)^2 + $a3($b3-$c4)^2 + $a4($b4-$c4)^2 \approx $c5\)
+$PAR
+(c) Since standard deviation is the square root of the variance, 
+$PAR
+\(\sigma_{x} = \sqrt{$c5} \approx $c6\)
+END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

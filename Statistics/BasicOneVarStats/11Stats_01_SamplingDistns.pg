@@ -36,7 +36,7 @@ $mc[0] = new_multiple_choice();
         "population. ");
 
 $mc[1] = new_multiple_choice();
-     $mc[1] ->qa("The number  $percent$PERCENT is a ","statistic. "); 
+     $mc[1] ->qa("The number  \($percent$PERCENT\) is a ","statistic. "); 
      $mc[1]->extra("sample. ", 
 	"population. ", 
         "parameter. ");
@@ -45,7 +45,7 @@ $mc[1] = new_multiple_choice();
 #  Main text
 
 BEGIN_TEXT
-A phone-in poll conducted by a newspaper reported that  $percent$PERCENT of those who called in enjoyed reality TV.
+A phone-in poll conducted by a newspaper reported that  \($percent$PERCENT\) of those who called in enjoyed reality TV.
 
 $PAR
 (a)   \{ $mc[$order[0]] -> print_q() \}
@@ -65,6 +65,13 @@ $showPartialCorrectAnswers = 0;
 
 ANS(radio_cmp($mc[$order[0]]->correct_ans));
 ANS(radio_cmp($mc[$order[1]]->correct_ans));
+
+###################################################
+BEGIN_SOLUTION
+
+
+END_SOLUTION
+###################################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 

@@ -45,8 +45,8 @@ $showPartialCorrectAnswers = 0;
 $mc = new_multiple_choice();
 
 $mc->qa("Which property of the standard Normal curve allowed you to answer part a)?", 
-"The total area under the curve is 1");
-$mc->extra("The standard Normal curve extends indefinitely in both directions", "The standard Normal curve is symmetric about 0", "Almost all the area under the standard Normal curve lies between -3 and 3");
+"The total area under the curve is \(1\)");
+$mc->extra("The standard Normal curve extends indefinitely in both directions", "The standard Normal curve is symmetric about \(0\)", "Almost all the area under the standard Normal curve lies between \(-3\) and \(3\)");
 $mc->makeLast("None of the above");
 
 $z1=random(1,2,.01);
@@ -56,7 +56,7 @@ $ans=Percent(1-$area1);
 
 BEGIN_TEXT
 
-a)  The area under the standard Normal curve that lies to the left of $z1 is $area1string.  Without consulting a the table giving areas under the standard Normal curve, determine the area under the standard Normal curve that lies to the right of $z1. $BR  answer: \{ans_rule(20)\} $BR
+a)  The area under the standard Normal curve that lies to the left of \(z=$z1\) is \($area1string\).  Without consulting a the table giving areas under the standard Normal curve, determine the area under the standard Normal curve that lies to the right of \(z=$z1\). $BR  answer: \{ans_rule(20)\} $BR
 
 $PAR
 b)

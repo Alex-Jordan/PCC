@@ -32,8 +32,8 @@ $ans2 = $mean + .6745 * $sd;
 
 BEGIN_TEXT
 
-The scores of students on an exam are Normally distributed with a mean of $mean and a standard
-deviation of $sd.
+The scores of students on an exam are Normally distributed with a mean of \($mean\) and a standard
+deviation of \($sd\).
 $PAR
 (a) What is the $list1[$ind] quartile score for this exam? $BR
 $SPACE $SPACE $SPACE\{ ans_rule ( 15 ) \}

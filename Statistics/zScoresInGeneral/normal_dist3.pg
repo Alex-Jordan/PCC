@@ -83,8 +83,8 @@ $diagram = DrawNormalDist( $newz1, $newz2, $a, $b, outside => $shade, title => $
     
 BEGIN_TEXT
 
-$list[$ind] are normally distributed with a mean of $mean[$ind] $unit[$ind] and a standard deviation of 
-$sd[$ind] $unit[$ind]. The figure below shows the distribution of $list2[$ind]. 
+$list[$ind] are normally distributed with a mean of \($mean[$ind]\) $unit[$ind] and a standard deviation of 
+\($sd[$ind]\) $unit[$ind]. The figure below shows the distribution of $list2[$ind]. 
 Calculate the shaded area under the curve. $PAR
 \{ans_rule( 15 )\}    
 $PAR

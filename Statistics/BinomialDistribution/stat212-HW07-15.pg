@@ -46,6 +46,7 @@ $z = ($c1-$a1)/$p;
 
 
 $d = ceil($b*$c/100);
+$lessthan = ($d-1);
 $exact = 0;
 for my $i (0..($d-1)){
 $multiplier = 1;
@@ -55,30 +56,36 @@ for my $j (1..$i) {
 	$exact= $exact+ $multiplier*(($a/100)**$i)*((1-$a/100)**($b-$i));
 }
 
+$exactreal = Real($exact);
 
 BEGIN_TEXT
 $PAR
-A psychologist believes that $a$PERCENT of male drivers 
+A psychologist believes that \($a$PERCENT\) of male drivers 
 when lost continue to drive, hoping to find the location 
 they seek rather than ask directions.  To examine this 
-belief, he took a random sample of $b male drivers and 
+belief, he took a random sample of \($b\) male drivers and 
 asked each what they did when lost.  If the belief is 
-true, determine the probability that less than $c$PERCENT 
+true, determine the probability that less than \($c$PERCENT\) 
 said they continue driving.
 $PAR
 \{ans_rule(15)\}
 $PAR
-
 
 END_TEXT
 
 Context("Percent");
 ANS(Percent($exact)->cmp);
 
+###################################################
+BEGIN_SOLUTION
+
+The normal model is likely not appropriate here as the sample is only \($b\).  Since we want to determine the probability that less than \($c$PERCENT\) continue to drive, this is the same as less than \($c1 \cdot $b=$d\) people continue to drive.  As we are interested in the situation "less than," we will not include \($d\) in our calculation.
+$PAR
+In effect, this means we need to compute \(\text{P}(X\leq $lessthan) = \text{P}(X=0)+\text{P}(X=1)+...+...+\text{P}(X=$lessthan)=$exactreal\)
 
 
 
-
-
+END_SOLUTION
+###################################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

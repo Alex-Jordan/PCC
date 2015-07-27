@@ -91,4 +91,23 @@ ANS(Percent($sum1)->cmp);
 ANS(Percent($sum2)->cmp);
 ANS(Percent($sum3)->cmp);
 
+###################################################
+BEGIN_SOLUTION
+All probabilities can be found using Technology.  Note that with MS Excel or a TI calculator, 
+$PAR
+     1. Any question of the form, \(\text{P}(X<k)\) or \(\text{P}(X\leq k)\) will use \(0\) as the ''lower'' value.
+$PAR
+     2. Any question of the form, \(\text{P}(X>k)\) or \(\text{P}(X\geq k)\) will use \(n\) as the ''upper'' value.
+$PAR
+(a) \( P(X\leq $x[0])  = $sum0\)
+$PAR
+(b) \( P(X > $x[1])  = $sum1\)
+$PAR
+(c) \( P(X < $x[2])  = $sum2\)
+$PAR
+(d) \( P(X\geq $x[3])  = $sum3\)
+$PAR
+END_SOLUTION
+###################################################
+
 ENDDOCUMENT();       # This should be the last executable line in the problem.

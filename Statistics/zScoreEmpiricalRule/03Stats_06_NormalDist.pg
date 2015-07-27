@@ -41,12 +41,12 @@ $zw = Real($zw);
 #  Main
 
 BEGIN_TEXT
-The heights of women aged 20 to 29 are approximately Normal with mean 64 inches and standard deviation 2.7 inches. Men the same age have mean height 69.3 inches with standard deviation 2.8 inches. 
+The heights of women aged \(20\) to \(29\) are approximately Normal with mean \(64\) inches and standard deviation \(2.7\) inches. Men the same age have mean height \(69.3\) inches with standard deviation \(2.8\) inches. 
 $PAR
-(a) What is the \(z\)-score for a woman $w inches tall? 
+(a) What is the \(z\)-score for a woman \($w\) inches tall? 
 $BR \(z_{$w}\) = \{ans_rule(4)\}
 $PAR
-(b) What is the \(z\)-score for a man $m inches tall?
+(b) What is the \(z\)-score for a man \($m\) inches tall?
 $BR  \(z_{$m}\) = \{ans_rule(4)\}
 
 END_TEXT

@@ -37,7 +37,7 @@ $ans = 100*normal_prob('-infty', $s, mean=>$mu, deviation=>$sig);
 
 BEGIN_TEXT
 
-The combined math and verbal scores for students taking a national standardized examination for college admission, is Normally distributed with a mean of $mu and a standard deviation of $sig. If a college requires a minimum score of $s
+The combined math and verbal scores for students taking a national standardized examination for college admission, is Normally distributed with a mean of \($mu\) and a standard deviation of \($sig\). If a college requires a minimum score of \($s\)
 for admission, what percentage of students do not satisfy that requirement? $PAR
 
 \{ans_rule(10)\} of students do not satisfy that requirement.

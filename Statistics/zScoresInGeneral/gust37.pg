@@ -53,7 +53,7 @@ $popup = PopUp(["?", "to the left", "to the right", "within one standard deviati
 
 BEGIN_TEXT
 
-As reported in "Runner's World" magazine, the finishing times of the runners in the New York City 10 km run are Normally distributed with a mean of \($mean\) minutes and a standard deviation of \($stddev\) minutes.  Let \(x\) denote finishing time for a runner. Type $BBOLD min$EBOLD for minutes. $BR
+As reported in "Runner's World" magazine, the finishing times of the runners in the New York City \(10\) km run are Normally distributed with a mean of \($mean\) minutes and a standard deviation of \($stddev\) minutes.  Let \(x\) denote finishing time for a runner. Type $BBOLD min$EBOLD for minutes. $BR
 
 $PAR
 a)  The distribution of the variable \(x\) has mean \{ans_rule(10)\} and standard deviation  \{ans_rule(10)\}. $BR
@@ -62,10 +62,10 @@ $PAR
 b)  The distribution of the standardized variable \(z\) has mean \{ans_rule(10)\} and standard deviation  \{ans_rule(10)\}. $BR
 
 $PAR
-c)  The percentage of finishers with times between $time1 and $time2 minutes is equal to the area under the standard Normal curve between the \(z\)-scores\{ans_rule(10)\} and \{ans_rule(10)\}. $BR
+c)  The percentage of finishers with times between \($time1\) and \($time2\) minutes is equal to the area under the standard Normal curve between the \(z\)-scores\{ans_rule(10)\} and \{ans_rule(10)\}. $BR
 
 $PAR
-d)  The percentage of finishers with times exceeding $time3 minutes is equal to the area under the standard Normal curve that lies \{ $popup->menu() \} of \{ans_rule(10)\}. 
+d)  The percentage of finishers with times exceeding \($time3\) minutes is equal to the area under the standard Normal curve that lies \{ $popup->menu() \} of \{ans_rule(10)\}. 
 
 END_TEXT
 

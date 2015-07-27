@@ -43,7 +43,7 @@ $zscore = Compute($diff / 15);
 #  Main
 
 BEGIN_TEXT
-IQ scores have a mean of 100 and a standard deviation of 15. $Name[$tag] has an IQ of $score. 
+IQ scores have a mean of \(100\) and a standard deviation of \(15\). $Name[$tag] has an IQ of \($score\). 
 
 $PAR
 (a) What is the difference between $Name[$tag]'s IQ and the mean?

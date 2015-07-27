@@ -36,7 +36,7 @@ $ans1 = Percent("$ans[$ind] %");
 $lz = ($lscore - $mean) / $sd;
 $hz = ($hscore - $mean) / $sd;
 
-@solutions = ("Using the \(z\)-score formula, we can find \(z_{low score} = \frac{$lscore - $mean}{$sd} = $lz\) and \(z_{high score} = \frac{$hscore - $mean}{$sd} = $hz\).  As both \(z\)-scores are \($indsol\) from the mean, we know that \($ans1\) of students scored between \($lscore\) and \($hscore\) points",)
+@solutions = ("Using the \(z\)-score formula, we can find \(z_{low score} = \frac{$lscore - $mean}{$sd} = $lz\) and \(z_{high score} = \frac{$hscore - $mean}{$sd} = $hz\).  As both \(z\)-scores are \($indsol\) from the mean, we know that \($ans1\) of students scored between \($lscore\) and \($hscore\) points.",)
 ;
  
 @ssols = (@solutions);
@@ -44,8 +44,8 @@ $hz = ($hscore - $mean) / $sd;
 BEGIN_TEXT
 
 Suppose the scores of students on an exam are Normally distributed with a mean 
-of $mean and a standard deviation of $sd. According to the empirical rule, what percentage of students scored between $lscore and $hscore on the exam? $PAR
- \{ ans_rule( 15 ) \} of students scored between $lscore and $hscore on the exam.
+of \($mean\) and a standard deviation of \($sd\). According to the empirical rule, what percentage of students scored between \($lscore\) and \($hscore\) on the exam? $PAR
+ \{ ans_rule( 15 ) \} of students scored between \($lscore\) and \($hscore\) on the exam.
 
 END_TEXT
 

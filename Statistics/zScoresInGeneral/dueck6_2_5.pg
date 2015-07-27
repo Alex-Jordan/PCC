@@ -63,13 +63,13 @@ $ccp = 100*$cc;
 
 BEGIN_TEXT
 Find the \(z\)-score such that: $PAR
-(a) The area under the standard Normal curve to its left is \($aap\)$PERCENT  $BR
+(a) The area under the standard Normal curve to its left is \($aap$PERCENT\)  $BR
 $SPACE $SPACE $SPACE\(z =\) \{ans_rule(10)\} $PAR
 
 (b) The area under the standard Normal curve to its left is \($bb\)  $BR
 $SPACE $SPACE $SPACE\(z =\) \{ans_rule(10)\} $PAR
 
-(c) The area under the standard Normal curve to its right is \($ccp\)$PERCENT  $BR
+(c) The area under the standard Normal curve to its right is \($ccp$PERCENT\)  $BR
 $SPACE $SPACE $SPACE\(z =\) \{ans_rule(10)\} $PAR
 
 (d) The area under the standard Normal curve to its right is \($dd\)  $BR

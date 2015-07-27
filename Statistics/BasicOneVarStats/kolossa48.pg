@@ -40,12 +40,12 @@ TEXT(beginproblem());
 
 $mc = new_multiple_choice();
 
-$mc->qa("identify the population", "all No.1 draftpicks in the NBA since 1966");
-$mc->extra("all NBA players since 1966","all No.1 draftpick centers in the NBA since 1966" );
+$mc->qa("identify the population", "all No.1 draftpicks in the NBA since \(1966\)");
+$mc->extra("all NBA players since \(1966\)","all No.1 draftpick centers in the NBA since \(1966\)" );
 $mc->makeLast("None of the above");
 
 BEGIN_TEXT
-Since 1966, 45$PERCENT of the No.1 draftpicks in the NBA have been centers. $BR
+Since \(1966\), \(45$PERCENT\) of the No.1 draftpicks in the NBA have been centers. $BR
 
 
 \{ $mc->print_q \}
@@ -71,7 +71,7 @@ ANS(radio_cmp($mc->correct_ans));
 
 $mc = new_multiple_choice();
 
-$mc->qa("is the proportion 0.45 (45$PERCENT) a population proportion or a sample proportion?", "population proportion");
+$mc->qa("is the proportion \(0.45\) \((45$PERCENT)\) a population proportion or a sample proportion?", "population proportion");
 $mc->extra("sample proportion");
 $mc->makeLast("None of the above");
 
@@ -83,4 +83,12 @@ BEGIN_TEXT
 END_TEXT
 
 ANS(radio_cmp($mc->correct_ans));
+
+###################################################
+BEGIN_SOLUTION
+
+
+END_SOLUTION
+###################################################
+
 ENDDOCUMENT();        # This should be the last executable line in the problem.

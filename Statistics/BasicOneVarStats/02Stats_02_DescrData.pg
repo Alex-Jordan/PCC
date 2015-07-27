@@ -57,21 +57,21 @@ random(1.30,1.38,.01));
 #  Main
 
 BEGIN_TEXT
-Animals and people that take in more energy than they expend will get fatter. Here are data on 12 rhesus monkeys: 6 lean monkeys (4$PERCENT to 9$PERCENT body fat) and 6 obese monkeys (13$PERCENT to 14$PERCENT body fat). The data report the energy expended in 24 hours (kilojoules per minute) and the lean body mass (kilograms, leaving out fat) for each monkey.
+Animals and people that take in more energy than they expend will get fatter. Here are data on \(12\) rhesus monkeys: \(6\) lean monkeys (\(4$PERCENT\) to \(9$PERCENT\) body fat) and \(6\) obese monkeys (\(13$PERCENT\) to \(14$PERCENT\) body fat). The data report the energy expended in \(24\) hours (kilojoules per minute) and the lean body mass (kilograms, leaving out fat) for each monkey.
 $PAR
 
 \{DataTable(
 [
-[['Lean Monkeys Lean Body Mass (kg)',headerrow=>1,midrule=>1], 'Lean Monkeys Energy (kJ/min)', 'Obese Monkeys Lean Body Mass (kg)', 'Obese Monkeys Energy (kJ/min)'],
-[' $m[0] ','$e[0]',' $mo[0]','$eo[0]'],
-['$m[1]','$e[1]','$mo[1]','$eo[1]'],
-['$m[2]','$e[2]','$mo[2]','$eo[2]'],
-['$m[3]','$e[3]','$mo[3]','$eo[3]'],
-['$m[4]','$e[4]','$mo[4]','$eo[4]'],
-['$m[5]','$e[5]','$mo[5]','$eo[5]'],
+[['Lean Monkeys Lean Body Mass (kg)', headerrow=>1, midrule=>1], 'Lean Monkeys Energy (kJ/min)', 'Obese Monkeys Lean Body Mass (kg)', 'Obese Monkeys Energy (kJ/min)'],
+[' \($m[0]\) ','\($e[0]\)',' \($mo[0]\)','\($eo[0]\)'],
+['\($m[1]\)','\($e[1]\)','\($mo[1]\)','\($eo[1]\)'],
+['\($m[2]\)','\($e[2]\)','\($mo[2]\)','\($eo[2]\)'],
+['\($m[3]\)','\($e[3]\)','\($mo[3]\)','\($eo[3]\)'],
+['\($m[4]\)','\($e[4]\)','\($mo[4]\)','\($eo[4]\)'],
+['\($m[5]\)','\($e[5]\)','\($mo[5]\)','\($eo[5]\)'],
 ],
 align => 'XXXX',
-tablecss => 'width:50%; ',
+tablecss => 'width:75%; ',
 headercss => 'vertical-align:top; ',
 )\}
 
@@ -92,6 +92,12 @@ ANS(NumberWithUnits("$ans_a1 kg")->cmp);
 $ans_a2 = Compute(($mo[0]+$mo[1]+$mo[2]+$mo[3]+$mo[4]+$mo[5])/6);
 ANS(NumberWithUnits("$ans_a2 kg")->cmp);
 
+###################################################
+BEGIN_SOLUTION
+
+
+END_SOLUTION
+###################################################
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 
 

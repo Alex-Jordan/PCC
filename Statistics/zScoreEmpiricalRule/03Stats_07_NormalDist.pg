@@ -71,7 +71,7 @@ $popup = PopUp(["?", @ssub], $ssub[$best]);
 #  Main
 
 BEGIN_TEXT
-$Name[$tag] took 4 courses last semester: $ssub[1], $ssub[2], $ssub[3], and $ssub[4].
+$Name[$tag] took \(4\) courses last semester: $ssub[1], $ssub[2], $ssub[3], and $ssub[4].
 The means and standard deviations for the final exams, and $Name[$tag]'s scores are given 
 in the table below. Convert $Name[$tag]'s scores into \(z\)-scores. 
 $PAR

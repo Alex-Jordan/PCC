@@ -56,21 +56,21 @@ race for state senator.  The newspaper took a SRS of \(1200\) registered voters
 and found that \(620\) would vote for the Republican candidate.  Let \(p\) 
 represent the proportion of registered voters in the state who would vote for 
 the Republican candidate.  A \(90$PERCENT\) confidence interval for \(p\) 
-is:","0.517 \(\pm\) 0.024"); 
-     $mc[1]->extra("0.517 \(\pm\) 0.014", 
-	"0.517 \(\pm\) 0.028", 
-            "0.517 \(\pm\) 0.249");
+is:","\(0.517 \pm 0.024\)"); 
+     $mc[1]->extra("\(0.517 \pm 0.014\)", 
+	"\(0.517 \pm 0.028\)", 
+            "\(0.517 \pm 0.249\)");
 $mc[2] = new_multiple_choice();
      $mc[2] ->qa("A newspaper conducted a statewide survey concerning the \(1998\) 
 race for state senator.  The newspaper took a SRS of \(1200\) registered voters 
 and found that \(620\) would vote for the Republican candidate.  Let \(p\) 
 represent the proportion of registered voters in the state who would vote for 
 the Republican candidate.  How large a sample \(n\) would you need to estimate 
-\(p\) with a margin of error \(0.0\)1 with \(95$PERCENT\) confidence?  Use the guess 
-\(\hat{p} = .5\) as the value of \(\hat{p}\).","9604"); 
-     $mc[2]->extra("49", 
-	"1500", 
-            "4800");
+\(p\) with a margin of error \(0.01\) with \(95$PERCENT\) confidence?  Use the guess 
+\(\hat{p} = .5\) as the value of \(\hat{p}\).","\(9604\)"); 
+     $mc[2]->extra("\(49\)", 
+	"\(1500\)", 
+            "\(4800\)");
 
 @solutions = ("\(D.\) As this sample is comprised of people who both had to be listening to the radio AND had to call in to have their opinion counted, the data is not from an SRS.",
 

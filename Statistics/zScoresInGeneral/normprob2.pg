@@ -39,8 +39,8 @@ BEGIN_TEXT
 
 The combined math and verbal scores for 
 students taking a national standardized examination for college admission is
-Normally distributed with a mean of $mu and a standard deviation of $sig. 
-If a college requires a student to be in the top $p$PERCENT of students taking this test, 
+Normally distributed with a mean of \($mu\) and a standard deviation of \($sig\). 
+If a college requires a student to be in the top \($p$PERCENT\) of students taking this test, 
 what is the minimum score that such a student can obtain and still qualify for admission at
 the college? Remember that scores on this test are whole numbers.
 $PAR

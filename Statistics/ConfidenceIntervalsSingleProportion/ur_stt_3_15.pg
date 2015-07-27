@@ -28,7 +28,7 @@ loadMacros(
 "PGnumericalmacros.pl",
 "PGstatisticsmacros.pl",
 "MathObjects.pl",
-"contextPercent.pl",
+"contextPercent.pl"
 );
 
 TEXT(beginproblem());
@@ -42,11 +42,11 @@ $a = random(40,$n-10,1,);
 $p = Real($a/$n);
 $q = 1-$p;
 
-@conf = ("\(80\)$PERCENT",
-	 "\(90\)$PERCENT",
-	 "\(95\)$PERCENT",
-	 "\(98\)$PERCENT",
-	 "\(99\)$PERCENT");
+@conf = ("\(80$PERCENT\)",
+	 "\(90$PERCENT\)",
+	 "\(95$PERCENT\)",
+	 "\(98$PERCENT\)",
+	 "\(99$PERCENT\)");
 @slice = NchooseK(5,1);
 @sconf = @conf[@slice];
 

@@ -46,14 +46,20 @@ $ans = normal_prob($a,'infty', mean=>$mean, deviation=>$dev);
 
 BEGIN_TEXT
 
-Use normal approximation with the continuity correction to estimate the probability of passing a true/false test of $n 
-questions if the minimum passing grade is $p$PERCENT and all responses are random guesses. $BR
+Use normal approximation with the continuity correction to estimate the probability of passing a true/false test of \($n\) 
+questions if the minimum passing grade is \($p$PERCENT\) and all responses are random guesses. $BR
 
 \{ans_rule(10)\}
 
 END_TEXT
 Context("Percent")->flags->set(decimalPlaces=>3,tolType=>relative,tolerance=>0.001,trimTrailingZeros=>1);
 ANS(Percent($ans)->cmp);
+
+###################################################
+BEGIN_SOLUTION
+
+END_SOLUTION
+###################################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 

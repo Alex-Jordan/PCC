@@ -43,7 +43,7 @@ $showPartialCorrectAnswers = 1;
 
 
 BEGIN_TEXT
-Here is a list of 27 scores on a Statistics midterm exam: $BR $BR
+Here is a list of \(27\) scores on a Statistics midterm exam: $BR $BR
 \(20,\ 30,\ 31,\ 32,\ 46,\ 48,\ 49,\ 52,\ 54,\)$BR
 \(59,\ 61,\ 69,\ 71,\ 73,\ 74,\ 79,\ 81,\ 81,\)$BR
 \(81,\ 85,\ 86,\ 87,\ 88,\ 91,\ 94,\ 96,\ 97\)$BR $BR 
@@ -56,6 +56,13 @@ END_TEXT
 
 ANS(Compute($sans[0])->cmp);
 ANS(Compute($sans[1])->cmp);
+
+###################################################
+BEGIN_SOLUTION
+
+
+END_SOLUTION
+###################################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 

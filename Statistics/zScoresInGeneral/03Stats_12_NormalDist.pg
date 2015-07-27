@@ -49,21 +49,21 @@ $xscore3 = $zscore3 * $sigma + $mu;
 #  Main
 
 BEGIN_TEXT
-Scores on a certain intelligence test for children between ages 13 and 15 years are approximately Normally distributed with \( \mu = $mu \) and \( \sigma = $sigma \).
+Scores on a certain intelligence test for children between ages \(13\) and \(15\) years are approximately Normally distributed with \( \mu = $mu \) and \( \sigma = $sigma \).
 
 $PAR
-(a)  What proportion of children aged 13 to 15 years old have scores on this test above $num1? $PAR
- (NOTE: You may enter your answer in percentage or decimal form. For example, 45.23$PERCENT or 0.4523.)
+(a)  What proportion of children aged \(13\) to \(15\) years old have scores on this test above \($num1\)? $PAR
+ (NOTE: You may enter your answer in percentage or decimal form. For example, \(45.23$PERCENT\) or \(0.4523)\).
 $PAR
 \{ ans_rule(10) \}
 $HR
 $PAR
-(b)  Enter the score which marks the lowest $percent2 percent of the distribution.
+(b)  Enter the score which marks the lowest \($percent2\) percent of the distribution.
 $PAR
 \{ ans_rule(10) \}
 $HR
 $PAR
-(c)  Enter the score which marks the highest $percent3 percent of the distribution.
+(c)  Enter the score which marks the highest \($percent3\) percent of the distribution.
 $PAR
 \{ ans_rule(10) \}
 END_TEXT

@@ -49,6 +49,7 @@ $c = random(40000,60000,5000);
 
 $ex = $p1*$a1+$p2*$a2+$p3*$a3+$p4*$a4;
 $profit = ($ex*$a)-$b-$c;
+$profitbef = ($ex*$a);
 
 Context("Currency");
 Context()->flags->set(trimTrailingZeros=>1);
@@ -57,6 +58,8 @@ Context()->currency->addSymbol("dollars","dollar");
 $a = Currency("$a");
 $b = Currency("$b");
 $c = Currency("$c");
+$profitbef = Currency("$profitbef");
+$profit = Currency("$profit");
 
 BEGIN_TEXT
 A concert producer has scheduled an outdoor concert.  The producer estimates the attendance will depend on the weather according to the following table.
@@ -73,11 +76,19 @@ $ECENTER
 $PAR
 $PAR
 (a)  What is the expected attendance?  \{ans_rule(10)\} $PAR
-(b)  If tickets cost $a each, the band will cost $b, plus $c for administration.  What is the expected profit?  \{ans_rule(10)\}
+(b)  If tickets cost \($a\) each, the band will cost \($b\), plus \($c\) for administration.  What is the expected profit?  \{ans_rule(10)\}
 
 END_TEXT
 
 ANS(Compute($ex)->cmp);
 ANS(Currency($profit)->cmp);
+
+BEGIN_SOLUTION
+(a) As we already have our probability model, we can proceed to finding the expected value immediately,
+$PAR
+\(\text{E}(X)=\mu = ($p1\cdot$a1)+($p2\cdot$a2)+($p3\cdot$a3)+($p4\cdot$a4) = $ex\)
+$PAR
+(b) Our solution in part (a) was the expected attendance.  If each ticket costs \($a\), then the expected profit with $BBOLD no other $EBOLD expenses would be \($profitbef\).  Since the band will cost \($b\), plus \($c\) for administration, the total profit will be \($profitbef-$b-$c=$profit\)
+END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

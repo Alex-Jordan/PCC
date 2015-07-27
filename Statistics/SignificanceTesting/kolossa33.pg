@@ -35,7 +35,7 @@ $a1 = random(0.07,0.10,.1);
 $a2 = random(.01,.05,.1);
 
 
-@event = (' \(\alpha = '."$a1".',  P = 0.06\)', ' \(\alpha = '."$a2".',  P = 0.06\)');
+@event = (' \(\alpha = '."$a1".',\   P\)-value \(= 0.06\)', ' \(\alpha = '."$a2".',\   P\)-value \(= 0.06\)');
 @ans = ("reject null hypothesis", "do not reject null hypothesis");
 
 @slice = NchooseK(2,2);
@@ -61,6 +61,15 @@ END_TEXT
 ANS($popup0->cmp);
 ANS($popup1->cmp);
 
+###########################################
+BEGIN_SOLUTION
+Recall that for hypothesis testing, when our \(P\)-value \(<\alpha\) we reject the null hypothesis in favor of the alternative.  When our \(P\)-value \(>\alpha\), we do not reject the null hypothesis.
+$PAR
+(a) Therefore according to the above convention: $sans[0].
+$PAR
+(b) Therefore according to the above convention: $sans[1].
+
+END_SOLUTION
 
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

@@ -57,15 +57,15 @@ $ans6 = normal_prob($h, "infty");
 
 BEGIN_TEXT
 
-(a) Find the area under the standard Normal curve between $a and $b. $BR \{ans_rule(10)\} $PAR
-(b) Find the area under the standard Normal curve between $c and $d. $BR \{ans_rule(10)\} $PAR
-(c) Find the area under the standard Normal curve that lies to the left of $e. $BR
+(a) Find the area under the standard Normal curve between \($a\) and \($b\). $BR \{ans_rule(10)\} $PAR
+(b) Find the area under the standard Normal curve between \($c\) and \($d\). $BR \{ans_rule(10)\} $PAR
+(c) Find the area under the standard Normal curve that lies to the left of \($e\). $BR
 \{ans_rule(10)\} $PAR
-(d) Find the area under the standard Normal curve that lies to the left of $f. $BR
+(d) Find the area under the standard Normal curve that lies to the left of \($f\). $BR
 \{ans_rule(10)\} $PAR
-(e) Find the area under the standard Normal curve that lies to the right of $g. $BR
+(e) Find the area under the standard Normal curve that lies to the right of \($g\). $BR
 \{ans_rule(10)\} $PAR
-(f) Find the area under the standard Normal curve that lies to the right of $h. $BR
+(f) Find the area under the standard Normal curve that lies to the right of \($h\). $BR
 \{ans_rule(10)\} 
 
 

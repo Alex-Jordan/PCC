@@ -29,9 +29,9 @@ TEXT(beginproblem());
 
 $mc[0] = new_multiple_choice();
      $mc[0]->qa("Which of these variables is least likely to have a Normal distribution? ",
-	"Income per person for 150 different countries. "); 
-     $mc[0]->extra("Lengths of 50 newly hatched pythons. ", 
-	"Heights of 100 white pine trees in a forest.  ");
+	"Income per person for \(150\) different countries. "); 
+     $mc[0]->extra("Lengths of  \(50\) newly hatched pythons. ", 
+	"Heights of  \(100\) white pine trees in a forest.  ");
      $mc[0]->makeLast("None of the above. ");
 
 $mc[1] = new_multiple_choice();
@@ -43,20 +43,30 @@ $mc[1] = new_multiple_choice();
      $mc[1]->makeLast("All of the above. ");
 
 $mc[2] = new_multiple_choice();
-     $mc[2] ->qa("The length of human pregnancies from conception to birth varies according to a distribution that is approximately Normal with mean 266 days and standard deviation 16 days. About 95$PERCENT of all pregnancies last between ",
-        "234 and 298 days. "); 
-     $mc[2]->extra("250 and 282 days. ", 
-	"218 and 314 days. ", 
-        "260 and 320 days. ");
+     $mc[2] ->qa("The length of human pregnancies from conception to birth varies according to a distribution that is approximately Normal with mean  \(266\) days and standard deviation \(16\) days. About  \(95$PERCENT\) of all pregnancies last between ",
+        " \(234\) and  \(298\) days. "); 
+     $mc[2]->extra(" \(250\) and  \(282\) days. ", 
+	" \(218\) and  \(314\) days. ", 
+        " \(260\) and  \(320\) days. ");
      $mc[2]->makeLast("None of the above. ");
 
 $mc[3] = new_multiple_choice();
-     $mc[3] ->qa("The scores of adults on an IQ test is approximately Normal with mean 100 and standard deviation 15. Corinne scores 118 on such test. Her \(z\)-score is about ",
-	"1.2 "); 
-     $mc[3]->extra("7.87 ", 
-	"18 ", 
-        "0.67 ");
+     $mc[3] ->qa("The scores of adults on an IQ test is approximately Normal with mean  \(100\) and standard deviation  \(15\). Corinne scores  \(118\) on such test. Her \(z\)-score is about ",
+	" \(1.2\)"); 
+     $mc[3]->extra(" \(7.87\) ", 
+	" \(18\)", 
+        " \(0.67\) ");
      $mc[3]->makeLast("None of the above. ");
+
+@solutions = ("Distributions of income are generally skewed, making it the least likely to have a Normal distribution.",
+
+"To completely specify the shape of a Normal distribution, you usually give the mean and the standard deviation.",
+
+"We know  \(95$PERCENT\) of observations are within \(2\) standard deviation of the mean.  This would correspond to \(32\) days above and below the mean, or, between \(234\) and \(298\) days.",
+
+"Her \(z\)-score would be \(z = \frac{118-100}{15} =  1.2\).",)
+;
+@ssols = (@solutions[@order]);
 
 #################################################
 #  Main
@@ -82,6 +92,25 @@ END_TEXT
 
 #################################################
 #  Answers
+
+######################################
+
+BEGIN_SOLUTION
+
+(a) $ssols[0]
+
+$PAR
+
+(b) $ssols[1]
+
+
+$PAR 
+
+(c)  $ssols[2]
+
+
+END_SOLUTION
+
 
 $showPartialCorrectAnswers = 0;
 

@@ -93,7 +93,7 @@ $mc->makeLast("True");
 BEGIN_TEXT
 
 
-Calculate the 5 number summary and the interquartile range of the following data: 
+Calculate the \(5\) number summary and the interquartile range of the following data: 
 
 \[ $sdata[0], \ $sdata[1], \ $sdata[2], \ $sdata[3], \ $sdata[4], \ $sdata[5], \ $sdata[6], \ $sdata[7] ,\ $sdata[8],\ $sdata[9],\ $sdata[10],\ $sdata[11],\ $sdata[12],\ $sdata[13],\ $sdata[14] \]  $BR $BR
 
@@ -125,6 +125,13 @@ ANS(Compute($Max)->cmp);
 ANS(Compute($IQR)->cmp);
 
 ANS(radio_cmp($mc->correct_ans));
+
+###################################################
+BEGIN_SOLUTION
+
+
+END_SOLUTION
+###################################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 

@@ -50,6 +50,8 @@ for ($i=0; $i<4; $i++){
 	$comb[$i] = fact ($n[$i])/(fact ($x[$i])*fact ($n[$i]-$x[$i]));
 	$other[$i] = $p[$i]**($x[$i])*(1-$p[$i])**($n[$i]-$x[$i]);
 	$prob[$i] = $comb[$i]*$other[$i];
+        $fail[$i] = $n[$i]-$x[$i];
+        $q[$i] = (1-$p[$i]);
 }
 
 
@@ -76,5 +78,29 @@ ANS(Percent($prob[0])->cmp);
 ANS(Percent($prob[1])->cmp);
 ANS(Percent($prob[2])->cmp);
 ANS(Percent($prob[3])->cmp);
+
+###################################################
+BEGIN_SOLUTION
+Note that \(C_{n,k}\) stands for N choose K.
+$PAR
+(a) With \(n = $n[0], k = $x[0], p = $p[0]\), we find,
+$PAR
+\(\text{P}(X=$x[0])=C_{$n[0],$x[0]} \cdot ($p[0])^$x[0] \cdot ($q[0])^$fail[0] = $prob[0]\)
+$PAR
+(b) With \(n = $n[1], k = $x[1], p = $p[1]\), we find,
+$PAR
+\(\text{P}(X=$x[1])=C_{$n[1],$x[1]} \cdot ($p[1])^$x[1] \cdot ($q[1])^$fail[1] = $prob[1]\)
+$PAR
+(c) With \(n = $n[2], k = $x[2], p = $p[2]\), we find,
+$PAR
+\(\text{P}(X=$x[2])=C_{$n[2],$x[2]} \cdot ($p[2])^$x[2] \cdot ($q[2])^$fail[2] = $prob[2]\)
+$PAR
+(d) With \(n = $n[3], k = $x[3], p = $p[3]\), we find,
+$PAR
+\(\text{P}(X=$x[3])=C_{$n[3],$x[3]} \cdot ($p[3])^$x[3] \cdot ($q[3])^$fail[3] = $prob[3]\)
+$PAR
+
+END_SOLUTION
+###################################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

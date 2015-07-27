@@ -41,8 +41,8 @@ $realind2 = $ind -1;
 
 BEGIN_TEXT
 
-Suppose the scores of students on an exam are normally distributed with a mean of $mean and a standard
-deviation of $sd. Then approximately $per[$ind]$PERCENT of the exam scores lie between the integers 
+Suppose the scores of students on an exam are normally distributed with a mean of \($mean\) and a standard
+deviation of \($sd\). Then approximately \($per[$ind]$PERCENT\) of the exam scores lie between the integers 
 \{ ans_rule( 15 ) \} and  \{ ans_rule( 15 ) \} such that the mean is halfway between these two integers.
 
 END_TEXT

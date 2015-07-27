@@ -36,7 +36,13 @@ $s = random(1,6,1);
 @n = (30,34,38,42,46,50);
 @x = (6,7,8,9,10,11);
 @p = (.383553, .334795, .293451, .258108,.227693,.20137);
+$pval = 100*($p[$choose]);
 @normalbased = (0.312103057, 0.269749098, 0.234079955, 0.203812974, 0.177969037, 0.155786037);
+$null = Real(1/6);
+$null2 = Real(5/6);
+$phat = Real($x[$choose]/$n[$choose]);
+$sigma = Real(sqrt($null*$null2)/$n[$choose]);
+$z = ($x[$choose]/$n[$choose] - (1/6))/$sigma;
 
 $choose = random(0,5,1);
 
@@ -46,10 +52,10 @@ $popup = PopUp(["?", "Yes", "No"], "No");
 #  Main text
 
 BEGIN_TEXT
- $name[$m] thinks that $pronoun has a special relationship with the number $s. 
-In particular, $name[$m] thinks that $pronoun would roll a $s with a fair 
-6-sided die more often than you'd expect by chance alone.  Suppose \(p\) is 
-the true proportion of the time $name[$m] will roll a $s.    
+ $name[$m] thinks that $pronoun has a special relationship with the number \($s\). 
+In particular, $name[$m] thinks that $pronoun would roll a \($s\) with a fair 
+\(6\)-sided die more often than you'd expect by chance alone.  Suppose \(p\) is 
+the true proportion of the time $name[$m] will roll a \($s\).    
 
 $PAR
 (a) State the null and alternative hypotheses for testing $name[$m]'s claim.
@@ -64,15 +70,15 @@ END_TEXT
 
 BEGIN_TEXT
 $PAR
-(b) Now suppose $name[$m] makes $n[$choose] rolls, and a $s comes up 
-$x[$choose] times out of the $n[$choose] rolls.  Determine the \(P\)-value of the 
+(b) Now suppose $name[$m] makes \($n[$choose]\) rolls, and a \($s\) comes up 
+\($x[$choose]\) times out of the \($n[$choose]\) rolls.  Determine the \(P\)-value of the 
 test: 
 $BR
 \(P\)-value = \{ ans_rule(10) \} 
 
 $PAR
-(c) Answer the question: Does this sample provide evidence at the 5$PERCENT level 
-that $name[$m] rolls a $s more often than you'd expect? 
+(c) Answer the question: Does this sample provide evidence at the \(5$PERCENT\) level 
+that $name[$m] rolls a \($s\) more often than you'd expect? 
 $BR
  \{$popup->menu \} 
 END_TEXT
@@ -97,6 +103,24 @@ ANS($ans_b->cmp->withPostFilter(AnswerHints(
 
 
 ANS($popup->cmp);
+
+
+#############################################################
+
+BEGIN_SOLUTION
+(a)  As \(p\) is the true proportion of the time $name[$m] will roll a \($s\) and we know the die is fair, we have \(p=\frac{1}{6}\).  This means we have \( H_0: p=\frac{1}{6}\).  As $name[$m] claims they will roll \($s\)'s more than you would expect them to we, have \( H_A: p>\frac{1}{6}\)
+$PAR
+(b)  Wait!  Don't use the normal approximation!  Check the conditions.  We need to be able to have at least \(10\) successes, \(np>10\) and \(10\) failures, \(nq>10\).  But since are only rolling \($n[$choose]\) times and the die is fair, this means we will have \($n[$choose]\cdot\frac{5}{6} > 10\) failures, but \($n[$choose]\cdot\frac{1}{6} < 10\) successes.  This means we need to use the binomial model still.
+$PAR
+How likely is it that $name[$m] rolled a \($s\), \($x[$choose]\) times out of the \($n[$choose]\), or something more extreme?  This is asking for a \(P\)-value.  Since we cannot use the normal approximation, we will find the \(P\)-value using the binomial distribution.  This amounts to finding, \(\text{P}(X \geq 7)\),
+$PAR
+\(\text{P}(X \geq 7) =\text{P}(X=7) +\text{P}(X=8) +...+... + \text{P}(X=$n[$choose])\)
+$PAR
+Via technology we find that \(\text{P}(X \geq 7)\approx $p[$choose]...\), or, a \(P\)-value of \($pval$PERCENT\)
+$PAR
+(c)  Using the \(5$PERCENT\) level, if $name[$m] rolls a \($s\) more often than we would expect, then \(P\)-value \(< 5$PERCENT\).  Otherwise, if a \($s\) is $BBOLD not $EBOLD rolled more often than we would expect, then \(P\)-value \(> 5$PERCENT\).
+
+END_SOLUTION
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.
 

@@ -35,9 +35,9 @@ $c = $mean + ( $val[$slice1[1]] * $fact1 );
 $fact2 = list_random( -1, 1 );
 $d = $mean + ( $val[$slice1[2]] * $fact2 );
    
-@quest = ('Between '.$a.' and '.$b.' inches tall?', 
-          ' Under '.$c.' inches tall?', 
-	  'Over '.$d.' inches tall?' );
+@quest = ('Between \('.$a.'\) and \('.$b.'\) inches tall?', 
+          ' Under \('.$c.'\) inches tall?', 
+	  'Over \('.$d.'\) inches tall?' );
 
 if( $slice1[0] == 0 ){ 
   $ans1 = 50;
@@ -109,7 +109,7 @@ if( $slice1[2] == 0 ){
 
 BEGIN_TEXT
 
-The heights of $country men are Normally distributed with a mean of $mean inches and a standard deviation of $sd
+The heights of $country men are Normally distributed with a mean of \($mean\) inches and a standard deviation of \($sd\)
 inches. What percentage of $country men are:$PAR  
 (a) $quest[$slice2[0]] $BR
  \{ans_rule( 15 ) \} $PAR

@@ -34,9 +34,9 @@ $x= int($n*random(.2,.7,.1));
 #  Main text
 
 BEGIN_TEXT
-An article in the Washington Post on March 16, 1993 stated that nearly 45 
+An article in the Washington Post on March \(16\), \(1993\) stated that nearly \(45\) 
 percent of all Americans have brown eyes.  A random sample of \(n = $n\)  PCC 
-students found $x with brown eyes.  Give the numerical value of the statistic 
+students found \($x\) with brown eyes.  Give the numerical value of the statistic 
 \( \hat{p} \).
 
 $BR
@@ -59,6 +59,13 @@ ANS($ans->cmp->withPostFilter(AnswerHints(
       return abs($student-$correct) < .01 ;
       } => ["Close! Use more accuracy in our calculation."]
 )));
+
+###################################################
+BEGIN_SOLUTION
+
+
+END_SOLUTION
+###################################################
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.
 

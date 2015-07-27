@@ -47,8 +47,8 @@ TEXT(beginproblem());
 
 TEXT(EV2(<<EOT));
 
-Suppose that the mean score of a class of $numall students was ${aveall}.
-The $nummale male students in the class had a mean score of ${avemale}.  Find the mean score for the $numfemale female students.
+Suppose that the mean score of a class of \($numall\) students was \(${aveall}\).
+The \($nummale\) male students in the class had a mean score of \(${avemale}\).  Find the mean score for the \($numfemale\) female students.
 $PAR
 Mean Score for Female Students = \{ans_rule(15)\}
 $PAR
@@ -57,5 +57,12 @@ EOT
 
 $ans = $avefemale;
 ANS(Compute($ans)->cmp );
+
+###################################################
+BEGIN_SOLUTION
+
+
+END_SOLUTION
+###################################################
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.

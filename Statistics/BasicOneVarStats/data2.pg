@@ -71,7 +71,7 @@ $variance = ($var+($val1-$mean)**2)/11;
 $sd = int(sqrt($variance)*1000+.5)/1000;
 
 BEGIN_TEXT
-A data set consists of the data given below plus one more data point. When the additional point is included in the data set the sample mean of the resulting data set is $mean. What is the value of the additional data point? 
+A data set consists of the data given below plus one more data point. When the additional point is included in the data set the sample mean of the resulting data set is \($mean\). What is the value of the additional data point? 
  $PAR
 \[ $sset[0], \ $sset[1], \ $sset[2], \ $sset[3], \ $sset[4], \ $sset[5], \ $sset[6], \ $sset[7], \ $sset[8], \ 
 $sset[9], \ $sset[10] \]$PAR
@@ -80,5 +80,12 @@ Value of additional data point \(=\) \{ans_rule(20)\}$BR
 
 END_TEXT
 ANS(Compute($val1)->cmp);
+
+###################################################
+BEGIN_SOLUTION
+
+
+END_SOLUTION
+###################################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

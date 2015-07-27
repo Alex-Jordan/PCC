@@ -52,9 +52,9 @@ for my $i ($corr..$n) {
 
 BEGIN_TEXT
 
-A multiple-choice test consists of $n questions with possible answers of $answers[$tag].
+A multiple-choice test consists of \($n\) questions with possible answers of $answers[$tag].
 Estimate the probability that with random guessing, the number of correct answers 
-is at least $corr.$BR
+is at least \($corr\).$BR
 
 \{ans_rule(10)\}
 
@@ -65,6 +65,12 @@ tolerance=>0.001,
 trimTrailingZeros=>1);
 
 ANS(Percent($prob)->cmp);
+
+###################################################
+BEGIN_SOLUTION
+
+END_SOLUTION
+###################################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 
