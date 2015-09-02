@@ -49,7 +49,11 @@ $ans_c = normal_prob($c, $d);
 $ans_d = normal_prob('-infty', $e);
 $ans_e = normal_prob($f, 'infty');
 
-
+$deca = Real($ans_a);
+$decb = Real($ans_b);
+$decc = Real($ans_c);
+$decd = Real($ans_d);
+$dece = Real($ans_e);
 BEGIN_TEXT
 
 Assume that the readings on the thermometers are Normally distributed with a mean of 
@@ -75,6 +79,24 @@ ANS(Percent($ans_c)->cmp);
 ANS(Percent($ans_d)->cmp);
 ANS(Percent($ans_e)->cmp);
 
+##################################################################
+#  Solutions
+##################################################################
+
+BEGIN_SOLUTION
+For all solutions below we will rely on the a mean of \(0^{\circ} \mbox{C}\) and a standard deviation of \(1^{\circ} \mbox{C}\) as given in the problem situation above.  This means \(0^{\circ} \mbox{C}\) is a \(z\)-score of \(0\).  Additionally, since we have standard deviation on \(1^{\circ} \mbox{C}\), this means \(1^{\circ} \mbox{C}\) is a \(z\)-score of \(1\), \(2^{\circ} \mbox{C}\) is a \(z\)-score of \(2\), etc.
+$PAR
+(a)  We have \(z=0\) and \(z=$a\) and we need to find \(\text{P}(0<z<$a)\).  Using technology, we find that \(\text{P}(0<z<$a)\approx$deca\)
+$PAR
+(b) We have \(z=$b\) and \(z=0\) and we need to find \(\text{P}($b<z<0)\).  Using technology, we find that \(\text{P}($b<z<0)\approx$decb\)
+$PAR
+(c) We have \(z=$c\) and \(z=$d\) and we need to find \(\text{P}($c<z<$d)\).  Using technology, we find that \(\text{P}($c<z<$d)\approx$decc\)
+$PAR
+(d) We have \(z=$e\) and we need to find \(\text{P}(z<$e)\).  Using technology, we find that \(\text{P}(z<$e)\approx$decd\)
+$PAR
+(e) We have \(z=$f\) and we need to find \(\text{P}(z>$f)\).  Using technology, we find that \(\text{P}(z>$f)\approx$dece\)
+
+END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 

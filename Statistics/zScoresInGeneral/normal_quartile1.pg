@@ -46,4 +46,19 @@ END_TEXT
 ANS( Compute( $ans1)->cmp(tolType=>relative,tolerance=>.01));
 ANS( Compute( $ans2 )->cmp(tolType=>relative,tolerance=>.01) );
 
+####################################################
+##Solution
+####################################################
+
+BEGIN_SOLUTION
+(a) The $list1[$ind] quartile means that \(25$PERCENT\) of scores fall below the score in question.  To find the score in question, we will need a \(z\)-score.  Using inverse technology with an area of \(0.25\), we find \(z\approx \).  This allows us to set up and solve a \(z\)-score equation.
+$PAR
+\(z=\frac{x-\bar{x}}{s_{x}}\).  Using this we find, \(z=\frac{x-$mean}{$sd}\), which can be solved to find \(x\approx$ans1\).
+$PAR
+(b) The $list2[$ind] quartile means that \(75$PERCENT\) of sores fall below the score in question.  To find the score in question, we will need a \(z\)-score.  Using inverse technology with an area of \(0.75\), we find \(z\approx \).  This allows us to set up and solve a \(z\)-score equation.
+$PAR
+\(z=\frac{x-\bar{x}}{s_{x}}\).  Using this, we find, \(z=\frac{x-$mean}{$sd}\), which can be solved to find \(x\approx$ans2\).
+
+END_SOLUTION
+
 ENDDOCUMENT();      

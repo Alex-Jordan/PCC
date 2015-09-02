@@ -76,7 +76,7 @@ $PAR
 $PAR
 (c) To decide if the county result of \($s\) is unusually high, low, or neither, we need to find a \(z\)-score.  This assumes we should be able to use a normal model.  Thus \(z=\frac{$s-$mean}{$dev}=$z\)
 $PAR
-Generally we think of any \(z<3\) to be unusually low and \(z>3\) to be unusually high.  In this case the result is "$ans."
+Generally we think of any \(z<-3\) to be unusually low and \(z>3\) to be unusually high.  In this case the result is "$ans."
 
 END_SOLUTION
 ###################################################

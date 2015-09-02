@@ -84,6 +84,13 @@ ANS(Compute($val1)->cmp);
 ###################################################
 BEGIN_SOLUTION
 
+If there were NO extra data point, to find the mean we would compute \(\overline{x}=\frac{$a[0]+$a[1]+$a[2]+$a[3]+$a[4]+$a[5]+$a[6]+$a[7]+$a[8]+$a[9]+$a[10]}{11}\)
+$PAR
+But there is an extra data point we do not know, thus there are actually \(12\) pieces of data, which changes our computation of the mean to \(\overline{x}=\frac{$a[0]+$a[1]+$a[2]+$a[3]+$a[4]+$a[5]+$a[6]+$a[7]+$a[8]+$a[9]+$a[10]+x}{12}\)
+$PAR
+Since is know the mean is \($mean\), we have \($mean=\frac{$a[0]+$a[1]+$a[2]+$a[3]+$a[4]+$a[5]+$a[6]+$a[7]+$a[8]+$a[9]+$a[10]+x}{12}\)
+$PAR
+This can be solved to find the missing data value to be \(x=$val1\).
 
 END_SOLUTION
 ###################################################

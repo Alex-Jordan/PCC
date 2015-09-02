@@ -90,10 +90,15 @@ $BR
 \{$mc[$order[2]] -> print_a() \}
 END_TEXT
 
-#################################################
-#  Answers
+$showPartialCorrectAnswers = 0;
 
-######################################
+ANS(radio_cmp($mc[$order[0]]->correct_ans));
+ANS(radio_cmp($mc[$order[1]]->correct_ans));
+ANS(radio_cmp($mc[$order[2]]->correct_ans));
+
+##################################################################
+#  Solutions
+##################################################################
 
 BEGIN_SOLUTION
 
@@ -110,13 +115,6 @@ $PAR
 
 
 END_SOLUTION
-
-
-$showPartialCorrectAnswers = 0;
-
-ANS(radio_cmp($mc[$order[0]]->correct_ans));
-ANS(radio_cmp($mc[$order[1]]->correct_ans));
-ANS(radio_cmp($mc[$order[2]]->correct_ans));
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 

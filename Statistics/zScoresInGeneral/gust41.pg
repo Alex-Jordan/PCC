@@ -48,12 +48,12 @@ $f = random(-2.3,-.01,.01);
 $g = random(-2.3,-.01,.01);
 $h = random(0,2.3,.01);
 
-$ans1 = normal_prob($a, $b);
-$ans2 = normal_prob($c, $d);
-$ans3 = normal_prob(-"infty", $e);
-$ans4 = normal_prob(-"infty", $f);
-$ans5 = normal_prob($g, "infty");
-$ans6 = normal_prob($h, "infty");
+$ans1 = Real(normal_prob($a, $b));
+$ans2 = Real(normal_prob($c, $d));
+$ans3 = Real(normal_prob(-"infty", $e));
+$ans4 = Real(normal_prob(-"infty", $f));
+$ans5 = Real(normal_prob($g, "infty"));
+$ans6 = Real(normal_prob($h, "infty"));
 
 BEGIN_TEXT
 
@@ -78,5 +78,24 @@ ANS(Percent($ans4)->cmp);
 ANS(Percent($ans5)->cmp);
 ANS(Percent($ans6)->cmp);
 
+####################################################
+#  Solutions
+####################################################
+
+BEGIN_SOLUTION
+There are various methods of technology to find the appropriate area.  Using your preference, we find the following,
+$PAR
+(a) \(\text{P}($a<z<$b)\approx$ans1\)
+$PAR
+(b) \(\text{P}($c<z<$d)\approx$ans2\)
+$PAR
+(c) \(\text{P}(z<$e)\approx$ans3\)
+$PAR
+(d)  \(\text{P}(z<$f)\approx$ans4\)
+$PAR
+(e)  \(\text{P}(z>$g)\approx$ans5\)
+$PAR
+(f)  \(\text{P}(z>$h)\approx$ans6\)
+END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

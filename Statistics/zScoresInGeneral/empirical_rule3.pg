@@ -32,10 +32,16 @@ if( $ind1 == 0 ){ $fact = -1;
 } else { $fact = 1;}
 
 $ans1 = $mean + (.67 * $fact) * $sd;
+$zscore1 = (.67 * $fact); 
 @per2 = ( 16, 2.5, 0.15 );
 @dev = ( 1, 2, 3 );
 $ind2 = random( 0, 2, 1);
 $ans2 = $mean + ( $ind2 + 1 ) * $sd; 
+$zscore2 = ($ind2+1);
+
+$area1 = ($per1[$ind1]/100);
+$area2 = (100-($per2[$ind2]));
+$area2dec = ($area2/100);
 
 BEGIN_TEXT
 
@@ -51,5 +57,19 @@ END_TEXT
 
 ANS( Compute( $ans1)->cmp(tolType=>absolute,tolerance=>0.5) );
 ANS( Compute( $ans2)->cmp(tolType=>absolute,tolerance=>0.5) );
+
+
+####################################################
+## Solutions
+####################################################
+
+BEGIN_SOLUTION
+
+(a)  \($per1[$ind1]$PERCENT\) of students fall below a certain score.  To find this score we will need its \(z\)-score representation.  This is found with technology using an area of \($area1\) since we want the score that students are below, and our technology can only "look left."  Thus we find \(z\approx $zscore1\).  We can now solve \(z=\frac{x-\bar{x}}{s_{x}}\) for \(x\).  Using \($zscore1=\frac{x-$mean}{$sd}\) we find \(x=$ans1\).
+$PAR
+(b) If we only want \($per2[$ind2]$PERCENT\) to score an A, that means \(100$PERCENT-$per2[$ind2]$PERCENT=$area2$PERCENT\) do not score an A. To find this cutoff score we will need its \(z\)-score representation.  This is found with technology using an area of \($area2dec\), even though we want the highest \($per2[$ind2]$PERCENT\), our technology can only "look left."  Thus we find \(z\approx $zscore2\).  We can now solve \(z=\frac{x-\bar{x}}{s_{x}}\) for \(x\).  Using \($zscore2=\frac{x-$mean}{$sd}\) we find \(x=$ans2\).
+
+
+END_SOLUTION
 
 ENDDOCUMENT();      

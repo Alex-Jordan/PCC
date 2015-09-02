@@ -65,5 +65,17 @@ ANS(Compute($area1string)
 ->cmp(tolType=>relative,tolerance=>.01));
 ANS(radio_cmp($mc->correct_ans));
 
+##################################################################
+#  Solutions
+##################################################################
+
+BEGIN_SOLUTION
+
+(a) Since the normal curve is symmetrical about the mean of \(0\), the area found to the left of any \(z\)-score, for example \(z=-1\), will be the same as the area found to the right of the \(z\)-score of opposite sign, in this case \(z=1\).  Since the area to the left of \(z=$z1\) is \($area1string\), by symmetry, the area to the right of \(z=$opp\) is \($area1string\)
+$PAR
+(b)  Option \(D\).  We answered the above question using symmetry about the mean of \(0\).
+
+END_SOLUTION
+
 ENDDOCUMENT();        # This should be the last executable line in the problem.
 

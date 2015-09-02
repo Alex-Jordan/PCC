@@ -33,7 +33,8 @@ $s = random(800,1100,25);
 do {$mu = random(500,1.1*$s,10);} until (abs($mu-$s)>10);
 $sig = random(150,300,10);
 
-$ans = 100*normal_prob('-infty', $s, mean=>$mu, deviation=>$sig);
+$z = Real(($s-$mu)/$sig);
+$ans = Real(100*normal_prob('-infty', $s, mean=>$mu, deviation=>$sig));
 
 BEGIN_TEXT
 
@@ -47,6 +48,16 @@ END_TEXT
 Context("Percent");
 ANS(Percent("$ans %")->cmp());
 
+######################################################Solution
+####################################################
+
+BEGIN_SOLUTION
+
+To find what percentage of students do not satisfy that requirement, we will need to find a \(z\)-score for a test score of \($s\).
+$PAR
+Thus, we find \(z=\frac{$s-$mu}{$sig}=$z\).  Using technology we find that \(\text{P}(z<$z)\approx $ans$PERCENT\).
+
+END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 

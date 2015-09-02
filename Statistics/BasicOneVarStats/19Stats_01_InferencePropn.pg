@@ -29,6 +29,7 @@ TEXT(beginproblem());
 
 $n = random(50,90,5);
 $x= int($n*random(.2,.7,.1));
+$ansdec = Real($x/$n);
 
 ######################################
 #  Main text
@@ -63,7 +64,10 @@ ANS($ans->cmp->withPostFilter(AnswerHints(
 ###################################################
 BEGIN_SOLUTION
 
-
+Recall that a statistic \(\hat{p}\) is found using the form \(\hat{p} = \frac{x}{n}\) where \(x\), in this case, is the number of people with a certain quality out \(n\) total people.
+$PAR
+Thus \(\hat{p} =\frac{$x}{$n} = $ansdec\) or, \($ans\).
+ 
 END_SOLUTION
 ###################################################
 

@@ -63,4 +63,15 @@ ANS(Compute($ans[2])->cmp);
 ANS(Compute(OneOf($ans[3],$q3exc,$q3inc))->cmp);
 ANS(Compute($ans[4])->cmp);
 
+BEGIN_SOLUTION
+Note that we should first sort all of the data from largest to smallest, seen below.
+$PAR
+\{join ", ", num_sort@dat \}
+$PAR
+In this data, the minimum is \($ans[0]\) and the maximum is \($ans[4]\).  The median is \($ans[2]\).  The values for \(Q_{1}\) and \(Q_{3}\) depend on if you include the median when finding the respective values or not.  If you do not include the median, you find, \(Q_{1}=$q1exc\) and \(Q_{3}=$q3exc\).  If you include the median, you find, \(Q_{1}=$q1inc\) and \(Q_{3}=$q3inc\).
+$PAR
+This means an acceptable \(5\)-number summary could be;
+\($ans[0], $q1exc, $ans[2], $q3exc, $ans[4]\) or, \($ans[0], $q1inc, $ans[2], $q3inc, $ans[4]\)
+
+END_SOLUTION
 ENDDOCUMENT();

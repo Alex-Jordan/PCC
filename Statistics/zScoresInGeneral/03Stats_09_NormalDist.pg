@@ -79,12 +79,15 @@ ANS($ans_b->cmp->withPostFilter(AnswerHints(
          } => ["You are close."],
       -1*$ans_b => ["It might help to sketch the Normal curve and mark the area representing the proportion greater than the z score."])));
 
-###################################################
+##################################################################
+#  Solutions
+##################################################################
+
 BEGIN_SOLUTION
 
-(a) Our goal is to find a \(z\)-score such that \($showpval1$PERCENT\) of observations are $BBOLD below $EBOLD it.  This means the area below the \(z\)-score in question is \($pval1\).  Using inverse technology commands with an area of \($pval1\), we find \(z=$zscore1\).
+(a) Our goal is to find a \(z\)-score such that \($showpval1$PERCENT\) of observations are $BBOLD below $EBOLD it.  This means the area below the \(z\)-score in question is \($pval1\).  Using inverse technology commands with an area of \($pval1\), we find \(z\approx$zscore1...\)
 $PAR
-(b)  Our goal is to find a \(z\)-score such that \($showpval2$PERCENT\) of observations are $BBOLD above $EBOLD it.  Since our inverse technology can only "look left," we need to look up the \(z\)-score that has an area of \(1-$pval2=$belowpval2\).  Using inverse technology commands with an area of \($belowpval2\), we find \(z=$zscore2\).
+(b)  Our goal is to find a \(z\)-score such that \($showpval2$PERCENT\) of observations are $BBOLD above $EBOLD it.  Since our inverse technology can only "look left," we need to look up the \(z\)-score that has an area of \(1-$pval2=$belowpval2\).  Using inverse technology commands with an area of \($belowpval2\), we find \(z\approx$zscore2...\)
 
 END_SOLUTION
 

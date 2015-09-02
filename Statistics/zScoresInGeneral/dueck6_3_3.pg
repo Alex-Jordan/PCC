@@ -28,7 +28,9 @@ loadMacros(
 "PGnumericalmacros.pl",
 "MathObjects.pl",
 "contextPercent.pl",
-"parserOneOf.pl"
+"parserOneOf.pl",
+"PGnauGraphics.pl",
+"PGnauStats.pl"
 );
 
 TEXT(beginproblem());
@@ -43,13 +45,17 @@ while($a==$b) {$b = random(70,90,1);}
 $c = random(1,3,1);
 
 
-$xa = ($a-$mu)/$sigma;
-$xb = ($b-$mu)/$sigma;
+$xa = Real(($a-$mu)/$sigma);
+$xb = Real(($b-$mu)/$sigma);
 
 
 $ans1 = normal_prob($xa, "infty");
 $ans2 = normal_prob(-"infty", $xb);
 $ans3 = Real(100*normal_prob(-$c, $c));
+
+$diagrama = DrawNormalDist(99, $xa, "", $xa, outside=>1);
+
+$diagramb = DrawNormalDist($xb, -99, $xb, "", outside=>1);
 	   
 BEGIN_TEXT
 The extract of a plant native to Taiwan has been tested as a possible treatment for Leukemia.  One of the chemical compounds produced from the plant was analyzed for a particular collagen.  The collagen amount was found to be Normally distributed with a mean of \($mu\) and standard deviation of
@@ -174,6 +180,30 @@ for my $i (@reals) {push(@percents, Percent($i/100));};
 $ans3 = OneOf(@percents);
 
 
+
 ANS(Compute($ans3)->cmp());
+
+##################################################################
+#  Solutions
+##################################################################
+
+BEGIN_SOLUTION
+
+(a)  As our sample data is \($a\) and we have a mean of \($mu\) and standard deviation of \($sigma\), we can find \(z=\frac{$a-$mu}{$sigma}=$xa\).  As we want to know the probability of being more than \($a\), we find \(\text{P}(z>$a)\approx$ans1\).  This can also be seen in the graph below.
+$PAR
+\{Plot($diagrama, tex_size=>900)\}
+$PAR
+(b)  As our sample data is \($b\) and we have a mean of \($mu\) and standard deviation of \($sigma\), we can find \(z=\frac{$b-$mu}{$sigma}=$xb\).  As we want to know the probability of being less than \($b\), we find \(\text{P}(z>$b) \approx $ans2\).  This can also be seen in the graph below.
+$PAR
+\{Plot($diagramb, tex_size=>900)\}
+$PAR
+(c)  We know that \(\approx 68$PERCENT\) of all observations fall within \(1\) deviation from the mean, \(\approx 95$PERCENT\) fall \(2\) deviations from the mean and \(\approx 99.7$PERCENT\) fall \(3\) deviations from the mean.  
+$PAR
+For the current questions, this means \($ans3\) fall within \($c\) deviations of the mean. 
+
+
+END_SOLUTION
+
+
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

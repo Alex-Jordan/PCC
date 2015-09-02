@@ -81,18 +81,21 @@ ANS($ans_a->cmp);
 $ans_b = Percent($pval_b+.00005);
 ANS($ans_b->cmp);
 
-###################################################
+##################################################################
+#  Solutions
+##################################################################
+
 BEGIN_SOLUTION
 
 (a) In regards to "all applicants" there is a mean of \($mean_all\) and standard deviation \($sd_all\).  To find the percent of applicants who score higher than \($cutoff_a\), we need a \(z\)-score.  We find, \(z=\frac{$cutoff_a-$mean_all}{$sd_all}=$z1\).
 $PAR 
-Using technology, we find \(\text{P}(z>$z1)=$pval_a\), which can also be seen in the graph below.
+Using technology, we find \(\text{P}(z>$z1)\approx$pval_a\), which can also be seen in the graph below.
 $PAR
 \{Plot($diagrama, tex_size=>900)\}
 $PAR 
 (b) In regards to those who "entered medical school," we have a mean of \($mean_med\) and standard deviation \($sd_med\).  To find the percent of students who scored between \($cutoff_b1\) and \($cutoff_b2\) we will need two \(z\)-scores.  Thus we find \(z_{$cutoff_b1} = \frac{$cutoff_b1-$mean_med}{$sd_med}=$z2\) and \(z_{$cutoff_b2} = \frac{$cutoff_b2-$mean_med}{$sd_med}=$z3\).
 $PAR
-Using technology, we find \(\text{P}($z2<z<$z3)=$pval_b\), which can also be seen in the graph below.
+Using technology, we find \(\text{P}($z2<z<$z3)\approx$pval_b\), which can also be seen in the graph below.
 $PAR
 \{Plot($diagramb, tex_size=>900)\}
 

@@ -53,6 +53,7 @@ $z1=random(1,2,.01);
 $area1 = normal_prob(-infty, $z1);
 $area1string = sprintf("%.4f", $area1);
 $ans=Percent(1-$area1);
+$leftover = Real(1-$area1);
 
 BEGIN_TEXT
 
@@ -68,5 +69,16 @@ END_TEXT
 ANS($ans->cmp(tolType=>relative,tolerance=>.01));
 ANS(radio_cmp($mc->correct_ans));
 
+##################################################################
+#  Solutions
+##################################################################
+
+BEGIN_SOLUTION
+
+(a) The standard Normal curve has a total area of \(1\).  Since the area to the left of \(z=$z1\) is \($area1string\), there is an area of \(1-$area1string=$leftover\), or, \(\approx$ans\) on the right side.
+$PAR
+(b)  Option \(D\).  We needed to use the fact that the standard Normal curve has a total area of \(1\) to find the area on the right side.
+
+END_SOLUTION
 ENDDOCUMENT();        # This should be the last executable line in the problem.
 

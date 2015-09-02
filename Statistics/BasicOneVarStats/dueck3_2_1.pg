@@ -67,7 +67,11 @@ ANS(Compute($n)->cmp);
 ###################################################
 BEGIN_SOLUTION
 
-
+(a)  Recall that \( \Sigma  x\) is shorthand for asking you to add, or sum, all the data value available.  Thus we find,
+$PAR
+\( \Sigma  x = $a1 + $a2 + $a3 + $a4 + $a5 + $a6 =$sum\)
+$PAR
+(b) Recall that \(n\) is the number of pieces of data we have.  In this case, \(n=$n\).
 END_SOLUTION
 ###################################################
 

@@ -81,6 +81,21 @@ ANS(Compute($z2)->cmp(tolType=>relative,tolerance=>.01));
 ANS( $popup->cmp() );
 ANS(Compute($z3)->cmp(tolType=>relative,tolerance=>.01));
 
+##################################################################
+#  Solutions
+##################################################################
+
+BEGIN_SOLUTION
+
+(a)  Based on the question, we know that the variable \(x\) has mean \($mean\)min and standard deviation \($stddev\)min.
+$PAR
+(b)  Anytime we standardize a variable we have the mean as \(0\) and standard deviation \(1\).
+$PAR
+(c)  The percentage of finishers with times between \($time1\) and \($time2\) minutes correspond to \(z\)-scores of \(z_{$time1}=\frac{$time1-$mean}{$stddev}=$z1\) and \(z_{$time2}=\frac{$time2-$mean}{$stddev}=$z2\).  
+$PAR
+(d) The percentage of finishers with times exceeding \($time3\) minutes corresponds to a \(z\)-score of \(z_{$time3}=\frac{$time3-$mean}{$stddev}=$z3\).  As we want to know the percentage of finishers with times exceeding \($time3\) minutes, this means we want the area to the right of \(z=$z3\)
+
+END_SOLUTION
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.
 

@@ -19,7 +19,12 @@ loadMacros(
   "answerHints.pl",
   "PGnumericalmacros.pl",  #NOTE: Needed for normal_distr() function 
   "PGstatisticsmacros.pl",
+  "contextPercent.pl",,
   "contextPercent.pl",
+  "PGnauStats.pl",
+  "PGbasicmacros.pl",
+  "PGchoicemacros.pl",
+  "PGnauGraphics.pl",
   );
 
 TEXT(beginproblem());
@@ -27,24 +32,33 @@ TEXT(beginproblem());
 ######################################
 #  Setup
 
+Context("Percent");
+
 $mu = random(96,115,5);
 $sigma = random(15,28,3);
 
 # Values for the 1st problem
 $num1 = $mu - random(10,18,4);
-$zscore1 = ($num1 - $mu) / $sigma;
+$zscore1 = Real(($num1 - $mu) / $sigma);
 $pval1 = 1-uprob(abs($zscore1));
+$pvalperc = Percent($pval1);
 
 # Values for the 2nd problem
 $percent2 = random(20,30,5);
-$zscore2 = -1 * normal_distr(0.5 - $percent2/100);
+$perc2dec = ($percent2/100);
+$zscore2 = Real(-1 * normal_distr(0.5 - $percent2/100));
 $xscore2 = $zscore2 * $sigma + $mu;
 
 # Values for the 3rd problem
-$percent3 = random(5,15,5);   
-$zscore3 = normal_distr(0.5 - $percent3/100);
+$percent3 = random(5,15,5);
+$dec3 = ($percent3/100);
+$leftside = (1-$dec3);   
+$perc3dec = ($percent3/100);
+$zscore3 = Real(normal_distr(0.5 - $percent3/100));
 $xscore3 = $zscore3 * $sigma + $mu;
 
+
+$diagram = DrawNormalDist(99, $zscore1, "", $zscore1, outside=>1);
 #################################################
 #  Main
 
@@ -106,6 +120,22 @@ ANS($ans_c->cmp->withPostFilter(AnswerHints(
          my ($correct,$student,$anshash) = @_;
          return abs($student-$zscore3) < .02;
          } => ["Enter the test score not the z score."])));
+
+##################################################################
+#  Solutions
+##################################################################
+
+BEGIN_SOLUTION
+(a) It is given that we have a normal distribution with mean \($mu\) and standard deviation of \($sigma\) degrees.  Since anything above \($num1\) will crack, this is similar to saying any score above a \(z\)-score of \(z=\frac{$num1-$mu}{$sigma}=$zscore1\).  Using the normal model we find \(\text{P}(z>$zscore1)\approx $pval1\), or, \(\approx$pvalperc\)
+$PAR
+This can also be seen in the graph below.
+$PAR
+\{Plot($diagram, tex_size=>900)\}
+$PAR
+(b) Our goal is to find a \(z\)-score such that \($percent2$PERCENT\) of scores are $BBOLD below $EBOLD it.  This means the area below the \(z\)-score in question is \($perc3dec\).  Using inverse technology commands with an area of \($perc3dec\), we find \(z\approx$zscore2\).  Using the \(z\)-score formula, we find \($zscore2=\frac{x-$mu}{$sigma}\).  This can be solved to find \(x\approx$xscore2\).
+$PAR
+(c) Our goal is to find a \(z\)-score such that \($percent3$PERCENT\) of scores are $BBOLD above $EBOLD it.  Since our technology can only "look left," this means the area below the \(z\)-score in question is \(1-$dec3=$leftside\).  Using inverse technology commands with an area of \($leftside\), we find \(z\approx$zscore3\).  Using the \(z\)-score formula, we find \($zscore3=\frac{x-$mu}{$sigma}\).  This can be solved to find \(x\approx$xscore3\).
+END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 

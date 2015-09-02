@@ -19,6 +19,10 @@ loadMacros("PGstandard.pl",
            "MathObjects.pl",
            "parserOneOf.pl",
            "contextPercent.pl",
+           "PGauxiliaryFunctions.pl",
+           "PGasu.pl",
+           "PGnumericalmacros.pl",
+           "PGstatisticsmacros.pl",
 );     
 
 TEXT(&beginproblem);
@@ -80,7 +84,12 @@ for($i = 1; $i < scalar @tmp; $i++){
 $title = join ' ', @tmp;
 
 $diagram = DrawNormalDist( $newz1, $newz2, $a, $b, outside => $shade, title => $title );
-    
+$diagram1 = DrawNormalDist( $newz1, -99, $newz1, "", outside => 1, title => $title );
+$diagram2 = DrawNormalDist( $newz2, -99, $newz2, "", outside => 1, title => $title );
+$newz1prob = Real(normal_prob(-99, $newz1));
+$newz2prob = Real(normal_prob(-99, $newz2));
+$totalprob = ($newz2prob-$newz1prob);
+;
 BEGIN_TEXT
 
 $list[$ind] are normally distributed with a mean of \($mean[$ind]\) $unit[$ind] and a standard deviation of 
@@ -199,8 +208,24 @@ Context()->flags->set(tolerance=>0.01);
 
 ANS( $ans->cmp ); 
 
+####################################################
+##Solution
+####################################################
+
+BEGIN_SOLUTION
+
+The area between two specific \(z\)-scores cannot be calculated directly with many forms of technology.  It is easier to find the area to the left of the larger \(z\)-score and then the areal to the left of the smaller \(z\)-score and find the difference between them.
+$PAR
+In this question we have a mean of \($mean[$ind]\) $unit[$ind] and standard deviation \($sd[$ind]\) $unit[$ind].  For the larger data of \($b\) $unit[$ind], we find a \(z\)-score of \(z=\frac{$b-$mean[$ind]}{$sd[$ind]}=$newz2\).  For this \(z\)-score, we find the area below it to be \(\approx $newz2prob\), which can be seen in the diagram below.
+$PAR
+\{Plot($diagram2, tex_size=>900);\}
+$PAR
+For the smaller data \($a\) $unit[$ind], we find a \(z\)-score of \(z=\frac{$a-$mean[$ind]}{$sd[$ind]}=$newz1\).  For this \(z\)-score, we find the area below it to be \(\approx $newz1prob\), which can be seen in the diagram below.
+$PAR
+\{Plot($diagram1, tex_size=>900);\}
+$PAR
+Subtracting the smaller area from the larger, we find the area in between to be \($newz2prob-$newz1prob = $totalprob\)
+
+END_SOLUTION
+
 ENDDOCUMENT();
- 
-
-
-

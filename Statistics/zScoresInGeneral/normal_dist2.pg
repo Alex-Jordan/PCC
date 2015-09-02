@@ -19,7 +19,15 @@ loadMacros("PGstandard.pl",
            "MathObjects.pl",
            "parserOneOf.pl",
            "contextPercent.pl",
-);     
+           "PGstatisticsmacros.pl",
+           "PGauxiliaryFunctions.pl",
+           "PGbasicmacros.pl",
+           "PGchoicemacros.pl",
+           "PGanswermacros.pl",
+           "PGgraphmacros.pl",
+           "PGnumericalmacros.pl",
+           "PGasu.pl",
+);    
 
 TEXT(&beginproblem);
 
@@ -55,6 +63,13 @@ for($i = 1; $i < scalar @tmp; $i++){
 $title = join ' ', @tmp;
 
 $diagram = DrawNormalDist( -$zscore[$slice[0]], $zscore[$slice[1]], $a, $b, outside => $shade, title => $title );
+$diagram1 = DrawNormalDist( $zscore[$slice[1]], -99, $zscore[$slice[1]], "", outside => 1, title => $title );
+$diagram2 = DrawNormalDist( -$zscore[$slice[0]], -99, $zscore[$slice[0]], "", outside => 1, title => $title );
+
+$newz1prob = Real(normal_prob(-99, $zscore[$slice[1]]));
+$newz0prob = Real(normal_prob(-99, -$zscore[$slice[0]]));
+$totalprob = ($newz1prob-$newz0prob);
+
 
 if( $shade == 0 ){ @prop = ( .25, .34, .475 );
   $l = $prop[$slice[0]];
@@ -182,10 +197,26 @@ Context()->flags->set(tolerance=>0.01);
 
 ANS( $ans->cmp ); 
 
+####################################################
+##Solution
+####################################################
 
 BEGIN_SOLUTION
-\{Plot($diagram, tex_size=>900);\}
+
+The area between two specific \(z\)-scores cannot be calculated directly with many forms of technology.  It is easier to find the area to the left of the larger \(z\)-score and then the areal to the left of the smaller \(z\)-score and find the difference between them.
+$PAR
+In this question we have a mean of \($mean[$ind]\) $unit[$ind] and standard deviation \($sd[$ind]\) $unit[$ind].  For the larger data of \($b\) $unit[$ind], we find a \(z\)-score of \(z=\frac{$b-$mean[$ind]}{$sd[$ind]}=$zscore[$slice[1]]\).  For this \(z\)-score, we find the area below it to be \(\approx $newz1prob\), which can be seen in the diagram below.
+$PAR
+\{Plot($diagram1, tex_size=>900);\}
+$PAR
+For the smaller data \($a\) $unit[$ind], we find a \(z\)-score of \(z=\frac{$a-$mean[$ind]}{$sd[$ind]}=-$zscore[$slice[0]]\).  For this \(z\)-score, we find the area below it to be \(\approx $newz0prob\), which can be seen in the diagram below.
+$PAR
+\{Plot($diagram2, tex_size=>900);\}
+$PAR
+Subtracting the smaller area from the larger, we find the area in between to be \($newz1prob-$newz0prob =$totalprob\)
+
 END_SOLUTION
+
 ENDDOCUMENT();
  
 

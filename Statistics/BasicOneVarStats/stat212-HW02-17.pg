@@ -74,8 +74,6 @@ $multians = MultiAnswer($q1, $q3, $iqr)->with(
   }
 );
 
-
-
 BEGIN_TEXT
 $PAR A sample of eight math SAT scores is given below:
 $PAR
@@ -104,5 +102,18 @@ $BR
 END_TEXT
 
 ANS( $multians->cmp() ); 
+
+BEGIN_SOLUTION
+Note that we should first organize the data from smallest to largest, as seen below,
+$PAR
+\($data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6], $data[7]\)
+$PAR
+(a)  If you include the median in finding the lower quartile, we find \(Q_{1} =$q1inc\).  If we do not include the median, we find \(Q_{1} =$q1exc\).
+$PAR
+(b)  If you include the median in finding the upper quartile, we find \(Q_{3} =$q3inc\).  If we do not include the median, we find \(Q_{3} =$q3exc\).
+$PAR
+The \(IQR\) is found by computing \(Q_{3}- Q_{1}\).  Thus is we have included the median in our calculations, we find \(IQR = $iqr\), if we have not included the median, we find \(IQR =$iqr\).
+
+END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
