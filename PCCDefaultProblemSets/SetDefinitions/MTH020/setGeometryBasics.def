@@ -5,9 +5,9 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/GeometryBasics.pg
 description       = find perimeter and area of rectangles, squares and triangles
 problemList       = 
-BasicAlgebra/Geometry/RectanglePerimeterArea10.pg, 1, -1, 2
-BasicMath/Miscellaneous/SquarePerimeterArea10.pg, 1, -1, 2
-BasicAlgebra/Geometry/TrianglePerimeterArea10.pg, 1, -1, 2
-BasicAlgebra/Geometry/TrianglePerimeterArea20.pg, 1, -1, 2
-BasicAlgebra/Geometry/TrianglePerimeterArea30.pg, 1, -1, 2
+BasicAlgebra/Geometry/RectanglePerimeterArea10.pg, 1, -1
+BasicMath/Miscellaneous/SquarePerimeterArea10.pg, 1, -1
+BasicAlgebra/Geometry/TrianglePerimeterArea10.pg, 1, -1
+BasicAlgebra/Geometry/TrianglePerimeterArea20.pg, 1, -1
+BasicAlgebra/Geometry/TrianglePerimeterArea30.pg, 1, -1
 

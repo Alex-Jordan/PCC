@@ -6,15 +6,15 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH065/MTH65HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/DividePolynomials.pg
 description       = division of polynomials by a monomial
 problemList       = 
-BasicAlgebra/Exponents/exponentDivision105.pg, 1, -1, 2
-BasicAlgebra/Exponents/exponentDivision100.pg, 1, -1, 2
-BasicAlgebra/Exponents/exponentDivision115.pg, 1, -1, 2
-BasicAlgebra/Exponents/exponentDivision115.pg, 1, -1, 2
-BasicAlgebra/Exponents/exponentDivision115.pg, 1, -1, 2
-BasicAlgebra/Exponents/exponentDivision125.pg, 1, -1, 2
-BasicAlgebra/Exponents/exponentDivision120.pg, 1, -1, 2
-BasicAlgebra/Exponents/exponentDivision130.pg, 1, -1, 2
-BasicAlgebra/Exponents/exponentDivision135.pg, 1, -1, 2
-BasicAlgebra/Exponents/exponentDivision140.pg, 1, -1, 2
-BasicAlgebra/Exponents/exponentDivision150.pg, 1, -1, 2
+BasicAlgebra/Exponents/exponentDivision105.pg, 1, -1
+BasicAlgebra/Exponents/exponentDivision100.pg, 1, -1
+BasicAlgebra/Exponents/exponentDivision115.pg, 1, -1
+BasicAlgebra/Exponents/exponentDivision115.pg, 1, -1
+BasicAlgebra/Exponents/exponentDivision115.pg, 1, -1
+BasicAlgebra/Exponents/exponentDivision125.pg, 1, -1
+BasicAlgebra/Exponents/exponentDivision120.pg, 1, -1
+BasicAlgebra/Exponents/exponentDivision130.pg, 1, -1
+BasicAlgebra/Exponents/exponentDivision135.pg, 1, -1
+BasicAlgebra/Exponents/exponentDivision140.pg, 1, -1
+BasicAlgebra/Exponents/exponentDivision150.pg, 1, -1
 

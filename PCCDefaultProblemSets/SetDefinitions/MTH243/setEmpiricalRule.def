@@ -6,7 +6,7 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243Ha
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
 description       = using the Empirical Rule to calculate probabilities and other values
 problemList       = 
-Statistics/zScoreEmpiricalRule/03Stats_04_NormalDist.pg, 1, -1, 2
-Statistics/DisplayingData/stat212-HW02-03.pg, 1, -1, 2
-Statistics/zScoreEmpiricalRule/empirical_rule1.pg, 1, -1, 2
-Statistics/zScoreEmpiricalRule/empirical_rule2.pg, 1, -1, 2
+Statistics/zScoreEmpiricalRule/03Stats_04_NormalDist.pg, 1, -1
+Statistics/DisplayingData/stat212-HW02-03.pg, 1, -1
+Statistics/zScoreEmpiricalRule/empirical_rule1.pg, 1, -1
+Statistics/zScoreEmpiricalRule/empirical_rule2.pg, 1, -1

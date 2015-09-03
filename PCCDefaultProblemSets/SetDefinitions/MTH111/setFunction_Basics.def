@@ -6,28 +6,28 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH111/GenericMTH111Ha
 paperHeaderFile   = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
 description       = function basics; evaluation
 problemList       = 
-CollegeAlgebra/FunctionBasics/FunctionVocabulary10.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/FunctionRelations10.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/FunctionRelations20.pg, 1, -1, 2
-BasicAlgebra/FunctionBasics/Functions160.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/FunctionApplication10.pg, 1, -1, 2
-BasicAlgebra/FunctionBasics/Functions150.pg, 1, -1, 2
-BasicAlgebra/FunctionBasics/EvaluateFunction30.pg, 1, -1, 2
-BasicAlgebra/FunctionBasics/EvaluateFunction60.pg, 1, -1, 2
-BasicAlgebra/FunctionBasics/EvaluateFunction80.pg, 1, -1, 2
-BasicAlgebra/FunctionBasics/EvaluateFunction120.pg, 1, -1, 2
-BasicAlgebra/FunctionBasics/EvaluateFunction130.pg, 1, -1, 2
-BasicAlgebra/FunctionBasics/EvaluateFunction140.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/EvaluateFunction23.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/EvaluateAndSolve20.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/EvaluateAndSolve30.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/EvaluateAndSolve40.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/EvaluateAndSolve10.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/EvaluateAndSolve50.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/EvaluateAndSolve60.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/Solve20.pg, 1, -1, 2
-CollegeAlgebra/FunctionComposition/DifferenceQuotient30.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/SolveInequality20.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/SolveInequality30.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/Solve60.pg, 1, -1, 2
-CollegeAlgebra/FunctionBasics/PositionVelocity10.pg, 1, -1, 2
+CollegeAlgebra/FunctionBasics/FunctionVocabulary10.pg, 1, -1
+CollegeAlgebra/FunctionBasics/FunctionRelations10.pg, 1, -1
+CollegeAlgebra/FunctionBasics/FunctionRelations20.pg, 1, -1
+BasicAlgebra/FunctionBasics/Functions160.pg, 1, -1
+CollegeAlgebra/FunctionBasics/FunctionApplication10.pg, 1, -1
+BasicAlgebra/FunctionBasics/Functions150.pg, 1, -1
+BasicAlgebra/FunctionBasics/EvaluateFunction30.pg, 1, -1
+BasicAlgebra/FunctionBasics/EvaluateFunction60.pg, 1, -1
+BasicAlgebra/FunctionBasics/EvaluateFunction80.pg, 1, -1
+BasicAlgebra/FunctionBasics/EvaluateFunction120.pg, 1, -1
+BasicAlgebra/FunctionBasics/EvaluateFunction130.pg, 1, -1
+BasicAlgebra/FunctionBasics/EvaluateFunction140.pg, 1, -1
+CollegeAlgebra/FunctionBasics/EvaluateFunction23.pg, 1, -1
+CollegeAlgebra/FunctionBasics/EvaluateAndSolve20.pg, 1, -1
+CollegeAlgebra/FunctionBasics/EvaluateAndSolve30.pg, 1, -1
+CollegeAlgebra/FunctionBasics/EvaluateAndSolve40.pg, 1, -1
+CollegeAlgebra/FunctionBasics/EvaluateAndSolve10.pg, 1, -1
+CollegeAlgebra/FunctionBasics/EvaluateAndSolve50.pg, 1, -1
+CollegeAlgebra/FunctionBasics/EvaluateAndSolve60.pg, 1, -1
+CollegeAlgebra/FunctionBasics/Solve20.pg, 1, -1
+CollegeAlgebra/FunctionComposition/DifferenceQuotient30.pg, 1, -1
+CollegeAlgebra/FunctionBasics/SolveInequality20.pg, 1, -1
+CollegeAlgebra/FunctionBasics/SolveInequality30.pg, 1, -1
+CollegeAlgebra/FunctionBasics/Solve60.pg, 1, -1
+CollegeAlgebra/FunctionBasics/PositionVelocity10.pg, 1, -1

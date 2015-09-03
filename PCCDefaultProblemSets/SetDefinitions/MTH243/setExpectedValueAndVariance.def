@@ -6,13 +6,13 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243Ha
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
 description       = expected value and variance of discrete random variables
 problemList       = 
-Statistics/ExpectedValueAndVariance/stat212-HW05-05.pg, 1, -1, 2
-Statistics/ExpectedValueAndVariance/stat212-HW05-06.pg, 1, -1, 2
-Statistics/ExpectedValueAndVariance/stat212-HW05-08.pg, 1, -1, 2
-Statistics/ExpectedValueAndVariance/ur_pb_7_9a.pg, 1, -1, 2
-Statistics/ExpectedValueAndVariance/ur_pb_7_6.pg, 1, -1, 2
-Statistics/ExpectedValueAndVariance/ur_pb_7_5.pg, 1, -1, 2
-Statistics/ExpectedValueAndVariance/exval3.pg, 1, -1, 2
-Statistics/ExpectedValueAndVariance/expectedvalue1.pg, 1, -1, 2
-Statistics/ExpectedValueAndVariance/ExpectedValue.pg, 1, -1, 2
-Statistics/ExpectedValueAndVariance/stat212-HW05-12.pg, 1, -1, 2
+Statistics/ExpectedValueAndVariance/stat212-HW05-05.pg, 1, -1
+Statistics/ExpectedValueAndVariance/stat212-HW05-06.pg, 1, -1
+Statistics/ExpectedValueAndVariance/stat212-HW05-08.pg, 1, -1
+Statistics/ExpectedValueAndVariance/ur_pb_7_9a.pg, 1, -1
+Statistics/ExpectedValueAndVariance/ur_pb_7_6.pg, 1, -1
+Statistics/ExpectedValueAndVariance/ur_pb_7_5.pg, 1, -1
+Statistics/ExpectedValueAndVariance/exval3.pg, 1, -1
+Statistics/ExpectedValueAndVariance/expectedvalue1.pg, 1, -1
+Statistics/ExpectedValueAndVariance/ExpectedValue.pg, 1, -1
+Statistics/ExpectedValueAndVariance/stat212-HW05-12.pg, 1, -1

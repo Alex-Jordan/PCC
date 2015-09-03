@@ -6,10 +6,10 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/RateAndStartValueWordProblem.pg
 description       = word problems involving an initial value that cahnges with a fixed rate
 problemList       = 
-BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem10.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem20.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem30.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem40.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem50.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem60.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem10.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem20.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem30.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem40.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem50.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem60.pg, 1, -1
 

@@ -5,11 +5,11 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/ExponentsAndRoundingWholeNumbers.pg
 description       = definition of exponent, and how to round whole numbers
 problemList       = 
-BasicMath/Miscellaneous/ExponentDefinition05.pg, 1, -1, 2
-BasicMath/Miscellaneous/ExponentDefinition05.pg, 1, -1, 2
-BasicMath/Miscellaneous/ExponentDefinition15.pg, 1, -1, 2
-BasicMath/IntegerAndSquareRoot/RoundWholeNumbers10.pg, 1, -1, 2
-BasicMath/IntegerAndSquareRoot/RoundWholeNumbers20.pg, 1, -1, 2
-BasicMath/IntegerAndSquareRoot/RoundWholeNumbers10.pg, 1, -1, 2
-BasicMath/IntegerAndSquareRoot/RoundWholeNumbers20.pg, 1, -1, 2
+BasicMath/Miscellaneous/ExponentDefinition05.pg, 1, -1
+BasicMath/Miscellaneous/ExponentDefinition05.pg, 1, -1
+BasicMath/Miscellaneous/ExponentDefinition15.pg, 1, -1
+BasicMath/IntegerAndSquareRoot/RoundWholeNumbers10.pg, 1, -1
+BasicMath/IntegerAndSquareRoot/RoundWholeNumbers20.pg, 1, -1
+BasicMath/IntegerAndSquareRoot/RoundWholeNumbers10.pg, 1, -1
+BasicMath/IntegerAndSquareRoot/RoundWholeNumbers20.pg, 1, -1
 

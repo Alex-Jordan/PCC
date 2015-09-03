@@ -5,11 +5,11 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/IntegersAndAbsoluteValue.pg
 description       = introduction to negative numbers and absolute value
 problemList       = 
-BasicAlgebra/NumberBasics/NumberLine10.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/NumberLine10.pg, 1, -1, 2
-BasicMath/IntegerAndSquareRoot/CompareNumbers50.pg, 1, -1, 2
-BasicAlgebra/ComparisonsAndBasicInequalities/CompareNumbers40.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/AbsoluteValue10.pg, 1, -1, 2
-BasicMath/IntegerAndSquareRoot/AbsoluteValue11.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/SignedNumberInterpretations10.pg, 1, -1, 2
+BasicAlgebra/NumberBasics/NumberLine10.pg, 1, -1
+BasicAlgebra/NumberBasics/NumberLine10.pg, 1, -1
+BasicMath/IntegerAndSquareRoot/CompareNumbers50.pg, 1, -1
+BasicAlgebra/ComparisonsAndBasicInequalities/CompareNumbers40.pg, 1, -1
+BasicAlgebra/NumberBasics/AbsoluteValue10.pg, 1, -1
+BasicMath/IntegerAndSquareRoot/AbsoluteValue11.pg, 1, -1
+BasicAlgebra/NumberBasics/SignedNumberInterpretations10.pg, 1, -1
 

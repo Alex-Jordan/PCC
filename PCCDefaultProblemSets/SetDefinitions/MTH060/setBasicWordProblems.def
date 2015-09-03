@@ -6,30 +6,30 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/BasicWordProblems.pg
 description       = translating English to math equations; solving some basic word problems
 problemList       = 
-BasicAlgebra/EnglishToMath/EnglishToMathEquation10.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation20.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation30.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation40.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation50.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation60.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation70.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation80.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation90.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation100.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation110.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation120.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation130.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation140.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation150.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation160.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation170.pg, 1, -1, 2
-BasicAlgebra/EnglishToMath/EnglishToMathEquation180.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/ConsecutiveIntegerWordProblem10.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/ConsecutiveIntegerWordProblem30.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/ConsecutiveIntegerWordProblem20.pg, 1, -1, 2
-BasicAlgebra/Geometry/RectanglePerimeterEquation10.pg, 1, -1, 2
-BasicAlgebra/Geometry/RectanglePerimeterEquation20.pg, 1, -1, 2
-BasicAlgebra/Geometry/RectanglePerimeterEquation30.pg, 1, -1, 2
-BasicAlgebra/Geometry/RectanglePerimeterEquation40.pg, 1, -1, 2
-BasicAlgebra/Geometry/RectanglePerimeterEquation50.pg, 1, -1, 2
+BasicAlgebra/EnglishToMath/EnglishToMathEquation10.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation20.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation30.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation40.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation50.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation60.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation70.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation80.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation90.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation100.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation110.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation120.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation130.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation140.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation150.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation160.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation170.pg, 1, -1
+BasicAlgebra/EnglishToMath/EnglishToMathEquation180.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/ConsecutiveIntegerWordProblem10.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/ConsecutiveIntegerWordProblem30.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/ConsecutiveIntegerWordProblem20.pg, 1, -1
+BasicAlgebra/Geometry/RectanglePerimeterEquation10.pg, 1, -1
+BasicAlgebra/Geometry/RectanglePerimeterEquation20.pg, 1, -1
+BasicAlgebra/Geometry/RectanglePerimeterEquation30.pg, 1, -1
+BasicAlgebra/Geometry/RectanglePerimeterEquation40.pg, 1, -1
+BasicAlgebra/Geometry/RectanglePerimeterEquation50.pg, 1, -1
 

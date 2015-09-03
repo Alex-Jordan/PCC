@@ -6,8 +6,8 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH065/MTH65HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/ParabolaThinnerWider.pg
 description       = stretching a parabola vertically to make it appear thinner
 problemList       = 
-BasicAlgebra/GraphingQuadratics/ShiftParabola50.pg, 1, -1, 2
-BasicAlgebra/GraphingQuadratics/ShiftParabola60.pg, 1, -1, 2
-BasicAlgebra/GraphingQuadratics/ShiftParabola70.pg, 1, -1, 2
-BasicAlgebra/GraphingQuadratics/ShiftParabola80.pg, 1, -1, 2
+BasicAlgebra/GraphingQuadratics/ShiftParabola50.pg, 1, -1
+BasicAlgebra/GraphingQuadratics/ShiftParabola60.pg, 1, -1
+BasicAlgebra/GraphingQuadratics/ShiftParabola70.pg, 1, -1
+BasicAlgebra/GraphingQuadratics/ShiftParabola80.pg, 1, -1
 

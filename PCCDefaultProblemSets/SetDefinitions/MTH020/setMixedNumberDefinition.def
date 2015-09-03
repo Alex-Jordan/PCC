@@ -5,15 +5,15 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/MixedNumberDefinition.pg
 description       = introduction to mixed numbers, convert between mixed number and improper fraction
 problemList       = 
-BasicMath/FractionsCalculation/WriteFractionByGraph50.pg, 1, -1, 2
-BasicAlgebra/FractionMixedNumbersBasics/ImproperFractionToMixedNumber10.pg, 1, -1, 2
-BasicAlgebra/FractionMixedNumbersBasics/ImproperFractionToMixedNumber20.pg, 1, -1, 2
-BasicAlgebra/FractionMixedNumbersBasics/MixedNumberToImproperFraction10.pg, 1, -1, 2
-BasicAlgebra/FractionMixedNumbersBasics/MixedNumberToImproperFraction20.pg, 1, -1, 2
-BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg, 1, -1, 2
-BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction40.pg, 1, -1, 2
-BasicMath/FractionsCalculation/FractionOnNumberLine30.pg, 1, -1, 2
-BasicMath/FractionsCalculation/FractionOnNumberLine40.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/NumberLine40.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/NumberLine30.pg, 1, -1, 2
+BasicMath/FractionsCalculation/WriteFractionByGraph50.pg, 1, -1
+BasicAlgebra/FractionMixedNumbersBasics/ImproperFractionToMixedNumber10.pg, 1, -1
+BasicAlgebra/FractionMixedNumbersBasics/ImproperFractionToMixedNumber20.pg, 1, -1
+BasicAlgebra/FractionMixedNumbersBasics/MixedNumberToImproperFraction10.pg, 1, -1
+BasicAlgebra/FractionMixedNumbersBasics/MixedNumberToImproperFraction20.pg, 1, -1
+BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg, 1, -1
+BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction40.pg, 1, -1
+BasicMath/FractionsCalculation/FractionOnNumberLine30.pg, 1, -1
+BasicMath/FractionsCalculation/FractionOnNumberLine40.pg, 1, -1
+BasicAlgebra/NumberBasics/NumberLine40.pg, 1, -1
+BasicAlgebra/NumberBasics/NumberLine30.pg, 1, -1
 

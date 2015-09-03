@@ -6,17 +6,17 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/FindEquationByPointSlope.pg
 description       = use information about a point and slope to find an equation of a line
 problemList       = 
-BasicAlgebra/PointSlopeForm/PointSlopeBasics10.pg, 1, -1, 2
-BasicAlgebra/PointSlopeForm/PointSlopeBasics20.pg, 1, -1, 2
-BasicAlgebra/PointSlopeForm/PointSlopeBasics30.pg, 1, -1, 2
-BasicAlgebra/PointSlopeForm/PointSlopeToSlopeIntercept10.pg, 1, -1, 2
-BasicAlgebra/PointSlopeForm/PointSlopeToSlopeIntercept20.pg, 1, -1, 2
-BasicAlgebra/PointSlopeForm/PointSlopeToSlopeIntercept30.pg, 1, -1, 2
-BasicAlgebra/PointSlopeForm/PointSlopeToSlopeIntercept40.pg, 1, -1, 2
-BasicAlgebra/PointSlopeForm/FindLineEquation10.pg, 1, -1, 2
-BasicAlgebra/PointSlopeForm/FindLineEquation20.pg, 1, -1, 2
-BasicAlgebra/PointSlopeForm/FindLineEquation30.pg, 1, -1, 2
-BasicAlgebra/PointSlopeForm/FindLineEquation40.pg, 1, -1, 2
-BasicAlgebra/PointSlopeForm/FindLineEquation50.pg, 1, -1, 2
-BasicAlgebra/PointSlopeForm/FindLineEquation60.pg, 1, -1, 2
+BasicAlgebra/PointSlopeForm/PointSlopeBasics10.pg, 1, -1
+BasicAlgebra/PointSlopeForm/PointSlopeBasics20.pg, 1, -1
+BasicAlgebra/PointSlopeForm/PointSlopeBasics30.pg, 1, -1
+BasicAlgebra/PointSlopeForm/PointSlopeToSlopeIntercept10.pg, 1, -1
+BasicAlgebra/PointSlopeForm/PointSlopeToSlopeIntercept20.pg, 1, -1
+BasicAlgebra/PointSlopeForm/PointSlopeToSlopeIntercept30.pg, 1, -1
+BasicAlgebra/PointSlopeForm/PointSlopeToSlopeIntercept40.pg, 1, -1
+BasicAlgebra/PointSlopeForm/FindLineEquation10.pg, 1, -1
+BasicAlgebra/PointSlopeForm/FindLineEquation20.pg, 1, -1
+BasicAlgebra/PointSlopeForm/FindLineEquation30.pg, 1, -1
+BasicAlgebra/PointSlopeForm/FindLineEquation40.pg, 1, -1
+BasicAlgebra/PointSlopeForm/FindLineEquation50.pg, 1, -1
+BasicAlgebra/PointSlopeForm/FindLineEquation60.pg, 1, -1
 

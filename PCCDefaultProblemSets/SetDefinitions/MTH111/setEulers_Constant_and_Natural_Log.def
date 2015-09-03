@@ -6,24 +6,24 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH111/GenericMTH111Ha
 paperHeaderFile   = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
 description       = Euler's constant e; natural logarithm ln
 problemList       = 
-CollegeAlgebra/EulersConstantAndNaturalLog/MatchGraphs2.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/MatchGraphs3.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/MatchGraphs.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/CalculatorFreeLogs.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/ExponentsToLns.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/ExponentsToLogs2.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/LnsToExponents2.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/LnsToExponents.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/Simplify2.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/Simplify3.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/Simplify.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/SolveUsingLogs7.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/SolveUsingLogs8.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/MatchLogGraphs.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/Solve.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/bForm1.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/bForm2.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/bForm3.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/Domain2.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/Domain3.pg, 1, -1, 2
-CollegeAlgebra/EulersConstantAndNaturalLog/Domain.pg, 1, -1, 2
+CollegeAlgebra/EulersConstantAndNaturalLog/MatchGraphs2.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/MatchGraphs3.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/MatchGraphs.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/CalculatorFreeLogs.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/ExponentsToLns.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/ExponentsToLogs2.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/LnsToExponents2.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/LnsToExponents.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/Simplify2.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/Simplify3.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/Simplify.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/SolveUsingLogs7.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/SolveUsingLogs8.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/MatchLogGraphs.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/Solve.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/bForm1.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/bForm2.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/bForm3.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/Domain2.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/Domain3.pg, 1, -1
+CollegeAlgebra/EulersConstantAndNaturalLog/Domain.pg, 1, -1

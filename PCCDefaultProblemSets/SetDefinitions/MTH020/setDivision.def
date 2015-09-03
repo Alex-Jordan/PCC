@@ -5,25 +5,25 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/Division.pg
 description       = introduction to division and application problems
 problemList       = 
-BasicMath/MultiplicationDivision/multiplicationTable20.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/multiplicationTable25.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivideByZero10.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem10.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem20.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem30.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem40.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem50.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem52.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem60.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem62.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem70.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem80.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem90.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem100.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/DivisionWordProblem110.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/RemainderWordProblem10.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/RemainderWordProblem20.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/RemainderWordProblem30.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/RemainderWordProblem40.pg, 1, -1, 2
-BasicMath/MultiplicationDivision/RemainderWordProblem50.pg, 1, -1, 2
+BasicMath/MultiplicationDivision/multiplicationTable20.pg, 1, -1
+BasicMath/MultiplicationDivision/multiplicationTable25.pg, 1, -1
+BasicMath/MultiplicationDivision/DivideByZero10.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem10.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem20.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem30.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem40.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem50.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem52.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem60.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem62.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem70.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem80.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem90.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem100.pg, 1, -1
+BasicMath/MultiplicationDivision/DivisionWordProblem110.pg, 1, -1
+BasicMath/MultiplicationDivision/RemainderWordProblem10.pg, 1, -1
+BasicMath/MultiplicationDivision/RemainderWordProblem20.pg, 1, -1
+BasicMath/MultiplicationDivision/RemainderWordProblem30.pg, 1, -1
+BasicMath/MultiplicationDivision/RemainderWordProblem40.pg, 1, -1
+BasicMath/MultiplicationDivision/RemainderWordProblem50.pg, 1, -1
 

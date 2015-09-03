@@ -6,17 +6,17 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/MultiplyDivideFractions.pg
 description       = multiplying and dividing with fractions
 problemList       = 
-BasicAlgebra/FractionArithmetic/MultiplyFractions10.pg, 1, -1, 2
-BasicAlgebra/FractionArithmetic/MultiplyFractions20.pg, 1, -1, 2
-BasicAlgebra/FractionArithmetic/MultiplyFractions40.pg, 1, -1, 2
-BasicAlgebra/FractionArithmetic/MultiplyFractions60.pg, 1, -1, 2
-BasicAlgebra/FractionArithmetic/MultiplyFractions30.pg, 1, -1, 2
-BasicAlgebra/FractionArithmetic/MultiplyFractions70.pg, 1, -1, 2
-BasicAlgebra/FractionArithmetic/MultiplyFractions50.pg, 1, -1, 2
-BasicAlgebra/FractionArithmetic/MultiplyFractions80.pg, 1, -1, 2
-BasicAlgebra/FractionArithmetic/DivideFractions10.pg, 1, -1, 2
-BasicAlgebra/FractionArithmetic/DivideFractions20.pg, 1, -1, 2
-BasicAlgebra/FractionArithmetic/DivideFractions30.pg, 1, -1, 2
-BasicAlgebra/FractionArithmetic/DivideFractions40.pg, 1, -1, 2
-BasicAlgebra/FractionArithmetic/DivideFractions50.pg, 1, -1, 2
+BasicAlgebra/FractionArithmetic/MultiplyFractions10.pg, 1, -1
+BasicAlgebra/FractionArithmetic/MultiplyFractions20.pg, 1, -1
+BasicAlgebra/FractionArithmetic/MultiplyFractions40.pg, 1, -1
+BasicAlgebra/FractionArithmetic/MultiplyFractions60.pg, 1, -1
+BasicAlgebra/FractionArithmetic/MultiplyFractions30.pg, 1, -1
+BasicAlgebra/FractionArithmetic/MultiplyFractions70.pg, 1, -1
+BasicAlgebra/FractionArithmetic/MultiplyFractions50.pg, 1, -1
+BasicAlgebra/FractionArithmetic/MultiplyFractions80.pg, 1, -1
+BasicAlgebra/FractionArithmetic/DivideFractions10.pg, 1, -1
+BasicAlgebra/FractionArithmetic/DivideFractions20.pg, 1, -1
+BasicAlgebra/FractionArithmetic/DivideFractions30.pg, 1, -1
+BasicAlgebra/FractionArithmetic/DivideFractions40.pg, 1, -1
+BasicAlgebra/FractionArithmetic/DivideFractions50.pg, 1, -1
 

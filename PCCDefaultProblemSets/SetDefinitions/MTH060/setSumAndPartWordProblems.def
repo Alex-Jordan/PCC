@@ -6,10 +6,10 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/SumAndPartWordProblems.pg
 description       = solving word problems involving two numbers that combine in some way 
 problemList       = 
-BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem10.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem20.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem30.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem40.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem50.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem60.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem10.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem20.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem30.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem40.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem50.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/TwoPartsWordProblem60.pg, 1, -1
 

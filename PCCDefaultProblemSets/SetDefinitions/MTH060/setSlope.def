@@ -6,19 +6,19 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/Slope.pg
 description       = using a graph to compute slope; using the slope formula to compute slope
 problemList       = 
-BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph10.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph20.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph30.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph40.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph50.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph60.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula10.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula20.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula30.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula40.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula50.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula60.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula70.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula80.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula90.pg, 1, -1, 2
+BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph10.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph20.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph30.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph40.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph50.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/FindSlopeByGraph60.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula10.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula20.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula30.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula40.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula50.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula60.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula70.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula80.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/SlopeFormula90.pg, 1, -1
 

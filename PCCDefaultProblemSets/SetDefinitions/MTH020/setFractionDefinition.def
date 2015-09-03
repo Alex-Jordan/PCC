@@ -5,26 +5,26 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/FractionDefinition.pg
 description       = definition of fractions
 problemList       = 
-BasicMath/FractionsCalculation/WriteFractionByGraph10.pg, 1, -1, 2
-BasicMath/FractionsCalculation/WriteFractionByGraph20.pg, 1, -1, 2
-BasicMath/FractionsCalculation/WriteFractionByGraph30.pg, 1, -1, 2
-BasicMath/FractionsCalculation/WriteFractionByGraph40.pg, 1, -1, 2
-BasicMath/FractionsCalculation/EquivalentFraction10.pg, 1, -1, 2
-BasicMath/FractionsCalculation/EquivalentFraction20.pg, 1, -1, 2
-BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction05.pg, 1, -1, 2
-BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction10.pg, 1, -1, 2
-BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction20.pg, 1, -1, 2
-BasicMath/FractionsCalculation/ReduceFraction25.pg, 1, -1, 2
-BasicMath/FractionsCalculation/ReduceFraction50.pg, 1, -1, 2
-BasicMath/FractionsCalculation/FractionOnNumberLine10.pg, 1, -1, 2
-BasicMath/FractionsCalculation/FractionOnNumberLine20.pg, 1, -1, 2
-BasicMath/FractionsCalculation/CompareFractions10.pg, 1, -1, 2
-BasicMath/FractionsCalculation/CompareFractions20.pg, 1, -1, 2
-BasicMath/FractionsCalculation/CompareFractions30.pg, 1, -1, 2
-BasicMath/FractionsCalculation/CompareFractions40.pg, 1, -1, 2
-BasicMath/FractionsCalculation/CompareFractions50.pg, 1, -1, 2
-BasicMath/FractionsCalculation/CompareFractions60.pg, 1, -1, 2
-BasicMath/FractionsCalculation/CompareFractions70.pg, 1, -1, 2
-BasicMath/FractionsCalculation/CompareFractions80.pg, 1, -1, 2
-BasicMath/FractionsCalculation/CompareFractions90.pg, 1, -1, 2
+BasicMath/FractionsCalculation/WriteFractionByGraph10.pg, 1, -1
+BasicMath/FractionsCalculation/WriteFractionByGraph20.pg, 1, -1
+BasicMath/FractionsCalculation/WriteFractionByGraph30.pg, 1, -1
+BasicMath/FractionsCalculation/WriteFractionByGraph40.pg, 1, -1
+BasicMath/FractionsCalculation/EquivalentFraction10.pg, 1, -1
+BasicMath/FractionsCalculation/EquivalentFraction20.pg, 1, -1
+BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction05.pg, 1, -1
+BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction10.pg, 1, -1
+BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction20.pg, 1, -1
+BasicMath/FractionsCalculation/ReduceFraction25.pg, 1, -1
+BasicMath/FractionsCalculation/ReduceFraction50.pg, 1, -1
+BasicMath/FractionsCalculation/FractionOnNumberLine10.pg, 1, -1
+BasicMath/FractionsCalculation/FractionOnNumberLine20.pg, 1, -1
+BasicMath/FractionsCalculation/CompareFractions10.pg, 1, -1
+BasicMath/FractionsCalculation/CompareFractions20.pg, 1, -1
+BasicMath/FractionsCalculation/CompareFractions30.pg, 1, -1
+BasicMath/FractionsCalculation/CompareFractions40.pg, 1, -1
+BasicMath/FractionsCalculation/CompareFractions50.pg, 1, -1
+BasicMath/FractionsCalculation/CompareFractions60.pg, 1, -1
+BasicMath/FractionsCalculation/CompareFractions70.pg, 1, -1
+BasicMath/FractionsCalculation/CompareFractions80.pg, 1, -1
+BasicMath/FractionsCalculation/CompareFractions90.pg, 1, -1
 

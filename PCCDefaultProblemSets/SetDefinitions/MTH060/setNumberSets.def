@@ -6,16 +6,16 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/NumberSets.pg
 description       = identifying types of numbers; using number lines
 problemList       = 
-BasicAlgebra/NumberBasics/TypesOfNumbers10.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/TypesOfNumbers20.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/TypesOfNumbers30.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/TypesOfNumbers40.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/TypesOfNumbers50.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/TypesOfNumbers60.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/NumberLine10.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/NumberLine20.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/NumberLine30.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/NumberLine40.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/NumberLine50.pg, 1, -1, 2
-BasicAlgebra/NumberBasics/NumberLine60.pg, 1, -1, 2
+BasicAlgebra/NumberBasics/TypesOfNumbers10.pg, 1, -1
+BasicAlgebra/NumberBasics/TypesOfNumbers20.pg, 1, -1
+BasicAlgebra/NumberBasics/TypesOfNumbers30.pg, 1, -1
+BasicAlgebra/NumberBasics/TypesOfNumbers40.pg, 1, -1
+BasicAlgebra/NumberBasics/TypesOfNumbers50.pg, 1, -1
+BasicAlgebra/NumberBasics/TypesOfNumbers60.pg, 1, -1
+BasicAlgebra/NumberBasics/NumberLine10.pg, 1, -1
+BasicAlgebra/NumberBasics/NumberLine20.pg, 1, -1
+BasicAlgebra/NumberBasics/NumberLine30.pg, 1, -1
+BasicAlgebra/NumberBasics/NumberLine40.pg, 1, -1
+BasicAlgebra/NumberBasics/NumberLine50.pg, 1, -1
+BasicAlgebra/NumberBasics/NumberLine60.pg, 1, -1
 

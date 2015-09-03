@@ -6,12 +6,12 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/LinearEquationApplications.pg
 description       = applications of finding equations of lines
 problemList       = 
-BasicAlgebra/LinearEquationApplications/FindLineEquationApplication10.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/FindLineEquationApplication20.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/FindLineEquationApplication30.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/FindLineEquationApplication40.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/FindLineEquationApplication50.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/FindLineEquationApplication60.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/FindLineEquationApplication70.pg, 1, -1, 2
-BasicAlgebra/LinearEquationApplications/FindLineEquationApplication80.pg, 1, -1, 2
+BasicAlgebra/LinearEquationApplications/FindLineEquationApplication10.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/FindLineEquationApplication20.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/FindLineEquationApplication30.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/FindLineEquationApplication40.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/FindLineEquationApplication50.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/FindLineEquationApplication60.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/FindLineEquationApplication70.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/FindLineEquationApplication80.pg, 1, -1
 

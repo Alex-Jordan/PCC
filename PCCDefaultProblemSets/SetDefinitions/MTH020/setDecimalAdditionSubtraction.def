@@ -5,13 +5,13 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/DecimalAdditionSubtraction.pg
 description       = add and subtract decimals
 problemList       = 
-BasicMath/Decimal/AddSubtractDecimals10.pg, 1, -1, 2
-BasicMath/Decimal/AddSubtractDecimals12.pg, 1, -1, 2
-BasicMath/Decimal/AddSubtractDecimals15.pg, 1, -1, 2
-BasicMath/Decimal/AddSubtractDecimals20.pg, 1, -1, 2
-BasicMath/Decimal/AddSubtractDecimals25.pg, 1, -1, 2
-BasicMath/Decimal/AddSubtractDecimals26.pg, 1, -1, 2
-BasicMath/Decimal/AddSubtractDecimals30.pg, 1, -1, 2
-BasicMath/Decimal/AddSubtractDecimals40.pg, 1, -1, 2
-BasicMath/Decimal/AddSubtractDecimals50.pg, 1, -1, 2
+BasicMath/Decimal/AddSubtractDecimals10.pg, 1, -1
+BasicMath/Decimal/AddSubtractDecimals12.pg, 1, -1
+BasicMath/Decimal/AddSubtractDecimals15.pg, 1, -1
+BasicMath/Decimal/AddSubtractDecimals20.pg, 1, -1
+BasicMath/Decimal/AddSubtractDecimals25.pg, 1, -1
+BasicMath/Decimal/AddSubtractDecimals26.pg, 1, -1
+BasicMath/Decimal/AddSubtractDecimals30.pg, 1, -1
+BasicMath/Decimal/AddSubtractDecimals40.pg, 1, -1
+BasicMath/Decimal/AddSubtractDecimals50.pg, 1, -1
 

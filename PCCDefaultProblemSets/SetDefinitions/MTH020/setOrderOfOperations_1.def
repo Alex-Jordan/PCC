@@ -5,25 +5,25 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/OrderOfOperations_1.pg
 description       = order of operations problems involving positive integers only
 problemList       = 
-BasicMath/OrderOfOperations_More/orderOfOperations09.pg, 1, -1, 2
-BasicAlgebra/OrderOfOperations/orderOfOperations20.pg, 1, -1, 2
-BasicAlgebra/OrderOfOperations/orderOfOperations30.pg, 1, -1, 2
-BasicAlgebra/OrderOfOperations/orderOfOperations70.pg, 1, -1, 2
-BasicAlgebra/OrderOfOperations/orderOfOperations120.pg, 1, -1, 2
-BasicAlgebra/OrderOfOperations/orderOfOperations170.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations21.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations23.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations24.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations25.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations26.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations27.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations28.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations29.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations46.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations53.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations108.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations109.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations163.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations164.pg, 1, -1, 2
-BasicMath/OrderOfOperations_More/orderOfOperations165.pg, 1, -1, 2
+BasicMath/OrderOfOperations_More/orderOfOperations09.pg, 1, -1
+BasicAlgebra/OrderOfOperations/orderOfOperations20.pg, 1, -1
+BasicAlgebra/OrderOfOperations/orderOfOperations30.pg, 1, -1
+BasicAlgebra/OrderOfOperations/orderOfOperations70.pg, 1, -1
+BasicAlgebra/OrderOfOperations/orderOfOperations120.pg, 1, -1
+BasicAlgebra/OrderOfOperations/orderOfOperations170.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations21.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations23.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations24.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations25.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations26.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations27.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations28.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations29.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations46.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations53.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations108.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations109.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations163.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations164.pg, 1, -1
+BasicMath/OrderOfOperations_More/orderOfOperations165.pg, 1, -1
 

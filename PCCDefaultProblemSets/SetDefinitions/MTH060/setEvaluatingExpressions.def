@@ -6,22 +6,22 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/EvaluatingExpressions.pg
 description       = evaluating symbols in mathematical expressions 
 problemList       = 
-BasicAlgebra/EvaluateExpressions/evaluate10.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/evaluate12.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/evaluate15.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/evaluate18.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/evaluate20.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/evaluate50.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/evaluate60.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/evaluate80.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/evaluate90.pg, 1, -1, 2
-BasicAlgebra/PolynomialBasics/polyMultVar0.pg, 1, -1, 2
-BasicAlgebra/PolynomialBasics/polyMultVar5.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/evaluateInContext10.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/evaluateInContext20.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/FahrenheitCelsius10.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/EvaluateFormulaAndReadGraph10.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/EvaluateFormula10.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/EvaluateFormula40.pg, 1, -1, 2
-BasicAlgebra/EvaluateExpressions/EvaluateFormula30.pg, 1, -1, 2
+BasicAlgebra/EvaluateExpressions/evaluate10.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/evaluate12.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/evaluate15.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/evaluate18.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/evaluate20.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/evaluate50.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/evaluate60.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/evaluate80.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/evaluate90.pg, 1, -1
+BasicAlgebra/PolynomialBasics/polyMultVar0.pg, 1, -1
+BasicAlgebra/PolynomialBasics/polyMultVar5.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/evaluateInContext10.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/evaluateInContext20.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/FahrenheitCelsius10.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/EvaluateFormulaAndReadGraph10.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/EvaluateFormula10.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/EvaluateFormula40.pg, 1, -1
+BasicAlgebra/EvaluateExpressions/EvaluateFormula30.pg, 1, -1
 

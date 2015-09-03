@@ -6,22 +6,22 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/SlopeInterceptEquation.pg
 description       = find the slope and y-intercept of a line; use the point-slope form to garph a line
 problemList       = 
-BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept10.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept20.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept30.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept40.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept50.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept60.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept70.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept80.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept90.pg, 1, -1, 2
-BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept100.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope10.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope20.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope30.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope40.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope50.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope60.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope70.pg, 1, -1, 2
-BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope80.pg, 1, -1, 2
+BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept10.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept20.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept30.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept40.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept50.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept60.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept70.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept80.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept90.pg, 1, -1
+BasicAlgebra/SlopeAndY-InterceptCalculations/FindSlopeYIntercept100.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope10.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope20.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope30.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope40.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope50.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope60.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope70.pg, 1, -1
+BasicAlgebra/GraphingPointsAndLines/GraphLinearEquationByPointSlope80.pg, 1, -1
 

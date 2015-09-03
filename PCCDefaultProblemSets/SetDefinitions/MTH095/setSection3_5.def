@@ -5,13 +5,13 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95Har
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/GenericMTH95Header.pg
 description       = absolute value inequalities
 problemList       = 
-Math95/AbsValueInequalities/AbsValueInequalities1.pg, 1, -1, 2
-Math95/AbsValueInequalities/AbsValueInequalities4.pg, 1, -1, 2
-Math95/AbsValueInequalities/AbsValueInequalities6.pg, 1, -1, 2
-Math95/AbsValueInequalities/AbsValueInequalities7.pg, 1, -1, 2
-Math95/AbsValueInequalities/AbsValueInequalities2.pg, 1, -1, 2
-Math95/AbsValueInequalities/AbsValueInequalities3.pg, 1, -1, 2
-Math95/AbsValueInequalities/AbsValueInequalities5.pg, 1, -1, 2
-Math95/AbsValueInequalities/AbsValueInequalities9.pg, 1, -1, 2
-Math95/AbsValueInequalities/AbsValueInequalities8.pg, 1, -1, 2
+Math95/AbsValueInequalities/AbsValueInequalities1.pg, 1, -1
+Math95/AbsValueInequalities/AbsValueInequalities4.pg, 1, -1
+Math95/AbsValueInequalities/AbsValueInequalities6.pg, 1, -1
+Math95/AbsValueInequalities/AbsValueInequalities7.pg, 1, -1
+Math95/AbsValueInequalities/AbsValueInequalities2.pg, 1, -1
+Math95/AbsValueInequalities/AbsValueInequalities3.pg, 1, -1
+Math95/AbsValueInequalities/AbsValueInequalities5.pg, 1, -1
+Math95/AbsValueInequalities/AbsValueInequalities9.pg, 1, -1
+Math95/AbsValueInequalities/AbsValueInequalities8.pg, 1, -1
 

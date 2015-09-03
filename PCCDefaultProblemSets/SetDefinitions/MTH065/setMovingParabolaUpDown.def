@@ -6,10 +6,10 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH065/MTH65HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/MovingParabolaUpDown.pg
 description       = shifting a parabola up and down
 problemList       = 
-BasicAlgebra/GraphingQuadratics/GraphParabolaByTable10.pg, 1, -1, 2
-BasicAlgebra/GraphingQuadratics/GraphParabolaByTable20.pg, 1, -1, 2
-BasicAlgebra/GraphingQuadratics/GraphParabolaByTable40.pg, 1, -1, 2
-BasicAlgebra/GraphingQuadratics/GraphParabolaByTable50.pg, 1, -1, 2
-BasicAlgebra/GraphingQuadratics/ShiftParabola10.pg, 1, -1, 2
-BasicAlgebra/GraphingQuadratics/ShiftParabola20.pg, 1, -1, 2
+BasicAlgebra/GraphingQuadratics/GraphParabolaByTable10.pg, 1, -1
+BasicAlgebra/GraphingQuadratics/GraphParabolaByTable20.pg, 1, -1
+BasicAlgebra/GraphingQuadratics/GraphParabolaByTable40.pg, 1, -1
+BasicAlgebra/GraphingQuadratics/GraphParabolaByTable50.pg, 1, -1
+BasicAlgebra/GraphingQuadratics/ShiftParabola10.pg, 1, -1
+BasicAlgebra/GraphingQuadratics/ShiftParabola20.pg, 1, -1
 

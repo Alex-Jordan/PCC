@@ -5,41 +5,41 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/UnitConversion.pg
 description       = convert within English unit system and international unit system
 problemList       = 
-BasicMath/UnitConversion/UnitConversionAmerican10.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmerican30.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmerican40.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmerican60.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmerican70.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmerican100.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmerican120.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmerican130.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmericanApplication10.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmericanApplication20.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmericanApplication30.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmericanApplication40.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmericanApplication50.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionAmericanApplication60.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetric30.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetric90.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetric100.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetric150.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetric210.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetric250.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetric320.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetric350.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetricApplication10.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetricApplication20.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetricApplication30.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetricApplication40.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetricApplication50.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetricApplication60.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionMetricApplication70.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionTime20.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionTime40.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionTime70.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionTime100.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionTimeApplication10.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionTimeApplication20.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionTimeApplication30.pg, 1, -1, 2
-BasicMath/UnitConversion/UnitConversionTimeApplication40.pg, 1, -1, 2
+BasicMath/UnitConversion/UnitConversionAmerican10.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmerican30.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmerican40.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmerican60.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmerican70.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmerican100.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmerican120.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmerican130.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmericanApplication10.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmericanApplication20.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmericanApplication30.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmericanApplication40.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmericanApplication50.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionAmericanApplication60.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetric30.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetric90.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetric100.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetric150.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetric210.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetric250.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetric320.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetric350.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetricApplication10.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetricApplication20.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetricApplication30.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetricApplication40.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetricApplication50.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetricApplication60.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionMetricApplication70.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionTime20.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionTime40.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionTime70.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionTime100.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionTimeApplication10.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionTimeApplication20.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionTimeApplication30.pg, 1, -1
+BasicMath/UnitConversion/UnitConversionTimeApplication40.pg, 1, -1
 

@@ -6,11 +6,11 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243Ha
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
 description       = probability problems where it may help to use a Venn diagram or illustrate the sample space rather than use probability formulas
 problemList       = 
-Statistics/ProbabilityRulesAndTools/ur_pb_3_6.pg, 1, -1, 2
-Statistics/ProbabilityRulesAndTools/ur_pb_3_4.pg, 1, -1, 2
-Statistics/ProbabilityRulesAndTools/ur_pb_3_2.pg, 1, -1, 2
-Statistics/ProbabilityRulesAndTools/sspaces1.pg, 1, -1, 2
-Statistics/ProbabilityRulesAndTools/10Stats_12_Probability.pg, 1, -1, 2
-Statistics/ProbabilityRulesAndTools/dueck5_2_2.pg, 1, -1, 2
-Statistics/ProbabilityRulesAndTools/dueck5_2_5.pg, 1, -1, 2
-Statistics/ProbabilityRulesAndTools/compprob4.pg, 1, -1, 2
+Statistics/ProbabilityRulesAndTools/ur_pb_3_6.pg, 1, -1
+Statistics/ProbabilityRulesAndTools/ur_pb_3_4.pg, 1, -1
+Statistics/ProbabilityRulesAndTools/ur_pb_3_2.pg, 1, -1
+Statistics/ProbabilityRulesAndTools/sspaces1.pg, 1, -1
+Statistics/ProbabilityRulesAndTools/10Stats_12_Probability.pg, 1, -1
+Statistics/ProbabilityRulesAndTools/dueck5_2_2.pg, 1, -1
+Statistics/ProbabilityRulesAndTools/dueck5_2_5.pg, 1, -1
+Statistics/ProbabilityRulesAndTools/compprob4.pg, 1, -1

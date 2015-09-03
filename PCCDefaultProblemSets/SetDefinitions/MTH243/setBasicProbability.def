@@ -6,16 +6,16 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243Ha
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
 description       = basic probability calculations
 problemList       = 
-Statistics/BasicProbability/dueck5_1_2.pg, 1, -1, 2
-Statistics/BasicProbability/dueck5_1_5.pg, 1, -1, 2
-Statistics/BasicProbability/kolossa5.pg, 1, -1, 2
-Statistics/BasicProbability/10Stats_01_Probability.pg, 1, -1, 2
-Statistics/BasicProbability/10Stats_02_Probability.pg, 1, -1, 2
-Statistics/BasicProbability/10Stats_04_Probability.pg, 1, -1, 2
-Statistics/BasicProbability/10Stats_12_Probability.pg, 1, -1, 2
-Statistics/BasicProbability/ur_dis_9_17.pg, 1, -1, 2
-Statistics/BasicProbability/ur_dis_9_19.pg, 1, -1, 2
-Statistics/BasicProbability/ur_pb_5_2.pg, 1, -1, 2
-Statistics/BasicProbability/stat212-HW03-17.pg, 1, -1, 2
-Statistics/BasicProbability/stat212-HW03-20.pg, 1, -1, 2
-Statistics/BasicProbability/stat212-HW04-03.pg, 1, -1, 2
+Statistics/BasicProbability/dueck5_1_2.pg, 1, -1
+Statistics/BasicProbability/dueck5_1_5.pg, 1, -1
+Statistics/BasicProbability/kolossa5.pg, 1, -1
+Statistics/BasicProbability/10Stats_01_Probability.pg, 1, -1
+Statistics/BasicProbability/10Stats_02_Probability.pg, 1, -1
+Statistics/BasicProbability/10Stats_04_Probability.pg, 1, -1
+Statistics/BasicProbability/10Stats_12_Probability.pg, 1, -1
+Statistics/BasicProbability/ur_dis_9_17.pg, 1, -1
+Statistics/BasicProbability/ur_dis_9_19.pg, 1, -1
+Statistics/BasicProbability/ur_pb_5_2.pg, 1, -1
+Statistics/BasicProbability/stat212-HW03-17.pg, 1, -1
+Statistics/BasicProbability/stat212-HW03-20.pg, 1, -1
+Statistics/BasicProbability/stat212-HW04-03.pg, 1, -1

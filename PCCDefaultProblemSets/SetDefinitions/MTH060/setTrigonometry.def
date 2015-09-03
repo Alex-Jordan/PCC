@@ -5,9 +5,9 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/Trigonometry.pg
 description       = questions about the definition of trigonometry ratios (sine, cosine and tangent)
 problemList       = 
-BasicAlgebra/Trigonometry/RightTriangleTrigDefinition10.pg, 1, -1, 2
-BasicAlgebra/Trigonometry/RightTriangleTrigDefinition20.pg, 1, -1, 2
-BasicAlgebra/Trigonometry/RightTriangleTrigDefinition30.pg, 1, -1, 2
-BasicAlgebra/Trigonometry/RightTriangleTrigDefinition40.pg, 1, -1, 2
-BasicAlgebra/Trigonometry/RightTriangleTrigDefinition50.pg, 1, -1, 2
-BasicAlgebra/Trigonometry/RightTriangleTrigDefinition50.pg, 1, -1, 2
+BasicAlgebra/Trigonometry/RightTriangleTrigDefinition10.pg, 1, -1
+BasicAlgebra/Trigonometry/RightTriangleTrigDefinition20.pg, 1, -1
+BasicAlgebra/Trigonometry/RightTriangleTrigDefinition30.pg, 1, -1
+BasicAlgebra/Trigonometry/RightTriangleTrigDefinition40.pg, 1, -1
+BasicAlgebra/Trigonometry/RightTriangleTrigDefinition50.pg, 1, -1
+BasicAlgebra/Trigonometry/RightTriangleTrigDefinition50.pg, 1, -1

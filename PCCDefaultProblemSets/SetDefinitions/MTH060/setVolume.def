@@ -6,11 +6,11 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/Volume.pg
 description       = questions about the volumes of prisms and cylinders
 problemList       = 
-BasicAlgebra/Geometry/RectangularPrismVolume10.pg, 1, -1, 2
-BasicAlgebra/Geometry/RectangularPrismVolume20.pg, 1, -1, 2
-BasicAlgebra/Geometry/RectangularPrismVolume30.pg, 1, -1, 2
-BasicAlgebra/Geometry/CylinderVolume10.pg, 1, -1, 2
-BasicAlgebra/Geometry/CylinderVolume20.pg, 1, -1, 2
-BasicAlgebra/Geometry/CylinderVolume30.pg, 1, -1, 2
-BasicAlgebra/Geometry/CylinderVolume40.pg, 1, -1, 2
+BasicAlgebra/Geometry/RectangularPrismVolume10.pg, 1, -1
+BasicAlgebra/Geometry/RectangularPrismVolume20.pg, 1, -1
+BasicAlgebra/Geometry/RectangularPrismVolume30.pg, 1, -1
+BasicAlgebra/Geometry/CylinderVolume10.pg, 1, -1
+BasicAlgebra/Geometry/CylinderVolume20.pg, 1, -1
+BasicAlgebra/Geometry/CylinderVolume30.pg, 1, -1
+BasicAlgebra/Geometry/CylinderVolume40.pg, 1, -1
 
