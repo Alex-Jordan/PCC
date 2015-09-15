@@ -59,7 +59,7 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 $PAR
 \{ htmlLink(qq!
 http://spot.pcc.edu/~cyao/MTH60Docs/U11L1_RightTriangleTrigonometry.pdf
-!,"lecture notes on volume", "TARGET='_blank'") \} 
+!,"lecture notes on trigonometry", "TARGET='_blank'") \}
 $PAR
 \{ scalableiframe("//
 www.youtube.com/embed/Jsiy4TxgIME
