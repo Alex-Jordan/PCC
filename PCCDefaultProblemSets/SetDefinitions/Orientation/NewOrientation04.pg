@@ -44,17 +44,21 @@ Here is what you need to know: _If_ a decimal approximation is acceptable at all
 
 Take out a calculator and enter decimal approximations for these values. At first, try rounding your calculator's outputs to only two significant digits. Then move up to three. Finally, four significant digits will be required for each and every one of these to count as correct. _These questions are trying to teach you that you should be in the habit of using four significant digits when entering decimal answers._ 
 
-    [:1/9 =:] [_________]{$c}
+    [`1/9 =0.11111111\ldots=`] [_________]{$c}
 
-    [:sqrt(110) =:] [_________]{$d}
+    [`\sqrt{110} =10.4880885\ldots=`] [_________]{$d}
 
-    [`\pi =`] [_________]{$e}
+    [`\pi =3.1415926\ldots=`] [_________]{$e}
 
-    [:5/2 =:] [_________]{$f}
+    [`\frac{5}{2} =2.5=`] [_________]{$f}
 
-    [:0.002038 =:] [_________]{0.002038}
+    [`0.002038 =`] [_________]{0.002038}
 
-With the last question, students often feel they should be able to get away with [`0.002`], since that is only off by [`0.000038`]. However, percentage-wise this would be off by over [`1.8%`], which is generally considered unacceptable. By always answering using four significant digits, your percentage error will always be very small.
+    [`20380134.2 =`] [_________]{20380134.2}
+
+With the fourth question, students often feel they should be able to get away with [`0.002`], since that is only off by a tiny amount of [`0.000038`]. However, percentage-wise this would be off by over [`1.8%`], which is generally considered unacceptable. By always answering using four significant digits, your percentage error will always be very small.
+
+With the last question, students mistakenly believe they must enter the entire number. While that's fine, it's OK to round to four significant digits. So you may simply enter [`20380000`].
 
 When you are ready, move on to the next question.
 
