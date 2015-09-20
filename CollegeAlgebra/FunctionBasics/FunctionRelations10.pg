@@ -84,7 +84,7 @@ $BR
 \{ $mc -> print_a() \}
 
 $PAR
-To receive credit you must get each checkbox correct. For this problem, WeBWorK will not tell you which parts you have right or wrong, or you could just change your checks after one submission, and you wouldn't have to think. If you do not get full credit, carefully review your response for each checkbox. If you do not have full credit after several attempts, contact a tutor or your instructor."
+To receive credit you must get each checkbox correct. For this problem, WeBWorK will not tell you which parts you have right or wrong, or you could just change your checks after one submission, and you wouldn't have to think. If you do not get full credit, carefully review your response for each checkbox. If you do not have full credit after several attempts, contact a tutor or your instructor.
 END_TEXT
 Context()->normalStrings;
 

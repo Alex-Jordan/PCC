@@ -85,7 +85,18 @@ Context()->strings->add("no real solutions"=>{},
   "none"=>{alias=>'no real solutions'}, 
   );
 
-ANS(List(Formula("x=$ans1"), Formula("x=$ans2"))->cmp(list_checker => ~~&radicalListCheck));
+# ANS(List(Formula("x=$ans1"), Formula("x=$ans2"))->cmp(list_checker => ~~&radicalListCheck));
+
+Context("Numeric");
+Context()->flags->set(showMixedNumbers=>0);
+
+parser::Assignment->Allow;
+Context()->operators->redefine('or',using=>',',from=>'Numeric');
+Context()->operators->set(","=>{string=>"or",TeX=>"or ",perl=>","});
+
+$answers = Compute("x=$ans1 or x=$ans2");
+
+ANS($answers ->cmp()  );
 
 ##############################################
 

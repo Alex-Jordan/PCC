@@ -83,12 +83,11 @@ $mc2 -> extra(
 BEGIN_PGML
 
 Some equations involving [`x`] and [`y`] define [`y`] as a function of
-[`x`], and others do not.  For example, if [`x+y=1`] we can solve for
-[`y`] and obtain [`y = 1-x`] and we can then think of [`y = f(x) =
+[`x`], and others do not.  For example, if [`x+y=1`], we can solve for
+[`y`] and obtain [`y = 1-x`]. And we can then think of [`y = f(x) =
 1-x`].  On the other hand, if we have the equation [`x=y^2`] then
 [`y`] is not a function of [`x`], since for a given positive value
-of [`x`], the value of [`y`] could equal the positive or the negative
-square root of [`x`].  
+of [`x`], the value of [`y`] could equal [`\sqrt{x}`] or it could equal [`-\sqrt{x}`].  
 
 END_PGML
 
@@ -100,7 +99,7 @@ $BR
 
 $PAR
 
-On the other hand, some equations involving \(x\) and \(y\) define \(x\) as a function of \(y\), and others do not. 
+On the other hand, some equations involving \(x\) and \(y\) define \(x\) as a function of \(y\) (the other way round). 
 
 $PAR
 \{ $mc2 -> print_q() \}
@@ -108,7 +107,7 @@ $BR
 \{ $mc2 -> print_a() \}
 
 $PAR
-To receive credit you must get each checkbox correct. For this problem, WeBWorK will not tell you which parts you have right or wrong, or you could just change your checks after one submission, and you wouldn't have to think. If you do not get full credit, carefully review your response for each checkbox. If you do not have full credit after several attempts, contact a tutor or your instructor."
+To receive credit you must get each checkbox correct. For this problem, WeBWorK will not tell you which parts you have right or wrong, or you could just change your checks after one submission, and you wouldn't have to think. If you do not get full credit, carefully review your response for each checkbox. If you do not have full credit after several attempts, contact a tutor or your instructor.
 END_TEXT
 
 ##############################################
