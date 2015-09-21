@@ -89,11 +89,11 @@ Try entering the following:
 
     [::[$h]=::] [_________]{$h}
 
-We also sometimes use radicals of higher order. For example the cube root of [`x`] is denoted [`\sqrt[3]{x}`], and this would be typed as:
+[%We also sometimes use radicals of higher order. For example the cube root of [`x`] is denoted [`\sqrt[3]{x}`], and this would be typed as:
 :       root(3,x)
-This will only be an option in problems that are potentially expecting you to use it. Try entering the following:
+This will only be an option in problems that are potentially expecting you to use it. Try entering the following:%]
 
-    [``[$i]=``] [_________]{$i}
+[%    [``[$i]=``] [_________]{$i}%]
 
 When you are ready, move on to the next question.
 
