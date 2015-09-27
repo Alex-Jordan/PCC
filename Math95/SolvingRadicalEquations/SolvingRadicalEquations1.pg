@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Solve the following radical equation
+#
+#       sqrt(ax) = b
+#
+#
+# Last updated: Spoddeck 09/27/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,12 @@ loadMacros(
   "MathObjects.pl",  
   "contextFraction.pl",
 
+  "parserAssignment.pl",
+  "answerHints.pl",
+  "PGML.pl",
+  "contextLimitedRadical.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
 );
 
 TEXT(beginproblem());
@@ -70,8 +84,38 @@ Context()->normalStrings;
 
 ANS( $ans->cmp(tolerance=>0));
 
+##############################################
 
+BEGIN_PGML_SOLUTION
 
+To get rid of the square root in this equation, we square the left side and the right side of the equation.
+
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   \left([$left]\right)^2 &= \left([$right]\right)^2 \\
+   [$a][$var] &= [$b**2] \\
+   \frac{[$a][$var]}{[$a]} &= \frac{[$b**2]}{[$a]} \\
+   [$var] &= [$r[0]] \\
+\end{aligned}
+    ``]
+
+We must check our solutions when we solve radical equations. We therefore substitute our answer into the original equation:
+
+    [``
+\begin{aligned}
+   [$left] &\stackrel{?}{=} [$right] \\
+   \sqrt{[$a]\cdot[$r[0]]} &\stackrel{?}{=} [$b] \\
+   \sqrt{[$a*$r[0]]} &\stackrel{?}{=} [$b] \\
+   [$b] &\stackrel{?}{=} [$b] \\
+\end{aligned}
+    ``]
+
+That is true, so the solution set is [`\{[$r[0]]\}`].
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();
