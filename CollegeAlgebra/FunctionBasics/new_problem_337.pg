@@ -31,7 +31,9 @@ $ymin = $sign*($a*($relmin)**3 - $b*($relmin));
 $ymax = $sign*($a*($relmax)**3 - $b*($relmax));
 
 $graph = init_graph($xmin,2*$ymin,$xmax,2*$ymax,'axes'=>[0,0],'grid'=>[$xmax - $xmin, 2*$ymax - 2*$ymin]);
-$f = FEQ("$sign*($a*x^3-$b*x) for x in [$xmin,$xmax] using color:blue and weight:1");
+$start = $xmin - 1;
+$stop = $xmax + 1;
+$f = FEQ("$sign*($a*x^3-$b*x) for x in [$start,$stop] using color:blue and weight:1");
 
 ($fref) = plot_functions( $graph, $f);
 
