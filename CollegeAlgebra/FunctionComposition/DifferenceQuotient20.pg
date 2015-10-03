@@ -42,8 +42,8 @@ $ans1 = Real($a*($d)**2+$b*$d);
 $u = $a*$d**2+$b*$d;
 $v = 2*$a*$d+$b;
 
-$ans2 = Formula("$u + $v h + $a h^2");
-$ans3 = Formula("$v+$a h");
+$ans2 = Formula("$u + $v h + $a h^2")->reduce;
+$ans3 = Formula("$v+$a h")->reduce;
 
 
 ###############################################
