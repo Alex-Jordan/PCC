@@ -54,7 +54,7 @@ $c = $root1*$root2;
 
 $function = Formula("$var^2+$b*$var+$c")->reduce;
 
-Context("LimitedNumeric");
+Context("Numeric");
 Context()->flags->set(showMixedNumbers=>0);
 Context()->variables->are($var=>'Real');
 
@@ -62,8 +62,8 @@ Context()->variables->are($var=>'Real');
 $fof0 = Compute($c);
 
 parser::Assignment->Allow;
-Context()->operators->redefine('or',using=>',',from=>'Numeric');
-Context()->operators->set(","=>{string=>"or",TeX=>"or ",perl=>","});
+Context()->operators->set(","=>{string=>"or",TeX=>"\text{ or }",perl=>","});Context()->operators->redefine('or',using=>',',from=>'Numeric');
+
 
 
 
