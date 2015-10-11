@@ -63,7 +63,7 @@ A bicycle company finds that its average cost per bicycle for producing [`n`] th
 
 What will be the approximate cost per bicycle when the company is producing many bicycles?
 
-    When the company is producing many bicycles, the approximate cost per bicycle will be [________________________]{$ans} dollars per bicycle.
+    The approximate cost per bicycle will be [________________________]{$ans} dollars per bicycle.
 
 END_PGML
 
