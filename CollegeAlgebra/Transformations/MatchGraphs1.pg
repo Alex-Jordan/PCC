@@ -64,13 +64,13 @@ $f[3] = Formula("$k[3]*x^(3/2)")->reduce;
 $gr = init_graph(-2,-4,4,4, axes=>[0,0],size=>[400,400]);
 
 add_functions($gr, "$f[0] for x in <-2,4> " .
-    "using color:blue and weight:2");
+    "using color:blue and weight:1");
 add_functions($gr, "$f[1] for x in <-2,4> " .
     "using color:red and weight:2");
 add_functions($gr, "$f[2] for x in <-2,4> " .
-    "using color:green and weight:2");
+    "using color:green and weight:3");
 add_functions($gr, "$f[3] for x in <-2,4> " .
-    "using color:black and weight:2");
+    "using color:black and weight:4");
 
 #
 #  Create a matching list and use popups
@@ -86,10 +86,10 @@ Context()->texStrings;
 #  Add correct questions and answers
 #
 $ml->qa(
-"\(y=$f[0]\)", "blue",
-"\(y=$f[1]\)", "red",
-"\(y=$f[2]\)", "green",
-"\(y=$f[3]\)", "black",
+"\(y=$f[0]\)", "blue, thinnest",
+"\(y=$f[1]\)", "red, thinner",
+"\(y=$f[2]\)", "green, thicker",
+"\(y=$f[3]\)", "black, thickest",
 
 );
 
