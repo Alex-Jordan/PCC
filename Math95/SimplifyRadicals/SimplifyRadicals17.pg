@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Add or subtract as indicated.
+#
+#       a*sqrt(27)-b*sqrt(18)
+#
+#
+# Last updated: Spoddeck 10/6/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -118,15 +128,26 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+BEGIN_PGML_SOLUTION
 
+We will use prime factorization and combine like radicals:
 
+    [``
+\begin{aligned}
+   [$a]\sqrt{27}+[$b]\sqrt{18}
+                          &= [$a]\sqrt{3^2\cdot 3}+[$b]\sqrt{3^2\cdot 2} \\
+                          &= [$a]\!\cdot\! 3\sqrt{3}+[$b]\!\cdot\! 3\sqrt{2} \\
+                          &= [$a*3]\sqrt{3}+[$b*3]\sqrt{2} \\
+\end{aligned}
+    ``]
 
- 
+After being fully simplified, the radicals are not like radicals and therefore cannot be combined.
 
+END_PGML_SOLUTION
 
-
+##############################################
 
 
 ENDDOCUMENT();

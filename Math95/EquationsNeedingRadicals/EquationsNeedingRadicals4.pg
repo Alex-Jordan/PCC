@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Solve the following radical equation
+#
+#       (1/c)(x-b)^5 = d
+#
+#
+# Last updated: Spoddeck 10/4/15
 # ENDDESCRIPTION
 
 
@@ -12,6 +20,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",  
   "contextFraction.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 
@@ -81,8 +91,45 @@ Context()->normalStrings;
 
 ANS( $ans->cmp(tolerance=>0));
 
+##############################################
 
+BEGIN_PGML_SOLUTION
 
+In order to find out what [`[$var]`] is, we first have to solve the equation for [`[$var]^5`] by multiplying each side of the equation with [`[$c]`]:
+
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   \left(\frac{[$c]}{1}\right)[$left] &= ([$c])([$right]) \\
+   ([$var]-[$b])^5 &= [$c*$d] \\
+\end{aligned}
+    ``]
+
+Now we take the 5th root on both sides. Since this is an odd-numbered root, there will only be one answer.
+
+    [``
+\begin{aligned}
+   ([$var]-[$b])^5 &= [$c*$d] \\
+   \sqrt[5]{([$var]-[$b])^5} &= \sqrt[5]{[$c*$d]} \\
+   [$var]-[$b] &= [$a-$b] \\
+\end{aligned}
+    ``]
+
+Now we solve for [`[$var]`]:
+
+    [``
+\begin{aligned}
+   [$var]-[$b] &= [$a-$b] \\
+   [$var]-[$b]+[$b] &= [$a-$b]+[$b] \\
+   [$var] &= [$a] \\
+\end{aligned}
+    ``]
+
+The solution set is therefore [`\{[$r[0]]\}`]. Make sure to check your answer by substituting it into the original equation.
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();

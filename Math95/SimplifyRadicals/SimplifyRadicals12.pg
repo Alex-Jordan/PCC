@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Add or subtract as indicated.
+#
+#       b*sqrt(a)-c*sqrt(a)
+#
+#
+# Last updated: Spoddeck 10/6/15
 # ENDDESCRIPTION
 
 
@@ -14,6 +22,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -23,6 +33,8 @@ $a = list_random(2,3,5,6,7,10);
 $b = random(4,10,1);
 $c = $b + non_zero_random(-2,5,1);
 $d = $b-$c;
+
+
 
 $expression = "$b\sqrt{$a}-$c\sqrt{$a}";
 $stringans = "$d sqrt($a)";
@@ -121,15 +133,41 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+# If the resulting coefficient is one, it should not appear as part of the final answer
+if ($d==1) {
 
+BEGIN_PGML_SOLUTION
 
+We know that we can combine like terms:
 
- 
+    [`` [$b]x-[$c]x = [$b-$c]x = x ``]
 
+In the same way, we can combine like radicals:
 
+    [`` [$b]\sqrt{[$a]}-[$c]\sqrt{[$a]}=[$b-$c]\sqrt{[$a]}=\sqrt{[$a]} ``]
 
+END_PGML_SOLUTION
+
+}
+else {
+
+BEGIN_PGML_SOLUTION
+
+We know that we can combine like terms:
+
+    [`` [$b]x-[$c]x = [$b-$c]x ``]
+
+In the same way, we can combine like radicals:
+
+    [`` [$b]\sqrt{[$a]}-[$c]\sqrt{[$a]}=[$b-$c]\sqrt{[$a]} ``]
+
+END_PGML_SOLUTION
+
+}
+
+##############################################
 
 
 ENDDOCUMENT();

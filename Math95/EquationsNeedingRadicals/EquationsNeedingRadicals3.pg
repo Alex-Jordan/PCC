@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Solve the following radical equation
+#
+#       (b-x)^3 = d
+#
+#
+# Last updated: Spoddeck 10/4/15
 # ENDDESCRIPTION
 
 
@@ -12,6 +20,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",  
   "contextFraction.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 
@@ -74,8 +84,36 @@ Context()->normalStrings;
 
 ANS( $ans->cmp(tolerance=>0));
 
+##############################################
 
+BEGIN_PGML_SOLUTION
 
+In order to solve for [`[$var]`], we first take the cube root on both sides. Since this is an odd-numbered root, there will only be one answer.
+
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   \sqrt[3]{[$left]} &= \sqrt[3]{[$right]} \\
+   [$b]-[$var] &= [$b-$a] \\
+\end{aligned}
+    ``]
+
+Now we solve for [`[$var]`]:
+
+    [``
+\begin{aligned}
+   [$b]-[$var] &= [$b-$a] \\
+   [$b]-[$var]-[$b] &= [$b-$a]-[$b] \\
+   -[$var] &= -[$a] \\
+   [$var] &= [$a] \\
+\end{aligned}
+    ``]
+
+The solution set is therefore [`\{[$r[0]]\}`]. Make sure to check your answer by substituting it into the original equation.
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();

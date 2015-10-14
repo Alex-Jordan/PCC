@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Add or subtract as indicated.
+#
+#       sqrt(d)+sqrt(e)
+#
+#
+# Last updated: Spoddeck 10/6/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -132,15 +142,24 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+BEGIN_PGML_SOLUTION
+
+We will use prime factorization and combine like radicals:
+
+    [``
+\begin{aligned}
+   \sqrt{[$d]}+\sqrt{[$e]} &= \sqrt{[$b]^2\cdot[$a]}+\sqrt{[$c]^2\cdot[$a]} \\
+                                      &= [$b]\sqrt{[$a]}+[$c]\sqrt{[$a]} \\
+                                      &= [$b+$c]\sqrt{[$a]} \\
+\end{aligned}
+    ``]
 
 
+END_PGML_SOLUTION
 
- 
-
-
-
+##############################################
 
 
 ENDDOCUMENT();

@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Add or subtract as indicated.
+#
+#       sqrt(c)-sqrt(b)
+#
+#
+# Last updated: Spoddeck 10/6/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -124,15 +134,48 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+# If the resulting coefficient is one, it should not appear as part of the final answer
+if (d==1) {
+
+BEGIN_PGML_SOLUTION
+
+We will use prime factorization and combine like radicals:
+
+    [``
+\begin{aligned}
+   \sqrt{[$c]}-\sqrt{[$b]} &= \sqrt{[$a]^2\cdot[$b]}-\sqrt{[$b]} \\
+                                      &= [$a]\sqrt{[$b]}-\sqrt{[$b]} \\
+                                      &= [$a-1]\sqrt{[$b]} \\
+                                      &= \sqrt{[$b]} \\
+\end{aligned}
+    ``]
 
 
+END_PGML_SOLUTION
 
- 
+}
+else {
+
+BEGIN_PGML_SOLUTION
+
+We will use prime factorization and combine like radicals:
+
+    [``
+\begin{aligned}
+   \sqrt{[$c]}-\sqrt{[$b]} &= \sqrt{[$a]^2\cdot[$b]}-\sqrt{[$b]} \\
+                                      &= [$a]\sqrt{[$b]}-\sqrt{[$b]} \\
+                                      &= [$a-1]\sqrt{[$b]} \\
+\end{aligned}
+    ``]
 
 
+END_PGML_SOLUTION
 
+}
+
+##############################################
 
 
 ENDDOCUMENT();
