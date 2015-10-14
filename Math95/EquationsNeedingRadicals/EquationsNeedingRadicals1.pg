@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Solve the following radical equation
+#
+#       bx^2 = c
+#
+#
+# Last updated: Spoddeck 10/4/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,8 @@ loadMacros(
   "MathObjects.pl",  
   "contextFraction.pl",
   "PGunion.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 TEXT(beginproblem());
@@ -72,8 +82,36 @@ Context()->normalStrings;
 
 ANS( $ans->cmp(tolerance=>0));
 
+##############################################
 
+BEGIN_PGML_SOLUTION
 
+In order to find out what [`[$var]`] is, we first have to solve the equation for [`[$var]^2`]:
+
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   \frac{[$left]}{[$b]} &= \frac{[$right]}{[$b]} \\
+   [$var]^2 &= [$c/$b] \\
+\end{aligned}
+    ``]
+
+Now we can take the square root on both sides to find [`[$var]`]. Whenever we take the square root or any other even-numbered root, we will have a positive and a negative solution of the root. We express that by using the absolute value.
+
+    [``
+\begin{aligned}
+   [$var]^2 &= [$c/$b] \\
+   \sqrt{[$var]^2} &= \sqrt{[$c/$b]} \\
+   \left|[$var]\right| &= [$a] \\
+   [$var] &= \pm[$a] \\
+\end{aligned}
+    ``]
+
+The solution set is therefore [`\{[$r[0]],[$r[1]]\}`]. Make sure to check your answer by substituting it into the original equation.
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();

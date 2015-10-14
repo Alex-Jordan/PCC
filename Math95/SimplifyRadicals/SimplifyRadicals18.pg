@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Simplify the radical expression.
+#
+#       sqrt(dx)+sqrt(ex)
+#
+#
+# Last updated: Spoddeck 10/6/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -122,15 +132,24 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+BEGIN_PGML_SOLUTION
+
+We will use prime factorization and combine like radicals:
+
+    [``
+\begin{aligned}
+   \sqrt{[$d]x}+\sqrt{[$e]x} &= \sqrt{[$a]^2x}+\sqrt{[$b]^2x} \\
+                                         &= [$a]\sqrt{x}+[$b]\sqrt{x} \\
+                                         &= [$a+$b]\sqrt{x} \\
+\end{aligned}
+    ``]
 
 
+END_PGML_SOLUTION
 
- 
-
-
-
+##############################################
 
 
 ENDDOCUMENT();

@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Simplify the radical expression.
+#
+#       a[0]sqrt(d[0]x)+a[1]sqrt(d[1]x)+a[2]sqrt(d[2]x)
+#
+#
+# Last updated: Spoddeck 10/6/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -130,15 +140,26 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+BEGIN_PGML_SOLUTION
+
+We will use prime factorization and combine like radicals:
+
+    [``
+\begin{aligned}
+   [$a[0]]\sqrt{[$d[0]]x}+[$a[1]]\sqrt{[$d[1]]x}+[$a[2]]\sqrt{[$d[2]]x}
+                      &= [$a[0]]\sqrt{[$b]x}+[$a[1]]\sqrt{[$c[1]]^2\!\cdot\![$b]x}+[$a[2]]\sqrt{[$c[2]]^2\!\cdot\![$b]x} \\
+                      &= [$a[0]]\sqrt{[$b]x}+[$a[1]]\!\cdot\![$c[1]]\sqrt{[$b]x}+[$a[2]]\!\cdot\![$c[2]]\sqrt{[$b]x} \\
+                      &= [$a[0]]\sqrt{[$b]x}+[$a[1]*$c[1]]\sqrt{[$b]x}+[$a[2]*$c[2]]\sqrt{[$b]x} \\
+                      &= [$a[0]+$a[1]*$c[1]+$a[2]*$c[2]]\sqrt{[$b]x} \\
+\end{aligned}
+    ``]
 
 
+END_PGML_SOLUTION
 
- 
-
-
-
+##############################################
 
 
 ENDDOCUMENT();

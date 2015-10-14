@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Simplify the radical expression.
+#
+#       sqrt(dx+e)+sqrt(x+b)
+#
+#
+# Last updated: Spoddeck 10/6/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -122,15 +132,25 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+BEGIN_PGML_SOLUTION
+
+We will factor out like terms and combine like radicals:
+
+    [``
+\begin{aligned}
+   \sqrt{[$d]x+[$e]}+\sqrt{x+[$b]} &= \sqrt{[$a**2](x+[$b])}+\sqrt{x+[$b]} \\
+                                                    &= \sqrt{[$a]^2(x+[$b])}+\sqrt{x+[$b]} \\
+                                                    &= [$a]\sqrt{x+[$b]}+\sqrt{x+[$b]} \\
+                                                    &= [$a+1]\sqrt{x+[$b]} \\
+\end{aligned}
+    ``]
 
 
+END_PGML_SOLUTION
 
- 
-
-
-
+##############################################
 
 
 ENDDOCUMENT();

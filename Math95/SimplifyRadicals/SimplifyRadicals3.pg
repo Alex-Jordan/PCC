@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Simplify the radical expression.
+#
+#       sqrt(a/b) * sqrt(b/c)
+#
+#
+# Last updated: Spoddeck 10/5/15
 # ENDDESCRIPTION
 
 
@@ -14,6 +22,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -119,15 +129,27 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+BEGIN_PGML_SOLUTION
 
+We will use the multiplication property of radicals:
 
+    [`` \sqrt{a} \cdot \sqrt{b} = \sqrt{ab} ``]
 
- 
+These are the steps to simplify the expression:
 
+    [``
+\begin{aligned}
+   \sqrt{\frac{[$a]}{[$b]}}\cdot\!\sqrt{\frac{[$b]}{[$c]}} 
+                           &= \sqrt{\frac{[$a]}{[$b]}\cdot\!\frac{[$b]}{[$c]}} \\
+                           &= \sqrt{\frac{[$a]}{[$c]}} \\
+\end{aligned}
+    ``]
 
+END_PGML_SOLUTION
 
+##############################################
 
 
 ENDDOCUMENT();

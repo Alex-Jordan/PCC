@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Simplify the radical expression.
+#
+#       sqrt(a) * sqrt(a)
+#
+#
+# Last updated: Spoddeck 10/4/15
 # ENDDESCRIPTION
 
 
@@ -14,6 +22,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -117,15 +127,27 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+BEGIN_PGML_SOLUTION
 
+We will use the multiplication property of radicals:
 
+    [`` \sqrt{a} \cdot \sqrt{b} = \sqrt{ab} ``]
 
- 
+These are the steps to simplify the expression:
 
+    [``
+\begin{aligned}
+   \sqrt{[$a]}\cdot\sqrt{[$a]} &= \sqrt{[$a]\cdot[$a]} \\
+                                            &= \sqrt{[$a]^2} \\
+                                            &= [$a] \\
+\end{aligned}
+    ``]
 
+END_PGML_SOLUTION
 
+##############################################
 
 
 ENDDOCUMENT();

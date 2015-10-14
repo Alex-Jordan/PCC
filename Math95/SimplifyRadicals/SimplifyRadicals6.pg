@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Multiply, and simplify if possible.
+#
+#       sqrt(a)*sqrt(c)
+#
+#
+# Last updated: Spoddeck 10/5/15
 # ENDDESCRIPTION
 
 
@@ -14,6 +22,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -122,15 +132,23 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+BEGIN_PGML_SOLUTION
 
+We use the multiplication property of radicals and prime factorization:
 
+    [``
+\begin{aligned}
+   \sqrt{[$a]}\cdot\!\sqrt[$c] &= \sqrt{[$a]\cdot[$c]} \\
+                    &= \sqrt{[$a]\cdot[$a]\cdot[$b]} \\
+                    &= \sqrt{[$a]^2\cdot[$b]} \\
+                    &= [$a]\sqrt{[$b]} \\
+\end{aligned}
+    ``]
 
- 
+END_PGML_SOLUTION
 
-
-
-
+##############################################
 
 ENDDOCUMENT();

@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Rationalize the denominator
+#
+#       (sqrt(b)-a)/(sqrt(c)+d)
+#
+#
+# Last updated: Spoddeck 10/7/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -124,15 +134,30 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+BEGIN_PGML_SOLUTION
+
+We will use the Difference of Squares formula:
+
+    [`` (a+b)(a-b) = a^2-b^2 ``]
+
+This will help us get rid of the radical in the denominator by multiplying with the conjugate:
+
+    [``
+\begin{aligned}
+   \dfrac{\sqrt{[$b]}-[$a]}{\sqrt{[$c]}+[$d]}
+                &= \dfrac{\sqrt{[$b]}-[$a]}{\sqrt{[$c]}+[$d]}\cdot\dfrac{\sqrt{[$c]}-[$d]}{\sqrt{[$c]}-[$d]} \\
+                &= \dfrac{\sqrt{[$b]}\sqrt{[$c]}-[$d]\sqrt{[$b]}-[$a]\sqrt{[$c]}+([$a])([$d])}{\left(\sqrt{[$c]}\right)^2-([$d])^2} \\
+                &= \dfrac{\sqrt{([$b])([$c])}-[$d]\sqrt{[$b]}-[$a]\sqrt{[$c]}+[$a*$d]}{[$c]-[$d**2]} \\
+                &= \dfrac{\sqrt{[$b*$c]}-[$d]\sqrt{[$b]}-[$a]\sqrt{[$c]}+[$a*$d]}{[$c-$d**2]} \\
+\end{aligned}
+    ``]
 
 
+END_PGML_SOLUTION
 
- 
-
-
-
+##############################################
 
 
 ENDDOCUMENT();

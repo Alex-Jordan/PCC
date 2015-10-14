@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Multiply and simplify the radical expression.
+#
+#       (sqrt(x)+a)(sqrt(x)+b)
+#
+#
+# Last updated: Spoddeck 10/7/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -121,15 +131,68 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+# If the resulting coefficient is one, it should not appear as part of the final answer
+if ($c==1) {
+
+BEGIN_PGML_SOLUTION
+
+We will use the FOIL method and combine like radicals:
+
+    [``
+\begin{aligned}
+   \left(\sqrt{x}+[$a]\right)\left(\sqrt{x}+[$b]\right)
+                      &= \left(\sqrt{x}\right)^2+[$b]\sqrt{x}+[$a]\sqrt{x}+([$a])([$b]) \\
+                      &= x+[$a+$b]\sqrt{x}+[$a*$b] \\
+                      &= x+\sqrt{x}+[$a*$b] \\
+\end{aligned}
+    ``]
 
 
+END_PGML_SOLUTION
 
- 
+}
+
+# If the resulting coefficient is -1, it should not appear as part of the final answer
+elsif ($c==-1) {          
+
+BEGIN_PGML_SOLUTION
+
+We will use the FOIL method and combine like radicals:
+
+    [``
+\begin{aligned}
+   \left(\sqrt{x}+[$a]\right)\left(\sqrt{x}+[$b]\right)
+                      &= \left(\sqrt{x}\right)^2+[$b]\sqrt{x}+[$a]\sqrt{x}+([$a])([$b]) \\
+                      &= x+[$a+$b]\sqrt{x}+[$a*$b] \\
+                      &= x-\sqrt{x}+[$a*$b] \\
+\end{aligned}
+    ``]
 
 
+END_PGML_SOLUTION
 
+} else {
+
+BEGIN_PGML_SOLUTION
+
+We will use the FOIL method and combine like radicals:
+
+    [``
+\begin{aligned}
+   \left(\sqrt{x}+[$a]\right)\left(\sqrt{x}+[$b]\right)
+                      &= \left(\sqrt{x}\right)^2+[$b]\sqrt{x}+[$a]\sqrt{x}+([$a])([$b]) \\
+                      &= x+[$a+$b]\sqrt{x}+[$a*$b] \\
+\end{aligned}
+    ``]
+
+
+END_PGML_SOLUTION
+
+}
+
+##############################################
 
 
 ENDDOCUMENT();

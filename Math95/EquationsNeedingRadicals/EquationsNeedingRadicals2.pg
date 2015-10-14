@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Solve the following radical equation
+#
+#       (bx-c)^2 = d
+#
+#
+# Last updated: Spoddeck 10/4/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,8 @@ loadMacros(
   "MathObjects.pl",  
   "contextFraction.pl",
   "PGunion.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 TEXT(beginproblem());
@@ -76,8 +86,38 @@ Context()->normalStrings;
 
 ANS( $ans->cmp(tolerance=>0));
 
+##############################################
 
+BEGIN_PGML_SOLUTION
 
+In order to solve for [`[$var]`], we first take the square root on both sides. Whenever we take the square root or any other even-numbered root, we will have a positive and a negative solution of the root. We express that by using the absolute value.
+
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   \sqrt{[$left]} &= \sqrt{[$right]} \\
+   \left|[$b][$var]-[$c]\right| &= [$b*$a-$c] \\
+   [$b][$var]-[$c] &= \pm[$b*$a-$c] \\
+\end{aligned}
+    ``]
+
+Now we solve for [`[$var]`]. However, since we have two solutions, we have to solve two equations:
+
+    [``
+\begin{aligned}
+   [$b][$var]-[$c] &= [$b*$a-$c] && & [$b][$var]-[$c] &= -[$b*$a-$c] \\
+   [$b][$var]-[$c]+[$c] &= [$b*$a-$c]+[$c] && & [$b][$var]-[$c]+[$c] &= -[$b*$a-$c]+[$c] \\
+   [$b][$var] &= [$b*$a] && & [$b][$var] &= -[$b*$a-$c*2] \\
+   \frac{[$b][$var]}{[$b]} &= \frac{[$b*$a]}{[$b]} && & \frac{[$b][$var]}{[$b]} &= \frac{-[$b*$a-$c*2]}{[$b]} \\
+   [$var] &= [$r[0]] && & [$var] &= [$r[1]] \\
+\end{aligned}
+    ``]
+
+The solution set is therefore [`\{[$r[0]],[$r[1]]\}`]. Make sure to check your answer by substituting it into the original equation.
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();

@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Rationalize the denominator
+#
+#       a/(c-sqrt(x))
+#
+#
+# Last updated: Spoddeck 10/7/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -122,15 +132,29 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+##############################################
 
- 
+BEGIN_PGML_SOLUTION
+
+We will use the Difference of Squares formula:
+
+    [`` (a+b)(a-b) = a^2-b^2 ``]
+
+This will help us get rid of the radical in the denominator by multiplying with the conjugate:
+
+    [``
+\begin{aligned}
+   \dfrac{[$a]}{[$c]-\sqrt{x}}
+                &= \dfrac{[$a]}{[$c]-\sqrt{x}}\cdot\dfrac{[$c]+\sqrt{x}}{[$c]+\sqrt{x}} \\
+                &= \dfrac{([$a])([$c])+[$a]\sqrt{x}}{([$c])^2-\left(\sqrt{x}\right)^2} \\
+                &= \dfrac{[$a*$c]+[$a]\sqrt{x}}{[$c**2]-x} \\
+\end{aligned}
+    ``]
 
 
+END_PGML_SOLUTION
 
- 
-
-
-
+##############################################
 
 
 ENDDOCUMENT();

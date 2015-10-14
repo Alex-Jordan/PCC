@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Multiply and simplify the radical expression.
+#
+#       (sqrt(x)+a)(sqrt(x)-a)
+#
+#
+# Last updated: Spoddeck 10/7/15
 # ENDDESCRIPTION
 
 
@@ -13,6 +21,8 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
+      "PGcourse.pl",
     );
 
 
@@ -119,15 +129,42 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+BEGIN_PGML_SOLUTION
 
- 
+We will use the FOIL method and combine like radicals:
+
+    [``
+\begin{aligned}
+   \left(\sqrt{x}+[$a]\right)\left(\sqrt{x}-[$a]\right)
+                      &= \left(\sqrt{x}\right)^2-[$a]\sqrt{x}+[$a]\sqrt{x}-([$a])^2 \\
+                      &= x-[$a**2] \\
+\end{aligned}
+    ``]
+
+    [``
+\begin{aligned}
+    && && \text{OR}
+\end{aligned}
+    ``]
+
+We can also use the Difference of Squares formula:
+
+    [`` (a+b)(a-b) = a^2-b^2 ``]
+
+We then get:
+
+    [``
+\begin{aligned}
+   \left(\sqrt{x}+[$a]\right)\left(\sqrt{x}-[$a]\right)
+                      &= \left(\sqrt{x}\right)^2-([$a])^2 \\
+                      &= x-[$a**2] \\
+\end{aligned}
+    ``]
 
 
+END_PGML_SOLUTION
 
- 
-
-
-
+##############################################
 
 
 ENDDOCUMENT();
