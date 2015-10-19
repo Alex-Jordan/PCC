@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Use rational exponents to write the expression. 
+#
+#       4th-root(a^4x)
+#
+#
+# Last updated: Spoddeck 10/14/15
 # ENDDESCRIPTION
 
 
@@ -13,7 +21,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextLimitedPowers.pl",
-  
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -70,6 +79,26 @@ $showPartialCorrectAnswers = 1;
 
 
 ANS( $ans->cmp());
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We first use radical properties to simplify. Then we rewrite the expression using rational exponents [` \sqrt[n]{x^m} = x^\frac{m}{n} `].
+
+    [``
+\begin{aligned}
+   \sqrt[4]{[$a**4][$var]} &= \sqrt[4]{[$a]^4[$var]} \\
+                                         &= [$a]\sqrt[4]{[$var]} \\
+                                         &= [$a][$var]^\frac{1}{4} \\
+\end{aligned}
+    ``]
+
+So the answer in calculator/WeBWorK notation is [`[$a][$var]`]^(1/4).
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();

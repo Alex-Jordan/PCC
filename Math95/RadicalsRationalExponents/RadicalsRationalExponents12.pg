@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Simplify the expression.
+#
+#       sqrt(ax+b)
+#
+#
+# Last updated: Spoddeck 10/14/15
 # ENDDESCRIPTION
 
 
@@ -13,7 +21,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextLimitedPowers.pl",
-  
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -71,6 +80,24 @@ $showPartialCorrectAnswers = 1;
 
 
 ANS( $ans->cmp());
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We can rewrite this expression using rational exponents [` \sqrt[n]{x^m} = x^\frac{m}{n} `].
+
+    [``
+\begin{aligned}
+   \sqrt{[$a][$var]+[$b]} &= ([$a][$var]+[$b])^\frac{1}{2} \\
+\end{aligned}
+    ``]
+
+So the answer in calculator/WeBWorK notation is [`([$a][$var]+[$b])`]^(1/2).
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();

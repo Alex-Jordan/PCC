@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Use rational exponents to write the expression. 
+#
+#       cuberoot(a^3x)/4th-root(x^m)
+#
+#
+# Last updated: Spoddeck 10/14/15
 # ENDDESCRIPTION
 
 
@@ -13,8 +21,9 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "unionTables.pl",
-  "contextFraction.pl",  
-
+  "contextFraction.pl",
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -79,6 +88,38 @@ $showPartialCorrectAnswers = 1;
 
 ANS( $ans[0]->cmp());
 ANS( $ans[1]->cmp());
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We first use radical properties to simplify. Then we rewrite the expression using rational exponents [` \sqrt[n]{x^m} = x^\frac{m}{n} `].
+
+    [``
+\begin{aligned}
+   \frac{\sqrt[3]{[$a**3][$var]}}{\sqrt[4]{[$var]^{[$m]}}}
+           &= \frac{\sqrt[3]{[$a]^3[$var]}}{\sqrt[4]{[$var]^{[$m]}}} \\
+           &= \frac{[$a]\sqrt[3]{[$var]}}{\sqrt[4]{[$var]^{[$m]}}} \\
+           &= \frac{[$a][$var]^{\frac{1}{3}}}{[$var]^\frac{[$m]}{4}} \\
+\end{aligned}
+    ``]
+
+We now use the properties of exponents and subtracting fractions: 
+
+    [``
+\begin{aligned}
+   \frac{[$a][$var]^{\frac{1}{3}}}{[$var]^\frac{[$m]}{4}}
+           &= [$a][$var]^\left(\frac{1}{3}-\frac{[$m]}{4}\right) \\
+           &= [$a][$var]^\left(\frac{4}{12}-\frac{[$m*3]}{12}\right) \\
+           &= [$a][$var]^\frac{-[$m*3-4]}{12} \\
+\end{aligned}
+    ``]
+
+If the fraction in the exponent is not fully simplified after the last step, make sure to reduce it to its lowest terms.
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();

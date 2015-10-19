@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Simplify the expression.
+#
+#       sqrt(nx^2)
+#
+#
+# Last updated: Spoddeck 10/13/15
 # ENDDESCRIPTION
 
 
@@ -13,7 +21,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextLimitedPowers.pl",
-  
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -68,6 +77,26 @@ $showPartialCorrectAnswers = 1;
 
 
 ANS( $ans->cmp());
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+In order to simplify the expression, we use that [` \sqrt{x^2} = |x| `]. Whenever possible, we will use the absolute value [`|x|`] instead of [`\pm x`] to show that [`x`] can be positive or negative.
+
+    [``
+\begin{aligned}
+   \sqrt{[$n2][$var]^2} &= \sqrt{[$n]^2[$var]^2} \\
+                                   &= |[$n]|\cdot|[$var]| \\
+                                   &= [$n]|[$var]| \\
+\end{aligned}
+    ``]
+
+The answer is either positive or negative, so it is sufficient to only have [`[$var]`] within the absolute value.
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();

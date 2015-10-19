@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Simplify the expression. For this problem you may assume that all variables are positive. 
+#
+#       n-th-root(n-th-root(x))
+#
+#
+# Last updated: Spoddeck 10/15/15
 # ENDDESCRIPTION
 
 
@@ -16,7 +24,8 @@ loadMacros(
   "bizarroArithmetic.pl",
   "contextFraction.pl",
   "unionTables.pl",
-  
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -91,7 +100,29 @@ ANS($ans -> cmp(
       Value->Error("Your answer is correct, but please simplify it further") unless (($correct == $student) or ($student == $correct));
       Context()->flags->set(bizarroPow=>0);
       return 1;
-})); 
+}));
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We rewrite the expression using rational exponents [` \sqrt[n]{x^m} = x^\frac{m}{n} `]. Then we use exponent properties and multiply the fractions.
+
+    [``
+\begin{aligned}
+   \sqrt[[$n]]{\sqrt[[$n]]{[$var]}}
+           &= \sqrt[[$n]]{[$var]^{\frac{1}{[$n]}}} \\
+           &= \left([$var]^{\frac{1}{[$n]}}\right)^{\frac{1}{[$n]}} \\
+           &= [$var]^{\frac{1}{[$n]}\cdot\frac{1}{[$n]}} \\
+           &= [$var]^{\frac{1}{[$n**2]}} \\
+\end{aligned}
+    ``]
+
+So the answer in calculator/WeBWorK notation is [`[$var]`]^(1/[`[$n**2]`]).
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();

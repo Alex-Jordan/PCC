@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Simplify the expression.
+#
+#       m-th-root((ax)^n)
+#
+#
+# Last updated: Spoddeck 10/14/15
 # ENDDESCRIPTION
 
 
@@ -13,7 +21,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextLimitedPowers.pl",
-  
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -70,6 +79,25 @@ $showPartialCorrectAnswers = 1;
 
 
 ANS( $ans->cmp());
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We can rewrite this expression using rational exponents [` \sqrt[n]{x^m} = x^\frac{m}{n} `].
+
+    [``
+\begin{aligned}
+   \sqrt[[$m]]{([$a][$var])^{[$m*$n]}} &= ([$a][$var])^\frac{[$m*$n]}{[$m]} \\
+                                                        &= ([$a][$var])^[$n] \\
+\end{aligned}
+    ``]
+
+We can simplify fractions that are in the exponent just like any other fraction.
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();

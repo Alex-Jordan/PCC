@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Simplify the expression.
+#
+#       cuberoot((ax+b)^(3)
+#
+#
+# Last updated: Spoddeck 10/13/15
 # ENDDESCRIPTION
 
 
@@ -13,7 +21,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextLimitedPowers.pl",
-  
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -68,6 +77,60 @@ $showPartialCorrectAnswers = 1;
 
 
 ANS( $ans->cmp());
+
+##############################################
+
+if ($a==1) {
+
+BEGIN_PGML_SOLUTION
+
+In order to simplify the expression, we use that [` \sqrt[3]{x^3} = x `].
+
+    [``
+\begin{aligned}
+   \sqrt[3]{([$var]+[$b])^3} &= [$var]+[$b] \\
+\end{aligned}
+    ``]
+
+Since this is an odd-numbered root, the sign of [` [$var]+[$b] `] is not affected when we simplify the expression.
+
+END_PGML_SOLUTION
+
+} elsif ($a==-1) {
+
+BEGIN_PGML_SOLUTION
+
+In order to simplify the expression, we use that [` \sqrt[3]{x^3} = x `].
+
+    [``
+\begin{aligned}
+   \sqrt[3]{(-[$var]+[$b])^3} &= -[$var]+[$b] \\
+\end{aligned}
+    ``]
+
+Since this is an odd-numbered root, the sign of [` -[$var]+[$b] `] is not affected when we simplify the expression.
+
+END_PGML_SOLUTION
+
+} else {
+
+BEGIN_PGML_SOLUTION
+
+In order to simplify the expression, we use that [` \sqrt[3]{x^3} = x `].
+
+    [``
+\begin{aligned}
+   \sqrt[3]{([$a][$var]+[$b])^3} &= [$a][$var]+[$b] \\
+\end{aligned}
+    ``]
+
+Since this is an odd-numbered root, the sign of [` [$a][$var]+[$b] `] is not affected when we simplify the expression.
+
+END_PGML_SOLUTION
+
+}
+
+##############################################
 
 
 ENDDOCUMENT();

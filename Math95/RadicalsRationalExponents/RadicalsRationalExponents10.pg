@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Convert the expression to radical notation.
+#
+#       a^(1/n)x^(m/n)
+#
+#
+# Last updated: Spoddeck 10/14/15
 # ENDDESCRIPTION
 
 
@@ -13,7 +21,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "unionTables.pl",
-
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -85,5 +94,20 @@ $showPartialCorrectAnswers = 1;
 ANS( $ans[0]->cmp());
 ANS( $ans[1]->cmp());
 
+##############################################
 
+BEGIN_PGML_SOLUTION
+
+When we have fractions as exponents, the numerator indicates the power while the denominator indicates the radical: [` x^\frac{m}{n} = \sqrt[n]{x^m} `]. So we can rewrite our expression as follows. We then use radical properties to simplify.
+
+    [``
+\begin{aligned}
+   [$a]^\frac{1}{[$n]}[$var]^\frac{[$m]}{[$n]} &= \sqrt[[$n]]{[$a]}\sqrt[[$n]]{[$var]^[$m]} \\
+                                                                    &= \sqrt[[$n]]{[$a][$var]^[$m]} \\
+\end{aligned}
+    ``]
+
+END_PGML_SOLUTION
+
+##############################################
 ENDDOCUMENT();

@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Simplify the expression.
+#
+#       sqrt(x^2+2ax+a^2)
+#
+#
+# Last updated: Spoddeck 10/17/15
 # ENDDESCRIPTION
 
 
@@ -13,7 +21,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextLimitedPowers.pl",
-
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -70,6 +79,27 @@ $showPartialCorrectAnswers = 1;
 
 
 ANS( $ans->cmp());
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+In order to simplify the expression, we use that [` \sqrt{x^2} = |x| `]. But first, we need to factor the polynomial.
+
+    [``
+\begin{aligned}
+   \sqrt{[$var]^{2}+[$a*2][$var]+[$a**2]}
+                    &= \sqrt{([$var]+[$a])([$var]+[$a])} \\
+                    &= \sqrt{([$var]+[$a])^2} \\
+                    &= \left|[$var]+[$a]\right| \\
+\end{aligned}
+    ``]
+
+We cannot simplify this expression any further. So the answer in calculator/WeBWorK notation is abs([`[$var]+[$a]`]).
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();

@@ -1,5 +1,13 @@
 # WeBWorK problem written by Alex Jordan 
 # Portland Community College
+#
+# Template:
+# Simplify the expression. For this problem you may assume that all variables are positive. 
+#
+#       sqrt(x^n)n-th-root(x^2)
+#
+#
+# Last updated: Spoddeck 10/15/15
 # ENDDESCRIPTION
 
 
@@ -14,7 +22,8 @@ loadMacros(
   "MathObjects.pl",
   "contextLimitedPowers.pl",
   "contextFraction.pl",
-  
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -72,6 +81,28 @@ $showPartialCorrectAnswers = 1;
 
 
 ANS( $ans->cmp());
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We rewrite the expression using rational exponents [` \sqrt[n]{x^m} = x^\frac{m}{n} `]. Then we use exponent properties and add the fractions.
+
+    [``
+\begin{aligned}
+   \sqrt{[$var]^{[$n]}}\sqrt[[$n]]{[$var]^2}
+           &= [$var]^{\frac{[$n]}{2}}[$var]^{\frac{2}{[$n]}} \\
+           &= [$var]^{\frac{[$n]}{2}+\frac{2}{[$n]}} \\
+           &= [$var]^{\frac{[$n*$n]}{[$n*2]}+\frac{4}{[$n*2]}} \\
+           &= [$var]^{\frac{[$n*$n+4]}{[$n*2]}} \\
+\end{aligned}
+    ``]
+
+If the fraction in the exponent is not fully simplified after the last step, make sure to reduce it to its lowest terms.
+
+END_PGML_SOLUTION
+
+##############################################
 
 
 ENDDOCUMENT();
