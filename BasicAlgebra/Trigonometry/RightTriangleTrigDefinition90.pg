@@ -170,10 +170,11 @@ sub line2 {
 Context("Numeric");
 
 do {
-   $base= random(2,18,1);
+   $base= random(4,16,1);
    $hypotenuse = random($base+1,25,1);
    $heightSquared = $hypotenuse**2-$base**2;
-} until (canBeSimplified($heightSquared));
+   $heightRounded = int(sqrt($heightSquared)+0.5);
+} until ( (canBeSimplified($heightSquared)) && ($heightRounded<=16) );
 
 ($in, $out) = simplify($heightSquared);
 
@@ -232,8 +233,6 @@ $ymax = 20;
 #$corner's value decides the location of the right angle. 
 #(0,1,2,3) implies (bottom left,top left,top right,bottom right). 
 $corner = list_random(0..3);
-
-$heightRounded = int(sqrt($heightSquared)+0.5);
 
 if ( ($corner==0) || ($corner==2) ) {
    @x = (($xmax-$base)/2,($xmax+$base)/2);

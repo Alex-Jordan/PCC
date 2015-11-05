@@ -170,8 +170,8 @@ sub line2 {
 Context("Numeric");
 
 do {
-   $base = random(2,18,1);
-   $height = random(2,18,1);
+   $base = random(4,16,1);
+   $height = random(4,16,1);
    $hypotenuseSquared = $base**2+$height**2;
 } until (canBeSimplified($hypotenuseSquared));
 
