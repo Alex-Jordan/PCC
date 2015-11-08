@@ -55,7 +55,7 @@ $answer = Formula("P(t)=$initial($growthFactor)^t");
 
 BEGIN_PGML
 
-In 2010, the population of a country was [`[$initial]`] million and growing at a rate of [`[$growthRate]%`] per year.  Assuming the percentage growth rate remains constant, express the population [`P`] as a function of [`t`], the number of years after 2010. Continue to measure population in millions. Give your answer as a formula for [`P(t)`], written in the form *P(t)=...*.
+In 2010, the population of a country was [`[$initial]`] million and growing at a rate of [`[$growthRate]%`] per year.  Assuming the percentage growth rate remains constant, express the population [`P`], measured in millions, as a function of [`t`], the number of years after 2010. Continue to measure population in millions. Give your answer as a formula for [`P(t)`], written in the form *P(t)=...*.
 
     [__________________________________]{$answer}
 
