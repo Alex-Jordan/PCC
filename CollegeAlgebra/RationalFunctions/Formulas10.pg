@@ -52,7 +52,7 @@ $f = RandomVariableName(type=>'function');
 
 BEGIN_PGML
 
-Find a formula for a rational function [`[$f]`] with degree-1 zeros at [`[@$r[0]@]`] and [`[@$r[1]@]`], and degree-one vertical asymptotes at [`[@$r[2]@]`] and [`[@$r[3]@]`].
+Find a formula for a rational function [`[$f]`] with degree-one zeros at [`[@$r[0]@]`] and [`[@$r[1]@]`], and degree-one vertical asymptotes at [`[@$r[2]@]`] and [`[@$r[3]@]`].
 
     [`[$f](x)={}`][______________________________________]
 
