@@ -78,7 +78,7 @@ TEXT(MODES(TeX =>"",HTML=>EV3(<<'EOT')));
 
 $PAR
 \{ htmlLink(qq!
-http://spot.pcc.edu/~cyao/MTH20DocsU4L5SquareRoot.pdf
+http://spot.pcc.edu/~cyao/MTH20Docs/U4L5SquareRoot.pdf
 !,"Square Root Lecture Notes", "TARGET='_blank'") \}.
 
 $PAR
