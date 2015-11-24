@@ -7,12 +7,12 @@
 #       x = sqrt(x+b)+c
 #
 #
-# Last updated: Spoddeck 09/28/15
+# Last updated: Spoddeck 11/12/15
 # ENDDESCRIPTION
 
 
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -24,9 +24,11 @@ loadMacros(
   "PGcourse.pl",
 );
 
-TEXT(beginproblem());
 
 ##############################################
+
+
+TEXT(beginproblem());
 
 Context("Fraction");
 $var = list_random('a','b','c','d','h','k','m','n','p','q','r','t','v','w','x','y','z');
@@ -41,7 +43,6 @@ $C = $c**2-$b;       # for solving the quadratic formula
 $h1 = sqrt($B**2-$A*$C*4);      # helper variable for solving the quadratic formula
 $h2 = (-$B-$h1)/($A*2);            # helper variable for solving the quadratic formula
 
-
 $left = Formula("$var");
 $right = Formula("sqrt($var+$b)+$c")->reduce;
 
@@ -55,39 +56,32 @@ Context()->parens->set('{'=>{type=>'Set'});
 Context()->flags->set(formatStudentAnswer=>'parsed');
 $ans = Compute("{$r[0]}");
 
-##############################################
-
-
-
-Context()->texStrings;
-
-BEGIN_TEXT
-
-Solve the equation for \($var\). Enter the solution set using set notation.  For example: \($LBRACE 1,2$RBRACE\).  $PAR
-
-
-\[$left = $right \]
-
-$PAR
-
-If you need to use a square root, type $BBOLD sqrt(23)$EBOLD for \(\sqrt{23}\) (for example). 
-$BR
-If the equation has no solutions, you can still use set notation by entering \($LBRACE$RBRACE\).
-$PAR
-
-The solution set is \{ans_rule(10)\}.
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
+
+
+BEGIN_PGML
+
+Solve the equation for [`[$var]`]. Enter the solution set using set notation.  For example: [`\{1,2\}`].
+
+>>[``[$left] = [$right]``]<<
+
+If you need to use a square root, type *sqrt(23)* for [`\sqrt{23}`] (for example).  
+If the equation has no solutions, you can still use set notation by entering [`\{\}`].
+
+The solution set is [__________].
+
+END_PGML
+
+
+##############################################
+
 
 ANS( $ans->cmp(tolerance=>0));
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -155,6 +149,7 @@ We must check EACH solution when we solve radical equations. We therefore substi
 The first solution [`[$var] = [$r[0]]`] works out fine but the second solution [`[$var] = [$h2]`] does not fulfill the equation [`[$left]=[$right]`]. So the solution set is [`\{[$r[0]]\}`].
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

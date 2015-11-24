@@ -7,25 +7,27 @@
 #       x^(m/n)
 #
 #
-# Last updated: Spoddeck 10/14/15
+# Last updated: Spoddeck 11/1/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionTables.pl",
+  "niceTables.pl",
   "PGML.pl",
   "PGcourse.pl",
 );
 
+
 ##############################################
+
+
 TEXT(beginproblem());
 
 Context("Numeric");
@@ -41,46 +43,36 @@ $display = Formula("$var^($m/$n)");
 
 
 
-Context()->texStrings;
-
-   $ansblanks =
-   BeginTable(center=>0).
-     Row([
-       ans_rule(4).$BR.$BR.$BR,'\(\sqrt{\phantom{\Bigg|}}\)',ans_rule(10)],separation=>2).
-   EndTable();
-
- 
-Context()->normalStrings;
-
-
-
 $ans[0] = Formula("$n");
 $ans[1] = Formula("$var^($m)");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
 Convert the expression to radical notation.  
+To enter [`\sqrt{x}`], type *sqrt(x)*.  
+To enter [`x^y`], type *x^y*.  
+To enter [`|x|`], type *|x|* or *abs(x)*.  
+If a value is not defined as a real number or function, type *DNE* for "does not exist".
 
-\[$display\]
+>>[``[$display]``]<<
 
-$PAR
+[@ LayoutTable(
+[
+[
+[ans_rule(1),cellcss=>'vertical-align:top;'],
+'\(\sqrt{\phantom{\Bigg|}}\)',
+[ans_rule(5),cellcss=>'vertical-align:bottom; border-top: solid black 1px'],
+]
+],
+allcellcss=>'padding:0pt;'
+) @]*
 
-$ansblanks
+END_PGML
 
-
-
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -89,7 +81,9 @@ $showPartialCorrectAnswers = 1;
 ANS( $ans[0]->cmp());
 ANS( $ans[1]->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -102,6 +96,7 @@ When we have fractions as exponents, the numerator indicates the power while the
     ``]
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

@@ -7,13 +7,12 @@
 #       sqrt((-a)^2)
 #
 #
-# Last updated: Spoddeck 10/17/15
+# Last updated: Spoddeck 11/12/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -25,7 +24,10 @@ loadMacros(
   "PGcourse.pl",
 );
 
+
 ##############################################
+
+
 TEXT(beginproblem());
 
 $a = random(1239,19278,1);
@@ -48,30 +50,19 @@ Context()->flags->set(reduceConstants=>0);
 $ans = Formula("$a");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Simplify the expression.  $BR
+Simplify the expression.
 
+>>[``\sqrt{\left(-[$a]\right)^2}``]<<
 
-$PAR
+    [_________________]
 
+END_PGML
 
-\[ \sqrt{\left(-$a\right)^2}\]
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -79,7 +70,9 @@ $showPartialCorrectAnswers = 1;
 
 ANS( $ans->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -93,6 +86,7 @@ In order to simplify the expression, we use that [` \sqrt{x^2} = |x| `].
     ``]
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

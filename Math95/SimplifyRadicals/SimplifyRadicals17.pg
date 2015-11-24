@@ -7,12 +7,12 @@
 #       a*sqrt(27)-b*sqrt(18)
 #
 #
-# Last updated: Spoddeck 10/6/15
+# Last updated: Spoddeck 11/10/15
 # ENDDESCRIPTION
 
 
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -27,6 +27,7 @@ loadMacros(
 
 
 ##############################################
+
 
 $a = random(2,5,1);
 $b = $a+random(1,2,1);
@@ -84,24 +85,20 @@ $stringans = "cannot be combined";
 
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Add or subtract as indicated.  You will need to simplify terms before they can be combined.  If the terms are not like radicals and cannot be combined after you simplify, then type that they $BBOLD cannot be combined $EBOLD. $PAR
+Add or subtract as indicated.  You will need to simplify terms before they can be combined.  If the terms are not like radicals and cannot be combined after you simplify, then type that they *cannot be combined* .
 
-$SPACE $SPACE $SPACE \($expression\) $PAR
+>>[``[$expression]``]<<
 
-If you need to enter a square root symbol, you need to type $BBOLD sqrt$EBOLD and use parentheses to enclose what goes inside the radical.$BR
-For example, type $BBOLD sqrt(3)$EBOLD to enter \(\sqrt{3}\).$BR
-\{ans_rule(20)\}
+If you need to enter a square root symbol, you need to type *sqrt* and use parentheses to enclose what goes inside the radical.  
+For example, type *sqrt(3)* to enter [`\sqrt{3}`].
 
+    [____________________]
 
+END_PGML
 
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -128,7 +125,9 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -146,6 +145,7 @@ We will use prime factorization and combine like radicals:
 After being fully simplified, the radicals are not like radicals and therefore cannot be combined.
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

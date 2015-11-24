@@ -7,12 +7,12 @@
 #       sqrt(d/c)
 #
 #
-# Last updated: Spoddeck 10/5/15
+# Last updated: Spoddeck 11/10/15
 # ENDDESCRIPTION
 
 
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -27,6 +27,7 @@ loadMacros(
 
 
 ##############################################
+
 
 $a = random(3,7,1);
 $b = $a+2;
@@ -66,7 +67,7 @@ $stringans = "$b/$a";
     package main;
 
     ###########################
-    Context("Fraction");
+    Context("LimitedFraction");
 
 
     Context()->variables->are(
@@ -88,24 +89,20 @@ $stringans = "$b/$a";
 
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Simplify the radical expression. $PAR
+Simplify the radical expression.
 
-$SPACE $SPACE $SPACE \($expression\) $PAR
+>>[``[$expression]``]<<
 
-If you need to enter a square root symbol, you need to type $BBOLD sqrt$EBOLD and use parentheses to enclose what goes inside the radical.$BR
-For example, type $BBOLD sqrt(3)$EBOLD to enter \(\sqrt{3}\).$BR
-\{ans_rule(20)\}
+If you need to enter a square root symbol, you need to type *sqrt* and use parentheses to enclose what goes inside the radical.  
+For example, type *sqrt(3)* to enter [`\sqrt{3}`].
 
+    [____________________]
 
+END_PGML
 
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -132,7 +129,9 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -141,11 +140,12 @@ These are the steps to simplify the radical expression:
     [``
 \begin{aligned}
    \sqrt{\frac{[$d]}{[$c]}} &= \sqrt{\frac{[$b]^2}{[$a]^2}} \\
-                                      &= \sqrt{\frac{[$b]}{[$a]}} \\
+                                      &= \frac{[$b]}{[$a]} \\
 \end{aligned}
     ``]
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

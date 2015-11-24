@@ -7,12 +7,12 @@
 #       (e*sqrt(x)+a)(sqrt(x)+b)
 #
 #
-# Last updated: Spoddeck 10/7/15
+# Last updated: Spoddeck 11/10/15
 # ENDDESCRIPTION
 
 
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -27,6 +27,7 @@ loadMacros(
 
 
 ##############################################
+
 
 $e = random(2,4,1);
 $a = non_zero_random(-10,10,1);
@@ -88,24 +89,20 @@ $stringans = "$e x+$c sqrt(x)+$d";
 
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Multiply and simplify the radical expression. $PAR
+Multiply and simplify the radical expression.
 
-$SPACE $SPACE $SPACE \($expression\) $PAR
+>>[``[$expression]``]<<
 
-If you need to enter a square root symbol, you need to type $BBOLD sqrt$EBOLD and use parentheses to enclose what goes inside the radical.$BR
-For example, type $BBOLD sqrt(3)$EBOLD to enter \(\sqrt{3}\).$BR
-\{ans_rule(20)\}
+If you need to enter a square root symbol, you need to type *sqrt* and use parentheses to enclose what goes inside the radical.  
+For example, type *sqrt(3)* to enter [`\sqrt{3}`].
 
+    [____________________]
 
+END_PGML
 
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -132,7 +129,9 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+
 ##############################################
+
 
 # If the resulting coefficient is one, it should not appear as part of the final answer
 if ($c==1) {
@@ -195,6 +194,7 @@ We will use the FOIL method and combine like radicals:
 END_PGML_SOLUTION
 
 }
+
 
 ##############################################
 

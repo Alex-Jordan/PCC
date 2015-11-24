@@ -7,12 +7,12 @@
 #       CubeRoot(x-a) = b               b is negative
 #
 #
-# Last updated: Spoddeck 09/27/15
+# Last updated: Spoddeck 11/12/15
 # ENDDESCRIPTION
 
 
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -24,9 +24,11 @@ loadMacros(
   "PGcourse.pl",
 );
 
-TEXT(beginproblem());
 
 ##############################################
+
+
+TEXT(beginproblem());
 
 Context("Fraction");
 $var = list_random('a','b','c','d','h','k','m','n','p','q','r','t','v','w','x','y','z');
@@ -47,39 +49,32 @@ Context()->parens->set('{'=>{type=>'Set'});
 Context()->flags->set(formatStudentAnswer=>'parsed');
 $ans = Compute("{$r[0]}");
 
-##############################################
-
-
-
-Context()->texStrings;
-
-BEGIN_TEXT
-
-Solve the equation for \($var\). Enter the solution set using set notation.  For example: \($LBRACE 1,2$RBRACE\).  $PAR
-
-
-\[$left = $right \]
-
-$PAR
-
-If you need to use a square root, type $BBOLD sqrt(23)$EBOLD for \(\sqrt{23}\) (for example). 
-$BR
-If the equation has no solutions, you can still use set notation by entering \($LBRACE$RBRACE\).
-$PAR
-
-The solution set is \{ans_rule(10)\}.
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
+
+
+BEGIN_PGML
+
+Solve the equation for [`[$var]`]. Enter the solution set using set notation.  For example: [`\{1,2\}`].
+
+>>[``[$left] = [$right]``]<<
+
+If you need to use a square root, type *sqrt(23)* for [`\sqrt{23}`] (for example).  
+If the equation has no solutions, you can still use set notation by entering [`\{\}`].
+
+The solution set is [__________].
+
+END_PGML
+
+
+##############################################
+
 
 ANS( $ans->cmp(tolerance=>0));
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -109,6 +104,7 @@ We must check our solutions when we solve radical equations. We therefore substi
 That is true, so the solution set is [`\{[$r[0]]\}`].
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

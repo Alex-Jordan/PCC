@@ -7,13 +7,12 @@
 #       n-th-root(n-th-root(x))
 #
 #
-# Last updated: Spoddeck 10/15/15
+# Last updated: Spoddeck 11/12/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -28,7 +27,10 @@ loadMacros(
   "PGcourse.pl",
 );
 
+
 ##############################################
+
+
 TEXT(beginproblem());
 
 $n = random(3,6,1);
@@ -60,29 +62,19 @@ Context()->operators->set(
 $ans = Formula("($var^($m))");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Simplify the expression and write it using a single exponent.  For this problem you may assume that all variables are positive.$BR
+Simplify the expression and write it using a single exponent.  For this problem you may assume that all variables are positive.
 
+>>[``\sqrt[[$n]]{\sqrt[[$n]]{[$var]}}``]<<
 
-$PAR
+    [_________________]
 
+END_PGML
 
-\[ \sqrt[$n]{\sqrt[$n]{$var}}\]
-
-$PAR
-
-\{ans_rule(10)\}
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -103,7 +95,9 @@ ANS($ans -> cmp(
       return 1;
 }));
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 

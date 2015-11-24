@@ -7,12 +7,12 @@
 #       F = 1/(2pi*sqrt(LC))     solve for C
 #
 #
-# Last updated: Spoddeck 09/29/15
+# Last updated: Spoddeck 11/12/15
 # ENDDESCRIPTION
 
 
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -24,9 +24,11 @@ loadMacros(
   "PGcourse.pl",
 );
 
-TEXT(beginproblem());
 
 ##############################################
+
+
+TEXT(beginproblem());
 
 Context("Numeric");
 Context()->variables->are(F=>'Real',L=>'Real',C=>'Real');
@@ -36,36 +38,31 @@ $right = Formula("1/(2 pi sqrt(L C))");
 
 $ans = Formula("1/(4 pi^2 F^2 L)");
 
-##############################################
-
-
-
-Context()->texStrings;
-
-BEGIN_TEXT
-
-Solve the equation for \(C\). 
-
-\[$left = $right \]
-
-$PAR
-
-If you need to use a square root, type $BBOLD sqrt(23)$EBOLD for \(\sqrt{23}\) (for example).  To enter \(\pi\), type $BBOLD pi$EBOLD.
-$PAR
-
-$SPACE $SPACE $SPACE \(C = \) $SPACE \{ans_rule(20)\}.
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
+
+
+BEGIN_PGML
+
+Solve the equation for [`C`].
+
+>>[``[$left] = [$right]``]<<
+
+If you need to use a square root, type *sqrt(23)* for [`\sqrt{23}`] (for example). To enter [`\pi`], type *pi*.
+
+    [`C = `] [____________________].
+
+END_PGML
+
+
+##############################################
+
 
 ANS( $ans->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -103,6 +100,7 @@ Since we want to solve for [`C`], we need to divide by [`F^2`]. Since we have a 
 So [`C=[$ans]`] is the solution to [`[$left]=[$right]`].
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

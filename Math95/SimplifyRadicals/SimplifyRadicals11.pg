@@ -7,13 +7,12 @@
 #       b*sqrt(a)+c*sqrt(a)
 #
 #
-# Last updated: Spoddeck 10/6/15
+# Last updated: Spoddeck 11/10/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -28,6 +27,7 @@ loadMacros(
 
 
 ##############################################
+
 
 $a = list_random(2,3,5,6,7,10);
 $b = random(4,10,1);
@@ -87,24 +87,20 @@ $stringans = "$d sqrt($a)";
 
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Add or subtract as indicated.  If the terms are not like radicals and cannot be combined, then type that they $BBOLD cannot be combined $EBOLD. $PAR
+Add or subtract as indicated. If the terms are not like radicals and cannot be combined, then type that they *cannot be combined* .
 
-$SPACE $SPACE $SPACE \($expression\) $PAR
+>>[``[$expression]``]<<
 
-If you need to enter a square root symbol, you need to type $BBOLD sqrt$EBOLD and use parentheses to enclose what goes inside the radical.$BR
-For example, type $BBOLD sqrt(3)$EBOLD to enter \(\sqrt{3}\).$BR
-\{ans_rule(20)\}
+If you need to enter a square root symbol, you need to type *sqrt* and use parentheses to enclose what goes inside the radical.  
+For example, type *sqrt(3)* to enter [`\sqrt{3}`].
 
+    [____________________]
 
+END_PGML
 
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -131,7 +127,9 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -144,6 +142,7 @@ In the same way, we can combine like radicals:
     [`` [$b]\sqrt{[$a]}+[$c]\sqrt{[$a]}=[$b+$c]\sqrt{[$a]} ``]
 
 END_PGML_SOLUTION
+
 
 ##############################################
 
