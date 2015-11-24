@@ -7,13 +7,12 @@
 #       x^(a/b)(x^(1/b)+x^(-1/b))
 #
 #
-# Last updated: Spoddeck 10/17/15
+# Last updated: Spoddeck 11/12/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -26,7 +25,10 @@ loadMacros(
   "PGcourse.pl",
 );
 
+
 ##############################################
+
+
 TEXT(beginproblem());
 
 $a = random(2,10,1);
@@ -53,30 +55,19 @@ Context()->variables->set($var=>{limits=>[1,6]});
 $ans = Formula("$var^($m[2])+$var^($m[3])");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Simplify the expression.  For this problem you may assume that all variables are positive.$BR
+Simplify the expression.  For this problem you may assume that all variables are positive.
 
+>>[``[$var]^{[$m[0]]}\left([$var]^{[$m[1]]}+[$var]^{-[$m[1]]}\right)``]<<
 
-$PAR
+    [_________________]
 
+END_PGML
 
-\[ $var^{$m[0]}\left($var^{$m[1]}+$var^{-$m[1]}\right)\]
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -84,7 +75,9 @@ $showPartialCorrectAnswers = 1;
 
 ANS( $ans->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -101,6 +94,7 @@ We distribute [`[$var]^{[$m[0]]}`]. Then we use the exponent property that [` x^
     ``]
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

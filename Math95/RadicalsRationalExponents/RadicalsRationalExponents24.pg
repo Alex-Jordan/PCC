@@ -8,13 +8,12 @@
 #       sqrt(x)n-th-root(x)
 #
 #
-# Last updated: Spoddeck 10/15/15
+# Last updated: Spoddeck 11/12/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -27,7 +26,10 @@ loadMacros(
   "PGcourse.pl",
 );
 
+
 ##############################################
+
+
 TEXT(beginproblem());
 
 $n = random(3,10,1);
@@ -51,30 +53,19 @@ Context()->functions->undefine('sqrt','abs');
 $ans = Formula("$var^($m)");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Simplify the expression.  For this problem you may assume that all variables are positive.$BR
+Simplify the expression.  For this problem you may assume that all variables are positive.
 
+>>[``\sqrt{[$var]}\sqrt[[$n]]{[$var]}``]<<
 
-$PAR
+    [_________________]
 
+END_PGML
 
-\[ \sqrt{$var}\sqrt[$n]{$var}\]
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -82,7 +73,9 @@ $showPartialCorrectAnswers = 1;
 
 ANS( $ans->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -101,6 +94,7 @@ We rewrite the expression using rational exponents [` \sqrt[n]{x^m} = x^\frac{m}
 If the fraction in the exponent is not fully simplified after the last step, make sure to reduce it to its lowest terms.
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

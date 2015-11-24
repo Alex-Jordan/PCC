@@ -7,13 +7,12 @@
 #       sqrt(a^2x^(4b))
 #
 #
-# Last updated: Spoddeck 10/15/15
+# Last updated: Spoddeck 11/11/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -25,7 +24,9 @@ loadMacros(
   "PGcourse.pl",
 );
 
+
 ##############################################
+
 
 Context("Numeric");
 $var = list_random('x','y','z','t','r','m','n','a','b','c');
@@ -48,30 +49,19 @@ LimitedPowers::OnlyIntegers();
 $ans = Formula("$a $var^($b2)");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Simplify the expression.  For this problem you may assume that all variables are positive.$BR
+Simplify the expression.  For this problem you may assume that all variables are positive.
 
+>>[``[$display]``]<<
 
-$PAR
+    [_________________]
 
+END_PGML
 
-\[ $display \]
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -79,7 +69,9 @@ $showPartialCorrectAnswers = 1;
 
 ANS( $ans->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -98,6 +90,7 @@ We rewrite the expression using rational exponents [` \sqrt[n]{x^m} = x^\frac{m}
 So the answer in calculator/WeBWorK notation is [`[$a][$var]`]^[`[$b*2]`].
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

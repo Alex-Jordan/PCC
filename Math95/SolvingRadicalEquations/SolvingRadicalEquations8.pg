@@ -7,12 +7,12 @@
 #       sqrt(ax+b)+sqrt(x) = c
 #
 #
-# Last updated: Spoddeck 09/30/15
+# Last updated: Spoddeck 11/12/15
 # ENDDESCRIPTION
 
 
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -24,9 +24,11 @@ loadMacros(
   "PGcourse.pl",
 );
 
-TEXT(beginproblem());
 
 ##############################################
+
+
+TEXT(beginproblem());
 
 Context("Numeric");
 $var = list_random('a','b','c','d','h','k','m','n','p','q','r','t','v','w','x','y','z');
@@ -42,14 +44,12 @@ $B = -($h1*$h2*2+$b*4);       # for solving the quadratic formula
 $C = $h1**2;                # for solving the quadratic formula
 $h3 = sqrt($B**2-$A*$C*4);      # helper variable for solving the quadratic formula
 
-
 $left = Formula("sqrt($a $var+$b)+sqrt($var)")->reduce;
 $right = Formula("$c")->reduce;
 
 Context()->flags->set(reduceConstantFunctions=>0);
 $r[0] = Formula("(-2*($a-1)*($b-$c**2)+4*$c**2+sqrt((2*($a-1)*($b-$c**2)-4*$c**2)**2-4*($a-1)**2*($b-$c**2)**2))/(2*($a-1)**2)");
 $r[1] = Formula("(-2*($a-1)*($b-$c**2)+4*$c**2-sqrt((2*($a-1)*($b-$c**2)-4*$c**2)**2-4*($a-1)**2*($b-$c**2)**2))/(2*($a-1)**2)");
-
 $d[0] = sprintf("%0.5f",(-$B+$h3)/($A*2));            # solution as decimal
 $d[1] = sprintf("%0.5f",(-$B-$h3)/($A*2));            # solution as decimal
 
@@ -63,7 +63,6 @@ $h4[$i] = sprintf("%0.5f",sqrt($a*$d[$i]+$b));         # helper variable to chec
 $h5[$i] = sprintf("%0.5f",sqrt($d[$i]));                    # helper variable to check solutions
 }
 
-
 Context("Interval");
 Context()->parens->set('{'=>{type=>'Set'});
 Context()->flags->set(formatStudentAnswer=>'parsed');
@@ -75,39 +74,32 @@ if (sqrt($a*$r[1]+$b)+sqrt($r[1]) == $c)
 else {$ans = Union("$ans U {}");};
 $ans = $ans->reduce;
 
-##############################################
-
-
-
-Context()->texStrings;
-
-BEGIN_TEXT
-
-Solve the equation for \($var\). Round your answer to five decimal places. Enter the solution set using set notation. For example: \($LBRACE 1,2$RBRACE\).  $PAR
-
-
-\[$left = $right \]
-
-$PAR
-
-If you need to use a square root, type $BBOLD sqrt(23)$EBOLD for \(\sqrt{23}\) (for example). 
-$BR
-If the equation has no solutions, you can still use set notation by entering \($LBRACE$RBRACE\).
-$PAR
-
-The solution set is \{ans_rule(50)\}.
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
+
+
+BEGIN_PGML
+
+Solve the equation for [`[$var]`]. Enter the solution set using set notation.  For example: [`\{1,2\}`].
+
+>>[``[$left] = [$right]``]<<
+
+If you need to use a square root, type *sqrt(23)* for [`\sqrt{23}`] (for example).  
+If the equation has no solutions, you can still use set notation by entering [`\{\}`].
+
+The solution set is [__________].
+
+END_PGML
+
+
+##############################################
+
 
 ANS( $ans->cmp(tolerance=>0.000001));
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -187,6 +179,7 @@ We must check EACH solution when we solve radical equations. We therefore substi
 The first solution [`[$var] = [$d[0]]`] does not work out but the second solution [`[$var] = [$d[1]]`] does fulfill the equation [`[$left]=[$right]`]. So the solution set is [`\{[$d[1]]\}`].
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

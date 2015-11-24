@@ -7,13 +7,12 @@
 #       cuberoot(a^3x^2)
 #
 #
-# Last updated: Spoddeck 10/14/15
+# Last updated: Spoddeck 11/11/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -25,7 +24,10 @@ loadMacros(
   "PGcourse.pl",
 );
 
+
 ##############################################
+
+
 TEXT(beginproblem());
 
 Context("Numeric");
@@ -46,33 +48,23 @@ Context()->flags->set(limits=>[2,5]);
 $ans = Formula("$a $var^(2/3)");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Use rational exponents to write the expression.  $BR
-To enter \(\sqrt{x}\), type $BBOLD sqrt(x)$EBOLD. $BR
-To enter \(x^y\), type $BBOLD x$CARET\(\)y$EBOLD. $BR
-To enter \(|x|\), type $BBOLD |x|$EBOLD or $BBOLD abs(x)$EBOLD. $BR
-If a value is not defined as a real number or function, type $BBOLD DNE$EBOLD for "does not exist".
+Use rational exponents to write the expression.  
+To enter [`\sqrt{x}`], type *sqrt(x)*.  
+To enter [`x^y`], type *x^y*.  
+To enter [`|x|`], type *|x|* or *abs(x)*.  
+If a value is not defined as a real number or function, type *DNE* for "does not exist".
 
-$PAR
+>>[``\sqrt[3]{[$a3][$var]^2}``]<<
 
+    [_________________]
 
-\[ \sqrt[3]{$a3 $var^2} \]
+END_PGML
 
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -80,7 +72,9 @@ $showPartialCorrectAnswers = 1;
 
 ANS( $ans->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -97,6 +91,7 @@ We first use radical properties to simplify. Then we rewrite the expression usin
 So the answer in calculator/WeBWorK notation is [`[$a][$var]`]^(2/3).
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

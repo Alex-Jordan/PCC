@@ -7,12 +7,12 @@
 #       sqrt(c)-sqrt(b)
 #
 #
-# Last updated: Spoddeck 10/6/15
+# Last updated: Spoddeck 11/10/15
 # ENDDESCRIPTION
 
 
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -27,6 +27,7 @@ loadMacros(
 
 
 ##############################################
+
 
 $a = list_random(2,3,5,6,7,10);
 
@@ -89,25 +90,20 @@ $stringans = "$d sqrt($b)";
 
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
+Add or subtract as indicated.  You will need to simplify terms before they can be combined.  If the terms are not like radicals and cannot be combined after you simplify, then type that they *cannot be combined* .
 
-Add or subtract as indicated.  You will need to simplify terms before they can be combined.  If the terms are not like radicals and cannot be combined after you simplify, then type that they $BBOLD cannot be combined $EBOLD. $PAR
+>>[``[$expression]``]<<
 
-$SPACE $SPACE $SPACE \($expression\) $PAR
+If you need to enter a square root symbol, you need to type *sqrt* and use parentheses to enclose what goes inside the radical.  
+For example, type *sqrt(3)* to enter [`\sqrt{3}`].
 
-If you need to enter a square root symbol, you need to type $BBOLD sqrt$EBOLD and use parentheses to enclose what goes inside the radical.$BR
-For example, type $BBOLD sqrt(3)$EBOLD to enter \(\sqrt{3}\).$BR
-\{ans_rule(20)\}
+    [____________________]
 
+END_PGML
 
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -134,7 +130,9 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+
 ##############################################
+
 
 # If the resulting coefficient is one, it should not appear as part of the final answer
 if (d==1) {
@@ -174,6 +172,7 @@ We will use prime factorization and combine like radicals:
 END_PGML_SOLUTION
 
 }
+
 
 ##############################################
 

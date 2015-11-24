@@ -7,12 +7,12 @@
 #       a/(c-sqrt(x))
 #
 #
-# Last updated: Spoddeck 10/7/15
+# Last updated: Spoddeck 11/11/15
 # ENDDESCRIPTION
 
 
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -27,6 +27,7 @@ loadMacros(
 
 
 ##############################################
+
 
 $a = random(5,15,1);
 #$b = list_random(2,3,5,6,7,10);
@@ -88,24 +89,20 @@ $stringans = "($d+$a*sqrt(x))/($e-x)";
 
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Rationalize the denominator of the radical expression and make sure your answer is simplified. $PAR
+Rationalize the denominator of the radical expression and make sure your answer is simplified.
 
-$SPACE $SPACE $SPACE \($expression\) $PAR
+>>[``[$expression]``]<<
 
-If you need to enter a square root symbol, you need to type $BBOLD sqrt$EBOLD and use parentheses to enclose what goes inside the radical.$BR
-For example, type $BBOLD sqrt(3)$EBOLD to enter \(\sqrt{3}\).$BR
-\{ans_rule(20)\}
+If you need to enter a square root symbol, you need to type *sqrt* and use parentheses to enclose what goes inside the radical.  
+For example, type *sqrt(3)* to enter [`\sqrt{3}`].
 
+    [______________________________]
 
+END_PGML
 
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -132,7 +129,9 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -153,6 +152,7 @@ This will help us get rid of the radical in the denominator by multiplying with 
 
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

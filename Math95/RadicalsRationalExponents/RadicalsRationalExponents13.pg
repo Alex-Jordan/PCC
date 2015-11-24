@@ -7,13 +7,12 @@
 #       n-th-root(x)n-th-root(x)
 #
 #
-# Last updated: Spoddeck 10/14/15
+# Last updated: Spoddeck 11/11/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -25,7 +24,10 @@ loadMacros(
   "PGcourse.pl",
 );
 
+
 ##############################################
+
+
 TEXT(beginproblem());
 
 Context("Numeric");
@@ -44,33 +46,23 @@ Context()->functions->undefine('sqrt','abs');
 $ans = Formula("$var^(2/$n)");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Use rational exponents to write the expression.  $BR
-To enter \(\sqrt{x}\), type $BBOLD sqrt(x)$EBOLD. $BR
-To enter \(x^y\), type $BBOLD x$CARET\(\)y$EBOLD. $BR
-To enter \(|x|\), type $BBOLD |x|$EBOLD or $BBOLD abs(x)$EBOLD. $BR
-If a value is not defined as a real number or function, type $BBOLD DNE$EBOLD for "does not exist".
+Use rational exponents to write the expression.  
+To enter [`\sqrt{x}`], type *sqrt(x)*.  
+To enter [`x^y`], type *x^y*.  
+To enter [`|x|`], type *|x|* or *abs(x)*.  
+If a value is not defined as a real number or function, type *DNE* for "does not exist".
 
-$PAR
+>>[``\sqrt[[$n]]{[$var]}\sqrt[[$n]]{[$var]}``]<<
 
+    [_________________]
 
-\[ \sqrt[$n]{$var}\sqrt[$n]{$var} \]
+END_PGML
 
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -78,7 +70,9 @@ $showPartialCorrectAnswers = 1;
 
 ANS( $ans->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -95,6 +89,7 @@ We can rewrite this expression using rational exponents [` \sqrt[n]{x^m} = x^\fr
 So the answer in calculator/WeBWorK notation is [`[$var]`]^(2/[`[$n]`]).
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

@@ -7,13 +7,12 @@
 #       (a^n/x^(2n))^(-1/n)
 #
 #
-# Last updated: Spoddeck 10/14/15
+# Last updated: Spoddeck 11/11/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -26,7 +25,10 @@ loadMacros(
   "PGcourse.pl",
 );
 
+
 ##############################################
+
+
 TEXT(beginproblem());
 
 $n = random(3,6,1);
@@ -55,30 +57,19 @@ Context()->functions->undefine('sqrt');
 $ans = Formula("$var^(2)/($a)");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Simplify the expression.  For this problem you may assume that all variables are positive.$BR
+Simplify the expression.  For this problem you may assume that all variables are positive.
 
+>>[``\left(\frac{[$an]}{[$var]^{[$n2]}}\right)^{[$m]}``]<<
 
-$PAR
+    [_________________]
 
+END_PGML
 
-\[ \left(\frac{$an}{$var^{$n2}}\right)^{$m}\]
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -86,7 +77,9 @@ $showPartialCorrectAnswers = 1;
 
 ANS( $ans->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -104,6 +97,7 @@ We use the exponent property that [` \left(x^m\right)^n = x^{m\cdot n} `].
     ``]
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

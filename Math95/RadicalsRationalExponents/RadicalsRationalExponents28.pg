@@ -7,13 +7,12 @@
 #       sqrt(x^(4n))
 #
 #
-# Last updated: Spoddeck 10/17/15
+# Last updated: Spoddeck 11/12/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -25,7 +24,10 @@ loadMacros(
   "PGcourse.pl",
 );
 
+
 ##############################################
+
+
 TEXT(beginproblem());
 
 $n = random(1,10,1);
@@ -49,30 +51,19 @@ LimitedPowers::OnlyIntegers();
 $ans = Formula("$var^($n2)");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Simplify the expression.  For this problem you may assume that all variables are positive.$BR
+Simplify the expression.  For this problem you may assume that all variables are positive.
 
+>>[``\sqrt{[$var]^{[$n4]}}``]<<
 
-$PAR
+    [_________________]
 
+END_PGML
 
-\[ \sqrt{$var^{$n4}}\]
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -80,7 +71,9 @@ $showPartialCorrectAnswers = 1;
 
 ANS( $ans->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -97,6 +90,7 @@ In order to simplify the expression, we use that [` \sqrt{x^2} = |x| `]. However
 The reason that we do not need the absolute value at the end is that [`[$var]^{[$n*2]}`] has an even-numbered exponent and is therefore always positive.
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

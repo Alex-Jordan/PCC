@@ -7,13 +7,12 @@
 #       1/n-th-root(bx+a)
 #
 #
-# Last updated: Spoddeck 10/20/15
+# Last updated: Spoddeck 11/12/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -27,6 +26,8 @@ loadMacros(
 
 
 ##############################################
+
+
 TEXT(beginproblem());
 
 Context("Numeric");
@@ -44,26 +45,21 @@ Context("Interval");
 $answer = Compute("(-inf,$r)U($r,inf)");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
-Find the domain of the function \(f\) where
+BEGIN_PGML
 
-\[f(x)=$f\]
+Find the domain of the function [`f`] where
 
-$PAR
-Express the domain in interval notation. To enter infinity, type $BBOLD inf$EBOLD. To enter the union symbol, type $BBOLD U$EBOLD. $BR
+>>[``f(x)=[$f]``]<<
 
-\{ans_rule(15)\}
+Express the domain in interval notation. To enter infinity, type *inf*. To enter [`\cup`], type the capital letter *U*.
 
+    [__________]
 
+END_PGML
 
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -71,7 +67,9 @@ $showPartialCorrectAnswers = 1;
 
 ANS($answer->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -90,6 +88,7 @@ For this function, the domain is restricted only by the fraction. The denominato
 With the exception that [`x\neq[$r]`], all real numbers are part of the domain. In interval notation, the domain can be written as [`\left(-\infty,[$r]\right)\cup\left([$r],\infty\right)`]. In WeBWorK, we enter the answer as [`\left(-\text{inf},[$r]\right)\text{U}\left([$r],\text{inf}\right)`].
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

@@ -7,13 +7,12 @@
 #       sqrt(a^2x)/cuberoot(x^2)
 #
 #
-# Last updated: Spoddeck 10/14/15
+# Last updated: Spoddeck 11/11/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -21,12 +20,14 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextLimitedPowers.pl",
-  "unionTables.pl",
   "PGML.pl",
   "PGcourse.pl",
 );
 
+
 ##############################################
+
+
 TEXT(beginproblem());
 
 Context("Numeric");
@@ -48,37 +49,23 @@ $ans[0] = Formula("$a");
 $ans[1] = Formula("-1/6");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Use rational exponents to write the expression.  $BR
-To enter \(\sqrt{x}\), type $BBOLD sqrt(x)$EBOLD. $BR
-To enter \(x^y\), type $BBOLD x$CARET\(\)y$EBOLD. $BR
-To enter \(|x|\), type $BBOLD |x|$EBOLD or $BBOLD abs(x)$EBOLD. $BR
-If a value is not defined as a real number or function, type $BBOLD DNE$EBOLD for "does not exist".
+Use rational exponents to write the expression.  
+To enter [`\sqrt{x}`], type *sqrt(x)*.  
+To enter [`x^y`], type *x^y*.  
+To enter [`|x|`], type *|x|* or *abs(x)*.  
+If a value is not defined as a real number or function, type *DNE* for "does not exist".
 
-$PAR
+>>[``\frac{\sqrt{[$a2][$var]}}{\sqrt[3]{[$var]^2}}``]<<
 
+    [_______] [`[$var]`]^[____________]
 
-\[ \frac{\sqrt{$a2 $var}}{\sqrt[3]{$var^2}} \]
+END_PGML
 
-$PAR
-
-
-\{
-   BeginTable(center=>0).
-     Row([ans_rule(4),'\('.$var.'\)',ans_rule(5).$BR.$BR],separation=>2).
-   EndTable();\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -87,7 +74,9 @@ $showPartialCorrectAnswers = 1;
 ANS( $ans[0]->cmp());
 ANS( $ans[1]->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -114,6 +103,7 @@ We now use the properties of exponents and subtracting fractions:
     ``]
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

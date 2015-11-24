@@ -7,13 +7,12 @@
 #       sqrt(a)*sqrt(c)
 #
 #
-# Last updated: Spoddeck 10/5/15
+# Last updated: Spoddeck 11/10/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -89,23 +88,20 @@ $stringans = "$a sqrt($b)";
 
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
-Multiply, and simplify if possible. $PAR
+BEGIN_PGML
 
-$SPACE $SPACE $SPACE \($expression\) $PAR
+Simplify the radical expression.
 
-If you need to enter a square root symbol, you need to type $BBOLD sqrt$EBOLD and use parentheses to enclose what goes inside the radical.$BR
-For example, type $BBOLD sqrt(3)$EBOLD to enter \(\sqrt{3}\).$BR
-\{ans_rule(20)\}
+>>[``[$expression]``]<<
 
+If you need to enter a square root symbol, you need to type *sqrt* and use parentheses to enclose what goes inside the radical.  
+For example, type *sqrt(3)* to enter [`\sqrt{3}`].
 
+    [____________________]
 
+END_PGML
 
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -132,7 +128,9 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -149,6 +147,8 @@ We use the multiplication property of radicals and prime factorization:
 
 END_PGML_SOLUTION
 
+
 ##############################################
+
 
 ENDDOCUMENT();

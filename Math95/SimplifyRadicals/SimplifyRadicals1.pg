@@ -7,13 +7,12 @@
 #       sqrt(a) * sqrt(b)
 #
 #
-# Last updated: Spoddeck 10/4/15
+# Last updated: Spoddeck 11/10/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -28,6 +27,7 @@ loadMacros(
 
 
 ##############################################
+
 
 $a = random(2,20,1);
 while ((round($a/4)*4 == $a) || (round($a/9)*9 == $a))
@@ -90,26 +90,22 @@ $stringans = "sqrt($c)";
     $ans = Compute($stringans);
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
-Simplify the expression. $PAR
+BEGIN_PGML
 
-$SPACE $SPACE $SPACE \($expression\) $PAR
+Simplify the radical expression.
 
-If you need to enter a square root symbol, you need to type $BBOLD sqrt$EBOLD and use parentheses to enclose what goes inside the radical.$BR
-For example, type $BBOLD sqrt(3)$EBOLD to enter \(\sqrt{3}\).$BR
-\{ans_rule(20)\}
+>>[``[$expression]``]<<
 
+If you need to enter a square root symbol, you need to type *sqrt* and use parentheses to enclose what goes inside the radical.  
+For example, type *sqrt(3)* to enter [`\sqrt{3}`].
 
+    [____________________]
 
+END_PGML
 
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -136,7 +132,9 @@ ANS($ans->cmp(typeMatch=>Formula("1"),
       return $OK;
     },formatStudentAnswer=>"reduced"));
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -156,6 +154,7 @@ These are the steps to simplify the expression:
 [`\sqrt{[$a*$b]}`] is the answer since it is not a square number and has no square number as a factor.
 
 END_PGML_SOLUTION
+
 
 ##############################################
 

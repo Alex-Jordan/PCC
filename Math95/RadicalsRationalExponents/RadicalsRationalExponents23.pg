@@ -7,13 +7,12 @@
 #       (x^(-b/a))^(a/b)
 #
 #
-# Last updated: Spoddeck 10/14/15
+# Last updated: Spoddeck 11/12/15
 # ENDDESCRIPTION
 
 
-
-
 ##############################################
+
 
 DOCUMENT();
 
@@ -25,7 +24,10 @@ loadMacros(
   "PGcourse.pl",
 );
 
+
 ##############################################
+
+
 TEXT(beginproblem());
 
 Context("Numeric");
@@ -50,30 +52,19 @@ LimitedPowers::OnlyIntegers();
 $ans = Formula("1/$var");
 
 
-
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
+BEGIN_PGML
 
-Simplify the expression.  For this problem you may assume that all variables are positive.$BR
+Simplify the expression.  For this problem you may assume that all variables are positive.
 
+>>[``[$display]``]<<
 
-$PAR
+    [_________________]
 
+END_PGML
 
-\[ $display \]
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-
-
-END_TEXT
-
-Context()->normalStrings;
 
 ##############################################
 $showPartialCorrectAnswers = 1;
@@ -81,7 +72,9 @@ $showPartialCorrectAnswers = 1;
 
 ANS( $ans->cmp());
 
+
 ##############################################
+
 
 BEGIN_PGML_SOLUTION
 
@@ -97,6 +90,7 @@ We use the exponent property that [` \left(x^m\right)^n = x^{m\cdot n} `].
     ``]
 
 END_PGML_SOLUTION
+
 
 ##############################################
 
