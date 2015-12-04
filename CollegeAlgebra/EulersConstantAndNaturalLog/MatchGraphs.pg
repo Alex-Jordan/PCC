@@ -84,7 +84,7 @@ $ml->choose(3);
 
 BEGIN_PGML
 
-The graphs of [`f(x)=[@$b[0]@]^x`], [`g(x)=e^x`], and [`h(x)=[@$b[2]@]`] are shown below.
+The graphs of [`f(x)=[@$b[0]@]^x`], [`g(x)=e^x`], and [`h(x)=[@$b[2]@]^x`] are shown below.
 
 [@EnlargeImageStatementPGML()@]**
 
