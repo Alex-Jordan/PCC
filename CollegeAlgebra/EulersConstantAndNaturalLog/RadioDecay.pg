@@ -107,8 +107,6 @@ ANS( $ans1->cmp() );
 
 ANS( NumberWithUnits($ans2, "mg")->cmp );
 
-Context()->flags->set(tolType=>absolute,tolerance=>1);
-
-ANS( NumberWithUnits($ans3, "yr")->cmp );
+ANS( NumberWithUnits($ans3, "yr")->cmp(tolType=>absolute,tolerance=>1) );
 
 ENDDOCUMENT();
