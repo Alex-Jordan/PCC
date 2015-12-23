@@ -81,7 +81,7 @@ $ECENTER
 $PAR
 Our answer should be in $DOLLAR\(\)'s.  Using technology we find,
 $PAR
-\(\text{E}(X)=\mu = ($b1*$c1)+($b2*$c2)+($b3*$c3) \approx $ans\) 
+\(\text{E}(X)=\mu = (0*$left)+($b1*$c1)+($b2*$c2)+($b3*$c3) \approx $ans\) 
 END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
