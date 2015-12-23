@@ -7,7 +7,7 @@
 #       sqrt(ax+b)+sqrt(x) = c
 #
 #
-# Last updated: Spoddeck 11/12/15
+# Last updated: Spoddeck 12/22/15
 # ENDDESCRIPTION
 
 
@@ -20,6 +20,7 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",  
   "contextFraction.pl",
+  "PCCmacros.pl",
   "PGML.pl",
   "PGcourse.pl",
 );
@@ -31,7 +32,7 @@ loadMacros(
 TEXT(beginproblem());
 
 Context("Numeric");
-$var = list_random('a','b','c','d','h','k','m','n','p','q','r','t','v','w','x','y','z');
+$var = RandomVariableName(type=>'variable');
 Context()->variables->are($var=>'Real');
 
 $a = random(4,12,1);
@@ -87,15 +88,9 @@ Solve the equation for [`[$var]`]. Enter the solution set using set notation.  F
 If you need to use a square root, type *sqrt(23)* for [`\sqrt{23}`] (for example).  
 If the equation has no solutions, you can still use set notation by entering [`\{\}`].
 
-The solution set is [__________].
+The solution set is [__________]{$ans->cmp(tolerance=>0.001)}.
 
 END_PGML
-
-
-##############################################
-
-
-ANS( $ans->cmp(tolerance=>0.000001));
 
 
 ##############################################
