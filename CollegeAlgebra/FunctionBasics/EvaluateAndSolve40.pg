@@ -85,7 +85,6 @@ Context()->texStrings;
 
 BEGIN_TEXT
 
-$BCENTER
 If \($f\) is a function defined by \($f($var) = $function\),$PAR
 
 \{
@@ -93,11 +92,10 @@ LayoutTable(
 [["Find \($f(0)\).",ans_rule(25)],
 ["Solve \($f($var)=0\).",ans_rule(25)]],
 allcellcss=>"padding:6pt; text-align:left;",
+center=>0,
 );
 \}
 
-
-$ECENTER
 
 Remember that when you are asked to solve an equation for \($var\), the answer should be in the form $BBOLD $var=23$EBOLD, and not simply give the numerical value of the solution, like 23.  If there are two solutions, use the word $BBOLD or$EBOLD, as in $BBOLD $var=23 or $var=12$EBOLD.  If you need to use the square root sign, as in \(\sqrt{23}\), type it as $BBOLD sqrt(23)$EBOLD.
 
