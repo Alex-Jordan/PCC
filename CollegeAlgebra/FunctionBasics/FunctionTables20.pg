@@ -126,8 +126,21 @@ $inverse{4} = 4;
 
 $xmin = -5;
 $xmax = -$xmin;
-$ymin = -10;
-$ymax = 10;
+$ymax = round(max(
+abs((2**($xmin) + $a[0]) / ($xmin**2 + $b[0])),
+abs((2**($xmin) + $a[1]) / ($xmin**2 + $b[1])),
+abs((2**($xmin) + $a[2]) / ($xmin**2 + $b[2])),
+abs((2**($xmin) + $a[3]) / ($xmin**2 + $b[3])),
+abs((2**(0) + $a[0]) / (0**2 + $b[0])),
+abs((2**(0) + $a[1]) / (0**2 + $b[1])),
+abs((2**(0) + $a[2]) / (0**2 + $b[2])),
+abs((2**(0) + $a[3]) / (0**2 + $b[3])),
+abs((2**($xmax) + $a[0]) / ($xmax**2 + $b[0])),
+abs((2**($xmax) + $a[1]) / ($xmax**2 + $b[1])),
+abs((2**($xmax) + $a[2]) / ($xmax**2 + $b[2])),
+abs((2**($xmax) + $a[3]) / ($xmax**2 + $b[3])),
+)) + 1;
+$ymin = -$ymax;
 
 #These two variables decide how many labels are on each axis.
 $xmark = 1;

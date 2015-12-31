@@ -148,9 +148,9 @@ $BR
 
 
 \{LayoutTable(
-[["$BBOLD(a)$EBOLD What are the coordinates of the point \(P\)?",ans_rule(20),],["$BBOLD(b)$EBOLD What are the coordinates of the point \(Q\)?",ans_rule(20),],["$BBOLD(c)$EBOLD Evaluate \(f(b)\).",ans_rule(20),],
-["$BBOLD(d)$EBOLD Solve \(f(x)=e\) for \(x\).",ans_rule(20),],
-["$BBOLD(e)$EBOLD Suppose \(c=f(z)\). Solve the equation \(z=f(x)\) for \(x\).  ",ans_rule(20),]],
+[["$BBOLD(a)$EBOLD What are the coordinates of the point \(P\)?",ans_rule(20),],["$BBOLD(b)$EBOLD What are the coordinates of the point \(Q\)?",ans_rule(20),],["$BBOLD(c)$EBOLD Evaluate \(f(b)\). $BR(The answer is symbolic, not a specific number.)",ans_rule(20),],
+["$BBOLD(d)$EBOLD Solve \(f(x)=e\) for \(x\). $BR(The answer is symbolic, not a specific number.)",ans_rule(20),],
+["$BBOLD(e)$EBOLD Suppose \(c=f(z)\). Solve the equation \(z=f(x)\) for \(x\). $BR(Hint: you should figure out what \(z\) is first.) ",ans_rule(20),]],
 allcellcss=>"text-align:left; padding-left: 6pt; padding-right: 6pt;",
 texalignment=>"Xl",
 );\}
