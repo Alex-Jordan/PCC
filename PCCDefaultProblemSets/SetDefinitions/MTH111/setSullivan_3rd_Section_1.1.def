@@ -344,3 +344,30 @@ showMeAnother = 0
 counts_parent_grade = 0
 att_to_open_children = 0 
 problem_end
+problem_start
+problem_id = 38
+source_file = Library/LoyolaChicago/Precalc/Chap1Sec1/Q19.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 39
+source_file = Library/LoyolaChicago/Precalc/Chap1Review/Q34.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 40
+source_file = Library/FortLewis/Algebra/8-1-Domain-range/MCH1-8-1-14-Domain-range.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
