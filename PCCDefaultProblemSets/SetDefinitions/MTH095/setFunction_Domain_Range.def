@@ -1,0 +1,21 @@
+openDate          = 12/01/2015 at 12:04am PST
+dueDate           = 03/01/2016 at 12:04am PST
+answerDate        = 03/01/2016 at 12:04am PST
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95HardcopyHeader.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/Function_Domain_Range.pg
+description       = finding the domain and range functions
+problemList       = 
+BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph50.pg, 1, -1, 0
+BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph60.pg, 1, -1, 0
+BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph70.pg, 1, -1, 0
+BasicAlgebra/FunctionBasics/FunctionDomainRangeInContext10.pg, 1, -1, 0
+BasicAlgebra/FunctionBasics/FunctionDomainRangeInContext20.pg, 1, -1, 0
+BasicAlgebra/FunctionBasics/FunctionDomainRangeInContext30.pg, 1, -1, 0
+BasicAlgebra/FunctionBasics/FunctionDomainRangeInContext40.pg, 1, -1, 0
+BasicAlgebra/FunctionBasics/FunctionDomainRangeInContext50.pg, 1, -1, 0
+BasicAlgebra/FunctionBasics/FunctionDomainRangeInContext60.pg, 1, -1, 0
+BasicAlgebra/FunctionBasics/FunctionDomainRangeInContext70.pg, 1, -1, 0
+BasicAlgebra/FunctionBasics/FunctionValuesByGraph40.pg, 1, -1, 0
+BasicAlgebra/FunctionBasics/FunctionValuesByGraph50.pg, 1, -1, 0
+BasicAlgebra/FunctionBasics/FunctionValuesByGraph60.pg, 1, -1, 0
+

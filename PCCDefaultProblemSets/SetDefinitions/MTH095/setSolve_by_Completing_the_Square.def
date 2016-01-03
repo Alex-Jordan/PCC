@@ -1,0 +1,13 @@
+openDate          = 12/01/2015 at 12:48am PST
+dueDate           = 03/01/2016 at 12:48am PST
+answerDate        = 03/01/2016 at 12:48am PST
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95HardcopyHeader.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/Solve_by_Completing_the_Square.pg
+description       = solve quadratic equations by completing the square
+problemList       = 
+BasicAlgebra/QuadraticFunctions/CompleteSquare10.pg, 1, -1, 0
+BasicAlgebra/QuadraticFunctions/CompleteSquare20.pg, 1, -1, 0
+BasicAlgebra/QuadraticFunctions/CompleteSquare30.pg, 1, -1, 0
+BasicAlgebra/QuadraticFunctions/CompleteSquare40.pg, 1, -1, 0
+
+

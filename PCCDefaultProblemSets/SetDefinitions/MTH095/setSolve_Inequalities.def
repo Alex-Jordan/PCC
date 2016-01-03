@@ -1,0 +1,20 @@
+openDate          = 12/01/2015 at 12:08am PST
+dueDate           = 03/01/2016 at 12:08am PST
+answerDate        = 03/01/2016 at 12:08am PST
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95HardcopyHeader.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/Solve_Inequalities.pg
+description       = solve inequalities and compound inequalities
+problemList       = 
+BasicAlgebra/LinearInequalities/CompoundInequalityBasics10.pg, 1, -1, 0
+BasicAlgebra/LinearInequalities/CompoundInequalityBasics20.pg, 1, -1, 0
+BasicAlgebra/LinearInequalities/CompoundInequalityBasics30.pg, 1, -1, 0
+BasicAlgebra/LinearInequalities/CompoundInequalityBasics40.pg, 1, -1, 0
+BasicAlgebra/LinearInequalities/CompoundInequalityBasics50.pg, 1, -1, 0
+BasicAlgebra/LinearInequalities/CompoundInequalityBasics60.pg, 1, -1, 0
+BasicAlgebra/LinearInequalities/CompoundInequalityAnd90.pg, 1, -1, 0
+BasicAlgebra/LinearInequalities/CompoundInequalityAnd100.pg, 1, -1, 0
+BasicAlgebra/LinearInequalities/CompoundInequalityAnd110.pg, 1, -1, 0
+BasicAlgebra/LinearInequalities/CompoundInequalityOr10.pg, 1, -1, 0
+BasicAlgebra/LinearInequalities/CompoundInequalityOr20.pg, 1, -1, 0
+BasicAlgebra/LinearInequalities/CompoundInequalityOr30.pg, 1, -1, 0
+

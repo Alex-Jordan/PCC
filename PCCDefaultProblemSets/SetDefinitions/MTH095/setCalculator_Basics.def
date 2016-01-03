@@ -1,0 +1,19 @@
+openDate          = 12/01/2015 at 12:00am PST
+dueDate           = 03/01/2016 at 12:00am PST
+answerDate        = 03/01/2016 at 12:00am PST
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95HardcopyHeader.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/Calculator_Basics.pg
+description       = learning the basics about using graphing calculators
+problemList       = 
+BasicAlgebra/Calculator/MTH95Calculator10.pg, 1, -1, 0
+BasicAlgebra/Calculator/MTH95Calculator20.pg, 1, -1, 0
+BasicAlgebra/Calculator/MTH95Calculator30.pg, 1, -1, 0
+BasicAlgebra/Calculator/MTH95Calculator40.pg, 1, -1, 0
+BasicAlgebra/Calculator/MTH95Calculator50.pg, 1, -1, 0
+BasicAlgebra/Calculator/MTH95Calculator60.pg, 1, -1, 0
+BasicAlgebra/Calculator/MTH95Calculator70.pg, 1, -1, 0
+BasicAlgebra/Calculator/MTH95Calculator80.pg, 1, -1, 0
+BasicAlgebra/Calculator/MTH95Calculator90.pg, 1, -1, 0
+BasicAlgebra/Calculator/MTH95Calculator170.pg, 1, -1, 0
+BasicAlgebra/Calculator/MTH95Calculator180.pg, 1, -1, 0
+

@@ -1,0 +1,12 @@
+openDate          = 12/01/2015 at 12:53am PST
+dueDate           = 03/01/2016 at 12:53am PST
+answerDate        = 03/01/2016 at 12:53am PST
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95HardcopyHeader.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/Calculator_Advanced.pg
+description       = learning more advanced skills for graphing calculators
+problemList       = 
+BasicAlgebra/Calculator/MTH95Calculator140.pg, 1, -1, 0
+BasicAlgebra/Calculator/MTH95Calculator150.pg, 1, -1, 0
+BasicAlgebra/Calculator/MTH95Calculator160.pg, 1, -1, 0
+
+

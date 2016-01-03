@@ -1,0 +1,15 @@
+openDate          = 12/01/2015 at 12:16am PST
+dueDate           = 03/01/2016 at 12:16am PST
+answerDate        = 03/01/2016 at 12:16am PST
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95HardcopyHeader.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/Rational_Functions_Domain.pg
+description       = determine the domain and range of rational functions
+problemList       = 
+BasicAlgebra/RationalFunctions/rationalFunctionDefinition10.pg, 1, -1, 0
+BasicAlgebra/RationalFunctions/rationalFunctionDomain10.pg, 1, -1, 0
+BasicAlgebra/RationalFunctions/rationalFunctionDomain20.pg, 1, -1, 0
+BasicAlgebra/RationalFunctions/rationalFunctionDomain30.pg, 1, -1, 0
+BasicAlgebra/RationalFunctions/rationalFunctionDomain40.pg, 1, -1, 0
+BasicAlgebra/RationalFunctions/rationalFunctionDomain50.pg, 1, -1, 0
+
+
