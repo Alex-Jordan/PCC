@@ -58,9 +58,9 @@ In the following, if your answer includes more than one interval write the inter
 
 Given that [` f(x)=[$f]`] and [`\displaystyle g(x)=[$g]`], find and simplify each of the following:
 
-a) [`\left(fg\right)(x)={}`][________________________]{$ftg} and its domain is [________________________]{$ftgd}  
-a) [`\left(\frac{f}{g}\right)(x)={}`][________________________]{$fdg} and its domain is [________________________]{$fdgd}
-a) [`\left(\frac{g}{f}\right)(x)={}`][________________________]{$gdf} and its domain is [________________________]{$gdfd}
+a) [`\left(fg\right)(x)={}`][________________________]{$ftg} and the domain of [`\left(fg\right)`] is [________________________]{$ftgd}  
+a) [`\left(\frac{f}{g}\right)(x)={}`][________________________]{$fdg} and the domain of [`\left(\frac{f}{g}\right)`] is [________________________]{$fdgd}
+a) [`\left(\frac{g}{f}\right)(x)={}`][________________________]{$gdf} and the domain of [`\left(\frac{g}{f}\right)`] is  [________________________]{$gdfd}
 
 
 END_PGML

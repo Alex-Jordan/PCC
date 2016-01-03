@@ -68,10 +68,10 @@ In the following, if your answer includes more than one interval write the inter
 Given that [`\displaystyle f(x)=[$f]`] and [`\displaystyle g(x)=[$g]`], find and simplify the following:
 
 
-a) [`\left(f+g\right)(x)={}`][________________________]{$fpg} and its domain is [________________________]{$fpgd}  
-a) [`\left(f-g\right)(x)={}`][________________________]{$fmg} and its domain is [________________________]{$fmgd}  
-a) [`\left(fg\right)(x)={}`][________________________]{$ftg} and its domain is [________________________]{$ftgd}  
-a) [`\left(\frac{f}{g}\right)(x)={}`][________________________]{$fdg} and its domain is [________________________]{$fdgd}
+a) [`\left(f+g\right)(x)={}`][________________________]{$fpg} and the domain of [`\left(f+g\right)`] is [________________________]{$fpgd}  
+a) [`\left(f-g\right)(x)={}`][________________________]{$fmg} and the domain of [`\left(f-g\right)`] is [________________________]{$fmgd}  
+a) [`\left(fg\right)(x)={}`][________________________]{$ftg} and the domain of [`\left(fg\right)`] is [________________________]{$ftgd}  
+a) [`\left(\frac{f}{g}\right)(x)={}`][________________________]{$fdg} and the domain of [`\left(\frac{f}{g}\right)`] is [________________________]{$fdgd}
 
 END_PGML
 

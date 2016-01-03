@@ -57,10 +57,10 @@ In the following, if your answer includes more than one interval write the inter
 
 Given that [` f(x)=\sqrt{[$a]+x}`] and [` g(x)=\sqrt{[$a]-x}`],
 
-a) The domain of [`\left(f+g\right)(x)`] is [________________________]{$fpgd}  
-a) The domain of [`\left(f-g\right)(x)`] is [________________________]{$fmgd}  
-a) The domain of [`\left(fg\right)(x)`] is [________________________]{$ftgd}  
-a) The domain of [`\left(\frac{f}{g}\right)(x)`] is [________________________]{$fdgd}
+a) The domain of [`\left(f+g\right)`] is [________________________]{$fpgd}  
+a) The domain of [`\left(f-g\right)`] is [________________________]{$fmgd}  
+a) The domain of [`\left(fg\right)`] is [________________________]{$ftgd}  
+a) The domain of [`\left(\frac{f}{g}\right)`] is [________________________]{$fdgd}
 
 END_PGML
 
