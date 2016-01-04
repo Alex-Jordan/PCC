@@ -74,8 +74,10 @@ for my $i (0..0) {
   $gr[$i]->moveTo($min[1],$yAsymptote);
   $gr[$i]->lineTo($max[1],$yAsymptote,'red',2,'dashed');
 
-   add_functions($gr[$i], "$func for x in <$min[0],$xAsymptote> using color:blue and weight:2");
-   add_functions($gr[$i], "$func for x in <$xAsymptote,$max[0]> using color:blue and weight:2");
+$xplot1=$xAsymptote-0.001;
+$xplot2=$xAsymptote+0.001;
+   add_functions($gr[$i], "$func for x in <$min[0],$xplot1> using color:blue and weight:2");
+   add_functions($gr[$i], "$func for x in <$xplot2,$max[0]> using color:blue and weight:2");
 }
 
 if ($k>0) {

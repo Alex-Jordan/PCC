@@ -54,7 +54,7 @@ BEGIN_PGML
 
 Let the function [`f`] be defined by  
 
-    [``f(x)=[$f]\quad [$left]\leq x\leq [$right]``]
+    [``f(x)=[$f]\quad [$left]\leq x\leq [$right], x\neq0``]
 
 
 What is the range of this function?  It will help if you make a graph of this _function with a restricted domain_. Enter your answer in interval notation.  If needed, use*INF* for [`\infty`].  If needed, use *U* for the union symbol.  For example, to enter [`(-\infty,0]\cup(2,4)`], type *(-INF,0] U (2,4)*. 
