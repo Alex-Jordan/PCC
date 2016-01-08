@@ -93,6 +93,10 @@ $ans[5] = "$c[15]"."$c[16]"."$c[17]";
 @slice = NchooseK(18,18);
 @a = @data[@slice];
 
+$b1is=$b1+1;
+$b2is=$b2+1;
+$b2iss=$b2+2;
+
 BEGIN_TEXT
 $PAR Consider the following data set:
 $PAR
@@ -108,10 +112,10 @@ Below is a partially completed stem plot for this data set:
 $PAR
 $BCENTER
 \{begintable(2)\}
-\{row($b1, ans_rule(20))\}
+\{row("\($b1\)", ans_rule(20))\}
 \{row(ans_rule(3), ans_rule(20))\}
-\{row($b2, ans_rule(20))\}
-\{row(ans_rule(3), $ans[4])\}
+\{row("\($b2\)", ans_rule(20))\}
+\{row(ans_rule(3), "\($ans[4]\)")\}
 \{row(ans_rule(3), ans_rule(20))\}
 \{endtable()\}
 $ECENTER
@@ -132,5 +136,22 @@ ANS(str_cmp($ans[3],'remove_whitespace'));
 ANS(num_cmp($b2 + 1));
 ANS(num_cmp($b2 + 2));
 ANS(str_cmp($ans[5],'remove_whitespace'));
+
+################################
+BEGIN_SOLUTION
+
+$PAR
+$BCENTER
+\{begintable(2)\}
+\{row("\($b1\)", "\($ans[1]\)")\}
+\{row("\($b1is\)", "\($ans[2]\)")\}
+\{row("\($b2\)", "\($ans[3]\)")\}
+\{row("\($b2is\)", "\($ans[4]\)")\}
+\{row("\($b2iss\)", "\($ans[2]\)")\}
+\{endtable()\}
+$ECENTER
+$PAR
+END_SOLUTION
+################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

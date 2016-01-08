@@ -29,10 +29,10 @@ TEXT(beginproblem());
 @order = @ThreeProblems[@scramble];
 
 $mc[0] = new_multiple_choice();
-     $mc[0]->qa("The number of students with under 10 dollars in their possession is closest to ","60 "); 
-     $mc[0]->extra("50 ", 
-	"40 ", 
-        "70 ");
+     $mc[0]->qa("The number of students with under \(10\) dollars in their possession is closest to ","\(60\) "); 
+     $mc[0]->extra("\(50\) ", 
+	"\(40\) ", 
+        "\(70\) ");
      
 $mc[1] = new_multiple_choice();
      $mc[1] ->qa("The histogram ","all of the above."); 
@@ -42,17 +42,26 @@ $mc[1] = new_multiple_choice();
      $mc[1]->makeLast("all of the above.");
 
 $mc[2] = new_multiple_choice();
-     $mc[2] ->qa("The percentage of students with over 10 dollars in their possession is",
-	"over 50$PERCENT."); 
-     $mc[2]->extra("about 10$PERCENT.", 
-	"about 30$PERCENT. ", 
-        "about 40$PERCENT.");
+     $mc[2] ->qa("The percentage of students with over \(10\) dollars in their possession is",
+	"over \(50$PERCENT\)."); 
+     $mc[2]->extra("about \(10$PERCENT\).", 
+	"about \(30$PERCENT\). ", 
+        "about \(40$PERCENT\).");
+
+@solutions = ("The first bin is the \(0-10\) dollar range (thus less than \(10\)) dollars.  About \(60\) students are in the bin.",
+
+"All of the above!  There is an outlier far on the right.  We would say the graph is right skewed since if we were to draw a smooth curve over it the tail would go to the right.  As such, the graph is also asymmetrical, which simply means not symmetrical.",
+
+"There are \(136\) students total, with about \(60\) of them having under \(10\) dollars.  This means about half, or \(50$PERCENT\), of the students have more than \(10\) dollars.",
+);
+
+@ssols = (@solutions[@scramble]);
 
 ######################################
 #  Main text
 
 BEGIN_TEXT
-In a statistics class with 136 students, the professor records how much money 
+In a statistics class with \(136\) students, the professor records how much money 
 each student has in their possession during the first class of the semester.  
 The histogram below is of the data collected.
 $PAR
@@ -84,4 +93,19 @@ ANS(radio_cmp($mc[$order[0]]->correct_ans));
 ANS(radio_cmp($mc[$order[1]]->correct_ans));
 ANS(radio_cmp($mc[$order[2]]->correct_ans));
 
+######################################
+BEGIN_SOLUTION
+
+(a) Option \(\{$mc[$order[0]] -> correct_ans\}\). $ssols[0]  
+
+$PAR
+
+(b) Option \(\{$mc[$order[1]] -> correct_ans\}\). $ssols[1]
+
+$PAR
+
+(c) Option \(\{$mc[$order[2]] -> correct_ans\}\). $ssols[2]
+
+END_SOLUTION
+#######################################
 ENDDOCUMENT();       # This should be the last executable line in the problem.

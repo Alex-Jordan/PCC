@@ -56,4 +56,17 @@ $ans_b = Real("1");
 ANS($ans_b->cmp);
 
 
+######################################
+BEGIN_SOLUTION
+
+(a) Note that this question deals with $BITALIC percent $EITALIC of students.  The question mentions five students total, with four students total who are not juniors.  Since this is percent, it is \(\frac{4}{5}\) or \(80$PERCENT\).
+
+$PAR
+
+(b) Note that this question deals with $BITALIC number $EITALIC of students.  The question mentions five students total, with four students total who are not juniors.  This means that \($ans_b\) student is a junior.
+
+
+END_SOLUTION
+#######################################
+
 ENDDOCUMENT();       # This should be the last executable line in the problem.

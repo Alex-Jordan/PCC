@@ -62,4 +62,12 @@ END_TEXT
 
 ANS( str_cmp( $mc -> correct_ans ) );
 
+#############################
+BEGIN_SOLUTION
+
+Option \(\{ $mc->correct_ans \}\).  Recall that anytime a distribution is skewed to the left the mean is generally less, or smaller, than the median and anytime a distribution is skewed to the right the mean is generally more, or greater, than the median.
+
+END_SOLUTION
+#############################
+
 ENDDOCUMENT();      

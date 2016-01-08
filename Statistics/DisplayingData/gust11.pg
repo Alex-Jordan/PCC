@@ -68,7 +68,7 @@ $ans7= $g/$total;
 
 BEGIN_TEXT
 
-The U.S. Bureau of the Census conducts nationwide sureys on characteristics of U.S. households.  The following are data on the number of people per household for a sample of 40 households.  Construct a frequency and relative frequency table for these household sizes.  (Relative frequencies may be entered as decimals, as with 0.5, or as percentages, as with 50$PERCENT.)
+The U.S. Bureau of the Census conducts nationwide sureys on characteristics of U.S. households.  The following are data on the number of people per household for a sample of \(40\) households.  Construct a frequency and relative frequency table for these household sizes.  (Relative frequencies may be entered as decimals, as with \(0.5\), or as percentages, as with \(50$PERCENT\).)
 $PAR
 $BCENTER
 \{begintable(8)\}
@@ -84,14 +84,14 @@ $PAR
 $BCENTER
 \{begintable(3)\}
 \{row("Household size", "Frequency", "Relative Frequency")\}
-\{row("1", ans_rule(10), ans_rule(10))\}
-\{row("2", ans_rule(10), ans_rule(10))\}
-\{row("3", ans_rule(10), ans_rule(10))\}
-\{row("4", ans_rule(10), ans_rule(10))\}
-\{row("5", ans_rule(10), ans_rule(10))\}
-\{row("6", ans_rule(10), ans_rule(10))\}
-\{row("7", ans_rule(10), ans_rule(10))\}
-\{row("${BBOLD}Total${EBOLD}", "$total", "1")\}
+\{row("\(1\)", ans_rule(10), ans_rule(10))\}
+\{row("\(2\)", ans_rule(10), ans_rule(10))\}
+\{row("\(3\)", ans_rule(10), ans_rule(10))\}
+\{row("\(4\)", ans_rule(10), ans_rule(10))\}
+\{row("\(5\)", ans_rule(10), ans_rule(10))\}
+\{row("\(6\)", ans_rule(10), ans_rule(10))\}
+\{row("\(7\)", ans_rule(10), ans_rule(10))\}
+\{row("${BBOLD}Total${EBOLD}", "\($total\)", "\(1\)")\}
 \{endtable()\}
 $ECENTER
 END_TEXT
@@ -113,6 +113,25 @@ ANS(Percent($ans6)->cmp);
 ANS(Compute($g)->cmp);
 ANS(Percent($ans7)->cmp);
 
+
+#############################
+BEGIN_SOLUTION
+
+$BCENTER
+\{begintable(3)\}
+\{row("Household size", "Frequency", "Relative Frequency")\}
+\{row("\(1\)", "\($a\)", "\($ans1\)")\}
+\{row("\(2\)", "\($b\)", "\($ans2\)")\}
+\{row("\(3\)", "\($c\)", "\($ans3\)")\}
+\{row("\(4\)", "\($d\)", "\($ans4\)")\}
+\{row("\(5\)", "\($e\)", "\($ans5\)")\}
+\{row("\(6\)", "\($f\)", "\($ans6\)")\}
+\{row("\(7\)", "\($g\)", "\($ans7\)")\}
+\{row("${BBOLD}Total${EBOLD}", "\($total\)", "\(1\)")\}
+\{endtable()\}
+$ECENTER
+END_SOLUTION
+#############################
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.
 

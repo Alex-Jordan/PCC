@@ -42,6 +42,12 @@ $mc[1] = new_multiple_choice();
 	"Generally, bars should be square so that both the height and width equal the bin frequency. ", 
         "The scale of the vertical axis should be that of the variable whose distribution you are displaying. ");
 
+@solutions = ("The vertical axis should be labeled or else we would not know if we are dealing with count or percent.",
+
+"The heights of bars should equal the bin frequency or relative frequency, otherwise we would be leaving data out.  Gaps are only included or seen if there is no data in that specific bin.",
+);
+
+@ssols = (@solutions[@scramble]);
 ######################################
 #  Main text
 
@@ -66,5 +72,17 @@ $showPartialCorrectAnswers = 0;
 
 ANS(radio_cmp($mc[$order[0]]->correct_ans));
 ANS(radio_cmp($mc[$order[1]]->correct_ans));
+
+######################################
+
+BEGIN_SOLUTION
+
+(a) Option \(\{$mc[$order[0]] -> correct_ans\}\). $ssols[0]  
+
+$PAR
+
+(b) Option \(\{$mc[$order[1]] -> correct_ans\}\). $ssols[1]
+
+END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

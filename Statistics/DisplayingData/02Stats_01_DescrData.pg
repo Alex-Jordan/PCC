@@ -63,6 +63,18 @@ ANS( $popup1->cmp() );
 ANS( $popup2->cmp() );
 
 
+######################################
+BEGIN_SOLUTION
+
+(a) $popup1.  If we were to draw a smooth curve over the histogram, the tail of that curve would go stretch further out to the left hand side than the right side.
+
+$PAR
+
+(b) $popup2.  The small values, potentially outliers, would affect the mean and make it smaller, or drag it to the left graphically.  The median would not be affected and would stay in the middle, making it larger than the mean.
+
+END_SOLUTION
+#######################################
+
 ENDDOCUMENT();        # This should be the last executable line in the problem.
 
 

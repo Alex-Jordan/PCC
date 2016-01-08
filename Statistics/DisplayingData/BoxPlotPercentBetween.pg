@@ -72,4 +72,14 @@ END_TEXT
 
 ANS(str_cmp($mc->correct_ans));
 
+######################################
+BEGIN_SOLUTION
+
+Notice that both $from and $to are both either the minimum, \(Q_{1}\), the median, \(Q_{3}\), or the maximum.  This means \(25$PERCENT\) of the observations are between the minimum and \(Q_{1}\), \(Q_{1}\) and the median, etc.  Based on this we can conclude \($ans$PERCENT\) of salaries are between $from and $to.
+
+
+END_SOLUTION
+#######################################
+
+
 ENDDOCUMENT();

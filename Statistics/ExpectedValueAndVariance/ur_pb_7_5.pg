@@ -88,7 +88,7 @@ BEGIN_SOLUTION
 $PAR
 \(\text{E}(X)=\mu = ($p1\cdot$a1)+($p2\cdot$a2)+($p3\cdot$a3)+($p4\cdot$a4) = $ex\)
 $PAR
-(b) Our solution in part (a) was the expected attendance.  If each ticket costs \($a\), then the expected profit with $BBOLD no other $EBOLD expenses would be \($profitbef\).  Since the band will cost \($b\), plus \($c\) for administration, the total profit will be \($profitbef-$b-$c=$profit\)
+(b) Our solution in part (a) was the expected attendance.  If each ticket costs \($a\), then the expected profit with $BBOLD no other $EBOLD expenses would be \($profitbef\).  However, is since the band will cost \($b\), plus \($c\) for administration, the total profit will be \($profitbef-$b-$c=$profit\)
 END_SOLUTION
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

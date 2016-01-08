@@ -40,6 +40,22 @@ TEXT(beginproblem());
 for my $i (0..3)
 {$popup[$i] = PopUp(["?", "Quantitative", "Categorical"], $sans[$i]);};
 
+@solutions = ("The amount of bacteria is a quantity, thus we have quantitative data.",
+
+"A marital status is really a yes or no question, you are married or you are not.  So, with no quantity involved, it is categorical data.",
+
+"Your neighbors occupation could be anything, a janitor, a mechanic, a banker, etc.  Each of these does not involve units or quantities, thus it is categorical.",
+
+"The number of minutes it takes for something to occur is a quantity.  Therefore, it is quantitative data.",
+
+"The amount of time it takes to run a mile is a quantity, thus it is quantitative.",
+
+"When buying a car, the we mostly say the condition is poor, normal or good.  Each of these are qualities and thus categorical data.",
+
+);
+
+@ssols = (@solutions[@slice]);
+
 ######################################
 #  Main text
 
@@ -75,6 +91,21 @@ $showPartialCorrectAnswers = 1;
 for my $i (0..3)
 {ANS( $popup[$i]->cmp() );};
 
+
+####################################
+BEGIN_SOLUTION
+
+(a) $sans[0] data.  $ssols[0]
+$PAR
+(b) $sans[1] data. $ssols[1]
+$PAR
+(c) $sans[2] data.  $ssols[2]
+$PAR
+(d) $sans[3] data.  $ssols[3]
+
+END_SOLUTION
+
+####################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
 
