@@ -112,6 +112,8 @@ $ans[6] = "$c[20]"."$c[21]";
 @slice = NchooseK(22,22);
 @a = @data[@slice];
 
+$b2is=$b2+1;
+
 BEGIN_TEXT
 $PAR Consider the following data set:
 $PAR
@@ -127,10 +129,10 @@ Below is a partially completed split stem plot for this data set:
 $PAR
 $BCENTER
 \{begintable(2)\}
-\{row($b1, ans_rule(20))\}
-\{row($b1, ans_rule(20))\}
+\{row("\($b1\)", ans_rule(20))\}
+\{row("\($b1\)", ans_rule(20))\}
 \{row(ans_rule(3), ans_rule(20))\}
-\{row($b2, ans_rule(20))\}
+\{row("\($b2\)", ans_rule(20))\}
 \{row(ans_rule(3), ans_rule(20))\}
 \{row(ans_rule(3), ans_rule(20))\}
 \{endtable()\}
@@ -151,5 +153,24 @@ ANS(num_cmp($b2+1));
 ANS(str_cmp($ans[5],'remove_whitespace'));
 ANS(num_cmp($b2+1));
 ANS(str_cmp($ans[6],'remove_whitespace'));
+
+################################
+BEGIN_SOLUTION
+
+$PAR
+$BCENTER
+\{begintable(2)\}
+\{row("\($b1\)", "\($ans[1]\)")\}
+\{row("\($b1\)", "\($ans[2]\)")\}
+\{row("\($b2\)", "\($ans[3]\)")\}
+\{row("\($b2\)", "\($ans[4]\)")\}
+\{row("\($b2is\)", "\($ans[5]\)")\}
+\{row("\($b2is\)", "\($ans[6]\)")\}
+\{endtable()\}
+$ECENTER
+$PAR
+
+END_SOLUTION
+################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

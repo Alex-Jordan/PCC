@@ -47,5 +47,13 @@ BEGIN_TEXT
 END_TEXT
 ANS(radio_cmp($mc->correct_ans));
 
+#############################
+BEGIN_SOLUTION
+
+Option \(\{ $mc->correct_ans \}\).  Qualitative data should only be used with bar graph and circle graphs.
+
+END_SOLUTION
+#############################
+
 ENDDOCUMENT();        # This should be the last executable line in the problem.
 

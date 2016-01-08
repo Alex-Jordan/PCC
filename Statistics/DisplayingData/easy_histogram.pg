@@ -36,12 +36,16 @@ foreach $val(@list){
   }else{ push @newlist2, $val } 
 }
 if( $ind == 0 ){ $ans1 = ( 100 * scalar( @newlist2 ) ) / $n;
-}else{ $ans1 = ( 100 * scalar( @newlist1 ) ) / $n;} 
+}else{ $ans1 = ( 100 * scalar( @newlist1 ) ) / $n;}
+
+if( $ind == 0 ){ $tot = ( scalar( @newlist2 ) );
+}else{ $tot = ( scalar( @newlist1 ) );}
+
 
 BEGIN_TEXT
 
 The histogram below gives the length of service of members of the Department of $name at a particular
-university. The classes, in years of service, are 0\(-\)5, 5\(-\)10, etc., and the vertical axis represents the 
+university. The classes, in years of service, are \(0-5\), \(5-10\), etc., and the vertical axis represents the 
 number of faculty in each bin.
 $PAR
 
@@ -60,5 +64,12 @@ END_TEXT
 
 Context("Percent");
 ANS( Percent( $ans1/100 )->cmp );
+
+#############################
+BEGIN_SOLUTION
+
+We first need to find the total number of faculty, which \($n\).  Then, we need to how many of those \($n\) have $dir[$ind] years of service.  In this case, \($tot\) faculty have $dir[$ind] years of service, meaning \($ans1$PERCENT\) have $dir[$ind] years of service.
+END_SOLUTION
+#############################
 
 ENDDOCUMENT();      

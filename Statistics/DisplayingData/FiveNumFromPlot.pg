@@ -47,4 +47,15 @@ END_TEXT
 ANS(Compute($dat[$slice[0]])->cmp);
 ANS(Compute($dat[$slice[1]])->cmp);
 
+
+#############################
+BEGIN_SOLUTION
+
+The markers from left to right on a boxplot are the minimum, quartile \(1\), the median, quartile \(3\) and the maximum.  As such, we have the following,
+$PAR
+(a) The $questions[0] is \($dat[$slice[0]]\)
+$PAR
+(b) The $questions[1] is \($dat[$slice[1]]\)
+END_SOLUTION
+#############################
 ENDDOCUMENT();

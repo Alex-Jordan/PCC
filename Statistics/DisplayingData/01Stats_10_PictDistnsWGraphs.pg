@@ -47,12 +47,19 @@ $mc[1] = new_multiple_choice();
         "timeplot ");
      $mc[1]->makeLast("None of the above. ");
 
+@solutions = ("Looking at the portion of the circle the U.S. has, we should conclude more than half of the cars in teh study were from the U.S..  Although this study is about the gas mileage of cars, the circle graph does not report gas mileage nor style of car, it only reports the country of manufacture.",
+
+"Since a pie chart is uses qualitative data, it is equivalent to a bar chart.",
+);
+
+@ssols = (@solutions[@scramble]);
+
 ######################################
 #  Main text
 
 BEGIN_TEXT
-Consumers Union measured the gas mileage in miles per gallon of 38 
-1978-79 model automobiles on a special test track.  The pie chart 
+Consumers Union measured the gas mileage in miles per gallon of \(38\) 
+\(1978-79\) model automobiles on a special test track.  The pie chart 
 below provides information about the country-of-manufacture of the 
 models teseted by CU. 
 $PAR
@@ -78,5 +85,17 @@ $showPartialCorrectAnswers = 0;
 
 ANS(radio_cmp($mc[$order[0]]->correct_ans));
 ANS(radio_cmp($mc[$order[1]]->correct_ans));
+
+######################################
+BEGIN_SOLUTION
+
+(a) Option \(\{$mc[$order[0]] -> correct_ans\}\). $ssols[0]  
+
+$PAR
+
+(b) Option \(\{$mc[$order[1]] -> correct_ans\}\). $ssols[1]
+
+END_SOLUTION
+#######################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

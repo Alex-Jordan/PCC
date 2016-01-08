@@ -47,12 +47,12 @@ $mc[1]->extra(
 $mc[2] = new_multiple_choice(); 
 $mc[2]->qa('In a histogram, the proportion of the total area which must be to the left 
 of the median is: ',
-    'exactly 0.50'
+    'exactly \(0.50\)'
 );
 $mc[2]->extra(
-    'less than 0.50 if the distribution is skewed to the left',
-    'more than 0.50 if the distribution is skewed to the right',
-    'between 0.25 and 0.60 if the distribution is symmetric and unimodal'
+    'less than \(0.50\) if the distribution is skewed to the left',
+    'more than \(0.50\) if the distribution is skewed to the right',
+    'between \(0.25\) and \(0.60\) if the distribution is symmetric and unimodal'
 );
 
 $mc[3] = new_multiple_choice(); 
@@ -94,6 +94,20 @@ while ($a == $b) {
     $b = random(1,5,1);
 }
 
+@solutions = ("$BITALIC If $EITALIC we have a symmetric distribution, we could assume that half of the observations are on either side of the mean.  Since it depends on the distribution, this statement is not always true.  The mean $BITALIC is always $EITALIC a measure of the middle (center) of a distribution, but it might not be a good one!",
+
+"Since the median is $BITALIC always $EITALIC the middle, no matter the distribution, the proportion of the total area to the left if the median is \(0.50\).",
+
+"The sum of the deviations from the mean is always zero.  No matter what the set of data, if we sum up the difference between the mean and every piece of data it will always be \(0\). It is tempting to say the standard deviation is always less than the variance, but we could have the variance be \(1\) and thus the standard deviation would also be \(1\), or any variance that is less than \(1\) would have a standard deviation greater than it.  We cannot say the distance between the first and third quartiles is twice the distance between the first quartile and the median since quartiles deal in percent and thus we cannot comment on the distance in the numeric sense.",
+
+"The distances from the smallest to largest observations in both sets will be the same.  We cannot say the mean and IQR will be the same since we don't know the data.  We cannot say the smallest and the largest observations are the same in both sets, since we could have, \(120-20=100\) and \(200-100=100\).",
+
+"When the distribution is symmetric and unimodal, mean \(=\) median \(=\) mode.  Unimodal means one peak or high point, thus the same does not hold for a bimodal graph, which would have two peaks or high points.  When the distribution is skewed to the left, we should actually expect mean \(<\) median and when the distribution is skewed to the right, we should expect mean \(>\) median.",
+
+);
+
+$ssols1 = (@solutions[$a-1]);
+$ssols2 = (@solutions[$b-1]);
 
 BEGIN_TEXT
 $PAR
@@ -111,5 +125,17 @@ END_TEXT
 
 ANS(radio_cmp($mc[$a]->correct_ans));
 ANS(radio_cmp($mc[$b]->correct_ans));
+
+######################################
+BEGIN_SOLUTION
+
+(a) Option \(\{$mc[$a] -> correct_ans\}\). $ssols1  
+
+$PAR
+
+(b) Option \(\{$mc[$b] -> correct_ans\}\). $ssols2
+
+END_SOLUTION
+#######################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.

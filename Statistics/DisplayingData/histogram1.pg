@@ -65,4 +65,12 @@ END_TEXT
 
 ANS( str_cmp( $ans ) );
 
+######################################
+BEGIN_SOLUTION
+
+Based on the given distribution the $list2[$slice[0]] is $ans.  Recall that anytime our distribution is skewed right we would expect the mean to be larger than the median and anytime the distribution is skewed left we expect the mean to be smaller than the median.
+
+END_SOLUTION
+#######################################
+
 ENDDOCUMENT();      

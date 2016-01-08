@@ -173,4 +173,14 @@ END_TEXT
 
 ANS( checkbox_cmp( $cmc->correct_ans ));
 
+
+
+######################################
+BEGIN_SOLUTION
+
+Option \{$cmc->correct_ans\}.
+
+END_SOLUTION
+#######################################
+
 ENDDOCUMENT();

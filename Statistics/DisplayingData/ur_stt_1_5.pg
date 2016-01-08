@@ -70,4 +70,25 @@ ANS(Compute($d)->cmp);
 ANS(Compute($ans5)->cmp);
 ANS(Compute($ans6)->cmp);
 
+################################
+BEGIN_SOLUTION
+
+$PAR
+$BCENTER
+\{begintable(3)\}
+\{row("Books read within the past year", "Frequency", "Relative Frequency")\}
+\{row("none", "\($a \)", "\($ans1 \)")\}
+\{row("\(0-4\)", "\($b \)", "\($ans2 \)")\}
+\{row("\(5-9\)", "\($c \)", "\($ans3 \)")\}
+\{row("\(10-14\)", "\($d \)", "\($ans4\)")\}
+\{row("\(15-19\)", "\($e \)", "\($ans5 \)")\}
+\{row("\(20-25\)", "\($f \)", "\($ans6 \)")\}
+\{row("total", "\($total\)", "\(1\)")\}
+\{endtable()\}
+$ECENTER
+$PAR
+
+END_SOLUTION
+################################
+
 ENDDOCUMENT();       # This should be the last executable line in the problem.

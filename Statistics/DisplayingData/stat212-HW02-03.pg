@@ -49,12 +49,12 @@ $mc[2] = new_multiple_choice();
 $mc[2]->qa('The Empirical Rule states that the approximate percentage of 
 measurements in a data set (providing that the data set has a bell-shaped distribution) 
 that fall within two standard deviations of their mean is approximately:',
-    '95$PERCENT'
+    '\(95$PERCENT\)'
 );
 $mc[2]->extra(
-    '68$PERCENT',
-    '75$PERCENT',
-    '99$PERCENT'
+    '\(68$PERCENT\)',
+    '\(75$PERCENT\)',
+    '\(99$PERCENT\)'
 );
 
 $mc[3] = new_multiple_choice(); 
@@ -103,7 +103,19 @@ while ($a == $b) {
     $b = random(2,5,1);
 }
 
+@solutions = ("The Empirical Rule states that the \(95$PERCENT\) of observations in a data set (providing that the data set has a bell-shaped distribution) fall within two standard deviations of the mean.",
 
+"While the mean is naturally the most affected by outliers, the range is also affected greatly by outliers. The range is the differenence between the maximum and minimum.  An outlier will greatly increase that difference.",
+
+"We know our population means is a ''fixed value'' single value.  As such, it could be anything, and therefore when we take a sample, we could have the population mean be smaller than, larger than, or equal to the sample mean.  We include the ''equal to'' in case of the scenario where the sample $BITAL is $EITAL the population.",
+
+"A box and whisker plot does not help us estimate the standard deviation since it shows our data in quartiles.  Outlier may greatly affect the standard deviation and although we can see skew in a box and whisker plot it does not help us estiamte the standard deviation.",
+);
+
+$ssols1 = (@solutions[$a-2]);
+$ssols2 = (@solutions[$b-2]);
+
+#####################################
 BEGIN_TEXT
 $PAR
 \{ $mc[$a]->print_q() \}
@@ -120,5 +132,17 @@ END_TEXT
 
 ANS(radio_cmp($mc[$a]->correct_ans));
 ANS(radio_cmp($mc[$b]->correct_ans));
+
+######################################
+BEGIN_SOLUTION
+
+(a) Option \(\{$mc[$a] -> correct_ans\}\). $ssols1  
+
+$PAR
+
+(b) Option \(\{$mc[$b] -> correct_ans\}\). $ssols2
+
+END_SOLUTION
+#######################################
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
