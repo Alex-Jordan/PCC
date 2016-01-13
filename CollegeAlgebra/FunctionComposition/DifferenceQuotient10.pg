@@ -30,7 +30,7 @@ Context("LimitedFactor");
 Context()->variables->add(a=>'Real', h=>'Real');
 Context()->flags->set(factorableObject=>'expression');
 
-do {$fn = RandomVariableName()} until ($fn ne "x");
+do {$fn = RandomVariableName()} until ($fn ne "x" and $fn ne "a" and $fn ne "h");
 $f = Formula("$a x + $b")->reduce;
 
 $ans1 = Formula("$a*a+$b")->reduce;
