@@ -46,7 +46,7 @@ Context()->noreduce('(-x)-y','(-x)+y');
 
    $x0 = 0;
    $y0 = random(0,3,1);
-   $slope = random(0.5,2,0.5);
+   $slope = random(2,5,1);
 
 $x1 = random(1,5,1);
 $y1 = $slope*($x1-$x0)+$y0;
