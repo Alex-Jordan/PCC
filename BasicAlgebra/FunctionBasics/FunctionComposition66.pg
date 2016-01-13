@@ -50,7 +50,7 @@ $f = Formula("$a*x**2+$b*x")->reduce;
 
 $ans1 = Formula("$f+$c")->reduce;
 
-$o = 2*$a*$c;
+$o = 2*$a*$c+$b;
 $p = $a*($c)**2+$b*$c;
 $ans2 = Formula("$a*x**2+$o*x+$p")->reduce;
 
