@@ -1,10 +1,9 @@
-
 openDate          = 12/11/2013 at 12:00am PST
 dueDate           = 06/30/2014 at 01:00am PDT
 answerDate        = 06/30/2014 at 01:00am PDT
 paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHeader_Yao.pg
-screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/TranslatingWordsIntoExpressions.pg
-description       = translating English into math 
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/TranslatingWordsIntoAlgebra.pg
+description       = translating English into algebra 
 problemList       = 
 BasicAlgebra/EnglishToMath/englishToMath10.pg, 1, -1
 BasicAlgebra/EnglishToMath/englishToMath20.pg, 1, -1
