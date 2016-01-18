@@ -50,7 +50,7 @@ $graph->lb( new Label($a2,$a2 - $a1 - 0.5,'f', 'blue','center','center'));
 $graph->lb( new Label($xvert,$yvert + 0.5,'g', 'red','center','center'));
 
 $c = random($f1,$a2,1);
-$d=random($a2, 6 - $a2);
+$d=random($a2, $f2,1);
 $e = random(-1, $a2 - 1);
 $e1 = $e - $a1;
 
