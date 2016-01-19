@@ -1,19 +1,19 @@
 assignmentType      = default
 openDate          = 01/04/2016 at 12:00am PST
 reducedScoringDate = 12/31/1969 at 04:00pm PST
-dueDate           = 01/20/2016 at 10:00pm PST
-answerDate        = 01/20/2016 at 10:00pm PST
+dueDate           = 02/02/2016 at 10:00pm PST
+answerDate        = 02/02/2016 at 10:00pm PST
 enableReducedScoring = N
 paperHeaderFile   = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
 screenHeaderFile  = PCCDefaultProblemSets/HardcopyHeaders/MTH111/GenericMTH111Header.pg
-description       = problems like those in Sullivan and Sullivan's 3rd edition Precalculus, section 1.2
+description       = problems like those in Sullivan and Sullivan's 3rd edition Precalculus, section 1.4
 restrictProbProgression = 0
 emailInstructor   = 0
 
 problemListV2 
 problem_start
 problem_id = 1
-source_file = BasicAlgebra/FunctionBasics/Functions100.pg
+source_file = CollegeAlgebra/FunctionBasics/FunctionGraphs05.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -22,7 +22,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 2
-source_file = BasicAlgebra/FunctionBasics/Functions110.pg
+source_file = Library/Mizzou/Algebra/functions_piecewise/evaluate_at_a_point_01.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -31,7 +31,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 3
-source_file = BasicAlgebra/FunctionBasics/Functions120.pg
+source_file = Library/Rochester/setAlgebra15Functions/lh2-2_36.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -40,7 +40,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 4
-source_file = Library/CollegeOfIdaho/setAlgebra_05_03_FactoringByGrouping/53IntAlg_32_Functions_Review.pg
+source_file = Library/Utah/Business_Algebra/set4_Quadratic_and_Other_Special_Functions/p02.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -49,7 +49,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 5
-source_file = BasicAlgebra/FunctionBasics/FunctionValuesByGraph10.pg
+source_file = CollegeAlgebra/FunctionBasics/Piecewise10.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -58,7 +58,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 6
-source_file = BasicAlgebra/FunctionBasics/FunctionValuesByGraph20.pg
+source_file = Library/LoyolaChicago/Precalc/Chap2Sec3/Connally3-2-3-05-Piecewise-functions.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -67,7 +67,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 7
-source_file = BasicAlgebra/FunctionBasics/FunctionValuesByGraph30.pg
+source_file = Library/LoyolaChicago/Precalc/Chap2Sec3/Q06.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -76,7 +76,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 8
-source_file = CollegeAlgebra/FunctionBasics/FunctionGraphs10.pg
+source_file = CollegeAlgebra/FunctionBasics/Piecewise20.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -85,7 +85,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 9
-source_file = CollegeAlgebra/FunctionBasics/FunctionGraphs30.pg
+source_file = CollegeAlgebra/FunctionBasics/Piecewise30.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -94,7 +94,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 10
-source_file = CollegeAlgebra/FunctionBasics/graphs_of_functions_12.pg
+source_file = Library/LoyolaChicago/Precalc/Chap2Sec3/Connally3-2-3-02-Piecewise-functions.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -103,7 +103,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 11
-source_file = CollegeAlgebra/FunctionBasics/FunctionGraphs20.pg
+source_file = Library/LoyolaChicago/Precalc/Chap2Sec3/Q01.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -112,7 +112,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 12
-source_file = BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph10.pg
+source_file = Library/Mizzou/College_Algebra/Functions_Piecewise/MC_Three_Lines_Const_Left.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -121,7 +121,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 13
-source_file = BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph20.pg
+source_file = Library/LoyolaChicago/Precalc/Chap2Sec3/Q04.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -130,7 +130,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 14
-source_file = BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph30.pg
+source_file = Library/Mizzou/Algebra/functions_piecewise/determine_formula_from_graph_01.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -139,7 +139,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 15
-source_file = BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph40.pg
+source_file = Library/Mizzou/Algebra/functions_piecewise/determine_formula_from_graph_02.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -148,7 +148,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 16
-source_file = BasicAlgebra/FunctionBasics/FunctionOrNotByGraph10.pg
+source_file = Library/Mizzou/Algebra/functions_piecewise/app_03.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -157,7 +157,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 17
-source_file = BasicAlgebra/FunctionBasics/FunctionOrNotByGraph20.pg
+source_file = Library/Mizzou/Algebra/functions_piecewise/app_02.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -166,7 +166,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 18
-source_file = BasicAlgebra/FunctionBasics/FunctionOrNotByGraph30.pg
+source_file = Library/Mizzou/Algebra/functions_piecewise/app_01.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -175,7 +175,7 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 19
-source_file = CollegeAlgebra/FunctionBasics/FunctionTables30.pg
+source_file = CollegeAlgebra/Transformations/Symmetry10.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
@@ -184,56 +184,11 @@ att_to_open_children = 0
 problem_end
 problem_start
 problem_id = 20
-source_file = CollegeAlgebra/FunctionBasics/VariousQuestions10.pg
+source_file = CollegeAlgebra/Transformations/Symmetry1.pg
 value = 1
 max_attempts = -1
 showMeAnother = 0
 counts_parent_grade = 0
 att_to_open_children = 0 
-problem_end
-problem_start
-problem_id = 21
-source_file = CollegeAlgebra/FunctionBasics/FunctionTables10.pg
-value = 1
-max_attempts = -1
-showMeAnother = 0
-counts_parent_grade = 0
-att_to_open_children = 0 
-problem_end
-problem_start
-problem_id = 22
-source_file = CollegeAlgebra/FunctionBasics/FunctionTables20.pg
-value = 1
-max_attempts = -1
-showMeAnother = 0
-counts_parent_grade = 0
-att_to_open_children = 0 
-problem_end
-problem_start
-problem_id = 23
-source_file = Library/LoyolaChicago/Precalc/Chap1Review/Q37.pg
-value = 1
-max_attempts = -1
-showMeAnother = 0
-counts_parent_grade = 0
-att_to_open_children = 1 
-problem_end
-problem_start
-problem_id = 24
-source_file = Library/Rochester/setAlgebra16FunctionGraphs/c0s1p4/c0s1p4.pg
-value = 1
-max_attempts = -1
-showMeAnother = 0
-counts_parent_grade = 0
-att_to_open_children = 1 
-problem_end
-problem_start
-problem_id = 25
-source_file = Library/CollegeOfIdaho/setAlgebra_02_01_IntroFunctions/21IntAlg_14_function.pg
-value = 1
-max_attempts = -1
-showMeAnother = 0
-counts_parent_grade = 0
-att_to_open_children = 1 
 problem_end
 
