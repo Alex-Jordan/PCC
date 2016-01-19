@@ -27,9 +27,8 @@ $relmin = $sign*sqrt($b / (3*$a));
 
 $xmin = min($relmax - 2,$relmin - 2);
 $xmax = max($relmin + 2,$relmax + 2);
-$ymin = $sign*($a*($relmin)**3 - $b*($relmin));
-$ymax = $sign*($a*($relmax)**3 - $b*($relmax));
-
+$ymin = min($sign*($a*($relmin)**3 - $b*($relmin)), $sign*($a*($relmax)**3 - $b*($relmax)));
+$ymax = max($sign*($a*($relmin)**3 - $b*($relmin)), $sign*($a*($relmax)**3 - $b*($relmax)));
 $ymin = floor(1.5*$ymin/10)*10;
 $ymax = floor(1.5*$ymax/10)*10;
 
