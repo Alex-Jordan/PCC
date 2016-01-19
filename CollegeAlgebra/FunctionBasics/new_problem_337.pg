@@ -14,6 +14,7 @@ loadMacros(
 
 TEXT(beginproblem());
 $showPartialCorrectAnswers = 1;
+$refreshCachedImages = 1;
 #GRAPH
 #f(x) = +/-(ax^3 - $bx)
 
@@ -29,10 +30,13 @@ $xmin = min($relmax - 2,$relmin - 2);
 $xmax = max($relmin + 2,$relmax + 2);
 $ymin = min($sign*($a*($relmin)**3 - $b*($relmin)), $sign*($a*($relmax)**3 - $b*($relmax)));
 $ymax = max($sign*($a*($relmin)**3 - $b*($relmin)), $sign*($a*($relmax)**3 - $b*($relmax)));
+TEXT($ymin);
 $ymin = floor(1.5*$ymin/10)*10;
-$ymax = floor(1.5*$ymax/10)*10;
+$ymax = ceil(1.5*$ymax/10)*10;
 
-$graph = init_graph($xmin,$ymin,$xmax,$ymax,'axes'=>[0,0],'grid'=>[$xmax - $xmin, ($ymax - $ymin)/10]);
+
+
+$graph = init_graph($xmin,$ymin,$xmax,$ymax,'axes'=>[0,0],'grid'=>[$xmax - $xmin, ($ymax - $ymin)/5]);
 $start = $xmin - 1;
 $stop = $xmax + 1;
 $f = FEQ("$sign*($a*x^3-$b*x) for x in [$start,$stop] using color:blue and weight:1");
