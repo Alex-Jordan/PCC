@@ -29,7 +29,7 @@ $g1 = $a2*(-0.25*$a1*$x1);
 $g2 = $a2*(-0.25*$a1*$x2);
 $xpeak = 2*3.14-acos($a1*$a2/4/3.14);
 $peak = $a2*(-$a1/4*$a3/3.14*$xpeak+ 3.14/$a3*sin(3.14/$a3*$xpeak));
-$ymax= int(abs($peak)) + 1;
+$ymax= int(max(abs($peak),abs($g1) ,abs($g2) )) + 1;
 $ymin = -$ymax;
 
 if ($a2 > 0) {$str = "negative";}
