@@ -3,8 +3,8 @@ openDate          = 06/23/2014 at 12:00am PDT
 dueDate           = 07/16/2014 at 10:00pm PDT
 answerDate        = 07/16/2014 at 10:00pm PDT
 paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH111/GenericMTH111HardcopyHeader.pg
-paperHeaderFile   = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
-description       = function transformationsi, including shifts, reflections, and scaling; graphical, tabular, formulaic, and verbal examples
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
+description       = function transformations, including shifts, reflections, and scaling; graphical, tabular, formulaic, and verbal examples
 problemList       = 
 CollegeAlgebra/Transformations/Shifting10.pg, 1, -1
 CollegeAlgebra/Transformations/Shifting20.pg, 1, -1

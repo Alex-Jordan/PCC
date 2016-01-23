@@ -1,0 +1,201 @@
+assignmentType      = default
+openDate          = 01/04/2016 at 12:00am PST
+reducedScoringDate = 12/31/1969 at 04:00pm PST
+dueDate           = 02/09/2016 at 10:00pm PST
+answerDate        = 02/09/2016 at 10:00pm PST
+enableReducedScoring = N
+paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH111/GenericMTH111HardcopyHeader.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
+description       = problems like those in Sullivan and Sullivan's 3rd edition Precalculus, section 1.4
+restrictProbProgression = 0
+emailInstructor   = 0
+problemListV2 
+problem_start
+problem_id = 1
+CollegeAlgebra/Transformations/Shifting10.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 2
+CollegeAlgebra/Transformations/Shifting20.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 3
+CollegeAlgebra/Transformations/Shifting30.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 4
+CollegeAlgebra/Transformations/Shifting40.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 5
+CollegeAlgebra/Transformations/Shifting50.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 6
+CollegeAlgebra/Transformations/Shifting60.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 7
+CollegeAlgebra/Transformations/ScalingAndReflecting10.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 8
+CollegeAlgebra/Transformations/GeneralTransformations10.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 9
+CollegeAlgebra/Transformations/ScalingAndReflecting20.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 10
+CollegeAlgebra/Transformations/ScalingAndReflecting30.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 11
+CollegeAlgebra/Transformations/MatchGraphsReflected.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 12
+CollegeAlgebra/Transformations/GeneralTransformations20.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 13
+CollegeAlgebra/Transformations/GeneralTransformations30.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 14
+CollegeAlgebra/Transformations/GeneralTransformations40.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 15
+CollegeAlgebra/Transformations/GeneralTransformations40.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 16
+CollegeAlgebra/Transformations/MatchGraphs2.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 17
+CollegeAlgebra/Transformations/General1.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 18
+CollegeAlgebra/Transformations/General3.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 19
+CollegeAlgebra/Transformations/ChooseGraph2.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 20
+CollegeAlgebra/Transformations/MatchGraphs1.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
+problem_start
+problem_id = 21
+CollegeAlgebra/Transformations/Painting.pg
+value = 1
+max_attempts = -1
+showMeAnother = 0
+counts_parent_grade = 0
+att_to_open_children = 0 
+problem_end
