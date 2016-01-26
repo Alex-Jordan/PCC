@@ -84,5 +84,3 @@ In the order of operations, multiplication takes priority above subtraction.
 END_PGML_SOLUTION
 
 ENDDOCUMENT();
-
-
