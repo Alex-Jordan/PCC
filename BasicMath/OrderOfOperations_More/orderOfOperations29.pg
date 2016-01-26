@@ -64,8 +64,9 @@ END_PGML
 $wrong=($a-$b)*$c;
 ANS($ans -> cmp() ->
   withPostFilter(AnswerHints(
-    Real($wrong) =>
-    "Remember to do the multiplication first (order of operations).")));
+#    Real($wrong) =>
+#    "Remember to do the multiplication first (order of operations)."
+)));
 
 
 $step1 = $b*$c;
