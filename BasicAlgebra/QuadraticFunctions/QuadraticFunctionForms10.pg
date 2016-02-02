@@ -87,8 +87,8 @@ BEGIN_PGML_SOLUTION
 
 a. If we expand the given polynomial:
 
-    [`\begin{aligned} [$vertexform] & = (x-[$h])(x-[$h])+$k\\
-&= x^2-[$h]x-[$h]x+[$h]^2+$k\\
+    [`\begin{aligned} [$vertexform] & = (x-[$h])(x-[$h])-[$k]\\
+&= x^2-[$h]x-[$h]x+[$h]^2-[$k]\\
 &= [$expandedform]\end{aligned}`]
 
 b. One way to find the factored form is to examine the expanded form, and factor it in the usual way. Here we look for two numbers that multiply to [@$p[0]@] and add to [@-1*$p[1]@]. Two such numbers are [@$a@] and [@-1*$b@]. Since the leading coefficient is [`1`], these two numbers are the constant terms of two factors. And the factored form is
