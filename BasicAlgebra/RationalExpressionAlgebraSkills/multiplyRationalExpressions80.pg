@@ -51,7 +51,7 @@ $e1 = random(1,5,1);
 $e2 = random(1,5,1);
 
 $num1 = Formula("$a*$var1**2+($b-$a)*$var1-$b")->reduce;
-$den1 = Formula("$f*$var1**($e1+1)-$f*$d*$var1**$e1")->reduce;
+$den1 = Formula("$f*$c*$var1**($e1+1)-$f*$d*$var1**$e1")->reduce;
 $num1Factored = Formula("($a*$var1+$b)*($var1-1)")->reduce;
 $den1Factored = Formula("$f*$var1**$e1*($c*$var1-$d)")->reduce;
 
@@ -77,7 +77,8 @@ Context()->operators->set(
 Context()->lists->set(List => {separator => "\; and \;"});
 $lostFrac1 = -Fraction($b,$a)->reduce;
 $lostFrac2 = Fraction($d,$c)->reduce;
-$lostDomain = Compute("$lostFrac1,$lostFrac2");
+$lostFrac3 = 0;
+$lostDomain = Compute("$lostFrac1,$lostFrac2,$lostFrac3");
 
 Context("LimitedFactor");
 
