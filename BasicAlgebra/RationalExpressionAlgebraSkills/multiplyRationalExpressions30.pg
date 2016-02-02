@@ -36,7 +36,7 @@ do {$var2 = RandomVariableName(type=>'variable');} until ($var1 ne $var2);
 Context()->variables->are($var1=>'Real',$var2=>'Real');
 
 $b = random(2,4,1);
-$a = random($a+1,6,1);
+$a = random($b+1,6,1);
 
 $num1 = Formula("$var1**$a")->reduce;
 $den1 = Formula("$var1+$a")->reduce;
