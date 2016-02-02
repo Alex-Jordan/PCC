@@ -43,7 +43,7 @@ $b1 = non_zero_random(-12,12,1);
 $ansA = $a0-$a1;
 $ansB = $b0-$b1;
 
-$ans = Compute("$ansA-$ansB*i")->reduce;
+$ans = Compute("$ansA+$ansB*i")->reduce;
 
 ##############################################
 
