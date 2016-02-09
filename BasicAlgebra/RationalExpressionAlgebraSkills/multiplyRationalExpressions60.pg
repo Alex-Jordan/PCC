@@ -59,7 +59,7 @@ $den2Factored = Formula("$d*($var1+$a)")->reduce;
 
 $frac1= Formula("$num1/$den1");
 $frac2= Formula("$num2/$den2");
-$ans = Formula(" -($var1-$a)/( $factor*$var1**($e1-$e2)*$var2**($e3-$e4) )" )->reduce;
+$ans = Formula(" -($var1-$a)/( $factor*$d*$var1**($e1-$e2)*$var2**($e3-$e4) )" )->reduce;
 
 $lostDomain = List(-$a);
 

@@ -50,7 +50,7 @@ $e1 = random(1,5,1);
 $e2 = random(1,5,1);
 
 $num1 = Formula("$a*$var1**2+($b-$a)*$var1*$var2-$b*$var2**2")->reduce;
-$den1 = Formula("$f*$var1**($e1+1)*$var2**$e2-$f*$d*$var1**$e1*$var2**($e2+1)")->reduce;
+$den1 = Formula("$f*$c*$var1**($e1+1)*$var2**$e2-$f*$d*$var1**$e1*$var2**($e2+1)")->reduce;
 $num1Factored = Formula("($a*$var1+$b$var2)*($var1-$var2)")->reduce;
 $den1Factored = Formula("$f*$var1**$e1*$var2**$e2*($c*$var1-$d*$var2)")->reduce;
 
