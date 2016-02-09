@@ -1,11 +1,10 @@
 # WeBWorK problem written by Carl Yao
 # Portland Community College
 #
-# Teaching basics of using TI-89 or Casio ClassPad 330.
-# Use a graphing calculator to find the intersection of two functions.
+# Use a graphing calculator to solve radical equation graphically.
 # There is one intersection point.
 #
-# Last edited: Yao 5/29/2014
+# Last edited: Yao 2/8/2016
 #
 # ENDDESCRIPTION
 
@@ -31,8 +30,6 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGML.pl",
-#  "PCCmacros.pl",
-#  "contextFraction.pl",
   "PGcourse.pl",
 );
 
@@ -41,16 +38,17 @@ loadMacros(
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
 
-$xSolution = non_zero_random(-8,8,1);
-$ySolution = non_zero_random(-8,8,1);
+do {
+   $a = non_zero_random(-10,10,1);
+   $b = random(1,10,1);
+   $c = random(1,8,1);
+   $xSolution = ($a-$c**2)/$b;
+} until ( (int($xSolution)==$xSolution) && ($xSolution>=-8) && ($xSolution<=8) );
 
-$m0 = non_zero_random(-4,4,1);
-$b0 = $ySolution - $m0*$xSolution;
-do {$m1 = non_zero_random(-4,4,1);} until ($m1!=$m0);
-$b1 = $ySolution - $m1*$xSolution;
+$ySolution = $c;
 
-$func0 = Compute("$m0*x+$b0")->reduce;
-$func1 = Compute("$m1*x+$b1")->reduce;
+$func0 = Compute("sqrt($a-$b*x)")->reduce;
+$func1 = Compute("$c")->reduce;
 
 Context("Point");
 $solution = Point("($xSolution,$ySolution)");
@@ -60,18 +58,13 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Use a TI-89 or Casio ClassPad 330 graphing calculator to solve this system equation:
+Use a TI-89 or Casio ClassPad 330 graphing calculator to solve this equation:
 
-    [`` \left\{
-   \begin{aligned}
-      y &= [$func0] \\
-      y &= [$func1] \\
-   \end{aligned}
-   \right.``]
+    [`` [$func0] = [$func1] ``]
 
 Using TI-89's "Intersection" function (under F5's menu on a graph screen) or Casio's "Intersect" function (under Analysis, G-Solve on a graph screen) to find these two functions' intersection. Write your answers as a point.
 
-    The system equation's solution is [__________]{$solution}.
+    This equation's solution is [__________]{$solution}.
 
 END_PGML
 

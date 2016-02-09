@@ -105,11 +105,9 @@ BEGIN_PGML_SOLUTION
 
 7. The calculator will first ask for a "lower bound". Use the left/right arrow keys to move the cursor to anywhere to the *left* of the intersection. Press ENTER. (Pressing 2nd button and then the left/right arrow keys will speed up the cursor movement.)
 
-8. Now the calculator will ask for an "upper bound". Move the cursor to anywhere to the *right* of the intersection. Press ENTER.
+8. Now the calculator will ask for an "upper bound". Move the cursor to anywhere to the *right* of the intersection. Press ENTER. 
 
-7. The calculator will display the intersection.
-
-9. Repeat Step 4 through Step 7 to find the second intersection.
+9. The calculator will display the intersection. Repeat Step 4 through Step 8 to find the second intersection.
 
 ##Casio ClassPad 330 Instructions
 

@@ -1,0 +1,130 @@
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Use a graphing calculator to solve radical equation graphically.
+# There is one intersection point.
+#
+# Last edited: Yao 2/8/2016
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Algebraic Expressions')
+## KEYWORDS('calculator','graphing','intersection')
+## DBCCSS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Carl Yao')
+## Institution('PCC')
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("Numeric");
+
+do {
+   $b = random(1,10,1);
+   $a = random(1,10,1);
+   $d = 2*$a-($b)**2;
+} until ( ($d>0) && (int(sqrt($d))!=sqrt($d)) );
+
+$func0 = Compute("sqrt($a-x)")->reduce;
+$func1 = Compute("-sqrt(x)+$b")->reduce;
+
+$x0 = ($a+sqrt(2*$a*($b)**2-($b)**4))/2;
+$x1 = ($a-sqrt(2*$a*($b)**2-($b)**4))/2;
+$y0 = sqrt($a-$x0);
+$y1 = sqrt($a-$x1);
+
+Context("Point");
+Context()->flags->set(
+  tolerance => 0.005,
+  tolType => "relative",
+);
+$solution0 = Point("($x0,$y0)");
+$solution1 = Point("($x1,$y1)");
+$ans = List($solution0,$solution1);
+
+##############################################
+TEXT(beginproblem());
+
+BEGIN_PGML
+
+Use a TI-89 or Casio ClassPad 330 graphing calculator to solve this equation:
+
+    [`` [$func0] = [$func1] ``]
+
+Using TI-89's "Intersection" function (under F5's menu on a graph screen) or Casio's "Intersect" function (under Analysis, G-Solve on a graph screen) to find these two functions' intersection(s). 
+
+* Write your answers as points. 
+* If there are two solutions, use a comma to separate them.
+* If needed, round your answer to at least two decimal places.
+
+    The system equation's solution is [__________]{$ans}.
+
+END_PGML
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+##TI-89 Instructions
+
+1. Press Diamond, and then F1. Clear Y1 and Y2 if needed.
+
+2. Enter the function [` [$func0] `] for Y1 and [`[$func1]`] for Y2. Press ENTER.
+
+3. Press Diamond, and then F3. If we cannot see these two functions' intersection, press F2, and then option 6 (default window).
+
+4. On the screen, locate the intersections. If needed, we can zoom in to see more clearly: Press F2, choose Option 2, move the cursor close to the intersections, and then press Enter. You should see two intersections, implying there are two solutions.
+
+5. Press F5, choose Option 5 (Intersection).
+
+6. The calculator will ask us which curve is the first function. One of these two functions is highlighted by default. We can use the up/down arrows to change the highlighted function. Since there are only two functions in this case, we can simply press Enter.
+
+7. The calculator will then ask us which curve is the second function. The other functions is highlighted by default. Press Enter.
+
+8. The calculator will first ask for a "lower bound". Use the left/right arrow keys to move the cursor to anywhere to the *left* of the intersection. Press ENTER. (Pressing 2nd button and then the left/right arrow keys will speed up the cursor movement.)
+
+9. Now the calculator will ask for an "upper bound". Move the cursor to anywhere to the *right* of the intersection. Press ENTER.
+
+10. The calculator will display the intersection. Repeat Step 5 through 9 to find the other intersection.
+
+##Casio ClassPad 330 Instructions
+
+1. Tap "Menu".
+
+2. Tap "Graph and Table". Enter the function [` [$func0] `] for y1, and [`[$func1]`] for  y2. Press EXE.
+
+3. Tap the graph tile (first from the left). If we cannot see these two functions' intersection, tap Zoom, Original (default window).
+
+4. We might need to zoom in to see more clearly. Tap Zoom, Box, and then tap the screen to "draw" a rectangle covering the intersections. You should see two intersections, implying there are two solutions.
+
+5. Once we can see both intersections, tap Analysis, G-Solve, Intersect. 
+
+6. The calculator will display the first intersection. Press the right arrow key to move to the next intersection.
+
+##Solution:
+
+    The system equation's solution is [`[$ans]`].
+
+END_PGML_SOLUTION
+
+ENDDOCUMENT();
+
+
