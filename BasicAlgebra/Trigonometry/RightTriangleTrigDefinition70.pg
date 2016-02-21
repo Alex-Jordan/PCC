@@ -108,9 +108,9 @@ $picture->lb( new Label($labelCx[$corner], $labelCy[$corner],"C",'black','center
 @labelHypotenuseY=(($y[0]+$y[1])/2+$labelAdjust,($y[0]+$y[1])/2-$labelAdjust,($y[0]+$y[1])/2-$labelAdjust,($y[0]+$y[1])/2+$labelAdjust);
 
 
-$picture->lb( new Label($labelBaseX[$corner], $labelBaseY[$corner],'x','black','center','middle'));
+$picture->lb( new Label($labelBaseX[$corner], $labelBaseY[$corner],$baseLength,'black','center','middle'));
 
-$picture->lb( new Label($labelHeightX[$corner],$labelHeightY[$corner],$heightLength,'black','center','middle'));
+$picture->lb( new Label($labelHeightX[$corner],$labelHeightY[$corner],'x','black','center','middle'));
 
 $picture->lb( new Label($labelHypotenuseX[$corner],$labelHypotenuseY[$corner],$hypotenuseLength,'black','center','middle'));
 
