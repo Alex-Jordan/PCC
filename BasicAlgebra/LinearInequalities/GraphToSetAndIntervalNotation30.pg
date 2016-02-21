@@ -32,6 +32,7 @@ loadMacros(
   "PGML.pl",
   "parserPopUp.pl",
   "contextInequalitySetBuilder.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -45,9 +46,8 @@ $symbol = '<';
 
 InequalitySetBuilder::UseVerticalSuchThat();
 Context("InequalitySetBuilder-Only");
-@letters = ('a'..'z');
-do {$var = $letters[ random(0,(scalar @letters)-1) ];} until ($var ne 'x');
-Context()->variables->are($var => 'Real', x => 'Real');
+$var = RandomVariableName();
+do {Context()->variables->add($var => 'Real');} unless ($var eq 'x');
 $setans = Compute("{ $var | $var $symbol $a}");
 
 Context("Interval");
