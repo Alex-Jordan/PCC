@@ -5,19 +5,19 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/MultiplyFractions.pg
 description       = multiply fractions, not including mixed numbers
 problemList       = 
-BasicAlgebra/FractionArithmetic/MultiplyFractions10.pg, 1, -1
-BasicMath/FractionsCalculation/MultiplyFractions15.pg, 1, -1
-BasicMath/FractionsCalculation/MultiplyFractions16.pg, 1, -1
-BasicMath/FractionsCalculation/MultiplyThreeFractions10.pg, 1, -1
-BasicMath/FractionsCalculation/MultiplyThreeFractions20.pg, 1, -1
-BasicAlgebra/FractionArithmetic/MultiplyFractions80.pg, 1, -1
-BasicAlgebra/FractionArithmetic/MultiplyFractions50.pg, 1, -1
-BasicMath/FractionsCalculation/MultiplyFractions69.pg, 1, -1
-BasicMath/FractionApplication/FractionMultiplicationWordProblems10.pg, 1, -1
-BasicMath/FractionApplication/FractionMultiplicationWordProblems20.pg, 1, -1
-BasicMath/FractionApplication/FractionMultiplicationWordProblems30.pg, 1, -1
-BasicMath/FractionApplication/FractionMultiplicationWordProblems40.pg, 1, -1
-BasicMath/FractionApplication/FractionMultiplicationWordProblems50.pg, 1, -1
-BasicMath/FractionApplication/FractionMultiplicationWordProblems60.pg, 1, -1
-BasicMath/FractionApplication/FractionMultiplicationWordProblems70.pg, 1, -1
+BasicAlgebra/FractionArithmetic/MultiplyFractions10.pg, 1, -1, 0
+BasicMath/FractionsCalculation/MultiplyFractions15.pg, 1, -1, 0
+BasicMath/FractionsCalculation/MultiplyFractions16.pg, 1, -1, 0
+BasicMath/FractionsCalculation/MultiplyThreeFractions10.pg, 1, -1, 0
+BasicMath/FractionsCalculation/MultiplyThreeFractions20.pg, 1, -1, 0
+BasicAlgebra/FractionArithmetic/MultiplyFractions80.pg, 1, -1, 0
+BasicAlgebra/FractionArithmetic/MultiplyFractions50.pg, 1, -1, 0
+BasicMath/FractionsCalculation/MultiplyFractions69.pg, 1, -1, 0
+BasicMath/FractionApplication/FractionMultiplicationWordProblems10.pg, 1, -1, 0
+BasicMath/FractionApplication/FractionMultiplicationWordProblems20.pg, 1, -1, 0
+BasicMath/FractionApplication/FractionMultiplicationWordProblems30.pg, 1, -1, 0
+BasicMath/FractionApplication/FractionMultiplicationWordProblems40.pg, 1, -1, 0
+BasicMath/FractionApplication/FractionMultiplicationWordProblems50.pg, 1, -1, 0
+BasicMath/FractionApplication/FractionMultiplicationWordProblems60.pg, 1, -1, 0
+BasicMath/FractionApplication/FractionMultiplicationWordProblems70.pg, 1, -1, 0
 

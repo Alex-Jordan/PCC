@@ -6,6 +6,6 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH111/GenericMTH111Ha
 paperHeaderFile   = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
 description       = review of percentages
 problemList       = 
-CollegeAlgebra/ExponentialFunctions/Percentage10.pg, 1, -1
-CollegeAlgebra/ExponentialFunctions/Percentage20.pg, 1, -1
-CollegeAlgebra/ExponentialFunctions/RelativeGrowthRate10.pg, 1, -1
+CollegeAlgebra/ExponentialFunctions/Percentage10.pg, 1, -1, 0
+CollegeAlgebra/ExponentialFunctions/Percentage20.pg, 1, -1, 0
+CollegeAlgebra/ExponentialFunctions/RelativeGrowthRate10.pg, 1, -1, 0

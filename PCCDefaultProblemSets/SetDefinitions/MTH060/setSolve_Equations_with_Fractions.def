@@ -6,25 +6,25 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/SolveEquationsWithFractions.pg
 description       = solving linear equations that involve fractions
 problemList       = 
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction05.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction10.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction20.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction30.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction50.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction70.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction110.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction130.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction290.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction300.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction150.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction160.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction140.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction310.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction180.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction200.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction210.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction220.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction240.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction260.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction270.pg, 1, -1
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction05.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction10.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction20.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction30.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction50.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction70.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction110.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction130.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction290.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction300.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction150.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction160.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction140.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction310.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction180.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction200.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction210.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction220.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction240.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction260.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction270.pg, 1, -1, 0
 

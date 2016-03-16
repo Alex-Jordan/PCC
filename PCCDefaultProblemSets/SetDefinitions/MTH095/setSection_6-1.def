@@ -5,20 +5,20 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95Har
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/GenericMTH95Header.pg
 description       = graph quadratic functions; parabola axis of symmetry and vertex
 problemList       = 
-BasicAlgebra/GraphingQuadratics/GraphParabolaByTable10.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/GraphParabolaByTable20.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/GraphParabolaByTable30.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/GraphParabolaByTable40.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/GraphParabolaByTable50.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex10.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex20.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex30.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex40.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex50.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex60.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex70.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex80.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex90.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex100.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex110.pg, 1, -1
+BasicAlgebra/GraphingQuadratics/GraphParabolaByTable10.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/GraphParabolaByTable20.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/GraphParabolaByTable30.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/GraphParabolaByTable40.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/GraphParabolaByTable50.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex10.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex20.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex30.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex40.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex50.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex60.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex70.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex80.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex90.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex100.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex110.pg, 1, -1, 0
 

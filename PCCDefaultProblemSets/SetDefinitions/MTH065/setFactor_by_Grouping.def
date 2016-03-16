@@ -6,18 +6,18 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH065/MTH65HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/FactorByGrouping.pg
 description       = factoring polynomials using the grouping technique
 problemList       = 
-BasicAlgebra/Factoring/factoring105.pg, 1, -1
-BasicAlgebra/Factoring/factoring110.pg, 1, -1
-BasicAlgebra/Factoring/factoring115.pg, 1, -1
-BasicAlgebra/Factoring/factoring120.pg, 1, -1
-BasicAlgebra/Factoring/factoring125.pg, 1, -1
-BasicAlgebra/Factoring/factoring130.pg, 1, -1
-BasicAlgebra/Factoring/factoring135.pg, 1, -1
-BasicAlgebra/Factoring/factoring140.pg, 1, -1
-BasicAlgebra/Factoring/factoring150.pg, 1, -1
-BasicAlgebra/Factoring/factoring120.pg, 1, -1
-BasicAlgebra/Factoring/factoring125.pg, 1, -1
-BasicAlgebra/Factoring/factoring135.pg, 1, -1
-BasicAlgebra/Factoring/factoring140.pg, 1, -1
-BasicAlgebra/Factoring/factoring150.pg, 1, -1
+BasicAlgebra/Factoring/factoring105.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring110.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring115.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring120.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring125.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring130.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring135.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring140.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring150.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring120.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring125.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring135.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring140.pg, 1, -1, 0
+BasicAlgebra/Factoring/factoring150.pg, 1, -1, 0
 

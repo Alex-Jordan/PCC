@@ -6,8 +6,8 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH065/MTH65HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/ParabolaShiftingLeftRight.pg
 description       = shifting a parabola left or right
 problemList       = 
-BasicAlgebra/GraphingQuadratics/ShiftParabola30.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ShiftParabola40.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ShiftParabola30.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ShiftParabola40.pg, 1, -1
+BasicAlgebra/GraphingQuadratics/ShiftParabola30.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ShiftParabola40.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ShiftParabola30.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ShiftParabola40.pg, 1, -1, 0
 

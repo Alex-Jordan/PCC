@@ -6,8 +6,8 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH243/GenericMTH243Ha
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH243/GenericMTH243Header.pg
 description       = calculating and interpreting z-scores
 problemList       = 
-Statistics/zScoreEmpiricalRule/03Stats_05_NormalDist.pg, 1, -1
-Statistics/zScoreEmpiricalRule/normprob6.pg, 1, -1
-Statistics/zScoreEmpiricalRule/kolossa20.pg, 1, -1
-Statistics/zScoreEmpiricalRule/03Stats_07_NormalDist.pg, 1, -1
-Statistics/zScoreEmpiricalRule/03Stats_06_NormalDist.pg, 1, -1
+Statistics/zScoreEmpiricalRule/03Stats_05_NormalDist.pg, 1, -1, 0
+Statistics/zScoreEmpiricalRule/normprob6.pg, 1, -1, 0
+Statistics/zScoreEmpiricalRule/kolossa20.pg, 1, -1, 0
+Statistics/zScoreEmpiricalRule/03Stats_07_NormalDist.pg, 1, -1, 0
+Statistics/zScoreEmpiricalRule/03Stats_06_NormalDist.pg, 1, -1, 0

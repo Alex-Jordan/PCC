@@ -5,11 +5,11 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/PrimeNumbers.pg
 description       = introduction to prime and composite numbers, prime factor an integer
 problemList       = 
-BasicMath/PrimeLCMGCF/primeOrComposite10.pg, 1, -1
-BasicMath/PrimeLCMGCF/primeOrComposite10.pg, 1, -1
-BasicAlgebra/NumberBasics/FactorInteger10.pg, 1, -1
-BasicAlgebra/NumberBasics/FactorInteger20.pg, 1, -1
-BasicAlgebra/NumberBasics/FactorInteger30.pg, 1, -1
-BasicAlgebra/NumberBasics/FactorInteger40.pg, 1, -1
-BasicAlgebra/NumberBasics/FactorInteger60.pg, 1, -1
+BasicMath/PrimeLCMGCF/primeOrComposite10.pg, 1, -1, 0
+BasicMath/PrimeLCMGCF/primeOrComposite10.pg, 1, -1, 0
+BasicAlgebra/NumberBasics/FactorInteger10.pg, 1, -1, 0
+BasicAlgebra/NumberBasics/FactorInteger20.pg, 1, -1, 0
+BasicAlgebra/NumberBasics/FactorInteger30.pg, 1, -1, 0
+BasicAlgebra/NumberBasics/FactorInteger40.pg, 1, -1, 0
+BasicAlgebra/NumberBasics/FactorInteger60.pg, 1, -1, 0
 

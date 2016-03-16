@@ -6,13 +6,13 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/MixedNumbersEquivalentFractions.pg
 description       = translating between mixed numbers and improper fractions; reducing fractions
 problemList       = 
-BasicAlgebra/FractionMixedNumbersBasics/ImproperFractionToMixedNumber10.pg, 1, -1
-BasicAlgebra/FractionMixedNumbersBasics/ImproperFractionToMixedNumber20.pg, 1, -1
-BasicAlgebra/FractionMixedNumbersBasics/MixedNumberToImproperFraction10.pg, 1, -1
-BasicAlgebra/FractionMixedNumbersBasics/MixedNumberToImproperFraction20.pg, 1, -1
-BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction05.pg, 1, -1
-BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction10.pg, 1, -1
-BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction20.pg, 1, -1
-BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg, 1, -1
-BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction40.pg, 1, -1
+BasicAlgebra/FractionMixedNumbersBasics/ImproperFractionToMixedNumber10.pg, 1, -1, 0
+BasicAlgebra/FractionMixedNumbersBasics/ImproperFractionToMixedNumber20.pg, 1, -1, 0
+BasicAlgebra/FractionMixedNumbersBasics/MixedNumberToImproperFraction10.pg, 1, -1, 0
+BasicAlgebra/FractionMixedNumbersBasics/MixedNumberToImproperFraction20.pg, 1, -1, 0
+BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction05.pg, 1, -1, 0
+BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction10.pg, 1, -1, 0
+BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction20.pg, 1, -1, 0
+BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg, 1, -1, 0
+BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction40.pg, 1, -1, 0
 

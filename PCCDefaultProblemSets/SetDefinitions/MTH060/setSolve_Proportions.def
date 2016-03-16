@@ -6,12 +6,12 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/SolveProportions.pg
 description       = solving proporiton equations
 problemList       = 
-BasicAlgebra/SolveLinearEquations/SolveProportion10.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveProportion20.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveProportion30.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveProportion40.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveProportion10.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveProportion20.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveProportion30.pg, 1, -1
-BasicAlgebra/SolveLinearEquations/SolveProportion40.pg, 1, -1
+BasicAlgebra/SolveLinearEquations/SolveProportion10.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveProportion20.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveProportion30.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveProportion40.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveProportion10.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveProportion20.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveProportion30.pg, 1, -1, 0
+BasicAlgebra/SolveLinearEquations/SolveProportion40.pg, 1, -1, 0
 

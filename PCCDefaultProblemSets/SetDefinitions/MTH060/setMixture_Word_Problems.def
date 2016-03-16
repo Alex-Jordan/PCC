@@ -6,14 +6,14 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/MixtureWordProblems.pg
 description       = word problems involving mixtures of solutions or populations
 problemList       = 
-BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblemWithTable10.pg, 1, -1
-BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblemWithTable20.pg, 1, -1
-BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblemWithTable30.pg, 1, -1
-BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblemWithTable40.pg, 1, -1
-BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblemWithTable50.pg, 1, -1
-BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblem10.pg, 1, -1
-BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblem20.pg, 1, -1
-BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblem30.pg, 1, -1
-BasicAlgebra/LinearEquationApplications/MixedPopulationWordProblem10.pg, 1, -1
-BasicAlgebra/LinearEquationApplications/MixedPopulationWordProblem20.pg, 1, -1
+BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblemWithTable10.pg, 1, -1, 0
+BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblemWithTable20.pg, 1, -1, 0
+BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblemWithTable30.pg, 1, -1, 0
+BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblemWithTable40.pg, 1, -1, 0
+BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblemWithTable50.pg, 1, -1, 0
+BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblem10.pg, 1, -1, 0
+BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblem20.pg, 1, -1, 0
+BasicAlgebra/LinearEquationApplications/MixedSolutionWordProblem30.pg, 1, -1, 0
+BasicAlgebra/LinearEquationApplications/MixedPopulationWordProblem10.pg, 1, -1, 0
+BasicAlgebra/LinearEquationApplications/MixedPopulationWordProblem20.pg, 1, -1, 0
 

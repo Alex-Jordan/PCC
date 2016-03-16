@@ -6,13 +6,13 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH065/MTH65HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/SolveQuadraticEquationByQuadraticFormula.pg
 description       = solve a quadratic equation using the quadratic formula
 problemList       = 
-BasicAlgebra/QuadraticEquations/solveQuad145.pg, 1, -1
-BasicAlgebra/QuadraticEquations/solveQuad150.pg, 1, -1
-BasicAlgebra/QuadraticEquations/solveQuad155.pg, 1, -1
-BasicAlgebra/QuadraticEquations/solveQuad160.pg, 1, -1
-BasicAlgebra/QuadraticEquations/solveQuad170.pg, 1, -1
-BasicAlgebra/QuadraticEquations/solveQuad185.pg, 1, -1
-BasicAlgebra/QuadraticEquations/solveQuad375.pg, 1, -1
-BasicAlgebra/QuadraticEquations/solveQuad380.pg, 1, -1
-BasicAlgebra/QuadraticEquations/solveQuad385.pg, 1, -1
+BasicAlgebra/QuadraticEquations/solveQuad145.pg, 1, -1, 0
+BasicAlgebra/QuadraticEquations/solveQuad150.pg, 1, -1, 0
+BasicAlgebra/QuadraticEquations/solveQuad155.pg, 1, -1, 0
+BasicAlgebra/QuadraticEquations/solveQuad160.pg, 1, -1, 0
+BasicAlgebra/QuadraticEquations/solveQuad170.pg, 1, -1, 0
+BasicAlgebra/QuadraticEquations/solveQuad185.pg, 1, -1, 0
+BasicAlgebra/QuadraticEquations/solveQuad375.pg, 1, -1, 0
+BasicAlgebra/QuadraticEquations/solveQuad380.pg, 1, -1, 0
+BasicAlgebra/QuadraticEquations/solveQuad385.pg, 1, -1, 0
 

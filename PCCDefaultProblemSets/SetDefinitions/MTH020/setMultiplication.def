@@ -5,15 +5,15 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/Multiplication.pg
 description       = introduction to multiplication and application problems
 problemList       = 
-BasicMath/MultiplicationDivision/multiplicationTable10.pg, 1, -1
-BasicMath/MultiplicationDivision/multiplicationTable15.pg, 1, -1
-BasicMath/MultiplicationDivision/MultiplicationWordProblem10.pg, 1, -1
-BasicMath/MultiplicationDivision/MultiplicationWordProblem20.pg, 1, -1
-BasicMath/MultiplicationDivision/MultiplicationWordProblem30.pg, 1, -1
-BasicMath/MultiplicationDivision/MultiplicationWordProblem40.pg, 1, -1
-BasicMath/MultiplicationDivision/MultiplicationWordProblem50.pg, 1, -1
-BasicMath/MultiplicationDivision/MultiplicationWordProblem60.pg, 1, -1
-BasicMath/MultiplicationDivision/MultiplicationWordProblem70.pg, 1, -1
-BasicMath/MultiplicationDivision/MultiplicationWordProblem80.pg, 1, -1
-BasicMath/MultiplicationDivision/MultiplicationWordProblem90.pg, 1, -1
+BasicMath/MultiplicationDivision/multiplicationTable10.pg, 1, -1, 0
+BasicMath/MultiplicationDivision/multiplicationTable15.pg, 1, -1, 0
+BasicMath/MultiplicationDivision/MultiplicationWordProblem10.pg, 1, -1, 0
+BasicMath/MultiplicationDivision/MultiplicationWordProblem20.pg, 1, -1, 0
+BasicMath/MultiplicationDivision/MultiplicationWordProblem30.pg, 1, -1, 0
+BasicMath/MultiplicationDivision/MultiplicationWordProblem40.pg, 1, -1, 0
+BasicMath/MultiplicationDivision/MultiplicationWordProblem50.pg, 1, -1, 0
+BasicMath/MultiplicationDivision/MultiplicationWordProblem60.pg, 1, -1, 0
+BasicMath/MultiplicationDivision/MultiplicationWordProblem70.pg, 1, -1, 0
+BasicMath/MultiplicationDivision/MultiplicationWordProblem80.pg, 1, -1, 0
+BasicMath/MultiplicationDivision/MultiplicationWordProblem90.pg, 1, -1, 0
 

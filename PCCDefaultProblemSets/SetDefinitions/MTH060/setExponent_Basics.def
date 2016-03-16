@@ -6,8 +6,8 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/ExponentBasics.pg
 description       = the basics of exponents
 problemList       = 
-BasicAlgebra/Exponents/ExponentDefinition10.pg, 1, -1
-BasicAlgebra/Exponents/ExponentDefinition20.pg, 1, -1
-BasicAlgebra/Exponents/ExponentDefinition30.pg, 1, -1
-BasicAlgebra/Exponents/ExponentDefinition30.pg, 1, -1
+BasicAlgebra/Exponents/ExponentDefinition10.pg, 1, -1, 0
+BasicAlgebra/Exponents/ExponentDefinition20.pg, 1, -1, 0
+BasicAlgebra/Exponents/ExponentDefinition30.pg, 1, -1, 0
+BasicAlgebra/Exponents/ExponentDefinition30.pg, 1, -1, 0
 

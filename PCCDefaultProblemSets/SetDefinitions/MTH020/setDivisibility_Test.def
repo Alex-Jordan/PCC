@@ -5,12 +5,12 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH020/MTH20HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH020/DivisibilityTest.pg
 description       = decide whether 2, 3, 5 and 9 can go into a given integer
 problemList       = 
-BasicMath/PrimeLCMGCF/divisibility10.pg, 1, -1
-BasicMath/PrimeLCMGCF/divisibility20.pg, 1, -1
-BasicMath/PrimeLCMGCF/divisibility40.pg, 1, -1
-BasicMath/PrimeLCMGCF/divisibility60.pg, 1, -1
-BasicMath/PrimeLCMGCF/divisibility70.pg, 1, -1
-BasicMath/PrimeLCMGCF/divisibility80.pg, 1, -1
-BasicMath/PrimeLCMGCF/divisibility80.pg, 1, -1
-BasicMath/PrimeLCMGCF/divisibility80.pg, 1, -1
+BasicMath/PrimeLCMGCF/divisibility10.pg, 1, -1, 0
+BasicMath/PrimeLCMGCF/divisibility20.pg, 1, -1, 0
+BasicMath/PrimeLCMGCF/divisibility40.pg, 1, -1, 0
+BasicMath/PrimeLCMGCF/divisibility60.pg, 1, -1, 0
+BasicMath/PrimeLCMGCF/divisibility70.pg, 1, -1, 0
+BasicMath/PrimeLCMGCF/divisibility80.pg, 1, -1, 0
+BasicMath/PrimeLCMGCF/divisibility80.pg, 1, -1, 0
+BasicMath/PrimeLCMGCF/divisibility80.pg, 1, -1, 0
 

@@ -6,28 +6,28 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH065/MTH65HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/ParabolaIntercepts.pg
 description       = identifying the intercepts of a parabola
 problemList       = 
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts10.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts20.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts30.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts40.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts50.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts60.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts70.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts80.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts90.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts100.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts110.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts115.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts120.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts130.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts140.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts150.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts160.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts170.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts180.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts190.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts200.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts210.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts220.pg, 1, -1
-BasicAlgebra/GraphingQuadratics/ParabolaIntercepts230.pg, 1, -1
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts10.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts20.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts30.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts40.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts50.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts60.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts70.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts80.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts90.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts100.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts110.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts115.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts120.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts130.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts140.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts150.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts160.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts170.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts180.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts190.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts200.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts210.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts220.pg, 1, -1, 0
+BasicAlgebra/GraphingQuadratics/ParabolaIntercepts230.pg, 1, -1, 0
 

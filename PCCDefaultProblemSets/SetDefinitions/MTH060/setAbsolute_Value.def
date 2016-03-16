@@ -6,7 +6,7 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/AbsoluteValue.pg
 description       = basic absolute value calculations 
 problemList       = 
-BasicAlgebra/NumberBasics/AbsoluteValue10.pg, 1, -1
-BasicAlgebra/NumberBasics/AbsoluteValue20.pg, 1, -1
-BasicAlgebra/NumberBasics/AbsoluteValue30.pg, 1, -1
+BasicAlgebra/NumberBasics/AbsoluteValue10.pg, 1, -1, 0
+BasicAlgebra/NumberBasics/AbsoluteValue20.pg, 1, -1, 0
+BasicAlgebra/NumberBasics/AbsoluteValue30.pg, 1, -1, 0
 

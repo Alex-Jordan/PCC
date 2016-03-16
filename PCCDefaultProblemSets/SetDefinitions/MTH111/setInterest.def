@@ -5,12 +5,12 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH111/GenericMTH111Ha
 paperHeaderFile   = PCCDefaultProblemSets/OnscreenHeaders/MTH111/GenericMTH111Header.pg
 description       = interest compounded periodically and continuously
 problemList       = 
-CollegeAlgebra/Interest/Nominal.pg, 1, -1
-CollegeAlgebra/Interest/InterestChoice.pg, 1, -1
-CollegeAlgebra/Interest/FindRate.pg, 1, -1
-CollegeAlgebra/Interest/EffectiveRate.pg, 1, -1
-CollegeAlgebra/Interest/ContVersusAnnual.pg, 1, -1
-CollegeAlgebra/Interest/ContInterest.pg, 1, -1
-CollegeAlgebra/Interest/Compounding.pg, 1, -1
-CollegeAlgebra/Interest/Compounding2.pg, 1, -1
+CollegeAlgebra/Interest/Nominal.pg, 1, -1, 0
+CollegeAlgebra/Interest/InterestChoice.pg, 1, -1, 0
+CollegeAlgebra/Interest/FindRate.pg, 1, -1, 0
+CollegeAlgebra/Interest/EffectiveRate.pg, 1, -1, 0
+CollegeAlgebra/Interest/ContVersusAnnual.pg, 1, -1, 0
+CollegeAlgebra/Interest/ContInterest.pg, 1, -1, 0
+CollegeAlgebra/Interest/Compounding.pg, 1, -1, 0
+CollegeAlgebra/Interest/Compounding2.pg, 1, -1, 0
 

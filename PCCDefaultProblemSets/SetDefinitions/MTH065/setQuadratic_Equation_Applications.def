@@ -6,10 +6,10 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH065/MTH65HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH065/QuadraticEquationApplications.pg
 description       = applications of quadratic equations
 problemList       = 
-BasicAlgebra/QuadraticApplications/QuadraticEquationApplication10.pg, 1, -1
-BasicAlgebra/QuadraticApplications/QuadraticEquationApplication20.pg, 1, -1
-BasicAlgebra/QuadraticApplications/QuadraticEquationApplication30.pg, 1, -1
-BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg, 1, -1
-BasicAlgebra/QuadraticApplications/QuadraticEquationApplication50.pg, 1, -1
-BasicAlgebra/QuadraticApplications/QuadraticEquationApplication50.pg, 1, -1
+BasicAlgebra/QuadraticApplications/QuadraticEquationApplication10.pg, 1, -1, 0
+BasicAlgebra/QuadraticApplications/QuadraticEquationApplication20.pg, 1, -1, 0
+BasicAlgebra/QuadraticApplications/QuadraticEquationApplication30.pg, 1, -1, 0
+BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg, 1, -1, 0
+BasicAlgebra/QuadraticApplications/QuadraticEquationApplication50.pg, 1, -1, 0
+BasicAlgebra/QuadraticApplications/QuadraticEquationApplication50.pg, 1, -1, 0
 

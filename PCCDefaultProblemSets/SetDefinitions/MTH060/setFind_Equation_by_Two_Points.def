@@ -6,18 +6,18 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH060/MTH60HardCopyHe
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH060/FindEquationByTwoPoints.pg
 description       = use information about two points to find an equation for a line
 problemList       = 
-BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation10.pg, 1, -1
-BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation20.pg, 1, -1
-BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation30.pg, 1, -1
-BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation10.pg, 1, -1
-BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation20.pg, 1, -1
-BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation30.pg, 1, -1
-BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindSlopeInterceptEquation10.pg, 1, -1
-BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindSlopeInterceptEquation20.pg, 1, -1
-BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindSlopeInterceptEquation30.pg, 1, -1
-BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindSlopeInterceptEquation35.pg, 1, -1
-BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindSlopeInterceptEquation40.pg, 1, -1
-BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindSlopeInterceptEquation50.pg, 1, -1
-BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindEquationSpecial10.pg, 1, -1
-BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindEquationSpecial20.pg, 1, -1
+BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation10.pg, 1, -1, 0
+BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation20.pg, 1, -1, 0
+BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation30.pg, 1, -1, 0
+BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation10.pg, 1, -1, 0
+BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation20.pg, 1, -1, 0
+BasicAlgebra/PointSlopeForm/TwoPointsFindPointSlopeEquation30.pg, 1, -1, 0
+BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindSlopeInterceptEquation10.pg, 1, -1, 0
+BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindSlopeInterceptEquation20.pg, 1, -1, 0
+BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindSlopeInterceptEquation30.pg, 1, -1, 0
+BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindSlopeInterceptEquation35.pg, 1, -1, 0
+BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindSlopeInterceptEquation40.pg, 1, -1, 0
+BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindSlopeInterceptEquation50.pg, 1, -1, 0
+BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindEquationSpecial10.pg, 1, -1, 0
+BasicAlgebra/SlopeAndY-InterceptCalculations/TwoPointsFindEquationSpecial20.pg, 1, -1, 0
 
