@@ -1,7 +1,7 @@
 
-openDate          = 09/22/2013 at 12:00am PDT
-dueDate           = 10/01/2015 at 10:00pm PDT
-answerDate        = 10/01/2015 at 10:00pm PDT
+openDate          = 03/28/2016 at 12:00am PDT
+dueDate           = 06/01/2017 at 10:00pm PDT
+answerDate        = 06/01/2017 at 10:00pm PDT
 paperHeaderFile   = SetDefinitions/Orientation/PCCOrientationHeader.pg
 screenHeaderFile  = SetDefinitions/Orientation/PCCOrientationHeader.pg
 description	  = problems to train students on how to use WeBWorK
