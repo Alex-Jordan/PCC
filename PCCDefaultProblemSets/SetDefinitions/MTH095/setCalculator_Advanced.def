@@ -5,8 +5,8 @@ paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95Har
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/Calculator_Advanced.pg
 description       = learning more advanced skills for graphing calculators
 problemList       = 
-BasicAlgebra/Calculator/MTH95Calculator140.pg, 1, -1, 0
-BasicAlgebra/Calculator/MTH95Calculator150.pg, 1, -1, 0
-BasicAlgebra/Calculator/MTH95Calculator160.pg, 1, -1, 0
+BasicAlgebra/Calculator/CalculatorGraphingTools30.pg, 1, -1, 0
+BasicAlgebra/Calculator/CalculatorGraphingTools40.pg, 1, -1, 0
+BasicAlgebra/Calculator/CalculatorGraphingTools50.pg, 1, -1, 0
 
 
