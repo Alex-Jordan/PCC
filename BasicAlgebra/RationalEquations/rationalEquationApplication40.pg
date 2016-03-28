@@ -66,7 +66,7 @@ Town A and Town B are [`[$a]`] miles apart. A boat traveled from Town A to Town 
 
 The boat traveled from Town A to Town B at the speed of [______]{$ans1} miles per hour.
 
-The boat traveled from Town B back to Town A at the speed of [______]{$ans1} miles per hour.
+The boat traveled from Town B back to Town A at the speed of [______]{$ans2} miles per hour.
 
 END_PGML
 

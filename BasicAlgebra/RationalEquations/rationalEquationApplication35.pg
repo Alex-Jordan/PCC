@@ -43,12 +43,12 @@ do {
       $b = random(1,10,1);
       $a1 = 1;
       $b1 = -$a-2*$b;
-      $c1 = -$a*$b;
+      $c1 = $a*$b;
       $d1 = ($b1)**2-4*$a1*$c1;
    } until ($d1>0);
    $x1 = (-$b1+sqrt($d1))/(2*$a1);
    $x2 = (-$b1-sqrt($d1))/(2*$a1);
-} until ( ($x1==int($x1)) && ($x2==int($x2)) );
+} until ( ($x1==int($x1)) && ($x2==int($x2)) && ($x2>0) );
 
 $commonD = Formula("$b*x*(x-$a)")->reduce;
 
@@ -111,9 +111,9 @@ Now we can write an equation and solve it:
 
 In the second step, to get rid of all fractions, we multiplied each term with the common denominator [`[$commonD]`].
 
-In this situation, [`x=[$x2]`] is not a valid solution, since hours cannot be negative. [`x=[$x1]`] is the only solution. It takes Pipe A [`[$ans1]`] hours to fill the tank.
+Since it takes Pipe B [`[$a]`] fewer hours than Pipe A to fill the tank, it would take Pipe B [`[$ans1]-[$a]=[$ans2]`] hours or [`[$x2]-[$a]=[$x2-$a]`] hours to fill the tank
 
-Since it takes Pipe B [`[$a]`] fewer hours than Pipe A to fill the tank, it would take Pipe B [`[$ans1]-[$a]=[$ans2]`] hours to fill the tank
+In this situation, [`[$x2-$a]`] is not a valid solution for Pipe B, since hours cannot be negative. [`x=[$x1]`] is the only solution. Therefore, it takes Pipe A [`[$ans1]`] hours and Pipe B [`[$ans2]`] hours to fill the tank.
 
 END_PGML_SOLUTION
 

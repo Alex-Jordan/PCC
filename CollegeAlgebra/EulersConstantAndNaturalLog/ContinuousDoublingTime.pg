@@ -60,7 +60,7 @@ Context()->texStrings;
 
 BEGIN_TEXT
 
-In July 2005, the Internet was linked by a global network of about \($a2005\) million host computers.  The number of host computers has been growing approximately exponentially and was about \($a1998\) in July 1998.
+In July 2005, the Internet was linked by a global network of about \($a2005\) million host computers.  The number of host computers has been growing approximately exponentially and was about \($a1998\) million in July 1998.
 
 
 $PAR

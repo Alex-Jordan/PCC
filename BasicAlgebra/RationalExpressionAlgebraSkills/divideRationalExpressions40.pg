@@ -41,7 +41,7 @@ do {$b=random(2,10,1);} until (gcd($a,$b)==1);
 $c = non_zero_random(-6,6,1);
 
 $num1 = Formula("$a**2*$var1**2-$b**2")->reduce;
-$den1 = Formula("$a*$var1**2+($a*$c+$b)*$var1-$b*$c")->reduce;
+$den1 = Formula("$a*$var1**2+($a*$c+$b)*$var1+$b*$c")->reduce;
 $num1Factored = Formula("($a*$var1+$b)*($a*$var1-$b)")->reduce;
 $den1Factored = Formula("($a*$var1+$b)*($var1+$c)")->reduce;
 

@@ -41,7 +41,7 @@ do {
    $c = non_zero_random(-6,6,1);
    do {$d = non_zero_random(-6,6,1);} until ($c!=-$d);
    $f = $c+$d;
-   $g = $b+$a*$c-$a*$d;
+   $g = $b-$a*$c+$a*$d;
 } until (abs($g/$f)==$a);
 
 $e=$a**2;

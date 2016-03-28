@@ -56,7 +56,7 @@ $num1Factored = Formula("($a*$var1+$b)*($var1-1)")->reduce;
 $den1Factored = Formula("$f*$var1**$e1*($c*$var1-$d)")->reduce;
 
 $num2 = Formula("$e*$d*$var1**$e1-$e*$c*$var1**($e1+1)")->reduce;
-$den2 = Formula("$a**2*$var1**2-$b**2")->reduce;
+$den2 = Formula("$a**2*$var1**2-$b*$b")->reduce;
 $num2Factored = Formula("-$e*$var1**$e1*($c*$var1-$d)")->reduce;
 $den2Factored = Formula("($a*$var1+$b)*($a*$var1-$b)")->reduce;
 

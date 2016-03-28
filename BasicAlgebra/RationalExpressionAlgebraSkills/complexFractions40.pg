@@ -60,7 +60,7 @@ $den = Formula("$frac3+$frac4")->reduce;
 
 $ad = $a*$d;
 $question = Formula("$num/$den")->reduce;
-$ans = Formula("($var2+$b*$var1)/($c*$var2+$ad*$var1)")->reduce;
+$ans = Formula("($var2+$b*$var1)/($c*$var2+$d*$var1)")->reduce;
 
 ##############################################
 TEXT(beginproblem());
