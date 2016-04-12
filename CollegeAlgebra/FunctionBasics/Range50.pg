@@ -143,7 +143,7 @@ width=>400,height=>400,tex_size=>800, extra_html_tags=>"alt = '$alt'" )\}
 $ECENTER
 $PAR
 
-From the graph, we can see that the range of \(f\) is \($answera\).
+From the graph, we can see that the range of \(h\) is \($answera\).
 $PAR
 
 b. We first create a graph of \(h\).
@@ -158,7 +158,7 @@ width=>400,height=>400,tex_size=>800, extra_html_tags=>"alt = '$altb'" )\}
 $ECENTER
 $PAR
 
-From the graph, we can see that the range of \(f\) is \($answerb\).
+From the graph, we can see that the range of \(h\) is \($answerb\).
 $PAR
 
 c. We first create a graph of \(h\).
@@ -173,7 +173,7 @@ width=>400,height=>400,tex_size=>800, extra_html_tags=>"alt = '$altc'" )\}
 $ECENTER
 $PAR
 
-From the graph, we can see that the range of \(f\) is \($answerc\).
+From the graph, we can see that the range of \(h\) is \($answerc\).
 $PAR
 END_SOLUTION
 Context()->normalStrings;

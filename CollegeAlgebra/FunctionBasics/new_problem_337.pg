@@ -60,11 +60,11 @@ a) [`[$fname]`] has a relative minimum at [`x = {}`][________] with a value of [
 
 a) [`[$fname]`] has a relative maximum at [`x = {}`][________] with a value of [________].
 
-a) In the following question, if there is more than one interval for the answer, write the answer using the union symbol. For example, write [|[1,2]U[3,4]|] for [`[1,2]\cup[3,4]`].  Write [|inf|] for [`\infty`] and [|-inf|] for [`-\infty`]. Remember to assume that the domain of [`[$fname]`] is [`(-\infty,\infty)`]. 
+a) In the following question, if there is more than one interval for the answer, list the intervals using commas to separate them. A union is not appropriate. For example, write [|[1,2],[3,4]|] for [`[1,2], [3,4]`].  Write [|inf|] for [`\infty`] and [|-inf|] for [`-\infty`]. Remember to assume that the domain of [`[$fname]`] is [`(-\infty,\infty)`].
 
     [`[$fname]`] is decreasing on the interval(s) [________________________].
 
-a) In the following question, if there is more than one interval for the answer, write the answer using the union symbol. For example, write [|[1,2]U[3,4]|] for [`[1,2]\cup[3,4]`].  Write [|inf|] for [`\infty`] and [|-inf|] for [`-\infty`]. Remember to assume that the domain of [`[$fname]`] is [`(-\infty,\infty)`]. 
+a) In the following question, if there is more than one interval for the answer, list the intervals using commas to separate them. A union is not appropriate. For example, write [|[1,2],[3,4]|] for [`[1,2], [3,4]`].  Write [|inf|] for [`\infty`] and [|-inf|] for [`-\infty`]. Remember to assume that the domain of [`[$fname]`] is [`(-\infty,\infty)`].
 
     [`[$fname]`] is increasing on the interval(s) [________________________].
 
@@ -77,12 +77,12 @@ Context()->flags->set(ignoreEndpointTypes=>1);
 
 
 if ($sign < 0) {
-$ansc = Compute("(-infinity,$relmin)U($relmax,infinity)");
+$ansc = Compute("(-infinity,$relmin),($relmax,infinity)");
 $ansd = Compute("($relmin,$relmax)");
 }
 else {
 $ansc = Compute("($relmax,$relmin)");
-$ansd = Compute("(-infinity,$relmax)U($relmin,infinity)");
+$ansd = Compute("(-infinity,$relmax),($relmin,infinity)");
 }
 
 ANS(Compute($relmin)->cmp);
