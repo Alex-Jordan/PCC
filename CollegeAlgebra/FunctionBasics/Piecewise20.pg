@@ -29,6 +29,7 @@ $showPartialCorrectAnswers = 1;
 
 Context("Numeric");
 
+do {
 $x1 = random(-5,-2,1);
 $x2 = $x1 + random(3,5,1);
 $x3 = $x2 + random(1,4,1);
@@ -50,6 +51,8 @@ $f2 = Formula("$m2 x + $temp")->reduce;
 
 $h3 = $x3;
 $k3 = $f2->eval(x=>$h3);
+} until ($k3 > 0);
+
 
 Context("Fraction");
 $c = Fraction($k3/2**(-$x3));
