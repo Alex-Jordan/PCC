@@ -48,9 +48,9 @@ $c = random(10,50,0.01);
 
 
 
-$ans = Real("(10**($c/$a)-$b)/$m");
+$d = Real("(10**($c/$a)-$b)/$m");
 
-$ans = Formula("x=$ans");
+$ans = Formula("x=$d");
 
 
 
@@ -86,7 +86,7 @@ We can begin with division so that the left side is only a logarithm of an expre
 [$m] x+[$b] &= 10^{[$c]/[$a]}\\
 [$m] x &= 10^{[$c]/[$a]}-[$b]\\
 x &= \frac{10^{[$c]/[$a]}-[$b]}{[$m]}\\
-x&\approx[@(10**($c/$a)-$b)/$m@]
+x&\approx[$d]
 \end{aligned}`]
 
 
