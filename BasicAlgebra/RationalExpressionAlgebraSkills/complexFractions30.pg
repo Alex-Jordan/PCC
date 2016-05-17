@@ -36,11 +36,13 @@ Context()->noreduce('(-x)-y','(-x)+y');
 #do {$var2 = RandomVariableName(type=>'variable');} until ($var1 ne $var2);
 #Context()->variables->are($var1=>'Real',$var2=>'Real');
 
-$a = random(1,6,1);
-$b = random(1,6,1);
-do {$c=random(2,6,1);} until (gcd($b,$c)==1);
-$d = non_zero_random(-6,6,1);
-do {$e=random(2,6,1);} until (gcd($d,$e)==1);
+do {
+   $a = random(1,6,1);
+   $b = random(1,6,1);
+   do {$c=random(2,6,1);} until (gcd($b,$c)==1);
+   $d = non_zero_random(-6,6,1);
+   do {$e=random(2,6,1);} until (gcd($d,$e)==1);
+} until ($b*$e+$c*$d!=0);
 
 $commonDenominator = lcm($c,$e);
 
