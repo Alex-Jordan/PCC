@@ -48,7 +48,7 @@ $c = random(10,50,0.01);
 
 
 
-$ans = (10**($c/$a)-$b)/$m;
+$ans = Real("(10**($c/$a)-$b)/$m");
 
 $ans = Formula("x=$ans");
 
