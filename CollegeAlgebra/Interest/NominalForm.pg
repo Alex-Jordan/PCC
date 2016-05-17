@@ -40,6 +40,7 @@ $frequency = list_random(12, 52, 4);
 $word = $frequencyword{$frequency};
 
 $nominal = random(6.1, 12.9, 0.2);
+$nominaldecimal = $nominal/100;
 $yearlyFactor = ($nominal/100/$frequency+1)**$frequency;
 $effective = $yearlyFactor - 1;
 
@@ -50,7 +51,7 @@ Context()->texStrings;
 
 BEGIN_TEXT
 
-A certain bank account will take your deposit of \(P\) dollars, compound interest $word, and after \(t\) years leave you with \[A(t)=P\left(1+\frac{$nominal}{$frequency}\right)^{$frequency t}.\]
+A certain bank account will take your deposit of \(P\) dollars, compound interest $word, and after \(t\) years leave you with \[A(t)=P\left(1+\frac{$nominaldecimal}{$frequency}\right)^{$frequency t}.\]
 
 
 $PAR
