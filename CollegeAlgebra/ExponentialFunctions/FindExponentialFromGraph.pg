@@ -68,9 +68,9 @@ add_functions($gr, "$exponential for x in <-1,$xmax> " .
 @halign=($factor>1)?('right','left'):('left','right');
 @valign=($factor>1)?('bottom','top'):('top','bottom');
 
-$gr->lb( new Label($x[0],$y[0],"($x[0],$y[0])",
+$gr->lb( new Label($x[0],$y[0],"($x[0], $y[0])",
     'black',$halign[0],$valign[0]));
-$gr->lb( new Label($x[1],$y[1],"($x[1],$y[1])",
+$gr->lb( new Label($x[1],$y[1],"($x[1], $y[1])",
     'black',$halign[1],$valign[1]));
 
 $gr->stamps( closed_circle($x[0],$y[0],'black') );
