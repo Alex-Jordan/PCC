@@ -31,7 +31,7 @@ push @dat, random(72, 85,1);
 push @dat, random(89, 100,1);
 
 
-@names = ('Min', '\(Q_{1}\)', 'Median', '\(Q_{3}\)', 'Max');
+@names = ('Min', 'Q_{1}', 'Median', 'Q_{3}', 'Max');
 @labels = ('', '', '', '', '');
 @slice = NchooseK(5,3);
 
