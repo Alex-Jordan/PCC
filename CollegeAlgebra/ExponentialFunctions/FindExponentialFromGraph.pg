@@ -56,18 +56,22 @@ parser::Assignment->Function("f");
 
 $exponential = Compute("$y[0]*$factor^x");
 
-
-$gr = init_graph(-1,-1,4,$y[1]+2, axes=>[0,0], size=>[400,400]);
-
 $xmax = max(4,$x[1]+2);
+$ymax = max($y[1]+2,1.1*$y[1]);
+
+$gr = init_graph(-1,-1,$xmax,$ymax, axes=>[0,0], size=>[400,400]);
+
+
 add_functions($gr, "$exponential for x in <-1,$xmax> " .
     "using color:blue and weight:2");
 
-$gr->lb( new Label($x[0],$y[0],"($x[0],$y[0])",
-    'black','right','bottom'));
+@halign=($factor>1)?('right','left'):('left','right');
+@valign=($factor>1)?('bottom','top'):('top','bottom');
 
+$gr->lb( new Label($x[0],$y[0],"($x[0],$y[0])",
+    'black',$halign[0],$valign[0]));
 $gr->lb( new Label($x[1],$y[1],"($x[1],$y[1])",
-    'black','right','bottom'));
+    'black',$halign[1],$valign[1]));
 
 $gr->stamps( closed_circle($x[0],$y[0],'black') );
 $gr->stamps( closed_circle($x[1],$y[1],'black') );
