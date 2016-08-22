@@ -28,9 +28,7 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGML.pl",
-  "parserImplicitPlane.pl",
   "contextFraction.pl",
-  "parserAssignment.pl",
   "PGcourse.pl",
 );
 
@@ -63,7 +61,7 @@ $func1 = Compute("$a*x**2+$b*x")->reduce;
 
 BEGIN_PGML
 
-Convert this quadratic function from standard form to vertex form, and then find this parabola's vertex.
+With the skill of "completing the square," convert this quadratic function from standard form to vertex form, and then find this parabola's vertex.
 
 Use fractions in your answer. Don't use decimals.
 

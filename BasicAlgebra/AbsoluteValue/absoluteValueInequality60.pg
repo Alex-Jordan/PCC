@@ -129,7 +129,7 @@ $ALT = "Graph of a number line. Two segments are shaded. The first segment start
 
 BEGIN_PGML
 
-Solve this compound inequality, and write your answer in *interval notation*.
+Solve this inequality, and write your answer in *interval notation*.
 
     [`` | [$func] | [$symbol] [$e] ``]
 

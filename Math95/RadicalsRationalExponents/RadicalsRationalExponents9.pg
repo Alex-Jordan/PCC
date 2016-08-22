@@ -56,10 +56,10 @@ $ans = Formula("($a $var)^($n)");
 BEGIN_PGML
 
 Simplify the expression.  
-To enter [`\sqrt{x}`], type *sqrt(x)*.  
-To enter [`x^y`], type *x^y*.  
-To enter [`|x|`], type *|x|* or *abs(x)*.  
-If a value is not defined as a real number or function, type *DNE* for "does not exist".
+* To enter [`\sqrt{x}`], type *sqrt(x)*.  
+* To enter [`x^y`], type *x^y*.  
+* To enter [`|x|`], type *|x|* or *abs(x)*.  
+* If a value is not defined as a real number or function, type *DNE* for "does not exist".
 
 >>[``\sqrt[[$m]]{[$internal]}``]<<
 

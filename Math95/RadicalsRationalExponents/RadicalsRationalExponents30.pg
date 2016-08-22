@@ -7,7 +7,7 @@
 #       sqrt(x^2+2ax+a^2)
 #
 #
-# Last updated: Spoddeck 11/12/15
+# Last updated: Yao 07/25/2013, Spoddeck 11/12/15
 # ENDDESCRIPTION
 
 
@@ -21,6 +21,7 @@ loadMacros(
   "MathObjects.pl",
   "contextLimitedPowers.pl",
   "PGML.pl",
+  "answerHints.pl",
   "PGcourse.pl",
 );
 
@@ -50,6 +51,11 @@ LimitedPowers::OnlyIntegers();
 
 $ans = Formula("|$var+$a|");
 
+Context()->flags->set(limits=>[-$a-2,-$a+2]);
+$evaluator = $ans->cmp()->withPostFilter(AnswerHints(
+  Formula("$var+$a") => "Almost correct, with absolute value symbols missing.",
+));
+
 
 ##############################################
 
@@ -60,19 +66,13 @@ Simplify the expression.
 
 >>[``\sqrt{[$var]^{2}+[$a2][$var]+[$aa]}``]<<
 
-    [_________________]
+    [_________________]{$evaluator}
 
 END_PGML
 
 
 ##############################################
 $showPartialCorrectAnswers = 1;
-
-
-ANS( $ans->cmp());
-
-
-##############################################
 
 
 BEGIN_PGML_SOLUTION

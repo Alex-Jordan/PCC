@@ -29,7 +29,11 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "parserAssignment.pl",
+  "answerHints.pl",
   "PGML.pl",
+  "contextLimitedRadical.pl",
+   "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -37,6 +41,29 @@ loadMacros(
 
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0, formatStudentAnswer=>parsed);
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+parser::Assignment->Allow;
+
+Context()->operators->redefine(',',using=>',',from=>'Numeric');
+    Context()->operators->redefine('or',using=>',',from=>'Numeric');
+    Context()->operators->set(
+      ','=>{string=>' or ',TeX=>'\hbox{ or }'},
+      'or'=>{string=>' or ',TeX=>'\hbox{ or }'}
+    );
+    Context()->lists->set(List => {separator => " or "});
+
+# add solution strings to context- this means that if
+# students enter these (and they are not correct), then 
+# WW will not give a Context warning
+Context()->strings->add("no real solutions"=>{},
+  "no real solution"=>{alias=>'no real solutions'}, 
+  "none"=>{alias=>'no real solutions'}, 
+  "no solution"=>{alias=>'no real solutions'}, 
+  "no solutions"=>{alias=>'no real solutions'}, 
+  );
 
 do {
    $a = non_zero_random(-10,10,1);
@@ -47,11 +74,10 @@ do {
 
 $ySolution = $c;
 
-$func0 = Compute("sqrt($a-$b*x)")->reduce;
+$func0 = Compute("sqrt($a-$b*$var)")->reduce;
 $func1 = Compute("$c")->reduce;
 
-Context("Point");
-$solution = Point("($xSolution,$ySolution)");
+$solution = Formula("$var=$xSolution");
 
 ##############################################
 TEXT(beginproblem());
@@ -90,7 +116,7 @@ BEGIN_PGML_SOLUTION
 
 8. Now the calculator will ask for an "upper bound". Move the cursor to anywhere to the *right* of the intersection. Press ENTER.
 
-9. The calculator will display the intersection.
+9. The calculator will display the intersection, whose [`x`] value is a solution for the equation. 
 
 ##Casio ClassPad 330 Instructions
 
@@ -102,11 +128,11 @@ BEGIN_PGML_SOLUTION
 
 4. Once we can see the intersection, tap Analysis, G-Solve, Intersect. 
 
-5. The calculator will display the intersection.
+5. The calculator will display the intersection, whose [`x`] value is a solution for the equation. 
 
 ##Solution:
 
-    The system equation's solution is [`[$solution]`].
+    The equation's solution is [`[$solution]`].
 
 END_PGML_SOLUTION
 

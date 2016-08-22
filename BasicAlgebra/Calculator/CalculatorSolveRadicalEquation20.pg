@@ -2,7 +2,7 @@
 # Portland Community College
 #
 # Use a graphing calculator to solve radical equation graphically.
-# There is one intersection point.
+# There are two intersections.
 #
 # Last edited: Yao 2/8/2016
 #
@@ -29,13 +29,41 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "parserAssignment.pl",
+  "answerHints.pl",
   "PGML.pl",
+  "contextLimitedRadical.pl",
+   "PCCmacros.pl",
   "PGcourse.pl",
 );
 
 ##############################################
 
 Context("Numeric");
+#Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0, formatStudentAnswer=>parsed);
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+parser::Assignment->Allow;
+
+Context()->operators->redefine(',',using=>',',from=>'Numeric');
+    Context()->operators->redefine('and',using=>',',from=>'Numeric');
+    Context()->operators->set(
+      ','=>{string=>' and ',TeX=>'\hbox{ and }'},
+      'or'=>{string=>' and ',TeX=>'\hbox{ and }'}
+    );
+    Context()->lists->set(List => {separator => " and "});
+
+# add solution strings to context- this means that if
+# students enter these (and they are not correct), then 
+# WW will not give a Context warning
+Context()->strings->add("no real solutions"=>{},
+  "no real solution"=>{alias=>'no real solutions'}, 
+  "none"=>{alias=>'no real solutions'}, 
+  "no solution"=>{alias=>'no real solutions'}, 
+  "no solutions"=>{alias=>'no real solutions'}, 
+  );
 
 do {
    $b = random(1,10,1);
@@ -43,22 +71,19 @@ do {
    $d = 2*$a-($b)**2;
 } until ( ($d>0) && (int(sqrt($d))!=sqrt($d)) );
 
-$func0 = Compute("sqrt($a-x)")->reduce;
-$func1 = Compute("-sqrt(x)+$b")->reduce;
+$func0 = Compute("sqrt($a-$var)")->reduce;
+$func1 = Compute("-sqrt($var)+$b")->reduce;
 
 $x0 = ($a+sqrt(2*$a*($b)**2-($b)**4))/2;
 $x1 = ($a-sqrt(2*$a*($b)**2-($b)**4))/2;
 $y0 = sqrt($a-$x0);
 $y1 = sqrt($a-$x1);
 
-Context("Point");
 Context()->flags->set(
   tolerance => 0.005,
-  tolType => "relative",
+  tolType => "absolute",
 );
-$solution0 = Point("($x0,$y0)");
-$solution1 = Point("($x1,$y1)");
-$ans = List($solution0,$solution1);
+$ans = Formula("$var=$x0,$var=$x1");
 
 ##############################################
 TEXT(beginproblem());
@@ -71,11 +96,11 @@ Use a TI-89 or Casio ClassPad 330 graphing calculator to solve this equation:
 
 Using TI-89's "Intersection" function (under F5's menu on a graph screen) or Casio's "Intersect" function (under Analysis, G-Solve on a graph screen) to find these two functions' intersection(s). 
 
-* Write your answers as points. 
+* Write your answers in the format of *[$var]=*.
 * If there are two solutions, use a comma to separate them.
 * If needed, round your answer to at least two decimal places.
 
-    The system equation's solution is [__________]{$ans}.
+    The equation's solutions are [__________]{$ans}.
 
 END_PGML
 
@@ -103,7 +128,7 @@ BEGIN_PGML_SOLUTION
 
 9. Now the calculator will ask for an "upper bound". Move the cursor to anywhere to the *right* of the intersection. Press ENTER.
 
-10. The calculator will display the intersection. Repeat Step 5 through 9 to find the other intersection.
+10. The calculator will display the intersection, whose [`x`] value is a solution for the equation. Repeat Step 5 through 9 to find the other intersection.
 
 ##Casio ClassPad 330 Instructions
 
@@ -117,11 +142,11 @@ BEGIN_PGML_SOLUTION
 
 5. Once we can see both intersections, tap Analysis, G-Solve, Intersect. 
 
-6. The calculator will display the first intersection. Press the right arrow key to move to the next intersection.
+6. The calculator will display the intersection, whose [`x`] value is a solution for the equation. Press the right arrow key to move to the next intersection.
 
 ##Solution:
 
-    The system equation's solution is [`[$ans]`].
+    The system equation's solutions are [`[$var]=[$x0]`] and [`[$var]=[$x1]`].
 
 END_PGML_SOLUTION
 

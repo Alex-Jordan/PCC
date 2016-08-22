@@ -56,10 +56,6 @@ $ans[1] = Formula("$a $var^($m)");
 BEGIN_PGML
 
 Convert the expression to radical notation.  
-To enter [`\sqrt{x}`], type *sqrt(x)*.  
-To enter [`x^y`], type *x^y*.  
-To enter [`|x|`], type *|x|* or *abs(x)*.  
-If a value is not defined as a real number or function, type *DNE* for "does not exist".
 
 >>[``[$display]``]<<
 

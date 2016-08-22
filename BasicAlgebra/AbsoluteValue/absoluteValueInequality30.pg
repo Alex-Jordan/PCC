@@ -60,7 +60,7 @@ Context("Numeric");
 
 BEGIN_PGML
 
-Solve this compound inequality, and write your answer in *interval notation*.
+Solve this inequality, and write your answer in *interval notation*.
 
     [`` | [$func] | [$symbol] [$right] ``]
 

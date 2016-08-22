@@ -130,13 +130,12 @@ $ALT = "The graph has two functions. The first function looks like the shape of 
 
 BEGIN_PGML
 
-*With a calculator*, solve this compound inequality.
+*With a calculator*, solve this equation:
 
     [`` [$func1] = [$func2] ``]
 
-Please type:  
-
-* *no solution* if there are no real solutions
+* Enter multiple answers separated by commas, such as [`x=1,x=-1`]
+* Please type *no solution* if there are no real solutions
 
     [__________________________________]{$ans}
 

@@ -2,13 +2,7 @@
 # Portland Community College
 #
 # Template:
-# Find the greatest common factor of the following two terms
-#
-#    a*bx^2,   a*x
-#
-# a and b are integers on the interval [2,10], and $b!=$a
-#
-# Uses gcf to get the greatest common factor.
+# Convert a quadratic function among standard, factored and vertex forms.
 #
 # Last updated: Hughes, 6/22/13
 # ENDDESCRIPTION
@@ -69,7 +63,7 @@ BEGIN_PGML
 
 The quadratic expression [`[$vertexform]`] is written in vertex form.
 
-a. Write the expression in expanded form [`ax^2 + bx + c`].
+a. Write the expression in standard form [`ax^2 + bx + c`].
 
     [_________________]{$expandedform}
 

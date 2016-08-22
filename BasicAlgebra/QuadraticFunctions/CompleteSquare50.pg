@@ -57,7 +57,7 @@ $vertex = Point($vertexX,$vertexY);
 TEXT(beginproblem());
 BEGIN_PGML
 
-Convert this quadratic function from standard form to vertex form, and then find this parabola's vertex.
+With the skill of "completing the square," convert this quadratic function from standard form to vertex form, and then find this parabola's vertex.
 
      [` f(x) = [$func] `]
 
@@ -72,7 +72,7 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 
-There are easier ways to solve this quadratic equation, but we will solve it by the skill of "completing the square."
+One way to change a quadratic function from standard form to vertex form is to use the skill of "completing the square."
 
 To use the skill of "completing the square," we need to observe a pattern first:
 

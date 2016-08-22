@@ -125,7 +125,7 @@ $ALT = "Graph of a number line with one segment shaded. The segment starts at $a
 
 BEGIN_PGML
 
-Solve this compound inequality, and write your answer in *interval notation*.
+Solve this inequality, and write your answer in *interval notation*.
 
     [`` [$func] [$symbol] [$d] ``]
 

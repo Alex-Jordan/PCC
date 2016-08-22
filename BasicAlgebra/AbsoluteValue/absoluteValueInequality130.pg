@@ -118,7 +118,7 @@ $ALT = "The graph has two functions. The first function looks like the shape of 
 
 BEGIN_PGML
 
-*With a calculator*, solve this compound inequality and write your answer in *interval notation*.
+*With a calculator*, solve this inequality and write your answer in *interval notation*.
 
     [`` [$func1] [$symbol] [$func2] ``]
 

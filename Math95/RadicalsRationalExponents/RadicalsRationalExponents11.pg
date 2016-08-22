@@ -49,11 +49,8 @@ $ans = Formula("$var^(1/2)");
 
 BEGIN_PGML
 
-Use rational exponents to write the expression.  
-To enter [`\sqrt{x}`], type *sqrt(x)*.  
-To enter [`x^y`], type *x^y*.  
-To enter [`|x|`], type *|x|* or *abs(x)*.  
-If a value is not defined as a real number or function, type *DNE* for "does not exist".
+Use rational exponents to write the expression. 
+* To enter [`x^y`], type *x^y*.  
 
 >>[``[$display]``]<<
 

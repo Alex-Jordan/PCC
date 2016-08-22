@@ -97,7 +97,7 @@ BEGIN_PGML_SOLUTION
 
 8. Now the calculator will ask for an "upper bound". Move the cursor to anywhere to the *right* of the intersection. Press ENTER.
 
-9. The calculator will display the intersection.
+9. The calculator will display the intersection, whose [`x`] value is a solution for the equation. 
 
 ##Casio ClassPad 330 Instructions
 
@@ -109,7 +109,7 @@ BEGIN_PGML_SOLUTION
 
 4. Once we can see the intersection, tap Analysis, G-Solve, Intersect. 
 
-5. The calculator will display the intersection.
+5. The calculator will display the intersection, whose [`x`] value is a solution for the equation. 
 
 ##Solution:
 
