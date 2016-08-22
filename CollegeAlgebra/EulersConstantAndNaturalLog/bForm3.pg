@@ -54,7 +54,8 @@ Context()->operators->set(
 
 BEGIN_PGML
 
-Convert this exponential expression to the form [`Q=ab^{t}`].
+Convert this exponential expression to the form [`Q=ab^{t}`]. Write the base [`b`] in exact form, not as a decimal approximation.
+
 
     [`Q=[$a]\cdot e^{[$k] t}`]
 
