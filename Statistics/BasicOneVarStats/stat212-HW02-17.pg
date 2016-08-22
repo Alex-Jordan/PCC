@@ -53,6 +53,7 @@ $q3 = Real(0.5*$data[5] + 0.5*$data[6]);
 $q3exc = Real(0.25*$data[5] + 0.75*$data[6]);
 $q3inc = Real(0.75*$data[5] + 0.25*$data[6]);
 $iqr = Real($q3 - $q1);
+$with = ($data[5]-$data[3]);
 
 @slice = NchooseK(8,8);
 @shuffleddata = @data[@slice];
@@ -108,11 +109,11 @@ Note that we should first organize the data from smallest to largest, as seen be
 $PAR
 \($data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6], $data[7]\)
 $PAR
-(a)  If you include the median in finding the lower quartile, we find \(Q_{1} =$q1inc\).  If we do not include the median, we find \(Q_{1} =$q1exc\).
+(a)  If you include the median in finding the lower quartile, we find \(Q_{1} =$data[3]\).  If we do not include the median, we find \(Q_{1} =$q1\).
 $PAR
-(b)  If you include the median in finding the upper quartile, we find \(Q_{3} =$q3inc\).  If we do not include the median, we find \(Q_{3} =$q3exc\).
+(b)  If you include the median in finding the upper quartile, we find \(Q_{3} =$data[5]\).  If we do not include the median, we find \(Q_{3} =$q3\).
 $PAR
-The \(IQR\) is found by computing \(Q_{3}- Q_{1}\).  Thus is we have included the median in our calculations, we find \(IQR = $iqr\), if we have not included the median, we find \(IQR =$iqr\).
+The \(IQR\) is found by computing \(Q_{3}- Q_{1}\).  Thus if we have included the median in our calculations, we find \(IQR = $iqr\), if we have not included the median, we find \(IQR =$with\).
 
 END_SOLUTION
 
