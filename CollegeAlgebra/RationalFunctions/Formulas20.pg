@@ -84,9 +84,9 @@ BEGIN_PGML_SOLUTION
 
 We have been told that there are zeros at [`[@$r[0]@]`] and [`[@$r[1]@]`]. Since this is a rational function, having zeros at [`[@$r[0]@]`] and [`[@$r[1]@]`] means that [`(x-[@$r[0]@])`] and [`(x-[@$r[1]@])`] are factors of the numerator. Since the function has nonzero slope at those zeros, they must be degree-1 zeros. Since they are degree-1 zeros, there is no exponent on these factors (other than [`1`]).
 
-Having a vertical asymptotes at [`[@$r[2]@]`] means that [`(x-[@$r[2]@])`] is a factor of the denominator. Since it is a degree-2 asymptote, there is an exponent of [`2`] on that factor.
+Having a vertical asymptote at [`[@$r[2]@]`] means that [`(x-[@$r[2]@])`] is a factor of the denominator. Since it is a degree-2 asymptote, there is an exponent of [`2`] on that factor.
 
-So far, this tells us that [`[$f](x)=c[$p]`] for some constant [$c]. You can enter any formula that has this pattern to get credit for this problem, including just [`[$p]`] (where [`c=1`]).
+So far, this tells us that [`[$f](x)=c[$p]`] for some constant [`c`]. You can enter any formula that has this pattern to get credit for this problem, including just [`[$p]`] (where [`c=1`]).
 
 END_PGML_SOLUTION
 
