@@ -63,11 +63,11 @@ $xmax = max(4,$x[1]+2);
 add_functions($gr, "$exponential for x in <-1,$xmax> " .
     "using color:blue and weight:2");
 
-$gr->lb( new Label($x[0]-0.5,$y[0],"($x[0],$y[0])",
-    'black','center','middle'));
+$gr->lb( new Label($x[0],$y[0],"($x[0],$y[0])",
+    'black','right','bottom'));
 
-$gr->lb( new Label($x[1]-0.5,$y[1],"($x[1],$y[1])",
-    'black','center','middle'));
+$gr->lb( new Label($x[1],$y[1],"($x[1],$y[1])",
+    'black','right','bottom'));
 
 $gr->stamps( closed_circle($x[0],$y[0],'black') );
 $gr->stamps( closed_circle($x[1],$y[1],'black') );
