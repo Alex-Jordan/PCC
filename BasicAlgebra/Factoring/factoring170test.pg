@@ -1,0 +1,239 @@
+# WeBWorK problem written by Chris Hughes, 2013
+# Portland Community College
+#
+# Template:
+# Factor the given polynomial 
+#
+#     x^2 + (a+b) x + ab
+#
+# If the expression cannot be factored
+# then answer with *prime*
+#
+# a,b are non-zero, integer on the interval [1,10].
+#
+# Last updated: Yao 09/23/2016
+# ENDDESCRIPTION
+
+## DBCC('A-APR.1','A-SSE.2')
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Exponents', 'Factoring')
+## KEYWORDS('polynomial','exponents','factoring')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
+  "contextLimitedFactor.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("LimitedFactor");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+Context()->strings->add("cannot be factored"=>{},
+    "cannot be factored."=>{alias=>"cannot be factored"});
+Context()->strings->add('prime'=>{}, 'it is prime'=>{alias=>'prime'});
+Context()->noreduce('(-x)-y', '(-x)+y'); 
+
+# the common term 
+$a = random(1,10,1);
+$b = $a;
+$b = random(1,10,1)while(abs($a)==abs($b));
+$question = Formula("$var^2+($a+$b)$var+$a*$b")->reduce;
+$ans = Formula("($var+$a)*($var+$b)")->reduce;
+
+#This subroutine returns a number's factor pairs in a two-dimensional array.
+sub factorPairs {
+   my @pairs = ( );
+   my $j=0;
+   my $num = shift;
+   for (my $i=1;$i<=sqrt($num);$i++) {
+      if ($num%$i==0) {
+         $pairs[$j][0]=$i;
+         $pairs[$j][1]=$num/$i;
+         $j++;
+      }
+   }
+   return @pairs;
+}
+
+#This subroutine takes the following arguments: a, b, c values in ax^2+bx+c,
+# $d, $e, $f, $g values in the factored form ($d x +$e)($f x +$g),
+# and one or two variables, $var1 and $var2.
+#This subroutine creates two graphs:
+# one with the generic rectangle set up with the top left box and 
+# the bottom right box filled, and the other rectangle with the solution. 
+sub graphRectangles {
+   my ($a,$b,$c,$d,$e,$f,$g,$var1,$var2) = @_;
+   $xmin = 0;         #The viewing window
+   $xmax = 10;
+   $ymin = 0;
+   $ymax = 10;
+   @picture = ( );
+   $xStart = 2;
+   $xEnd = 8;
+   $yStart = 2;
+   $yEnd = 8;
+   @x = ($xStart,$xEnd);
+   @y = ($yStart,$yEnd);
+   $gap = $ymax/100;
+
+   for (my $i=0;$i<=1;$i++) {
+      $picture[$i] = init_graph($xmin,$ymin,$xmax,$ymax,
+         pixels=>[400,400]);
+
+      $picture[$i]->moveTo($x[0],$y[0]);
+      $picture[$i]->lineTo($x[1],$y[0], blue,3);
+      $picture[$i]->lineTo($x[1],$y[1], blue,3); 
+      $picture[$i]->lineTo($x[0],$y[1], blue,3);
+      $picture[$i]->lineTo($x[0],$y[0], blue,3);
+
+      $picture[$i]->moveTo($x[0],$ymax/2);
+      $picture[$i]->lineTo($x[1],$ymax/2, blue,2);
+
+      $picture[$i]->moveTo($xmax/2,$y[0]);
+      $picture[$i]->lineTo($xmax/2,$y[1], blue,2);
+
+      $squareLength = $x[1]-$x[0];
+      $box1 = ($a==1) ? "$var1^2" : "$a$var1^2";
+      $picture[$i]->lb( new Label($x[0]+$squareLength/4, $y[1]-$squareLength/4,"$box1",'black','center','middle'));
+
+      $box4 = ($var2 eq "") ? "$c" : "$c$var2^2";
+      $picture[$i]->lb( new Label($x[1]-$squareLength/4,$y[0]+$squareLength/4,"$box4",'black','center','middle'));
+   }
+
+   $ef = $e*$f;
+   if ($ef==1) {$box2 = ($var2 eq "") ? "$var1" : "$var1$var2";}
+      elsif ($ef==-1) {$box2 = ($var2 eq "") ? "-$var1" : "-$var1$var2";}
+      else {$box2 = ($var2 eq "") ? "$ef$var1" : "$ef$var1$var2";}
+   $picture[1]->lb( new Label($x[1]-$squareLength/4,$y[1]-$squareLength/4,"$box2",'black','center','middle'));
+
+   $dg = $d*$g;
+   if ($dg==1) {$box3 = ($var2 eq "") ? "$var1" : "$var1$var2";}
+      elsif ($dg==-1) {$box3 = ($var2 eq "") ? "-$var1" : "-$var1$var2";}
+      else {$box3 = ($var2 eq "") ? "$dg$var1" : "$dg$var1$var2";}
+   $picture[1]->lb( new Label($x[0]+$squareLength/4,$y[0]+$squareLength/4,"$box3",'black','center','middle'));
+
+   if ($e==1) {$box2Up = ($var2 eq "") ? "$e" : "$var2";}
+      elsif ($e==-1) {$box2Up = ($var2 eq "") ? "$e" : "-$var2";}
+      else {$box2Up = ($var2 eq "") ? "$e" : " $e$var2";}
+   $picture[1]->lb( new Label($x[1]-$squareLength/4,$y[1]+$gap,"$box2Up", 'black','center','bottom'));
+
+   if ($g==1) {$box3Left = ($var2 eq "") ? "$g" : "$var2";}
+      elsif ($g==-1) {$box3Left = ($var2 eq "") ? "$g" : "-$var2";}
+      else {$box3Left = ($var2 eq "") ? "$g" : " $g$var2";}
+   $picture[1]->lb( new Label($x[0]-$gap,$y[0]+$squareLength/4,"$box3Left", 'black','right','middle'));
+
+   $box1Up = ($d==1) ? "$var1" : "$d$var1";
+   $picture[1]->lb( new Label($x[0]+$squareLength/4,$y[1]+$gap,"$box1Up", 'black','center','bottom'));
+
+   $box1Left = ($f==1) ? "$var1" : "$f$var1";
+   $picture[1]->lb( new Label($x[0]-$gap,$y[1]-$squareLength/4,"$box1Left", 'black','right','middle'));
+
+   $alt1 = "The graph has a generic rectangle divided into 4 boxes. The top left box has $box1 in it, and the bottom right box has $box4 in it.";
+
+   $alt2 = "The graph has a generic rectangle divided into 4 boxes. The top left box has $box1 in it; the top right box has $box2 in it; the bottom left box has $box3 in it; and the bottom right box has $box4 in it. $box1Up is marked above the top left box; $box1Left is marked to the left of the top left box; $box2Up is marked above the top right box; $box3Left is marked to the left of the bottom left box.";
+}
+
+#This subroutine returns 1 if the number is a prime; otherwise it returns 0.
+sub isPrime {
+   my $num = shift;
+   if ($num==2) {return 1;}
+   for (my $i=3; $i<=sqrt($num); $i=$i+2) {
+      if ($num%$i==0) {return 1;}
+   }
+   return 0;
+}
+
+#This subroutine takes the following arguments: a, b, c values in ax^2+bx+c,
+# $d, $e, $f, $g values in the factored form ($d x +$e)($f x +$g),
+# and one or two variables, $var1 and $var2.
+# It creates messages used in the solution, and call subroutines to generate 
+# both the initial generic rectangle and the one with the solution.
+sub factorGraph {
+   my ($a,$b,$c,$d,$e,$f,$g,$var1,$var2) = @_;
+
+   $prep1 = "First, we set up the rectangle by putting the first and third term in ";
+   $prep2 = " into the corresponding places:";
+   graphRectangles($a,$b,$c,$d,$e,$f,$g,$var1,$var2);
+
+   $factorList = "";
+   my @pairsC = factorPairs($c);
+   my @pairsA = factorPairs($a);
+   if ($a!=1) {
+      $factorList .= "The first term's coefficient $a has";
+      $factorList .= isPrime($a) ? " only one factor pair: " : " the following factor pairs: ";
+      for (my $i=0;$i<=$#pairsA;$i++) {
+         $factorList .= "$pairsA[$i][0] and $pairsA[$i][1], ";
+      }
+      $factorList  = substr($factorList,0,length($factorList)-2);
+      $factorList .= '. ';
+   }
+
+   $factorList .= ($var2 eq "") ? "The third term $c has " :  "The third term's coefficient $c has ";
+   $factorList .= isPrime($c) ? " only one factor pair: " : " the following factor pairs: ";
+   for (my $i=0;$i<=$#pairsC;$i++) {
+      $factorList .= "$pairsC[$i][0] and $pairsC[$i][1], ";
+   }
+   $factorList  = substr($factorList,0,length($factorList)-2);
+   $factorList .= ". We put each pair into the corresponding places in the generic rectangle, and try to find the factored form by guess-and-check.";
+
+   $result = "The following generic rectangle shows the solution: ";
+}
+
+factorGraph(1,$a+$b,$a*$b,1,$a,1,$b,$var);
+
+##############################################
+TEXT(beginproblem());
+
+BEGIN_PGML
+Factor the given polynomial 
+
+    [`[$question]=`] [___________________]{$ans}
+
+If the expression cannot be factored then answer with *prime*.
+END_PGML
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+We look for factors of [`[$a*$b]`] that give [`[$a+$b]`] when added; the 
+factors that work are [`[$a]`] and [`[$b]`] so
+
+    [`[$question]=[$ans]`]
+
+Note that this answer can be checked by using the FOIL (*F*irst *O*utside *I*nside *L*ast) technique (exercise).
+
+*Factor polynomials by a generic rectangle*
+
+[$prep1][`[$question]`][$prep2]
+
+>>[@ image(insertGraph( $picture[0]  ), tex_size=>400, height=>400, width=>400,
+extra_html_tags=>"alt= '$alt1' title= '$alt1'"
+) @]*<<
+
+[$factorList]
+
+[$result] [`[$question]=[$ans]`]
+
+>>[@ image(insertGraph( $picture[1]  ), tex_size=>400, height=>400, width=>400,
+extra_html_tags=>"alt= '$alt2' title= '$alt2'"
+) @]*<<
+
+END_PGML_SOLUTION
+
+##############################################
+
+ENDDOCUMENT();
