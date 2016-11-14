@@ -1,0 +1,96 @@
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+# 
+# Change a line's equation from slope-intercept form to standard form.
+#
+# Last edited: Yao 10/17/16
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Slope-Intercept','Linear Equations')
+## KEYWORDS('slope','intercept','slope-intercept','line','equation','fraction')
+## DBCCSS('8.EE')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("Numeric");
+Context()->variables->add(y=>'Real');
+Context()->noreduce("(-x)-y","(-x)+y");
+
+$a = random(1,9,1);
+do {$b = random(1,9,1);} until ($b!=$a);
+$c = non_zero_random(-9,9,1);
+
+$left0 = Compute("y");
+$right0 = Compute("$b x+$c")->reduce;
+
+$left1 = Compute("$b x-y")->reduce;
+$right1 = Compute("-$c")->reduce;
+$choice1 = "`$left1`=`$right1`";
+
+$left2 = Compute("$b x+y")->reduce;
+$right2 = Compute("-$c")->reduce;
+$choice2 = $left2.'='.$right2;
+
+$left3 = Compute("$b x-y")->reduce;
+$right3 = Compute("$c")->reduce;
+$choice3 = $left3.'='.$right3;
+
+$left4 = Compute("$b x+y")->reduce;
+$right4 = Compute("$c")->reduce;
+$choice4 = $left4.'='.$right4;
+
+$radio = RadioButtons(
+  ["$choice1","$choice2","$choice3","$choice4"],
+  0, # correct answer
+);
+
+##############################################
+
+TEXT(beginproblem());
+
+BEGIN_PGML
+
+If we change [` [$left0]=[$right0] `] to standard form, the correct answer is:
+
+    [@ $radio->buttons() @]*
+
+END_PGML
+
+ANS( $radio->cmp() );
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+
+
+
+the correct answer is [`[@ $radio->correct_ans() @]*`].
+
+END_PGML_SOLUTION
+
+ENDDOCUMENT();
+
+

@@ -97,7 +97,7 @@ DataTable([[{data=>"\(x\)",header=>"CH"},{data=>"\(y\)",header=>"CH"},{data=>"Po
 ["\($x3\)",ans_rule(5), ans_rule(10)],
 ["\($x4\)",ans_rule(5), ans_rule(10)],
 ["\($x5\)",ans_rule(5), ans_rule(10)],
-], allcellcss=>"border:1px solid;padding:4pt;text-align:center;", caption => "Values of \(x\) and \(y\) satisfying the equation \( y=-\frac{$num}{$den} x \)", captioncss =>"padding:4pt; text-decoration:none;");
+], allcellcss=>"border:1px solid;padding:4pt;text-align:center;", caption => "Values of \(x\) and \(y\) satisfying the equation \( y=\frac{$num}{$den} x \)", captioncss =>"padding:4pt; text-decoration:none;");
 \}  
 
 

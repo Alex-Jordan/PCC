@@ -82,9 +82,7 @@ BEGIN_PGML
 
 Simplify the following fraction. 
 
-    [`[$frac1] + [$frac2] \div [$frac3] - [$frac4]`]
-
-    [`{}={}`][______________]{$answer}
+    [``[$frac1] + [$frac2] \div [$frac3] - [$frac4]=``][_____]{$answer}
 
 END_PGML
 
