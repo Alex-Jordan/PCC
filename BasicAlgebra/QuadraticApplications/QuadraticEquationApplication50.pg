@@ -212,8 +212,8 @@ Identify that [`a=[$a],b=[$b],c=[$c]`].
    w &= \frac{-([$b]) \pm \sqrt{([$b])^{2}-4([$a])([$c])}}{2([$a])} \\
    w &= \frac{[$s1] \pm \sqrt{[$s2]}}{[$s3]} \\
    w &= \frac{[$s1] \pm [$s4]}{[$s3]} \\
-   w &= \frac{[$s1] + [$s4]}{[$s3]} &\text{or} &&w&= \frac{[$s1] - [$s4]}{[$s3]} \\
-   w&=[$s7] &\text{or} && w&= [$s5]
+   w &= \frac{[$s1] + [$s4]}{[$s3]} \text{  or  } w= \frac{[$s1] - [$s4]}{[$s3]} \\
+   w&=[$s7] \text{  or  }  w= [$s5]
 \end{aligned}
     ``]
 
