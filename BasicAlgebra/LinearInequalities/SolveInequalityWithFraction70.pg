@@ -117,8 +117,7 @@ BEGIN_PGML_SOLUTION
   [$s1](y-[$num1]) & \geq  [$s2](y+[$num2]) \\
   [$s1]y-[$s1cdot] [$num1] & \geq  [$s2]y+[$s2] \cdot [$num2] \\
   [$s1]y - [$s3] & \geq  [$s2]y+[$s4] \\
-  [$s1]y - [$s3]\mathbf{{} -[$s1]y-[$s4]} & \geq  [$s2]y+[$s4]\mathbf{{} -[$s1]y-[$s4]} \\
-[$solnstring]*
+  [$s1]y - [$s3]\mathbf{{} -[$s1]y-[$s4]} & \geq  [$s2]y+[$s4]\mathbf{{} -[$s1]y-[$s4]} \\ [$solnstring]*
   [$ans]          & \geq  y\\
   y & \leq [$ans]
 \end{aligned}
