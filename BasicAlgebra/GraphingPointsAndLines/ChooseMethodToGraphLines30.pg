@@ -163,8 +163,7 @@ Step 1: We find the line's [`x`]-intercept by substituting [`y`] with [`0`] in [
 \begin{aligned}
    [$left] &= [$right] \\
    [$s1]+[$B](0) &= [$right] \\
-   [$s1] &= [$right] \\
-   [$s2]
+   [$s1] &= [$right] \\ [$s2]
 \end{aligned}
     ``]
 
