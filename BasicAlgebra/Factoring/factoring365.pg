@@ -68,7 +68,7 @@ while(abs($b+$a*$c)+abs($b*$c)>40)
 {
     $a = 1;
     $b = random(1,10,1)*random(-1,1,2);
-    $c = random(1,10,1)*abs($b)/$b*-1;
+    do {$c = random(1,10,1)*abs($b)/$b*-1;} until (abs($b)!=abs($c));
 }
 
 $leading = $a;
