@@ -213,9 +213,7 @@ The slope-intercept form of a line equation looks like [`y=mx+b`], where [`m`] i
 
     [`
 \begin{aligned}
-   [$lineNPSLeft] &= [$lineNPSRight]\\
-   [$output1]
-   [$output2]
+   [$lineNPSLeft] &= [$lineNPSRight]\\ [$output1] [$output2]
    y &= [$lineNSI]\\
 \end{aligned}
 `]
