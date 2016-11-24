@@ -127,7 +127,7 @@ For horizontal and vertical lines like [`[$var]=[$a]`], the table method is the 
      [PF('[`(1,[$a])`]'),],
     ],
   ],
-  align => 'c c',
+  align => 'ccc',
   columnscss =>
     ['border-right: 0px solid; ',
      ' ',
@@ -164,7 +164,7 @@ For horizontal and vertical lines like [`[$var]=[$a]`], the table method is the 
      [PF('[`([$a],1)`]'),],
     ],
   ],
-  align => 'c c',
+  align => 'ccc',
   columnscss =>
     ['border-right: 0px solid; ',
      ' ',
