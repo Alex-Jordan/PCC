@@ -66,7 +66,9 @@ do {
    $d = non_zero_random(-10,10,1);
    $e = non_zero_random(-10,10,1);
    $right = ($e-$d)/$c;
-} until ( (($e-$d)%$c==0) && ($right<0) && (sqrt(-$right)!=int(sqrt(-$right))) );
+} until ( (($e-$d)%$c==0) && ($right<0) && (sqrt(-$right)!=int(sqrt(-$right))) && ($right % 4 !=0) && ($right % 9 !=0));
+
+$lead = Formula("$c $var^2")->reduce;
 
 $rightNeg = -$right;
 
@@ -82,7 +84,7 @@ Solve the quadratic equation. There are possible complex solutions.
 * If you need to use the square root symbol, 
 as in [`x=\sqrt{17}`], type it using: *sqrt(17)*
 
-     [` [$c][$var]^2 + [$d] = [$e] `]
+     [` [$lead] + [$d] = [$e] `]
 
      [__________________________________]
 
