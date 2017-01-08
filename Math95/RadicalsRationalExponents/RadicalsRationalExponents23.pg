@@ -19,37 +19,39 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "contextLimitedPowers.pl",
   "PGML.pl",
+  "PCCmacros.pl",
+  "contextRationalFunction.pl",
+  "bizarroArithmetic.pl",
   "PGcourse.pl",
 );
 
-
 ##############################################
 
-
-TEXT(beginproblem());
-
-Context("Numeric");
-$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context("RationalFunction-Strict");
+$var = RandomVariableName(type=>'variable');
 Context()->variables->are($var=>'Real');
-Context()->flags->set(reduceConstants=>0);
 
-$b = random(2,15,1);
-$a = random(2,15,1);
-$a = $a/gcd($a,$b);
-while ($a == 1) 
-{$a = random(2,15,1);
-$a = $a/gcd($a,$b);}
-
-$display = Formula("($var^(-($b/$a)))^($a/$b)");
-
-Context()->operators->undefine('*');
-#Context()->functions->undefine('sqrt','abs');
-LimitedPowers::OnlyIntegers();
+Context()->operators->set(
+   '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1});
 
 
-$ans = Formula("1/$var");
+do {
+   $a = random(2,10,1);
+   $b=random(2,10,1);
+} until (gcd($a,$b)==1);
+
+$f1 = random(1,5,1);
+$c = $a*$f1;
+
+$problem = "\left($var^{-\frac{$c}{$b}}\right)^{\frac{$b}{$a}}";
+$ans = Formula("1/($var^$f1)");
 
 
 ##############################################
@@ -57,24 +59,15 @@ $ans = Formula("1/$var");
 
 BEGIN_PGML
 
-Simplify the expression.  For this problem you may assume that all variables are positive.
+Simplify the expression. Please only use positive exponents in your answer.
 
->>[``[$display]``]<<
+For this problem you may assume that all variables are positive.
 
-    [_________________]
+    [``[$problem]=``][_________________]{$ans}
 
 END_PGML
 
-
 ##############################################
-$showPartialCorrectAnswers = 1;
-
-
-ANS( $ans->cmp());
-
-
-##############################################
-
 
 BEGIN_PGML_SOLUTION
 
@@ -82,10 +75,10 @@ We use the exponent property that [` \left(x^m\right)^n = x^{m\cdot n} `].
 
     [``
 \begin{aligned}
-   \left([$var]^{-\frac{[$b]}{[$a]}}\right)^{\frac{[$a]}{[$b]}}
-           &= [$var]^{\left(-\frac{[$b]}{[$a]}\right)\cdot\left(\frac{[$a]}{[$b]}\right)} \\
-           &= [$var]^{-1} \\
-           &= \frac{1}{[$var]} \\
+   \left([$var]^{-\frac{[$c]}{[$b]}}\right)^{\frac{[$b]}{[$a]}}
+           &= [$var]^{\left(-\frac{[$c]}{[$b]}\right)\cdot\left(\frac{[$b]}{[$a]}\right)} \\
+           &= [$var]^{-[$f1]} \\
+           &= \frac{1}{[$var]^[$f1]} \\
 \end{aligned}
     ``]
 

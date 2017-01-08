@@ -101,11 +101,12 @@ ANS( $ans-> cmp( checker => sub {
 $xdist = ($x2-$x1)**2;
 $ydist = ($y2-$y1)**2;
 BEGIN_PGML_SOLUTION
-The distance between two points, [`d`], can be found by using the Pythagorean Theorem; 
+The distance between two points, [`d`], can be found by using the Distance Formula:
 
     [`
         \begin{aligned}
-            d& = \sqrt{([$x2]-[$x1])^2 + ([$y2]-[$y1])^2} \\
+            d& = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2} \\
+            & = \sqrt{([$x2]-[$x1])^2 + ([$y2]-[$y1])^2} \\
              & = \sqrt{([$x2-$x1])^2 + ([$y2-$y1])^2} \\
              & = \sqrt{[$xdist] + [$ydist]} \\
              & = \sqrt{[$xdist + $ydist]} \\

@@ -33,33 +33,31 @@ loadMacros(
 
 TEXT(beginproblem());
 
-$n = random(3,6,1);
-
-
-Context("Fraction");
-$m = Fraction("1","$n**2");
-
 Context("Numeric");
 $var = list_random('x','y','z','t','r','m','n','a','b','c');
 Context()->variables->are($var=>'Real');
+
+$m = random(2,5,1);
+$n = random(2,5,1);
+$mn = $m*$n;
+
+if ($m==2) {
+   $question = ($n==2) ? "\sqrt{\sqrt{$var}}" : "\sqrt[$n]{\sqrt{$var}}";
+} else {
+   $question = ($n==2) ? "\sqrt{\sqrt[$m]{$var}}" : "\sqrt[$n]{\sqrt[$m]{$var}}";
+}
+
+Context("Fraction");
+$frac = Fraction(1,$mn);
+
+Context("Numeric");
+Context()->variables->are($var=>'Real');
 Context()->flags->set(reduceConstants=>0);
-
-
-
-
 Context()->operators->undefine('*');
 Context()->operators->undefine('+');
 Context()->functions->undefine('sqrt');
-Context()->flags->set(limits=>[2,5]);
-#LimitedPowers::OnlyIntegers();
 
-
-Context()->operators->set(
-'**' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
-'^' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
-);
-
-$ans = Formula("($var^($m))");
+$ans = Formula("$var^($frac)");
 
 
 ##############################################
@@ -69,51 +67,29 @@ BEGIN_PGML
 
 Simplify the expression and write it using a single exponent.  For this problem you may assume that all variables are positive.
 
->>[``\sqrt[[$n]]{\sqrt[[$n]]{[$var]}}``]<<
-
-    [_________________]
+    [``[$question]=``][______________]{$ans}
 
 END_PGML
 
-
-##############################################
-$showPartialCorrectAnswers = 1;
-
-
-ANS($ans -> cmp(
-   checker=>sub{
-      my ( $correct, $student, $ansHash ) = @_;
-      return 0 if $ansHash->{isPreview} || $correct != $student;
-      $student = $ansHash->{student_formula};
-      $correct = $correct->{original_formula} if defined $correct->{original_formula};
-      $student = Formula("$student"); $correct = Formula("$correct");
-      return 0 unless ($correct == $student);
-      Context()->flags->set(bizarroPow=>1);
-      delete $correct->{test_values}, $student->{test_values};
-      Value->Error("Your answer is correct, but please simplify it further") unless (($correct == $student) or ($student == $correct));
-      Context()->flags->set(bizarroPow=>0);
-      return 1;
-}));
-
-
 ##############################################
 
+$s1 = ($m==2) ? "\sqrt{$var}" : "\sqrt[$m]{$var}";
 
 BEGIN_PGML_SOLUTION
 
-We rewrite the expression using rational exponents [` \sqrt[n]{x^m} = x^\frac{m}{n} `]. Then we use exponent properties and multiply the fractions.
+We rewrite the expression using rational exponents [` \sqrt[n]{x} = x^\frac{1}{n} `]. Then we use exponent properties and multiply the fractions.
 
     [``
 \begin{aligned}
-   \sqrt[[$n]]{\sqrt[[$n]]{[$var]}}
-           &= \sqrt[[$n]]{[$var]^{\frac{1}{[$n]}}} \\
-           &= \left([$var]^{\frac{1}{[$n]}}\right)^{\frac{1}{[$n]}} \\
-           &= [$var]^{\frac{1}{[$n]}\cdot\frac{1}{[$n]}} \\
-           &= [$var]^{\frac{1}{[$n**2]}} \\
+   [$question]
+           &= \left( [$s1] \right)^{\frac{1}{[$n]}} \\
+           &= \left([$var]^{\frac{1}{[$m]}}\right)^{\frac{1}{[$n]}} \\
+           &= [$var]^{\frac{1}{[$m]}\cdot\frac{1}{[$n]}} \\
+           &= [$var]^{\frac{1}{[$mn]}} \\
 \end{aligned}
     ``]
 
-So the answer in calculator/WeBWorK notation is [`[$var]`]^(1/[`[$n**2]`]).
+So the answer in calculator/WeBWorK notation is [`[$var]`]^[`(1/[$mn])`].
 
 END_PGML_SOLUTION
 

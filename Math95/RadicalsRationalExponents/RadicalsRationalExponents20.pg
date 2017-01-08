@@ -7,7 +7,7 @@
 #       sqrt(x^n)n-th-root(x^2)
 #
 #
-# Last updated: Spoddeck 11/11/15
+# Last updated: Yao 1/5/2017
 # ENDDESCRIPTION
 
 
@@ -31,26 +31,32 @@ loadMacros(
 
 TEXT(beginproblem());
 
-$n=random(3,20,1);
-
 Context("Fraction");
-$m = Fraction("$n**2+4","2*$n");
-
-Context("Numeric");
 $var = list_random('x','y','z','t','r','m','n','a','b','c');
 Context()->variables->are($var=>'Real');
 Context()->flags->set(reduceConstants=>0);
+do {
+   $num1 = 1;
+   $den1 = random(2,5,1);
+   $num2 = random(2,5,1);
+   do {$den2 = random($num2+1,10,1);} until ( ($den2!=$den1) && (gcd($den2,$num2)==1) );
+   $commonD = lcm($den1,$den2);
+   $f1 = $commonD/$den1;
+   $f2 = $commonD/$den2;
+   $frac = Fraction($num1*$den2+$num2*$den1,$den1*$den2)->reduce;
+   ($ansNum,$ansDen) = $frac->value;
+} until ( $ansDen != $commonD );
 
+$problem = ($den1==2) ? "\sqrt{$var} \cdot \sqrt[$den2]{$var^{$num2}}" : "\sqrt[$den1]{$var}\cdot\sqrt[$den2]{$var^{$num2}}";
 
-
-
+Context("Numeric");
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0);
 Context()->operators->undefine('*');
 Context()->operators->undefine('+');
 Context()->functions->undefine('sqrt');
-#LimitedPowers::OnlyIntegers();
 
-
-$ans = Formula("$var^($m)");
+$ans = Formula("$var^($frac)");
 
 
 ##############################################
@@ -58,40 +64,37 @@ $ans = Formula("$var^($m)");
 
 BEGIN_PGML
 
-Simplify the expression.  For this problem you may assume that all variables are positive.
+Simplify the expression. Write your answers with a rational exponent, like [`x`]^[`(1/2)`].
 
->>[``\sqrt{[$var]^{[$n]}}\sqrt[[$n]]{[$var]^2}``]<<
+For this problem you may assume that all variables are positive.
 
-    [_________________]
+    [``[$problem]``]=[_________________]{$ans}
 
 END_PGML
 
 
 ##############################################
-$showPartialCorrectAnswers = 1;
-
-
-ANS( $ans->cmp());
-
-
-##############################################
-
 
 BEGIN_PGML_SOLUTION
 
-We rewrite the expression using rational exponents [` \sqrt[n]{x^m} = x^\frac{m}{n} `]. Then we use exponent properties and add the fractions.
+We will use the following properties:
+
+    [`` \sqrt[m]{x^n}=x^{\frac{n}{m}} ``]
+
+    [`` x^m\cdot x^n=x^{m+n} ``]
+
+The solution is:
 
     [``
 \begin{aligned}
-   \sqrt{[$var]^{[$n]}}\sqrt[[$n]]{[$var]^2}
-           &= [$var]^{\frac{[$n]}{2}}[$var]^{\frac{2}{[$n]}} \\
-           &= [$var]^{\frac{[$n]}{2}+\frac{2}{[$n]}} \\
-           &= [$var]^{\frac{[$n*$n]}{[$n*2]}+\frac{4}{[$n*2]}} \\
-           &= [$var]^{\frac{[$n*$n+4]}{[$n*2]}} \\
+   [$problem]
+   &= [$var]^{\frac{[$num1]}{[$den1]}} \cdot [$var]^{\frac{[$num2]}{[$den2]}} \\
+   &= [$var]^{\frac{[$num1]}{[$den1]}+\frac{[$num2]}{[$den2]}} \\
+   &= [$var]^{\frac{[$num1*$f1]}{[$den1*$f1]}+\frac{[$num2*$f2]}{[$den2*$f2]}} \\
+   &= [$var]^{\frac{[$num1*$f1+$num2*$f2]}{[$den1*$f1]}} \\
+   &= [$var]^{[$frac]}
 \end{aligned}
     ``]
-
-If the fraction in the exponent is not fully simplified after the last step, make sure to reduce it to its lowest terms.
 
 END_PGML_SOLUTION
 

@@ -56,7 +56,7 @@ $a = 1;
 $b = 3;
 $c = 1;
 # this next condition ensures the numbers don't get too big
-while(($b**2-4*$a*$c)>=0 or (abs($b)+abs($c))>40)
+while(($b**2-4*$a*$c)>=0 or (abs($b)+abs($c))>40 or gcd(gcd($a,$b),$c)!=1)
 {
     $a = list_random(2,3,5);
     $b = random(-10,10,1);

@@ -36,8 +36,10 @@ Context()->variables->are($var=>'Real');
 Context()->reductions->set('(-x)+y'=>0,'(-x)-y'=>0);
 Context()->flags->set(reduceConstants=>0);
 
-$a = random(1,15,1);
-$n = random(2,10,1);
+do {
+   $a = list_random(2,3,5,7);
+   $n = random(2,10,1);
+} until ($a**$n<200);
 $m = random(3,7,2);
 
 $internal = Formula("($a $var)^($m*$n)")->reduce;
@@ -46,8 +48,8 @@ $internal = Formula("($a $var)^($m*$n)")->reduce;
 Context()->functions->undefine('sqrt');
 LimitedPowers::OnlyNonNegativeIntegers();
 
-
-$ans = Formula("($a $var)^($n)");
+$an = $a**$n;
+$ans = Formula("$an*$var^$n");
 
 
 ##############################################
@@ -86,6 +88,8 @@ We can rewrite this expression using rational exponents [` \sqrt[n]{x^m} = x^\fr
 \begin{aligned}
    \sqrt[[$m]]{([$a][$var])^{[$m*$n]}} &= ([$a][$var])^\frac{[$m*$n]}{[$m]} \\
                                                         &= ([$a][$var])^[$n] \\
+                                                        &= [$a]^{[$n]}[$var]^[$n] \\
+                                                        &= [$ans] \\
 \end{aligned}
     ``]
 

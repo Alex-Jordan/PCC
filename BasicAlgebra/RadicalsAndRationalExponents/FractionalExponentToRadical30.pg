@@ -62,11 +62,23 @@ for my $i (0..3) {
 
 $choices[$scramble{0}] = "\sqrt[$b]{$num^{$c} $var^{$a}}";
 
-$choices[$scramble{1}] = "\sqrt[$c]{$num^{$b}} \cdot \sqrt[$a]{$var^{$b}}";
+if ($a==2) {
+   $choices[$scramble{3}] = "$num^{$b} \cdot \sqrt{$var^{$b}}";
+   if ($c==2) {
+      $choices[$scramble{1}] = "\sqrt{$num^{$b}} \cdot \sqrt{$var^{$b}}";
+   } else {
+      $choices[$scramble{1}] = "\sqrt[$c]{$num^{$b}} \cdot \sqrt{$var^{$b}}";
+   }
+} else {
+   $choices[$scramble{3}] = "$num^{$b} \cdot \sqrt[$a]{$var^{$b}}";
+   if ($c==2) {
+      $choices[$scramble{1}] = "\sqrt{$num^{$b}} \cdot \sqrt[$a]{$var^{$b}}";
+   } else {
+      $choices[$scramble{1}] = "\sqrt[$c]{$num^{$b}} \cdot \sqrt[$a]{$var^{$b}}";
+   }
+}
 
 $choices[$scramble{2}] = "$num^{$c} \cdot \sqrt[$b]{$var^{$a}}";
-
-$choices[$scramble{3}] = "$num^{$b} \cdot \sqrt[$a]{$var^{$b}}";
 
 $radio = RadioButtons(
   ["A","B","C","D"],

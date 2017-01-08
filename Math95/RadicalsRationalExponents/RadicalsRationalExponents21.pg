@@ -31,8 +31,17 @@ loadMacros(
 
 TEXT(beginproblem());
 
-$n = random(3,6,1);
-$a = random(2,4,1);
+$a = list_random(2,3,5,7);
+if ($a==2) {
+   $n=random(2,10,1);
+} elsif ($a==3) {
+   $n=random(2,4,1);
+} elsif ($a==5) {
+   $n=random(2,3,1);
+} else {
+   $n=2;
+}
+
 $an = $a**$n;
 $n2 = $n*2;
 
@@ -64,22 +73,12 @@ BEGIN_PGML
 
 Simplify the expression.  For this problem you may assume that all variables are positive.
 
->>[``\left(\frac{[$an]}{[$var]^{[$n2]}}\right)^{[$m]}``]<<
-
-    [_________________]
+    [``\left(\frac{[$an]}{[$var]^{[$n2]}}\right)^{[$m]}=``][_________________]{$ans}
 
 END_PGML
 
 
 ##############################################
-$showPartialCorrectAnswers = 1;
-
-
-ANS( $ans->cmp());
-
-
-##############################################
-
 
 BEGIN_PGML_SOLUTION
 

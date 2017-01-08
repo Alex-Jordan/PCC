@@ -34,19 +34,19 @@ Context("Numeric");
 $var = list_random('x','y','z','t','r','m','n','a','b','c');
 Context()->variables->are($var=>'Real');
 Context()->flags->set(reduceConstants=>0);
+Context()->noreduce('(-x)-y','(-x)+y');
 
-$a = random(2,20,1);
-$b = random(1,20,1);
+$a = random(2,10,1);
+$b = random(1,10,1);
+$rad = Compute("$a*$var+$b")->reduce;
 
-
-
-$display = Formula("sqrt($a $var + $b)");
+$n = random(2,5,1);
+if ($n==2) {$problem="\sqrt{$a $var + $b}";}
+else {$problem = "\sqrt[$n]{$a $var + $b}";}
 
 Context()->functions->undefine('sqrt');
 
-
-
-$ans = Formula("($a $var + $b)^(1/2)");
+$ans = Formula("($rad)^(1/$n)");
 
 
 ##############################################
@@ -55,36 +55,25 @@ $ans = Formula("($a $var + $b)^(1/2)");
 BEGIN_PGML
 
 Use rational exponents to write the expression.  
+
 * To enter [`x^y`], type *x^y*.  
 
->>[``[$display]``]<<
-
-    [_________________]
+    [``[$problem]=``][_________________]{$ans}
 
 END_PGML
 
 
 ##############################################
-$showPartialCorrectAnswers = 1;
-
-
-ANS( $ans->cmp());
-
-
-##############################################
-
 
 BEGIN_PGML_SOLUTION
 
-We can rewrite this expression using rational exponents [` \sqrt[n]{x^m} = x^\frac{m}{n} `].
-
     [``
 \begin{aligned}
-   \sqrt{[$a][$var]+[$b]} &= ([$a][$var]+[$b])^\frac{1}{2} \\
+   [$problem] &= [$ans] \\
 \end{aligned}
     ``]
 
-So the answer in calculator/WeBWorK notation is [`([$a][$var]+[$b])`]^(1/2).
+So the answer in calculator/WeBWorK notation is [`([$rad])`]^[`(1/[$n])`].
 
 END_PGML_SOLUTION
 

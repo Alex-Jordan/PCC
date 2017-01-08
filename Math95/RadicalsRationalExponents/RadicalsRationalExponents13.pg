@@ -51,8 +51,9 @@ $ans = Formula("$var^(2/$n)");
 
 BEGIN_PGML
 
-Use rational exponents to write the expression.  
-* To enter [`x^y`], type *x^y*.  
+Simplify the expression. Write your answers with a rational exponent, like [`x`]^[`(1/2)`].
+
+For this problem you may assume that all variables are positive.
 
 >>[``\sqrt[[$n]]{[$var]}\sqrt[[$n]]{[$var]}``]<<
 
@@ -73,7 +74,13 @@ ANS( $ans->cmp());
 
 BEGIN_PGML_SOLUTION
 
-We can rewrite this expression using rational exponents [` \sqrt[n]{x^m} = x^\frac{m}{n} `]. Then we use exponent and fraction properties to simplify.
+We will use the following properties:
+
+    [`` \sqrt[m]{x^n}=x^{\frac{n}{m}} ``]
+
+    [`` x^m\cdot x^n=x^{m+n} ``]
+
+The solution is:
 
     [``
 \begin{aligned}
@@ -83,7 +90,7 @@ We can rewrite this expression using rational exponents [` \sqrt[n]{x^m} = x^\fr
 \end{aligned}
     ``]
 
-So the answer in calculator/WeBWorK notation is [`[$var]`]^(2/[`[$n]`]).
+So the answer in calculator/WeBWorK notation is [`[$ans]`].
 
 END_PGML_SOLUTION
 
