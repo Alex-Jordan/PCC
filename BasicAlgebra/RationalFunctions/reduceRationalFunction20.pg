@@ -1,0 +1,92 @@
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Reduce the rational function R(x)=(x^3-x)/(x^3+2x^2-3x).
+# List the lost domain restrictions.
+#
+# Last updated: Carl Yao 12/16/2016
+# ENDDESCRIPTION
+
+## DBCC('A-APR.1','A-SSE.2')
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Exponents', 'Factoring')
+## KEYWORDS('polynomial','exponents','factoring','simplify','rational')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
+"contextLimitedFactor.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("LimitedFactor");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+$a = random(1,10,1);
+$a2 = $a**2;
+do {$b = random(1,10,1)*random(-1,1,2);} until (abs($a)!=abs($b));
+
+$num = Formula("$var**3-$a2*$var")->reduce;
+$den = Formula("$var**3+($a+$b)*$var**2+$a*$b*$var")->reduce;
+$numFactored = Formula("$var*($var+$a)*($var-$a)")->reduce;
+$denFactored = Formula("$var*($var+$a)($var+$b)")->reduce;
+
+$step1Num = Formula("$var($var**2-$a2)")->reduce;
+$step1Den = Formula("$var($var**2+($a+$b)*$var+$a*$b)")->reduce;
+
+$function = Formula("$num/$den")->reduce;
+$ans = Formula("($var+$a)/($var+$b)")->reduce;
+
+$lostDomain = List(-$a,0);
+
+
+##############################################
+TEXT(beginproblem());
+
+BEGIN_PGML
+
+Simplify the function:
+
+    [`` R([$var]) = [$function] ``]
+
+Don't forget to write the domain conditions lost during the simplification, if any. For example, when we do the simplification [`\frac{x^2}{x} =x`], we must write [`x \ne 0`].
+
+    Reduced [`R([$var])=`] [___________________]{$ans}
+
+The domain condition(s) lost during the simplification is (are) [`[$var] \ne`][_____]{$lostDomain}. If you need to enter more than one number, use comma to separate them.
+
+END_PGML
+
+###################################################
+
+BEGIN_PGML_SOLUTION
+
+To simplify the expression, we first factor both the numerator and denominator, and then cross out common terms.
+
+    [``
+\begin{aligned}
+   R([$var]) &= [$function] \\
+                 &= \frac{[$step1Num]}{[$step1Den]} \\
+                 &= \frac{[$numFactored]}{[$denFactored]} \\
+                 &= [$ans]
+\end{aligned}
+    ``]
+
+Since [`[$var]([$var]+[$a])`] was crossed out, the domain condition lost during the reduction is [` [$var] \ne [$lostDomain] `].
+
+END_PGML_SOLUTION
+##############################################
+
+ENDDOCUMENT();
