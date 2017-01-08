@@ -1,23 +1,33 @@
-openDate          = 12/01/2015 at 12:36am PST
-dueDate           = 03/01/2016 at 12:36am PST
-answerDate        = 03/01/2016 at 12:36am PST
+openDate          = 12/01/2015 at 12:35am PST
+dueDate           = 03/01/2016 at 12:35am PST
+answerDate        = 03/01/2016 at 12:35am PST
 paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95HardcopyHeader.pg
 screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/Rational_Exponents.pg
 description       = using rational exponents to simplify radical expressions
 problemList       = 
-Math95/RadicalsRationalExponents/RadicalsRationalExponents1.pg, 1, -1, 0
-Math95/RadicalsRationalExponents/RadicalsRationalExponents2.pg, 1, -1, 0
-Math95/RadicalsRationalExponents/RadicalsRationalExponents3.pg, 1, -1, 0
-Math95/RadicalsRationalExponents/RadicalsRationalExponents4.pg, 1, -1, 0
-Math95/RadicalsRationalExponents/RadicalsRationalExponents5.pg, 1, -1, 0
-Math95/RadicalsRationalExponents/RadicalsRationalExponents6.pg, 1, -1, 0
 Math95/RadicalsRationalExponents/RadicalsRationalExponents7.pg, 1, -1, 0
 Math95/RadicalsRationalExponents/RadicalsRationalExponents8.pg, 1, -1, 0
-Math95/RadicalsRationalExponents/RadicalsRationalExponents9.pg, 1, -1, 0
-Math95/RadicalsRationalExponents/RadicalsRationalExponents10.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/FractionalExponentToRadical10.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/FractionalExponentToRadical20.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/FractionalExponentToRadical30.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent10.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent20.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent25.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent26.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent30.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent40.pg, 1, -1, 0
 Math95/RadicalsRationalExponents/RadicalsRationalExponents11.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/EvaluateOtherRoots10.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/EvaluateOtherRoots20.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/EvaluateOtherRoots30.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/EvaluateOtherRoots35.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/EvaluateOtherRoots40.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/RadicalToRationalExponent20.pg, 1, -1, 0
+BasicAlgebra/RadicalsAndRationalExponents/RadicalToRationalExponent30.pg, 1, -1, 0
 Math95/RadicalsRationalExponents/RadicalsRationalExponents12.pg, 1, -1, 0
+Math95/RadicalsRationalExponents/RadicalsRationalExponents10.pg, 1, -1, 0
 Math95/RadicalsRationalExponents/RadicalsRationalExponents13.pg, 1, -1, 0
+Math95/RadicalsRationalExponents/RadicalsRationalExponents9.pg, 1, -1, 0
 Math95/RadicalsRationalExponents/RadicalsRationalExponents14.pg, 1, -1, 0
 Math95/RadicalsRationalExponents/RadicalsRationalExponents15.pg, 1, -1, 0
 Math95/RadicalsRationalExponents/RadicalsRationalExponents16.pg, 1, -1, 0
@@ -36,7 +46,5 @@ Math95/RadicalsRationalExponents/RadicalsRationalExponents28.pg, 1, -1, 0
 Math95/RadicalsRationalExponents/RadicalsRationalExponents29.pg, 1, -1, 0
 Math95/RadicalsRationalExponents/RadicalsRationalExponents30.pg, 1, -1, 0
 Math95/RadicalsRationalExponents/RadicalsRationalExponents31.pg, 1, -1, 0
-BasicAlgebra/Calculator/CalculatorEstimateRadical10.pg, 1, -1, 0
-BasicAlgebra/Calculator/CalculatorEstimateRadical20.pg, 1, -1, 0
 
 
