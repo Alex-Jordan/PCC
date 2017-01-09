@@ -2,8 +2,7 @@ openDate          = 12/01/2015 at 12:50am PST
 dueDate           = 03/01/2016 at 12:50am PST
 answerDate        = 03/01/2016 at 12:50am PST
 paperHeaderFile   = PCCDefaultProblemSets/HardcopyHeaders/MTH095/GenericMTH95HardcopyHeader.pg
-screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/
-Quadratic_Functions.pg
+screenHeaderFile  = PCCDefaultProblemSets/OnscreenHeaders/MTH095/Quadratic_Functions.pg
 description       = quadratic functions their graphs
 problemList       = 
 BasicAlgebra/GraphingQuadratics/ShiftParabola10.pg, 1, -1, 0
