@@ -39,7 +39,7 @@ Here are more WeBWorK features.
 * WeBWorK can be used on tablets and smartphones.
 * Most problems are coded with randomization. This means that while you and your classmate may have the same skeleton of a problem, the numbers invloved are different. This encourages you to teach each other the _process_ of answering a problem without being able to simply share the answers.
 
-The collection of all of the numbers between [`0`] and [`\pi`] including the endpoints is represented as [`[0,\pi]`] in interval notation. Practice entering [`[0,\pi]`] in the answer blank: [_____]{Compute("[0,pi]")}. What is the symbol that is used to represent a quantity that is conceptually larger than any number? [_____]{Compute("inf")} The answer to the following is something like [`\pi AB`], but that's not accepted; maybe it's just not the right capitalization. Try a variation of [`\pi AB`] with different capitalization: [_____]{Compute("pi a b")}
+The collection of all of the numbers between [`0`] and [`\pi`] including the endpoints is represented as [`[0,\pi]`] in interval notation. Practice entering [`[0,\pi]`] in the answer blank: [_____]{Compute("[0,pi]")}. What is the symbol that is used to represent a quantity that is conceptually larger than any number? [_____]{Compute("inf")} The answer to the following is something like [`\pi AB`], but that's not accepted; maybe it's just not the right capitalization. Try [`\pi AB`], _but_ with lowercase letters: [_____]{Compute("pi a b")}
 
 END_PGML
 
