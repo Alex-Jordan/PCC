@@ -39,8 +39,8 @@ loadMacros(
 
 Context("LimitedNumeric");
 
-$num = random(1,10,1);
-do {$den = list_random(2,4,5,8);} until (gcd($num,$den)==1);
+do {$num = random(1,10,1);
+$den = list_random(2,4,5,8);} until (gcd($num,$den)==1);
 $ans = $num/$den;
 
 ##############################################
