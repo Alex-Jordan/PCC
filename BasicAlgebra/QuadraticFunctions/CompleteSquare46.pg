@@ -4,9 +4,9 @@
 # Template:
 # Solve the following quadratic equation by completing the square
 #
-# x^2-2x+1=3
+# there are no real solutions
 #
-# Last updated: Carl Yao, 11/13/2014
+# Last updated: Carl Yao, 1/10/2017
 # ENDDESCRIPTION
 
 ## DBCCSS('A-REI.4.b')
@@ -26,15 +26,14 @@ loadMacros(
       "parserAssignment.pl",
       "answerHints.pl",
       "PGML.pl",
-      "contextLimitedRadical.pl",
+      "contextLimitedRadicalComplex.pl",
       "PCCmacros.pl",
-    ,
   "PGcourse.pl",
 );
 
 ##############################################
     
-Context("LimitedRadical");
+Context("LimitedRadicalComplex");
 $var = RandomVariableName(type=>'variable');
 Context()->variables->are($var=>'Real');
 Context()->flags->set(
@@ -61,32 +60,26 @@ Context()->strings->add("no real solutions"=>{},
   "none"=>{alias=>'no real solutions'}, 
   );
 
-@primes = (2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67);
-$index1 = random(0,$#primes,1);
+do {
+   $comB = random(1,10,1);
+   $rad = -$comB**2;
+   $b = non_zero_random(-10,10,2);
+   $d = $b/2;
+   $e = $d**2;
+   $c = $e+$comB**2;
+} until ($b**2-4*$c<0);
 
-# choose $a and $b
-$a = $primes[$index1];
-$b = $a;
-$b = non_zero_random(-10,10,1) while($b==$a);
+$ans = List(Formula("$var=-$d+$comB*i")->reduce,Formula("$var=-$d-$comB*i")->reduce);
 
-$c = -$b;
-# the answer
-$ans = List(Formula("$var=$c+sqrt($a)"),Formula("$var=$c-sqrt($a)"));
-
-$d = -2*$c;
-$e = $c**2-$a;
-$func = Compute("$var**2+$d*$var+$e")->reduce;
+$func = Compute("$var**2+$b*$var+$c")->reduce;
 
 ##############################################
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation by the skill of *completing the square*:
+Solve the quadratic equation by the skill of *completing the square*. There could be complex solutions.
 
 * Enter multiple answers separated by commas, such as [`x=1,x=-1`]
-* If you need to use the square root symbol, 
-as in [`x=\sqrt{17}`], type it using: *sqrt(17)*
-* If there are no real solutions, enter *no real solutions*
 
     [`  [$func] = 0 `]
 
@@ -103,7 +96,7 @@ ANS($ans->cmp(list_checker => ~~&radicalListCheck));
 
 ##############################################
 
-$func1 = Compute("$var**2+$d*$var")->reduce;
+$func1 = Compute("$var**2+$b*$var")->reduce;
 
 BEGIN_PGML_SOLUTION
 
@@ -114,36 +107,35 @@ First, we move the constant term to the other side of the equal sign:
     [``
 \begin{aligned}
    [$func] &= 0 \\
-   [$func1] &= [$e*-1] \\
+   [$func1] &= [$c*-1] \\
 \end{aligned}
     ``]
+
 
 To use the skill of "completing the square," we need to use the perfect square formula:
 
     [`` x^2+2ax+a^2 = (x+a)^2 ``]
 
-Step 1: By the formula [`x^2+2ax+a^2 = (x+a)^2`], we have [`[$func1]+...= ([$var]-[$c])^{2} `].
+Step 1: By the formula [`x^2+2ax+a^2 = (x+a)^2`], we have [`[$func1]+...= ([$var]+[$b*0.5])^{2} `].
 
-Step 2: By the formula [`x^2+2ax+a^2 = (x+a)^2`], we have [`[$var]^{2}+[$c*-2][$var]+[$c**2]= ([$var]-[$c])^{2} `].
+Step 2: By the formula [`x^2+2ax+a^2 = (x+a)^2`], we have [`[$func1]+[$e]= ([$var]+[$b*0.5])^{2} `].
 
-To complete the square for [`[$func1]`], we need to do [`[$func1]+[$c**2]`].
+To complete the square for [`[$func1]`], we need to do [`[$func1]+[$e]`].
 
 The full solution is:
 
     [``
 \begin{aligned}
    [$func] &= 0 \\
-   [$func1] &= [$e*-1] \\
-   [$func1] \mathbf{+[$c**2]} &= [$e*-1] \mathbf{+[$c**2]} \\
-   ([$var]-[$c])^{2} &= [$a] \\
-   \sqrt{([$var]-[$c])^{2}} &= \pm \sqrt{[$a]} \\
-   [$var]-[$c] &= \pm \sqrt{[$a] }\\
-   [$var]-[$c] = \sqrt{[$a]} & \text{ or } [$var]-[$c] = -\sqrt{[$a]} \\
-   [$var] = [$c]+\sqrt{[$a]} & \text{ or } [$var] = [$c]-\sqrt{[$a]}
+   [$func1] &= [$c*-1] \\
+   [$func1] \mathbf{+[$e]} &= [$c*-1] \mathbf{+[$e]} \\
+   ([$var]+[$d])^{2} &= [$rad] \\
+   \sqrt{([$var]+[$d])^{2}} &= \pm\sqrt{[$rad]} \\
+   [$var] + [$d] &= \pm\sqrt{[$rad*-1]}\cdot\sqrt{-1} \\
+   [$var] + [$d] &= \pm[$comB]i \\
+   [$var] &= [$d*-1]\pm[$comB]i \\
 \end{aligned}
     ``]
-
-Note that _all_ quadratic equations have *two* (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.
 
 END_PGML_SOLUTION
 

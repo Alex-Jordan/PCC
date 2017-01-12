@@ -5,7 +5,7 @@
 # Change a quadratic function from standard form to vertex form. 
 # No fractions are involved.
 #
-#       f(x) = x^2 + ax + b
+#       f(x) = -x^2 + ax + b
 #
 # a is even.
 #
@@ -33,6 +33,7 @@ loadMacros(
 ##############################################
     
 Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
 Context()->flags->set(reduceConstants=>0, 
                       reduceConstantFunctions=>0, 
                       formatStudentAnswer=>parsed,
@@ -44,9 +45,9 @@ $vertexY = non_zero_random(-10,10,1);
 
 $ans = Compute("(x-$vertexX)**2+$vertexY")->reduce;
 
-$b = -2*$vertexX;
-$c = $vertexX**2+$vertexY;
-$func = Compute("x**2+$b*x+$c")->reduce;
+$b = 2*$vertexX;
+$c = -$vertexX**2+$vertexY;
+$func = Compute("-x**2+$b*x+$c")->reduce;
 
 Context("Point");
 $vertex = Point($vertexX,$vertexY);
@@ -70,7 +71,18 @@ END_PGML
 
 ##############################################
 
+$func1 = Compute("x**2-$b*x")->reduce;
+
 BEGIN_PGML_SOLUTION
+
+We have to factor out the leading negative sign first:
+
+    [``
+\begin{aligned}
+   f(x) &= [$func] \\
+         &= -([$func1])+[$c] \\
+\end{aligned}
+    ``]
 
 One way to change a quadratic function from standard form to vertex form is to use the skill of "completing the square."
 
@@ -78,18 +90,20 @@ To use the skill of "completing the square," we need to use the perfect square f
 
     [`` x^2+2ax+a^2 = (x+a)^2 ``]
 
-Step 1: By the formula [`x^2+2ax+a^2 = (x+a)^2`], we have [`x^2+[$b]x+...= (x+[$b/2])^{2} `].
+Step 1: By the formula [`x^2+2ax+a^2 = (x+a)^2`], we have [`x^2-[$b]x+...= (x-[$b/2])^{2} `].
 
-Step 2: By the formula [`x^2+2ax+a^2 = (x+a)^2`], we have [`x^2+[$b]x+[$b**2/4]=(x+[$b/2])^{2}`].
+Step 2: By the formula [`x^2+2ax+a^2 = (x+a)^2`], we have [`x^2-[$b]x+[$b**2/4]=(x-[$b/2])^{2}`].
 
 The full solution is:
 
     [``
 \begin{aligned}
    f(x) &= [$func] \\
-         &= x^{2}+[$b]x+[$b**2/4] -[$b**2/4] +[$c] \\
-         &= (x+[$b/2])^{2} -[$b**2/4] +[$c] \\
-         &= (x+[$b/2])^{2} +[$c-$b**2/4] \\
+         &= -([$func1])+[$c] \\
+         &= -(x^{2}-[$b]x+[$b**2/4] -[$b**2/4]) +[$c] \\
+         &= -[(x-[$b/2])^{2} -[$b**2/4]] +[$c] \\
+         &= -(x-[$b/2])^{2} +[$b**2/4] +[$c] \\
+         &= -(x-[$b/2])^{2} +[$c+$b**2/4] \\
 \end{aligned}
     ``]
 

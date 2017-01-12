@@ -119,6 +119,8 @@ if ($b==1) {$s5 = "$a x^2+x";}
 elsif ($b==-1) {$s5 = "$a x^2-x";}
 else {$s5 = Compute("$a x^2+ $b x")->reduce;}
 
+$s6 = ($b==1) ? "" : "$b";
+
 BEGIN_PGML_SOLUTION
 
 A quadratic function's vertex form looks like [` f(x) = a(x-h)^2+k `].
@@ -131,26 +133,19 @@ We can use the formula [`x=-\frac{b}{2a}`] to find a parabola's axis. In this pr
 
 This implies [` h=[$h] `]. Now we have: [` f(x) = [$s1]+k `].
 
-Next, expand the right side, and we have:
+Next, we substitute [`x=[$h]`] into [`f(x)=[$func]`] to find the vertex's [`y`]-value:
 
     [``
 \begin{aligned}
-   f(x) &= [$s1]+k \\
-         &= [$a]([$s4]+[$h*$h])+k \\
-         &= [$s5]+[$a*$h*$h]+k
+   f(x) &= [$func] \\
+   f([$h]) &= [$a]([$h])^2+[$s6]([$h])+[$c] \\
+   f([$h]) &= [$k]
 \end{aligned}
     ``]
 
-Compare the result with the given function [`f(x)=[$func]`], we have:
+With the vertex as [`([$h],[$k])`] and [`a=3`], we can write the function's vertex form:
 
-    [``
-\begin{aligned}
-   [$a*$h*$h]+k &= [$c] \\
-    k &= [$k]
-\end{aligned}
-    ``]
-
-The function's vertex form is [`f(x)=[$ansShow]`], and we can tell the vertex is [`[$vertex]`].
+    [``f(x)=[$ansShow]``]
 
 END_PGML_SOLUTION
 
