@@ -132,13 +132,9 @@ BEGIN_PGML
 
 From a clifftop over the ocean [`[$cU]`] above sea level, an object was shot into the air with an initial vertical speed of [`[$bU]`]. On its way down it fell into the ocean. Its height (above sea level) as time passes can be modeled by the quadratic function [`f`], where [`f(t)=[$func]`]. Here [`t`] represents the number of seconds since the object's release, and [`f(t)`] represents the object's height (above sea level) in meters.
 
-    1) After [____________]{$tMaxU}, this object reached its maximum height of [___________]{$hMaxU}.
+    1) This object flew for [____________]{$tBackU} before it landed in the ocean.
 
-    2) This object flew for [____________]{$tBackU} before it landed in the ocean.
-
-    3) This object was [____________]{$h1U} above sea level [`[$t1U]`] after its release.
-
-    4) This object was [`[$h2U]`] above sea level twice: once [____________]{$t2U} after its release, and again later [____________]{$t3U} after its release.
+    2) This object was [`[$h2U]`] above sea level twice: once [____________]{$t2U} after its release, and again later [____________]{$t3U} after its release.
 
 (Use *m* for meters, and *s* for seconds.)
 
@@ -166,17 +162,8 @@ $func5 = Compute("$a*t**2+$b*t+$s6")->reduce;
 $s7 = $b**2-4*$a*$s6;
 $s8 = Real(sqrt($s7));
 
-$gr->stamps( closed_circle($xVertex,$yVertex,'blue') );
-$gr->lb( new Label($xVertex,$yVertex+$marksep[1]/12,"($xVertex,$yVertex)", 'blue','left','bottom'));
-
-$gr->moveTo( $xVertex,$min[1] );
-$gr->lineTo( $xVertex,$max[1],'red',1,'dashed');
-
 $gr->stamps( closed_circle($tBack,0,'blue') );
 $gr->lb( new Label($tBack,$marksep[1]/12,"($tBack,0)", 'blue','center','bottom'));
-
-$gr->stamps( closed_circle($t1,$h1,'blue') );
-$gr->lb( new Label($t1,$h1+$marksep[1]/12,"($t1,$h1)", 'blue','center','bottom'));
 
 $gr->moveTo( $min[0], $h2 );
 $gr->lineTo( $max[0],$h2,'red',1,'dashed');
@@ -191,31 +178,7 @@ BEGIN_PGML_SOLUTION
 
 The function [`f`] given by the rule [`f(t)=[$func]`] is quadratic. Identify that [`a=[$a], b=[$b], c=[$c]`].
 
-1)  Since [`a<0`], this parabola opens down. Its vertex represents the maximum height the object can go and when it got there.
-
-To find the vertex, we first find the parabola's axis of symmetry by the axis formula:
-
-    [`
-\begin{aligned}
-  t &= -\frac{b}{2a} \\
-  t &= -\frac{[$b]}{2([$a])} \\
-  t &=  [$xVertex]
-\end{aligned}
-`]
-
-Next, we substitute [`t= [$xVertex]`] into [`f`]'s formula, and we have:
-
-    [`
-\begin{aligned}
-  f(t) &=  [$func]  \\
-  f([$xVertex]) &=  [$func1]  \\
-  f([$xVertex]) &=  [$yVertex] 
-\end{aligned}
-`]
-
-The parabola's vertex is at [`[$vertex]`]. This implies that [`[$tMaxU]`] after the release, the object reached its maximum height of [`[$hMaxU]`].
-
-2) The parabola's [`x`]-intercepts represent the moments when the object was at a height of [`0`]: at sea level. We will solve the equation [`f(t)=0`] to find its [`x`]-intercepts. We have:
+1) The parabola's [`x`]-intercepts represent the moments when the object was at a height of [`0`]: at sea level. We will solve the equation [`f(t)=0`] to find its [`x`]-intercepts. We have:
 
     [`
 \begin{aligned}
@@ -232,19 +195,7 @@ The parabola's vertex is at [`[$vertex]`]. This implies that [`[$tMaxU]`] after 
 
 This parabola has two [`x`]-intercepts: [`([$xInt1Show],0)`] and [`([$xInt2Show],0)`]. The point [`([$xInt1Show],0)`] represents an imaginary moment before the object was released, as if it had shot up from the ocean to the clifftop before its journey upward. The point [`([$xInt2Show],0)`] implies the object fell into the ocean after [`[$tBackU]`].
 
-3) To find the object's height [`[$t1]`] seconds after it was released, we substitute [`t=[$t1]`] into the formula for [`f`], and we have:
-
-    [`
-\begin{aligned}
-   f(t)   &= [$func] \\
-   f([$t1]) &= [$func4] \\
-   f([$t1]) &= [$h1]
-\end{aligned}
-`]
-
-This result shows that [`[$t1U]`] after the object was released, it was [`[$h1U]`] high in the air.
-
-4) To find when the object was [`[$h2U]`] high, we solve the equation [` f(t)=[$h2]`].
+2) To find when the object was [`[$h2U]`] high, we solve the equation [` f(t)=[$h2]`].
 
     [`
 \begin{aligned}
