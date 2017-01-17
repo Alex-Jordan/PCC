@@ -33,7 +33,7 @@ loadMacros(
 
 ##############################################
 TEXT(beginproblem());
-$refreshCachedImages = 1;
+#$refreshCachedImages = 1;
 
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
@@ -47,6 +47,7 @@ $left = Compute("x-$a")->reduce;
 $right = Compute("$b");
 
 Context("Interval");
+Context()->flags->set(tolerance=>0.00001);
 $c = $a-$b;
 $d = $a+$b;
 $ans = Compute("[$c,$d]");
