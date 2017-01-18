@@ -68,7 +68,8 @@ $gr = init_graph($xmin,$ymin,$xmax,$ymax,
 
 $gr->lb('reset');
 for ($j=-$xmax+$xmark;$j<$xmax;$j=$j+$xmark) {
-   $gr->lb( new Label($j,  -0.1, $j,'black','center','top'));
+   if (Real($j) == 0) {$gr->lb( new Label(0.1,  -0.1, ' '.$j,'black','left','top'));}
+   else {$gr->lb( new Label($j,  -0.1, $j,'black','center','top'));}
 }
 for ($j=$ymin+$ymark;$j<$ymax;$j=$j+$ymark) {
    if (Real($j) == 0) {next;}
@@ -86,6 +87,24 @@ $gr->lb( new Label($px2, $py2-$shift, "B",'blue','center','top'));
 $gr->lb( new Label($px3-$shift, $py3, "C",'blue','right','middle'));
 $gr->lb( new Label($px4, $py4+$shift, "D",'blue','center','bottom'));
 
+$px1A = abs($px1);
+$py1A = abs($py1);
+$px1D = ($px1>0) ? "right" : "left";
+$py1D = ($py1>0) ? "up" : "down";
+
+$px2A = abs($px2);
+$py2A = abs($py2);
+$px2D = ($px2>0) ? "right" : "left";
+$py2D = ($py2>0) ? "up" : "down";
+
+$py3A = abs($py3);
+$py3D = ($py3>0) ? "up" : "down";
+
+$px4A = abs($px4);
+$px4D = ($px4>0) ? "right" : "left";
+
+$alt = "This is a coordinate system with some points. To reach Point A, starting from the origin, we move $px1A units to the $px1D, and then $py1A units $py1D; to reach Point B, starting from the origin, we move $px2A units to the $px2D, and then $py2A units $py2D; to reach Point C, starting from the origin, we move $py3A units $py3D; to reach Point D, starting from the origin, we move $px4A units $px4D.";
+
 Context("Point");
 $ans1=Compute("($px1,$py1)");
 $ans2=Compute("($px2,$py2)");
@@ -101,7 +120,7 @@ Locate each point in the graph:
 
 [@EnlargeImageStatementPGML@]**
 
-    [@ image( insertGraph($gr), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>'alt = "" title = ""'  ) @]*
+    [@ image( insertGraph($gr), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$alt' title = '$alt'"  ) @]*
 
 Write each point's position as an ordered pair, like [`(1,2)`].
 
