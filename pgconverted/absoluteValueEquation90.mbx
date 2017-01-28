@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercise>
+  <original-metadata>
+  # WeBWorK problem written by Carl Yao, 2014
+  # Portland Community College
+  #
+  # Template:
+  # Solve the following absolute value equation
+  #     -|x|=2
+  #
+  # Last updated: Yao 7/27/2014
+  # ENDDESCRIPTION
+
+  ## DBCCSS('A-REI.4.b')
+  ## DBsubject('Algebra')
+  ## DBchapter('Basic Algebra')
+  ## DBsection('equations', 'Simplification')
+  ## KEYWORDS('solve','linear','equation','absolute value')
+  ## Author('Alex Jordan, Carl Yao, Chris Hughes')
+  ## Institution('PCC')
+  </original-metadata>
+  <webwork seed="1">
+    <pg-macros>
+    <macro-file>MathObjects.pl</macro-file>
+    <macro-file>parserAssignment.pl</macro-file>
+    <macro-file>answerHints.pl</macro-file>
+    <macro-file>PGML.pl</macro-file>
+    <macro-file>contextLimitedRadical.pl</macro-file>
+    <macro-file>PCCmacros.pl</macro-file>
+    <macro-file>PGcourse.pl</macro-file>
+    </pg-macros>
+    <setup>
+      <var name="$var">
+        <!--<static></static>-->
+      </var>
+      <var name="$b">
+        <!--<static></static>-->
+      </var>
+      <var name="$s1">
+        <!--<static></static>-->
+      </var>
+      <pg-code>
+        #Context("LimitedRadical");
+        Context("Numeric");
+        Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0, formatStudentAnswer=>parsed);
+                               
+        parser::Assignment->Allow;
+
+        Context()->operators->redefine(',',using=>',',from=>'Numeric');
+            Context()->operators->redefine('or',using=>',',from=>'Numeric');
+            Context()->operators->set(
+              ','=>{string=>' or ',TeX=>'\hbox{ or }'},
+              'or'=>{string=>' or ',TeX=>'\hbox{ or }'}
+            );
+            Context()->lists->set(List => {separator => " or "});
+
+        # add solution strings to context- this means that if
+        # students enter these (and they are not correct), then 
+        # WW will not give a Context warning
+        Context()->strings->add("no real solutions"=>{},
+          "no real solution"=>{alias=>'no real solutions'}, 
+          "no solution"=>{alias=>'no real solutions'}, 
+          "none"=>{alias=>'no real solutions'}, 
+          );
+
+        $var = RandomVariableName(type=>variable);
+        Context()->variables->are($var=>'Real');
+
+        $a = -1;
+        $b = -$a*random(1,5,1);
+        $ans = Compute("no real solutions");
+
+        $showPartialCorrectAnswers = 1;
+        $s1=-1*$b;
+
+        $ansevaluator = $ans->cmp(list_checker => ~~&amp;radicalListCheck)
+      </pg-code>
+    </setup>
+    <statement>
+      <p>
+        Solve this equation
+      </p>
+
+      <p>
+        <m> -|<var name="$var" />| = <var name="$b" /> </m>
+      </p>
+
+      <p>
+      <ul>
+        <li><p>
+            Enter multiple answers separated by commas, such as <m>x=1,x=-1</m>
+          </p></li>
+
+        <li><p>
+            If there are no real solutions, enter <em>no real solutions</em>
+          </p></li>
+      </ul>
+      </p>
+
+      <p>
+        <var name="$ans" evaluator="$ansevaluator" width="34" />
+      </p>
+    </statement>
+    <solution>
+      <p>
+        First, we need to separate the absolute value part:
+      </p>
+
+      <p>
+        <md>
+          <mrow>-|<var name="$var" />| \amp=<var name="$b" /></mrow>
+          <mrow>-1 \cdot |<var name="$var" />| \amp=<var name="$b" /></mrow>
+          <mrow>\frac{-1 \cdot |<var name="$var" />|}{-1} \amp= \frac{<var name="$b" />}{-1}</mrow>
+          <mrow>|<var name="$var" />| \amp= <var name="$s1" /></mrow>
+        </md>
+      </p>
+
+      <p>
+        The absolute value of a number must be either positive or zero. This equation has no real solutions.
+      </p>
+    </solution>
+  </webwork>
+</exercise>

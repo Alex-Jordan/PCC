@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercise>
+  <original-metadata>
+  # WeBWorK problem written by Carl Yao
+  # Portland Community College
+  #
+  # Solve absolute value inequality like |2x-1|<less />=3
+  #
+  # Last edited by Carl Yao 08/06/2014
+  #
+  # ENDDESCRIPTION
+
+  ## DBsubject('Algebra')
+  ## DBchapter('Basic Algebra')
+  ## DBsection('Inequalities')
+  ## KEYWORDS('linear','inequality', 'number line','absolute value','interval notation')
+  ## DBCCSS('7.EE.4')
+  ## TitleText1('')
+  ## EditionText1('')
+  ## AuthorText1('')
+  ## Section1('')
+  ## Problem1('')
+  ## Author('Alex Jordan, Carl Yao, Chris Hughes')
+  ## Institution('PCC')
+  </original-metadata>
+  <webwork seed="1">
+    <pg-macros>
+    <macro-file>PGgraphmacros.pl</macro-file>
+    <macro-file>MathObjects.pl</macro-file>
+    <macro-file>PGML.pl</macro-file>
+    <macro-file>PGcourse.pl</macro-file>
+    </pg-macros>
+    <setup>
+      <var name="$func">
+        <!--<static></static>-->
+      </var>
+      <var name="$screenXSize">
+        <!--<static></static>-->
+      </var>
+      <var name="$b">
+        <!--<static></static>-->
+      </var>
+      <var name="$d">
+        <!--<static></static>-->
+      </var>
+      <var name="$e">
+        <!--<static></static>-->
+      </var>
+      <var name="$ans">
+        <!--<static></static>-->
+      </var>
+      <var name="$symbol">
+        <!--<static></static>-->
+      </var>
+      <var name="$gr">
+        <!--<static></static>-->
+      </var>
+      <var name="$ALT">
+        <!--<static></static>-->
+      </var>
+      <var name="$ansLeft">
+        <!--<static></static>-->
+      </var>
+      <var name="$hardCopyPercent">
+        <!--<static></static>-->
+      </var>
+      <var name="$ansRight">
+        <!--<static></static>-->
+      </var>
+      <var name="$s1">
+        <!--<static></static>-->
+      </var>
+      <var name="$screenYSize">
+        <!--<static></static>-->
+      </var>
+      <pg-code>
+        $refreshCachedImages = 1;
+
+        Context("Numeric");
+        Context()->noreduce('(-x)-y','(-x)+y');
+        #$reach is the maximum value shown on the graph.
+        $reach = 10;
+
+        $symbol = (random(-1,1,2)>0) ? '&le;' : '\leq';
+
+        do {
+           $a = random(1,3,1);
+           $b = random(2,4,1);
+           $c = non_zero_random(-5,5,1);
+           $ansLeft = -$a*$b+$c;
+           $ansRight = $a*$b+$c;
+        } until ( ($ansLeft>= -$reach+3) &amp;&amp; ($ansRight&le;=$reach-3) );
+
+        $d = $b*$c;
+        $e = $b*$ansRight-$d;
+
+        $func = Compute("$b*x-$d")->reduce;
+        $right = Compute("$e");
+
+        #These are needed to show inequality symbols in dynamic images.
+        $symbol0Show = $symbol eq '&le;' ? '&le;' : '&le;=';
+        $symbol1Show = $symbol eq '&le;' ? '&le;' : '&le;=';
+
+        Context("Interval");
+        Context()->flags->set("formatStudentAnswer"=>'parsed');
+
+        $leftEnd = ($symbol eq "&le;") ? '(' : '[';
+        $rightEnd = ($symbol eq "&le;") ? ')' : ']';
+        $ans = Compute("$leftEnd $ansLeft, $ansRight $rightEnd");
+
+
+        Context("Numeric");
+
+        $aspectRatio = 1/8;
+        $horPixel = 400;
+        $verPixel = $horPixel*$aspectRatio*1;
+        $screenXSize = $horPixel;
+        $screenYSize = $screenXSize*$aspectRatio*1;
+        $aboveSpace = $reach*$aspectRatio*1;
+        $belowSpace = $reach*$aspectRatio;
+        $hardCopyPercent = 400; #meaning 40%
+
+        $labelHeight = $reach*$aspectRatio/2;
+
+        $gr = init_graph(-$reach,-$belowSpace,$reach,$aboveSpace,
+              axes=>[$reach+1,0],
+              size=>[$horPixel,$verPixel]
+        );
+        @ticks = ();
+         for my $j ((-$reach)..($reach)) {push(@ticks,$j);};
+
+        $gr->h_ticks(0,"black",@ticks);
+        $gr->lb( new Label(0,-$belowSpace/4,0,'black','center','top'));
+
+        $gr->lb( new Label($ansLeft,-$belowSpace/4,$ansLeft,'blue','center','top'));
+        $gr->lb( new Label($ansRight,-$belowSpace/4,$ansRight,'blue','center','top'));
+
+        if ($leftEnd eq '(') {
+           $gr->stamps( open_circle($ansLeft,0,'blue') );
+           $gr->stamps( open_circle($ansRight,0,'blue') );
+        } else {
+           $gr->stamps( closed_circle($ansLeft,0,'blue') );
+           $gr->stamps( closed_circle($ansRight,0,'blue') );
+        };
+
+        $gr->moveTo($ansLeft,0);
+        $gr->lineTo($ansRight,0,'blue',3);
+
+        if ( ($symbol eq '>') or ($symbol eq '\geq') ) {
+           $gr->lb( new Label($ansLeft,$labelHeight,"x $symbol0Show $ansLeft",'blue','right','middle'));
+           $gr->lb( new Label($ansRight,$labelHeight,"x $symbol1Show $ansRight",'blue','left','middle'));
+        } else {
+           $gr->lb( new Label(($ansLeft+$ansRight)/2,$labelHeight,"$ansLeft $symbol0Show x $symbol0Show $ansRight",'blue','center','middle'));
+        }
+
+        $leftEndType = ($leftEnd eq '(') ? 'open' : 'closed';
+        $rightEndType = ($rightEnd eq ')') ? 'open' : 'closed';
+
+        $ALT = "Graph of a number line with one segment shaded. The segment starts at $ansLeft, and ends at $ansRight. The endpoint $ansLeft is $leftEndType, and the endpoint $ansRight is $rightEndType.";
+
+        $symbolOpp = ($symbol eq '>') ? '&le;' : '\leq';
+        $s1 = -1*$e;
+      </pg-code>
+    </setup>
+    <statement>
+      <p>
+        Solve this inequality, and write your answer in <em>interval notation</em>.
+      </p>
+
+      <p>
+        <me>
+          | <var name="$func" /> | <var name="$symbol" /> <var name="$e" />
+        </me>
+      </p>
+
+      <p>
+        Please type:
+      </p>
+
+      <p>
+      <ul>
+        <li><p>
+            <em>inf</em> for <m>\infty</m>,
+          </p></li>
+
+        <li><p>
+            <em>no solution</em> if there are no real solutions
+          </p></li>
+
+        <li><p>
+            <em>U</em> for the union symbol <m>\cup</m>
+          </p></li>
+      </ul>
+      </p>
+
+      <p>
+        <var name="$ans" width="34" />
+      </p>
+    </statement>
+    <solution>
+      <p>
+        As an easier example, the solution of <m> | x | <var name="$symbol" /> 1 </m> is:
+      </p>
+
+      <p>
+        <me>
+          -1 <var name="$symbol" /> x <var name="$symbol" /> 1
+        </me>
+        .
+      </p>
+
+      <p>
+        We solve <m> | <var name="$func" /> | <var name="$symbol" /> <var name="$e" /> </m> in a similar way. The full solution is:
+      </p>
+
+      <p>
+        <md>
+          <mrow>\amp| <var name="$func" /> | <var name="$symbol" /> <var name="$e" /></mrow>
+          <mrow><var name="$s1" /> \amp<var name="$symbol" /> <var name="$func" /> <var name="$symbol" /> <var name="$e" /></mrow>
+          <mrow><var name="$s1" /> \mathbf{{}+<var name="$d" />} \amp<var name="$symbol" /> <var name="$func" /> \mathbf{{}+<var name="$d" />} <var name="$symbol" /> <var name="$e" /> \mathbf{{}+<var name="$d" />}</mrow>
+          <mrow>[$s1+$d] \amp<var name="$symbol" /> <var name="$b" /> x <var name="$symbol" /> [$e+$d]</mrow>
+          <mrow>\frac{[$s1+$d]}{<var name="$b" />} \amp<var name="$symbol" /> \frac{<var name="$b" /> x}{<var name="$b" />} <var name="$symbol" /> \frac{[$e+$d]}{<var name="$b" />}</mrow>
+          <mrow><var name="$ansLeft" /> \amp<var name="$symbol" /> x <var name="$symbol" /> <var name="$ansRight" /></mrow>
+        </md>
+      </p>
+
+      <p>
+        In interval notation, the solution is <m><var name="$ans" /></m>. The following graph shows the solution set.
+      </p>
+
+      <p>
+
+        <figure>
+          <image pg-name="$gr" width="$screenXSize" height="$screenYSize" tex_size="$hardCopyPercent" >
+            <description><var name="$ALT" /></description>
+          </image>
+        </figure>
+
+      </p>
+    </solution>
+  </webwork>
+</exercise>

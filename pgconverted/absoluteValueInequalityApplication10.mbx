@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercise>
+  <original-metadata>
+  # WeBWorK problem written by Carl Yao
+  # Portland Community College
+  #
+  # Solve absolute value inequality application problem.
+  #
+  # Last edited by Carl Yao 07/19/2016
+  #
+  # ENDDESCRIPTION
+
+  ## DBsubject('Algebra')
+  ## DBchapter('Basic Algebra')
+  ## DBsection('Inequalities')
+  ## KEYWORDS('linear','inequality', 'number line','absolute value','interval notation')
+  ## DBCCSS('7.EE.4')
+  ## TitleText1('')
+  ## EditionText1('')
+  ## AuthorText1('')
+  ## Section1('')
+  ## Problem1('')
+  ## Author('Alex Jordan, Carl Yao, Chris Hughes')
+  ## Institution('PCC')
+  </original-metadata>
+  <webwork seed="1">
+    <pg-macros>
+    <macro-file>MathObjects.pl</macro-file>
+    <macro-file>PGML.pl</macro-file>
+    <macro-file>PGcourse.pl</macro-file>
+    </pg-macros>
+    <setup>
+      <var name="$ans">
+        <!--<static></static>-->
+      </var>
+      <var name="$d">
+        <!--<static></static>-->
+      </var>
+      <var name="$b">
+        <!--<static></static>-->
+      </var>
+      <var name="$c">
+        <!--<static></static>-->
+      </var>
+      <var name="$symbol">
+        <!--<static></static>-->
+      </var>
+      <var name="$a">
+        <!--<static></static>-->
+      </var>
+      <var name="$left">
+        <!--<static></static>-->
+      </var>
+      <pg-code>
+        $refreshCachedImages = 1;
+
+        Context("Numeric");
+        Context()->noreduce('(-x)-y','(-x)+y');
+
+        $symbol = '\le';
+
+        $a = random(3,7,0.1);
+        $b = random(0.001,0.005,0.001);
+
+        $left = Compute("x-$a")->reduce;
+        $right = Compute("$b");
+
+        Context("Interval");
+        $c = $a-$b;
+        $d = $a+$b;
+        $ans = Compute("[$c,$d]");
+      </pg-code>
+    </setup>
+    <statement>
+      <p>
+        A factory is producing a certain type of bolts. The length of the bolt must be within <m><var name="$b" /></m> inch of <m><var name="$a" /></m> inches (including <m><var name="$b" /></m> inch). Write and solve an absolute value inequality, find out the acceptable length of a bolt produced. Use interval notation to represent your answer.
+      </p>
+
+      <p>
+        Solution: An acceptable length of a bolt is in this interval (in inches): <var name="$ans" width="15" />
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Assume a bolt's length is <m>x</m> inches, then the difference between its length and <m><var name="$a" /></m> is <m> \lvert <var name="$left" /> \rvert </m> inches. To make the bolt's length within <m><var name="$b" /></m> inch of <m><var name="$a" /></m> inches, we can write this inequality:
+      </p>
+
+      <p>
+        <me>
+          \lvert <var name="$left" /> \rvert \le <var name="$b" />
+        </me>
+      </p>
+
+      <p>
+        Here is how to solve this inequality:
+      </p>
+
+      <p>
+        <md>
+          <mrow>\amp \lvert <var name="$left" /> \rvert <var name="$symbol" /> <var name="$b" /></mrow>
+          <mrow>[$b<em>-1] \amp<var name="$symbol" /> <var name="$left" /> <var name="$symbol" /> <var name="$b" /></mrow>
+          <mrow>[$b</em>-1] \mathbf{{}+<var name="$a" />} \amp<var name="$symbol" /> <var name="$left" /> \mathbf{{}+<var name="$a" />} <var name="$symbol" /> <var name="$b" /> \mathbf{{}+<var name="$a" />}</mrow>
+          <mrow>[$a-$b] \amp<var name="$symbol" /> x <var name="$symbol" /> [$a+$b]</mrow>
+        </md>
+      </p>
+
+      <p>
+        In interval notation, the solution is <m> \big[ <var name="$c" />,<var name="$d" /> \big] </m>.
+      </p>
+    </solution>
+  </webwork>
+</exercise>

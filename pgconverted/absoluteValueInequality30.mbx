@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercise>
+  <original-metadata>
+  # WeBWorK problem written by Carl Yao
+  # Portland Community College
+  #
+  # Solve absolute value inequality like |x|>-2
+  #
+  # Last edited by Carl Yao 07/30/2014
+  #
+  # ENDDESCRIPTION
+
+  ## DBsubject('Algebra')
+  ## DBchapter('Basic Algebra')
+  ## DBsection('Inequalities')
+  ## KEYWORDS('linear','inequality', 'number line','absolute value','interval notation')
+  ## DBCCSS('7.EE.4')
+  ## TitleText1('')
+  ## EditionText1('')
+  ## AuthorText1('')
+  ## Section1('')
+  ## Problem1('')
+  ## Author('Alex Jordan, Carl Yao, Chris Hughes')
+  ## Institution('PCC')
+  </original-metadata>
+  <webwork seed="1">
+    <pg-macros>
+    <macro-file>PGgraphmacros.pl</macro-file>
+    <macro-file>MathObjects.pl</macro-file>
+    <macro-file>PGML.pl</macro-file>
+    <macro-file>PGcourse.pl</macro-file>
+    </pg-macros>
+    <setup>
+      <var name="$right">
+        <!--<static></static>-->
+      </var>
+      <var name="$func">
+        <!--<static></static>-->
+      </var>
+      <var name="$ans">
+        <!--<static></static>-->
+      </var>
+      <var name="$symbol">
+        <!--<static></static>-->
+      </var>
+      <pg-code>
+        $refreshCachedImages = 1;
+
+        Context("Numeric");
+        #$reach is the maximum value shown on the graph.
+        $reach = 7;
+
+        $func = Compute("x");
+        $symbol = (random(-1,1,2)>0) ? '>' : '\geq';
+        $a = random(-$reach+2,-1,1);
+        $right = Compute("$a");
+
+        Context("Interval");
+        Context()->flags->set("formatStudentAnswer"=>'parsed');
+        $ans = Compute("(-inf, inf)");
+
+        Context("Numeric");
+      </pg-code>
+    </setup>
+    <statement>
+      <p>
+        Solve this inequality, and write your answer in <em>interval notation</em>.
+      </p>
+
+      <p>
+        <me>
+          | <var name="$func" /> | <var name="$symbol" /> <var name="$right" />
+        </me>
+      </p>
+
+      <p>
+        Please type:
+      </p>
+
+      <p>
+      <ul>
+        <li><p>
+            <em>inf</em> for <m>\infty</m>,
+          </p></li>
+
+        <li><p>
+            <em>no solution</em> if there are no real solutions
+          </p></li>
+
+        <li><p>
+            <em>U</em> for the union symbol <m>\cup</m>
+          </p></li>
+      </ul>
+      </p>
+
+      <p>
+        <var name="$ans" width="34" />
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Since the absolute value of a number is always positive or <m>0</m>, the solution of <m> | <var name="$func" /> | <var name="$symbol" /> <var name="$right" /> </m> is <m><var name="$ans" /></m>.
+      </p>
+    </solution>
+  </webwork>
+</exercise>
