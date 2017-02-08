@@ -42,12 +42,15 @@ Context("Numeric");
    $func = Compute("($a*x+$b)/($c*x+$d)")->reduce;
    $x2 = random(5,30,1);
    $ans2 = ($a*$x2+$b)/($c*$x2+$d);
-   do {$ans3 = random(5,30,1);} until ($ans3!=$x2);
-   $y3 = int((10*($a*$ans3+$b)/($c*$ans3+$d)+5)/10);
+   do {
+      $ans3 = random(5,30,1);
+      $y3Raw = ($a*$ans3+$b)/($c*$ans3+$d);
+      $y3 = int($y3Raw);
+      $ans3 = int(-($y3*$d-$b)/($c*$y3-$a)+0.5);
+   } until ( ($ans3!=$x2) && ($y3!=$y3Raw) );
 
 $ans1 = $b/$d;
 $ans2 = int((10*$ans2+5)/10);
-$ans3 = int($ans3);
 $ans4 = $a/$c;
 
 ##############################################
@@ -109,7 +112,8 @@ To answer this question, we substitute [`P(x)`] with [`[$y3]`], and then solve f
    [$y3*$c]x+[$y3*$d] &= [$a]x+[$b] \\
    [$y3*$c]x+[$y3*$d] \mathbf{{}-[$a]x-[$y3*$d]} &= [$a]x+[$b] \mathbf{{}-[$a]x-[$y3*$d]} \\
    [$s3]x &= [$s4] \\
-   x &= [$s4/$s3]
+   x &= [$s4/$s3] \\
+   x &\approx [$ans3]
 \end{aligned}
     ``]
 
