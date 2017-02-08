@@ -34,7 +34,6 @@ loadMacros(
   "PGML.pl",
   "contextLimitedPolynomial.pl",
   "PCCmacros.pl",
-,
   "PGcourse.pl",
 );
 
@@ -43,7 +42,7 @@ loadMacros(
 
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
-$var = RandomVariableName();
+do {$var = RandomVariableName();} until ($var ne uc($var));
 Context()->variables->are( $var=>'Real');
 
 $a = -1;

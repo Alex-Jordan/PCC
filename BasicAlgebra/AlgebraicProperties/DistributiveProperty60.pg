@@ -43,7 +43,7 @@ loadMacros(
 
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
-$var = RandomVariableName();
+do {$var = RandomVariableName();} until ($var ne uc($var));
 Context()->variables->are( $var=>'Real');
 
 $a = random(2,10,1);

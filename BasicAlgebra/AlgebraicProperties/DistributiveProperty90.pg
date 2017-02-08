@@ -35,7 +35,6 @@ loadMacros(
   "contextLimitedPolynomial.pl",
   "PCCmacros.pl",
   "contextFraction.pl",
-,
   "PGcourse.pl",
 );
 
@@ -44,7 +43,7 @@ loadMacros(
 
 Context("Fraction");
 Context()->noreduce('(-x)-y','(-x)+y');
-$var = RandomVariableName();
+ido {$var = RandomVariableName();} until ($var ne uc($var));
 Context()->variables->are( $var=>'Real');
 
 $m = random(2,10,1);

@@ -43,7 +43,7 @@ loadMacros(
 
 ##############################################
 
-$var = RandomVariableName();
+do {$var = RandomVariableName();} until ($var ne uc($var));
 
 Context("Numeric");
 Context()->variables->are($var=>'Real');
