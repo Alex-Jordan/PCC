@@ -1,0 +1,80 @@
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Expand a whole number like 123=100+20+3
+#
+#
+# Last updated: Yao 1/31/2017
+# ENDDESCRIPTION
+
+## DBCC('6.EE.1')
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Algebraic Expressions')
+## KEYWORDS('integer','operation','integer exponent','evaluate')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Carl Yao')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("Numeric");
+Context()->operators->redefine('+',using=>',',from=>'Numeric');
+Context()->operators->set('+'=>{string=>' + ',TeX=>'+'});
+Context()->lists->set(List => {separator => "+"});
+Context()->operators->undefine(',');
+
+@digits = ( );
+
+$flag = 0;
+do {
+   $num = 0;
+   for my $i (0..3) {
+      $digits[$i] = random(0,9,1);
+      $num += $digits[$i]*10**$i;
+      if ($digits[$i]==0) {$flag=1;}
+   }
+} until ($flag==1);
+if ($digits[4]==0) {$digits[4]=random(1,9,1);}
+
+
+
+$ans = List(1,2,3);
+
+
+##############################################
+
+TEXT(beginproblem());
+
+BEGIN_PGML
+
+[___________]{$ans->cmp(showTypeWarnings=>0, ordered=>1)}
+
+END_PGML
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+
+
+
+END_PGML_SOLUTION
+
+ENDDOCUMENT();
+
