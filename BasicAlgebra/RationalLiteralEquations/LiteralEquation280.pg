@@ -55,8 +55,8 @@ Context()->{error}{msg}{"The right side of an assignment must not include the va
 $a = random(2,9,1);
 $commonD = Compute("$a*$var1*$var2")->reduce;
 
-$ans = Compute("$var1*$var3");
-$ansEq=Formula("$var2=$ans");
+$ans = Compute("$var2/$a");
+$ansEq=Formula("$var1=$ans");
 
 
 
