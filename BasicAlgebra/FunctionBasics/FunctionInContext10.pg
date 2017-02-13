@@ -89,7 +89,6 @@ for my $i (0..3) {
   $scramble{$i} = $temp;
   $inverse{$temp} = $i;
   $answersShuffled[$i] = @answers[$scramble{$i}];
-  $answersShuffled[$i]=$ALPHABET[$i].'. '.$answersShuffled[$i];
 };
 
 $correctAns = @answersShuffled[$inverse{0}];
