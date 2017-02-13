@@ -55,7 +55,7 @@ $frac2= Formula("$num2/$den2")->reduce;
 $question = Formula("$frac1-$frac2")->reduce;
 $ans = Formula("-1/($var1+$c)")->reduce;
 
-$lostDomain = List(-$a);
+$lostDomain = List($a);
 
 ##############################################
 TEXT(beginproblem());
