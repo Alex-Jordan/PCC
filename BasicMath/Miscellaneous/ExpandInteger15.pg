@@ -49,6 +49,11 @@ for my $i (0..4) {
    $num += $answers[$i];
 }
 
+$zero = random(0,3,1);
+$digits[$zero] = 0;
+$num -= $answers[$zero];
+$answers[$zero] = 0;
+
 $ans = List($answers[4]);
 for ($i=3;$i>=0;$i--) {
    if ($digits[$i]!=0) {
