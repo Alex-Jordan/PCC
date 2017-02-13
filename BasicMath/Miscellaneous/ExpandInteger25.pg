@@ -1,10 +1,10 @@
 # WeBWorK problem written by Carl Yao
 # Portland Community College
 #
-# Expand a whole number like 123=100+20+3
+# Write an expanded number to its number form.
 #
 #
-# Last updated: Yao 1/31/2017
+# Last updated: Yao 2/10/2017
 # ENDDESCRIPTION
 
 ## DBCC('6.EE.1')
@@ -49,6 +49,11 @@ for my $i (0..4) {
    $num += $answers[$i];
 }
 
+$zero = random(0,3,1);
+$digits[$zero] = 0;
+$num -= $answers[$zero];
+$answers[$zero] = 0;
+
 $ans = List($answers[4]);
 for ($i=3;$i>=0;$i--) {
    if ($digits[$i]!=0) {
@@ -57,16 +62,15 @@ for ($i=3;$i>=0;$i--) {
    }
 }
 
-
 ##############################################
 
 TEXT(beginproblem());
 
 BEGIN_PGML
 
-Write the number [`[$num]`] in expanded form. Use the addition symbol to connect numbers.
+A number's expanded form is [`[$ans]`]. Write this number's value.
 
-    [``[$num]=``][________________________________]{$ans->cmp(showTypeWarnings=>0)}
+    [``[$ans]=``][_________]{$num}
 
 END_PGML
 
@@ -74,10 +78,9 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 
-In expanded form, the number [`[$num]`] can be written as:
+The number's value is:
 
-    [`` [$num]=[$ans] ``]
-
+    [`` [$ans]=[$num] ``]
 
 END_PGML_SOLUTION
 
