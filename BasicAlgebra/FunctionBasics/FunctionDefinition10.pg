@@ -49,7 +49,7 @@ do
 {
    for my $i (0..3)
    {
-       $domain[$i]=Set("");
+       $domain[$i]=Set();
        $points[$i] = '';
        my %f = '';
        my %finv = '';
