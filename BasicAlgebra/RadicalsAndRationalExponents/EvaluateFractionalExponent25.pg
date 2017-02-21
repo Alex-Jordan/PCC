@@ -90,7 +90,7 @@ Recognize that [`[$num]=[$a]^{[$bc]}`], and we have:
    &\phantom{{}=}[$num]^{-\frac{[$d]}{[$c]}} \\
    &=([$a]^{[$bc]})^{-\frac{[$d]}{[$c]}} \\
    &=[$a]^{-[$bd]} \\
-   &=\frac{1}{[$a]^{[$bd]} \\
+   &=\frac{1}{[$a]^{[$bd]}} \\
    &=\frac{1}{[$e]}
 \end{aligned}
     ``]
