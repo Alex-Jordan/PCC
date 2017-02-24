@@ -36,7 +36,7 @@ Context()->flags->set(
 );
 
 $a = random(10,50,1);
-$ans1 = sqrt($a/32);
+$ans1 = sqrt(2*$a/32);
 $ans1Show = sprintf("%.2f",$ans1);
 do {$b = random(1,5,0.1);} until (abs($b-$ans1)>1);
 $ans2 = $b**2*16;
