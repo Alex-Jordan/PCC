@@ -93,6 +93,8 @@ Rationalize the denominator of the radical expression and make sure your answer 
 If you need to enter a square root symbol, you need to type *sqrt* and use parentheses to enclose what goes inside the radical.  
 For example, type *sqrt(3)* to enter [`\sqrt{3}`].
 
+If you need the [`\pi`] symbol, type *pi*.
+
     [____________________]
 
 END_PGML
