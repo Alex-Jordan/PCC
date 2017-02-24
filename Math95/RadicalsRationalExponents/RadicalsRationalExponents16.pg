@@ -62,6 +62,7 @@ $problem = ($den1==2) ? "\frac{\sqrt{$b $var}}{\sqrt[$den2]{$var^{$num2}}}" : "\
 
 Context("Numeric");
 Context()->variables->are($var=>'Real');
+Context()->variables->set($var=>{limits=>[0,5]});
 Context()->flags->set(reduceConstants=>0);
 Context()->operators->undefine('+');
 Context()->functions->undefine('sqrt');
