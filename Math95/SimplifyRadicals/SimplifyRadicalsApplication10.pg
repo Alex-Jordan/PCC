@@ -29,7 +29,7 @@ loadMacros(
 ##############################################
 
 $expression = "2\pi\sqrt{\dfrac{L}{32}}";
-$stringans = "pi*(sqrt(32*L))/(16)";
+$stringans = "pi*(sqrt(2*L))/(4)";
 
 
     # code essentially from Davide Cervone 4/25/10
@@ -143,12 +143,13 @@ This will help us get rid of the radical in the denominator by multiplying it wi
                 &= 2\pi\dfrac{\sqrt{L}}{\sqrt{32}} \\
                 &= 2\pi\dfrac{\sqrt{L}}{\sqrt{32}}\cdot\dfrac{\sqrt{32}}{\sqrt{32}} \\
                 &= 2\pi\dfrac{\sqrt{32L}}{\sqrt{32^2}} \\
-                &= 2\pi\dfrac{\sqrt{32L}}{32} \\
-                &= \pi\dfrac{\sqrt{32L}}{16} \\
+                &= 2\pi\dfrac{\sqrt{16*2L}}{32} \\
+                &= 4\pi\dfrac{\sqrt{2L}}{16} \\
+                &= \pi\dfrac{\sqrt{2L}}{4} \\
 \end{aligned}
     ``]
 
-The answer can also be written as [`\dfrac{\pi\sqrt{32L}}{16}`].
+The answer can also be written as [`\dfrac{\pi\sqrt{2L}}{4}`].
 
 
 END_PGML_SOLUTION
