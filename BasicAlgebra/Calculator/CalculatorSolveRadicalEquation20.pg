@@ -66,18 +66,23 @@ Context()->strings->add("no real solutions"=>{},
   );
 
 do {
-   $b = random(1,10,1);
-   $a = random(1,10,1);
-   $d = 2*$a-($b)**2;
-} until ( ($d>0) && (int(sqrt($d))!=sqrt($d)) );
+   do {
+      $b = non_zero_random(-20,20,1);
+     $a = non_zero_random(-20,20,1);
+      $c = non_zero_random(-20,20,1);
+      $A = ($b-1)**2;
+      $B = 2*($b-1)*($a-($c)**2)-4*$c**2;
+      $C = ($a-($c)**2)**2;
+      $d = ($B)**2-4*$A*$C;
+   } until ($d>0);
+   $x0 = (-$B+sqrt($d))/(2*$A);
+   $x1 = (-$B-sqrt($d))/(2*$A);
+} until ( ($x0>0) && ($x1>0) );
 
-$func0 = Compute("sqrt($a-$var)")->reduce;
-$func1 = Compute("-sqrt($var)+$b")->reduce;
+$func0 = Compute("sqrt($a+$b*$var)")->reduce;
+$func1 = Compute("$c+sqrt($var)")->reduce;
 
-$x0 = ($a+sqrt(2*$a*($b)**2-($b)**4))/2;
-$x1 = ($a-sqrt(2*$a*($b)**2-($b)**4))/2;
-$y0 = sqrt($a-$x0);
-$y1 = sqrt($a-$x1);
+
 
 Context()->flags->set(
   tolerance => 0.005,
