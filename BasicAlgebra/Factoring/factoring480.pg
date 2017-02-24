@@ -88,7 +88,7 @@ Note that the given expression is the _difference of squares_
 
      [`
             \begin{aligned}
-                [$question] & = ([$step]^2)^2-[$stepb]^2\\
+                [$question] & = ([$step]^2)^2-([$stepb])^2\\
                             & = [$ans]
             \end{aligned}
      `]
