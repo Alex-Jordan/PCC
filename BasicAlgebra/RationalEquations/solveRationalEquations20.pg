@@ -42,11 +42,12 @@ $var = RandomVariableName();
 Context()->variables->are($var => 'Real');
 Context()->noreduce('(-x)-y','(-x)+y');
 
-
+do {
    $a = random(1,6,1);
-   do {$b = random(2,6,1);} until (gcd($a,$b)==1);
+   $b = random(2,6,1);
    $c = non_zero_random(-6,6,1);
-   do {$d = random(2,6,1);} until ( (gcd($c,$d)==1) && (abs($b)!=abs($d)) );
+   $d = random(2,6,1);
+} until ( (gcd($a,$b)==1) && (gcd($c,$d)==1) && (abs($b)!=abs($d)) );
    $e = non_zero_random(-6,6,1);
 
 $bd = $b*$d;
