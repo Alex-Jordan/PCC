@@ -35,7 +35,6 @@ loadMacros(
 
 ##############################################
 
-
 Context("Interval");
 
 
@@ -48,7 +47,6 @@ do
 {
    for my $i (0..3)
    {
-       $domain[$i]=Set();
        $points[$i] = '';
        my %f = '';
        my %finv = '';
@@ -76,15 +74,15 @@ do
           {
              $domain[$i] = Set("{$dom[$i][$j]}")
           } else 
-          {
-             $domain[$i] = Set("$domain[$i]U{$dom[$i][$j]}")
+          {  
+             $domain[$i] = $domain[$i]+Set("{$dom[$i][$j]}")
           };
           if ($j == 0) 
           {
              $range[$i] = Set("{$ran[$i][$j]}")
           } else 
-          {
-             $range[$i] = Set("$range[$i]U{$ran[$i][$j]}")
+          { 
+             $range[$i] = $range[$i] + Set("{$ran[$i][$j]}");
           };
           $points[$i] = $points[$i]."($dom[$i][$j],$ran[$i][$j])";
           $points[$i] = $points[$i].',' if ($j < $i+1);
@@ -143,24 +141,19 @@ Does the following relation on [`x`] and [`y`] make for a function of [`x`]?
 
     [`\Big[$LBRACE][$points3]\Big[$RBRACE]`]  
 
-    [@$radio3->buttons()@]*
+    [_____]{$radio3}
 
     What is the domain of the relation?  (Since a domain is a _set_ of numbers, you should be using [`[$LBRACE]`] and [`[$RBRACE]`] in your answer.)  
-    [______________]  
+    [______________]{Set($domain[3]->value)}
 
     What is the range of the relation?  (Since a range is a _set_ of numbers, you should be using [`[$LBRACE]`] and [`[$RBRACE]`] in your answer.)  
-    [______________]
+    [______________]{Set($range[3]->value)}
 
 END_PGML
 
 
 ##############################################
 
-ANS( radio_cmp( $radio3->correct_ans() ) );
-ANS( $domain[3]->cmp );
-ANS( $range[3]->cmp );
-
-##############################################
 
 
 
