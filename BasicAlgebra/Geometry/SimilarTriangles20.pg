@@ -1,0 +1,135 @@
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Find missing side with two given similar triangles.
+#
+# Last edited by Carl Yao 3/1/2017
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Problem Solving with Equations')
+## KEYWORDS('area','perimeter','triangle')
+## DBCCSS('6.G.1')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGgraphmacros.pl",
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "parserNumberWithUnits.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("Numeric");
+
+$ratio = random(2.5,5.5,1);
+$base2 = random(2,6,1);
+do {$leftSide2 = random(2,6,1);} until ($leftSide2 != $base2);
+
+$base1 = $ratio*$base2;
+$leftSide1 = $leftSide2*$ratio;
+
+$angle = random(20*pi/180,70*pi/180,0.1);
+$height1 = sin($angle)*$leftSide1;
+$xacross1 = cos($angle)*$leftSide1;
+$height2 = sin($angle)*$leftSide2;
+$xacross2 = cos($angle)*$leftSide2;
+
+$xmin = 0;         #The viewing window
+$xmax = $base1+10;
+$ymin = 0;
+$ymax = $height1+$height2+15;
+
+$xLabelShift = $xmax/40;
+$yLabelShift = $ymax/40;
+
+@x1 = (($xmax-$base1)/2,($xmax+$base1)/2);
+@y1 = (5,5+$height1);
+
+@x2 = (($xmax-$base2)/2,($xmax+$base2)/2);
+@y2 = (10+$height1,10+$height1+$height2);
+
+$picture = init_graph($xmin,$ymin,$xmax,$ymax,
+      pixels=>[400,400]);
+
+$x1Top = $x1[0]+$xacross1;
+$x2Top = $x2[0]+$xacross2;
+
+$picture->lb( new Label(($xmax+$xmin)/2, $y1[0]-$yLabelShift,"$base1 cm",'black','center','middle'));
+$picture->lb( new Label(($x1[0]+$x1Top)/2-$xLabelShift, ($y1[0]+$y1[1])/2+$yLabelShift,"$leftSide1 cm",'black','right','middle'));
+#$picture->lb( new Label(($x1Top+$x1[1])/2+2*$xLabelShift,($y1[0]+$y1[1])/2+$yLabelShift,"$rightSide1 cm",'black','left','middle'));
+
+$picture->lb( new Label(($xmax+$xmin)/2, $y2[0]-$yLabelShift,"x cm",'black','center','middle'));
+$picture->lb( new Label(($x2[0]+$x2Top)/2-$xLabelShift, ($y2[0]+$y2[1])/2+$yLabelShift,"$leftSide2 cm",'black','right','middle'));
+#$picture->lb( new Label(($x2Top+$x2[1])/2+2*$xLabelShift,($y2[0]+$y2[1])/2+$yLabelShift,"$rightSide2 cm",'black','left','middle'));
+
+$picture->new_color("darkblue",  100,100,255); 
+
+$picture->moveTo($x1Top,$y1[1]);
+$picture->lineTo($x1[1],$y1[0], darkblue,3);
+$picture->lineTo($x1[0],$y1[0], darkblue,3);
+$picture->lineTo($x1Top,$y1[1], darkblue,3);
+
+$picture->moveTo($x2Top,$y2[1]);
+$picture->lineTo($x2[1],$y2[0], darkblue,3);
+$picture->lineTo($x2[0],$y2[0], darkblue,3);
+$picture->lineTo($x2Top,$y2[1], darkblue,3);
+
+$text = "There are two triangles. The one on the top is smaller, and the one at the bottom is larger. For the top triangle, its base is marked as x cm, and its left side is marked as $leftSide2 cm. For the bottom triangle, its base is marked as $base1 cm, and its left side is marked as $leftSide1 cm. ";
+
+$ans = $base2;
+$ansU = NumberWithUnits("$ans cm");
+
+##############################################
+$refreshCachedImages = 1;
+TEXT(beginproblem());
+
+BEGIN_PGML
+
+The following two triangles are similar to each other. Find the length of the missing side.
+
+>>[@ image(insertGraph( $picture  ), tex_size=>400, height=>400, width=>400, extra_html_tags => "alt = '$text' title = '$text' ") @]*<<
+
+Use *cm* for centimeters.
+
+The missing side's length is [__________]{$ansU}
+
+END_PGML
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+If two shapes are similar to each other, the lengths of their corresponding sides are in proportion. We can write an equation and solve for [`x`]:
+
+    [``
+\begin{aligned}
+   \frac{[$leftSide2]}{[$leftSide1]} &= \frac{x}{[$base1]} \\
+   \mathbf{[$leftSide1]\cdot[$base1]\cdot} \frac{[$leftSide2]}{[$leftSide1]} &= \mathbf{[$leftSide1]\cdot[$base1]\cdot} \frac{x}{[$base1]} \\
+   [$base1]\cdot[$leftSide2] &= [$leftSide1]x \\
+   [$base1*$leftSide2] &= [$leftSide1]x \\
+   \frac{[$base1*$leftSide2]}{[$leftSide1]} &= \frac{[$leftSide1]x}{[$leftSide1]} \\
+   [$base2] &= x
+\end{aligned}
+    ``]
+
+*Solution:* The length of the missing side is [`[$ansU]`].
+
+END_PGML_SOLUTION
+
+ENDDOCUMENT();
