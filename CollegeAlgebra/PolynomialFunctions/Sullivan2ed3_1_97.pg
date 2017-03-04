@@ -20,7 +20,7 @@ loadMacros(
 
 ##############################################
 
-
+TEXT(beginproblem());
 Context("Numeric");
 
 $r1 = random(-9,-1,1);

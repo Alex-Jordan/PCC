@@ -29,6 +29,7 @@ loadMacros(
 ##############################################
 
 
+TEXT(beginproblem());
 $a = random(2,10,1);
 while ((round($a/4)*4 == $a) || (round($a/9)*9 == $a))
 {$a = random(2,10,1);}

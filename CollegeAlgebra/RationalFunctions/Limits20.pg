@@ -17,6 +17,7 @@ loadMacros(
 
 #############################################
 
+TEXT(beginproblem());
 
 $showPartialCorrectAnswers = 1;
 $showPartialCredit = 1;

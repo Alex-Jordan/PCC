@@ -29,6 +29,7 @@ loadMacros(
 ##############################################
 
 
+TEXT(beginproblem());
 $a = random(8,30,1);
 
 $expression = "\sqrt{$a}\cdot\!\sqrt{$a}";

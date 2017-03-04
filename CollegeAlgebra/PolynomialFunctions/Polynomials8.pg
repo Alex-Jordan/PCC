@@ -12,7 +12,7 @@ loadMacros("PG.pl", "PGbasicmacros.pl", "PGchoicemacros.pl",
 "PGauxiliaryFunctions.pl",
 "extraAnswerEvaluators.pl");
 
-
+TEXT(beginproblem());
 install_problem_grader(~~&std_problem_grader);
 
 $showPartialCredit = 1;

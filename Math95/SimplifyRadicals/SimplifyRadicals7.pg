@@ -29,6 +29,7 @@ loadMacros(
 ##############################################
 
 
+TEXT(beginproblem());
 $a = random(3,7,1);
 $b = $a+2;
 while (gcd($a,$b) != 1)

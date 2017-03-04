@@ -38,7 +38,7 @@ loadMacros(
 
 ##############################################
 
-
+TEXT(beginproblem());
 Context("Numeric");
 Context()->reduction->set('(-x)-y'=>0);    #So that the displayed inequalities
 Context()->reduction->set('(-x)+y'=>0);    #will look as intended

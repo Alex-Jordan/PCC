@@ -19,7 +19,7 @@ loadMacros(
 
 ##############################################
 
-
+TEXT(beginproblem());
 Context("Numeric");
 
 $a = random(2,10,1);

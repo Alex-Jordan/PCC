@@ -29,6 +29,7 @@ loadMacros(
 ##############################################
 
 
+TEXT(beginproblem());
 $a = list_random(2,3,5);
 $b = $a**3;
 

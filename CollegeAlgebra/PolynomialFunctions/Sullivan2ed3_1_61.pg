@@ -23,7 +23,7 @@ loadMacros(
 
 ##############################################
 
-
+TEXT(beginproblem());
 Context("Fraction");
 
 $a = random(1,4,1);

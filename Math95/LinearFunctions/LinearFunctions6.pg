@@ -20,6 +20,7 @@ loadMacros(
 ##############################################
 
 
+TEXT(beginproblem());
 Context("Numeric");
 Context()->variables->are(t=>'Real');
 parser::Assignment->Allow;

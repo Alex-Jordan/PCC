@@ -25,6 +25,7 @@ loadMacros(
 ##############################################
 
 
+TEXT(beginproblem());
 Context("Fraction");
 Context()->flags->set(showMixedNumbers=>0);
 

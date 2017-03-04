@@ -29,6 +29,7 @@ loadMacros(
 ##############################################
 
 
+TEXT(beginproblem());
 $a = random(2,12,1);
 $b = random(5,15,1);
 $c = $a**2*$b;

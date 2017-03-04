@@ -28,6 +28,7 @@ loadMacros(
 
 ##############################################
 
+TEXT(beginproblem());
 Context("RationalFunction-Strict");
 $var = RandomVariableName(type=>'variable');
 Context()->variables->are($var=>'Real');

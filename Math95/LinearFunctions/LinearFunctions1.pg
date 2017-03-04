@@ -20,6 +20,7 @@ loadMacros(
 
 ##############################################
 
+TEXT(beginproblem());
 $a = random(1,20,1);
 $f[0] = Formula("x-$a")->reduce;
 

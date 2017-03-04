@@ -18,6 +18,7 @@ loadMacros(
 
 ##############################################
 
+TEXT(beginproblem());
 Context("Numeric");
 $var = list_random('x','y','z','t','r','m','n');
 Context()->variables->are($var=>'Real');

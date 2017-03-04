@@ -20,6 +20,7 @@ loadMacros(
 
 ##############################################
 
+TEXT(beginproblem());
 Context("Numeric");
 $n = random(3,12,1);
 $a = random(5,20,1);

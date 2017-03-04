@@ -37,6 +37,7 @@ loadMacros(
 
 ##############################################
 
+TEXT(beginproblem());
 Context("Numeric");
 
 $xmin = 0;         #The viewing window

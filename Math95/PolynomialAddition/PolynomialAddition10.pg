@@ -21,6 +21,7 @@ loadMacros(
 ##############################################
 
 
+TEXT(beginproblem());
 Context("Fraction");
 Context()->reduction->set('(-x)-y'=>0);
 Context()->reduction->set('(-x)+y'=>0);

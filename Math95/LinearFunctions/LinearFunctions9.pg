@@ -23,6 +23,7 @@ loadMacros(
 ##############################################
 
 
+TEXT(beginproblem());
 Context("Numeric");
 Context()->reductions->set('(-x)-y'=>0,'(-x)+y'=>0);
 
