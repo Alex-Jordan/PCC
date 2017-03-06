@@ -97,8 +97,6 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-[`([$x0],[$y0]), ([$x1],[$y1])`]
-
 Use a TI-89 or Casio ClassPad 330 graphing calculator to solve this equation:
 
     [`` [$func0] = [$func1] ``]
