@@ -44,7 +44,7 @@ Context()->variables->are($var=>'Real');
 $den = list_random(2,3,5,6,7);
 $factor = random(1,5,1);
 $num = $factor*$den;
-$ans = Formula("$factor sqrt($den*$var)/$var");
+$ans = ($factor == 1) ? Formula("sqrt($den*$var)/$var") : Formula("$factor sqrt($den*$var)/$var");
 
 Context()->{error}{msg}{"You must simplify your answer further"} 
   = "Either your answer is not fully simplified or it has an irrational denominator";
@@ -80,7 +80,7 @@ We will multiply both the numerator and denominator by [` \sqrt{[$den] [$var]} `
    \frac{[$num]}{\sqrt{[$den] [$var]}} &= \frac{[$num]}{\sqrt{[$den] [$var]}}\cdot \frac{\sqrt{[$den] [$var]}}{\sqrt{[$den] [$var]}}\\
       &= \frac{[$num] \cdot \sqrt{[$den] [$var]}}{\sqrt{[$den] [$var]} \cdot \sqrt{[$den] [$var]}} \\
       &= \frac{[$num] \cdot \sqrt{[$den] [$var]}}{[$den] [$var]} \\
-      &= \frac{[$factor] \sqrt{[$den] [$var]} }{[$var]}
+      &= [$ans]
 \end{aligned}
     ``]
 
