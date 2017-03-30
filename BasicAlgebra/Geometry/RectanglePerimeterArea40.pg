@@ -1,0 +1,228 @@
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Find the perimeter and area of a shape.
+#
+# Last edited by Carl Yao on 3.27/2017
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Problem Solving with Equations')
+## KEYWORDS('area','perimeter','rectangle')
+## DBCCSS('4.MD.3')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGgraphmacros.pl",
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "parserNumberWithUnits.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("Numeric");
+
+$xmin = 0;         #The viewing window
+$xmax = 22;
+$ymin = 0;
+$ymax = 22;
+
+$base = random(13,18,1);
+$height = random(5,12,1);
+$baseCut = random(2,$base-2,1);
+$heightCut = random(2,$height-2,1);
+$unit = "m";
+$baseU = NumberWithUnits("$base $unit");
+$heightU = NumberWithUnits("$height $unit");
+$baseCutU = NumberWithUnits("$baseCut $unit");
+$heightCutU = NumberWithUnits("$heightCut $unit");
+
+@x = (($xmax-$base)/2,($xmax+$base)/2);
+@y = (($ymax-$height)/2,($ymax+$height)/2);
+
+#the value of $corner (0,1,2,3) decides which piece is cut off,
+#bottom left, top left, top right, bottom right
+$corner = 3;#random(0,3,1);
+@xCut = ( 
+   [$x[0], $x[0],$x[0]+$baseCut,$x[0]+$baseCut],
+   [$x[0],$x[0],$x[0]+$baseCut,$x[0]+$baseCut],
+   [$x[1]-$baseCut,$x[1]-$baseCut,$x[1],$x[1]],
+   [$x[1]-$baseCut,$x[1]-$baseCut,$x[1],$x[1]]
+);
+
+@yCut = (
+   [$y[0],$y[0]+$heightCut,$y[0]+$heightCut,$y[0]],
+   [$y[1]-$heightCut,$y[1],$y[1],$y[1]-$heightCut],
+   [$y[1]-$heightCut,$y[1],$y[1],$y[1]-$heightCut],
+   [$y[0],$y[0]+$heightCut,$y[0]+$heightCut,$y[0]]
+);
+
+$labelAdjust = 0.5;
+$cornersize = min(($x[1]-$x[0]),($y[1]-$y[0]))/13;
+
+@pictures = ();
+@color = (
+   [white,darkblue,darkblue,white],
+   [white,white,darkblue,darkblue],
+   [darkblue,white,white,darkblue],
+   [darkblue,darkblue,white,white],
+);
+
+for my $i (0..1) {
+   $picture[$i] = init_graph($xmin,$ymin,$xmax,$ymax,
+      pixels=>[400,400]);
+
+   if ( ($corner==0) || ($corner==3) ) {
+      $picture[$i]->lb( new Label(($x[0]+$x[1])/2, $y[1]+$labelAdjust,"$baseU",'black','center','middle'));
+      $picture[$i]->lb( new Label(($xCut[$corner][1]+$xCut[$corner][2])/2, $yCut[$corner][1]+$labelAdjust,"$baseCutU",'black','center','middle'));
+   } else {
+      $picture[$i]->lb( new Label(($x[0]+$x[1])/2, $y[0]-$labelAdjust,"$baseU",'black','center','middle'));
+      $picture[$i]->lb( new Label(($xCut[$corner][1]+$xCut[$corner][2])/2, $yCut[$corner][0]-$labelAdjust,"$baseCutU",'black','center','middle'));
+   }
+
+   if ( ($corner==0) || ($corner==1) ) {
+      $picture[$i]->lb( new Label($x[1]+2*$labelAdjust,($y[0]+$y[1])/2,"$heightU",'black','center','middle'));
+      $picture[$i]->lb( new Label($xCut[$corner][2]-2*$labelAdjust,($yCut[$corner][0]+$yCut[$corner][1])/2,"$heightCutU",'black','center','middle'));
+   } else {
+      $picture[$i]->lb( new Label($x[0]-2*$labelAdjust,($y[0]+$y[1])/2,"$heightU",'black','center','middle'));
+      $picture[$i]->lb( new Label($xCut[$corner][0]+2*$labelAdjust,($yCut[$corner][0]+$yCut[$corner][1])/2,"$heightCutU",'black','center','middle'));
+   }
+
+   $picture[$i]->new_color("lightblue", 200,200,255); # RGB
+   $picture[$i]->new_color("darkblue",  100,100,255); 
+
+   $picture[$i]->moveTo($x[0],$y[0]);
+   $picture[$i]->lineTo($x[1],$y[0], darkblue,3);
+   $picture[$i]->lineTo($x[1],$y[1], darkblue,3); 
+   $picture[$i]->lineTo($x[0],$y[1], darkblue,3);
+   $picture[$i]->lineTo($x[0],$y[0], darkblue,3);
+
+   $picture[$i]->moveTo($xCut[$corner][($corner+3)%4],$yCut[$corner][($corner+3)%4]);
+   $picture[$i]->lineTo($xCut[$corner][($corner+4)%4],$yCut[$corner][($corner+4)%4], $color[$corner][($corner+3)%4],3);
+   $picture[$i]->lineTo($xCut[$corner][($corner+5)%4],$yCut[$corner][($corner+5)%4], $color[$corner][($corner+4)%4],3);
+   $picture[$i]->lineTo($xCut[$corner][($corner+6)%4],$yCut[$corner][($corner+6)%4], $color[$corner][($corner+5)%4],3);
+   $picture[$i]->lineTo($xCut[$corner][($corner+7)%4],$yCut[$corner][($corner+7)%4], $color[$corner][($corner+6)%4],3);
+
+
+   if ($corner!=0) {
+      $picture[$i]->moveTo($x[0]+$cornersize,$y[0]);
+      $picture[$i]->lineTo($x[0]+$cornersize,$y[0]+$cornersize, darkblue,3);
+      $picture[$i]->lineTo($x[0],$y[0]+$cornersize, darkblue,3);
+   }
+   if ($corner!=1) {
+      $picture[$i]->moveTo($x[0]+$cornersize,$y[1]);
+      $picture[$i]->lineTo($x[0]+$cornersize,$y[1]-$cornersize, darkblue,3);
+      $picture[$i]->lineTo($x[0],$y[1]-$cornersize, darkblue,3);
+   }
+   if ($corner!=2) {
+      $picture[$i]->moveTo($x[1]-$cornersize,$y[1]);
+      $picture[$i]->lineTo($x[1]-$cornersize,$y[1]-$cornersize, darkblue,3);
+      $picture[$i]->lineTo($x[1],$y[1]-$cornersize, darkblue,3);
+   }
+   if ($corner!=3) {
+      $picture[$i]->moveTo($x[1]-$cornersize,$y[0]);
+      $picture[$i]->lineTo($x[1]-$cornersize,$y[0]+$cornersize, darkblue,3);
+      $picture[$i]->lineTo($x[1],$y[0]+$cornersize, darkblue,3);
+   }
+}
+
+if ($corner==0) {$position = "bottom left";}
+   elsif ($corner==1) {$position = "top left";}
+   elsif ($corner==2) {$position = "top right";}
+   else {$position = "bottom right";}
+
+@alt = ();
+$alt[0] = "There is a rectangle with the base marked as $baseU and height marked as $heightU. A rectangular piece is missing at the $position corner. The missing piece has a base of $baseCutU and a height of $heightCutU.";
+
+$missingBase = $base-$baseCut;
+$missingHeight = $height-$heightCut;
+$missingBaseU = NumberWithUnits("$missingBase $unit");
+$missingHeightU = NumberWithUnits("$missingHeight $unit");
+
+$perimeter = 2*($base+$height);
+$area = $base*$height-$baseCut*$heightCut;
+$perimeterU = NumberWithUnits("$perimeter $unit");
+$areaU = NumberWithUnits("$area $unit^2");
+
+
+
+##############################################
+
+TEXT(beginproblem());
+$refreshCachedImages = 1;
+BEGIN_PGML
+
+Find the perimeter and area of this shape.
+
+>>[@ image(insertGraph( $picture[0]  ), tex_size=>400, height=>400, width=>400, extra_html_tags => "alt = '$alt[0]' title = '$alt[0]' ") @]*<<
+
+    Its perimeter is [_____________]{$perimeterU} and its area is [_____________]{$areaU}. 
+
+(Use *m* for meters and *m[$CARET]2* for square meters.)
+
+END_PGML
+
+##############################################
+
+if ($corner==0) {
+   $picture[1]->lb( new Label($xCut[$corner][0],($yCut[$corner][1]+$y[1])/2,"$height-$heightCut=$missingHeightU",'red','center','middle'));
+   $picture[1]->lb( new Label(($xCut[$corner][3]+$x[1])/2,$y[0]-$labelAdjust,"$base-$baseCut=$missingBaseU",'red','center','middle'));
+} elsif ($corner==1) {
+   $picture[1]->lb( new Label($xCut[$corner][1],($yCut[$corner][0]+$y[0])/2,"$height-$heightCut=$missingHeightU",'red','center','middle'));
+   $picture[1]->lb( new Label(($xCut[$corner][3]+$x[1])/2,$y[1]+$labelAdjust,"$base-$baseCut=$missingBaseU",'red','center','middle'));
+} elsif ($corner==2) {
+   $picture[1]->lb( new Label($xCut[$corner][2],($yCut[$corner][3]+$y[0])/2,"$height-$heightCut=$missingHeightU",'red','center','middle'));
+   $picture[1]->lb( new Label(($xCut[$corner][0]+$x[0])/2,$y[1]+$labelAdjust,"$base-$baseCut=$missingBaseU",'red','center','middle'));
+} else {
+   $picture[1]->lb( new Label($xCut[$corner][2],($yCut[$corner][2]+$y[1])/2,"$height-$heightCut=$missingHeightU",'red','center','middle'));
+   $picture[1]->lb( new Label(($xCut[$corner][0]+$x[0])/2,$y[0]-$labelAdjust,"$base-$baseCut=$missingBaseU",'red','center','middle'));
+}
+
+BEGIN_PGML_SOLUTION
+
+To find this shape's perimeter, we need to find the lengths of missing sides in the following graph:
+
+>>[@ image(insertGraph( $picture[1]  ), tex_size=>400, height=>400, width=>400, extra_html_tags => "alt = '$alt[1]' title = '$alt[1]' ") @]*<<
+
+
+
+----
+For the given rectangle, we have:
+
+[``\begin{aligned}
+       \text{rectangle perimeter}
+       & = 2(\text{base}+\text{height})\\
+       & = 2([$base]+[$height]) \\
+       & = [$ansP]
+     \end{aligned}``]
+
+Don't forget the length unit [`\textrm{m}`].  
+----
+Also,  
+[``\begin{aligned}
+       \text{rectangle area}
+       & = \text{base} \cdot \text{height}\\
+       & = [$base] \cdot [$height] \\
+       & = [$ansA]
+     \end{aligned}``]
+
+    Don't forget the area unit [`\textrm{m}^{2}`].
+
+END_PGML_SOLUTION
+
+ENDDOCUMENT();
