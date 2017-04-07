@@ -70,7 +70,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Do the following additions without using a calculator.
+Do the following subtractions without using a calculator.
 
 END_PGML
 

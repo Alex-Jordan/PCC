@@ -52,12 +52,22 @@ $heightU = NumberWithUnits("$height $unit");
 $baseCutU = NumberWithUnits("$baseCut $unit");
 $heightCutU = NumberWithUnits("$heightCut $unit");
 
+$missingBase = $base-$baseCut;
+$missingHeight = $height-$heightCut;
+$missingBaseU = NumberWithUnits("$missingBase $unit");
+$missingHeightU = NumberWithUnits("$missingHeight $unit");
+
+$perimeter = 2*($base+$height);
+$area = $base*$height-$baseCut*$heightCut;
+$perimeterU = NumberWithUnits("$perimeter $unit");
+$areaU = NumberWithUnits("$area $unit^2");
+
 @x = (($xmax-$base)/2,($xmax+$base)/2);
 @y = (($ymax-$height)/2,($ymax+$height)/2);
 
 #the value of $corner (0,1,2,3) decides which piece is cut off,
 #bottom left, top left, top right, bottom right
-$corner = 3;#random(0,3,1);
+$corner = list_random(0,3,1,2);
 @xCut = ( 
    [$x[0], $x[0],$x[0]+$baseCut,$x[0]+$baseCut],
    [$x[0],$x[0],$x[0]+$baseCut,$x[0]+$baseCut],
@@ -73,7 +83,7 @@ $corner = 3;#random(0,3,1);
 );
 
 $labelAdjust = 0.5;
-$cornersize = min(($x[1]-$x[0]),($y[1]-$y[0]))/13;
+$cornersize = 0.5;
 
 @pictures = ();
 @color = (
@@ -83,7 +93,7 @@ $cornersize = min(($x[1]-$x[0]),($y[1]-$y[0]))/13;
    [darkblue,darkblue,white,white],
 );
 
-for my $i (0..1) {
+for my $i (0..2) {
    $picture[$i] = init_graph($xmin,$ymin,$xmax,$ymax,
       pixels=>[400,400]);
 
@@ -141,24 +151,56 @@ for my $i (0..1) {
    }
 }
 
-if ($corner==0) {$position = "bottom left";}
-   elsif ($corner==1) {$position = "top left";}
-   elsif ($corner==2) {$position = "top right";}
-   else {$position = "bottom right";}
+@missingHeightLabelY = (
+   ($yCut[$corner][1]+$y[1])/2,
+   ($yCut[$corner][3]+$y[0])/2,
+   ($yCut[$corner][3]+$y[0])/2,
+   ($yCut[$corner][1]+$y[1])/2
+);
+$picture[1]->lb( new Label($xCut[$corner][$corner],$missingHeightLabelY[$corner],"$height-$heightCut = $missingHeightU",'red','center','middle'));
+
+@missingBaseLabelX = (
+   ($xCut[$corner][2]+$x[1])/2,
+   ($xCut[$corner][3]+$x[1])/2,
+   ($xCut[$corner][0]+$x[0])/2,
+   ($xCut[$corner][1]+$x[0])/2
+);
+@missingBaseLabelY = (
+   $y[0]-$labelAdjust,
+   $y[1]+$labelAdjust,
+   $y[1]+$labelAdjust,
+   $y[0]-$labelAdjust
+);
+$picture[1]->lb( new Label($missingBaseLabelX[$corner],$missingBaseLabelY[$corner],"$base-$baseCut = $missingBaseU",'red','center','middle'));
+
+@missingPosition = ("bottom left", "top left", "top right", "bottom right");
+@height1Direction = ("down", "up", "up", "down");
+@base1Direction = ("left", "left", "right", "right");
 
 @alt = ();
-$alt[0] = "There is a rectangle with the base marked as $baseU and height marked as $heightU. A rectangular piece is missing at the $position corner. The missing piece has a base of $baseCutU and a height of $heightCutU.";
+$alt[0] = "The picture shows a rectangle with a rectangular piece missing at its $missingPosition[$corner] corner. Starting the $missingPosition[($corner+2)%4] corner, a vertical side with the length $heightU goes $height1Direction[$corner]; it turns $base1Direction[$corner] for an unknown length, and then goes $height1Direction[($corner+2)%4] for $heightCutU; it turns $base1Direction[$corner] for $baseCutU, and then goes $height1Direction[($corner+2)%4] for an unknown length; finally, it turns $base1Direction[($corner+2)%4] for $baseU and reaches the starting point at the $missingPosition[($corner+2)%4] corner.";
 
-$missingBase = $base-$baseCut;
-$missingHeight = $height-$heightCut;
-$missingBaseU = NumberWithUnits("$missingBase $unit");
-$missingHeightU = NumberWithUnits("$missingHeight $unit");
+$alt[1] = "The picture shows a rectangle with a rectangular piece missing at its $missingPosition[$corner] corner. Starting the $missingPosition[($corner+2)%4] corner, a vertical side with the length $heightU goes $height1Direction[$corner]; it turns $base1Direction[$corner] for a distance marked as $base-$baseCut = $missingBaseU, and then goes $height1Direction[($corner+2)%4] for $heightCutU; it turns $base1Direction[$corner] for $baseCutU, and then goes $height1Direction[($corner+2)%4] for a distance marked as $height-$heightCut = $missingHeightU; finally, it turns $base1Direction[($corner+2)%4] for $baseU and reaches the starting point at the $missingPosition[($corner+2)%4] corner.";
 
-$perimeter = 2*($base+$height);
-$area = $base*$height-$baseCut*$heightCut;
-$perimeterU = NumberWithUnits("$perimeter $unit");
-$areaU = NumberWithUnits("$area $unit^2");
+$alt[2] = $alt[0]." At the $missingPosition[$corner] corner, two dashed lines were drawn to make up the missing piece to clearly show the big rectangle with a smaller  rectangle missing.";
 
+@connectLineX = (
+   [$x[0]+$baseCut,$x[0],$x[0]],
+   [$x[0]+$baseCut,$x[0],$x[0]],
+   [$x[1]-$baseCut,$x[1],$x[1]],
+   [$x[1]-$baseCut,$x[1],$x[1]]
+);
+
+@connectLineY = (
+   [$y[0],$y[0],$y[0]+$heightCut],
+   [$y[1],$y[1],$y[1]-$heightCut],
+   [$y[1],$y[1],$y[1]-$heightCut],
+   [$y[0],$y[0],$y[0]+$heightCut]
+);
+
+$picture[2]->moveTo($connectLineX[$corner][0],$connectLineY[$corner][0]);
+$picture[2]->lineTo($connectLineX[$corner][1],$connectLineY[$corner][1], red,1,'dashed');
+$picture[2]->lineTo($connectLineX[$corner][2],$connectLineY[$corner][2], red,1,'dashed');
 
 
 ##############################################
@@ -179,19 +221,7 @@ END_PGML
 
 ##############################################
 
-if ($corner==0) {
-   $picture[1]->lb( new Label($xCut[$corner][0],($yCut[$corner][1]+$y[1])/2,"$height-$heightCut=$missingHeightU",'red','center','middle'));
-   $picture[1]->lb( new Label(($xCut[$corner][3]+$x[1])/2,$y[0]-$labelAdjust,"$base-$baseCut=$missingBaseU",'red','center','middle'));
-} elsif ($corner==1) {
-   $picture[1]->lb( new Label($xCut[$corner][1],($yCut[$corner][0]+$y[0])/2,"$height-$heightCut=$missingHeightU",'red','center','middle'));
-   $picture[1]->lb( new Label(($xCut[$corner][3]+$x[1])/2,$y[1]+$labelAdjust,"$base-$baseCut=$missingBaseU",'red','center','middle'));
-} elsif ($corner==2) {
-   $picture[1]->lb( new Label($xCut[$corner][2],($yCut[$corner][3]+$y[0])/2,"$height-$heightCut=$missingHeightU",'red','center','middle'));
-   $picture[1]->lb( new Label(($xCut[$corner][0]+$x[0])/2,$y[1]+$labelAdjust,"$base-$baseCut=$missingBaseU",'red','center','middle'));
-} else {
-   $picture[1]->lb( new Label($xCut[$corner][2],($yCut[$corner][2]+$y[1])/2,"$height-$heightCut=$missingHeightU",'red','center','middle'));
-   $picture[1]->lb( new Label(($xCut[$corner][0]+$x[0])/2,$y[0]-$labelAdjust,"$base-$baseCut=$missingBaseU",'red','center','middle'));
-}
+
 
 BEGIN_PGML_SOLUTION
 
@@ -199,29 +229,31 @@ To find this shape's perimeter, we need to find the lengths of missing sides in 
 
 >>[@ image(insertGraph( $picture[1]  ), tex_size=>400, height=>400, width=>400, extra_html_tags => "alt = '$alt[1]' title = '$alt[1]' ") @]*<<
 
+To find the shape's perimeter, we start from any corner of the shape, travel around it, and calculate the sum of all sides in the travel. If we start from the [$missingPosition[($corner+2)%4]] corner and travel [$height1Direction[$corner]], we have:
 
+    [``
+\begin{aligned}
+   \text{perimeter} &= [$height]+[$missingBase]+[$heightCut]+[$baseCut]+[$missingHeight]+[$base] \\
+   &= [$perimeter]
+\end{aligned}
+    ``]
 
-----
-For the given rectangle, we have:
+The shape's perimeter is [`[$perimeterU]`].
 
-[``\begin{aligned}
-       \text{rectangle perimeter}
-       & = 2(\text{base}+\text{height})\\
-       & = 2([$base]+[$height]) \\
-       & = [$ansP]
-     \end{aligned}``]
+>>[@ image(insertGraph( $picture[2]  ), tex_size=>400, height=>400, width=>400, extra_html_tags => "alt = '$alt[2]' title = '$alt[2]' ") @]*<<
 
-Don't forget the length unit [`\textrm{m}`].  
-----
-Also,  
-[``\begin{aligned}
-       \text{rectangle area}
-       & = \text{base} \cdot \text{height}\\
-       & = [$base] \cdot [$height] \\
-       & = [$ansA]
-     \end{aligned}``]
+To find the shape's area, we will find the big rectangle's area, and then subtract the missing piece:
 
-    Don't forget the area unit [`\textrm{m}^{2}`].
+    [``
+\begin{aligned}
+   \text{area} &= \text{big rectangle's area} - \text{small rectangle's area} \\
+   &= [$base]\cdot[$height] - [$baseCut]\cdot[$heightCut] \\
+   &= [$base*$height] - [$baseCut*$heightCut] \\
+   &= [$area]
+\end{aligned}
+    ``]
+
+The shape's area is [`[$areaU]`].
 
 END_PGML_SOLUTION
 

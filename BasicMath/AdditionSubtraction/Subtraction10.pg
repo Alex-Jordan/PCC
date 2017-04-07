@@ -61,7 +61,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Do the following additions without using a calculator.
+Do the following subtractions without using a calculator.
 
 a)    [`` [$num11] - [$num12] = ``]  [________]{$ans1} 
 
