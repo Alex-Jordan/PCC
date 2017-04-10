@@ -141,7 +141,7 @@ Finally, we find the difference of these two sums:
 
     [`` [$half1]-[$half2]=[$ans2] ``]
 
-*Solution:* In the first half of the year, [$name] collected [`[$ans2]`] more cards than in the second half?
+*Solution:* In the first half of the year, [$name] collected [`[$ans2]`] more cards than in the second half.
 
 END_PGML_SOLUTION
 
