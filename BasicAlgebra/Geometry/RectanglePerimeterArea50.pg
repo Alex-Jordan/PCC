@@ -48,7 +48,7 @@ $labelShift = $xmax/40;
 $cornersize = 0.4;
 
 $base = random(10,16,1);
-$height = random($7,$base-1,1);
+$height = random(7,$base-1,1);
 $heightCut = random(2,$height-2,1);
 $baseCut = random(2,$base-5,1);
 $baseLeft = ($base-$baseCut)/2;
