@@ -1,4 +1,4 @@
-# WeBWorK problem written by Alex Jordan
+# WeBWorK problem written by Carl Yao
 # Portland Community College
 #
 # Determine if a given number is a solution to an equation in application context.
@@ -40,22 +40,22 @@ loadMacros(
 
 Context("Numeric");
 
-$base = random(10,20,1);
-do {$height = random(10,20,1);} until ($base!=$height);
-$area = $base*$height/2;
+$height = random(10,20,1);
+$radius = random(3,9,1);
+$volume = $radius**2*$height;
 
-$var = 'b';
+$var = 'r';
 
-$left = Compute("$area")->reduce;
-$right = "\frac{1}{2}($var)($height)";
+$left = "$volume \pi";
+$right = "\pi $var^2($height)";
 
 #A proposed solution
-$x = list_random($base,$base*2);
+$x = list_random($radius,$radius**2);
 
 $isString = "Yes";
 $notString = "No";
 
-$solution = $base;
+$solution = $radius;
 if ($x==$solution) {$corString = $isString} else {$corString = $notString};
 
 $radio = RadioButtons(
@@ -70,9 +70,15 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-A triangular slot's area is [`[$area]`] square meters. Its height is [`[$height]`] meters. How long is the triangle's base?
+A cylinder's volume is [`[$volume]\pi`] cubic centimeters. Its height is [`[$height]`] centimeters. How long is the cylinder's radius?
 
-Assume the triangle's base is [`[$var]`] meters. We can solve this problem by the equation:
+A cylinder's volume formula is
+
+    [``V=\pi r^2h``],
+
+where [`V`] stands for volume, [`r`] for radius and [`h`] for height.
+
+Assume the cylinder's radius is [`[$var]`] centimeters. We can solve this problem by the equation:
 
     [``[$left]=[$right]``].
 
@@ -86,25 +92,33 @@ END_PGML
 
 ANS( $radio->cmp() );
 
-$s1 = $height*$x/2;
+$s1 = $x**2*$height;
 
-if ($x == $solution) {$solnString = 'Since this is a true equation, [`[$x]`] _is_ a solution for [`[$var]`] in the equation [`[$left] = [$right]`].'}
-else {$solnString = 'Since this is a false equation, [`[$x]`] _is not_ a solution for [`[$var]`] in the equation [`[$left] = [$right]`].'}
+if ($x == $solution) {
+   $solnString = 'Since this is a true equation, [`[$x]`] _is_ a solution for [`[$var]`] in the equation [`[$left] = [$right]`].';
+   $output = 'This implies the cylinder'."\'".'s radius is [`[$x]`] centimeters.';
+}
+else {
+   $solnString = 'Since this is a false equation, [`[$x]`] _is not_ a solution for [`[$var]`] in the equation [`[$left] = [$right]`].';
+   $output = 'This implies the cylinder'."\'".'s radius _is not_ [`[$x]`] centimeters.';
+}
 
 ##############################################
 
 BEGIN_PGML_SOLUTION
 
-We check to see if [`[$x]`] is a solution by evaluating each side of the equation with [`b=[$x]`]. 
+We check to see if [`[$x]`] is a solution for [`[$var]`] by evaluating each side of the equation with [`[$var]=[$x]`]. 
 
     [``\begin{aligned}
-    [$left] &\stackrel{?}{=} [$right] \\
-    [$left] &\stackrel{?}{=} \frac{1}{2}([$x])([$height])\\
-    [$left] &\stackrel{?}{=} [$s1]
+    [$left] &= [$right] \\
+    [$left] &\stackrel{?}{=} \pi ([$x])^2([$height]) \\
+    [$left] &\stackrel{?}{=} [$s1]\pi \\
     \end{aligned}
     ``]
 
 [$solnString]**
+
+[$output]**
 
 END_PGML_SOLUTION
 
