@@ -43,9 +43,9 @@ Context("Numeric");
    $x2 = random(5,30,1);
    $ans2 = ($a*$x2+$b)/($c*$x2+$d);
    do {
-      do {$ans3 = random(5,30,1)} until ($c*$ans3+$d != 0);
+      do {$ans3 = random(5,30,1)} until (($c*$ans3+$d != 0) and (int(($a*$ans3+$b)/($c*$ans3+$d)) != 0));
       $y3Raw = ($a*$ans3+$b)/($c*$ans3+$d);
-      do {$y3 = int($y3Raw)} until ($c*$y3-$a != 0);
+      $y3 = int($y3Raw);
       $ans3 = int(-($y3*$d-$b)/($c*$y3-$a)+0.5);
    } until ( ($ans3!=$x2) && ($y3!=$y3Raw) );
 
