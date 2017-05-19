@@ -67,7 +67,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-The diagonal length ([`D`]) of a rectangle with side lengths <m>L</m> and <m>W</m> is given by:
+The diagonal length ([`D`]) of a rectangle with side lengths [`L`] and [`W`] is given by:
 
     [`` D=\sqrt{L^2+W^2} ``]
 
