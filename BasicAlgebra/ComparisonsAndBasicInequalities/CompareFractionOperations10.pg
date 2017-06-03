@@ -87,7 +87,7 @@ TEXT(beginproblem());
 #Current best practice is to use the PGML environment to write the body.
 BEGIN_PGML
 
-Choose [`[$LTS]`], [`[$GTS]`], or [`=`] to make a true statement.
+Choose [`<`], [`>`], or [`=`] to make a true statement.
 
     [``-\frac{[$pos_a]}{[$b]}``] [@$popup->menu()@]* [``-\frac{[$pos_c]}{[$d]}``]
 

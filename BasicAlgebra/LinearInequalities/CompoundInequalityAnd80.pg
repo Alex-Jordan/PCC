@@ -81,8 +81,8 @@ Solve this inequality:
 Please type:  
 
 * *inf* for [`\infty`],
-* *[$GTS]=* for [`\geq`],
-* and *[$LTS]=* for [`\leq`] 
+* *>=* for [`\geq`],
+* and *<=* for [`\leq`] 
 
     In set-builder notation, the solution set is [______________]{$setans}.  
     An example of set-builder notation is [`\{x\mid 10>x>9\}`].  The *|* symbol is above the keyboard's Enter key.

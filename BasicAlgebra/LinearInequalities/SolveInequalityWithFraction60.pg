@@ -76,8 +76,8 @@ Solve this inequality:
 Please type:  
 
 * *inf* for [`\infty`],
-* *[$GTS]=* for [`\geq`],
-* and *[$LTS]=* for [`\leq`] 
+* *>=* for [`\geq`],
+* and *<=* for [`\leq`] 
 
     In set-builder notation, the solution set is [______________]{$options->cmp(correct_ans_latex_string=>$setans->TeX)}.  
     An example of set-builder notation is [`\{x\mid x>1\}`].  The *|* symbol is above the keyboard's Enter key.

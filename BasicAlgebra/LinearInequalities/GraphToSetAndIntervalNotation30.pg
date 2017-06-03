@@ -137,8 +137,8 @@ BEGIN_PGML
 Please type:  
 
 * *inf* for [`\infty`],
-* *[$GTS]=* for [`\geq`],
-* and *[$LTS]=* for [`\leq`] 
+* *>=* for [`\geq`],
+* and *<=* for [`\leq`] 
 
     Write this inequality in set-builder notation: [_____________________]
 
