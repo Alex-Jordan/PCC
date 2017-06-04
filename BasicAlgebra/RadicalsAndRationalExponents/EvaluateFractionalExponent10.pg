@@ -50,7 +50,7 @@ $ans3 = Compute("-$ans1");
 BEGIN_PGML
 
 Without using a calculator, evaluate the following expressions:
-* If a value is not defined as a real number or function, type *DNE* for "does not exist".
+* If a value is not defined as a real number or function, type [|DNE|]* for "does not exist".
 
 1)    [`` [$a]^{\frac{[$b]}{[$c]}}= ``][__________]{$ans1}
 

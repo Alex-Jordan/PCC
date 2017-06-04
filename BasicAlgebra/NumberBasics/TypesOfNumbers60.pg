@@ -48,15 +48,15 @@ Context("Numeric");
 
 BEGIN_PGML
 
-a. Give an example of a whole number that is not an integer. If no such number exists, enter *DNE* or *NONE*.
+a. Give an example of a whole number that is not an integer. If no such number exists, enter [|DNE|]* or [|NONE|]*.
 
     [_________]
 
-a. Give an example of an integer that is not a whole number. If no such number exists, enter *DNE* or *NONE*.
+a. Give an example of an integer that is not a whole number. If no such number exists, enter [|DNE|]* or [|NONE|]*.
 
     [_________]
 
-a. Give an example of a rational number that is not an integer. If no such number exists, enter *DNE* or *NONE*.
+a. Give an example of a rational number that is not an integer. If no such number exists, enter [|DNE|]* or [|NONE|]*.
 
     [_________]
 
@@ -66,7 +66,7 @@ a. Give an example of a irrational number.
     [_________]
 
 
-a. Give an example of a irrational number that is also an integer.  If no such number exists, enter *DNE* or *NONE*.
+a. Give an example of a irrational number that is also an integer.  If no such number exists, enter [|DNE|]* or [|NONE|]*.
 
     [_________]
 
@@ -144,13 +144,13 @@ BEGIN_PGML_SOLUTION
 
 a. Give an example of a whole number that is not an integer.
 
-    Since all whole numbers belong to integers, we cannot write any whole number which is not an integer. Type *DNE* (does not exist) for this question.
+    Since all whole numbers belong to integers, we cannot write any whole number which is not an integer. Type [|DNE|]* (does not exist) for this question.
 
-a. Give an example of an integer that is not a whole number. If no such number exists, enter *DNE* or *NONE*.
+a. Give an example of an integer that is not a whole number. If no such number exists, enter [|DNE|]* or [|NONE|]*.
 
     Any negative integer, like [`-1`], is not a whole number, but is an integer.
 
-a. Give an example of a rational number that is not an integer. If no such number exists, enter *DNE* or *NONE*.
+a. Give an example of a rational number that is not an integer. If no such number exists, enter [|DNE|]* or [|NONE|]*.
 
     Any terminating decimal, like [`1.2`], is a rational number, but is not an integer.
 
@@ -158,9 +158,9 @@ a. Give an example of a irrational number.
 
     [`\pi`] is the easiest number to remember as an irrational number. Another constant worth knowing is [`e\approx2.718`]. Finally, the square root of most integers are irrational, like [`\sqrt{2}`] and [`\sqrt{3}`].
 
-a. Give an example of a irrational number that is also an integer.  If no such number exists, enter *DNE* or *NONE*.
+a. Give an example of a irrational number that is also an integer.  If no such number exists, enter [|DNE|]* or [|NONE|]*.
 
-    All irrational numbers are non-repeating and non-terminating decimals. No irrational numbers are integers. Type *DNE* (does not exist) for this question.
+    All irrational numbers are non-repeating and non-terminating decimals. No irrational numbers are integers. Type [|DNE|]* (does not exist) for this question.
 
 
 END_PGML_SOLUTION

@@ -102,7 +102,7 @@ $PAR
 END_TEXT
 BEGIN_PGML
 
-    The slope of this line is [___________]{$m}. (If the slope does not exist, enter *DNE* or *NONE*.)  
+    The slope of this line is [___________]{$m}. (If the slope does not exist, enter [|DNE|]* or [|NONE|]*.)  
 
 END_PGML
 ##############################################

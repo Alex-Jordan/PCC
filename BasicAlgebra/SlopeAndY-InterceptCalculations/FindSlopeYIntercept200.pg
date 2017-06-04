@@ -78,7 +78,7 @@ TEXT(beginproblem());
 BEGIN_PGML
 
 A line has the equation
- [`` [$a]x+[$b]y=[$c]  ``]. Find this line's slope and [`y`]-intercept. If either of these do not exist, you may enter *DNE* or *NONE*.
+ [`` [$a]x+[$b]y=[$c]  ``]. Find this line's slope and [`y`]-intercept. If either of these do not exist, you may enter [|DNE|]* or [|NONE|]*.
 
     This line's slope is [_______]{$m}.
 
