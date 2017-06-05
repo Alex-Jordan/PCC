@@ -94,13 +94,13 @@ BEGIN_PGML
 
 Identify terms and factors in the expression [`[$expression]`].
 
-    [@$mc1 -> print_q()@]*
+    [@$mc1 -> print_q()@]***
 
-    [@$mc1 -> print_a()@]*
+    [@$mc1 -> print_a()@]***
 
-    [@$mc2 -> print_q()@]*
+    [@$mc2 -> print_q()@]***
 
-    [@$mc2 -> print_a()@]*
+    [@$mc2 -> print_a()@]***
 
 END_PGML
 
