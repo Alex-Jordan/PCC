@@ -107,7 +107,7 @@ Use the formula to calculate a rectangular prism's volume, if its base's length 
 
     Its volume is [_____________]{$ans}. 
 
-(Use *in[$CARET]3* for cubic inches.)
+(Use [|in^3|]* for cubic inches.)
 
 END_PGML
 
