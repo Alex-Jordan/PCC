@@ -3,7 +3,7 @@
 #
 # Estimate the result of fraction additions.
 #
-# Last edited by Carl Yao 10/14/2016
+# Last edited by Alex Jordan 6/5/2017
 #
 # ENDDESCRIPTION
 
@@ -34,7 +34,7 @@ loadMacros(
   "niceTables.pl",
   "PGchoicemacros.pl",
   "PCCmacros.pl",
-  "parserRadioButtons.pl",
+  "parserPopUp.pl",
   "PGcourse.pl",
 );
 sub PF {PGML::Format(@_)};
@@ -52,7 +52,7 @@ $word2 = numberWord($shift1+$shift0+1);
 $word3 = numberWord($shift1+$shift0+2);
 @nums = ( );
 @dens = ( );
-@radios = ( );
+@popups = ( );
 
 do {
    $dens[0][0] = random(5,20,1);
@@ -60,10 +60,9 @@ do {
    do {$dens[0][1] = random(5,20,1);} until ($dens[0][1]!=$dens[0][0]);
    $nums[0][1] = ($dens[0][1]%2==0) ? $dens[0][1]/2-1 : int($dens[0][1]/2);
 } until ( (gcd($nums[0][0],$dens[0][0])==1) && (gcd($nums[0][1],$dens[0][1])==1) && ($nums[0][0]/$dens[0][0]+$nums[0][1]/$dens[0][1]>0.85) );
-$radios[0] = RadioButtons(
+$popups[0] = PopUp(
   ["greater than $word2","less than $word2"],
   "less than $word2", # correct answer
-  order => ["greater than $word2","less than $word2"],
 );
 
 do {
@@ -72,10 +71,9 @@ do {
    do {$dens[1][1] = random(5,20,1);} until ($dens[1][1]!=$dens[1][0]);
    $nums[1][1] = int($dens[1][1]/2)+1;
 } until ( (gcd($nums[1][0],$dens[1][0])==1) && (gcd($nums[1][1],$dens[1][1])==1) && ($nums[1][0]/$dens[1][0]+$nums[1][1]/$dens[1][1]<1.15) );
-$radios[1] = RadioButtons(
+$popups[1] = PopUp(
   ["greater than $word2","less than $word2"],
   "greater than $word2", # correct answer
-  order => ["greater than $word2","less than $word2"],
 );
 
 do {
@@ -84,10 +82,9 @@ do {
    do {$dens[2][1] = random(5,20,1);} until ($dens[2][1]!=$dens[2][0]);
    $nums[2][1] = random(1,3,1);
 } until ( (gcd($nums[2][0],$dens[2][0])==1) && (gcd($nums[2][1],$dens[2][1])==1) && ($nums[2][0]/$dens[2][0]<0.6) && ($nums[2][1]/$dens[2][1]<0.1) );
-$radios[2] = RadioButtons(
+$popups[2] = PopUp(
   ["greater than $word2","less than $word2"],
   "less than $word2", # correct answer
-  order => ["greater than $word2","less than $word2"],
 );
 
 
@@ -97,10 +94,9 @@ do {
    do {$dens[3][1] = random(5,20,1);} until ($dens[3][1]!=$dens[3][0]);
    $nums[3][1] = ($dens[3][1]%2==0) ? $dens[3][1]/2-1 : int($dens[3][1]/2);
 } until ( (gcd($nums[3][0],$dens[3][0])==1) && (gcd($nums[3][1],$dens[3][1])==1) && ($nums[3][0]/$dens[3][0]>0.85) && ($nums[3][1]/$dens[3][1]>0.3) );
-$radios[3] = RadioButtons(
+$popups[3] = PopUp(
   ["greater than $word2","less than $word2"],
   "greater than $word2", # correct answer
-  order => ["greater than $word2","less than $word2"],
 );
 
 #Create a hash and its inverse that randomizes the order of the three problems.
@@ -118,40 +114,13 @@ BEGIN_PGML
 
 Estimate the sum of each expression, and choose an appropriate answer.
 
-[@DataTable(
-  [
-    [[PF('Fraction Addition'),
-        rowcss => 'border-bottom: 2px solid; ',],
-     [PF(''),],
-     [PF('Sum'),],
-    ],
-    [[PF('[`[$shift0] \frac{[$nums[$scramble{0}][0]]}{[$dens[$scramble{0}][0]]}+[$shift1] \frac{[$nums[$scramble{0}][1]]}{[$dens[$scramble{0}][1]]}`]'),
-         rowcss => 'border-bottom: 2px solid;'],
-     [PF('The sum is'),],
-     [PF('[___]{$radios[$scramble{0}]}'),],
-    ],
-    [[PF('[`[$shift0] \frac{[$nums[$scramble{1}][0]]}{[$dens[$scramble{1}][0]]}+[$shift1] \frac{[$nums[$scramble{1}][1]]}{[$dens[$scramble{1}][1]]}`]'),
-         rowcss => 'border-bottom: 2px solid;'],
-     [PF('The sum is'),],
-     [PF('[___]{$radios[$scramble{1}]}'),],
-    ],
-    [[PF('[`[$shift0] \frac{[$nums[$scramble{2}][0]]}{[$dens[$scramble{2}][0]]}+[$shift1] \frac{[$nums[$scramble{2}][1]]}{[$dens[$scramble{2}][1]]}`]'),
-         rowcss => 'border-bottom: 2px solid;'],
-     [PF('The sum is'),],
-     [PF('[___]{$radios[$scramble{2}]}'),],
-    ],
-    [[PF('[`[$shift0] \frac{[$nums[$scramble{3}][0]]}{[$dens[$scramble{3}][0]]}+[$shift1] \frac{[$nums[$scramble{3}][1]]}{[$dens[$scramble{3}][1]]}`]'),
-         rowcss => 'border-bottom: 2px solid;'],
-     [PF('The sum is'),],
-     [PF('[___]{$radios[$scramble{3}]}'),],
-    ],
-  ],
-  align => 'c c c',
-  columnscss =>
-    ['border-right: 0px solid; ',
-     ' ',
-     ' ',],
-);@]*
+a. [`[$shift0]\,\frac{[$nums[$scramble{0}][0]]}{[$dens[$scramble{0}][0]]}+[$shift1]\,\frac{[$nums[$scramble{0}][1]]}{[$dens[$scramble{0}][1]]}`] is [__]{$popups[$scramble{0}]}
+
+a. [`[$shift0]\,\frac{[$nums[$scramble{1}][0]]}{[$dens[$scramble{1}][0]]}+[$shift1]\,\frac{[$nums[$scramble{1}][1]]}{[$dens[$scramble{1}][1]]}`] is [__]{$popups[$scramble{1}]}
+
+a. [`[$shift0]\,\frac{[$nums[$scramble{2}][0]]}{[$dens[$scramble{2}][0]]}+[$shift1]\,\frac{[$nums[$scramble{2}][1]]}{[$dens[$scramble{2}][1]]}`] is [__]{$popups[$scramble{2}]}
+
+a. [`[$shift0]\,\frac{[$nums[$scramble{3}][0]]}{[$dens[$scramble{3}][0]]}+[$shift1]\,\frac{[$nums[$scramble{3}][1]]}{[$dens[$scramble{3}][1]]}`] is [__]{$popups[$scramble{3}]}
 
 END_PGML
 
