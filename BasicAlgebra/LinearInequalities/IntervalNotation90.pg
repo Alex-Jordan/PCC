@@ -62,7 +62,7 @@ BEGIN_PGML
 
 Change the following inequality from set-builder notation to interval notation:
 
-    [`` \left[$LBRACE] x \mid {[$left]} [$comp] [$right] \right[$RBRACE] ``]
+    [`` \left\{ x \mid {[$left]} [$comp] [$right] \right\} ``]
 
 Please use *inf* to represent [`\infty`].
 
