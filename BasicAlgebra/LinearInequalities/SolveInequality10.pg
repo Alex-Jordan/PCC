@@ -33,6 +33,7 @@ loadMacros(
   "contextArbitraryString.pl",
   "contextInequalitySetBuilder.pl",
   "parserOneOf.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
