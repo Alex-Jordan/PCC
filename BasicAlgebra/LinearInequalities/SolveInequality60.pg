@@ -86,7 +86,7 @@ Solve this inequality: [`` [$left] [$comp] [$right] ``]
 
     In set-builder notation, the solution set is [______________]{$ans->cmp(correct_ans_latex_string=>$ansLatexString)}.
   
-    An example of set-builder notation is [`\{x\mid x>1\}`].  The *|* symbol is above the keyboard's Enter key.
+    An example of set-builder notation is [`\{x\mid x>1\}`].  [@KeyboardInstructions(q!The [| | |]* symbol is above the [|Enter|]* key.!)@]**
 
     In interval notation, the solution set is [______________]{$intans->cmp(correct_ans_latex_string=>$intansLatexString)}.  
     An example of interval notation is [`(1,\infty)`].
