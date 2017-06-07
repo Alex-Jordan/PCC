@@ -91,7 +91,7 @@ We won't need to use all given numbers, as the question only asks for the number
 
     [`` [$minutesWeekly] \cdot [$weeks] = [$minutesTotal] ``]
 
-*Solution:* [$name] plays a total of [`[$minutesTotal]`] minutes of [$event] in [`[$weeks]`] weeks.
+[$name] plays a total of [`[$minutesTotal]`] minutes of [$event] in [`[$weeks]`] weeks.
 
 END_PGML_SOLUTION
 

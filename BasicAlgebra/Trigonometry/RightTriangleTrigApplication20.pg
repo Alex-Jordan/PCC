@@ -233,7 +233,7 @@ Since we need to relate the hypotenuse and the angle's adjacent leg, we choose t
 \end{aligned}
     ``]
 
-*Solution:* The ladder's base is approximately [`[$heightShow]`] feet from the wall.
+The ladder's base is approximately [`[$heightShow]`] feet from the wall.
 
 END_PGML_SOLUTION
 

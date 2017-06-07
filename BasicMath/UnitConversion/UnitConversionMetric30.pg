@@ -84,7 +84,7 @@ To convert [` [$km1] `] kilometers to meters, we will use [` \frac{1000 \text{ m
 \end{aligned}
     ``]
 
-*Solution:* [`` [$km1] \text{ km} = [$m1] \text{ m} ``]
+[`` [$km1] \text{ km} = [$m1] \text{ m} ``]
 
 Next, to convert [` [$m2] `] meters to kilometers, we will use [` \frac{1 \text{ km}}{1000 \text{ m}} `], so the unit *m* will cancel:
 
@@ -99,7 +99,7 @@ Next, to convert [` [$m2] `] meters to kilometers, we will use [` \frac{1 \text{
 \end{aligned}
     ``]
 
-*Solution:* [`` [$m2] \text{ m} = [$km2] \text{ km} ``]
+[`` [$m2] \text{ m} = [$km2] \text{ km} ``]
 
 ####Proportion Method  
 
@@ -117,7 +117,7 @@ Assume [`[$km1] \text{ km} = x \text{ m} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$km1] \text{ km} = [$m1] \text{ m} ``]
+[`` [$km1] \text{ km} = [$m1] \text{ m} ``]
 
 Next, assume [`x \text{ km} = [$m2] \text{ m} `]. We have:
 
@@ -133,7 +133,7 @@ Next, assume [`x \text{ km} = [$m2] \text{ m} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$m2] \text{ m} = [$km2] \text{ km} ``]
+[`` [$m2] \text{ m} = [$km2] \text{ km} ``]
 
 ####Shortcut  
 

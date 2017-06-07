@@ -82,7 +82,7 @@ Assume he will raise the price per painting [`x`] times, then he will sell [`[$i
 
 where [`i`] stands for his yearly income in dollars. If the artist wants to earn [`[$newIncomeC]`] per year from selling paintings, what new price should he set?
 
-*Solution:* To earn [`[$newIncomeC]`] per year, the artist could sell his paintings at two different prices. The lower price is [___________]{$ans1} dollars per painting, and the higher price is [___________]{$ans2} dollars per painting.
+To earn [`[$newIncomeC]`] per year, the artist could sell his paintings at two different prices. The lower price is [___________]{$ans1} dollars per painting, and the higher price is [___________]{$ans2} dollars per painting.
 
 END_PGML
 
@@ -124,7 +124,7 @@ If the artist raises the price [`[$x1]`] times, the new price would be [`[$initi
 
 If the artist raises the price [`[$x2]`] times, the new price would be [`[$initialPrice]+[$raise]\cdot[$x2]=[$ans2]`] dollars per painting.
 
-*Solution:* To earn [`[$newIncomeC]`] per year, the artist could sell his paintings at two different prices. The lower price is [`[$ans1C]`] per painting, and the higher price is [`[$ans2C]`] dollars per painting.
+To earn [`[$newIncomeC]`] per year, the artist could sell his paintings at two different prices. The lower price is [`[$ans1C]`] per painting, and the higher price is [`[$ans2C]`] dollars per painting.
 
 END_PGML_SOLUTION
 

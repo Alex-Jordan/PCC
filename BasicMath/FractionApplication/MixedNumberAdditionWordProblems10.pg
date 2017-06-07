@@ -73,7 +73,7 @@ Each page of a book consists of a header, a footer and the middle part. The head
 
 What is the total length of each page in this book? Use mixed number in your answer if needed.
 
-*Solution:* Each page in this book is [___________]{$total} inches in length.
+Each page in this book is [___________]{$total} inches in length.
 
 END_PGML
 
@@ -105,7 +105,7 @@ We add up the length of the header, middle part and footer to find the total len
 \end{aligned}
     ``]
 
-*Solution:* Each page in this book is [`[$total]`] inches in length.
+Each page in this book is [`[$total]`] inches in length.
 
 END_PGML_SOLUTION
 

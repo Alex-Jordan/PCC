@@ -66,7 +66,7 @@ BEGIN_PGML
 
 A store has some beans selling for [`[$price1C]`] per pound, and some vegetables selling for [`[$price2C]`] per pound. The store plans to use them to produce [`[$weight3]`] pounds of mixture and sell for [`[$price3C]`] per pound. How many pounds of beans and how many pounds of vegetables should be used?
 
-*Solution:* To produce [`[$weight3]`] pounds of mixture, the store should use [______]{$weight1} pounds of beans and [______]{$weight2} pounds of vegetables.
+To produce [`[$weight3]`] pounds of mixture, the store should use [______]{$weight1} pounds of beans and [______]{$weight2} pounds of vegetables.
 
 END_PGML
 
@@ -138,7 +138,7 @@ According to the table, the bean's total value is [`[$price1]x`] dollars, and th
 \end{aligned}
     ``]
 
-*Solution:* To produce [`[$weight3]`] pounds of mixture, the store should use [`[$weight1]`] pounds of beans and [`[$weight3]-x=[$weight3]-[$weight1]=[$weight2]`] pounds of vegetables.
+To produce [`[$weight3]`] pounds of mixture, the store should use [`[$weight1]`] pounds of beans and [`[$weight3]-x=[$weight3]-[$weight1]=[$weight2]`] pounds of vegetables.
 
 END_PGML_SOLUTION
 

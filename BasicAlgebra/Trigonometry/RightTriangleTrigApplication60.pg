@@ -258,7 +258,7 @@ Since we need to relate the angle's opposite and adjacent legs, we choose to use
 
 Finally, we need to add up the value of [`x`] and the distance from the person's eyes to the ground: [`[$baseShow]+[$heightPerson]=[$ans]`].
 
-*Solution:* The height of the airplane is approximately [`[$ansU]`].
+The height of the airplane is approximately [`[$ansU]`].
 
 END_PGML_SOLUTION
 

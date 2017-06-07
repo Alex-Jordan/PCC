@@ -84,7 +84,6 @@ When [`2000`] is divided by [`1000`], we move the decimal point to the left 3 ti
 
 When a number is divided by [`10`], [`100`] or [`1000`], we move the decimal point to the left [`1`], [`2`] or [`3`] times, respectively.
 
-*Solution:*
 
     [``[$int] \div 10 =[$ans1]``] as we move the decimal point to the left once.
 

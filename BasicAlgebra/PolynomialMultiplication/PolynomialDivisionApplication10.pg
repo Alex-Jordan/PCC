@@ -87,7 +87,7 @@ Since [`V=Bh`], we can use [`B=\frac{V}{h}`] to calculate the base area. After s
 \end{aligned}
     ``]
 
-*Solution:* The prism's base area is [`[$ans]`] square units.
+The prism's base area is [`[$ans]`] square units.
 
 END_PGML_SOLUTION
 ##############################################

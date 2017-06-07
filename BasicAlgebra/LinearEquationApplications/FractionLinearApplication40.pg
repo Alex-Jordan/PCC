@@ -69,7 +69,7 @@ BEGIN_PGML
 
 [$name] has saved [`[$bC]`] in [$possessive] piggy bank, and [$pronoun] decided to start spending them. [@ucfirst($pronoun)@] spends [`[$numC]`] every [`[$den]`] days. After how many days will [$pronoun] have [`[$y1C]`] left in the piggy bank?
 
-*Solution:* [$name] will have [`[$y1C]`] left in [$possessive] piggy bank after [__________]{$x1} days.
+[$name] will have [`[$y1C]`] left in [$possessive] piggy bank after [__________]{$x1} days.
 
 END_PGML
 
@@ -100,7 +100,7 @@ To find when she will have [`[$y1C]`] left, we can write and solve this equation
 \end{aligned}
     ``]
 
-*Solution:* [$name] will have [`[$y1C]`] left in [$possessive] piggy bank after [`[$x1]`] days.
+[$name] will have [`[$y1C]`] left in [$possessive] piggy bank after [`[$x1]`] days.
 
 END_PGML_SOLUTION
 

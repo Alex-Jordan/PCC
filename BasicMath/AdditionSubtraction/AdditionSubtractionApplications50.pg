@@ -200,7 +200,7 @@ The question is asking for the difference between those two groups, so we do sub
 
     [`` [$max1Miles+$max2Miles] - [$min1Miles+$min2Miles] = [$ans] ``]
 
-*Solution:* The best two runners ran [`[$ans]`] more miles than the worst two runners.
+The best two runners ran [`[$ans]`] more miles than the worst two runners.
 
 END_PGML_SOLUTION
 

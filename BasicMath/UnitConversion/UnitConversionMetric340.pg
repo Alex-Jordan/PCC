@@ -88,7 +88,7 @@ To convert [` [$L1] `] liters to milliliters, we will use [` \frac{1000 \text{ m
 \end{aligned}
     ``]
 
-*Solution:* [`` [$L1] \text{ L} = [$mL1] \text{ mL} ``]
+[`` [$L1] \text{ L} = [$mL1] \text{ mL} ``]
 
 Next, to convert [` [$mL2] `] milliliters to liters, we will use [` \frac{1 \text{ L}}{1000 \text{ mL}} `], so the unit *mL* will cancel:
 
@@ -103,7 +103,7 @@ Next, to convert [` [$mL2] `] milliliters to liters, we will use [` \frac{1 \tex
 \end{aligned}
     ``]
 
-*Solution:* [`` [$mL2] \text{ mL} = [$L2] \text{ L} ``]
+[`` [$mL2] \text{ mL} = [$L2] \text{ L} ``]
 
 ####Proportion Method  
 
@@ -121,7 +121,7 @@ Assume [`[$L1] \text{ L} = x \text{ mL} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$L1] \text{ L} = [$mL1] \text{ mL} ``]
+[`` [$L1] \text{ L} = [$mL1] \text{ mL} ``]
 
 Next, assume [`x \text{ L} = [$mL2] \text{ mL} `]. We have:
 
@@ -137,7 +137,7 @@ Next, assume [`x \text{ L} = [$mL2] \text{ mL} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$mL2] \text{ mL} = [$L2] \text{ L} ``]
+[`` [$mL2] \text{ mL} = [$L2] \text{ L} ``]
 
 ####Shortcut  
 

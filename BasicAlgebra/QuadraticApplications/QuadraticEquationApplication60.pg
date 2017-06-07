@@ -99,7 +99,7 @@ There is a rectangular lot in the garden, with [`[$lengthU]`] in length and [`[$
 
 >>[@ image(insertGraph( $picture  ), tex_size=>800, height=>400, width=>400, extra_html_tags=>"alt = '$alt' title = '$alt'" ) @]*<<
 
-*Solution:* You should expand the original lot by [_________]{$xU} in four directions. Please type "ft" to represent feet.
+You should expand the original lot by [_________]{$xU} in four directions. Please type "ft" to represent feet.
 
 END_PGML
 
@@ -146,7 +146,7 @@ We could solve this equation by the Quadratic Formula. Identify that [`a=[$a],b=
 
 We don't take the negative solution as it doesn't make sense in this context.
 
-*Solution:* You should expand the original lot by [`[$xU]`] in four directions.
+You should expand the original lot by [`[$xU]`] in four directions.
 
 END_PGML_SOLUTION
 

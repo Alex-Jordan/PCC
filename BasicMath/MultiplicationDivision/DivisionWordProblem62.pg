@@ -68,7 +68,7 @@ We can address this problem as "repeatedly taking away [`[$rate]`] liters of wat
 
     [`` [$total] \div [$rate] = [$minutes] ``]
 
-*Solution:* It takes [`[$minutesU]`] to drain [`[$totalU]`] of water.
+It takes [`[$minutesU]`] to drain [`[$totalU]`] of water.
 
 We should get used to using the fraction line instead of the division symbol:
 

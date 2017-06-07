@@ -62,7 +62,7 @@ BEGIN_PGML
 
 An auto company's sales volume can be modeled by [`[$poly1]`], and its cost can be modeled by [`[$poly2]`], where [`x`] represents the number of cars produced, and [`y`] stands for money in thousand dollars. We can calculate the company's net profit by subtracting cost from sales. Find the polynomial which models the company's sales in thousands of dollars.
 
-*Solution:* The company's profit can be modeled by [________________]{$ans} dollars.
+The company's profit can be modeled by [________________]{$ans} dollars.
 
 END_PGML
 
@@ -83,7 +83,7 @@ We will subtract the cost polynomial from the sales polynomial:
          \end{aligned}
      ``]
 
-*Solution:* The company's profit can be modeled by [`[$ans]`] dollars.
+The company's profit can be modeled by [`[$ans]`] dollars.
 
 END_PGML_SOLUTION
 ##############################################

@@ -83,7 +83,7 @@ Next, we find their difference in height by subtraction:
 
     [`` [$mA] \text{ m} - [$mB] \text{ m} = [$ansM] \text{ m} ``]
 
-*Solution:* The difference in these two hills' height is [`[$ansM]`] meters.
+The difference in these two hills' height is [`[$ansM]`] meters.
 
 ####Question 2:
 
@@ -95,7 +95,7 @@ Next, we find their difference in height by subtraction:
 
     [`` [$kmA] \text{ km} - [$kmB] \text{ km} = [$ansKm] \text{ km} ``]
 
-*Solution:* The difference in these two hills' height is [`[$ansKm]`] kilometers.
+The difference in these two hills' height is [`[$ansKm]`] kilometers.
 
 END_PGML_SOLUTION
 

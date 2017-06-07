@@ -77,7 +77,7 @@ Division is used when we need to find speed. In this problem, the speed is the n
 
     [`` [$total] \div [$hours] = [$speed] ``]
 
-*Solution:* [$name] drove at the speed of [`[$speedU]`].
+[$name] drove at the speed of [`[$speedU]`].
 
 We should get used to using the fraction line instead of the division symbol:
 

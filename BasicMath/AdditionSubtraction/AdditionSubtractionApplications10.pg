@@ -72,7 +72,7 @@ BEGIN_PGML_SOLUTION
 
     [`` [$a] - [$b] +[$c] = [$ans] ``]
 
-*Solution:* Altogether, [$name] won [`[$ansC]`].
+Altogether, [$name] won [`[$ansC]`].
 
 END_PGML_SOLUTION
 

@@ -87,7 +87,7 @@ Since [`V=Bh`], we can use [`h=\frac{V}{B}`] to calculate the height. After subs
 \end{aligned}
     ``]
 
-*Solution:* The cylinder's height is [`[$ans]`] units.
+The cylinder's height is [`[$ans]`] units.
 
 END_PGML_SOLUTION
 ##############################################

@@ -233,7 +233,7 @@ Since we need to relate the hypotenuse and the angle's opposite leg, we choose t
 \end{aligned}
     ``]
 
-*Solution:* The ladder can reach approximately [`[$baseShow]`] feet high on the wall.
+The ladder can reach approximately [`[$baseShow]`] feet high on the wall.
 
 END_PGML_SOLUTION
 

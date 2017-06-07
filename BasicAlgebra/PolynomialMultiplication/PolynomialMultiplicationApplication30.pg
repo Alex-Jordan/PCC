@@ -81,7 +81,7 @@ The trapezoid's height is [`h`] feet. Since the trapezoid's top base is [`[$a]`]
 \end{aligned}
     ``]
 
-*Solution:* The trapezoid's area is [`[$ans]`] square feet.
+The trapezoid's area is [`[$ans]`] square feet.
 
 END_PGML_SOLUTION
 ##############################################

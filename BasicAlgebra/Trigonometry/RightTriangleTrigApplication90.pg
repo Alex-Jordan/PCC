@@ -257,7 +257,7 @@ Since we need to relate the hypotenuse and the angle's opposite leg, we choose t
 
 Finally, we need to add up the value of [`x`] and the distance from the person's eyes to the ground: [`[$baseShow]+[$heightPerson]=[$ans]`].
 
-*Solution:* The height of the kite is approximately [`[$ansU]`].
+The height of the kite is approximately [`[$ansU]`].
 
 END_PGML_SOLUTION
 

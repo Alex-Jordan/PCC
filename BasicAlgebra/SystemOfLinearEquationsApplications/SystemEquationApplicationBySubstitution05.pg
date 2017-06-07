@@ -52,7 +52,7 @@ BEGIN_PGML
 
 A rectangle's length is [`[$bAbs]`] feet [$moreOrLess] than [$multiText] its width. The rectangle's perimeter is [`[$p]`] feet. Find the rectangle's length and width.
 
-*Solution:* The rectangle's length is [________]{$l} feet, and its width is [________]{$w} feet.
+The rectangle's length is [________]{$l} feet, and its width is [________]{$w} feet.
 
 END_PGML
 
@@ -97,7 +97,7 @@ Next, we substitute [`w=[$w]`] into [`l = [$m]w+[$b]`], and we have:
 \end{aligned}
     ``]
 
-*Solution:* The rectangle's length is [`[$l]`] feet, and its width is [`[$w]`] feet.
+The rectangle's length is [`[$l]`] feet, and its width is [`[$w]`] feet.
 
 END_PGML_SOLUTION
 

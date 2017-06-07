@@ -250,7 +250,7 @@ If two shapes are similar to each other, the lengths of their corresponding side
 \end{aligned}
     ``]
 
-*Solution:* The length of the missing side is [`[$ansU]`].
+The length of the missing side is [`[$ansU]`].
 
 END_PGML_SOLUTION
 

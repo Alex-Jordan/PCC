@@ -95,7 +95,7 @@ Since the car moved backward [`[$ftBackward]`] feet, we use subtraction to find 
 
     [`` [$ftForward] \text{ ft} - [$ftBackward] \text{ ft} = [$ansFt] \text{ ft} ``]
 
-*Solution:* The car was [`[$ansFt]`] feet from the starting point.
+The car was [`[$ansFt]`] feet from the starting point.
 
 ####Question 2:
 
@@ -114,7 +114,7 @@ Next, we use subtraction to find the leftover:
 \end{aligned}
     ``]
 
-*Solution:* The car was [`[$ansYd]`] yards from the starting point.
+The car was [`[$ansYd]`] yards from the starting point.
 
 END_PGML_SOLUTION
 

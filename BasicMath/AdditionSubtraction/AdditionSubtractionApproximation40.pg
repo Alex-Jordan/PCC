@@ -61,7 +61,7 @@ Do the following problem without using a calculator. Round numbers to the thousa
 
 [$name] purchased a used car with [`[$b]`] miles on its odometer. After a few years, [$pronoun] sold the car with [`[$a]`] miles on its odometer. Approximately how many miles did [$name] drive with this car?
 
-*Solution:* [$name] drove approximately [__________]{$ans} miles with this car.
+[$name] drove approximately [__________]{$ans} miles with this car.
 
 END_PGML
 

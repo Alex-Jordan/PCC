@@ -86,7 +86,7 @@ To find [`15%`] of a number, first we find [`10%`] of the number and [`5%`] of t
 
 Finally, we add up those two parts, and we have [`[$num0/10]+[$num0/20]=[$ans0]`].
 
-*Solution:* [` 15% `] of [` [$num0C] `] is [`[$ans0C]`].
+[` 15% `] of [` [$num0C] `] is [`[$ans0C]`].
 
 ----
 
@@ -96,7 +96,7 @@ Finally, we add up those two parts, and we have [`[$num0/10]+[$num0/20]=[$ans0]`
 
 Finally, we add up those two parts, and we have [`[$num1/10]+[$num1/20]=[$ans1]`].
 
-*Solution:* [` 15% `] of [` [$num1C] `] is [`[$ans1C]`].
+[` 15% `] of [` [$num1C] `] is [`[$ans1C]`].
 
 ----
 
@@ -106,7 +106,7 @@ Finally, we add up those two parts, and we have [`[$num1/10]+[$num1/20]=[$ans1]`
 
 Finally, we add up those two parts, and we have [`[$num2/10]+[$num2/20]=[$ans2]`].
 
-*Solution:* [` 15% `] of [` [$num2C] `] is [`[$ans2C]`].
+[` 15% `] of [` [$num2C] `] is [`[$ans2C]`].
 
 END_PGML_SOLUTION
 

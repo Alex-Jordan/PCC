@@ -88,7 +88,7 @@ To convert [` [$g1] `] grams to milligrams, we will use [` \frac{1000 \text{ mg}
 \end{aligned}
     ``]
 
-*Solution:* [`` [$g1] \text{ g} = [$mg1] \text{ mg} ``]
+[`` [$g1] \text{ g} = [$mg1] \text{ mg} ``]
 
 Next, to convert [` [$mg2] `] milligrams to grams, we will use [` \frac{1 \text{ g}}{1000 \text{ mg}} `], so the unit *mg* will cancel:
 
@@ -103,7 +103,7 @@ Next, to convert [` [$mg2] `] milligrams to grams, we will use [` \frac{1 \text{
 \end{aligned}
     ``]
 
-*Solution:* [`` [$mg2] \text{ mg} = [$g2] \text{ g} ``]
+[`` [$mg2] \text{ mg} = [$g2] \text{ g} ``]
 
 ####Proportion Method  
 
@@ -121,7 +121,7 @@ Assume [`[$g1] \text{ g} = x \text{ mg} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$g1] \text{ g} = [$mg1] \text{ mg} ``]
+[`` [$g1] \text{ g} = [$mg1] \text{ mg} ``]
 
 Next, assume [`x \text{ g} = [$mg2] \text{ mg} `]. We have:
 
@@ -137,7 +137,7 @@ Next, assume [`x \text{ g} = [$mg2] \text{ mg} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$mg2] \text{ mg} = [$g2] \text{ g} ``]
+[`` [$mg2] \text{ mg} = [$g2] \text{ g} ``]
 
 ####Shortcut  
 

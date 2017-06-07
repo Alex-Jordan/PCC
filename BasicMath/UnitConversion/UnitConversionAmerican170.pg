@@ -88,7 +88,7 @@ To convert [` [$t1] `] tons to lb, we will use [` \frac{2000 \text{ lb}}{1 \text
 \end{aligned}
     ``]
 
-*Solution:* [`` [$t1] \text{ t} = [$lb1] \text{ lb} ``]
+[`` [$t1] \text{ t} = [$lb1] \text{ lb} ``]
 
 Next, to convert [` [$lb2] `] lb to tons, we will use [` \frac{1 \text{ t}}{2000 \text{ lb}} `], so the unit *lb* will cancel:
 
@@ -103,7 +103,7 @@ Next, to convert [` [$lb2] `] lb to tons, we will use [` \frac{1 \text{ t}}{2000
 \end{aligned}
     ``]
 
-*Solution:* [`` [$lb2] \text{ lb} = [$t2] \text{ t} ``]
+[`` [$lb2] \text{ lb} = [$t2] \text{ t} ``]
 
 ####Proportion Method  
 
@@ -121,7 +121,7 @@ Assume [`[$t1] \text{ t} = x \text{ lb} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$t1] \text{ t} = [$lb1] \text{ lb} ``]
+[`` [$t1] \text{ t} = [$lb1] \text{ lb} ``]
 
 Next, assume [`x \text{ t} = [$lb2] \text{ lb} `]. We have:
 
@@ -137,7 +137,7 @@ Next, assume [`x \text{ t} = [$lb2] \text{ lb} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$lb2] \text{ lb} = [$t2] \text{ t} ``]
+[`` [$lb2] \text{ lb} = [$t2] \text{ t} ``]
 
 ####Shortcut  
 

@@ -182,7 +182,7 @@ BEGIN_PGML
 
 [$name] is designing a rectangular garden. The garden's base must be [`[$baseLength]`] feet, and the ratio between the garden's hypotenuse and height must be [`[$ratioHypotenuse]:[$ratioHeight]`]. Find the length of the garden's hypotenuse and height.
 
-*Solution:* The garden's hypotenuse is [_____________]{$hypotenuseLength} feet and its height is [___________]{$heightLength}.
+The garden's hypotenuse is [_____________]{$hypotenuseLength} feet and its height is [___________]{$heightLength}.
 
 END_PGML
 
@@ -216,7 +216,7 @@ Since the ratio between its hypotenuse and height is [`[$ratioHypotenuse]:[$rati
 \end{aligned}
     ``]
 
-*Solution:* The garden's height is [`[$ratioHeight]x=[$ratioHeight]\cdot[$x]=[$heightLength]`] feet, and its hypotenuse is [`[$ratioHypotenuse]x=[$ratioHypotenuse]\cdot[$x]=[$hypotenuseLength]`] feet.
+The garden's height is [`[$ratioHeight]x=[$ratioHeight]\cdot[$x]=[$heightLength]`] feet, and its hypotenuse is [`[$ratioHypotenuse]x=[$ratioHypotenuse]\cdot[$x]=[$hypotenuseLength]`] feet.
 
 END_PGML_SOLUTION
 

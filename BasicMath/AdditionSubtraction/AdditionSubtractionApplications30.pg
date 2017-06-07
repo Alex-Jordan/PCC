@@ -127,7 +127,7 @@ BEGIN_PGML_SOLUTION
 
 *Part a*:    [``[$a0]+[$a1]+[$a2]=[$ans1]``]
 
-*Solution:* In the first quarter (January, February and March), [$name] collected [`[$ans1]`] Pokemon cards in all.
+In the first quarter (January, February and March), [$name] collected [`[$ans1]`] Pokemon cards in all.
 
 *Part b*: First, we find the total number of cards collected in the *first* half:
 
@@ -141,7 +141,7 @@ Finally, we find the difference of these two sums:
 
     [`` [$half1]-[$half2]=[$ans2] ``]
 
-*Solution:* In the first half of the year, [$name] collected [`[$ans2]`] more cards than in the second half.
+In the first half of the year, [$name] collected [`[$ans2]`] more cards than in the second half.
 
 END_PGML_SOLUTION
 

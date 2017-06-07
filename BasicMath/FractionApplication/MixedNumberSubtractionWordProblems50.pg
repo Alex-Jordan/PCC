@@ -254,7 +254,7 @@ To find the difference of their distances, we need to do subtraction:
 \end{aligned}
     ``]
 
-*Solution:* The longest runner ran [`[$ans]`] more miles than the shortest runner.
+The longest runner ran [`[$ans]`] more miles than the shortest runner.
 
 END_PGML_SOLUTION
 

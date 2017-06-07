@@ -103,7 +103,7 @@ His annual income can be calculated by multiplying each painting's price with th
 \end{aligned}
     ``]
 
-*Solution:* After raising the price [`x`] times, each time by [`[$cC]`], the artist's annual income from paintings would be [`[$ans]`] dollars.
+After raising the price [`x`] times, each time by [`[$cC]`], the artist's annual income from paintings would be [`[$ans]`] dollars.
 
 END_PGML_SOLUTION
 ##############################################

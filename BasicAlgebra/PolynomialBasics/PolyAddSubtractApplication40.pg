@@ -65,7 +65,7 @@ BEGIN_PGML
 
 An architect is designing a house on an empty plot. The area of the plot can be modeled by the polynomial [`[$poly1]`], and the area of the house's base can be modeled by [`[$poly2]`]. The rest of the plot is the yard. What's the yard's area?
 
-*Solution:* The area of the yard can be modeled by the polynomial [________________]{$ans}.
+The area of the yard can be modeled by the polynomial [________________]{$ans}.
 
 END_PGML
 
@@ -86,7 +86,7 @@ To find the yard's area, we subtract the house base's area from the plot's area,
          \end{aligned}
      ``]
 
-*Solution:* The area of the yard can be modeled by the polynomial [`[$ans]`].
+The area of the yard can be modeled by the polynomial [`[$ans]`].
 
 END_PGML_SOLUTION
 ##############################################

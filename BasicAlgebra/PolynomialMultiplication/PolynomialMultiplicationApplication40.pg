@@ -88,7 +88,7 @@ After substitution, we have:
 \end{aligned}
     ``]
 
-*Solution:* The rectangle's area is [`[$ans]`] square meters.
+The rectangle's area is [`[$ans]`] square meters.
 
 END_PGML_SOLUTION
 ##############################################

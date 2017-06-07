@@ -88,7 +88,7 @@ To convert [` [$hr1] `] hours to minutes, we will use [` \frac{60 \text{ min}}{1
 \end{aligned}
     ``]
 
-*Solution:* [`` [$hr1] \text{ hr} = [$min1] \text{ min} ``]
+[`` [$hr1] \text{ hr} = [$min1] \text{ min} ``]
 
 Next, to convert [` [$min2] `] minutes to hours, we will use [` \frac{1 \text{ hr}}{60 \text{ min}} `], so the unit *min* will cancel:
 
@@ -103,7 +103,7 @@ Next, to convert [` [$min2] `] minutes to hours, we will use [` \frac{1 \text{ h
 \end{aligned}
     ``]
 
-*Solution:* [`` [$min2] \text{ min} = [$hr2] \text{ hr} ``]
+[`` [$min2] \text{ min} = [$hr2] \text{ hr} ``]
 
 ####Shortcut  
 

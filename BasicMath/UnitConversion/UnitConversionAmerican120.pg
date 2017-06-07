@@ -82,7 +82,7 @@ To convert [` [$mi1] `] miles to feet, we will use [` \frac{5280 \text{ ft}}{1 \
 \end{aligned}
     ``]
 
-*Solution:* [`` [$mi1] \text{ mi} = [$ft1] \text{ ft} ``]
+[`` [$mi1] \text{ mi} = [$ft1] \text{ ft} ``]
 
 Next, to convert [` [$ft2] `] feet to miles, we will use [` \frac{1 \text{ mi}}{5280 \text{ ft}} `], so the unit *in* will cancel:
 
@@ -97,7 +97,7 @@ Next, to convert [` [$ft2] `] feet to miles, we will use [` \frac{1 \text{ mi}}{
 \end{aligned}
     ``]
 
-*Solution:* [`` [$ft2] \text{ ft} = [$mi2] \text{ mi} ``]
+[`` [$ft2] \text{ ft} = [$mi2] \text{ mi} ``]
 
 ####Proportion Method  
 
@@ -115,7 +115,7 @@ Assume [`[$mi1] \text{ mi} = x \text{ ft} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$mi1] \text{ mi} = [$ft1] \text{ ft} ``]
+[`` [$mi1] \text{ mi} = [$ft1] \text{ ft} ``]
 
 Next, assume [`x \text{ mi} = [$ft2] \text{ ft} `]. We have:
 
@@ -131,7 +131,7 @@ Next, assume [`x \text{ mi} = [$ft2] \text{ ft} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$ft2] \text{ ft} = [$mi2] \text{ mi} ``]
+[`` [$ft2] \text{ ft} = [$mi2] \text{ mi} ``]
 
 ####Shortcut  
 

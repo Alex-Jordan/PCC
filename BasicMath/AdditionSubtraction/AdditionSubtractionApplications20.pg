@@ -66,7 +66,7 @@ BEGIN_PGML_SOLUTION
 
     [`` [$total] - [$a] - [$b] = [$ans] ``]
 
-*Solution:* [$name] needs to collect [`[$ans]`] more signatures on the third day.
+[$name] needs to collect [`[$ans]`] more signatures on the third day.
 
 END_PGML_SOLUTION
 

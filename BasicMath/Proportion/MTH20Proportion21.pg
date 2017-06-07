@@ -105,7 +105,7 @@ Next, we will use this rate to find the amount of stock corresponding to [`[$bon
 \end{aligned}
     ``]
 
-*Solution:* For a mutual fund with [`[$bond1C]`] of bond, there are approximately [`[$stock1C]`] of stock.
+For a mutual fund with [`[$bond1C]`] of bond, there are approximately [`[$stock1C]`] of stock.
 
 ####Method 2  
 
@@ -124,7 +124,7 @@ In the proportion, the top (numerators) have the amount of stock, and the bottom
 \end{aligned}
     ``]
 
-*Solution:* For a mutual fund with [`[$bond1C]`] of bond, there are approximately [`[$stock1C]`] of stock.
+For a mutual fund with [`[$bond1C]`] of bond, there are approximately [`[$stock1C]`] of stock.
 
 END_PGML_SOLUTION
 

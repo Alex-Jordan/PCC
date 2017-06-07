@@ -84,7 +84,7 @@ User a linear equation to solve the word problem.
 
 If they continue to spend and save money this way, how many days later would they have the same amount of money in their piggy banks?
 
-*Solution:* [________]{$ans} days later, [$name1] and [$name2] will have the same amount of money in their piggy banks.
+[________]{$ans} days later, [$name1] and [$name2] will have the same amount of money in their piggy banks.
 
 END_PGML
 
@@ -111,7 +111,7 @@ To find when they will have the same amount of money, we can write and solve thi
 \end{aligned}
     ``]
 
-*Solution:* [`[$ans]`] days later, [$name1] and [$name2] will have the same amount of money in their piggy banks.
+[`[$ans]`] days later, [$name1] and [$name2] will have the same amount of money in their piggy banks.
 
 END_PGML_SOLUTION
 

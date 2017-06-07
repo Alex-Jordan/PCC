@@ -85,7 +85,7 @@ Next, we add up the distances:
 
     [`` [$ft*12] \text{ in} + [$in] \text{ in} = [$ansIn] \text{ in} ``]
 
-*Solution:* The sink hole was [`[$ansIn]`] [`` \text{ inches} ``] deep three days later.
+The sink hole was [`[$ansIn]`] [`` \text{ inches} ``] deep three days later.
 
 ####Question 2:
 
@@ -97,7 +97,7 @@ Next, we add up the distances:
 
     [`` [$frac] \text{ ft} + [$ft] \text{ ft} = [$ansFt] \text{ ft} ``]
 
-*Solution:* The sink hole was [`[$ansFt]`] [`` \text{ feet} ``] deep three days later.
+The sink hole was [`[$ansFt]`] [`` \text{ feet} ``] deep three days later.
 
 END_PGML_SOLUTION
 

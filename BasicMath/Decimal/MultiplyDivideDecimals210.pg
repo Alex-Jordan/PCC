@@ -98,7 +98,7 @@ c) We move the decimal point of [`[$product1]`] to the left by [`[$move1]+[$move
 
 Again, don't forget to add back the negative symbol.
 
-*Solution:* [`[$dec1](-[$dec2])=[$product2]`]
+[`[$dec1](-[$dec2])=[$product2]`]
 
 END_PGML_SOLUTION
 

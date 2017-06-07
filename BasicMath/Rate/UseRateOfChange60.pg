@@ -96,7 +96,7 @@ To find how much the owner of a house worth [`[$value]`] thousand dollars should
 
 Notice that the unit *thousand dollars* cancelled.
 
-*Solution:* The owner of a house worth [`[$value]`] thousand dollars should pay [`[$tax]`] dollars in tax.
+The owner of a house worth [`[$value]`] thousand dollars should pay [`[$tax]`] dollars in tax.
 
 ###Question 2  
 
@@ -113,7 +113,7 @@ It's given the property tax of a house is [`[$tax1]`] dollars in tax. We cannot 
 \end{aligned}
     ``]
 
-*Solution:* The owner of a house worth [`[$value1]`] thousand dollars should pay [`[$tax1U]`] in tax.
+The owner of a house worth [`[$value1]`] thousand dollars should pay [`[$tax1U]`] in tax.
 
 END_PGML_SOLUTION
 

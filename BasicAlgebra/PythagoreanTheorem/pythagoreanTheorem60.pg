@@ -181,7 +181,7 @@ BEGIN_PGML
 
 [$name] is designing a rectangular garden. The garden's diagonal must be [`[$hypotenuseLength]`] feet, and the ratio between the garden's base and height must be [`[$ratioBase]:[$ratioHeight]`]. Find the length of the garden's base and height.
 
-*Solution:* The garden's base is [_____________]{$baseLength} feet and its height is [___________]{$heightLength}.
+The garden's base is [_____________]{$baseLength} feet and its height is [___________]{$heightLength}.
 
 END_PGML
 
@@ -213,7 +213,7 @@ Since the ratio between its base and height is [`[$ratioBase]:[$ratioHeight]`], 
 \end{aligned}
     ``]
 
-*Solution:* The garden's base is [`[$ratioBase]x=[$ratioBase]\cdot[$x]=[$baseLength]`] feet, and its height is [`[$ratioHeight]x=[$ratioHeight]\cdot[$x]=[$heightLength]`] feet.
+The garden's base is [`[$ratioBase]x=[$ratioBase]\cdot[$x]=[$baseLength]`] feet, and its height is [`[$ratioHeight]x=[$ratioHeight]\cdot[$x]=[$heightLength]`] feet.
 
 END_PGML_SOLUTION
 

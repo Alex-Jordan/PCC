@@ -61,7 +61,7 @@ Division is used when we divide a number of objects evenly into groups. In this 
 
     [`` [$product] \div [$numStudents] = [$each] ``]
 
-*Solution:* Each student will receive [`[$each]`] marbles.
+Each student will receive [`[$each]`] marbles.
 
 We should get used to using the fraction line instead of the division symbol:
 

@@ -88,7 +88,7 @@ To convert [` [$kg1] `] kilograms to grams, we will use [` \frac{1000 \text{ g}}
 \end{aligned}
     ``]
 
-*Solution:* [`` [$kg1] \text{ kg} = [$g1] \text{ g} ``]
+[`` [$kg1] \text{ kg} = [$g1] \text{ g} ``]
 
 Next, to convert [` [$g2] `] grams to kilograms, we will use [` \frac{1 \text{ kg}}{1000 \text{ g}} `], so the unit *g* will cancel:
 
@@ -103,7 +103,7 @@ Next, to convert [` [$g2] `] grams to kilograms, we will use [` \frac{1 \text{ k
 \end{aligned}
     ``]
 
-*Solution:* [`` [$g2] \text{ g} = [$kg2] \text{ kg} ``]
+[`` [$g2] \text{ g} = [$kg2] \text{ kg} ``]
 
 ####Proportion Method  
 
@@ -121,7 +121,7 @@ Assume [`[$kg1] \text{ kg} = x \text{ g} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$kg1] \text{ kg} = [$g1] \text{ g} ``]
+[`` [$kg1] \text{ kg} = [$g1] \text{ g} ``]
 
 Next, assume [`x \text{ kg} = [$g2] \text{ g} `]. We have:
 
@@ -137,7 +137,7 @@ Next, assume [`x \text{ kg} = [$g2] \text{ g} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$g2] \text{ g} = [$kg2] \text{ kg} ``]
+[`` [$g2] \text{ g} = [$kg2] \text{ kg} ``]
 
 ####Shortcut  
 

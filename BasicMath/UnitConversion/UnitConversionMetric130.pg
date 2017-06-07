@@ -83,7 +83,7 @@ To convert [` [$dm1] `] decimeters to millimeters, we will use [` \frac{100 \tex
 \end{aligned}
     ``]
 
-*Solution:* [`` [$dm1] \text{ dm} = [$mm1] \text{ mm} ``]
+[`` [$dm1] \text{ dm} = [$mm1] \text{ mm} ``]
 
 Next, to convert [` [$mm2] `] millimeters to decimeters, we will use [` \frac{1 \text{ dm}}{100 \text{ mm}} `], so the unit *mm* will cancel:
 
@@ -98,7 +98,7 @@ Next, to convert [` [$mm2] `] millimeters to decimeters, we will use [` \frac{1 
 \end{aligned}
     ``]
 
-*Solution:* [`` [$mm2] \text{ mm} = [$dm2] \text{ dm} ``]
+[`` [$mm2] \text{ mm} = [$dm2] \text{ dm} ``]
 
 ####Proportion Method  
 
@@ -116,7 +116,7 @@ Assume [`[$dm1] \text{ dm} = x \text{ mm} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$dm1] \text{ dm} = [$mm1] \text{ mm} ``]
+[`` [$dm1] \text{ dm} = [$mm1] \text{ mm} ``]
 
 Next, assume [`x \text{ dm} = [$mm2] \text{ mm} `]. We have:
 
@@ -132,7 +132,7 @@ Next, assume [`x \text{ dm} = [$mm2] \text{ mm} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$mm2] \text{ mm} = [$dm2] \text{ dm} ``]
+[`` [$mm2] \text{ mm} = [$dm2] \text{ dm} ``]
 
 ####Shortcut  
 

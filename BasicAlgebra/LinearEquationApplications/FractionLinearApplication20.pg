@@ -64,7 +64,7 @@ BEGIN_PGML
 
 [$name] is jogging in a straight line. [@ucfirst($pronoun)@] started at a place [`[$b]`] meters from the starting line, and ran toward the starting line at the speed of [`[$num]`] meters every [`[$den]`] seconds. After how many seconds will [$name] be [`[$y1]`] meters away from the starting line?
 
-*Solution:* [$name] will be [`[$y1]`] meters away from the starting line [______]{$x1} seconds since she started running.
+[$name] will be [`[$y1]`] meters away from the starting line [______]{$x1} seconds since she started running.
 
 END_PGML
 
@@ -95,7 +95,7 @@ To find when she will be [`[$y1]`] meters away from the starting line, we can wr
 \end{aligned}
     ``]
 
-*Solution:* [$name] will be [`[$y1]`] meters away from the starting line [`[$x1]`] seconds since she started running.
+[$name] will be [`[$y1]`] meters away from the starting line [`[$x1]`] seconds since she started running.
 
 END_PGML_SOLUTION
 

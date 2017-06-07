@@ -81,7 +81,7 @@ The triangle's base is [`b`] feet. Since the triangle's height is [`[$a]`] feet 
 \end{aligned}
     ``]
 
-*Solution:* The triangle's area is [`[$ans]`] square feet.
+The triangle's area is [`[$ans]`] square feet.
 
 END_PGML_SOLUTION
 ##############################################

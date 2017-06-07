@@ -122,7 +122,7 @@ One car started at Town A, and traveled due north at [`[$car1Speed]`] miles per 
 
 >>[@image(insertGraph($picture), width=>400, height=>400, tex_size=>400, extra_html_tags=>"alt = '$alt' title = '$alt'") @]*<<
 
-*Solution:* Approximately [___________]{$ans} hours since the second car starts, the distance between those two cars would be [`[$distance]`] miles.
+Approximately [___________]{$ans} hours since the second car starts, the distance between those two cars would be [`[$distance]`] miles.
 
 END_PGML
 
@@ -166,7 +166,7 @@ We will solve the equation by the Quadratic Formula. Identify that [`a=[$a],b=[$
 \end{aligned}
     ``]
 
-*Solution:* Approximately [`[$ansShow]`] hours since the second car starts, the distance between those two cars would be [`[$distance]`] miles.
+Approximately [`[$ansShow]`] hours since the second car starts, the distance between those two cars would be [`[$distance]`] miles.
 
 END_PGML_SOLUTION
 

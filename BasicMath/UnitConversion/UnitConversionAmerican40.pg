@@ -103,7 +103,7 @@ To convert [` [$ft1] `] feet to inches, we will use [` \frac{12 \text{ in}}{1 \t
 \end{aligned}
     ``]
 
-*Solution:* [`` [$ft1Display] \text{ ft} = [$in1] \text{ in} ``]
+[`` [$ft1Display] \text{ ft} = [$in1] \text{ in} ``]
 
 Next, to convert [` [$in2] `] inches to feet, we will use [` \frac{1 \text{ ft}}{12 \text{ in}} `], so the unit *in* will cancel:
 
@@ -119,7 +119,7 @@ Next, to convert [` [$in2] `] inches to feet, we will use [` \frac{1 \text{ ft}}
 \end{aligned}
     ``]
 
-*Solution:* [`` [$in2] \text{ in} = [$ft2] \text{ ft} ``]
+[`` [$in2] \text{ in} = [$ft2] \text{ ft} ``]
 
 ####Shortcut  
 

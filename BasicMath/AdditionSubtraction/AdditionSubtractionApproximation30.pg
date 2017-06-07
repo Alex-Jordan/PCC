@@ -123,11 +123,11 @@ Answer the following questions without using a calculator. Round numbers to the 
 
 1) Approximately how many cans were collected in the first quarter (January, February and March)?
 
-*Solution:* Approximately [__________]{$ans1} cans were collected in the first quarter.
+Approximately [__________]{$ans1} cans were collected in the first quarter.
 
 2) Approximately how many more cans were collected in [$months[$m2]] than in [$months[$m1]]?
 
-*Solution:* Approximately [__________]{$ans2} more cans were collected in [$months[$m2]] than in [$months[$m1]].
+Approximately [__________]{$ans2} more cans were collected in [$months[$m2]] than in [$months[$m1]].
 
 END_PGML
 
@@ -139,13 +139,13 @@ BEGIN_PGML_SOLUTION
 
     [`` [$jan]+[$feb]+[$mar] = [$ans1] ``]
 
-*Solution:* Approximately [`[$ans1]`] cans were collected in the first quarter.
+Approximately [`[$ans1]`] cans were collected in the first quarter.
 
 2) We approximate [$months[$m2]]'s number [`[$cans[[$m2]]]`] to [`[$c2]`], [$months[$m1]]'s number [`[$cans[[$m1]]]`] to [`[$c1]`]. Next, we do subtraction:
 
     [`` [$c2]-[$c1]=[$ans2] ``]
 
-*Solution:* Approximately [`[$ans2]`] more cans were collected in [$months[$m2]] than in [$months[$m1]].
+Approximately [`[$ans2]`] more cans were collected in [$months[$m2]] than in [$months[$m1]].
 
 END_PGML_SOLUTION
 

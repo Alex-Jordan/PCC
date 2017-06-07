@@ -82,7 +82,7 @@ BEGIN_PGML
 
 The dot in the graph can be represented by what fraction?
 
-Answer: [_________]{$frac}
+[_________]{$frac}
 
 END_PGML
 

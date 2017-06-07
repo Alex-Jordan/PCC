@@ -82,7 +82,7 @@ To convert [` [$yd1] `] yards to feet, we will use [` \frac{3 \text{ ft}}{1 \tex
 \end{aligned}
     ``]
 
-*Solution:* [`` [$yd1] \text{ yd} = [$ft1] \text{ ft} ``]
+[`` [$yd1] \text{ yd} = [$ft1] \text{ ft} ``]
 
 Next, to convert [` [$yd2] `] feet to yards, we will use [` \frac{1 \text{ yd}}{3 \text{ ft}} `], so the unit *in* will cancel:
 
@@ -97,7 +97,7 @@ Next, to convert [` [$yd2] `] feet to yards, we will use [` \frac{1 \text{ yd}}{
 \end{aligned}
     ``]
 
-*Solution:* [`` [$ft2] \text{ ft} = [$yd2] \text{ yd} ``]
+[`` [$ft2] \text{ ft} = [$yd2] \text{ yd} ``]
 
 ####Proportion Method  
 
@@ -115,7 +115,7 @@ Assume [`[$yd1] \text{ yd} = x \text{ ft} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$yd1] \text{ yd} = [$ft1] \text{ ft} ``]
+[`` [$yd1] \text{ yd} = [$ft1] \text{ ft} ``]
 
 Next, assume [`x \text{ yd} = [$ft2] \text{ ft} `]. We have:
 
@@ -131,7 +131,7 @@ Next, assume [`x \text{ yd} = [$ft2] \text{ ft} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$ft2] \text{ ft} = [$yd2] \text{ yd} ``]
+[`` [$ft2] \text{ ft} = [$yd2] \text{ yd} ``]
 
 ####Shortcut  
 

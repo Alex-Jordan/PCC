@@ -52,7 +52,7 @@ User a linear equation to solve the word problem.
 
 Two trees are [`[$a]`] feet and [`[$b]`] feet tall. The shorter tree grows [`[$rateA]`] feet per year; the taller tree grows [`[$rateB]`] feet per year. How many years later would the shorter tree catch up with the taller tree?
 
-*Solution:* It would take the shorter tree [_______]{$ans} years to catch up with the taller tree. 
+It would take the shorter tree [_______]{$ans} years to catch up with the taller tree. 
 
 END_PGML
 
@@ -79,7 +79,7 @@ To find when those two trees have the same height, we write and solve an equatio
 \end{aligned}
     ``]
 
-*Solution:* It would take the shorter tree [`[$ans]`] years to catch up with the taller tree.
+It would take the shorter tree [`[$ans]`] years to catch up with the taller tree.
 
 END_PGML_SOLUTION
 

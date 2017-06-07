@@ -201,7 +201,7 @@ To find the total miles ran by [$name1] and [$name2], we need to add up their mi
 \end{aligned}
     ``]
 
-*Solution:* Those two runners who ran the longest distance ran a total of [`[$ans]`] miles.
+Those two runners who ran the longest distance ran a total of [`[$ans]`] miles.
 
 END_PGML_SOLUTION
 

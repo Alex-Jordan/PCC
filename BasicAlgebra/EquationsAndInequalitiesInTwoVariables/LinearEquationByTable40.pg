@@ -105,7 +105,7 @@ Write a linear equation which fits data in the table.
      ' ',],
 );@]*
 
-*Solution:* The linear equation is [`y=`][__________]{$ans}.
+The linear equation is [`y=`][__________]{$ans}.
 
 END_PGML
 

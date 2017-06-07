@@ -63,7 +63,7 @@ Target heart rate for moderate exercise is [`50%`] to [`70%`] of maximum heart r
 
 where [`[$var1]`] is the percent, and [`[$var2]`] is age in years. Determine the target heart rate at [`[$p]%`] level for someone who is [`[$a]`] years old. Round your answer to an integer.
 
-*Solution:* The target heart rate at [`[$p]%`] level for someone who is [`[$a]`] years old is [______________]{$ans} beats per minute.
+The target heart rate at [`[$p]%`] level for someone who is [`[$a]`] years old is [______________]{$ans} beats per minute.
 
 END_PGML
 
@@ -82,7 +82,7 @@ We will substitute [`[$var1]=[$pd]`] and [`[$var2]=[$a]`] into the formula [`[$f
             &\approx [$ans]
      \end{aligned}``]
 
-*Solution:* The target heart rate at [`[$p]%`] level for someone who is [`[$a]`] years old is [`[$ans]`] beats per minute.
+The target heart rate at [`[$p]%`] level for someone who is [`[$a]`] years old is [`[$ans]`] beats per minute.
 
 
 END_PGML_SOLUTION

@@ -94,7 +94,7 @@ To find the amount of oil used in [`[$days]`] days, we do:
 
 Notice that the unit *days* cancelled.
 
-*Solution:* In [`[$days]`] days, the restaurant will use [` [$total] `] lb of vegetable oil.
+In [`[$days]`] days, the restaurant will use [` [$total] `] lb of vegetable oil.
 
 ###Question 2  
 
@@ -111,7 +111,7 @@ It's given there are [`[$total1U]`] of vegetable oil to use. We cannot still do 
 \end{aligned}
     ``]
 
-*Solution:* The restaurant will use [`[$total1U]`] of vegetable oil in [`[$days1]`] days.
+The restaurant will use [`[$total1U]`] of vegetable oil in [`[$days1]`] days.
 
 END_PGML_SOLUTION
 

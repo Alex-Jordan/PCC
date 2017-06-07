@@ -75,7 +75,7 @@ Each page of a book consists of a header, a footer and the middle part. The whol
 
 The header is [`[$header]`] inches in length; and the middle part is [`[$middle]`] inches in length. What is the length of the footer?
 
-*Solution:* The length of the footer is [___________]{$footer} inches in length.
+The length of the footer is [___________]{$footer} inches in length.
 
 END_PGML
 
@@ -104,7 +104,7 @@ From a page's total length, we subtract the length of the header and the middle 
 \end{aligned}
     ``]
 
-*Solution:* The footer is [`[$footer]`] inches in length.
+The footer is [`[$footer]`] inches in length.
 
 END_PGML_SOLUTION
 

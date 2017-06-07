@@ -88,7 +88,7 @@ To convert [` [$t1] `] metric tons to kilograms, we will use [` \frac{1000 \text
 \end{aligned}
     ``]
 
-*Solution:* [`` [$t1] \text{ t} = [$kg1] \text{ kg} ``]
+[`` [$t1] \text{ t} = [$kg1] \text{ kg} ``]
 
 Next, to convert [` [$kg2] `] kilograms to metric tons, we will use [` \frac{1 \text{ t}}{1000 \text{ kg}} `], so the unit *kg* will cancel:
 
@@ -103,7 +103,7 @@ Next, to convert [` [$kg2] `] kilograms to metric tons, we will use [` \frac{1 \
 \end{aligned}
     ``]
 
-*Solution:* [`` [$kg2] \text{ kg} = [$t2] \text{ t} ``]
+[`` [$kg2] \text{ kg} = [$t2] \text{ t} ``]
 
 ####Proportion Method  
 
@@ -121,7 +121,7 @@ Assume [`[$t1] \text{ t} = x \text{ kg} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$t1] \text{ t} = [$kg1] \text{ kg} ``]
+[`` [$t1] \text{ t} = [$kg1] \text{ kg} ``]
 
 Next, assume [`x \text{ t} = [$kg2] \text{ kg} `]. We have:
 
@@ -137,7 +137,7 @@ Next, assume [`x \text{ t} = [$kg2] \text{ kg} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$kg2] \text{ kg} = [$t2] \text{ t} ``]
+[`` [$kg2] \text{ kg} = [$t2] \text{ t} ``]
 
 ####Shortcut  
 

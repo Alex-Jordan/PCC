@@ -77,7 +77,7 @@ We could do this problem by subtracting [`[$weeklySpendingU]`] repeatedly from [
 
     [`` [$total] \div [$weeklySpending] = [$weeks] ``]
 
-*Solution:* [$name] will spend all [$possessive] money in [`[$weeks]`] weeks.
+[$name] will spend all [$possessive] money in [`[$weeks]`] weeks.
 
 We should get used to using the fraction line instead of the division symbol:
 

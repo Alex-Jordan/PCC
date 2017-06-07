@@ -91,7 +91,7 @@ Since [`[$in]`] inches will be cut off the wood, we use subtraction to find the 
 
     [`` [$ft*12] \text{ in} - [$in] \text{ in} = [$ansIn] \text{ in} ``]
 
-*Solution:* After the cut, [`[$ansIn]`] [`` \text{ inches} ``] of wood were left.
+After the cut, [`[$ansIn]`] [`` \text{ inches} ``] of wood were left.
 
 ####Question 2:
 
@@ -110,7 +110,7 @@ Next, we use subtraction to find the leftover:
 \end{aligned}
     ``]
 
-*Solution:* After the cut, [`[$ansFt]`] [`` \text{ feet} ``] of wood were left.
+After the cut, [`[$ansFt]`] [`` \text{ feet} ``] of wood were left.
 
 END_PGML_SOLUTION
 

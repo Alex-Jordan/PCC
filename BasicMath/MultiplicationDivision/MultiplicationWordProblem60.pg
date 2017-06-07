@@ -67,7 +67,7 @@ It's given that [$name2] reads [`[$more]`] more pages than [$name1] every day. T
 
     [`` [$more] \cdot [$days] = [$totalMore] ``]
 
-*Solution:* [$name2] will read a total of [`[$totalMore]`] more pages than [$name1] in [`[$days]`] days.
+[$name2] will read a total of [`[$totalMore]`] more pages than [$name1] in [`[$days]`] days.
 
 END_PGML_SOLUTION
 

@@ -163,7 +163,7 @@ For the given rectangle, we have:
 
 Don't forget the length unit [`\textrm{m}`].  
 
-*Solution:* The rectangle's perimeter is [`[$perimeter]`] meters.
+The rectangle's perimeter is [`[$perimeter]`] meters.
 
 END_PGML_SOLUTION
 

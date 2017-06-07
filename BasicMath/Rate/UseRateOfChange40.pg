@@ -101,7 +101,7 @@ It's given that apples sell for [`[$rateU]`] per pound, or [`\frac{[$rateU]}{1 \
 
 Notice that the unit *lb* cancelled.
 
-*Solution:* It costs [`[$totalU]`] to purchase [`[$lbs]`] pounds of apples.
+It costs [`[$totalU]`] to purchase [`[$lbs]`] pounds of apples.
 
 ###Question 2  
 
@@ -118,7 +118,7 @@ It's given there are [`[$total1U]`] to spend. We cannot still do [`[$total1U] \c
 \end{aligned}
     ``]
 
-*Solution:* It costs [`[$total1U]`] to purchase [`[$lbs1]`] pounds of apples.
+It costs [`[$total1U]`] to purchase [`[$lbs1]`] pounds of apples.
 
 END_PGML_SOLUTION
 

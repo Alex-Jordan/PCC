@@ -103,7 +103,7 @@ To convert [` [$min1] `] minutes to seconds, we will use [` \frac{60 \text{ sec}
 \end{aligned}
     ``]
 
-*Solution:* [`` [$min1Display] \text{ min} = [$sec1] \text{ sec} ``]
+[`` [$min1Display] \text{ min} = [$sec1] \text{ sec} ``]
 
 Next, to convert [` [$sec2] `] seconds to minutes, we will use [` \frac{1 \text{ min}}{60 \text{ sec}} `], so the unit *sec* will cancel:
 
@@ -119,7 +119,7 @@ Next, to convert [` [$sec2] `] seconds to minutes, we will use [` \frac{1 \text{
 \end{aligned}
     ``]
 
-*Solution:* [`` [$sec2] \text{ sec} = [$min2] \text{ min} ``]
+[`` [$sec2] \text{ sec} = [$min2] \text{ min} ``]
 
 ####Shortcut  
 

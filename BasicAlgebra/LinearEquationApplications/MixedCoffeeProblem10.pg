@@ -66,7 +66,7 @@ BEGIN_PGML
 
 A coffee shop has [`[$weight1]`] pounds of dark coffee, which sells for [`[$price1C]`] per pound. It also has some light coffee, which sells for [`[$price2C]`] per pound. The coffee shop plans to mix some light coffee into the dark coffee, and sell the mixture for [`[$price3C]`] per pound. How many pounds of light coffee should be mixed in?
 
-*Solution:* To make coffee worth [`[$price3C]`], the coffee shop needs to mix [__________]{$weight2} pounds of light coffee with the dark coffee.
+To make coffee worth [`[$price3C]`], the coffee shop needs to mix [__________]{$weight2} pounds of light coffee with the dark coffee.
 
 END_PGML
 
@@ -139,7 +139,7 @@ According to the table, the dark coffee's total value is [`[$total1C]`], and the
 \end{aligned}
     ``]
 
-*Solution:* To make coffee worth [`[$price3C]`], the coffee shop needs to mix [`[$weight2]`] pounds of light coffee with the dark coffee.
+To make coffee worth [`[$price3C]`], the coffee shop needs to mix [`[$weight2]`] pounds of light coffee with the dark coffee.
 
 END_PGML_SOLUTION
 

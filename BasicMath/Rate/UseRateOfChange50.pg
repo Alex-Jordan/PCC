@@ -95,7 +95,7 @@ To find the number of stamps [$name] can collect in [`[$years]`] years, we do:
 
 Notice that the unit *year* cancelled.
 
-*Solution:* At this rate, [$name] would collect [`[$total]`] stamps in [`[$years]`] years.
+At this rate, [$name] would collect [`[$total]`] stamps in [`[$years]`] years.
 
 ###Question 2  
 
@@ -112,7 +112,7 @@ To find how long it would take to collect [`[$total1]`] stamps, we cannot still 
 \end{aligned}
     ``]
 
-*Solution:* At this rate, [$name] would collect [`[$total1]`] stamps in [`[$years1]`] years.
+At this rate, [$name] would collect [`[$total1]`] stamps in [`[$years1]`] years.
 
 END_PGML_SOLUTION
 

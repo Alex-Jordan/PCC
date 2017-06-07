@@ -73,7 +73,7 @@ We could do this problem by subtracting [`[$weekly]`] repeatedly from [`[$total]
 
     [`` [$total] \div [$weekly] = [$weeks] ``]
 
-*Solution:* [$name] will finish watching all the movies in [`[$weeks]`] weeks.
+[$name] will finish watching all the movies in [`[$weeks]`] weeks.
 
 We should get used to using the fraction line instead of the division symbol:
 

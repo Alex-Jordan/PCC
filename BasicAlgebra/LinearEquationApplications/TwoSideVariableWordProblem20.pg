@@ -52,7 +52,7 @@ User a linear equation to solve the word problem.
 
 Massage Heaven and Message You are competitors. Message Heaven has [`[$a]`] registered customers, and it gets approximately [`[$rateA]`] newly registered customers every month. Message You has [`[$b]`] registered customers, and it gets approximately [`[$rateB]`] newly registered customers every month. How many months would it take Message Heaven to catch up with Massage You in the number of registered customers?
 
-*Solution:* These two companies would have approximately the same number of registered customers [________]{$ans} months later.
+These two companies would have approximately the same number of registered customers [________]{$ans} months later.
 
 END_PGML
 
@@ -79,7 +79,7 @@ To find when those two companies have the same number of customers, we write and
 \end{aligned}
     ``]
 
-*Solution:* These two companies would have approximately the same number of registered customers [`[$ans]`] months later.
+These two companies would have approximately the same number of registered customers [`[$ans]`] months later.
 
 END_PGML_SOLUTION
 

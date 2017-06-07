@@ -68,7 +68,7 @@ Do the following problem without using a calculator. Round numbers to the hundre
 
 [$name] has [`[$aC]`] left in [$possessive] check account. [@ucfirst($pronoun)@] plans to purchase a nice table for [`[$bC]`]. Approximately how much money will be left after the purchase?
 
-*Solution:* There will be approximately [__________]{$ansC} left after the purchase.
+There will be approximately [__________]{$ansC} left after the purchase.
 
 END_PGML
 

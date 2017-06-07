@@ -67,7 +67,7 @@ BEGIN_PGML
 
 A farmer is building fence around a triangular area. The cost of building the shortest side is [`[$poly1]`] dollars, where [`x`] stands for the length of the side in feet. The cost of building the other two sides can be modeled by [`[$poly2]`] dollars and [`[$poly3]`] dollars, respectively. What's the total cost of building fence for all three sides?
 
-*Solution:* The cost of building fence for all three sides would be [________________]{$ans} dollars.
+The cost of building fence for all three sides would be [________________]{$ans} dollars.
 
 END_PGML
 
@@ -88,7 +88,7 @@ We will subtract the cost polynomial from the sales polynomial:
          \end{aligned}
      ``]
 
-*Solution:* The cost of building fence for all three sides would be [`[$ans]`] dollars.
+The cost of building fence for all three sides would be [`[$ans]`] dollars.
 
 END_PGML_SOLUTION
 ##############################################

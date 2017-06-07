@@ -120,7 +120,7 @@ This line graph shows a club's membership change over a few months.
 
 From [$day1] to [$dayLast], what is the club's membership change?
 
-*Solution:* From [$day1] to [$dayLast], the club's membership change was [_________]{$ans}. 
+From [$day1] to [$dayLast], the club's membership change was [_________]{$ans}. 
 
 END_PGML
 
@@ -142,7 +142,7 @@ In [$day1], the club had [`[$day1Price]`] members; in [$dayLast], the club had [
 
     [`` [$maxPrice] - [$minPrice] = [$ans] ``]
 
-*Solution:* From [$day1] to [$dayLast], the club's membership changed by [`[$ans]`].
+From [$day1] to [$dayLast], the club's membership changed by [`[$ans]`].
 
 END_PGML_SOLUTION
 

@@ -88,7 +88,7 @@ To convert [` [$m1] `] meters to millimeters, we will use [` \frac{1000 \text{ m
 \end{aligned}
     ``]
 
-*Solution:* [`` [$m1] \text{ m} = [$mm1] \text{ mm} ``]
+[`` [$m1] \text{ m} = [$mm1] \text{ mm} ``]
 
 Next, to convert [` [$mm2] `] millimeters to meters, we will use [` \frac{1 \text{ m}}{1000 \text{ mm}} `], so the unit *mm* will cancel:
 
@@ -103,7 +103,7 @@ Next, to convert [` [$mm2] `] millimeters to meters, we will use [` \frac{1 \tex
 \end{aligned}
     ``]
 
-*Solution:* [`` [$mm2] \text{ mm} = [$m2] \text{ m} ``]
+[`` [$mm2] \text{ mm} = [$m2] \text{ m} ``]
 
 ####Proportion Method  
 
@@ -121,7 +121,7 @@ Assume [`[$m1] \text{ m} = x \text{ mm} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$m1] \text{ m} = [$mm1] \text{ mm} ``]
+[`` [$m1] \text{ m} = [$mm1] \text{ mm} ``]
 
 Next, assume [`x \text{ m} = [$mm2] \text{ mm} `]. We have:
 
@@ -137,7 +137,7 @@ Next, assume [`x \text{ m} = [$mm2] \text{ mm} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$mm2] \text{ mm} = [$m2] \text{ m} ``]
+[`` [$mm2] \text{ mm} = [$m2] \text{ m} ``]
 
 ####Shortcut  
 

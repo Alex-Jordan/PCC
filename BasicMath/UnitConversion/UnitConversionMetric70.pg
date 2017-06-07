@@ -83,7 +83,7 @@ To convert [` [$dm1] `] decimeters to centimeters, we will use [` \frac{10 \text
 \end{aligned}
     ``]
 
-*Solution:* [`` [$dm1] \text{ dm} = [$cm1] \text{ cm} ``]
+[`` [$dm1] \text{ dm} = [$cm1] \text{ cm} ``]
 
 Next, to convert [` [$cm2] `] centimeters to decimeters, we will use [` \frac{1 \text{ dm}}{10 \text{ cm}} `], so the unit *cm* will cancel:
 
@@ -98,7 +98,7 @@ Next, to convert [` [$cm2] `] centimeters to decimeters, we will use [` \frac{1 
 \end{aligned}
     ``]
 
-*Solution:* [`` [$cm2] \text{ cm} = [$dm2] \text{ dm} ``]
+[`` [$cm2] \text{ cm} = [$dm2] \text{ dm} ``]
 
 ####Proportion Method  
 
@@ -116,7 +116,7 @@ Assume [`[$dm1] \text{ dm} = x \text{ cm} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$dm1] \text{ dm} = [$cm1] \text{ cm} ``]
+[`` [$dm1] \text{ dm} = [$cm1] \text{ cm} ``]
 
 Next, assume [`x \text{ dm} = [$cm2] \text{ cm} `]. We have:
 
@@ -132,7 +132,7 @@ Next, assume [`x \text{ dm} = [$cm2] \text{ cm} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$cm2] \text{ cm} = [$dm2] \text{ dm} ``]
+[`` [$cm2] \text{ cm} = [$dm2] \text{ dm} ``]
 
 ####Shortcut  
 

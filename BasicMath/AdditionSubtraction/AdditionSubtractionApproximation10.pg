@@ -66,7 +66,7 @@ Do the following problem without using a calculator. Round numbers to the tens p
 
 [$name] is shopping. [@ucfirst($pronoun)@] plans to purchase a jacket for [`[$aC]`] and a pair of shoes for [`[$bC]`]. Approximately how much money will [$pronoun] spend?
 
-*Solution:* [$name] will spend approximately [__________]{$ansC}.
+[$name] will spend approximately [__________]{$ansC}.
 
 END_PGML
 

@@ -79,7 +79,7 @@ When we add a negative number with a positive number, we need to find the differ
 
 Next, since the absolute value of [`[$decimal0]`] is bigger than that of [`[$decimal1]`], the result is negative.
 
-*Solution:* [` [$decimal0] + [$decimal1] = [$dif] `]
+[` [$decimal0] + [$decimal1] = [$dif] `]
 
 END_PGML_SOLUTION
 

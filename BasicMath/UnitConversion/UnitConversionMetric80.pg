@@ -83,7 +83,7 @@ To convert [` [$cm1] `] centimeters to millimeters, we will use [` \frac{10 \tex
 \end{aligned}
     ``]
 
-*Solution:* [`` [$cm1] \text{ cm} = [$mm1] \text{ mm} ``]
+[`` [$cm1] \text{ cm} = [$mm1] \text{ mm} ``]
 
 Next, to convert [` [$mm2] `] millimeters to centimeters, we will use [` \frac{1 \text{ cm}}{10 \text{ mm}} `], so the unit *mm* will cancel:
 
@@ -98,7 +98,7 @@ Next, to convert [` [$mm2] `] millimeters to centimeters, we will use [` \frac{1
 \end{aligned}
     ``]
 
-*Solution:* [`` [$mm2] \text{ mm} = [$cm2] \text{ cm} ``]
+[`` [$mm2] \text{ mm} = [$cm2] \text{ cm} ``]
 
 ####Proportion Method  
 
@@ -116,7 +116,7 @@ Assume [`[$cm1] \text{ cm} = x \text{ mm} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$cm1] \text{ cm} = [$mm1] \text{ mm} ``]
+[`` [$cm1] \text{ cm} = [$mm1] \text{ mm} ``]
 
 Next, assume [`x \text{ cm} = [$mm2] \text{ mm} `]. We have:
 
@@ -132,7 +132,7 @@ Next, assume [`x \text{ cm} = [$mm2] \text{ mm} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$mm2] \text{ mm} = [$cm2] \text{ cm} ``]
+[`` [$mm2] \text{ mm} = [$cm2] \text{ cm} ``]
 
 ####Shortcut  
 

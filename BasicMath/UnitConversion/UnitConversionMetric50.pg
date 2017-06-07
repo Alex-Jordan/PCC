@@ -83,7 +83,7 @@ To convert [` [$m1] `] meters to decimeters, we will use [` \frac{10 \text{ dm}}
 \end{aligned}
     ``]
 
-*Solution:* [`` [$m1] \text{ m} = [$dm1] \text{ dm} ``]
+[`` [$m1] \text{ m} = [$dm1] \text{ dm} ``]
 
 Next, to convert [` [$dm2] `] decimeters to meters, we will use [` \frac{1 \text{ m}}{10 \text{ dm}} `], so the unit *dm* will cancel:
 
@@ -98,7 +98,7 @@ Next, to convert [` [$dm2] `] decimeters to meters, we will use [` \frac{1 \text
 \end{aligned}
     ``]
 
-*Solution:* [`` [$dm2] \text{ dm} = [$m2] \text{ m} ``]
+[`` [$dm2] \text{ dm} = [$m2] \text{ m} ``]
 
 ####Proportion Method  
 
@@ -116,7 +116,7 @@ Assume [`[$m1] \text{ m} = x \text{ dm} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$m1] \text{ m} = [$dm1] \text{ dm} ``]
+[`` [$m1] \text{ m} = [$dm1] \text{ dm} ``]
 
 Next, assume [`x \text{ m} = [$dm2] \text{ dm} `]. We have:
 
@@ -132,7 +132,7 @@ Next, assume [`x \text{ m} = [$dm2] \text{ dm} `]. We have:
 \end{aligned}
     ``]
 
-*Solution:* [`` [$dm2] \text{ dm} = [$m2] \text{ m} ``]
+[`` [$dm2] \text{ dm} = [$m2] \text{ m} ``]
 
 ####Shortcut  
 
