@@ -39,14 +39,6 @@ Context("Numeric");
 
 $unit = "ft";
 
-$xmin = 0;         #The viewing window
-$xmax = 30;
-$ymin = 0;
-$ymax = 30;
-
-$labelShift = $xmax/40;
-$cornersize = 0.8;
-
 $base = random(15,25,1);
 do {
    $heightRectangle = random(8,14,1);
@@ -55,6 +47,15 @@ do {
 $xcross = $base/2;
 $leftSide = round(sqrt($height**2+$xcross**2));
 $rightSide = $leftSide;
+
+$xmin = 0;         #The viewing window
+$max = max($heightRectangle+$heightTriangle,$base);
+$xmax = $max*1.2;
+$ymin = 0;
+$ymax = $xmax;
+
+$labelShift = $xmax/40;
+$cornersize = 0.8;
 
 $perimeter = $base + $leftSide + $rightSide+2*$heightRectangle;
 $area = $base*$heightTriangle/2+$base*$heightRectangle;
@@ -82,10 +83,10 @@ $picture = init_graph($xmin,$ymin,$xmax,$ymax,
       pixels=>[400,400]);
 
 $picture->lb( new Label($x[1], $y[0]-$labelShift,"$baseU",'black','center','middle'));
-$picture->lb( new Label($x[1]+$labelShift,($y[1]+$y[2])/2,"$heightTriangleU",'black','left','middle'));
-$picture->lb( new Label($x[2]+$labelShift,($y[0]+$y[1])/2,"$heightRectangleU",'black','left','middle'));
+$picture->lb( new Label($x[1]+$labelShift,($y[1]+$y[2])/2,"$heightTriangleU",'black','center','middle'));
+$picture->lb( new Label($x[2]-$labelShift,($y[0]+$y[1])/2,"$heightRectangleU",'black','right','middle'));
 $picture->lb( new Label(($x[0]+$x[1])/2-$labelShift, ($y[1]+$y[2])/2,"$leftSideU",'black','right','middle'));
-$picture->lb( new Label(($x[1]+$x[2])/2+2*$labelShift,($y[1]+$y[2])/2,"$rightSideU",'black','left','middle'));
+$picture->lb( new Label(($x[1]+$x[2])/2+$labelShift,($y[1]+$y[2])/2,"$rightSideU",'black','left','middle'));
 
 $picture->new_color("darkblue",  100,100,255); 
 

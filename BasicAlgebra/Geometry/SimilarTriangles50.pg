@@ -53,7 +53,7 @@ $baseShort[0] = $ratio*$baseShort[1];
 $baseLong[0] = $ratio*$baseLong[1];
 $hypotenuse[0] = $ratio*$hypotenuse[1];
 
-$cushion = 15;
+$cushion = 3;
 
 $xmin = 0;         #The viewing window
 $xmax = $baseLong[0]+2*$cushion;
@@ -184,12 +184,12 @@ do {$orientation[1] = random(0,7,1);} until ($orientation[0]!=$orientation[1]);
 
 
 $picture->lb( new Label( 
-   ($ax[0][$orientation[0]]+$cx[0][$orientation[0]])/2+$acxShift[0][$orientation[0]], 
+   ($ax[0][$orientation[0]]+$cx[0][$orientation[0]])/2-$acxShift[0][$orientation[0]], 
    ($ay[0][$orientation[0]]+$cy[0][$orientation[0]])/2+$acyShift[0][$orientation[0]], 
    "x ft",'black','center','middle'));
 $picture->lb( new Label( 
    ($bx[0][$orientation[0]]+$cx[0][$orientation[0]])/2+$bcxShift[0][$orientation[0]], 
-   ($by[0][$orientation[0]]+$cy[0][$orientation[0]])/2+$bcyShift[0][$orientation[0]],
+   ($by[0][$orientation[0]]+$cy[0][$orientation[0]])/2-$bcyShift[0][$orientation[0]],
    "$baseLong[0] ft",'black','center','middle'));
 
 $picture->lb( new Label( 
