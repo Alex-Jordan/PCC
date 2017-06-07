@@ -50,19 +50,23 @@ $xacross1 = cos($angle)*$leftSide1;
 $height2 = sin($angle)*$leftSide2;
 $xacross2 = cos($angle)*$leftSide2;
 
+$cushion = 2;
+
 $xmin = 0;         #The viewing window
-$xmax = $base1+10;
+$max1 = max($base1,$xacross1);
+$max2 = max($base2,$xacross2);
+$xmax = $max1*1.2;
 $ymin = 0;
-$ymax = $height1+$height2+15;
+$ymax = $height1+$height2+3*$cushion;
 
 $xLabelShift = $xmax/40;
 $yLabelShift = $ymax/40;
 
-@x1 = (($xmax-$base1)/2,($xmax+$base1)/2);
-@y1 = (5,5+$height1);
+@x1 = (($xmax-$max1)/2,($xmax+$max1)/2);
+@y1 = ($cushion,$cushion+$height1);
 
-@x2 = (($xmax-$base2)/2,($xmax+$base2)/2);
-@y2 = (10+$height1,10+$height1+$height2);
+@x2 = (($xmax-$max2)/2,($xmax+$max2)/2);
+@y2 = (2*$cushion+$height1,2*$cushion+$height1+$height2);
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
       pixels=>[400,400]);

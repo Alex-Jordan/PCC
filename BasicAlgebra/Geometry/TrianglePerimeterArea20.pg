@@ -47,7 +47,7 @@ $height = $factor*$ar_triples[$a][1];
 $hypotenuse = $factor*$ar_triples[$a][2];
 
 $xmin = 0;         #The viewing window
-$xmax = 5*(int($height/5)+2);
+$xmax = $height*1.2;
 $ymin = 0;
 $ymax = $xmax;
 
