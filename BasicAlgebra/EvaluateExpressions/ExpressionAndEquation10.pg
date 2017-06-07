@@ -28,7 +28,7 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "parserRadioButtons.pl",
+  "parserPopUp.pl",
   "PGML.pl",
   "PGcourse.pl",
 );
@@ -65,10 +65,10 @@ for my $i (0..7) {
   $inverse{$temp} = $i;
 };
 
-@radios = ( );
+@popups = ( );
 for my $i (0..7) {
-   $radios[$i] = RadioButtons(
-     ["True","False"],
+   $popups[$i] = PopUp(
+     ['?',"True","False"],
      $questions[$scramble{$i}][1], # correct answer
      last => ["False"], # can be a list
    );
@@ -82,50 +82,24 @@ BEGIN_PGML
 
 Choose True or False for the following questions about the difference between expressions and equations.
 
-1) [`[$questions[$scramble{0}][0]]`]
+1) [`[$questions[$scramble{0}][0]]`]    [__]{$popups[0]}
 
-    [@$radios[0]->buttons()@]*
+2) [`[$questions[$scramble{1}][0]]`]    [__]{$popups[1]}
 
-2) [`[$questions[$scramble{1}][0]]`]
+3) [`[$questions[$scramble{2}][0]]`]    [__]{$popups[2]}
 
-    [@$radios[1]->buttons()@]*
+4) [`[$questions[$scramble{3}][0]]`]    [__]{$popups[3]}
 
-3) [`[$questions[$scramble{2}][0]]`]
+5) [`[$questions[$scramble{4}][0]]`]    [__]{$popups[4]}
 
-    [@$radios[2]->buttons()@]*
+6) [`[$questions[$scramble{5}][0]]`]    [__]{$popups[5]}
 
-4) [`[$questions[$scramble{3}][0]]`]
+7) [`[$questions[$scramble{6}][0]]`]    [__]{$popups[6]}
 
-    [@$radios[3]->buttons()@]*
-
-5) [`[$questions[$scramble{4}][0]]`]
-
-    [@$radios[4]->buttons()@]*
-
-6) [`[$questions[$scramble{5}][0]]`]
-
-    [@$radios[5]->buttons()@]*
-
-7) [`[$questions[$scramble{6}][0]]`]
-
-    [@$radios[6]->buttons()@]*
-
-8) [`[$questions[$scramble{7}][0]]`]
-
-    [@$radios[7]->buttons()@]*
+8) [`[$questions[$scramble{7}][0]]`]    [__]{$popups[7]}
 
 END_PGML
 
-########Begin more complicated answer processing (if needed)############
-
-ANS( radio_cmp( $radios[0]->correct_ans() ) );
-ANS( radio_cmp( $radios[1]->correct_ans() ) );
-ANS( radio_cmp( $radios[2]->correct_ans() ) );
-ANS( radio_cmp( $radios[3]->correct_ans() ) );
-ANS( radio_cmp( $radios[4]->correct_ans() ) );
-ANS( radio_cmp( $radios[5]->correct_ans() ) );
-ANS( radio_cmp( $radios[6]->correct_ans() ) );
-ANS( radio_cmp( $radios[7]->correct_ans() ) );
 
 ########Begin solution.############
 
@@ -156,21 +130,21 @@ The value [`x=0`] is not a solution of the equation [`x+1=2`].
 
 Below are solutions of those 8 problems:
 
-1) [@$radios[0]->correct_ans()@]*
+1) [@$popups[0]->correct_ans()@]*
 
-2) [@$radios[1]->correct_ans()@]*
+2) [@$popups[1]->correct_ans()@]*
 
-3) [@$radios[2]->correct_ans()@]*
+3) [@$popups[2]->correct_ans()@]*
 
-4) [@$radios[3]->correct_ans()@]*
+4) [@$popups[3]->correct_ans()@]*
 
-5) [@$radios[4]->correct_ans()@]*
+5) [@$popups[4]->correct_ans()@]*
 
-6) [@$radios[5]->correct_ans()@]*
+6) [@$popups[5]->correct_ans()@]*
 
-7) [@$radios[6]->correct_ans()@]*
+7) [@$popups[6]->correct_ans()@]*
 
-8) [@$radios[7]->correct_ans()@]*
+8) [@$popups[7]->correct_ans()@]*
 
 
 END_PGML_SOLUTION
