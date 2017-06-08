@@ -134,11 +134,7 @@ END_TEXT
 Context()->normalStrings;
 
 BEGIN_PGML
-Please type:  
-
-* *inf* for [`\infty`],
-* *>=* for [`\geq`],
-* and *<=* for [`\leq`] 
+[@KeyboardInstructions(q!Please type [|INF|]* for [`\infty`], [|<=|]* for [`\leq`], and [|>=|]* for [`\geq`].!)@]** 
 
     Write this inequality in set-builder notation: [_____________________]
 
