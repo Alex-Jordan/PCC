@@ -32,6 +32,7 @@ loadMacros(
   "PGML.pl",
 #  "parserPopUp.pl",
 #  "contextInequalitySetBuilder.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
