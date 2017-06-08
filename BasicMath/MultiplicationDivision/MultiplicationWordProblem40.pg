@@ -79,7 +79,7 @@ BEGIN_PGML
 
 In total, how many minutes of [$event] will [$name] play in [`[$weeks]`] weeks?
 
-Solution: [$name] will play [_______]{$minutesTotal} minutes of [$event] in [`[$weeks]`] weeks.
+[$name] will play [_______]{$minutesTotal} minutes of [$event] in [`[$weeks]`] weeks.
 
 END_PGML
 

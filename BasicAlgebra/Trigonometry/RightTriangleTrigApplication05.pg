@@ -196,7 +196,7 @@ A straight road connects two towns, which are built on a slope with [`[$alpha]`]
 
 Round your answer to two decimal places if needed.
 
-Solution: The difference of those two towns' elevation is [___________]{$baseU}.
+The difference of those two towns' elevation is [___________]{$baseU}.
 
 END_PGML
 
@@ -237,7 +237,7 @@ Since we need to relate the hypotenuse and the angle's opposite leg, we choose t
 \end{aligned}
     ``]
 
-Solution: The difference of those two towns' elevation is [`[$baseU]`].
+The difference of those two towns' elevation is [`[$baseU]`].
 
 END_PGML_SOLUTION
 

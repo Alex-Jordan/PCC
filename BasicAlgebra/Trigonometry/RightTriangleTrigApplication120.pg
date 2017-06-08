@@ -222,7 +222,7 @@ A building has two storeys with unequal heights. From an observation point on th
 
 Round your answer to two decimal places if needed.
 
-Solution: The height of the second storey is [___________]{$ansU}.
+The height of the second storey is [___________]{$ansU}.
 
 END_PGML
 
@@ -270,7 +270,7 @@ Now we can calculate the height of the second storey:
 \end{aligned}
     ``]
 
-Solution: The second storey's height is approximately [`[$ansU]`].
+The second storey's height is approximately [`[$ansU]`].
 
 END_PGML_SOLUTION
 

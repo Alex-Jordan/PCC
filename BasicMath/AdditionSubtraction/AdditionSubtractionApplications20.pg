@@ -56,7 +56,7 @@ BEGIN_PGML
 
 [$name] is working to pass a local measure, and [$pronoun] needs to collect a total of [`[$total]`] signatures in three days. On the first day, [$pronoun] collected [`[$a]`] signatures; on the second day, [$pronoun] collected [`[$b]`]. To complete her job, how many more signatures does [$pronoun] need to collect on the third day?
 
-Solution: [$name] needs to collect [___________]{$ans} more signatures on the third day.
+[$name] needs to collect [___________]{$ans} more signatures on the third day.
 
 END_PGML
 

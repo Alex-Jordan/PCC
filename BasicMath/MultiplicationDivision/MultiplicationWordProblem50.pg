@@ -55,7 +55,7 @@ BEGIN_PGML
 
 How many pages will [$name2] read in [`[$days]`] days?
 
-Solution: [$name2] will read [_______]{$total} pages in [`[$days]`] days.
+[$name2] will read [_______]{$total} pages in [`[$days]`] days.
 
 END_PGML
 

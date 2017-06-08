@@ -189,7 +189,7 @@ Please type:
 
     [`` [$left0] [$symbol0] [$right0] \text{ or } [$left1] [$symbol1] [$right1] ``]
 
-Solution: [___________]{$ans}
+[___________]{$ans}
 
 END_PGML
 

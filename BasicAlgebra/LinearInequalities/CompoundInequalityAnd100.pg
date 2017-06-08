@@ -163,7 +163,7 @@ Please type:
 
     [`` [$left0] [$symbol0Original] [$right0] \text{ and } [$left1] [$symbol1] [$right1] ``]
 
-Solution: [___________]{$ans}
+[___________]{$ans}
 
 END_PGML
 

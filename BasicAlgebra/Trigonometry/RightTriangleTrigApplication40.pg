@@ -193,7 +193,7 @@ A guy wire needs to be installed to support a pole. The end of the wire on the p
 
 Round your answer to two decimal places if needed.
 
-Solution: On the ground, the distance from the guy wire to the pole is [___________]{$heightU}.
+On the ground, the distance from the guy wire to the pole is [___________]{$heightU}.
 
 END_PGML
 
@@ -237,7 +237,7 @@ Since we need to relate the angle's opposite and adjacent legs, we choose to use
 \end{aligned}
     ``]
 
-Solution: On the ground, the distance from the guy wire to the pole will be approximately [`[$heightU]`].
+On the ground, the distance from the guy wire to the pole will be approximately [`[$heightU]`].
 
 END_PGML_SOLUTION
 

@@ -192,7 +192,7 @@ A guy wire needs to be installed to support a pole. The end of the wire on the p
 
 Round your answer to two decimal places if needed.
 
-Solution: The guy wire's length will be [___________]{$hypotenuseU}.
+The guy wire's length will be [___________]{$hypotenuseU}.
 
 END_PGML
 
@@ -234,7 +234,7 @@ Since we need to relate the hypotenuse and the angle's opposite leg, we choose t
 \end{aligned}
     ``]
 
-Solution: The guy wire's length will be approximately [`[$hypotenuseU]`].
+The guy wire's length will be approximately [`[$hypotenuseU]`].
 
 END_PGML_SOLUTION
 

@@ -62,7 +62,7 @@ BEGIN_PGML
 
 [$name] is gambling. [@ucfirst($pronoun)@] won [`[$aC]`] in the first game, lost [`[$bC]`] in the second game, and won [`[$cC]`] in the third game. Altogether, how much money did [$pronoun] win?
 
-Solution: Altogether, [$name] won [__________]{$ansC}.
+Altogether, [$name] won [__________]{$ansC}.
 
 END_PGML
 

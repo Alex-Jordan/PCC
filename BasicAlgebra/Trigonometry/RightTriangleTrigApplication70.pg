@@ -196,7 +196,7 @@ A spotlight will be installed on a wall, shining light at a spot [`[$baseU]`] fr
 
 Round your answer to two decimal places if needed.
 
-Solution: The spotlight should be installed on the wall at the height of [___________]{$heightU}.
+The spotlight should be installed on the wall at the height of [___________]{$heightU}.
 
 END_PGML
 
@@ -242,7 +242,7 @@ Since we need to relate the angle's opposite and adjacent legs, we choose to use
 \end{aligned}
     ``]
 
-Solution: The spotlight should be installed on the wall at the height of approximately [`[$heightU]`].
+The spotlight should be installed on the wall at the height of approximately [`[$heightU]`].
 
 END_PGML_SOLUTION
 

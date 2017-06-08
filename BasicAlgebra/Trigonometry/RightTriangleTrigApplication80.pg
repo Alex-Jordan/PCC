@@ -202,7 +202,7 @@ A lighthouse has a spotlight on its top, and the spotlight is shining light on a
 
 Round your answer to two decimal places if needed.
 
-Solution: The horizontal distance from the boat to the lighthouse is [___________]{$heightU}.
+The horizontal distance from the boat to the lighthouse is [___________]{$heightU}.
 
 END_PGML
 
@@ -248,7 +248,7 @@ Since we need to relate the angle's opposite and adjacent legs, we choose to use
 \end{aligned}
     ``]
 
-Solution: The horizontal distance from the boat to the lighthouse is [`[$heightU]`].
+The horizontal distance from the boat to the lighthouse is [`[$heightU]`].
 
 END_PGML_SOLUTION
 

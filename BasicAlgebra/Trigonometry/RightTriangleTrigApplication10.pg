@@ -192,7 +192,7 @@ A [`[$hypotenuse]`]-feet ladder is leaning against the wall. The base of the lad
 
 Round your answer to two decimal places if needed.
 
-Solution: The ladder can reach [___________]{$baseU} on the wall.
+The ladder can reach [___________]{$baseU} on the wall.
 
 END_PGML
 

@@ -202,7 +202,7 @@ An airplane will land at an airport. The airplane is flying at the height of [`[
 
 Round your answer to two decimal places if needed.
 
-Solution: The horizontal distance from the airplane to the airport is [___________]{$heightU}.
+The horizontal distance from the airplane to the airport is [___________]{$heightU}.
 
 END_PGML
 
@@ -248,7 +248,7 @@ Since we need to relate the angle's opposite and adjacent legs, we choose to use
 \end{aligned}
     ``]
 
-Solution: The horizontal distance from the airplane to the airport is [`[$heightU]`].
+The horizontal distance from the airplane to the airport is [`[$heightU]`].
 
 END_PGML_SOLUTION
 

@@ -54,7 +54,7 @@ BEGIN_PGML
 
 A tank can drain [`[$totalU]`] (liters) of water in [`[$minutesU]`] minutes. How many liters of water does the tank drain per minute?
 
-Solution: The tank drains water at the rate of [____________]{$rateU}.
+The tank drains water at the rate of [____________]{$rateU}.
 
 Use *L* for liters, *min* for minutes, and *L/min* for liters per minute.
 

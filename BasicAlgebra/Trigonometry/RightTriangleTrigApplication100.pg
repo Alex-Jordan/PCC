@@ -184,7 +184,7 @@ A ramp is set up from a truck's trunk to the ground. The ramp's end at the edge 
 
 Round your answer to two decimal places if needed.
 
-Solution: The length of the ramp is [___________]{$hypotenuseU}.
+The length of the ramp is [___________]{$hypotenuseU}.
 
 END_PGML
 
@@ -226,7 +226,7 @@ Since we need to relate the hypotenuse and the angle's opposite leg, we choose t
 \end{aligned}
     ``]
 
-Solution: The length of the ramp is approximately [`[$hypotenuseU]`].
+The length of the ramp is approximately [`[$hypotenuseU]`].
 
 END_PGML_SOLUTION
 

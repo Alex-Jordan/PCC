@@ -233,7 +233,7 @@ An airplane is flying at the height of [`[$baseU]`]. The airplane can see both C
 
 Round your answer to two decimal places if needed.
 
-Solution: The distance between those two cities is [___________]{$ansU}.
+The distance between those two cities is [___________]{$ansU}.
 
 END_PGML
 
@@ -287,7 +287,7 @@ Now we can calculate the distance between those two cities:
 \end{aligned}
     ``]
 
-Solution: The distance between those two cities is approximately [`[$ansU]`].
+The distance between those two cities is approximately [`[$ansU]`].
 
 END_PGML_SOLUTION
 

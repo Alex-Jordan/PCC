@@ -49,7 +49,7 @@ BEGIN_PGML
 
 A team is climbing a mountain, which is [`[$total]`] meters high. The team plans to climb [`[$rate]`] meters every day. How many days would it take the team to climb to the top?
 
-Solution: It would take the team [____________]{$days} days to climb to the top.
+It would take the team [____________]{$days} days to climb to the top.
 
 END_PGML
 

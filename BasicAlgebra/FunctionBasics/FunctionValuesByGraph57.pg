@@ -170,10 +170,10 @@ The graphs of functions [`f`] (in red) and [`g`] (in blue) are shown below.
 Use interval notation in your answers. Use *inf* to represent infinity.
 
     a. Solve [`` f(x) \gt g(x) ``]  
-    Solution: [_________]{$ans1}
+    [_________]{$ans1}
 
     a. Solve [`` f(x) \le g(x) ``]  
-    Solution: [_________]{$ans2}
+    [_________]{$ans2}
 
 END_PGML
 

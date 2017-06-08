@@ -49,7 +49,7 @@ BEGIN_PGML
 
 An archeology team is studying a buried city. The team can cover [`[$rate]`] square meters every day. The whole area covers about [`[$total]`] square meters. How many days will it take the team to complete studying the whole area?
 
-Solution: It would take the team [____________]{$days} days to cover the whole area.
+It would take the team [____________]{$days} days to cover the whole area.
 
 END_PGML
 

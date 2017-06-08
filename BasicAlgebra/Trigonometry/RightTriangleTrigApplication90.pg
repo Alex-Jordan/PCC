@@ -214,7 +214,7 @@ A person is flying a kite. The string is fully extended at [`[$hypotenuseU]`]. T
 
 Round your answer to two decimal places if needed.
 
-Solution: The height of the kite is [___________]{$ansU}.
+The height of the kite is [___________]{$ansU}.
 
 END_PGML
 
