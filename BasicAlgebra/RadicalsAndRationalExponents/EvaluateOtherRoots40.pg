@@ -61,7 +61,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Evaluate [`` \sqrt[3]{[$num]} ``] or state that the expression is *not a real number*.
+Evaluate [`` \sqrt[3]{[$num]} ``] or state that the expression is [|not a real number|]*.
 
     [`` \sqrt[3]{[$num]}= ``] [______________]{$answer}.
 

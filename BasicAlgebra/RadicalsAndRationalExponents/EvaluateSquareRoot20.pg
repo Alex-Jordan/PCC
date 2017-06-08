@@ -62,7 +62,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Evaluate [:sqrt([$sq]):] or state that the expression is *not a real number*.
+Evaluate [:sqrt([$sq]):] or state that the expression is [|not a real number|]*.
 
 
 
