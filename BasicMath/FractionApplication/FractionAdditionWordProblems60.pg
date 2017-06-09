@@ -117,10 +117,12 @@ $alt = "This is a pie chart about a school population breakdown by race. The sch
 
 BEGIN_PGML
 
+The pie chart represents a school's student population. 
+
 >>[@image( insertGraph($gr), width=>400, 
     height=>400, tex_size=>800, extra_html_tags => "alt = '$alt' title = '$alt'")@]*<<
 
-The pie chart represents a school's student population. Fill in the blank with a fraction.
+Fill in the blank with a fraction.
 
 Together, white and black students make up [__________]{$sum} of the school's population.
 
