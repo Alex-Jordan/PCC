@@ -198,7 +198,7 @@ if ($direction eq 'left') {
 
 BEGIN_PGML
 
-Solve this compound inequality, and write your answer in *interval notation*.
+Solve this compound inequality, and write your answer in _interval notation_.
 
 Please type:  
 

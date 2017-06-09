@@ -143,7 +143,7 @@ $ALT = "Graph of a number line. The whole number line is shaded. Above the numbe
 
 BEGIN_PGML
 
-Solve this compound inequality, and write your answer in *interval notation*.
+Solve this compound inequality, and write your answer in _interval notation_.
 
 [@KeyboardInstructions(q!Please type [|INF|]* for [`\infty`], [|U|]* for the union symbol [`\cup`], and [|DNE|]* if there are no solutions.!)@]**
 
