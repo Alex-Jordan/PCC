@@ -81,24 +81,20 @@ $ansP = NumberWithUnits("$perimeter cm");
 $ansA = NumberWithUnits("$area cm^2");
 $baseWithUnit = NumberWithUnits("$base cm");
 
-
+$alt = "a square with a base of $base cm";
 
 ##############################################
 
 TEXT(beginproblem());
 
-BEGIN_TEXT
-
-Find the perimeter and area of the square.$PAR
-
-$BCENTER
-\{ image(insertGraph( $picture  ), tex_size=>400, height=>400, width=>400, extra_html_tags => 'alt = "a square with a base of $base cm" title = "a square with a base of $base cm"') \}
-$ECENTER
-$PAR
-
-END_TEXT
 BEGIN_PGML
-    Its perimeter is [_____________]{$ansP} and its area is [_____________]{$ansA}. 
+
+Find the perimeter and area of the square.
+
+>>[@ image(insertGraph( $picture  ), tex_size=>400, height=>400, width=>400, extra_html_tags => "alt = '$alt' title = '$alt' ") @]*<<
+
+a.    The square's perimeter is [_____________]{$ansP}.
+a.    The square's area is [_____________]{$ansA}. 
 
 (Use *cm* for centimeters and *cm[$CARET]2* for square centimeters.)
 
@@ -114,7 +110,7 @@ We usually use the following formulas for squares:
 
     [` \text{square area} = \text{(side length)}^{2} `]
 
-----
+a.
 For the given square, we have:
 
     [``\begin{aligned}
@@ -125,7 +121,8 @@ For the given square, we have:
      \end{aligned}``]
 
 Don't forget the length unit [`\textrm{cm}`].  
-----
+
+b.
 Also,  
     [``\begin{aligned}
        \text{square area}

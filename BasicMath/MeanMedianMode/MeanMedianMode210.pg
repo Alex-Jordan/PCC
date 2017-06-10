@@ -104,9 +104,9 @@ Some students conducted a survey on some people's weekly income:
 
     [`` [$listComma] ``]
 
-The mean of these people's weekly income is [___________]{$mean}.
+a.    The mean of these people's weekly income is [___________]{$mean}.
 
-The median of these people's weekly income is [___________]{$median}.
+a.    The median of these people's weekly income is [___________]{$median}.
 
 Which number, mean or median, is a better way to represent these people's weekly income?
 

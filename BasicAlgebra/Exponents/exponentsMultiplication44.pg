@@ -69,10 +69,12 @@ TEXT(beginproblem());
 BEGIN_PGML
 Use the properties of exponents to simplify the following:
 
-1)
+a.
+
      [``[$func1]=``][_____________]{$ans1}   
 
-2)
+b.
+
      [``[$func2]=``][_____________]{$ans2}   
 END_PGML
 
@@ -82,13 +84,15 @@ $s1 = Compute("$var**$m")->reduce;
 
 BEGIN_PGML_SOLUTION
 
-1) 
+a.
+
     [`\begin{aligned}
    [$func1] &= ([$a])^[$n]([$s1])^[$n] \\
    &= [$ans1]
        \end{aligned}`]
 
-2) 
+b.
+
     [`\begin{aligned}
    [$func2] &= -([$b])^[$n]([$s1])^[$n] \\
    &= [$ans2]

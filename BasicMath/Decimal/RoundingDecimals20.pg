@@ -69,13 +69,13 @@ BEGIN_PGML
 
 Round the decimal [`[$dec]`] to the specified places.
 
-Round to a whole number: [___________]{$ans1}
+a.    Round to a whole number: [___________]{$ans1}
 
-Round to the tenth place: [___________]{$ans2}
+a.    Round to the tenth place: [___________]{$ans2}
 
-Round to the hundredth place: [___________]{$ans3}
+a.    Round to the hundredth place: [___________]{$ans3}
 
-Round to the thousandth place: [___________]{$ans4}
+a.    Round to the thousandth place: [___________]{$ans4}
 
 END_PGML
 

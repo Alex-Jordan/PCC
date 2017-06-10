@@ -70,9 +70,9 @@ BEGIN_PGML
 
 Do the following multiplication problems without using a calculator.
 
-a)    [`` [$a1] \cdot [$b1] = ``]  [________]{$ans1} 
+a.    [`` [$a1] \cdot [$b1] = ``]  [________]{$ans1} 
 
-b)    [`` [$a2] \cdot [$b2] = ``]  [________]{$ans2} 
+a.    [`` [$a2] \cdot [$b2] = ``]  [________]{$ans2} 
 
 END_PGML
 

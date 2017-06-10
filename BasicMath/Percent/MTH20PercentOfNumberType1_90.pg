@@ -56,9 +56,9 @@ BEGIN_PGML
 
 Mental math practice:
 
-a) [` [$per0]% `] of [` [$num] `] is [_______]{$ans0}?
-b) [` [$per1]% `] of [` [$num] `] is [_______]{$ans1}?
-c) [` [$per2]% `] of [` [$num] `] is [_______]{$ans2}?
+a. [` [$per0]% `] of [` [$num] `] is [_______]{$ans0}?
+a. [` [$per1]% `] of [` [$num] `] is [_______]{$ans1}?
+a. [` [$per2]% `] of [` [$num] `] is [_______]{$ans2}?
 
 END_PGML
 

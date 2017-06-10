@@ -79,7 +79,7 @@ Without using a calculator, round the first number to a number easier to calcula
 
 a.    [`` [$a1Close] \cdot [$b] \approx``] [_______]{$answer1}
 
-b.    [`` [$a2Close] \cdot [$b2Close] \approx``] [_______]{$answer2}
+a.    [`` [$a2Close] \cdot [$b2Close] \approx``] [_______]{$answer2}
 
 END_PGML
 

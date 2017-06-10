@@ -93,9 +93,9 @@ Here is a list of some cities' population:
 
     [`` [$listComma] ``]
 
-The mean of these cities' population is [___________]{$mean}.
+a.    The mean of these cities' population is [___________]{$mean}.
 
-The median of these cities' population is [___________]{$median}.
+a.    The median of these cities' population is [___________]{$median}.
 
 Which number, mean or median, is a better way to represent these cities' population?
 

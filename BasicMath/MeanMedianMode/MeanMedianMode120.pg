@@ -78,9 +78,9 @@ Find the mean and median of this group of numbers:
 
     [`` [$listComma] ``]
 
-The mean of this list of numbers is [___________]{$mean}.
+a.    The mean of this list of numbers is [___________]{$mean}.
 
-The median of this list of numbers is [___________]{$median}.
+a.    The median of this list of numbers is [___________]{$median}.
 
 END_PGML
 

@@ -70,7 +70,7 @@ Without using a calculator, round numbers until the calculation is easy, and the
 
 a.    [`` [$a1Close] \div [$b] \approx``] [_______]{$ans1}
 
-b.    [`` [$a2Close] \div [$b2Close] \approx``] [_______]{$ans2}
+a.    [`` [$a2Close] \div [$b2Close] \approx``] [_______]{$ans2}
 
 END_PGML
 

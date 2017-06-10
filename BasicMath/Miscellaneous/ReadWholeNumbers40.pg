@@ -78,11 +78,11 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-In the number [`[$num]`]
+In the number [`[$num]`]:
 
-    the digit in [$names[$place1]] is [_______]{$digits[$place1]},
+a.    The digit in [$names[$place1]] is [_______]{$digits[$place1]},
 
-    and the digit in [$names[$place2]] is [_______]{$digits[$place2]}.
+a.    The digit in [$names[$place2]] is [_______]{$digits[$place2]}.
 
 END_PGML
 

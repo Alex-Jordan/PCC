@@ -63,11 +63,11 @@ BEGIN_PGML
 
 Do the following subtractions without using a calculator.
 
-a)    [`` [$num11] - [$num12] = ``]  [________]{$ans1} 
+a.    [`` [$num11] - [$num12] = ``]  [________]{$ans1} 
 
-a)    [`` [$num21] - [$num22] = ``]  [________]{$ans2} 
+a.    [`` [$num21] - [$num22] = ``]  [________]{$ans2} 
 
-a)    [`` [$num31] - [$num32] = ``]  [________]{$ans3} 
+a.    [`` [$num31] - [$num32] = ``]  [________]{$ans3} 
 
 END_PGML
 
@@ -76,11 +76,11 @@ END_PGML
 BEGIN_PGML_SOLUTION
 
 
-a)    [`` [$num11] - [$num12] = [$ans1] ``]
+a.    [`` [$num11] - [$num12] = [$ans1] ``]
 
-a)    [`` [$num21] - [$num22] = [$ans2] ``]
+a.    [`` [$num21] - [$num22] = [$ans2] ``]
 
-a)    [`` [$num31] - [$num32] = [$ans3] ``] 
+a.    [`` [$num31] - [$num32] = [$ans3] ``] 
 
 
 END_PGML_SOLUTION

@@ -74,7 +74,7 @@ Without using a calculator, round numbers until the calculation is easy, and the
 
 a.    [`` [$a1Close] \cdot \frac{1}{[$b]} \approx``] [_______]{$ans1}
 
-b.    [`` [$a2Close] \cdot \frac{1}{[$b2Close]} \approx``] [_______]{$ans2}
+a.    [`` [$a2Close] \cdot \frac{1}{[$b2Close]} \approx``] [_______]{$ans2}
 
 END_PGML
 

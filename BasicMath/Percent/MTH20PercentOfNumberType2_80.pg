@@ -69,8 +69,8 @@ BEGIN_PGML
 
 Fill in the blanks with percent. Don't use calculator or paper/pencil. Use mental math.
 
-a) [`[$part0]`] is [______]{$ans0} of [` [$num0] `]?
-b) [`[$part1]`] is [______]{$ans1} of [` [$num1] `]?
+a. [`[$part0]`] is [______]{$ans0} of [` [$num0] `]?
+a. [`[$part1]`] is [______]{$ans1} of [` [$num1] `]?
 
 END_PGML
 
