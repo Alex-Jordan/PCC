@@ -53,12 +53,12 @@ $baseShort[0] = $ratio*$baseShort[1];
 $baseLong[0] = $ratio*$baseLong[1];
 $hypotenuse[0] = $ratio*$hypotenuse[1];
 
-$cushion = 3;
+$cushion = 15;
 
 $xmin = 0;         #The viewing window
 $xmax = $baseLong[0]+2*$cushion;
 $ymin = 0;
-$ymax = $baseLong[0]+$baseLong[1]+3*$cushion;
+$ymax = $baseLong[0]+2*$cushion;
 
 $smallShift = $xmax/40;
 $bigShift = $xmax/15;
@@ -83,96 +83,141 @@ $cy[0][5] = $cushion+$baseLong[0];
 $cy[0][6] = $cushion;
 $cy[0][7] = $cushion;
 
-$cy[1][0] = $baseLong[0]+2*$cushion;
-$cy[1][1] = $baseLong[0]+2*$cushion;
-$cy[1][2] = $baseLong[0]+2*$cushion+$baseLong[1];
-$cy[1][3] = $baseLong[0]+2*$cushion+$baseLong[1];
-$cy[1][4] = $baseLong[0]+2*$cushion+$baseLong[1];
-$cy[1][5] = $baseLong[0]+2*$cushion+$baseLong[1];
-$cy[1][6] = $baseLong[0]+2*$cushion;
-$cy[1][7] = $baseLong[0]+2*$cushion;
+$cy[1][0] = $baseLong[0]+$cushion;
+$cy[1][1] = $baseShort[0]+$cushion;
+$cy[1][2] = $cy[0][2]-$baseShort[0];
+$cy[1][3] = $cushion;
+$cy[1][4] = $cushion;
+$cy[1][5] = $cy[0][5]-$baseShort[0];
+$cy[1][6] = $baseShort[0]+$cushion;
+$cy[1][7] = $baseLong[0]+$cushion;
+
+$cx[0][0] = ($xmax-$baseShort[0])/2;
+$cx[0][1] = ($xmax-$baseLong[0])/2;
+$cx[0][2] = ($xmax-$baseLong[0])/2;
+$cx[0][3] = ($xmax-$baseShort[0])/2;
+$cx[0][4] = ($xmax+$baseShort[0])/2;
+$cx[0][5] = ($xmax+$baseLong[0])/2;
+$cx[0][6] = ($xmax+$baseLong[0])/2;
+$cx[0][7] = ($xmax+$baseShort[0])/2;
+
+$cx[1][0] = ($xmax+$baseShort[0])/2;
+$cx[1][1] = ($xmax+$baseLong[0])/2;
+$cx[1][2] = ($xmax+$baseLong[0])/2;
+$cx[1][3] = ($xmax+$baseShort[0])/2;
+$cx[1][4] = ($xmax-$baseShort[0])/2;
+$cx[1][5] = ($xmax-$baseLong[0])/2;
+$cx[1][6] = ($xmax-$baseLong[0])/2;
+$cx[1][7] = ($xmax-$baseShort[0])/2;
+
+$ax[0][0] = $cx[0][0]+$baseShort[0];
+$ax[0][1] = $cx[0][1];
+$ax[0][2] = $cx[0][2];
+$ax[0][3] = $cx[0][3]+$baseShort[0];
+$ax[0][4] = $cx[0][4]-$baseShort[0];
+$ax[0][5] = $cx[0][5];
+$ax[0][6] = $cx[0][6];
+$ax[0][7] = $cx[0][7]-$baseShort[0];
+
+$ax[1][0] = $cx[1][0]-$baseShort[1];
+$ax[1][1] = $cx[1][1];
+$ax[1][2] = $cx[1][2];
+$ax[1][3] = $cx[1][3]-$baseShort[1];
+$ax[1][4] = $cx[1][4]+$baseShort[1];
+$ax[1][5] = $cx[1][5];
+$ax[1][6] = $cx[1][6];
+$ax[1][7] = $cx[1][7]+$baseShort[1];
+
+$ay[0][0] = $cy[0][0];
+$ay[0][1] = $cy[0][1]+$baseShort[0];
+$ay[0][2] = $cy[0][2]-$baseShort[0];
+$ay[0][3] = $cy[0][3];
+$ay[0][4] = $cy[0][4];
+$ay[0][5] = $cy[0][5]-$baseShort[0];
+$ay[0][6] = $cy[0][6]+$baseShort[0];
+$ay[0][7] = $cy[0][7];
+
+$ay[1][0] = $cy[1][0];
+$ay[1][1] = $cy[1][1]-$baseShort[1];
+$ay[1][2] = $cy[1][2]+$baseShort[1];
+$ay[1][3] = $cy[1][3];
+$ay[1][4] = $cy[1][4];
+$ay[1][5] = $cy[1][5]+$baseShort[1];
+$ay[1][6] = $cy[1][6]-$baseShort[1];
+$ay[1][7] = $cy[1][7];
+
+$bx[0][0] = $cx[0][0];
+$bx[0][1] = $cx[0][1]+$baseLong[0];
+$bx[0][2] = $cx[0][2]+$baseLong[0];
+$bx[0][3] = $cx[0][3];
+$bx[0][4] = $cx[0][4];
+$bx[0][5] = $cx[0][5]-$baseLong[0];
+$bx[0][6] = $cx[0][6]-$baseLong[0];
+$bx[0][7] = $cx[0][7];
+
+$bx[1][0] = $cx[1][0];
+$bx[1][1] = $cx[1][1]-$baseLong[1];
+$bx[1][2] = $cx[1][2]-$baseLong[1];
+$bx[1][3] = $cx[1][3];
+$bx[1][4] = $cx[1][4];
+$bx[1][5] = $cx[1][5]+$baseLong[1];
+$bx[1][6] = $cx[1][6]+$baseLong[1];
+$bx[1][7] = $cx[1][7];
+
+$by[0][0] = $cy[0][0]+$baseLong[0];
+$by[0][1] = $cy[0][1];
+$by[0][2] = $cy[0][2];
+$by[0][3] = $cy[0][3]-$baseLong[0];
+$by[0][4] = $cy[0][4]-$baseLong[0];
+$by[0][5] = $cy[0][5];
+$by[0][6] = $cy[0][6];
+$by[0][7] = $cy[0][7]+$baseLong[0];
+
+$by[1][0] = $cy[1][0]-$baseLong[1];
+$by[1][1] = $cy[1][1];
+$by[1][2] = $cy[1][2];
+$by[1][3] = $cy[1][3]+$baseLong[1];
+$by[1][4] = $cy[1][4]+$baseLong[1];
+$by[1][5] = $cy[1][5];
+$by[1][6] = $cy[1][6];
+$by[1][7] = $cy[1][7]-$baseLong[1];
 
 for my $i (0..1) {
-   $cx[$i][0] = ($xmax-$baseShort[$i])/2;
-   $cx[$i][1] = ($xmax-$baseLong[$i])/2;
-   $cx[$i][2] = ($xmax-$baseLong[$i])/2;
-   $cx[$i][3] = ($xmax-$baseShort[$i])/2;
-   $cx[$i][4] = ($xmax+$baseShort[$i])/2;
-   $cx[$i][5] = ($xmax+$baseLong[$i])/2;
-   $cx[$i][6] = ($xmax+$baseLong[$i])/2;
-   $cx[$i][7] = ($xmax+$baseShort[$i])/2;
-
-   $ax[$i][0] = $cx[$i][0]+$baseShort[$i];
-   $ax[$i][1] = $cx[$i][1];
-   $ax[$i][2] = $cx[$i][2];
-   $ax[$i][3] = $cx[$i][3]+$baseShort[$i];
-   $ax[$i][4] = $cx[$i][4]-$baseShort[$i];
-   $ax[$i][5] = $cx[$i][5];
-   $ax[$i][6] = $cx[$i][6];
-   $ax[$i][7] = $cx[$i][7]-$baseShort[$i];
-
-   $ay[$i][0] = $cy[$i][0];
-   $ay[$i][1] = $cy[$i][1]+$baseShort[$i];
-   $ay[$i][2] = $cy[$i][2]-$baseShort[$i];
-   $ay[$i][3] = $cy[$i][3];
-   $ay[$i][4] = $cy[$i][4];
-   $ay[$i][5] = $cy[$i][5]-$baseShort[$i];
-   $ay[$i][6] = $cy[$i][6]+$baseShort[$i];
-   $ay[$i][7] = $cy[$i][7];
-
-   $bx[$i][0] = $cx[$i][0];
-   $bx[$i][1] = $cx[$i][1]+$baseLong[$i];
-   $bx[$i][2] = $cx[$i][2]+$baseLong[$i];
-   $bx[$i][3] = $cx[$i][3];
-   $bx[$i][4] = $cx[$i][4];
-   $bx[$i][5] = $cx[$i][5]-$baseLong[$i];
-   $bx[$i][6] = $cx[$i][6]-$baseLong[$i];
-   $bx[$i][7] = $cx[$i][7];
-
-   $by[$i][0] = $cy[$i][0]+$baseLong[$i];
-   $by[$i][1] = $cy[$i][1];
-   $by[$i][2] = $cy[$i][2];
-   $by[$i][3] = $cy[$i][3]-$baseLong[$i];
-   $by[$i][4] = $cy[$i][4]-$baseLong[$i];
-   $by[$i][5] = $cy[$i][5];
-   $by[$i][6] = $cy[$i][6];
-   $by[$i][7] = $cy[$i][7]+$baseLong[$i];
-
    $acxShift[$i][0] = 0;
-   $acxShift[$i][1] = -$bigShift;
-   $acxShift[$i][2] = -$bigShift;
+   $acxShift[$i][1] = (-1)**($i+1)*$bigShift;
+   $acxShift[$i][2] = (-1)**($i+1)*$bigShift;
    $acxShift[$i][3] = 0;
    $acxShift[$i][4] = 0;
-   $acxShift[$i][5] = $bigShift;
-   $acxShift[$i][6] = $bigShift;
+   $acxShift[$i][5] = (-1)**$i*$bigShift;
+   $acxShift[$i][6] = (-1)**$i*$bigShift;
    $acxShift[$i][7] = 0;
 
-   $acyShift[$i][0] = -$smallShift;
+   $acyShift[$i][0] = (-1)**($i+1)*$smallShift;
    $acyShift[$i][1] = 0;
    $acyShift[$i][2] = 0;
-   $acyShift[$i][3] = $smallShift;
-   $acyShift[$i][4] = $smallShift;
+   $acyShift[$i][3] = (-1)**$i*$smallShift;
+   $acyShift[$i][4] = (-1)**$i*$smallShift;
    $acyShift[$i][5] = 0;
    $acyShift[$i][6] = 0;
-   $acyShift[$i][7] = -$smallShift;
+   $acyShift[$i][7] = (-1)**($i+1)*$smallShift;
 
-   $bcxShift[$i][0] = -$bigShift;
+   $bcxShift[$i][0] = (-1)**($i+1)*$bigShift;
    $bcxShift[$i][1] = 0;
    $bcxShift[$i][2] = 0;
-   $bcxShift[$i][3] = -$bigShift;
-   $bcxShift[$i][4] = $bigShift;
+   $bcxShift[$i][3] = (-1)**($i+1)*$bigShift;
+   $bcxShift[$i][4] = (-1)**$i*$bigShift;
    $bcxShift[$i][5] = 0;
    $bcxShift[$i][6] = 0;
-   $bcxShift[$i][7] = $bigShift;
+   $bcxShift[$i][7] = (-1)**$i*$bigShift;
 
    $bcyShift[$i][0] = 0;
-   $bcyShift[$i][1] = -$smallShift;
-   $bcyShift[$i][2] = $smallShift;
+   $bcyShift[$i][1] = (-1)**($i+1)*$smallShift;
+   $bcyShift[$i][2] = (-1)**$i*$smallShift;
    $bcyShift[$i][3] = 0;
    $bcyShift[$i][4] = 0;
-   $bcyShift[$i][5] = $smallShift;
-   $bcyShift[$i][6] = -$smallShift;
-   $bcyShift[$i][7] = $smallShift;
+   $bcyShift[$i][5] = (-1)**$i*$smallShift;
+   $bcyShift[$i][6] = (-1)**($i+1)*$smallShift;
+   $bcyShift[$i][7] = 0;
 }
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
@@ -180,16 +225,18 @@ $picture = init_graph($xmin,$ymin,$xmax,$ymax,
 
 @orientation = ();
 $orientation[0] = random(0,7,1);
-do {$orientation[1] = random(0,7,1);} until ($orientation[0]!=$orientation[1]);
-
+if ( ($orientation[0]==0) || ($orientation[0]==1) ) {$orientation[1] = list_random(0,1);}
+if ( ($orientation[0]==2) || ($orientation[0]==3) ) {$orientation[1] = list_random(2,3);}
+if ( ($orientation[0]==4) || ($orientation[0]==5) ) {$orientation[1] = list_random(4,5);}
+if ( ($orientation[0]==6) || ($orientation[0]==7) ) {$orientation[1] = list_random(6,7);}
 
 $picture->lb( new Label( 
-   ($ax[0][$orientation[0]]+$cx[0][$orientation[0]])/2-$acxShift[0][$orientation[0]], 
+   ($ax[0][$orientation[0]]+$cx[0][$orientation[0]])/2+$acxShift[0][$orientation[0]], 
    ($ay[0][$orientation[0]]+$cy[0][$orientation[0]])/2+$acyShift[0][$orientation[0]], 
    "x ft",'black','center','middle'));
 $picture->lb( new Label( 
    ($bx[0][$orientation[0]]+$cx[0][$orientation[0]])/2+$bcxShift[0][$orientation[0]], 
-   ($by[0][$orientation[0]]+$cy[0][$orientation[0]])/2-$bcyShift[0][$orientation[0]],
+   ($by[0][$orientation[0]]+$cy[0][$orientation[0]])/2+$bcyShift[0][$orientation[0]],
    "$baseLong[0] ft",'black','center','middle'));
 
 $picture->lb( new Label( 
@@ -250,7 +297,7 @@ If two shapes are similar to each other, the lengths of their corresponding side
 \end{aligned}
     ``]
 
-The length of the missing side is [`[$ansU]`].
+*Solution:* The length of the missing side is [`[$ansU]`].
 
 END_PGML_SOLUTION
 
