@@ -68,15 +68,13 @@ The height inside a camping tent when you are [`d`] feet from the edge of the te
 
 where [`h`] stands for height in feet. Determine the height when you are:
 
-1) [`[$d1U]`] from the edge.
+a. [`[$d1U]`] from the edge.  
+   The height inside a camping tent when you [`[$d1U]`] from the edge of the tent is [__________]{$ans1U}
 
-2) [`[$d2U]`] from the edge.
 
-*Solutions:* 
+a. [`[$d2U]`] from the edge.  
+   The height inside a camping tent when you [`[$d2U]`] from the edge of the tent is [__________]{$ans2U}
 
-1) The height inside a camping tent when you [`[$d1U]`] from the edge of the tent is [__________]{$ans1U}
-
-2) The height inside a camping tent when you [`[$d2U]`] from the edge of the tent is [__________]{$ans2U}
 
 END_PGML
 
