@@ -30,6 +30,7 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "parserNumberWithUnits.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -38,14 +39,16 @@ loadMacros(
 $refreshCachedImages = 1;
 Context("Numeric");
 
-$xmin = 0;         #The viewing window
-$xmax = 20;
-$ymin = 0;
-$ymax = 20;
 
 $baseDown = random(13,18,1);
 $baseUp = random(5,$baseDown-3,1);
 $height = random(8,12,1);
+
+$xmin = 0;         #The viewing window
+$xmax = $baseDown*1.2;
+$ymin = 0;
+$ymax = max($height*1.2,$height+4);
+
 
 $topStart = random(($xmax-$baseDown)/2+1,($xmax+$baseDown)/2-$baseUp-1,1);
 $topStop = $topStart+$baseUp;
@@ -56,11 +59,11 @@ $topStop = $topStart+$baseUp;
 $cornersize = min(($x[3]-$x[0]),($y[1]-$y[0]))/10;
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[400,400]);
+      pixels=>[240,240*$ymax/$xmax]);
 
-$picture->lb( new Label(($x[0]+$x[3])/2, $y[0]-0.5,"b1",'black','center','middle'));
-$picture->lb( new Label(($x[1]+$x[2])/2, $y[1]+0.5,"b2",'black','center','middle'));
-$picture->lb( new Label($x[1]+1,($y[0]+$y[1])/2,"h",'black','center','middle'));
+$picture->lb( new Label(($x[0]+$x[3])/2, $y[0],"b1",'black','center','top'));
+$picture->lb( new Label(($x[1]+$x[2])/2, $y[1],"b2",'black','center','bottom'));
+$picture->lb( new Label($x[1],($y[0]+$y[1])/2,"h",'black','left','middle'));
 
 $picture->new_color("lightblue", 200,200,255); # RGB
 $picture->new_color("darkblue",  100,100,255); 
@@ -93,15 +96,15 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
->>[@ image(insertGraph( $picture  ), tex_size=>400, height=>400, width=>400, extra_html_tags => "alt = '$alt' title = '$alt' ") @]*<<
-
 A trapezoid's area can be calculated by the formula [`A=\frac{1}{2}(b_1+b_2)h`], where [`A`] stands for area, [`b_1`] for the first base's length, [`b_2`] for the second base's length, and [`h`] for height.
 
-Use the formulas to calculate the trapezoid's area. Its first base's length is [`[$baseDownU]`], its second base's length is [`[$baseUpU]`] and its height is [`[$heightU]`].
+>>[@ image(insertGraph( $picture  ), tex_size=>400, height=>(240*$ymax/$xmax), width=>240, extra_html_tags => "alt = '$alt' title = '$alt' ") @]*<<
+
+
+Use the formulas to calculate the trapezoid's area. Its first base's length is [`[$baseDownU]`], its second base's length is [`[$baseUpU]`] and its height is [`[$heightU]`]. [@KeyboardInstructions(q!(Use [|m|]* for meters and [|m^2|]* for square meters.)!)@]**
 
     Area = [____________]{$areaU}
 
-(Use *m* for meters and *m[$CARET]2* for square meters.)
 
 END_PGML
 

@@ -30,7 +30,7 @@ loadMacros(
   "MathObjects.pl",      #Almost always needed
   "PGML.pl",             #Almost always needed
   "parserNumberWithUnits.pl",
-,
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -72,7 +72,7 @@ gives the area of a regular polygon with side length [`s`], number of sides [`n`
 
 What is the area of a regular [`[$c]`]-gon with [`s= [$s]`] and [`r=[$r]`]?
 
-    The area is [__________]{$answer}. (Use *in* for inches and *in^2* for square inches.)
+    The area is [__________]{$answer}. [@KeyboardInstructions(q!(Use [|in|]* for inches and [|in^2|]* for square inches.)!)@]**
 
 END_PGML
 

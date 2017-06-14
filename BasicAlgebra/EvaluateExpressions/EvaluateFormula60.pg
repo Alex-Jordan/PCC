@@ -30,17 +30,13 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "parserNumberWithUnits.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
 ##############################################
 
 Context("Numeric");
-
-$xmin = 0;         #The viewing window
-$xmax = 30;
-$ymin = 0;
-$ymax = 30;
 
 $xLabelShift = $xmax/40;
 $yLabelShift = $ymax/40;
@@ -51,18 +47,25 @@ $xcross = $base/random(2.5,4,0.1);
 $leftSide = round(sqrt($height**2+$xcross**2));
 $rightSide = round(sqrt($height**2+($base-$xcross)**2));
 
+$xmin = 0;         #The viewing window
+$xmax = $base*1.2;
+$ymin = 0;
+$ymax = max($height*1.2,$height+4);
+
+
+
 @x = (($xmax-$base)/2,($xmax+$base)/2);
 @y = (($ymax-$height)/2,($ymax+$height)/2);
 
 $cornersize = min(($x[1]-$x[0]),($y[1]-$y[0]))/10;
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[400,400]);
+      pixels=>[240,240*$ymax/$xmax]);
 
 $xTop = $x[0]+$xcross;
 
-$picture->lb( new Label($xTop, $y[0]-$yLabelShift,"b",'black','center','middle'));
-$picture->lb( new Label($xTop+1,($y[0]+$y[1])/2,"h",'black','center','middle'));
+$picture->lb( new Label(($x[0]+$x[1])/2, $y[0],"b",'black','center','top'));
+$picture->lb( new Label($xTop,($y[0]+$y[1])/2,"h",'black','left','middle'));
 
 $picture->new_color("darkblue",  100,100,255); 
 
@@ -92,11 +95,14 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
->>[@ image(insertGraph( $picture  ), tex_size=>400, height=>400, width=>400, extra_html_tags => "alt = '$text' title = '$text' ") @]*<<
+A triangle's area can be calculated by the formula [`A=\frac{1}{2}bh`], where [`A`] stands for area, [`b`] for base and [`h`] for height. 
 
-A triangle's area can be calculated by the formula [`A=\frac{1}{2}bh`], where [`A`] stands for area, [`b`] for base and [`h`] for height. Find the triangle's area if [`b=[$baseU]`] and [`h=[$heightU]`].
+>>[@ image(insertGraph( $picture  ), tex_size=>400, height=>(240*$ymax/$xmax), width=>240, extra_html_tags => "alt = '$text' title = '$text' ") @]*<<
 
-(Use *ft* for feet and *ft[$CARET]2* for square feet.)
+Find the triangle's area if [`b=[$baseU]`] and [`h=[$heightU]`]. [@KeyboardInstructions(q!(Use [|ft|]* for feet and [|ft^2|]* for square feet.)!)@]**
+
+
+    Area = [____________]{$areaU}
 
 END_PGML
 
