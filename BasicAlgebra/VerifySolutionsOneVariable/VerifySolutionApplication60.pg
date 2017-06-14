@@ -31,7 +31,7 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGML.pl",
-  "parserRadioButtons.pl",
+  "parserPopUp.pl",
   "PGcourse.pl",
 );
 
@@ -59,8 +59,8 @@ $isString = "Yes";
 $notString = "No";
 if ($x==$solution) {$corString = $isString} else {$corString = $notString};
 
-$radio = RadioButtons(
-  [$isString,$notString],
+$popup = PopUp(
+  ['?',$isString,$notString],
   $corString,
   last => [$notString],
 );
@@ -77,15 +77,13 @@ Assume the country's national debt will become [`[$y1]`] million dollars [`y`] y
 
     [``[$left]=[$right]``].
 
-Check whether [`[$x]`] is a solution for [`[$var]`] of this equation. (This solution implies the country's national debt will become [`[$y1]`] million dollars in the year [$year].)
-
-[@$radio->buttons()@]*
+Check whether [`[$x]`] is a solution for [`[$var]`] of this equation. (This solution implies the country's national debt will become [`[$y1]`] million dollars in the year [$year].) [__]{$popup}
 
 END_PGML
 
 ##############################################
 
-ANS( $radio->cmp() );
+
 
 $s1 = $rate*$x+$yInt;
 

@@ -31,7 +31,7 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGML.pl",
-  "parserRadioButtons.pl",
+  "parserPopUp.pl",
   "PGcourse.pl",
 );
 
@@ -58,8 +58,8 @@ $isString = "Yes";
 $notString = "No";
 if ($x==$solution) {$corString = $isString} else {$corString = $notString};
 
-$radio = RadioButtons(
-  [$isString,$notString],
+$popup = PopUp(
+  ['?',$isString,$notString],
   $corString,
   last => [$notString],
 );
@@ -76,15 +76,13 @@ Assume the plant will be [`[$y1]`] inches tall [`[$var]`] days later. We can sol
 
     [``[$left]=[$right]``].
 
-Check whether [`[$x]`] is a solution for [`[$var]`] of this equation.
-
-[@$radio->buttons()@]*
+Check whether [`[$x]`] is a solution for [`[$var]`] of this equation. [__]{$popup}
 
 END_PGML
 
 ##############################################
 
-ANS( $radio->cmp() );
+
 
 $s1 = $rate*$x+$yInt;
 

@@ -31,7 +31,7 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGML.pl",
-  "parserRadioButtons.pl",
+  "parserPopUp.pl",
   "PGcourse.pl",
 );
 
@@ -58,8 +58,8 @@ $notString = "No";
 $solution = $radius;
 if ($x==$solution) {$corString = $isString} else {$corString = $notString};
 
-$radio = RadioButtons(
-  [$isString,$notString],
+$popup = PopUp(
+  ['?',$isString,$notString],
   $corString,
   last => [$notString],
 );
@@ -82,15 +82,13 @@ Assume the cylinder's radius is [`[$var]`] centimeters. We can solve this proble
 
     [``[$left]=[$right]``].
 
-Check whether [`[$x]`] is a solution for [`[$var]`] of this equation.
-
-[@$radio->buttons()@]*
+Check whether [`[$x]`] is a solution for [`[$var]`] of this equation. [__]{$popup}
 
 END_PGML
 
 ##############################################
 
-ANS( $radio->cmp() );
+
 
 $s1 = $x**2*$height;
 
