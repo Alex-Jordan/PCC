@@ -66,7 +66,7 @@ BEGIN_PGML
 
 At this speed, [$name] can run [`[$distance1U]`] in [___________]{$hours1U}.
 
-Use *mi* for miles and *hr* for hours.
+[@KeyboardInstructions(q!Use [|mi|]* for miles and [|hr|]* for hours.!)@]**
 
 END_PGML
 
