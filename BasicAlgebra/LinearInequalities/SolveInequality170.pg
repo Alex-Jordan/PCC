@@ -69,7 +69,7 @@ BEGIN_PGML
 
 Solve this inequality: [`` [$left] [$comp] [$right] ``]
 
-[@KeyboardInstructions(q!Please type: [|inf|]* for [`\infty`], [|>=|]* for [`\geq`], and [|<=|]* for [`\leq`].!)@]**.')@]**
+[@KeyboardInstructions(q!Please type: [|inf|]* for [`\infty`], [|>=|]* for [`\geq`], and [|<=|]* for [`\leq`].!)@]**
 
     In set-builder notation, the solution set is [______________]{$ans}.  
     An example of set-builder notation is [`\{x\mid x>1\}`]. [@KeyboardInstructions('The [| | |]* symbol is above the [|Enter|]* key.')@]**
