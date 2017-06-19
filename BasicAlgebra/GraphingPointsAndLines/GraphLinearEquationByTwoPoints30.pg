@@ -116,14 +116,13 @@ to help you to find two points on the line; choose _any_ two values of [`x`] and
 [@EnlargeImageStatementPGML@]**
 
     The correct graph is graph    
-    [@$radio->buttons()@]*
+    [__]{$radio}
 
 
 END_PGML
 
 ##############################################
 
-ANS( $radio->cmp() );
 
 $x1 = 0;
 $y1 = $m*$x1;
