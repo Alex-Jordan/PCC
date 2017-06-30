@@ -50,7 +50,7 @@ $frac = Fraction(-$num,$den);
 
 $integer = int($frac);
 
-$popup = PopUp(['?', "$LTS", "$GTS", '='], "$LTS");
+$popup = PopUp(['?', "<", ">", '='], "<");
 
 
 

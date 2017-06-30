@@ -64,19 +64,19 @@ $frac_right = $frac3 / $frac4;
 Context()->texStrings;
 if($frac_left < $frac_right)
 {
-    $popup = PopUp(["?", "$LTS", "$GTS", "="], "$LTS");
+    $popup = PopUp(["?", "<", ">", "="], "<");
     $answer = String('<');
     $finalOutput = "The fraction on the right side is greater. So [`$frac1 + $frac2<$frac3 \div $frac4`]";
 }
 elsif($frac_left > $frac_right)
 {
-    $popup = PopUp(["?", "$LTS", "$GTS", "="], "$GTS");
+    $popup = PopUp(["?", "<", ">", "="], ">");
     $answer = String('>');
     $finalOutput = "The fraction on the left side is greater. So [`$frac1 + $frac2>$frac3 \div $frac4`]";
 }
 else
 {
-    $popup = PopUp(["?", "$LTS", "$GTS", "="], "=");
+    $popup = PopUp(["?", "<", ">", "="], "=");
     $answer = String('=');
     $finalOutput = "The fractions are equal. So [`$frac1 + $frac2=$frac3 \div $frac4`]";
 }

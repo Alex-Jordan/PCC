@@ -50,7 +50,7 @@ $frac = Fraction(-$num,$den);
 
 $integer = random(1,3,1);
 
-$popup = PopUp(["?", "$LTS", "$GTS", "="], "$LTS");
+$popup = PopUp(["?", "<", ">", "="], "<");
 
 
 

@@ -61,7 +61,7 @@ $frac_right = 0;
 
 Context()->strings->add('<'=>{},'>'=>{},'='=>{});
 $answer = String('>');
-$popup = PopUp(["?", "$LTS", "$GTS", "="], "$GTS");
+$popup = PopUp(["?", "<", ">", "="], ">");
 
 ########Begin What the Student Sees############
 

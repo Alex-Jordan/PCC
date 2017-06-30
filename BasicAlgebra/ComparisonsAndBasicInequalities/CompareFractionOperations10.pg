@@ -58,17 +58,17 @@ Context()->strings->add('<'=>{},'>'=>{},'='=>{});
 if($frac1 < $frac2)
 {
     $answer = String('<');
-    $popup = PopUp(["?", $LTS, $GTS, "="], $LTS);
+    $popup = PopUp(["?", '<', '>', "="], '<');
 }
 elsif($frac1 > $frac2)
 {
     $answer = String('>');
-    $popup = PopUp(["?", $LTS, $GTS, "="], $GTS);
+    $popup = PopUp(["?", '<', '>', "="], '>');
 }
 else
 {
     $answer = String('=');
-    $popup = PopUp(["?", $LTS, $GTS, "="], "=");
+    $popup = PopUp(["?", '<', '>', "="], "=");
 }
 
 $pos_a = -$a;
