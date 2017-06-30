@@ -61,8 +61,8 @@ do {
    } until ($nums[0][1]/$dens[0][1]<0.1);
 } until ( (gcd($nums[0][0],$dens[0][0])==1) && (gcd($nums[0][1],$dens[0][1])==1) && ($nums[0][0]/$dens[0][0]-$nums[0][1]/$dens[0][1]>0.85) );
 $popups[0] = PopUp(
-  ["close to $word2","close to $word1 and half","close to $word1", "close to $word0 and half"],
-  "close to $word2", # correct answer
+  ['?', "$word2","$word1 and a half","$word1", "$word0 and a half"],
+  1, # correct answer
 );
 
 do {
@@ -74,8 +74,8 @@ do {
    $nums[1][1] = ($dens[1][1]%2==0) ? $dens[1][1]/2-1 : int($dens[1][1]/2);
 } until ( (gcd($nums[1][0],$dens[1][0])==1) && (gcd($nums[1][1],$dens[1][1])==1) );
 $popups[1] = PopUp(
-  ["close to $word2","close to $word1 and half","close to $word1", "close to $word0 and half"],
-  "close to $word1 and half", # correct answer
+  ['?', "$word2","$word1 and a half","$word1", "$word0 and a half"],
+  2, # correct answer
 );
 
 do {
@@ -89,8 +89,8 @@ do {
    } until ($nums[2][1]/$dens[2][1]>0.9);
 } until ( (gcd($nums[2][0],$dens[2][0])==1) && (gcd($nums[2][1],$dens[2][1])==1) );
 $popups[2] = PopUp(
-  ["close to $word2","close to $word1 and half","close to $word1", "close to $word0"],
-  "close to $word0", # correct answer
+  ['?', "$word2","$word1 and a half","$word1", "$word0"],
+  4, # correct answer
 );
 
 
@@ -101,8 +101,8 @@ do {
    $nums[3][1] = int($dens[3][1]/2)+1;
 } until ( (gcd($nums[3][0],$dens[3][0])==1) && (gcd($nums[3][1],$dens[3][1])==1) );
 $popups[3] = PopUp(
-  ["close to $word2","close to $word1 and half","close to $word1", "close to $word0 and half"],
-  "close to $word1", # correct answer
+  ['?', "$word2","$word1 and a half","$word1", "$word0 and a half"],
+  3, # correct answer
 );
 
 #Create a hash and its inverse that randomizes the order of the three problems.
@@ -120,13 +120,13 @@ BEGIN_PGML
 
 Estimate the sum of each expression, and choose an appropriate answer.
 
-a. [`[$shift0]\,\frac{[$nums[$scramble{0}][0]]}{[$dens[$scramble{0}][0]]}-[$shift1]\,\frac{[$nums[$scramble{0}][1]]}{[$dens[$scramble{0}][1]]}`] is [__]{$popups[$scramble{0}]}
+a. [`[$shift0]\,\frac{[$nums[$scramble{0}][0]]}{[$dens[$scramble{0}][0]]}-[$shift1]\,\frac{[$nums[$scramble{0}][1]]}{[$dens[$scramble{0}][1]]}`] is close to [__]{$popups[$scramble{0}]}
 
-a. [`[$shift0]\,\frac{[$nums[$scramble{1}][0]]}{[$dens[$scramble{1}][0]]}-[$shift1]\,\frac{[$nums[$scramble{1}][1]]}{[$dens[$scramble{1}][1]]}`] is [__]{$popups[$scramble{1}]}
+a. [`[$shift0]\,\frac{[$nums[$scramble{1}][0]]}{[$dens[$scramble{1}][0]]}-[$shift1]\,\frac{[$nums[$scramble{1}][1]]}{[$dens[$scramble{1}][1]]}`] is close to [__]{$popups[$scramble{1}]}
 
-a. [`[$shift0]\,\frac{[$nums[$scramble{2}][0]]}{[$dens[$scramble{2}][0]]}-[$shift1]\,\frac{[$nums[$scramble{2}][1]]}{[$dens[$scramble{2}][1]]}`] is [__]{$popups[$scramble{2}]}
+a. [`[$shift0]\,\frac{[$nums[$scramble{2}][0]]}{[$dens[$scramble{2}][0]]}-[$shift1]\,\frac{[$nums[$scramble{2}][1]]}{[$dens[$scramble{2}][1]]}`] is close to [__]{$popups[$scramble{2}]}
 
-a. [`[$shift0]\,\frac{[$nums[$scramble{3}][0]]}{[$dens[$scramble{3}][0]]}-[$shift1]\,\frac{[$nums[$scramble{3}][1]]}{[$dens[$scramble{3}][1]]}`] is [__]{$popups[$scramble{3}]}
+a. [`[$shift0]\,\frac{[$nums[$scramble{3}][0]]}{[$dens[$scramble{3}][0]]}-[$shift1]\,\frac{[$nums[$scramble{3}][1]]}{[$dens[$scramble{3}][1]]}`] is close to [__]{$popups[$scramble{3}]}
 
 END_PGML
 

@@ -57,8 +57,8 @@ do {
    } until ($nums[0][1]/$dens[0][1]<0.1);
 } until ( (gcd($nums[0][0],$dens[0][0])==1) && (gcd($nums[0][1],$dens[0][1])==1) );
 $popups[0] = PopUp(
-  ["greater than half","smaller than half"],
-  "greater than half", # correct answer
+  ['?', "greater","smaller"],
+  1, # correct answer
 );
 
 do {
@@ -70,8 +70,8 @@ do {
    $nums[1][1] = int($dens[1][1]/2)+1;
 } until ( (gcd($nums[1][0],$dens[1][0])==1) && (gcd($nums[1][1],$dens[1][1])==1) );
 $popups[1] = PopUp(
-  ["greater than half","smaller than half"],
-  "smaller than half", # correct answer
+  ['?', "greater","smaller"],
+  2, # correct answer
 );
 
 do {
@@ -81,8 +81,8 @@ do {
    $nums[2][1] = ($dens[2][1]%2==0) ? $dens[2][1]/2-1 : int($dens[2][1]/2);
 } until ( (gcd($nums[2][0],$dens[2][0])==1) && (gcd($nums[2][1],$dens[2][1])==1) );
 $popups[2] = PopUp(
-  ["greater than half","smaller than half"],
-  "smaller than half", # correct answer
+  ['?', "greater","smaller"],
+  2, # correct answer
 );
 
 do {
@@ -96,8 +96,8 @@ do {
    } until ($nums[3][0]/$dens[3][0]>0.9);
 } until ( (gcd($nums[3][0],$dens[3][0])==1) && (gcd($nums[3][1],$dens[3][1])==1) && ($nums[3][1],$dens[3][1]-$nums[3][0],$dens[3][0]>0) );
 $popups[3] = PopUp(
-  ["greater than half","smaller than half"],
-  "smaller than half", # correct answer
+  ['?', "greater","smaller"],
+  2, # correct answer
 );
 
 #Create a hash and its inverse that randomizes the order of the three problems.
@@ -115,13 +115,13 @@ BEGIN_PGML
 
 Estimate the difference of each expression, and choose an appropriate answer.
 
-a. [`\frac{[$nums[$scramble{0}][0]]}{[$dens[$scramble{0}][0]]}-\frac{[$nums[$scramble{0}][1]]}{[$dens[$scramble{0}][1]]}`] is [__]{$popups[$scramble{0}]}
+a. [`\frac{[$nums[$scramble{0}][0]]}{[$dens[$scramble{0}][0]]}-\frac{[$nums[$scramble{0}][1]]}{[$dens[$scramble{0}][1]]}`] is [__]{$popups[$scramble{0}]} than half
 
-a. [`\frac{[$nums[$scramble{1}][0]]}{[$dens[$scramble{1}][0]]}-\frac{[$nums[$scramble{1}][1]]}{[$dens[$scramble{1}][1]]}`] is [__]{$popups[$scramble{1}]}
+a. [`\frac{[$nums[$scramble{1}][0]]}{[$dens[$scramble{1}][0]]}-\frac{[$nums[$scramble{1}][1]]}{[$dens[$scramble{1}][1]]}`] is [__]{$popups[$scramble{1}]} than half
 
-a. [`\frac{[$nums[$scramble{2}][0]]}{[$dens[$scramble{2}][0]]}-\frac{[$nums[$scramble{2}][1]]}{[$dens[$scramble{2}][1]]}`] is [__]{$popups[$scramble{2}]}
+a. [`\frac{[$nums[$scramble{2}][0]]}{[$dens[$scramble{2}][0]]}-\frac{[$nums[$scramble{2}][1]]}{[$dens[$scramble{2}][1]]}`] is [__]{$popups[$scramble{2}]} than half
 
-a. [`\frac{[$nums[$scramble{3}][0]]}{[$dens[$scramble{3}][0]]}-\frac{[$nums[$scramble{3}][1]]}{[$dens[$scramble{3}][1]]}`] is [__]{$popups[$scramble{3}]}
+a. [`\frac{[$nums[$scramble{3}][0]]}{[$dens[$scramble{3}][0]]}-\frac{[$nums[$scramble{3}][1]]}{[$dens[$scramble{3}][1]]}`] is [__]{$popups[$scramble{3}]} than half
 
 END_PGML
 
