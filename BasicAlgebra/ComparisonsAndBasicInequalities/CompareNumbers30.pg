@@ -69,7 +69,7 @@ $frac = Fraction(-$num,$den);
 $fracAbs = abs($frac);
 $deci = abs(Real($frac));
 
-$popup = PopUp(["?", "<", ">", "="], "=");
+$popup = PopUp(["?", "$LTS", "$GTS", "="], "=");
 
 ##############################################
 
