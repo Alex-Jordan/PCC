@@ -66,9 +66,7 @@ $ans = Formula("$myvar^($total)");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Use the properties of exponents to simplify the following
-   
-    [`\left([$myvar]^{[$m]}\right)^{[$n]}`]
+Use the properties of exponents to simplify: [`\left([$myvar]^{[$m]}\right)^{[$n]}`]
 
     [____________]
 

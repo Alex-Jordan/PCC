@@ -73,9 +73,7 @@ $ans = Formula("$coeffPowerb*$myvar^($total)");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Use the properties of exponents to simplify the following
-   
-    [`[$b]\left([$a][$myvar]^{[$m]}\right)^[$n]`]
+Use the properties of exponents to simplify: [`[$b]\left([$a][$myvar]^{[$m]}\right)^[$n]`]
 
     [_______________________]
 

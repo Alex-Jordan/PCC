@@ -77,9 +77,7 @@ $ans = Formula("$myvar^($total)/$coeff")->reduce;
 ##############################################
 TEXT(beginproblem());
 BEGIN_PGML
-Use the properties of exponents to simplify the following
-   
-    [``\left([$myvar1]\right) \cdot \left([$myvar2]\right)``]
+Use the properties of exponents to simplify: [``\left([$myvar1]\right) \cdot \left([$myvar2]\right)``]
 
     [____________]
 

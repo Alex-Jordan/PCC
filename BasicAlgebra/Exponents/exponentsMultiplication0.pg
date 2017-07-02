@@ -68,9 +68,7 @@ $ans = Formula("$myvar^($total)");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Use the properties of exponents to simplify the following
-   
-    [`[$myvar1]\cdot[$myvar2]`]
+Use the properties of exponents to simplify: [`[$myvar1]\cdot[$myvar2]`]
 
     [____________]
 
