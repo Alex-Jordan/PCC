@@ -30,74 +30,89 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "parserNumberWithUnits.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
 ##############################################
 
+$unit = "in";
+
 Context("Numeric");
 
-$ratio = random(2.5,5.5,1);
-$base2 = random(2,6,1);
-do {$leftSide2 = random(2,6,1);} until ($leftSide2 != $base2);
+#Show arrays have length defined by @sides;
+#The other arrays have numbers used in calculation.
+@baseShortShow = ();
+@baseShort = ();
+@baseLongShow = ();
+@baseLong = ();
+@hypotenuseShow = ();
+@hypotenuse = ();
 
-$base1 = $ratio*$base2;
-$leftSide1 = $leftSide2*$ratio;
+$baseShortShow[1] = 5;
+$baseLongShow[1] = 12;
+$hypotenuseShow[1] = 13;
+$ratio = random(1.1,2,0.1);
+$baseShortShow[0] = $ratio*$baseShortShow[1];
+$baseLongShow[0] = $ratio*$baseLongShow[1];
+$hypotenuseShow[0] = $ratio*$hypotenuseShow[1];
 
-$angle = random(20*pi/180,70*pi/180,0.1);
-$height1 = sin($angle)*$leftSide1;
-$xacross1 = cos($angle)*$leftSide1;
-$height2 = sin($angle)*$leftSide2;
-$xacross2 = cos($angle)*$leftSide2;
+$scale = random(1,5,0.5);
+$baseShort[1] = 5*$scale;
+$baseLong[1] = 12*$scale;
+$hypotenuse[1] = 13*$scale;
+$baseShort[0] = $ratio*$baseShort[1];
+$baseLong[0] = $ratio*$baseLong[1];
+$hypotenuse[0] = $ratio*$hypotenuse[1];
 
-$cushion = 2;
+$cushionLeft= $baseLong[0]/10;
+$cushionMiddle = $baseLong[0]/3;
+$cushionRight = $baseLong[0]/3;
+$cushionY = $baseLong[0]/8;
 
-$xmin = 0;         #The viewing window
-$max1 = max($base1,$xacross1);
-$max2 = max($base2,$xacross2);
-$xmax = $max1*1.2;
+$xmin = 0;
+$xmax = $baseLongShow[0]+$baseLongShow[1]+$cushionLeft+$cushionMiddle+$cushionRight;
 $ymin = 0;
-$ymax = $height1+$height2+3*$cushion;
+$ymax = $baseShortShow[0]+2*$cushionY;
 
-$xLabelShift = $xmax/40;
-$yLabelShift = $ymax/40;
+$xLabelShift = $xmax/35;
+$yLabelShift = $ymax/15;
 
-@x1 = (($xmax-$max1)/2,($xmax+$max1)/2);
-@y1 = ($cushion,$cushion+$height1);
+@x0 = ($cushionLeft,$cushionLeft+$baseLongShow[0]);
+@y0 = ($cushionY,$cushionY+$baseShortShow[0]);
 
-@x2 = (($xmax-$max2)/2,($xmax+$max2)/2);
-@y2 = (2*$cushion+$height1,2*$cushion+$height1+$height2);
+@x1 = ($cushionLeft+$cushionMiddle+$baseLongShow[0],$cushionLeft+$cushionMiddle+$baseLongShow[0]+$baseLongShow[1]);
+@y1 = (($ymax-$baseShortShow[1])/2,($ymax+$baseShortShow[1])/2);
 
+$pixelsx = 320;
+$pixelsy = $pixelsx*$ymax/$xmax;
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[400,400]);
+      pixels=>[$pixelsx,$pixelsy]);
 
-$x1Top = $x1[0]+$xacross1;
-$x2Top = $x2[0]+$xacross2;
+$picture->lb( new Label(($x0[0]+$x0[1])/2, $y0[0]-$yLabelShift,"$baseLong[0] $unit",'black','center','middle'));
+#$picture->lb( new Label($x0[1]+$xLabelShift, ($y0[0]+$y0[1])/2,"$baseShort[0] $unit",'black','left','middle'));
+$picture->lb( new Label(($x0[0]+$x0[1])/2-$xLabelShift,($y0[0]+$y0[1])/2+$yLabelShift,"$hypotenuse[0] $unit",'black','center','middle'));
 
-$picture->lb( new Label(($xmax+$xmin)/2, $y1[0]-$yLabelShift,"$base1 m",'black','center','middle'));
-$picture->lb( new Label(($x1[0]+$x1Top)/2-$xLabelShift, ($y1[0]+$y1[1])/2+$yLabelShift,"$leftSide1 m",'black','right','middle'));
-#$picture->lb( new Label(($x1Top+$x1[1])/2+2*$xLabelShift,($y1[0]+$y1[1])/2+$yLabelShift,"$rightSide1 m",'black','left','middle'));
-
-$picture->lb( new Label(($xmax+$xmin)/2, $y2[0]-$yLabelShift,"$base2 m",'black','center','middle'));
-$picture->lb( new Label(($x2[0]+$x2Top)/2-$xLabelShift, ($y2[0]+$y2[1])/2+$yLabelShift,"x m",'black','right','middle'));
-#$picture->lb( new Label(($x2Top+$x2[1])/2+2*$xLabelShift,($y2[0]+$y2[1])/2+$yLabelShift,"$rightSide2 m",'black','left','middle'));
+$picture->lb( new Label(($x1[0]+$x1[1])/2, $y1[0]-$yLabelShift,"$baseLong[1] $unit",'black','center','middle'));
+#$picture->lb( new Label($x1[1]+$xLabelShift, ($y1[0]+$y1[1])/2,"$baseShort[1] $unit",'black','left','middle'));
+$picture->lb( new Label(($x1[0]+$x1[1])/2-$xLabelShift,($y1[0]+$y1[1])/2+$yLabelShift,"x $unit",'black','center','middle'));
 
 $picture->new_color("darkblue",  100,100,255); 
 
-$picture->moveTo($x1Top,$y1[1]);
+$picture->moveTo($x0[1],$y0[1]);
+$picture->lineTo($x0[1],$y0[0], darkblue,3);
+$picture->lineTo($x0[0],$y0[0], darkblue,3);
+$picture->lineTo($x0[1],$y0[1], darkblue,3);
+
+$picture->moveTo($x1[1],$y1[1]);
 $picture->lineTo($x1[1],$y1[0], darkblue,3);
 $picture->lineTo($x1[0],$y1[0], darkblue,3);
-$picture->lineTo($x1Top,$y1[1], darkblue,3);
+$picture->lineTo($x1[1],$y1[1], darkblue,3);
 
-$picture->moveTo($x2Top,$y2[1]);
-$picture->lineTo($x2[1],$y2[0], darkblue,3);
-$picture->lineTo($x2[0],$y2[0], darkblue,3);
-$picture->lineTo($x2Top,$y2[1], darkblue,3);
+$text = "There are two triangles. The one on the right is smaller, and the one on the left is larger. For the bigger triangle, its longest side is marked as $hypotenuse[0] $unit, and its base is marked as $baseLong[0] $unit. For the smaller triangle, its hypotenuse is marked as x $unit, and its base is marked as $baseLong[1] $unit.";
 
-$text = "There are two triangles. The one on the top is smaller, and the one at the bottom is larger. For the top triangle, its base is marked as $base2 m, and its left side is marked as x m. For the bottom triangle, its base is marked as $base1 m, and its left side is marked as $leftSide1 m. ";
-
-$ans = $leftSide2;
-$ansU = NumberWithUnits("$ans m");
+$ans = $hypotenuse[1];
+$ansU = NumberWithUnits("$ans $unit");
 
 ##############################################
 $refreshCachedImages = 1;
@@ -107,9 +122,9 @@ BEGIN_PGML
 
 The following two triangles are similar to each other. Find the length of the missing side.
 
->>[@ image(insertGraph( $picture  ), tex_size=>400, height=>400, width=>400, extra_html_tags => "alt = '$text' title = '$text' ") @]*<<
+>>[@ image(insertGraph( $picture  ), tex_size=>400, height=>$pixelsy, width=>$pixelsx, extra_html_tags => "alt = '$text' title = '$text' ") @]*<<
 
-Use *m* for meters.
+[@KeyboardInstructions(q!Use [|in|]* for inches.!)@]**
 
 The missing side's length is [__________]{$ansU}
 
@@ -117,22 +132,24 @@ END_PGML
 
 ##############################################
 
+$s1 = $hypotenuse[0]*$baseLong[1];
+
 BEGIN_PGML_SOLUTION
 
 If two shapes are similar to each other, the lengths of their corresponding sides are in proportion. We can write an equation and solve for [`x`]:
 
     [``
 \begin{aligned}
-   \frac{x}{[$leftSide1]} &= \frac{[$base2]}{[$base1]}\\
-   \mathbf{[$leftSide1]\cdot[$base1]\cdot} \frac{x}{[$leftSide1]} &= \mathbf{[$leftSide1]\cdot[$base1]\cdot} \frac{[$base2]}{[$base1]} \\
-   [$base1]x &= [$leftSide1]\cdot[$base2] \\
-   [$base1]x &= [$leftSide1*$base2] \\
-   \frac{[$base1]x}{[$base1]} &= \frac{[$leftSide1*$base2]}{[$base1]} \\
-   x &= [$leftSide2]
+   \frac{x}{[$hypotenuse[0]]} &= \frac{[$baseLong[1]]}{[$baseLong[0]]}  \\
+   \mathbf{[$hypotenuse[0]]\cdot[$baseLong[0]]\cdot} \frac{x}{[$hypotenuse[0]]} &= \mathbf{[$hypotenuse[0]]\cdot[$baseLong[0]]\cdot} \frac{[$baseLong[1]]}{[$baseLong[0]]} \\
+   [$baseLong[0]]x &= [$hypotenuse[0]]\cdot[$baseLong[1]] \\
+   [$baseShort[0]]x &= [$s1] \\
+   \frac{[$baseShort[0]]x}{[$baseShort[0]]} &= \frac{[$s1]}{[$baseShort[0]]} \\
+   x &= [$hypotenuse[1]]
 \end{aligned}
     ``]
 
-The length of the missing side is [`[$ansU]`].
+*Solution:* The length of the missing side is [`[$ansU]`].
 
 END_PGML_SOLUTION
 
