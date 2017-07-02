@@ -61,9 +61,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Use the commutative property of multiplication to write an equivalent expression.  
-
-    [`[$giv]`]
+Use the commutative property of multiplication to write an equivalent expression to [`[$giv]`].
 
     [____________]
 

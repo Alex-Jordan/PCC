@@ -60,9 +60,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Use the associative property of multiplication to write an equivalent expression.  
-
-    [`[$giv]`]
+Use the associative property of multiplication to write an equivalent expression to [`[$giv]`].
 
     [____________]
 
