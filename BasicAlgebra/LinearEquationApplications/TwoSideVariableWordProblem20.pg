@@ -50,7 +50,7 @@ BEGIN_PGML
 
 User a linear equation to solve the word problem.
 
-Massage Heaven and Message You are competitors. Message Heaven has [`[$a]`] registered customers, and it gets approximately [`[$rateA]`] newly registered customers every month. Message You has [`[$b]`] registered customers, and it gets approximately [`[$rateB]`] newly registered customers every month. How many months would it take Message Heaven to catch up with Massage You in the number of registered customers?
+Massage Heaven and Massage You are competitors. Massage Heaven has [`[$a]`] registered customers, and it gets approximately [`[$rateA]`] newly registered customers every month. Massage You has [`[$b]`] registered customers, and it gets approximately [`[$rateB]`] newly registered customers every month. How many months would it take Massage Heaven to catch up with Massage You in the number of registered customers?
 
 These two companies would have approximately the same number of registered customers [________]{$ans} months later.
 
@@ -61,7 +61,7 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 
-Message Heaven gets [`[$rateA]`] newly registered customers every month. In [`x`] months, it will get [`[$rateA]x`] new customers. It will have [`[$rateA]x+[$a]`] registered customers [`x`] months later.
+Massage Heaven gets [`[$rateA]`] newly registered customers every month. In [`x`] months, it will get [`[$rateA]x`] new customers. It will have [`[$rateA]x+[$a]`] registered customers [`x`] months later.
 
 Similarly, Massage You will get [`[$rateB]x`] newly registered customers in [`x`] months, and it will have [`[$rateB]x+[$b]`] customers [`x`] months later.
 
