@@ -319,7 +319,7 @@ BEGIN_PGML
 
 The following two triangles are similar to each other. Find the length of the missing side.
 
->>[@ image(insertGraph( $picture  ), tex_size=>400, height=>pixelsy, width=>pixelsx, extra_html_tags => "alt = '$text' title = '$text' ") @]*<<
+>>[@ image(insertGraph( $picture  ), tex_size=>400, height=>$pixelsy, width=>$pixelsx, extra_html_tags => "alt = '$text' title = '$text' ") @]*<<
 
 [@KeyboardInstructions(q!Use [|m|]* for meters.!)@]**
 
