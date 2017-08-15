@@ -219,7 +219,7 @@ Identify that [`a=[$a],b=[$b],c=[$c]`].
 
 Recall that the length is [`([$fence]-2w)`] feet, where [`w`] is the width.
 
-If the width is [`[$s7]`] feet, the length would be [`[$fence]-2 \cdot [$width] = [$s8]`] feet. This is one solution.
+If the width is [`[$s7]`] feet, the length would be [`[$fence]-2 \cdot [$s7] = [$s8]`] feet. This is one solution.
 
 If the width is [`[$s5]`] feet, the length would be [`[$fence]-2 \cdot [$s5] = [$s6]`] feet. This is another solution.
 
