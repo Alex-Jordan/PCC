@@ -30,6 +30,7 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "parserNumberWithUnits.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -79,7 +80,7 @@ $areaU = NumberWithUnits("$area $unit^2");
 @picture = ();
 for my $i (0..1) {
    $picture[$i] = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[400,400]);
+      pixels=>[282,282]);
 
    $picture[$i]->lb( new Label($x[1],$y[0]-$labelShift,"$baseU",'black','center','middle'));
    $picture[$i]->lb( new Label($x[2]-$labelShift,($y[0]+$y[1])/2,"$heightU",'black','right','middle'));
@@ -132,13 +133,13 @@ BEGIN_PGML
 
 Find the perimeter and area of this shape, which is a semicircle on top of a rectangle.
 
->>[@ image(insertGraph( $picture[0]  ), tex_size=>400, height=>400, width=>400, extra_html_tags => "alt = '$alt[0]' title = '$alt[0]' ") @]*<<
+>>[@ image(insertGraph( $picture[0]  ),  width=>282, extra_html_tags => "alt = '$alt[0]' title = '$alt[0]' ") @]*<<
 
 Use decimals in your answers. Don't leave [`\pi`] as it is.
 
     Its perimeter is [_____________]{$perimeterU} and its area is [_____________]{$areaU}. 
 
-(Use *cm* for centimeters and *cm[$CARET]2* for square centimeters.)
+[@KeyboardInstructions(q!(Use [|cm|]* for centimeters and [|cm^2|]* for square centimeters.)!)@]**
 
 END_PGML
 
@@ -146,7 +147,7 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 
->>[@ image(insertGraph( $picture[1]  ), tex_size=>400, height=>400, width=>400, extra_html_tags => "alt = '$alt[1]' title = '$alt[1]' ") @]*<<
+>>[@ image(insertGraph( $picture[1]  ),  width=>282, extra_html_tags => "alt = '$alt[1]' title = '$alt[1]' ") @]*<<
 
 The perimeter of this shape has a semicircle, and three sides of a rectangle.
 

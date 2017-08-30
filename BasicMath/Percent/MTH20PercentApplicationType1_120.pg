@@ -60,12 +60,16 @@ $numParts = 5;
 $scale = 2;
 $downshift = -0.4;
 $radius = 1;
-$gr = init_graph(-$scale,-$scale,$scale,$scale,
-size=>[400,400]
+$top = $scale/1.5;
+$bottom=-$scale;
+$xpixels=400;
+$ypixels=$xpixels*($top-$bottom)/(2*$scale);
+$gr = init_graph(-$scale,$bottom,$scale,$top,
+size=>[$xpixels,$ypixels]
 );
 
 $title = "Collection of Signatures from Different Artists";
-$gr->lb( new Label(0, $scale/1.5,$title,'black','center','middle'));
+$gr->lb( new Label(0, $top,$title,'black','center','top'));
 
 $xfunc = sub { my $t = shift();
     return $radius*cos($t); };
@@ -118,10 +122,9 @@ $alt = "This is a pie chart about a collection of artist signatures. The collect
 
 BEGIN_PGML
 
->>[@image( insertGraph($gr), width=>400, 
-    height=>400, tex_size=>800, extra_html_tags => "alt = '$alt' title = '$alt'")@]*<<
+The pie chart represents a collector's collection of signatures from various artists.
 
-The pie chart represents a collector's collection of signatures from various artists. Answer the following question.
+>>[@image( insertGraph($gr), width=>$xpixels, extra_html_tags => "alt = '$alt' title = '$alt'")@]*<<
 
 If the collector has a total of [`[$whole]`] signatures, there are [__________]{$sting} signatures by Sting.
 

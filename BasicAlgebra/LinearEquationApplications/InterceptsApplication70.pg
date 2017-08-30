@@ -60,10 +60,10 @@ $possessive = 'her' if ($sex eq 'female');
 $name = RandomName(sex=>$sex);
 
 @answers = (
-   "The `x`-intercept is `($xIntercept,0)`. It implies: `$xInterceptAbs` days before Oct. 1, $name had no money in his piggy bank (that was when he started saving).",
-   "The `x`-intercept is `(0,$xIntercept)`. It implies `$xInterceptAbs` days before Oct. 1, $name had no money in his piggy bank (that was when he started saving).",
-   "The `x`-intercept is `($yIntercept,0)`. It implies $name has saved `$yInterceptC` on Oct. 1.",
-   "The `x`-intercept is `(0, $yIntercept)`. It implies $name has saved `$yInterceptC` on Oct. 1.",
+   "The x-intercept is ($xIntercept,0). It implies: $xInterceptAbs days before Oct. 1, $name had no money in his piggy bank (that was when he started saving).",
+   "The x-intercept is (0,$xIntercept). It implies $xInterceptAbs days before Oct. 1, $name had no money in his piggy bank (that was when he started saving).",
+   "The x-intercept is ($yIntercept,0). It implies $name has saved $yInterceptC on Oct. 1.",
+   "The x-intercept is (0, $yIntercept). It implies $name has saved $yInterceptC on Oct. 1.",
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.

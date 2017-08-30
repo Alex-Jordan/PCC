@@ -107,8 +107,7 @@ BEGIN_PGML_SOLUTION
   [$s3x] - [$s1] & \leq  [$s2]x \\
   [$s3x] - [$s1]\mathbf{{}-[$s3x]} & \leq  [$s2]x\mathbf{{}-[$s3x]} \\
          -[$s1]  & \leq  [$s4x] \\
-[$solnString]*
-  x & \geq -[$ans]
+[$solnString]*  x & \geq -[$ans]
 \end{aligned}
 `]
 

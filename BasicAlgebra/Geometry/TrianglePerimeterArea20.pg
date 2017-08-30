@@ -30,6 +30,7 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "parserNumberWithUnits.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -60,7 +61,7 @@ $yLabelShift = $ymax/40;
 $cornersize = min(($x[1]-$x[0]),($y[1]-$y[0]))/10;
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[400,400]);
+      pixels=>[282,282]);
 
 $picture->lb( new Label(($x[0]+$x[1])/2, $y[0]-$yLabelShift,"$base cm",'black','center','middle'));
 $picture->lb( new Label($x[1]+$xLabelShift,($y[0]+$y[1])/2,"$height cm",'black','left','middle'));
@@ -93,7 +94,7 @@ BEGIN_TEXT
 Find the perimeter and area of the right triangle.$PAR
 
 $BCENTER
-\{ image(insertGraph( $picture  ), tex_size=>400, height=>400, width=>400, extra_html_tags => 'alt = "$text" title = "$text"') \}
+\{ image(insertGraph( $picture  ),  width=>282, extra_html_tags => 'alt = "$text" title = "$text"') \}
 $ECENTER
 $PAR
 END_TEXT
@@ -102,7 +103,7 @@ BEGIN_PGML
 
     Its perimeter is [_____________]{$ansP} and its area is [_____________]{$ansA}. 
 
-(Use *cm* for centimeters and *cm[$CARET]2* for square centimeters.)
+[@KeyboardInstructions(q!(Use [|cm|]* for centimeters and [|cm^2|]* for square centimeters.)!)@]**
 
 END_PGML
 

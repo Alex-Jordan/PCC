@@ -46,15 +46,13 @@ $critical = ($c-$b)/$a;
 
 
 $popupYes = PopUp(
-  ['?',"is a solution","is not a solution"],
-  "is a solution", 
-  last => ["is a solution","is not a solution"]
+  ['?',"is","is not"],
+  1, 
 );
 
 $popupNo = PopUp(
-  ['?',"is a solution","is not a solution"],
-  "is not a solution", 
-  last => ["is a solution","is not a solution"]
+  ['?',"is","is not"],
+  2, 
 );
 
 
@@ -131,21 +129,25 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Tell whether the following values are solutions to the given inequality. 
+Tell whether the following values are solutions to the given inequality.
 
     [` [$a] x +[$b] [$symbol] [$c] `]
 
-a. [`x=[$x0]`] [__]{$popup0}
+a. [`x=[$x0]`]
 
+    [__]{$popup0} a solution.
 
-a. [`x=[$x1]`] [__]{$popup1}
+b. [`x=[$x1]`]
 
+    [__]{$popup1} a solution.
 
-a. [`x=[$x2]`] [__]{$popup2}
+c. [`x=[$x2]`]
 
+    [__]{$popup2} a solution.
 
-a. [`x=[$x3]`] [__]{$popup3}
+d. [`x=[$x3]`]
 
+    [__]{$popup3} a solution.
 
 
 

@@ -28,6 +28,7 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "parserImplicitEquation.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -60,7 +61,7 @@ An engineer is designing a cylindrical springform pan. The pan needs to be able 
 
 Assume the pan's minimum height is [`h`] inches. Write an equation to model this scenario. There is no need to solve it.
 
-Use *pi* to represent [`\pi`].
+[@KeyboardInstructions(q?Use *pi* to represent [`\pi`].?)@]**
 
     [_________________________]{$ans}
 

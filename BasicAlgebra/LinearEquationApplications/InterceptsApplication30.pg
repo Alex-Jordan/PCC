@@ -49,10 +49,10 @@ do {
 $slopeAbs = abs($slope);
 
 @answers = (
-   "The `x`-intercept is `($xIntercept,0)`. It implies the engine will run out of gas `$xIntercept` hours after its tank was refilled.",
-   "The `x`-intercept is `(0,$xIntercept)`. It implies the engine started with `$xIntercept` gallons of gas in its tank.",
-   "The `x`-intercept is `($yIntercept,0)`. It implies the engine will run out of gas `$yIntercept` hours after its tank was refilled.",
-   "The `x`-intercept is `(0,$yIntercept)`. It implies the engine started with `$yIntercept` gallons of gas in its tank.",
+   "The x-intercept is ($xIntercept,0). It implies the engine will run out of gas $xIntercept hours after its tank was refilled.",
+   "The x-intercept is (0,$xIntercept). It implies the engine started with $xIntercept gallons of gas in its tank.",
+   "The x-intercept is ($yIntercept,0). It implies the engine will run out of gas $yIntercept hours after its tank was refilled.",
+   "The x-intercept is (0,$yIntercept). It implies the engine started with $yIntercept gallons of gas in its tank.",
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.

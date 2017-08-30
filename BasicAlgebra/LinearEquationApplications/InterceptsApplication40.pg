@@ -42,17 +42,17 @@ Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
 
 do {
-   $slope = random(-5,-1,0.5);
+   $slope = random(-5,-1.5,0.5);
    $xIntercept = random(20,50,5);
    $yIntercept = -$slope*$xIntercept;
 } until ($yIntercept==int($yIntercept));
 $slopeAbs = abs($slope);
 
 @answers = (
-   "The `y`-intercept is `(0,$yIntercept)`. It implies the engine started with `$yIntercept` gallons of gas in its tank.",
-   "The `y`-intercept is `($xIntercept,0)`. It implies the engine will run out of gas `$xIntercept` hours after its tank was refilled.",
-   "The `y`-intercept is `(0,$xIntercept)`. It implies the engine started with `$xIntercept` gallons of gas in its tank.",
-   "The `y`-intercept is `($yIntercept,0)`. It implies the engine will run out of gas `$yIntercept` hours after its tank was refilled.",
+   "The y-intercept is (0,$yIntercept). It implies the engine started with $yIntercept gallons of gas in its tank.",
+   "The y-intercept is ($xIntercept,0). It implies the engine will run out of gas $xIntercept hours after its tank was refilled.",
+   "The y-intercept is (0,$xIntercept). It implies the engine started with $xIntercept gallons of gas in its tank.",
+   "The y-intercept is ($yIntercept,0). It implies the engine will run out of gas $yIntercept hours after its tank was refilled.",
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.

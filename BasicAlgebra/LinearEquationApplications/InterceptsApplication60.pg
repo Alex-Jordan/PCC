@@ -54,10 +54,10 @@ $xInterceptC = Currency("$xIntercept");
 $yInterceptC = Currency("$yIntercept");
 
 @answers = (
-   "The `y`-intercept is `(0,$yIntercept)`. It implies the car's initial value was `$yIntercept`.",
-   "The `y`-intercept is `($xIntercept,0)`. It implies the car would have no more value `$xIntercept` years since its purchase.",
-   "The `y`-intercept is `(0,$xIntercept)`. It implies the car would have no more value `$xIntercept` years since its purchase.",
-   "The `y`-intercept is `($yIntercept,0)`. It implies the car's initial value was `$yIntercept`.",
+   "The y-intercept is (0,$yIntercept). It implies the car's initial value was $yIntercept.",
+   "The y-intercept is ($xIntercept,0). It implies the car would have no more value $xIntercept years since its purchase.",
+   "The y-intercept is (0,$xIntercept). It implies the car would have no more value $xIntercept years since its purchase.",
+   "The y-intercept is ($yIntercept,0). It implies the car's initial value was $yIntercept.",
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.

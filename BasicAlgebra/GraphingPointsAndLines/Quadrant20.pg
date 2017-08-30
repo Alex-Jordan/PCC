@@ -39,12 +39,12 @@ $refreshCachedImages=1;
 Context("Numeric");
 
 @conditions = (
-   ['`x>0 \text{ and } y>0`','Quadrant I'],
-   ['`x<0 \text{ and } y>0`','Quadrant II'],
-   ['`x<0 \text{ and } y<0`','Quadrant III'],
-   ['`x>0 \text{ and } y<0`','Quadrant IV'],
-   ['`x=0`','the y-axis'],
-   ['`y=0`','the x-axis']
+   ['x>0 \text{ and } y>0','Quadrant I'],
+   ['x<0 \text{ and } y>0','Quadrant II'],
+   ['x<0 \text{ and } y<0','Quadrant III'],
+   ['x>0 \text{ and } y<0','Quadrant IV'],
+   ['x=0','the y-axis'],
+   ['y=0','the x-axis']
 );
 
 %scramble = ();
@@ -126,17 +126,17 @@ BEGIN_PGML
 
 Answer the following questions on the coordinate system:
 
-    For the point [`(x,y)`], if [$conditions[$scramble{0}][0]], then the point is in/on [@$popup0->menu()@]*.
+    For the point [`(x,y)`], if [`[$conditions[$scramble{0}][0]]`], then the point is in/on [@$popup0->menu()@]*.
 
-    For the point [`(x,y)`], if [$conditions[$scramble{1}][0]], then the point is in/on [@$popup1->menu()@]*.
+    For the point [`(x,y)`], if [`[$conditions[$scramble{1}][0]]`], then the point is in/on [@$popup1->menu()@]*.
 
-    For the point [`(x,y)`], if [$conditions[$scramble{2}][0]], then the point is in/on [@$popup2->menu()@]*.
+    For the point [`(x,y)`], if [`[$conditions[$scramble{2}][0]]`], then the point is in/on [@$popup2->menu()@]*.
 
-    For the point [`(x,y)`], if [$conditions[$scramble{3}][0]], then the point is in/on [@$popup3->menu()@]*.
+    For the point [`(x,y)`], if [`[$conditions[$scramble{3}][0]]`], then the point is in/on [@$popup3->menu()@]*.
 
-    For the point [`(x,y)`], if [$conditions[$scramble{4}][0]], then the point is in/on [@$popup4->menu()@]*.
+    For the point [`(x,y)`], if [`[$conditions[$scramble{4}][0]]`], then the point is in/on [@$popup4->menu()@]*.
 
-    For the point [`(x,y)`], if [$conditions[$scramble{5}][0]], then the point is in/on [@$popup5->menu()@]*.
+    For the point [`(x,y)`], if [`[$conditions[$scramble{5}][0]]`], then the point is in/on [@$popup5->menu()@]*.
 
 
 END_PGML

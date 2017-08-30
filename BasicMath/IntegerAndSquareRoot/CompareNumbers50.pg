@@ -78,10 +78,10 @@ for my $i (0..2) {
 
 for my $i (0..2) {
    if ($pairs[$i][0]>$pairs[$i][1]) {
-      $popups[$i] = PopUp(['?', $LTS, $GTS, '='], $GTS);
+      $popups[$i] = PopUp(['?', '<', '>', '='], 2);
       $correct[$i]='\gt';
    } else {
-      $popups[$i] = PopUp(['?', $LTS, $GTS, '='], $LTS);
+      $popups[$i] = PopUp(['?', '<', '>', '='], 1);
       $correct[$i]='\lt';
    }
 }

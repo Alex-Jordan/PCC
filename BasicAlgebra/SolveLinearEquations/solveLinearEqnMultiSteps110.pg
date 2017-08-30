@@ -85,6 +85,8 @@ answerCheck($ansEqRef, $eqTypesRef);
 
 BEGIN_PGML_SOLUTION
 
+The first step is to subtract terms in order to separate the variable and non-variable terms.
+
     [``
 \begin{aligned}
  [$a][$var]  +[$b] &= [$var]  +[$d] \\

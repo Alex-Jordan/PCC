@@ -30,6 +30,7 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "parserNumberWithUnits.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -80,7 +81,7 @@ $areaU = NumberWithUnits("$area $unit^2");
 );
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[400,400]);
+      pixels=>[282,282]);
 
 $picture->lb( new Label($x[1], $y[0]-$labelShift,"$baseU",'black','center','middle'));
 $picture->lb( new Label($x[1]+$labelShift,($y[1]+$y[2])/2,"$heightTriangleU",'black','center','middle'));
@@ -125,11 +126,11 @@ BEGIN_PGML
 
 Find the perimeter and area of this polygon.
 
->>[@ image(insertGraph( $picture  ), tex_size=>400, height=>400, width=>400, extra_html_tags => "alt = '$alt' title = '$alt' ") @]*<<
+>>[@ image(insertGraph( $picture  ),  width=>282, extra_html_tags => "alt = '$alt' title = '$alt' ") @]*<<
 
     Its perimeter is [_____________]{$perimeterU} and its area is [_____________]{$areaU}. 
 
-(Use *ft* for feet and *ft[$CARET]2* for square feet.)
+[@KeyboardInstructions(q!(Use [|ft|]* for feet and [|ft^2|]* for square feet.)!)@]**
 
 END_PGML
 
