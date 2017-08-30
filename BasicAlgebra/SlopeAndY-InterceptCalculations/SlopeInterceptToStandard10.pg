@@ -1,9 +1,9 @@
 # WeBWorK problem written by Carl Yao
 # Portland Community College
-# 
+#
 # Change a line's equation from slope-intercept form to standard form.
 #
-# Last edited: Yao 10/17/16
+# Last edited: Yao 5/25/17
 #
 # ENDDESCRIPTION
 
@@ -28,43 +28,35 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGML.pl",
-  "parserRadioButtons.pl",
+  "parserImplicitPlane.pl",
   "PGcourse.pl",
 );
 
 ##############################################
 
-Context("Numeric");
-Context()->variables->add(y=>'Real');
-Context()->noreduce("(-x)-y","(-x)+y");
+Context("ImplicitPlane");
+Context()->flags->set(showExtraParens=>0);
+Context()->variables->are(x=>'Real', y=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y','(-x)*y','x*(-y)','-n');
 
-$a = random(1,9,1);
-do {$b = random(1,9,1);} until ($b!=$a);
+$b = random(2,9,1)*random(-1,1,2);
 $c = non_zero_random(-9,9,1);
 
 $left0 = Compute("y");
 $right0 = Compute("$b x+$c")->reduce;
 
-$left1 = Compute("$b x-y")->reduce;
-$right1 = Compute("-$c")->reduce;
-$choice1 = "`$left1`=`$right1`";
+$ansPSstring = "$b*x-y=-$c";
 
-$left2 = Compute("$b x+y")->reduce;
-$right2 = Compute("-$c")->reduce;
-$choice2 = $left2.'='.$right2;
+if ($b>0) {
+   $left1 = Compute("$b*x-y")->reduce;
+   $nC = -$c;
+   $ansPSstringTeX = $left1->TeX."=$nC";
+} else {
+   $left1 = Compute("-$b*x+y")->reduce;
+   $ansPSstringTeX = $left1->TeX."=$c";
+}
 
-$left3 = Compute("$b x-y")->reduce;
-$right3 = Compute("$c")->reduce;
-$choice3 = $left3.'='.$right3;
-
-$left4 = Compute("$b x+y")->reduce;
-$right4 = Compute("$c")->reduce;
-$choice4 = $left4.'='.$right4;
-
-$radio = RadioButtons(
-  ["$choice1","$choice2","$choice3","$choice4"],
-  0, # correct answer
-);
+$ansPS = ImplicitPlane($ansPSstring);
 
 ##############################################
 
@@ -74,22 +66,87 @@ BEGIN_PGML
 
 If we change [` [$left0]=[$right0] `] to standard form, the correct answer is:
 
-    [@ $radio->buttons() @]*
+    [________________]
 
 END_PGML
 
-ANS( $radio->cmp() );
+##############################################
+
+Context()->flags->set(reduceConstants=>0);
+Context()->flags->set(reduceConstantFormulas=>0);
+
+ANS($ansPS->cmp(correct_ans_latex_string => $ansPSstringTeX
+   ) -> withPostFilter(sub {
+      my $ansHash = shift;
+        my $student = $ansHash->{original_student_ans};
+        my @sides = split('=',"$student");
+
+      #if it's an implicit plane object, reset how student's answer is displayed:
+      if (defined $ansHash->{student_formula}) {
+      if ($ansHash->{student_formula}->cmp_class eq "an Implicit line") {
+        $ansHash->{preview_text_string} = "$sides[0]=$sides[1]";
+        my $leftTex = Formula("$sides[0]")->TeX;
+        my $rightTex = Formula("$sides[1]")->TeX;
+        $ansHash->{preview_latex_string} = "$leftTex=$rightTex";
+        $ansHash->{student_ans} = $ansHash->{original_student_ans};
+      }
+      };
+
+      # if they have it correct, then check each side to see
+      # whether x and y are on the same side of =
+      if ($ansHash->{score}) {
+         if ( (($sides[0] =~ /x/) && ($sides[1] =~ /y/)) || (($sides[1] =~ /x/) && ($sides[0] =~ /y/)) ) {
+         $ansHash->{score} = 0;
+         $ansHash->{ans_message} = "This is an equation for the line, but it is not in standard form.";
+         }
+      }
+      return $ansHash;
+    }));
 
 ##############################################
 
+if ($b>0) {
+
+$s1 = Compute("-$b*x+y")->reduce;
+$s2 = Compute("$b*x-y")->reduce;
+
 BEGIN_PGML_SOLUTION
 
+A line's standard form is [`Ax+By=C`]. We need to move [`x`] and [`y`] terms to the same side of the equal sign.
 
+    [``
+\begin{aligned}
+   [$left0] &= [$right0] \\
+   [$left0] \mathbf{-[$b]x} &= [$right0] \mathbf{-[$b]x} \\
+   [$s1] &= [$c] \\
+   (-1)([$s1]) &= (-1)([$c]) \\
+   [$s2] &= [$nC]
+\end{aligned}
+    ``]
 
-
-the correct answer is [`[@ $radio->correct_ans() @]*`].
+Note that [`[$s1] = [$c]`] is already in standard form, but it's better to get rid of the leading negative sign in an equation.
 
 END_PGML_SOLUTION
+
+} else {
+
+$s1 = Compute("-$b*x+y")->reduce;
+
+BEGIN_PGML_SOLUTION
+
+A line's standard form is [`Ax+By=C`]. We need to move [`x`] and [`y`] terms to the same side of the equal sign.
+
+    [``
+\begin{aligned}
+   [$left0] &= [$right0] \\
+   [$left0] \mathbf{-[$b]x} &= [$right0] \mathbf{-[$b]x} \\
+   [$s1] &= [$c]
+\end{aligned}
+    ``]
+
+END_PGML_SOLUTION
+
+}
 
 ENDDOCUMENT();
 
