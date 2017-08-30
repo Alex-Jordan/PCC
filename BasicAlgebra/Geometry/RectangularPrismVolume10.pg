@@ -53,7 +53,7 @@ $ymax = $xmax*$height2d/$base2d;
 @x = (($xmax-$base2d)/2, ($xmax-$base2d)/2+$base2*0.4, ($xmax-$base2d)/2+$base1,  ($xmax+$base2d)/2);
 @y = (($ymax-$height2d)/2, ($ymax-$height2d)/2+$base2*0.3, ($ymax-$height2d)/2+$height, ($ymax+$height2d)/2);
 
-$picture = init_graph($xmin,$ymin,$xmax,$ymax,
+$picture = init_graph($xmin-0.25*$base2d,$ymin,$xmax,$ymax,
       pixels=>[282,282*$height2d/$base2d]);
 
 $picture->lb( new Label(($x[0]+$x[2])/2, $y[0],"$base1 in",'black','center','top'));
