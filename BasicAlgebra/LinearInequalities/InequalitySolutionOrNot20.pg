@@ -155,11 +155,6 @@ END_PGML
 
 ##############################################
 
-ANS( $popup0->cmp() );
-ANS( $popup1->cmp() );
-ANS( $popup2->cmp() );
-ANS( $popup3->cmp() );
-
 BEGIN_PGML_SOLUTION
 
 We substitute each [`x`] value into the inequality [` [$a] x + [$b] [$symbol] [$c]`] and see whether the inequality is true.
