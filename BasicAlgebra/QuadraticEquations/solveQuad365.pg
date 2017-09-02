@@ -73,10 +73,10 @@ Context()->strings->add("no real solutions"=>{},
 
 $var = "x";
 $a = 1;
-$b = random(-10,10,1);
+$b = non_zero_random(-10,10,1);
 $c = 1;
 $d = $b;
-$d = random(-10,10,1)while(abs($d)==abs($b));
+$d = non_zero_random(-10,10,1)while(abs($d)==abs($b));
 
 $soln1 = -$b;
 $soln2 = -$d;
