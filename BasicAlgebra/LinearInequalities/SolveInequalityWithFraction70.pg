@@ -100,8 +100,9 @@ $solnString = '';
 if ($s5 != 1)
 { $solnString = "  -$s6 & \geq $s5y \\ \frac{-$s6}{$s5} & \geq  \frac{$s5y}{$s5} \\"};
 
-$s1cdot = "$s1\cdot";
-if ($s1 == 1) {$s1 =''; $s1cdot = '';};
+$s7 = Compute("$s1*(y-$num1)")->reduce;
+$s8 = Compute("$s2*(y+$num2)")->reduce;
+$s9 = Compute("$s1*y")->reduce;
 
 BEGIN_PGML_SOLUTION
 
@@ -109,10 +110,9 @@ BEGIN_PGML_SOLUTION
 \begin{aligned}
   \frac{y-[$num1]}{[$den1]} & \geq  \frac{y+[$num2]}{[$den2]} \\
   [$com] \cdot \frac{y-[$num1]}{[$den1]} & \geq  [$com] \cdot \frac{y+[$num2]}{[$den2]} \\
-  [$s1](y-[$num1]) & \geq  [$s2](y+[$num2]) \\
-  [$s1]y-[$s1cdot] [$num1] & \geq  [$s2]y+[$s2] \cdot [$num2] \\
-  [$s1]y - [$s3] & \geq  [$s2]y+[$s4] \\
-  [$s1]y - [$s3]\mathbf{{} -[$s1]y-[$s4]} & \geq  [$s2]y+[$s4]\mathbf{{} -[$s1]y-[$s4]} \\ [$solnstring]*
+  [$s7] & \geq  [$s8] \\
+  [$s9] - [$s3] & \geq  [$s2]y+[$s4] \\
+  [$s9] - [$s3]\mathbf{{} -[$s9]-[$s4]} & \geq  [$s2]y+[$s4]\mathbf{{} -[$s9]-[$s4]} \\ [$solnstring]*
   [$ans]          & \geq  y\\
   y & \leq [$ans]
 \end{aligned}
