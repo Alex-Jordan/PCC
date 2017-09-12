@@ -67,7 +67,7 @@ do {
    $factor2 = $com/$den2;
    $factor3 = $com/$den3;
    $factor4 = $com/$den4;
-} until (($frac[4]>0) && ($den[4]<10) && ($com!=$den4));
+} until (($frac[4]>0) && ($den[4]<10) && ($com!=$den4) && ($frac[4]!=.5));
 
 $ans = $frac[4];
 
@@ -128,7 +128,9 @@ for my $i (0..3) {
    $lcr = ($end3x < 0) ? 'right' : 'left' ;
    $tmb = ($end3y < 0) ? 'top' : 'bottom' ;
 
-   $gr->lb( new Label($end2x, $end2y,"$num[$i+1]/$den[$i+1]",'black','center','middle'));
+   if ($i!=3) {
+      $gr->lb( new Label($end2x, $end2y,"$num[$i+1]/$den[$i+1]",'black','center','middle'));
+   }
    $gr->lb( new Label($end3x, $end3y,$legend[$i],'black',$lcr,$tmb));
 
 }
