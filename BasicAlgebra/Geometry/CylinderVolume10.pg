@@ -67,8 +67,8 @@ Context()->variables->set(pi => {TeX=>'\pi'});
 $ansVolumePIU = FormulaWithUnits("$piConstant pi m^3");
 $ansVolumeDEU = NumberWithUnits("$volumeDE m^3");
 
-$xmin=0;
-$xmax=$width2d*1.2;
+$xmin=$width2d*0.1;
+$xmax=$width2d*1.3;
 $ymin=0;
 $ymax=$xmax*$height2d/$width2d;
 
