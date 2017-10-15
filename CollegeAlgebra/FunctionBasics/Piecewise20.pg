@@ -61,7 +61,7 @@ Context("Numeric");
 $f3 = Formula("$c*2^(-x)");
 
 $a = random($x2, $x3,1);
-$b = random($x3,$x3+4,1);
+$b = random($x3+1,$x3+4,1);
 
 $ans1 = $f2->eval(x=>$a);
 $ans2 = $f3->eval(x=>$b);
