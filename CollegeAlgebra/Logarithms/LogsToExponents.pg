@@ -90,7 +90,7 @@ $PAR
 \{ 
 LayoutTable(
 [
-["\(\log $a\)","\({}={}\)","\($b\)"],
+["\(\log($a)\)","\({}={}\)","\($b\)"],
 [$multians->ans_rule(6),"\({}={}\)",$multians->ans_rule(12)], 
 ],
 allcellcss=>'padding:0px; padding-bottom:6px;'
