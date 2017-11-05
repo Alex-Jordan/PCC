@@ -36,6 +36,7 @@ TEXT(beginproblem());
 Context("Numeric");
 $var = list_random('x','y','z','t','r','m','n','a','b','c');
 Context()->variables->are($var=>'Real');
+Context()->flags->set(limits=>[2,5]);
 
 $m = random(2,5,1);
 $n = random(2,5,1);
