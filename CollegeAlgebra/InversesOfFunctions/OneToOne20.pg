@@ -63,12 +63,19 @@ $not,
 $not,
 $not);
 
+@xmin = (-4,-4, -$a,-$a+0.001,-4,-4,-4,-4,-4,-4);
+@xmax = (4,4,4,4,-$a-0.001,4,4,4,4,4);
+$xmin2 = $a+0.001;
+$xmax2 = 4;
+
 $index = random(0,9,1);
 
 
-add_functions($gr, "$functions[$index] for x in <-4,4>" . 
+add_functions($gr, "$functions[$index] for x in <$xmin[$index],$xmax[$index]>" . 
   " using color:blue and weight:1");
 
+if ($index == 4) {add_functions($gr, "$functions[$index] for x in <$xmin2,$xmax2>" .
+  " using color:blue and weight:1");};
 
 
 $radio = RadioButtons(
