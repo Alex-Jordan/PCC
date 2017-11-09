@@ -33,6 +33,7 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "contextFraction.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -67,7 +68,7 @@ BEGIN_PGML
 
 Divide one fraction into the other: [`` \frac{[$num1]}{[$den1]} \div \frac{[$den2]}{[$num2]} ``]
 
-If needed, use an improper fraction in your answer. Don't use a mixed number.
+[@KeyboardInstructions("If needed, use an improper fraction in your answer. Don't use a mixed number.")@]**
 
     [_________]{$ans} 
 

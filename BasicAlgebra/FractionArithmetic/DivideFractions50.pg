@@ -32,6 +32,7 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "contextFraction.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -62,7 +63,7 @@ BEGIN_PGML
 
 Divide the integer by the fraction: [``[$integer] \div \frac{[$den]}{[$num]} ``]
 
-If needed, use an improper fraction in your answer. Don't use a mixed number. 
+[@KeyboardInstructions("If needed, use an improper fraction in your answer. Don't use a mixed number.")@]**
 
     [___________]
 
