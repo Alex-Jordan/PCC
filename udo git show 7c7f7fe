@@ -1,0 +1,3851 @@
+[33mcommit 7c7f7fe5071bcaa33a7ab22242d7e5c7b2301cb7[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Nov 9 11:44:47 2017 -0800
+
+    moved improper fraction instructions into KeyboardInstructions macro
+
+[33mcommit 342c7b4ebb0ae4d2b6ea0410649570ee0a7030ca[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Nov 9 10:47:57 2017 -0800
+
+    require currency answers
+
+[33mcommit 6fdfce010aca12a38b2804803df45e09cc076ca9[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Nov 9 10:46:54 2017 -0800
+
+    typos and rewording
+
+[33mcommit 0cb8f6fb97b3b4dbc0b2e7e80af18bb1ea629c06[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Nov 9 10:45:11 2017 -0800
+
+    change randomization
+
+[33mcommit 25e0fe9c1aad16f49166e076558592de07161509[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Nov 9 10:44:39 2017 -0800
+
+    use lvert and rvert instead of pipes
+
+[33mcommit 4cf5d430fb81c71c373eac741429f68f34963e87[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Nov 9 10:41:16 2017 -0800
+
+    put improper fractions instructions behind KeyboardInstructions macro
+
+[33mcommit 08d3c29f9a130411eacf2fd7c68a20a4bbae309f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Nov 9 09:48:58 2017 -0800
+
+    better buffering around triangles and trapezoids
+
+[33mcommit 071d9779cae163e545db15c8191c601b4ad0268b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Nov 5 14:50:27 2017 -0800
+
+    typo
+
+[33mcommit aab8528126e8200d024277a039823e3eed276503[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Nov 5 14:48:02 2017 -0800
+
+    better plotting domains
+
+[33mcommit 3e46dec5b9bb1f39a80e30447ef3412756408179[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Nov 5 00:54:09 2017 -0700
+
+    formula test point limits
+
+[33mcommit b8425162361e0c02573979c090e09f4319cc6d48[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Nov 5 00:51:35 2017 -0700
+
+    formula test point limits:
+
+[33mcommit 7c6e764db3b736f9ff3ebcc9c0a7cad027686ca7[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Oct 30 09:26:20 2017 -0700
+
+    new substitution systems problems:
+    :
+
+[33mcommit eacf9865dfc4583fba60060913aebfb054733576[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Oct 20 13:12:41 2017 -0700
+
+    change buttons to popup
+
+[33mcommit 0abbca2b99dd1de62a725d714cc0e0f2dcdd95ab[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Oct 20 13:05:08 2017 -0700
+
+    change buttons to popup
+
+[33mcommit 69ce670535310106bebff399e88962333d8d4a19[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Oct 19 14:46:49 2017 -0700
+
+    add parentheses around a log argument
+
+[33mcommit 64384cb3f490cb3f7cd6e61db8cd956858b12eeb[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Oct 15 09:32:29 2017 -0700
+
+    randomization issue
+
+[33mcommit 7f870350af67b8d1a2b4ac7ce1af551e8033cf21[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Oct 8 12:59:11 2017 -0700
+
+    swap screen and paper headers
+
+[33mcommit c51a287bd2d88515dce2489493cb4c8bc91f31cf[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Oct 3 11:58:37 2017 -0700
+
+    typo
+
+[33mcommit 435589f8680e7cd1a6d5287b00106196e00feaa5[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Oct 2 17:15:54 2017 -0700
+
+    image positioning
+
+[33mcommit bd6200402400d106f4c50dd81b3f508de1d6b0d8[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Oct 2 15:44:50 2017 -0700
+
+    correct 'subtract' to 'add'
+
+[33mcommit f1b8f87e3d205b42befd81aff7fd79d586280421[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Oct 2 10:28:11 2017 -0700
+
+    new prime factor problems
+
+[33mcommit e2ab22cad07e83544c055b7254d301889234a199[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Oct 1 20:11:43 2017 -0700
+
+    ensure two distinct variables
+
+[33mcommit 045d1fa2a94676039eaa26c0f8a2dfa28897915a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Sep 28 23:12:55 2017 -0700
+
+    Add PCCmacros.pl for KeyboardInstructions
+
+[33mcommit 4bc80180a8333948547ef302d0e0d35d03ba2e98[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Sep 11 22:26:04 2017 -0700
+
+    remove answer from statement
+
+[33mcommit 1bb800da31db2ed9ca43e364c8698f0dd85f67fc[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Sep 11 21:39:54 2017 -0700
+
+    solution edits
+
+[33mcommit 134c6a74f9f2ea11abd01f6bae3423d1ecda4435[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 5 16:14:30 2017 -0700
+
+    use PCCmacros to get Keyboard Instructions macro
+
+[33mcommit 7e5eb49ef465db1a1169b96dd386148c4c70ec8f[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Sep 2 00:12:33 2017 -0700
+
+    randomization
+
+[33mcommit 6bcbb36fd6b38d77c51df09927cfaf86cad458f4[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Sep 2 00:12:00 2017 -0700
+
+    ensure special y-value is not 0
+
+[33mcommit 93745f9762bdb33dd5219d0ae9b60d68184cf210[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Aug 31 21:12:00 2017 -0700
+
+    remove unneeded ANS
+
+[33mcommit d137c6bcdb7b60141c2344ecabaff71aae856d4b[m
+Merge: 65d0c85 2cc2555
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Aug 29 23:01:34 2017 -0700
+
+    Merge branch 'master' of https://github.com/Alex-Jordan/PCC
+
+[33mcommit 2cc2555e94089fe3476af2b96e41f74068baf054[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Aug 29 23:00:33 2017 -0700
+
+    spacing adjustment
+
+[33mcommit 65d0c8523f3abd0100f11e16dc1f2b4a7c45285d[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Aug 29 20:54:22 2017 -0700
+
+    change problem from MC to open answer
+
+[33mcommit e5fcd4768d087a0c95883ae9862d3acc48d7d724[m
+Merge: d43990b 51d4fdf
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Aug 29 20:50:07 2017 -0700
+
+    Merge branch 'develop'
+
+[33mcommit 51d4fdf40a24697ab566e34fe78c3bf720b12048[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Aug 29 20:47:44 2017 -0700
+
+    wording clarification
+
+[33mcommit d43990ba984bdc3c3076ffb466f515e67bf14ca9[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Aug 29 20:45:00 2017 -0700
+
+    edits for ORCCA
+
+[33mcommit bfb97073ac08b42fc6c7563651ee6aa8fffb0def[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Aug 15 14:03:47 2017 -0700
+
+    typo
+
+[33mcommit 44981e2ec0cf223192843cb2c90366d31a801eef[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Jul 2 15:19:01 2017 -0700
+
+    shorter answer blanks
+
+[33mcommit 97676842bbc966a22b1080e8877b6a0e3d97e8d7[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jul 2 15:07:28 2017 -0700
+
+    typos
+
+[33mcommit 8ba2af7bcd0c427a387c26b989f5269f8e35bf7b[m
+Merge: e093fa7 2405cfc
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jul 1 23:42:22 2017 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit e093fa77202a238b53a51aa404fd9f16394a3042[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jul 1 23:42:03 2017 -0700
+
+    typos
+
+[33mcommit b0077247831fbbfb7934b4329d79d44da5f518a8[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jul 1 23:38:54 2017 -0700
+
+    typos
+
+[33mcommit 2405cfc2796c7be45585a106853c57529b08a9cf[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Jul 1 23:34:26 2017 -0700
+
+    adjust poistioning
+
+[33mcommit 7f0c0f4d859efed9e8b593302fcfb2932a571329[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jul 1 21:43:29 2017 -0700
+
+    trim wording
+
+[33mcommit a67ac7f38e99b42ce4d96a83272f997419f2b417[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jul 1 21:38:02 2017 -0700
+
+    trim wording
+
+[33mcommit 9672fc9c7aa75039e14ae29934666474de6080e3[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jul 1 21:27:22 2017 -0700
+
+    adjust image size
+
+[33mcommit 95df868eaba976cd7e6535b8b3a9ba52a78c0686[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jun 30 15:20:47 2017 -0700
+
+    reduced length of popup options
+
+[33mcommit 94d8ad984ef7a00efa4486bd26ebe16056c63a8f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jun 30 14:48:22 2017 -0700
+
+    revert to bare <, >, not macros
+
+[33mcommit 9863adb1264c07a08e45b1770bcc50fb71663308[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jun 30 11:46:37 2017 -0700
+
+    use gts and lts macros
+
+[33mcommit 0b1f021d2f88eee926bf2740e6171167ab6b145f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jun 30 11:15:06 2017 -0700
+
+    move instructions to before graph
+
+[33mcommit ec1a794faaec342ff041c1f8274ea705bb552c08[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Jun 18 20:37:12 2017 -0700
+
+    typo
+
+[33mcommit 7569a084bff2d1bf8a76a00e5edcf926a732b25c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Jun 18 20:34:10 2017 -0700
+
+    use PGML answer blank
+
+[33mcommit a501a553a78a2e1043441c41dc19e7079c3aae2b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Jun 18 20:29:27 2017 -0700
+
+    use PCCgraphmacros
+
+[33mcommit a6a2b8b0772f44a663c068f94cc0f2b3b81d338d[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 17 23:22:26 2017 -0700
+
+    refactor multiple choice with graphs
+
+[33mcommit a74eb6157f2a1202a5c39d2c601412abe352513e[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 17 22:52:20 2017 -0700
+
+    typo
+
+[33mcommit 8d0834753fa7488175d08e6c92233bc0f825c872[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 17 15:25:32 2017 -0700
+
+    keyboard instructions
+
+[33mcommit a7e534546d64c6a2165f7a7fa6152d3a45cc36a4[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 17 15:04:56 2017 -0700
+
+    keyboard instructions
+
+[33mcommit 27b5a67dd2ec01a221d17d4cdf08e0361d90c78c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 17 14:35:19 2017 -0700
+
+    keyboard instructions
+
+[33mcommit ded162052502a7214b2bcb5d44076386fcf96b14[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 17 14:31:23 2017 -0700
+
+    errant line break
+
+[33mcommit 3f1c3d506d9a79c180d798b8b3532949d900673e[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 17 14:26:21 2017 -0700
+
+    keyboard instructions
+
+[33mcommit 2cf5db1f25cda8d101ae3b9d859dec5680d519e3[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 17 14:22:38 2017 -0700
+
+    keyboard instructions
+
+[33mcommit cb3cf1424a6a356de4b6ade196340a3bde7f0caa[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 17 14:18:50 2017 -0700
+
+    typo
+
+[33mcommit c6474094fc07cde4bd592ef3db84abfd4b11253a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 17 14:09:10 2017 -0700
+
+    radio buttons to popup
+
+[33mcommit c65e55f12b48140f1be31bc518a25fcb639df327[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 17 14:00:59 2017 -0700
+
+    enumerate parts with alph.
+
+[33mcommit caf61e08b14cb87228a6c6544de23aafdd4cffc6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 17 13:59:20 2017 -0700
+
+    keyboard instructions
+
+[33mcommit 69448cc086535858b0e80e30ef2d7a216b827373[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 13 18:07:08 2017 -0700
+
+    radio buttons to popup
+
+[33mcommit 730e66875fa8f733a9daf01b73ed81c9d8d497e3[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 13 17:29:37 2017 -0700
+
+    remove 'Solutions:'
+
+[33mcommit c57e46de526fc2e65d261c23f23f5652b9639dbb[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 13 17:22:26 2017 -0700
+
+    keyboard instructions
+
+[33mcommit 82fdc5a739c7dff7c00fa55d129ca4fbaaef6480[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 13 17:20:08 2017 -0700
+
+    resize images and keyboard instructions
+
+[33mcommit 132d26749d3843deade237248a1bbb4c8e265188[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 13 16:17:01 2017 -0700
+
+    math mode
+
+[33mcommit 6f5cbd14fa8266edbc327a323a9c71356e67726a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 13 15:55:41 2017 -0700
+
+    image sizing
+
+[33mcommit dbab01f55533915c7a433a1bd43924800a813ac6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 13 15:55:22 2017 -0700
+
+    *DNE* to code
+
+[33mcommit 1a8966f053aec9e40c25640bfcc0c6ce23bcea19[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Jun 10 13:23:15 2017 -0700
+
+    list enumeration
+
+[33mcommit 7c2630a57024e3fc888e04b4271f9cf8b80cae60[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Jun 10 13:22:35 2017 -0700
+
+    refactor similar triange problems
+
+[33mcommit 767708119ef4b1c6a97089634b05cddc1279bf52[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Jun 10 13:19:43 2017 -0700
+
+    implement list enumeration on many problems with parts
+
+[33mcommit f07cbce5a9b79ece4f529c7d134006d8346ff794[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Jun 8 23:36:28 2017 -0700
+
+    bold to italics
+
+[33mcommit f7980c5df026f3ed44024a40316d51d52afd97c7[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Jun 8 23:31:59 2017 -0700
+
+    radio to popup
+
+[33mcommit ef68daf33e3f7228279e284650f4d3333d597553[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Jun 8 23:27:03 2017 -0700
+
+    make graph images smaller
+
+[33mcommit 43f0bd410c715f10244d0c75352dc788c39dbf52[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Jun 8 23:14:08 2017 -0700
+
+    shorten graph height
+
+[33mcommit 29b6fda9d71fd944615d7ba052aa85a09b90ba00[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Jun 8 23:11:27 2017 -0700
+
+    make graph shorter
+
+[33mcommit b7c1a2f96225d3da31060ed314f03776cd31d4ae[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Jun 8 23:09:52 2017 -0700
+
+    rearrange intro
+
+[33mcommit 51406af70cbfb1c8f643ea63aa7e9ae2cb83252f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Jun 8 23:08:42 2017 -0700
+
+    make rectangles smaller
+
+[33mcommit 65003fa2f65639f5531eb8159ba07211d863ccf0[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Jun 8 22:51:49 2017 -0700
+
+    randomize order and change layout
+
+[33mcommit 6362fbcaa25efae10add82ed91aefd3f3c0fef62[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Jun 8 21:59:48 2017 -0700
+
+    remove remnant of some past debugging
+
+[33mcommit 21aeb4ac0397f7cd6621dcfdf64fa05af11932fd[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 23:35:06 2017 -0700
+
+    Keyboard Instructions
+
+[33mcommit d6b2cb7f1b43625265d46ee34c3760cf1eb42bf9[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 23:23:07 2017 -0700
+
+    Keyboard Instructions
+
+[33mcommit 5d3581e54b2897d87f51d9571d20a23e5f6ab175[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 23:11:40 2017 -0700
+
+    Keyboard Instructions
+
+[33mcommit 2e517317dfb51e4f7d64a61c33023e13d42bd56e[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 23:03:39 2017 -0700
+
+    Keyboard Instructions
+
+[33mcommit eb8ecbcf3b96862eaa77b63bef741be35a84ee0e[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 22:29:41 2017 -0700
+
+    Keyboard Instructions
+
+[33mcommit 508e89cbce5884a9f4b2dd05ee2ead26bdb703ad[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 22:23:55 2017 -0700
+
+    KeyboardInstructions
+
+[33mcommit 8d68929a917d520d4e4ef6d8627aa6895ebbef5c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 21:55:59 2017 -0700
+
+    PCCmacros
+
+[33mcommit 058ea6bc047e85bb6c78b72e099be385960d17e1[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 20:55:55 2017 -0700
+
+    remove 'Solution:'
+
+[33mcommit b182c011a20ef0974854eb1b4e73aa234959288d[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 19:18:47 2017 -0700
+
+    bold to code in PGML
+
+[33mcommit f58a9241ef7ba6016e9628a273eb4a0ec6ac73d4[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 19:12:51 2017 -0700
+
+    *DNE* to [|DNE|]* in PGML
+
+[33mcommit b9f3930e9e4cb2ec96ed773cef012c9cebd78ec3[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 18:02:21 2017 -0700
+
+    LTS and GTS to < and >
+
+[33mcommit 48c6cc57b4608d2ab997a1b9160355bf46e20217[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 16:00:30 2017 -0700
+
+    LBRACE and RBRACE to \{ and \}
+
+[33mcommit 37cb437067ca6562766ab42aaf127fde085193a7[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 14:15:21 2017 -0700
+
+    new version of a problem
+
+[33mcommit 9cbeaffe8007339b83187dd177012bc32f96561d[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 12:44:52 2017 -0700
+
+    keyboard instructions
+
+[33mcommit 305af40ef94cb317a008dba6df77aca6eff13c52[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 12:37:11 2017 -0700
+
+    keyboard instructions
+
+[33mcommit d17f604d6203e2f57376b292c821533cba0ea1b8[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jun 7 11:33:00 2017 -0700
+
+    add PCCmacros to inequality problems
+
+[33mcommit 36f591eb01ce4d9e0c82ac9a242f6e2c4e5ed4c8[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 6 22:34:30 2017 -0700
+
+    trial run with KeyboardInstructions macro
+
+[33mcommit 44955781347408780374d27150a3f1b0d7315fa6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 6 22:03:05 2017 -0700
+
+    buttons to dropdown
+
+[33mcommit 4521d13b28d159c01f3c7ddfb5518b09b0e9f6e7[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 6 21:45:35 2017 -0700
+
+    buttons to dropdown
+
+[33mcommit 28e919979ff592bc729beae67465cba683b1992b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 6 21:25:01 2017 -0700
+
+    remove *Answer*.
+
+[33mcommit 685fb3c61ae0afdceb08280918b98af8c7199012[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 6 21:10:49 2017 -0700
+
+    merge PGML and TEXT sections of problem together
+
+[33mcommit 6c0cb7de231c5cd877ec6c078ea67e76211270db[m
+Merge: 2255d47 28aabf0
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 6 18:37:28 2017 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 28aabf0adb5b3c3b332d5a95bbe0a2ee34bc6dc5[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Jun 6 18:37:14 2017 -0700
+
+    resize some images
+
+[33mcommit 2255d47d9bda410466054f08bb589eb45b86a5fb[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jun 6 18:32:32 2017 -0700
+
+    removed '*Solution:*' and 'Answer:' from questions
+
+[33mcommit ce7c7f9db9b4c4bab728eaab8016771eb9cc16f2[m
+Merge: 469dbdd e219c37
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jun 5 22:06:41 2017 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit e219c378d943abaccadf1e42f410d3942d6c0b1c[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Jun 5 22:06:22 2017 -0700
+
+    presentation errors
+
+[33mcommit 469dbddfd3398358022679470c7558107fc54e4b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jun 5 21:58:53 2017 -0700
+
+    change table format to ordered list with popups
+
+[33mcommit 3d3828a4927ffe2d9efcb16ec5c3e6d2c194535c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jun 5 15:31:40 2017 -0700
+
+    verbatim bit
+
+[33mcommit 5976acbc25feba7fb1ae0cadd3f6e45e0c24d225[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jun 5 15:13:55 2017 -0700
+
+    PGML one-star to three-star
+
+[33mcommit 76c897ac51f295288db2768af2e5077eb1b7cecd[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 3 23:00:10 2017 -0700
+
+    change all *NONE* and *DNE* to use verbatim
+
+[33mcommit cf2f7bc394c870cd20453d5c303fe107b12e97bc[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jun 3 16:37:24 2017 -0700
+
+    In PGML problems, replace [] with >, [] with <
+
+[33mcommit dd95e7c7924143edc51cba4823b0106c89f7648b[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu May 18 22:50:58 2017 -0700
+
+    restructure bad word problem
+
+[33mcommit 663b3f1f896d204757fa48254cdfca76886b7a85[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu May 18 22:49:53 2017 -0700
+
+    typo
+
+[33mcommit fec068e37a27367e9a1dc670518a2834af40ae32[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed May 17 09:49:51 2017 -0700
+
+    bug fixes
+
+[33mcommit 48518de1e13ab2c4e722886c1becab731c8c452c[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri May 12 16:28:25 2017 -0700
+
+    list items with alpha, not arabic
+
+[33mcommit b321e0fa77e08f823b879582f272e256ab20d96c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue May 2 06:50:22 2017 -0700
+
+    tolerance issue
+
+[33mcommit 96a0fb46d0d5d66ec1b2c330b892a9eb5635d460[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Apr 28 18:22:39 2017 -0700
+
+    randomization issue
+
+[33mcommit 528558c8110f17e0a717f9d333b71518eeffc71f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Apr 28 18:17:36 2017 -0700
+
+    randomization issue
+
+[33mcommit 12e06ad71ab0a9c27c178db0918769097a3aa725[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Apr 28 18:09:30 2017 -0700
+
+    randomization issue
+
+[33mcommit 139a5e9f1df7f060d673585e4eba8cffc5495f2e[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Apr 24 18:28:39 2017 -0700
+
+    edits and additions
+
+[33mcommit 5b831fc6bca29ea3132034e1197d468db9216f5d[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Apr 24 16:34:42 2017 -0700
+
+    new problems for ORCCA
+
+[33mcommit 9a97cd88df9a44518ffc96bce38e9c5f44f6041f[m
+Merge: effe964 c593da9
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Apr 24 15:01:49 2017 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit c593da9e1dc9e6316f0895af858173aa4c93c365[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Apr 24 15:00:08 2017 -0700
+
+    typo
+
+[33mcommit effe964d9c3c17e69655a5eb43ed73181aa6f16e[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Apr 24 14:59:03 2017 -0700
+
+    wrong kind of apostrophes
+
+[33mcommit 5ef9bde4bd59184349f288dd83c983acaf4985a1[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Apr 18 22:18:14 2017 -0700
+
+    edits and additions
+
+[33mcommit d2a910ccfdfe9a05e88ed4a4786850675cd464c3[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Apr 10 16:57:16 2017 -0700
+
+    punctuation
+
+[33mcommit 871b0ed7f1399bb513a92b69c57a8f8e9cc0cd96[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Apr 10 14:28:08 2017 -0700
+
+    alignment with list item numbers
+
+[33mcommit d5de2916bc42ebf0c48b9f93117824d954a3395e[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Apr 7 16:14:41 2017 -0700
+
+    new problems
+
+[33mcommit b804760ab19827c3f594d8fcc9d484891f3aade2[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Apr 7 16:07:28 2017 -0700
+
+    edits
+
+[33mcommit b7d1d15f3e635801a7d8acc42adb9b05e51c1d1b[m
+Merge: f46e205 5c27acd
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Mar 30 14:03:09 2017 -0700
+
+    Merge branch 'develop'
+
+[33mcommit 5c27acdd8a5ff5b910542617d9e8e82d3bde5868[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Mar 29 14:11:45 2017 -0700
+
+    new trig problems
+
+[33mcommit f46e2051dd39d0aec2c68419d9ff9f1e9e96390b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Mar 29 11:21:52 2017 -0700
+
+    rename problem set that has comma in name
+
+[33mcommit 12e8d24f2e12cc326ddabe4c70ba8c1941ede9f1[m
+Merge: 1ebe205 5714ca3
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Mar 18 16:13:18 2017 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 5714ca392cfc27b0ec86dbd9aa92fc5dac4610d2[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Mar 18 16:12:20 2017 -0700
+
+    reword/relabel parts of triangle
+
+[33mcommit 2241727a9f2e0b83adcaaa951999ad8106c6976a[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Mar 18 16:11:52 2017 -0700
+
+    make into list; add solution
+
+[33mcommit 1ebe205c60a3dcab30c1496bc562dfcf5533dc45[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sat Mar 18 16:08:43 2017 -0700
+
+    incorrect answer
+
+[33mcommit 18e8a7e69f0ea6cb9f46e85bb15b02582a2fa402[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Mar 6 15:13:15 2017 -0800
+
+    bugfix
+
+[33mcommit 958237979c3ab7f6fb7fc48d99499b299d46d304[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Mar 6 15:12:24 2017 -0800
+
+    test points randomization issue
+
+[33mcommit 27c84b8474eb73daf2c1a728e6fb95d1519d3192[m
+Merge: a653f16 b33bfbd
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Mar 5 18:57:44 2017 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit b33bfbd80e1a8e27223f79131f7a4fdae79a4e76[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Mar 5 18:56:16 2017 -0800
+
+    remove duplicate
+
+[33mcommit 5db7dae0b6cad0a2c56c8c2a44ed3712b7b3d9ee[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Mar 5 18:55:15 2017 -0800
+
+    remove errant visible solution
+
+[33mcommit a653f165738b542d7863aa8dbd089afaaa859275[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Mar 5 18:52:17 2017 -0800
+
+    randomization issue
+
+[33mcommit 0c1c8892ba9b675cc5ef29003bf4c37dd95eb925[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Mar 5 18:51:58 2017 -0800
+
+    typo
+
+[33mcommit 9065d165513c9a831490dccae1425c4996131224[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Mar 4 11:35:46 2017 -0800
+
+    add beginproblem() to problems
+
+[33mcommit a59787ba56019bb1cf76c2d8e1e26ce3e41fd780[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Mar 4 11:26:53 2017 -0800
+
+    new problems
+
+[33mcommit 0a18df2f75021be5c7c4a7af5e87ce21b52b49bf[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Mar 3 20:52:26 2017 -0800
+
+    PGML answer blanks
+
+[33mcommit 00bc73489c4546aa9f56ace5cd145bd7136373bd[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Mar 3 20:14:02 2017 -0800
+
+    revert file
+
+[33mcommit 6ee9676246280013d0a60bb3d952eb85cc4bffc2[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Mar 2 11:30:59 2017 -0800
+
+    randomization issues
+
+[33mcommit baa7779822c49b5fc46fbcaf2a8b6773b8cf979c[m
+Merge: 2978d49 8a23ebf
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Feb 24 11:20:37 2017 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 8a23ebfd3bf5ea33c65e579886041dcc4a6e979e[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Feb 24 11:20:14 2017 -0800
+
+    bug fixes
+
+[33mcommit 2978d4911c671c96ff50a32574d6a27663e5aea5[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Fri Feb 24 07:44:59 2017 -0800
+
+    corrected answer
+
+[33mcommit a4bf7ac5f88517d837650b554b35b2c020bb9b22[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Fri Feb 24 07:40:59 2017 -0800
+
+    reduce radical expression
+
+[33mcommit ef2539003e6b11267c98dfee0391d41cc6515dbf[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Thu Feb 23 23:02:35 2017 -0800
+
+    answer format instructions
+
+[33mcommit f394e1f720db9e48119ca3bc9e1181599ca3be6d[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Feb 23 22:52:08 2017 -0800
+
+    domain issue
+
+[33mcommit 1ee682abde1f7669c99c235fcdf7313c86ec5045[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Feb 23 20:32:41 2017 -0800
+
+    faulty solution
+
+[33mcommit a24c6552080a4b99bed43f35ba0bdfae25f50d8a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Feb 23 20:30:45 2017 -0800
+
+    faulty solution
+
+[33mcommit 82e9560152c2c9e7c12a43d5bce325818fba4e28[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Feb 23 20:29:38 2017 -0800
+
+    faulty solution
+
+[33mcommit a94a5997b518aa2ee6b051487bef28eb8ee7d1cf[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Feb 23 20:26:16 2017 -0800
+
+    randomiztion issue
+
+[33mcommit d6c56559ae0d1772a9520e6e768acea3046acf76[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Feb 23 20:24:52 2017 -0800
+
+    randomiztion issue
+
+[33mcommit dd46e8d73f6b1e995da21770e4083b934eeacb7a[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Thu Feb 23 09:46:00 2017 -0800
+
+    random seed issue
+
+[33mcommit f30f4f3cba410245d74867d42feca5936b6c3031[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Feb 22 12:53:04 2017 -0800
+
+    bug fix
+
+[33mcommit a456641b60361469acbcd81946c76f604f2c66b8[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Feb 21 13:52:30 2017 -0800
+
+    missing brace
+
+[33mcommit 2c49bd2ec2f9850fd399952308c627c99e126ba2[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Feb 21 12:31:59 2017 -0800
+
+    randomization issue
+
+[33mcommit c8e4e46de06ff8f0414a66341a72c2298747e0ad[m
+Merge: 4f804ae c0764c2
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Feb 20 12:10:45 2017 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/spoddeck-LibDev/templates/local/PCC into develop
+
+[33mcommit c0764c221c029c7b494beeb4c532dca0b61820ca[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Mon Feb 20 12:10:16 2017 -0800
+
+    bug fix
+
+[33mcommit 4f804ae46cecd4de5c00b4ac7a91101ab17582ca[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Feb 20 12:07:35 2017 -0800
+
+    rename files
+
+[33mcommit 750e8b986d42858cf4425b2ea8604773ced1ece3[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Feb 15 08:44:18 2017 -0800
+
+    new problem
+
+[33mcommit 9e5d57871d11a3c07263c5ffd076458fb46eea9b[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Feb 15 08:43:57 2017 -0800
+
+    bug
+
+[33mcommit f466dd0df902299b8f9f21667e1a70a705af1dc9[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Feb 15 08:41:00 2017 -0800
+
+    adjust graph labeling
+
+[33mcommit b495b5b03de68027512ce04044248a5397f72535[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Feb 15 08:37:17 2017 -0800
+
+    edits
+
+[33mcommit ffaaf2fbe6e49862ef35cc9ee59a8fcb99e88de8[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Feb 14 13:37:07 2017 -0800
+
+    incorrect answer
+
+[33mcommit 3b0a4cf56b2e5206ef2e359ea8266b254805ea39[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Feb 13 12:45:37 2017 -0800
+
+    typo
+
+[33mcommit ae0d460fd4827f07f434b635a0cd7d755779304b[m
+Merge: d3b1fbb 8c60f27
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Feb 12 21:18:15 2017 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 8c60f27195b67c529d8f51aa771fa8fb6550c4be[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Feb 12 21:13:04 2017 -0800
+
+    new files
+
+[33mcommit b89bc640a64b53e719c959357bc9724f70e86c38[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Feb 12 21:09:04 2017 -0800
+
+    edits to problems
+
+[33mcommit d3b1fbb006d231396b266cae80ac426a3289d09b[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Feb 12 20:41:08 2017 -0800
+
+    add copy of problem that had misspelled file name
+
+[33mcommit 4cc5536de362dac873aaef34e3d6b4d4d329a4b0[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Feb 12 20:39:38 2017 -0800
+
+    error in answer
+
+[33mcommit fc93c1ca1b27679c504d239ce1e70f1d40ed5f6a[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Fri Feb 10 13:06:47 2017 -0800
+
+    fix correct answers
+
+[33mcommit 87088755cfa65a8d0153731532c8377cd655a68c[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Feb 8 14:38:03 2017 -0800
+
+    new problems
+
+[33mcommit 5ac698f4ec829a9367a7fba63bd3a793b78e05a0[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Feb 8 14:26:48 2017 -0800
+
+    randomization and rounding issue
+
+[33mcommit be738499cf8c6263a0a85311f4b17593429589e5[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Feb 8 14:25:11 2017 -0800
+
+    prevent uppercase variables in algebraic properties problems
+
+[33mcommit 67a206990664d095b46fa8b4b80991eff7bed889[m
+Merge: 7276eda 4c18392
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jan 27 10:04:18 2017 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 4c183928f499f3b3a6cb9eef3cb645167b0c05bc[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Jan 27 10:01:50 2017 -0800
+
+    new problems
+
+[33mcommit 079777a4a743e3515e2bba63fd5986fc16215df4[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Jan 27 10:00:44 2017 -0800
+
+    versions of rational expression questions where you need not specify domain
+
+[33mcommit ca8e6f8d16b3c23710b7b5726dbc67a6e1ee8d11[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Jan 27 09:58:14 2017 -0800
+
+    prevent doubled roots
+
+[33mcommit 7276edacd22e06028f7d6a7a3753cbfd60a0be99[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Fri Jan 27 09:56:42 2017 -0800
+
+    correct paths in set def
+
+[33mcommit aa2ccfd93408f3bbecd134208e49ecfa32f3ea5a[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Jan 17 16:32:26 2017 -0800
+
+    refactor what pyth triples are used, and how
+
+[33mcommit bc2b60bdff22f21e2ca450e9d1d30f7759e14280[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Jan 17 16:08:18 2017 -0800
+
+    new files
+
+[33mcommit fd20fb115a66d5c1d12b3c3173949d661ad1193c[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Jan 17 16:07:53 2017 -0800
+
+    added alt text; repositioned 0 label on axes
+
+[33mcommit dff330da680c40777eaa29d60bc8250ea1688f9a[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Jan 17 15:59:45 2017 -0800
+
+    tighten tolerance to avoid singleton interval
+
+[33mcommit 3b803ec9ab69d15083cfb3ebe8f0a099ceee813f[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 15 15:57:35 2017 -0800
+
+    complex solutions to quadratic equations
+
+[33mcommit 735c51e5b008abfab6e8d7ed29e5377a6aa7bf3b[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 15 09:47:51 2017 -0800
+
+    new files
+
+[33mcommit 2e550e96ff21c91662cfc6fcd462c1c83567af63[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Jan 14 23:51:36 2017 -0800
+
+    new files and intro wording edit
+
+[33mcommit fe3e7fa0dece4a9f5bc60dbf6bcf98f247c25df3[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Jan 13 11:27:18 2017 -0800
+
+    rephrase instructions
+
+[33mcommit 8b15c3be462635671f8d29d268ecaaef527ccb1d[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jan 13 11:20:49 2017 -0800
+
+    simplify code
+
+[33mcommit 6e10866b3228b187b9e8160a80d9b32d13c627c1[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Jan 11 18:00:51 2017 -0800
+
+    allow vars other than x; rewrite solutions; new problems
+
+[33mcommit d55b4e6a795a1928b8b208b4cdcad1b4e35609bd[m
+Merge: 50f5d39 07f1cd6
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jan 11 17:57:08 2017 -0800
+
+    Merge branch 'develop'
+
+[33mcommit 07f1cd60dfc46d3c4aae44c592eaced652cf4088[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Jan 11 17:55:28 2017 -0800
+
+    randomization issue
+
+[33mcommit 50f5d39491c6af6355b9f619abba1eae30bcd36e[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jan 10 12:02:02 2017 -0800
+
+    reword orientation question
+
+[33mcommit 002216cd5fa8087973f8d604836b02017df154b0[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Jan 8 17:23:32 2017 -0800
+
+    deleting problem sets that have been consolodated
+
+[33mcommit 8aa8a86e8b135af26629861830edc5656ad61f1d[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Jan 8 17:23:05 2017 -0800
+
+    typo
+
+[33mcommit 32fbee29058dc42db9d078723d2d8f0682c50652[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 8 15:33:41 2017 -0800
+
+    edits
+
+[33mcommit c3011e55d28d3cb09929cd0dbfcf5b422f3e04b8[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 8 15:14:39 2017 -0800
+
+    new files
+
+[33mcommit 5564afab0f071e3030c04482b99b087b11c9b555[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Jan 8 10:49:22 2017 -0800
+
+    added problems to MTH95 sets; rearranged due times sequence
+
+[33mcommit 6cd36d5bf5180455066a6181d100371ab7d6f0bf[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Jan 8 10:42:07 2017 -0800
+
+    new MTH95 sets
+
+[33mcommit 2dfcfea7a25955712400b4aad43b8e08cc5ad6f4[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Jan 8 10:39:40 2017 -0800
+
+    added videos to a set header
+
+[33mcommit b01d7d890199983495aa2a1e451084fe3e20a006[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Jan 8 10:37:19 2017 -0800
+
+    minor edits to some problems
+
+[33mcommit f623c0194965d6b6438339f36eca772b0532f9d1[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Nov 30 16:29:51 2016 -0800
+
+    new problems
+
+[33mcommit 2dca475b58ffc9add9c33ae7166a9b3d39d96d87[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Nov 27 22:38:44 2016 -0800
+
+    randomization bug
+
+[33mcommit 6fdc0f92d4ed92e77ed4fe4d543a78701eb7def7[m
+Merge: d05fc4c 2e35cbd
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Nov 24 15:14:15 2016 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 2e35cbde26018bd1b3b9b27e256f98d91ffabdc2[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Nov 24 15:12:25 2016 -0800
+
+    new problems
+
+[33mcommit d05fc4ce69c0a020689c3ea1229d71e97511d5e1[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Nov 24 15:11:12 2016 -0800
+
+    typo
+
+[33mcommit e190e7ffd1592df57870bf7f620522cab3726913[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 22 22:43:49 2016 -0800
+
+    can't potentially allow blank line in align in hardcopy
+
+[33mcommit 26baacd57f40f81648bc6506de049a92e0ce3f3d[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 22 22:31:08 2016 -0800
+
+    can't potentially allow blank line in align in hardcopy
+
+[33mcommit 2e7801f98c45d0015ea8185973236a79fa777f4c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 22 22:06:27 2016 -0800
+
+    can't potentially allow blank line in align in hardcopy
+
+[33mcommit 767207377f36c2693cb470da2b42d50eef31987e[m
+Merge: 412e99b df7dce4
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 22 21:40:49 2016 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit df7dce43658767f767fcdb84111eb09322541188[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Nov 22 21:37:36 2016 -0800
+
+    new problem
+
+[33mcommit 622bf349fb79b727c55a4420b0c9352b58eaf545[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Nov 22 21:37:20 2016 -0800
+
+    edits
+
+[33mcommit 412e99bbb53a8de4bf950f0a41e76bfbfe8467a1[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 22 21:20:34 2016 -0800
+
+    can't potentially allow blank line in align in hardcopy
+
+[33mcommit e75477c0f31569b0f7a0b244b037bcf47cb5bddb[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Nov 16 12:41:52 2016 -0800
+
+    change factor problems to use new solutions algorithm
+
+[33mcommit e992e9baf51df5b6ece7c24ff391845cff09506f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Nov 16 08:11:55 2016 -0800
+
+    revert file
+
+[33mcommit b1b202ff9976184b8d9b9f3f9f785d3366c3c1b2[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Nov 14 15:48:46 2016 -0800
+
+    clean up
+
+[33mcommit 9988deda15b9f7c9a6b1e7a382ccc73025b4bd4d[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Nov 14 15:35:12 2016 -0800
+
+    lots of edits and additions from Carl
+
+[33mcommit 29c69d897630be69b5fff022a16d0861d3206684[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Oct 6 13:54:53 2016 -0700
+
+    Edits and additions
+
+[33mcommit 8752b3eabe3b3feb3536ac3e584c4cbef89eb5f4[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Sep 22 15:58:14 2016 -0700
+
+    typo
+
+[33mcommit ccc8a3cb24416ede7038ce339bd92689f565d21a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Aug 22 11:50:51 2016 -0700
+
+    fix typo
+
+[33mcommit 3d303b7cbe13f3934dec762cc996e94b939845c4[m
+Author: Ross Folberg <ross.folberg@pcc.edu>
+Date:   Mon Aug 22 11:26:20 2016 -0700
+
+    added solution
+
+[33mcommit 4a10e3ec8f8ae8cfbdf0c66aaa4677676457bfa5[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Aug 22 11:01:30 2016 -0700
+
+    clarify instructions
+
+[33mcommit 13a298c0bb4a85ad06205948f9208c8f8811af67[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Aug 22 10:46:27 2016 -0700
+
+    spacing
+
+[33mcommit b3169057e93fbf817e1f2cf017207c0279cb876a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Aug 22 10:45:04 2016 -0700
+
+    reposition labels
+
+[33mcommit 40e9939ff10b903f7680756a325c21c078d0361c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Aug 22 10:29:34 2016 -0700
+
+    reposition graph labels
+
+[33mcommit 299f5b5e8a132b08ddd7107af315661c9a1657a8[m
+Merge: cd32bad 9e70d96
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Aug 22 10:23:59 2016 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/vega-LibDev/templates/local/PCC into develop
+
+[33mcommit 9e70d960e1fef2c6fedd870302bbf4289de8b9da[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Mon Aug 22 10:23:15 2016 -0700
+
+    minor edits
+
+[33mcommit cd32bad0256626344d77eee34d968387649bb988[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Aug 22 10:19:40 2016 -0700
+
+    Carl's summer upgrades
+
+[33mcommit df9d44cad818fa413270b0c883b7ee8c1a92e597[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue May 17 13:11:13 2016 -0700
+
+    randomization issue with division by 0
+
+[33mcommit a8261b055fac21289d862f3380cef9aa358beb93[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon May 16 18:03:40 2016 -0700
+
+    Added two easier problems to interset set
+
+[33mcommit 59e88a12fbd8618bff2d7cbb1a8446f55a1cfd49[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon May 16 18:00:49 2016 -0700
+
+    fixed bug
+
+[33mcommit df165157ebbae9ce63a6e7e4d8de3658e601d5e4[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon May 16 17:55:55 2016 -0700
+
+    new interest problem
+
+[33mcommit fa33644935b9f38cbff6ae8b51bfe3700b3893da[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon May 16 17:44:56 2016 -0700
+
+    Fix broken solution with scientific notation issue
+
+[33mcommit 4ddd0114cf29e9390cf0702a5e492a47b6133fee[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon May 16 17:39:04 2016 -0700
+
+    Perl scientific notation issue
+
+[33mcommit 850143efc1161d6000839e181e1866464e99f292[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Apr 21 06:25:01 2016 -0700
+
+    require custom answer checker hash to be defined first
+
+[33mcommit 7080305a6d2fbf387ea8a15df99a564e5032b2bb[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Apr 20 14:25:48 2016 -0700
+
+    bug
+
+[33mcommit 867a5f7f0bfc2caf48d72f8027b4e6236b07a310[m
+Merge: f719322 a16fc1b
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Apr 14 17:45:27 2016 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit a16fc1bab3d3a9d18f55f75c8f09ce5af7e8b875[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Apr 14 17:44:06 2016 -0700
+
+    new complex number problem
+
+[33mcommit f71932231e575d97403ae3385c44bcb96100a327[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Apr 14 17:42:41 2016 -0700
+
+    caret presentation
+
+[33mcommit 61cb7172226ef99b740329dfa9a3b9aaddb120fa[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Apr 12 12:03:04 2016 -0700
+
+    fixed bugs
+
+[33mcommit 2b0eba3ddbc9555bf539c475e08a6cd0b180f8fc[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Mon Mar 28 15:09:17 2016 -0700
+
+    changed problem names for mth95 calculator problems
+
+[33mcommit 489da9761324cd0c467349393aa3440bebda857f[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Mon Mar 28 15:07:55 2016 -0700
+
+    eidts and bugfixes
+
+[33mcommit 8a3fbb567eb4a60b2a27de7aaa5b78726c23db99[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Mar 16 09:07:39 2016 -0700
+
+    due date for orientation
+
+[33mcommit 37e1dee382c6760e62bfbc69a942d37da29daf7f[m
+Merge: 3c0cb58 a331169
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Mar 16 08:36:42 2016 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit a3311698db7d3227f6eba4cf18922e382ed4aa8e[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Mar 16 08:35:28 2016 -0700
+
+    remove MTH95 from names of problem files
+
+[33mcommit b4d81fbc03ce1cf11a305378774ce2bde00f9461[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Mar 16 08:34:59 2016 -0700
+
+    bad video link
+
+[33mcommit 3c0cb58dc7cb7c5b34fed1d02af90b5fb0230a4a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Mar 16 08:32:33 2016 -0700
+
+    explicit 0 for SMA in set defs
+
+[33mcommit 1753fa30d33338ce18e0e753413d929fea046253[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Feb 25 11:37:47 2016 -0800
+
+    made sure numerator is square-free
+
+[33mcommit 7c4113af4181a3b1e22be48a4c6e6fd4bf0a1a29[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Feb 20 18:14:31 2016 -0800
+
+    changed how variable names are randomized
+
+[33mcommit b087e7c8b814a909b24a78c9eaba087172719df6[m
+Merge: 806aea2 aaa9c4f
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Feb 20 18:04:05 2016 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/jordan-LibDev/templates/local/PCC into develop
+
+[33mcommit 806aea2e72f1f7fdfc6bbe5a2f386737295ec39d[m
+Merge: ab82342 1ab9aef
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Feb 20 18:02:59 2016 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 1ab9aef5e4abf871a2503ec1f03263b6fda325c8[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Feb 20 18:02:25 2016 -0800
+
+    labels on number lines
+
+[33mcommit ab82342c0d141d21f434bac75c373371ecd8ccf0[m
+Merge: 620a151 b2d98b2
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Feb 20 18:00:28 2016 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit aaa9c4ff40326f3b88087db83c92fe4e914ae5f0[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Feb 20 17:56:41 2016 -0800
+
+    Bug in solution
+
+[33mcommit b2d98b24a491d816cddd44eeb7adf5797f835450[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Feb 18 15:43:35 2016 -0800
+
+    improved diagram
+
+[33mcommit 620a151e30a3d579000409f03d95d09d3386bdaf[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Feb 14 08:57:40 2016 -0800
+
+    fixed units
+
+[33mcommit 6e4a6471da514d51dcdf0ce40ee4787a3d5dc309[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Feb 13 13:45:04 2016 -0800
+
+    fixed units
+
+[33mcommit 78fda367899c4afaea027dda0a3bf8bb1242fc90[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Wed Feb 10 20:42:27 2016 -0800
+
+    fixed name randomization
+
+[33mcommit 27ad293ca3e49b41a8b534b667ad46fdb902483d[m
+Merge: 259289a 842bb6b
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Feb 8 20:30:07 2016 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/spoddeck-LibDev/templates/local/PCC into develop
+
+[33mcommit 259289aa347c982251843f5b7ee48eca5eaddd65[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Feb 8 20:29:13 2016 -0800
+
+    new calculator files; edits to old ones
+
+[33mcommit 842bb6b8e366cd3105368b758b4e78c38e7ef47c[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Mon Feb 8 17:25:28 2016 -0800
+
+    edits to answers
+
+[33mcommit cca3975d9891a109aac7c3604e18c4dd55f6ce68[m
+Merge: b042faf b48c5be
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Feb 1 17:42:51 2016 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/spoddeck-LibDev/templates/local/PCC into develop
+
+[33mcommit b48c5beeb7b5fed57609905b05a0f3845c41cd97[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Mon Feb 1 17:38:38 2016 -0800
+
+    fixed typo-related bugs
+
+[33mcommit 53ae7a87c7e35efeefc64156749beef26341d6c5[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Mon Feb 1 17:36:36 2016 -0800
+
+    typo in solution
+
+[33mcommit e348d63f694ab7d5d0696846cf716ef8844a3802[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Mon Feb 1 17:35:27 2016 -0800
+
+    copy and paste errors in solutions
+
+[33mcommit d0831b9b00dd18584ff3b4cd463956b0fce12baa[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Mon Feb 1 17:33:30 2016 -0800
+
+    fixed incorrect answer
+
+[33mcommit b042faf92fe9a17f9250ad57fb92cd23fac4ca17[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jan 26 00:06:20 2016 -0800
+
+    answer hint
+
+[33mcommit a018df6d57810caabc4fd87587bb9dd51f0e71ba[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jan 26 00:02:14 2016 -0800
+
+    answer hint
+
+[33mcommit 159f04ac7d44a5a3e2aa16930e531c170f492b42[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 25 23:59:56 2016 -0800
+
+    answer hint
+
+[33mcommit a5ea31c1bae8a0a8098fb18c96cc3c4d9b879635[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 25 23:58:31 2016 -0800
+
+    answer hint
+
+[33mcommit afee7881928e85f5eba777aeae68515328b3fa00[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 25 23:22:39 2016 -0800
+
+    whitespace
+
+[33mcommit 217a4856e78506acaaf382a79df9f19ae5f6cc71[m
+Merge: 482ad82 e9903ff
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 25 23:20:25 2016 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 482ad8247ba441a8ded60c41dc7f53b6abf71b77[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 25 23:19:09 2016 -0800
+
+    whitespace
+
+[33mcommit e9903ffae1d1347bd544a25ede9f2e66e82a9445[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Jan 25 18:07:51 2016 -0800
+
+    changed answer checking mechanism
+
+[33mcommit bc632abca371b21a4d775657f9b7399ee8ee08e1[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jan 22 21:28:48 2016 -0800
+
+    fixed problem set def
+
+[33mcommit 5a5852f50a2457ed0fcdc472f341b17b142b3543[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jan 22 21:15:58 2016 -0800
+
+    fixed set def formatting
+
+[33mcommit b4412757e77adc0d854febf2858fe3052205f1f6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jan 22 21:06:35 2016 -0800
+
+    new problem set
+
+[33mcommit 5015e6300e0fd6616a2ec9da9954dabfd3842bac[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jan 19 16:43:33 2016 -0800
+
+    fixed bug
+
+[33mcommit 1a95d5c87873d2820a1eb289a41892c75bb84ab1[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 18 21:04:11 2016 -0800
+
+    new problem set
+
+[33mcommit d0a14fb7d6ae3ce06e86db4317d2493e265519af[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 18 20:30:56 2016 -0800
+
+    new graph problem
+
+[33mcommit 604402a7282042f729745e45132dbeae54d0f560[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 18 18:51:04 2016 -0800
+
+    graph window issue
+
+[33mcommit 2bfd2fd3858c48ab79382a041247f31a3dd161b6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 18 16:43:08 2016 -0800
+
+    plot window issue
+
+[33mcommit 2c75fb2632f21de59ef06fa1bd60c29d37779f67[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 18 16:37:16 2016 -0800
+
+    plot window issue
+
+[33mcommit 617c89f9edc15266de4abc7a8d992a535ea4d5c0[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 18 11:54:02 2016 -0800
+
+    randomization issue
+
+[33mcommit 1104fd9b06be04bf06c6e243f4d13b0353024792[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jan 15 19:27:08 2016 -0800
+
+    renamed a problem set
+
+[33mcommit d656c3c546cd85a1948e7aeb9ea409733d3e2eb7[m
+Merge: b75f2ce fa722dd
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jan 12 21:59:07 2016 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/spoddeck-LibDev/templates/local/PCC into develop
+
+[33mcommit b75f2cee902bd6966dd5344ced73d201bec9bd22[m
+Merge: d21dd8d f3203a7
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jan 12 21:59:01 2016 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit f3203a7e7906a7d104470824e3cd943985c8fdac[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Jan 12 21:58:10 2016 -0800
+
+    fixed a bug
+
+[33mcommit fa722dd01d4d075b4aa687024ec692dbbae7ad1f[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Tue Jan 12 21:55:14 2016 -0800
+
+    fixed a bug
+
+[33mcommit d21dd8d65b414b7acec5cc9f40d1c0ba566fe4ae[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jan 12 18:19:43 2016 -0800
+
+    randomization issue
+
+[33mcommit 8cb81a62c4c2da95e2a77b52d68c3658e96dade1[m
+Merge: 5dd8f7b ecbfcf6
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Jan 7 21:21:33 2016 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/vega-LibDev/templates/local/PCC into develop
+
+[33mcommit ecbfcf6517d7208c49a21c6e010f47216880af29[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Thu Jan 7 21:19:08 2016 -0800
+
+    minor edits and addition of solutions
+
+[33mcommit 5dd8f7b1e41b3eda087347f20f7d90aa797cd6c6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Jan 3 21:07:34 2016 -0800
+
+    fixed plotting domain
+
+[33mcommit 047f5a8b4e58e33846e92f0b9602a7ee43c308ae[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Jan 3 17:18:02 2016 -0800
+
+    corrected set header locations in set defs
+
+[33mcommit b8271328563ae9e60cf65db5e3b40f9a86bcfeea[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Jan 3 17:14:10 2016 -0800
+
+    new set defintion; mnor edit to an old set def
+
+[33mcommit a9059aa417e3bc971c27a8e3e6ba65873b4e6ade[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Jan 3 17:13:43 2016 -0800
+
+    minor edits; one new problem
+
+[33mcommit 39fa7d722baa8e649036d4930616b636a74cfa94[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Jan 3 15:21:07 2016 -0800
+
+    new set defintions for Math95 by subject
+
+[33mcommit 7f478ae50257ae7a4b74a6f359ddf5597293e2c8[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Jan 3 15:15:52 2016 -0800
+
+    new simplify radical application problems
+
+[33mcommit 8fa1812caab9631b5940bbb0ade9b2413956f5da[m
+Merge: 3a587cc 037f82e
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Jan 3 10:41:27 2016 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/spoddeck-LibDev/templates/local/PCC into develop
+
+[33mcommit 037f82e7171084462a12ee6233ae4133136e6963[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Jan 3 10:39:11 2016 -0800
+
+    new set headers for MTH 95 with videos
+
+[33mcommit 3a587cc3179bc22e36f4079f592c7350014110f0[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 3 10:37:32 2016 -0800
+
+    new rational equation problems
+
+[33mcommit 5a890164f29680efacd9a642c00d6280a4093823[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 3 10:36:39 2016 -0800
+
+    new rational equation problems
+
+[33mcommit 380554627a535c3ff54f63dad87bf774cb0512da[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 3 10:36:02 2016 -0800
+
+    more quadratic function problems
+
+[33mcommit 916d2a06f41f305a935d307ec048714321bd518b[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 3 10:35:21 2016 -0800
+
+    more inequality problems
+
+[33mcommit f0876729d2bd7ae95368d48637190828fca5845b[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 3 10:34:06 2016 -0800
+
+    more Function Basics problems
+
+[33mcommit 68ee7ac7ad75196bd58248f5f4f1287f44de8b93[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 3 10:26:13 2016 -0800
+
+    deleted garbage file
+
+[33mcommit edcfeb83cb106bcb38f16d0be1c8b0327dc72c71[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 3 10:24:19 2016 -0800
+
+    new complex number problems
+
+[33mcommit 4d2721c9841e6be27b3f6f44d892ad486c7fb322[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 3 10:23:45 2016 -0800
+
+    new calculatro exercises
+
+[33mcommit 8d0297f00a244a8f20ea58f8e3ead32c16f7e73f[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Jan 3 10:20:48 2016 -0800
+
+    new absolute value equations and inequalities
+
+[33mcommit 206f8b36abefaccfd53cec1dabed129edafb031f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Jan 2 20:16:08 2016 -0800
+
+    minor edits
+
+[33mcommit adfa048632e87b0788b1a49f6ccf39899cfc2910[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Dec 30 16:48:37 2015 -0800
+
+    new set
+
+[33mcommit 5d189cd730e29e226134a672ed7a17976a8aca01[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Dec 30 16:48:21 2015 -0800
+
+    added problems to set
+
+[33mcommit f4895808e8897188e334d07b0fc5dfad271a0ec1[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Dec 30 16:47:46 2015 -0800
+
+    minor edits to problems
+
+[33mcommit 40870886cc72c28b662fc76c1b231b6ae030d613[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Dec 29 22:41:50 2015 -0800
+
+    new problem set
+
+[33mcommit a48ad81b126045bc8262ecd9ca750686c69c5b72[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Dec 29 22:41:29 2015 -0800
+
+    modifications to some problems; some new problems
+
+[33mcommit 8bde468031e6ed4965bc15f2779fb4a912b975e1[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Tue Dec 22 23:53:47 2015 -0800
+
+    minor edits
+
+[33mcommit b20744ec4cbdb42f84c329d53d368955afc571d5[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Tue Dec 22 23:50:47 2015 -0800
+
+    new problems
+
+[33mcommit f396c5005a48bfd4cbca9130596c4e095d4a44bd[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Tue Dec 22 23:50:33 2015 -0800
+
+    added solutions
+
+[33mcommit dbd0634f17fdeb529fd913e2b59401c18a6dbbd2[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Dec 3 20:16:27 2015 -0800
+
+    typo
+
+[33mcommit 5fb3d36c80583ee06ae793b1d25b55e1917ae3e1[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Dec 3 20:08:25 2015 -0800
+
+    corrections
+
+[33mcommit f4fc2d63210ac7261dcbd75dfd0683255d280031[m
+Merge: c427146 a441f85
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 24 12:46:41 2015 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/spoddeck-LibDev/templates/local/PCC into develop
+
+[33mcommit c42714672a20656e7a6e7e62f946fd0f40457d29[m
+Merge: 555736b 113441d
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 24 12:45:41 2015 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit a441f85adf8108ec68b1fe36787994570ef08aa6[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Tue Nov 24 12:45:14 2015 -0800
+
+    added solutions; problem description in comments
+
+[33mcommit 113441d75c9531c2891c98dd74f98b3c1c851bdd[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Nov 24 12:43:46 2015 -0800
+
+    changes to explanation in solution
+
+[33mcommit 555736bed745158534d5edde6cc877c10671cb23[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 24 12:41:22 2015 -0800
+
+    there was a mistake in the alt text for an image
+
+[33mcommit fab2ac1d7e02c642020aaf61b20e992ac6e5708f[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Nov 17 16:16:53 2015 -0800
+
+    some edits
+
+[33mcommit 5ebd87736e802aea2b92d1d7856444ac9fbdab32[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Nov 12 15:05:08 2015 -0800
+
+    degree-1 to degree-one
+
+[33mcommit d13b4ea6452971b181705d05befb92d28e13ac98[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Nov 12 14:16:13 2015 -0800
+
+    broken url
+
+[33mcommit 52bb5591325a23eeb2ab019a72fbf153057e1d6b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Nov 8 22:18:11 2015 -0800
+
+    bug with custom checker
+
+[33mcommit e358ce8fac358bfafe05fa02f90f53afea6d62a8[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Nov 7 20:31:46 2015 -0800
+
+    clarified wording
+
+[33mcommit 0e6ac8bc7de7d282819ee92801c096f724364f75[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Nov 4 21:04:18 2015 -0800
+
+    edited randomization
+
+[33mcommit 77192cf150336b55caef86928dde19f7b4173a6e[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 3 17:41:53 2015 -0800
+
+    domain issue
+
+[33mcommit c121ddde37a73d18bcd3844089f3690c3f2a8c17[m
+Merge: b4b2388 1f75be4
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Nov 1 10:31:00 2015 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 1f75be4f128a039c6313e86237a4acf4d8dfa630[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Nov 1 10:29:09 2015 -0800
+
+    Trig problem set
+
+[33mcommit b4b23886c23d9ce3adb1f2b351540f68d7fb2b34[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Oct 30 10:50:57 2015 -0700
+
+    typo
+
+[33mcommit db2686af0d71604d33798830d9898dd7e1f8e667[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Oct 26 12:27:42 2015 -0700
+
+    added rounded answer
+
+[33mcommit 5757b6a0bd521f024ba449bc2761b35b8167a7c7[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Wed Oct 21 16:05:41 2015 -0700
+
+    added solutions, problem description in comments
+
+[33mcommit 016933d6579d7d3cca488b95ee8ad30860f67fd2[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Oct 18 19:58:33 2015 -0700
+
+    added solutions; problem description in comments
+
+[33mcommit b433fd0ec707032793567895cceb98ea43aac821[m
+Merge: b8a8b17 015810b
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Oct 13 17:37:02 2015 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit b8a8b1756e1be8143cb9576e53940db2654bc13d[m
+Merge: 967b72d 8a73fad
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Oct 13 17:36:54 2015 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/spoddeck-LibDev/templates/local/PCC into develop
+
+[33mcommit 8a73fad6775b3694a78340b9a576c695a9f026b4[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Tue Oct 13 17:36:08 2015 -0700
+
+    added solutions, description metadata
+
+[33mcommit 015810b866f1b2099c572a1ee2a61e1bcaa5add5[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Oct 13 17:35:09 2015 -0700
+
+    fixed typo
+
+[33mcommit 28bbd3014b39ff64c10339f960374e53fb630277[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Oct 13 17:34:53 2015 -0700
+
+    fixed randomization
+
+[33mcommit 967b72daf666a92fe0bb415493122c6a37c083c6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Oct 13 17:33:23 2015 -0700
+
+    enhanced two problems
+
+[33mcommit faf347cc90f2b64e0ce084464c6681b6f8969c48[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Oct 10 20:45:53 2015 -0700
+
+    reworded answer sentence
+
+[33mcommit 8a159dbb153fdd0e9a5e7b9f4d934310f6d54e4a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Oct 10 20:45:27 2015 -0700
+
+    relaxed to Numeric from LimitedNumeric
+
+[33mcommit 5b28b857556e48bb411c63d0bb123360b340da2f[m
+Merge: 1d2eb4a 9c3a655
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Oct 3 14:24:17 2015 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/spoddeck-LibDev/templates/local/PCC into develop
+
+[33mcommit 9c3a65503108d58ec2e0d745fb654e6ea5544ea2[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sat Oct 3 14:23:48 2015 -0700
+
+    added solutions; added description; removed unneeded macros
+
+[33mcommit 1d2eb4ad6bdd5fd1e90c31eb1df152f46dccaf00[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Oct 3 14:20:04 2015 -0700
+
+    make sure 0 coefficients handeled well
+
+[33mcommit 43c771ee3fa54440c0b72f72ca8d80dc6d28dbff[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 29 20:53:41 2015 -0700
+
+    image caching
+
+[33mcommit 25b5cdf294c215d169ffb288bb34e22ab7101397[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Sep 28 21:10:39 2015 -0700
+
+    changed graph boundaries
+
+[33mcommit ce10ea39c44028764f302a508fe881837572e51c[m
+Merge: 4c20e0a 7934333
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Sep 27 13:47:06 2015 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 4c20e0ad3304fb242faf8586a9aa607e21cb06b5[m
+Merge: 95178f0 597e838
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Sep 27 13:46:49 2015 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/spoddeck-LibDev/templates/local/PCC into develop
+
+[33mcommit 597e8387c7d9a70f2cb0dc7aaea0e621d6bec349[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Sun Sep 27 13:46:29 2015 -0700
+
+    added solutions
+
+[33mcommit 79343336c9e66f6bc327314d64b88477796d6236[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sun Sep 27 13:08:41 2015 -0700
+
+    fixed a typo/bug
+
+[33mcommit 95178f0f8a6e8208c2bfb9d39716b4238f861f22[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Sep 27 13:07:13 2015 -0700
+
+    PGpolynomialmacros interferes with PCCmacros.pl
+
+[33mcommit c84de474565758453f3d861b683670727233d586[m
+Merge: 5a795c0 19941b6
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 25 00:22:58 2015 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 19941b671747d2e61340793ec72fdbaf840712c9[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 25 00:21:31 2015 -0700
+
+    fine tuned randomization
+
+[33mcommit 5a795c0afcd4d70aa6ac37eba2f93b106eaefb49[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 25 00:18:10 2015 -0700
+
+    changed to use proper PGML for radio buttons
+
+[33mcommit a340a58ab04cded48f6be36c40236d476de84426[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Sep 23 20:27:55 2015 -0700
+
+    altered code to reflect changes to implicit planes
+
+[33mcommit 32e5b5498db802ecf471b4a46c1cb73df7d6daf8[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Sep 21 16:48:05 2015 -0700
+
+    bad PGML syntax
+
+[33mcommit 55edad1162cf33590575b5dd1bca973d82a14ddc[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Sep 21 14:30:44 2015 -0700
+
+    bad syntax in answers
+
+[33mcommit 40a3b01b897d3f571f77108a03cadfd8c6c5cd65[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Sep 21 14:18:36 2015 -0700
+
+    commented out root problem
+
+[33mcommit aba7b020c890694afdade8f8a6f37d0ba36c18be[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Sep 20 16:56:47 2015 -0700
+
+    hotfixes for some problems; radicallistchecker seems to be broken
+
+[33mcommit 6b8103e686934171c8ee665f214d705bae591381[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 16 15:39:18 2015 -0700
+
+    renamed MTH 95 set defs to match new book/edition
+
+[33mcommit 151ff2c8a388ee58329eafb76658423849acb919[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Tue Sep 15 21:56:27 2015 -0700
+
+    spaces in set def names for 65 and 243
+
+[33mcommit 6392ac12d31c3cbbcd63ff0bdc541d1cb459717a[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Sep 15 16:06:53 2015 -0700
+
+    spaces in set def names for MTH60
+
+[33mcommit bc44df98ca17d367e4f20717391588d2ec822e2f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 15 15:40:30 2015 -0700
+
+    put spaces in set def names for MTH20
+
+[33mcommit be5c3e710c66a031e732f04118817e935d8a2823[m
+Merge: 5159f32 de451bf
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 15 14:55:44 2015 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit de451bfcf9c221b2bcc8b57ac93d3376d66807f1[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Sep 15 14:55:24 2015 -0700
+
+    typo
+
+[33mcommit 5159f32c39216583c3f3b53383fa2ce121682bdb[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 15 14:52:41 2015 -0700
+
+    added to explanation of four significant digits
+
+[33mcommit 8604f4e061da89f328a7dc168e219370700f3567[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Sep 3 14:02:37 2015 -0700
+
+    typos
+
+[33mcommit 8488713624a76de9575dd2b7dc8e05de99dc4087[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Sep 3 00:09:17 2015 -0700
+
+    changed all .def files to have uninitialized SMA values
+
+[33mcommit 4949344e9b027e7694d7e0e2d7b0fd0ddd47b856[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Sep 2 23:27:05 2015 -0700
+
+    Trigonometry problem set
+
+[33mcommit f71e67b7b70f415d62d94a22afb5f04414af20d9[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Sep 2 23:21:38 2015 -0700
+
+    change mode of these files
+
+[33mcommit f3bf783c3cff17986019bffee06982213d6e828f[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Sep 2 14:27:13 2015 -0700
+
+    Pythagorean Theorem questions
+
+[33mcommit 56751d2d2cbecd71dccb6ee264a4a8196fe3d278[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Sep 2 14:19:31 2015 -0700
+
+    Triangle trigonometry basic questions
+
+[33mcommit 746a3814d150139a6414e7be482b2bcbc51a53ef[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Sep 2 13:52:12 2015 -0700
+
+    shifted numberline axis further off the window
+
+[33mcommit 66aa55fe60664e029833b507c9dcb1fb3f3574b3[m
+Merge: a6c3ab0 c1062ef
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 1 18:10:19 2015 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit a6c3ab0941d50fe1265a94bc1addf6bd6761e7e1[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Tue Sep 1 18:09:36 2015 -0700
+
+    added solutions
+
+[33mcommit c1062efac8650da0d7afe3042fa0cac8bd638306[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Sep 1 18:08:12 2015 -0700
+
+    better simplification before presenation of equation
+
+[33mcommit 1f22b8690056d10caf774baf1ca5760d220b6880[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Sep 1 18:07:32 2015 -0700
+
+    changed rounding method
+
+[33mcommit 0c80218e6ee9153c55dbf4f39f5fdd64d0301442[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Mon Jul 27 12:19:32 2015 -0700
+
+    solutions added
+
+[33mcommit 2d928f53db346d9dd1a875dcf2fb9646762c690b[m
+Merge: 02cd146 bf4a64b
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jul 7 13:29:26 2015 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/vega-LibDev/templates/local/PCC into develop
+
+[33mcommit 02cd146ec9bb9f1911c8d35361e5b220af43ae50[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jul 7 13:28:58 2015 -0700
+
+    changed 'level' to 'weight'
+
+[33mcommit bf4a64bfa11f3c860a19aec31840df4edbfbc086[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Tue Jul 7 13:25:26 2015 -0700
+
+    added solutions; added more math mode; more use of Math Objects
+
+[33mcommit c83a997d0d01fab0952b82444f3e942cbc5263fe[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue May 26 21:16:37 2015 -0700
+
+    changed x to
+
+[33mcommit 7e8f8bfee0e077967c471275a44247b511a7b997[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue May 26 21:11:59 2015 -0700
+
+    problem was table-based; not anymore
+
+[33mcommit 13514d870bc37f93f7435a3030d39193856938af[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue May 26 21:11:24 2015 -0700
+
+    domain issue for test points
+
+[33mcommit 6b6584215ee355920b0548403629accd3e7ec28f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu May 14 17:46:13 2015 -0700
+
+    made values Real
+
+[33mcommit 7b1d93c8c3299fc2b05dc7d1173c4a23a6e59fbc[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu May 14 17:40:12 2015 -0700
+
+    shift should be nonzero, and linear term can't have pm1 coefficient
+
+[33mcommit 13bd9427372086dcd606b9408aa1dfd2678f7929[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu May 14 17:35:04 2015 -0700
+
+    relaxed error tolerance
+
+[33mcommit 9f959176a83566df4ed8adda5359a0901fbb7c7a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu May 14 17:30:10 2015 -0700
+
+    fixed bug
+
+[33mcommit 63680b639d12d93346d74c689f423c1c8a41fa30[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu May 14 17:21:30 2015 -0700
+
+    fixed bug
+
+[33mcommit 5c32c0dfdc9d55c22390fd8bae129e4ef3775b2f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Apr 10 17:12:46 2015 -0700
+
+    hardcopy issue
+
+[33mcommit f089c8420d464ca503818d85457301f695215860[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Apr 10 17:10:27 2015 -0700
+
+    hardcopy issue
+
+[33mcommit f3b849716956c45d34e2a448c1983ce7c1d25ea3[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Apr 10 16:52:08 2015 -0700
+
+    tweaked randomization to avoid crowding
+
+[33mcommit 65d65444348b2d843ac4a093dd6d29aff14443ba[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Apr 3 17:19:59 2015 -0700
+
+    tweaked custom answer checker
+
+[33mcommit 1fae528dc34f7d59cd0768c7440f1f6c6c9577a7[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Mar 20 18:43:31 2015 -0700
+
+    added spaces to MTH 111 set names
+
+[33mcommit 752e666f870b6c90ae3fb8483c43589c37d150f1[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Mar 3 17:34:23 2015 -0800
+
+    randomization issue; changing decimals shown in a solution
+
+[33mcommit 0dcf799af68520f2e1d1877aa687b2f826f7fd9c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Feb 22 09:30:50 2015 -0800
+
+    specify not to use Normal approximation
+
+[33mcommit 9aaaf0b85282cf5288fd0948ce0c8dee24302daf[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Fri Feb 13 21:16:04 2015 -0800
+
+    reworded problems
+
+[33mcommit 41ac4d6036337700538cb23112ace5ad45f86bde[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Feb 12 15:33:12 2015 -0800
+
+    randomization issue
+
+[33mcommit 5ae5330761f8ffb49b04bd8f29b9bed6ad29659b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Feb 12 15:31:45 2015 -0800
+
+    randomization issue
+
+[33mcommit 7bd9cf691857a5f13d9ac6b1f4a951973fd450f3[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Feb 12 15:28:52 2015 -0800
+
+    randomization issue
+
+[33mcommit dc6fb9082b1803170ce15c79e9fd21d10f59ec97[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Feb 4 18:26:56 2015 -0800
+
+    randomization bug
+
+[33mcommit bee2ba781d5166c392c4f1ff257bb645401c3f6b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Feb 3 10:00:36 2015 -0800
+
+    typo
+
+[33mcommit c1a536071402031d6088988542f4396ee86ebca7[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Jan 29 17:51:56 2015 -0800
+
+    infinite loop
+
+[33mcommit 02ecd7935ef2a1ef894a25d4f2163aef2c7b6b82[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Jan 27 16:56:32 2015 -0800
+
+    typo
+
+[33mcommit 18ed5debf28bef1a59b23d200b699a97d1f7534f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 26 17:37:05 2015 -0800
+
+    typo - missing dollar sign
+
+[33mcommit ef1af44199acb18b8893addb5f3b0aaf95fc7e88[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jan 23 21:38:57 2015 -0800
+
+    removed PGpolynomialmacros.pl, having replaced PolySub() in PCCmacros.pl
+
+[33mcommit 1ffc4e23dc516698813c7addc87ed506991eb7e6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jan 23 20:49:32 2015 -0800
+
+    an old set definition file for Functions in MTH60 points to a set header called Functions when it should have pointed to FunctionsIntro. This is a copy called Functions in case any one uses that old set def file
+
+[33mcommit aba2382df17f05f6917620c6f527025f3f38f048[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Jan 23 20:45:24 2015 -0800
+
+    a set def file was not pointing to the right onscreen header file, and an onscreen header file had a typo in a link
+
+[33mcommit e6b912bf9703f365e352c57e80ba0a443f8bf441[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Jan 22 17:37:31 2015 -0800
+
+    fixed bug that ignored if values were zero
+
+[33mcommit d7cd50800c8a0be0ffe760bc2e93332761fe6297[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jan 14 10:38:34 2015 -0800
+
+    still trying...
+
+[33mcommit c0d286b8cbeeaa10dca99d4749c7b04b23ebd0ce[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jan 14 10:36:43 2015 -0800
+
+    still trying...
+
+[33mcommit 08309ac384122f53dd656492b0724cfd92ae418c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jan 14 10:27:03 2015 -0800
+
+    trying to make the tolerance better on the symmetry question
+
+[33mcommit 55eaed2104acc5e658d64a6aee2e4556f589b36c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Jan 12 16:45:32 2015 -0800
+
+    trying to make symmetric box plot problem better
+
+[33mcommit bab226c92acd1fae58d99a9bb9644b96ec4e2f1f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Jan 11 20:23:28 2015 -0800
+
+    fixed incorrect T/F answer
+
+[33mcommit d0eee1a038abb16e70b513ce8cc4242411749b1c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Jan 7 14:30:46 2015 -0800
+
+    typo
+
+[33mcommit 8fafc17590ea285ef0083ad6a5e45da2a86a9053[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Jan 7 13:50:48 2015 -0800
+
+    two new Orientation problems: mixed numbers and units
+
+[33mcommit ec6e898e23ffca8814ca7aad909ef14507b4b6c7[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Jan 6 13:46:52 2015 -0800
+
+    fixed randomization issue
+
+[33mcommit c8d09d60309fe654679caa0959182e632f8288af[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Dec 15 13:23:37 2014 -0800
+
+    changes to 111 default sets
+
+[33mcommit 59178e208b71b445a8b2cc82fd7aad5a421e6975[m
+Merge: f1d31b9 60d7109
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Dec 10 09:05:08 2014 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit f1d31b938c267b0b7a56e22fb6914087519ec716[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Dec 10 09:04:54 2014 -0800
+
+    domain issue
+
+[33mcommit 60d7109bc4122cfe244c347e7fc9c1157753700a[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Dec 10 09:03:50 2014 -0800
+
+    issues with tons versus metric tons
+
+[33mcommit f104a406c145c446164264794789dc642f5605d8[m
+Merge: b8f95ab 7c4bdbc
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Dec 3 15:41:39 2014 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 7c4bdbc5cdba6dac4d834108a540a145ff5295cd[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Dec 3 15:41:24 2014 -0800
+
+    use generic pronoun
+
+[33mcommit b8f95ab8a895f350224719555a76ae1bf3147775[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Dec 3 15:39:58 2014 -0800
+
+    added PGML, solutions, enhanced answer checking
+
+[33mcommit 0e4b044dba6b499da7cad5946c92a9d3d6fc5120[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Dec 3 14:05:35 2014 -0800
+
+    typo/mistake fixed
+
+[33mcommit e16f643aec40d20d0b55331b151e6c1992935ec5[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Dec 1 17:19:31 2014 -0800
+
+    added solutions, PGML, bizarro, etc.
+
+[33mcommit dfc17495c83fd682c46eec9b72107fee3fae2d21[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sun Nov 30 15:34:38 2014 -0800
+
+    added solutions, PGML, etc.
+
+[33mcommit d56582ae093160fb51eeee039c8b49dd37df22fb[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Nov 27 22:37:48 2014 -0800
+
+    added solutions, PGML, etc.
+
+[33mcommit fefe4c34ca0c4b804d42c1675cd69ef798f76b22[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Nov 26 18:43:12 2014 -0800
+
+    changed problem to use contextRationalFunction.pl
+
+[33mcommit e2dbcd3a7edfc2fbfe8decf23e638cc85f21923a[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Nov 25 19:57:41 2014 -0800
+
+    made it so that multiple choices are all guaranteed distinct
+
+[33mcommit 3d8e6a9c1900cec3d750a45924af46c12c4cb1c2[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Nov 24 17:08:40 2014 -0800
+
+    more solutions, PGML, etc
+
+[33mcommit a9da2e8f755ffdde4f6566d2f61762a4e9a87ee7[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Nov 24 10:47:20 2014 -0800
+
+    added solutions, PGML, etc
+
+[33mcommit b7ac2541cc2bcb6b5e77400ba717a6835923d55a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Nov 24 10:18:17 2014 -0800
+
+    typo - missing dollar sign
+
+[33mcommit fd9065a1c2e4791157bfb4f6a0c648a703d5316a[m
+Merge: 8439b21 36ed46c
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Nov 22 12:51:16 2014 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/vega-LibDev/templates/local/PCC into develop
+
+[33mcommit 36ed46c38d76466c04862e19271d0cffbd204634[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Sat Nov 22 12:50:38 2014 -0800
+
+    added solution
+
+[33mcommit 8439b21a3cc0d754f2ff371cd8c4c0356eaf88d0[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Nov 22 12:47:26 2014 -0800
+
+    corrected typo foot->yard
+
+[33mcommit ca313db13231f9a222250d207532e1651e96d808[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 18 21:24:15 2014 -0800
+
+    edited problems
+
+[33mcommit f59efec067af6424ab919ce1ce4df270c51bc9e9[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 18 21:14:51 2014 -0800
+
+    removed bold solution
+
+[33mcommit a43fae8c2b0dd2964fa7a12f20dea77e301c5705[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 18 21:08:32 2014 -0800
+
+    moved instructions before answer blank
+
+[33mcommit 7950945161375c2d9e692df7e138e1d7f384c12a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 18 21:04:01 2014 -0800
+
+    removed bold solution; it is not good structure
+
+[33mcommit f30c5c394587705d2b0eeb3f22c1389172a8bbb3[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Mon Nov 17 22:07:07 2014 -0800
+
+    added alias for string answer
+
+[33mcommit 28bc12090a98869b3fd606c25c6470bcf7d88ec9[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Nov 17 17:35:34 2014 -0800
+
+    edited solution
+
+[33mcommit 86028aa98debaba7e196c5cbc06212b06ae0cd60[m
+Merge: 2287872 9553f0e
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Nov 17 14:25:24 2014 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 228787270c93a145eae67f46c23b11162d30d7e7[m
+Merge: fbc8d73 5d45cb9
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Nov 17 14:25:24 2014 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/spoddeck-LibDev/templates/local/PCC into develop
+
+[33mcommit 9553f0ecd19087af46f2d312ccbd1c949186bfb6[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Nov 17 14:25:05 2014 -0800
+
+    edited solution
+
+[33mcommit fbc8d7397cc2ed03299595d3130a313bc5ca708c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Nov 17 14:22:51 2014 -0800
+
+    embiggened parentheses
+
+[33mcommit 5d45cb9d71869533dd047dd8428633ae1068a18d[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Mon Nov 17 14:20:41 2014 -0800
+
+    corrected wording
+
+[33mcommit 1cccf896f64c450861e54d10321e21f553e0f7f1[m
+Merge: 48e7fa9 8b282d5
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Nov 14 14:33:49 2014 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/vega-LibDev/templates/local/PCC into develop
+
+[33mcommit 8b282d5b7dd7ba00f330a598410df4a415d4ee76[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Fri Nov 14 14:33:31 2014 -0800
+
+    added solution
+
+[33mcommit 48e7fa93425f5c4372ec1c79dd9841f21403ef94[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Nov 14 14:31:34 2014 -0800
+
+    moved instructions before image
+
+[33mcommit 0ce37fddab147f74a3dd7bfce04ca93f61c8c2fa[m
+Merge: ae38ad6 86da3bb
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 11 12:42:30 2014 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit ae38ad61942e2e98d3534c0022da01abafba6477[m
+Merge: 31044c6 d49678e
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 11 12:42:30 2014 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/spoddeck-LibDev/templates/local/PCC into develop
+
+[33mcommit d49678ec35da0274345a9bf81391a9ebc8a6095a[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Tue Nov 11 12:41:59 2014 -0800
+
+    just experimenting
+
+[33mcommit 86da3bb57dac99ee88a6e191f1fa1789eb5c5d2a[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Nov 11 12:41:04 2014 -0800
+
+    fixed incorrect variable refernce
+
+[33mcommit 31044c6cf42894b9f87a26a5ec1a07bbbdd50149[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Nov 11 12:40:08 2014 -0800
+
+    one graph was not being displayed
+
+[33mcommit 6accc65d8cb3ab80312876595dc630afed04af3c[m
+Author: Heiko Spoddeck <heiko.spoddeck@pcc.edu>
+Date:   Mon Nov 10 15:14:09 2014 -0800
+
+    experimenting
+
+[33mcommit 1fd4958d4e85b3edde3c862c97aa3cdf54f5c882[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Thu Nov 6 12:54:39 2014 -0800
+
+    added extra lines to solutions in several problems
+
+[33mcommit d718eeb07a0cc90b0458a3cc2582fca5e27a2709[m
+Merge: c7a46b4 b495559
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Nov 5 19:27:24 2014 -0800
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit b495559a36664aa78c30a89d3036430c19d376e1[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Nov 5 19:27:00 2014 -0800
+
+    changed error tolerance
+
+[33mcommit c7a46b456e2171c5b16c97fa08e3f13221741b72[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Nov 5 19:16:45 2014 -0800
+
+    fixed test points
+
+[33mcommit 2c02ad0f9d7d4506b3ba6ce3726fcd971fdd80cd[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Wed Nov 5 10:10:27 2014 -0800
+
+    constrained randomization to avoid bug
+
+[33mcommit 0d8e97e32a64f3652266bfe48ab921dbc87b3bad[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Nov 3 17:50:00 2014 -0800
+
+    added a solution
+
+[33mcommit 1c7d50f2dcbabfb61c3ae16aa1b3f569f2380982[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Nov 3 17:43:11 2014 -0800
+
+    solutions, PGML, etc.
+
+[33mcommit 9cecdd2857db616791bba7138cd4f90bca661fed[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Nov 3 17:25:53 2014 -0800
+
+    added solutions, PGML, minor tweaks, etc
+
+[33mcommit 57de68d840fa449318c6d5eeea925917b2f01494[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Oct 25 19:39:13 2014 -0700
+
+    added solutions, PGML, etc
+
+[33mcommit a30488fe9212b8e6030f8d31002f6cadebf024c5[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Oct 25 17:18:35 2014 -0700
+
+    cleaned one problems coefficients; added PGML, solutions etc to another
+
+[33mcommit 2deb0ce381f769c62e07c5f5c57912c1fdb8fbcc[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Oct 25 14:09:28 2014 -0700
+
+    added solutions, PGML, etc
+
+[33mcommit d776106cd56f41fa9e2fefb0f5239e8071336ac2[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Oct 24 21:01:46 2014 -0700
+
+    added two more solutions
+
+[33mcommit b9145d0cafebf5380e9ba6eb2734c4b19500cf97[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Oct 23 14:40:23 2014 -0700
+
+    solutions and tidying of two problems
+
+[33mcommit 6331534eb5629bc0397c14aff408dbf113543927[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Oct 22 16:07:07 2014 -0700
+
+    fixed incorrect answer
+
+[33mcommit 538b5125422c8a6b81d6af33438146886a2b76e9[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Oct 21 13:51:24 2014 -0700
+
+    added solution
+
+[33mcommit 00d3abe0fdbc87fcc858b2ebe5abd6977bc1fa66[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Oct 21 12:52:51 2014 -0700
+
+    spruced up a problem
+
+[33mcommit f75415956eb11b597a41129efd40d6af1ac0d122[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Oct 20 18:39:05 2014 -0700
+
+    added solution, PGML, etc
+
+[33mcommit dd130711d2a9f526bd16fd28e2dcb1bbd27b7870[m
+Merge: 958e158 673ec90
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Oct 20 14:57:58 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/vega-LibDev/templates/local/PCC into develop
+
+[33mcommit 673ec90d62ffd642639fa3954baaec83b2fc7756[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Mon Oct 20 14:57:37 2014 -0700
+
+    added 3 solutions
+
+[33mcommit 958e1589ff178e0de5d9adf07d5b55466bbe2071[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Oct 20 14:55:10 2014 -0700
+
+    improved problem
+
+[33mcommit 9bc77081e6a42b032f69e27be9fbd763dc93a019[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Oct 15 15:28:25 2014 -0700
+
+    fixed bug that allowed equations with no solutions to arise
+
+[33mcommit 89bb71a1d593e77d28b1790c2f3617a7665d525b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Oct 14 12:43:34 2014 -0700
+
+    added four solutions to 111 problems
+
+[33mcommit eb4580aa8938766e976d37da9b80bd8282832dac[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Oct 13 15:15:25 2014 -0700
+
+    fixed infinite loop
+
+[33mcommit 26ce3c9a59fd504d7a28be193eaa1998754fd51f[m
+Merge: a7b76ec 4a145ff
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Oct 13 15:07:01 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit a7b76ec5976424b59036b58f62d15643d5609186[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Oct 13 15:06:14 2014 -0700
+
+    fixed two issues to prevent unfortunate versions
+
+[33mcommit 4a145ff8ffcf7e634759eaf4a0fa9639c0079c77[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Oct 13 14:48:57 2014 -0700
+
+    edited some problems, fixing bugs
+
+[33mcommit d133965b1f6a15cafed1c8a02e598b15ed09e478[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Oct 6 18:05:06 2014 -0700
+
+    fixed incorrect solution
+
+[33mcommit 7c313437d9cf781d41993066b6dbfd386a6f63c2[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Oct 6 17:52:03 2014 -0700
+
+    added three solutions and cleaned up the problems
+
+[33mcommit 43e9d038f13dc3547207c5c01b7d10eb448d75e6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Oct 6 17:23:32 2014 -0700
+
+    cleaned up a problem and added solution
+
+[33mcommit d9028396564955e6162396f647b565ed9c172e8a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Oct 6 16:16:19 2014 -0700
+
+    cleaned up and added solution to a problem
+
+[33mcommit 41231d8effe24e2aa32efc594cfd01c3032b5412[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Oct 6 14:39:26 2014 -0700
+
+    added a line to a solution; edited embeddings in header files
+
+[33mcommit dc245a1d3b599eb8893539818c906b581d4857b0[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Oct 4 18:29:34 2014 -0700
+
+    somthing about this problem was causing error messages; removed the answer hint and used a hack to prevent comparison to the student's previosu answer, and this seems to have helped
+
+[33mcommit fd3f8df99dbe8ad4266849e1b51686da50411457[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Oct 3 20:38:46 2014 -0700
+
+    missing $ from a perl variable
+
+[33mcommit 50d898ff59b0d4c6500302b06df2826cd3b2f3cb[m
+Merge: 68feadb c04ae28
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Oct 3 18:07:02 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/vega-LibDev/templates/local/PCC into develop
+
+[33mcommit c04ae28927a8e384b402da19e5279f7f82c0de81[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Fri Oct 3 18:06:37 2014 -0700
+
+    solutions for three problems
+
+[33mcommit 68feadb1fc758c5bfd751866f02bdce876466e67[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Oct 3 18:00:36 2014 -0700
+
+    minor edits on two problems
+
+[33mcommit aa85fc4f195ef6084ad19b5fe769e395e7f07271[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 30 22:55:06 2014 -0700
+
+    corrected typo in solution
+
+[33mcommit 82f8132c4f3aa103ae21cb9986feed131f4553d7[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 30 11:29:22 2014 -0700
+
+    added hint for a particular wrong answer
+
+[33mcommit 22771f90a4bb673ea6518773f4edceb7b974a1a9[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Sep 29 18:55:24 2014 -0700
+
+    fixed bug with last part
+
+[33mcommit ecb98453455fef7dfc015f63eb24275886ae23eb[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Sep 29 17:24:53 2014 -0700
+
+    clarified instructions for input
+
+[33mcommit 63d60e129c9df913f6d5d31bfbf3b87c56c338ae[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Sep 25 12:34:06 2014 -0700
+
+    this problem was using a list checker that is not behaving well for a list consisting of one assignment; so I copied how quadratic euqations with a single solution are handled. Ideally, the list checker would be fixed, but no time
+
+[33mcommit 961c2d83fb41c0d6d8789e6a4a3313e30dea0931[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 24 16:52:42 2014 -0700
+
+    added solutions, PGML, and tweaked math object usage
+
+[33mcommit 46041053560165a49beb38871f0ab98ad008bd97[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 24 09:54:10 2014 -0700
+
+    added ** to image statement
+
+[33mcommit 54abbec3ce5138616600767dc5a83be81ce1bc6f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 24 09:51:05 2014 -0700
+
+    edited wording
+
+[33mcommit 35ca9a55312f3a144bc862bd72362fb33aee5c07[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 24 09:43:01 2014 -0700
+
+    fixed a problem to require simplified rational expressions
+
+[33mcommit 37ec5e2bd80fcfd78a6cbc08ff9c49181a11aabf[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Sep 22 15:24:22 2014 -0700
+
+    fixed typo in a problem
+
+[33mcommit c69ace04fae537d4589252af9e7fa5ef6d3c8ecb[m
+Merge: 26ed009 c9568ac
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Sat Sep 20 12:39:07 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit c9568acdf47cedf0d893e36cb8608e086323fda3[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Sat Sep 20 12:37:50 2014 -0700
+
+    added more scientific notation problems
+
+[33mcommit 26ed009c4e695471af4c5599fa176b3d47021236[m
+Merge: ebde3ca 716499d
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 17 18:44:01 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/dear-LibDev/templates/local/PCC into develop
+
+[33mcommit ebde3ca38a718b84011561f9328ba638b1999cf6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 17 18:43:33 2014 -0700
+
+    enabled SMA (at value 2) on all problems in default sets
+
+[33mcommit 716499ddde0c696e3c80504fe8e33da86d387408[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 17 18:41:06 2014 -0700
+
+    enabled SMA (at value 2) on all problems in default sets
+
+[33mcommit 0c694ea02c35732e1c942c60b280f7a3de712d65[m
+Merge: 6bc3b88 f0be491
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 16 15:32:43 2014 -0700
+
+    Merge branch 'develop'
+
+[33mcommit 6bc3b88bfdf09d692d20802df3b0cb3bbbed15a6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 16 15:32:29 2014 -0700
+
+    added solution to 111 problem
+
+[33mcommit f0be4919356d53898208d33bb511f69c43a540f2[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 16 15:22:03 2014 -0700
+
+    added sol to a 111 problem; added texStrings to some currency problems
+
+[33mcommit 4c2fd1203410f85e2f06ab2ff2008cc510dcec9b[m
+Merge: fa554af bf2ded7
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Sep 15 16:46:12 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit bf2ded73674447f4d03fd72dc226a6508425c283[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Sep 15 16:45:48 2014 -0700
+
+    fixing embedded videos in a screen header
+
+[33mcommit fa554af4054fedaaa62566ad8469b891452be8b3[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Sep 15 16:44:35 2014 -0700
+
+    fixed some myseterious bug with Orientation problem 2 in the hardcopy; edited problem 6 to talk about new User Settings
+
+[33mcommit bb6b9f1d7eb9204d3aea8e648fc4f71ac562b9c1[m
+Merge: 90e0f08 bc27dad
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Sep 15 15:31:28 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit bc27dad952c5ef3bf6ea2bf59a10b0ac78c6b59c[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Sep 15 15:31:09 2014 -0700
+
+    embedded videos to a mth 60 header
+
+[33mcommit 90e0f087ae7c331299faf1d24ae090c90e08823b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Sep 15 15:29:33 2014 -0700
+
+    more editing of problems using parserImplicitPlane.pl
+
+[33mcommit 7438c230bfef162575d932193b6100b27862d4a9[m
+Merge: 5dcf087 37c90a9
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Sep 15 14:32:19 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 37c90a92cdfe0186f75017b68f76605c79f43376[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Mon Sep 15 14:31:55 2014 -0700
+
+    embedded videos in 20/60/65 set headers
+
+[33mcommit 5dcf087167b6a2a109f70f6ff04c85d4d1025c41[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Sep 15 14:30:47 2014 -0700
+
+    edited some problems that use parserImplicitPlane
+
+[33mcommit d462cff875efcb404c21247fd2b74567438e8c1b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 12 18:32:07 2014 -0700
+
+    changed wording
+
+[33mcommit f1fc4b59221df156eeb39accb55f67c064d5a3fb[m
+Merge: d46e1b6 1b27160
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 12 14:36:50 2014 -0700
+
+    Merge branch 'develop'
+
+[33mcommit 1b27160c4a1d664de918f391442042c6385b34c8[m
+Merge: c7fd6bc 3124a6f
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 12 14:36:50 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit c7fd6bc3c012384e2ab454a869671e00a3a09355[m
+Merge: 0123f77 273094c
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 12 14:36:50 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/dear-LibDev/templates/local/PCC into develop
+
+[33mcommit d46e1b6f99f1ed3f16d06b4e7f208bfa5436df3a[m
+Merge: 273094c 0123f77
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 12 14:35:52 2014 -0700
+
+    Merge branch 'develop'
+
+[33mcommit 0123f7742c742efcae112fc46c00ba8124360692[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 12 14:35:35 2014 -0700
+
+    MTH 111 problem sets
+
+[33mcommit 3124a6fe63ebde71546be83180002fcc19a592ed[m
+Merge: 2cd688f 273094c
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 12 14:32:39 2014 -0700
+
+    Merge branch 'master' into develop
+
+[33mcommit 2cd688f030941f6fa4e31c1eac1ba8d7d33d2f8e[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 12 14:32:09 2014 -0700
+
+    added problems to a 65 factoring default problem set
+
+[33mcommit 273094c6ae12e244aea4c3deeebdbcc7576b1dc5[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 12 14:30:22 2014 -0700
+
+    default problem sets for MTH 111
+
+[33mcommit 7717a9e8fb403b1cefef2f162883d68b31cc4976[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 10 18:12:50 2014 -0700
+
+    starting MTH111 set defs
+
+[33mcommit 01ff3fb98be0dbc43b794e27c6dbbd0d7476ba0d[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 10 14:57:18 2014 -0700
+
+    should be last meddling with 243 set defs and headers
+
+[33mcommit 1d635ece6e364df12ee9c11e5184adadd0aafd42[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 10 13:50:46 2014 -0700
+
+    bug with problem
+
+[33mcommit d4651b9e1be5f3d54cbe095be8546303504c4e12[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 10 13:40:52 2014 -0700
+
+    applied niceTables to a table in a problem
+
+[33mcommit 4c41de382015f686dee66597292d93ee4fa90a2b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 10 13:26:37 2014 -0700
+
+    setting up mth 243 set defs and headers
+
+[33mcommit 7c38e0ae7889add701e8fd00e7af4a413713c259[m
+Merge: 64809e0 fff227d
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 17:00:41 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/dear-LibDev/templates/local/PCC into develop
+
+[33mcommit 64809e079cae888ca7a69af18f1305dbf45effdb[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 17:00:03 2014 -0700
+
+    still working on 243 sets
+
+[33mcommit fff227d33550241c4497863aa68fed10e0b61aa2[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 16:58:00 2014 -0700
+
+    still working on 243 set headers
+
+[33mcommit a395af2140684f8e7bb1e42645e398836fe76a8b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 16:56:56 2014 -0700
+
+    working on 243 set headers
+
+[33mcommit c561fc765a265641735170b12704d7dd331b5fed[m
+Merge: 11fbbbf 32e0476
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 15:16:51 2014 -0700
+
+    Merge branch 'develop'
+
+[33mcommit 32e0476f5186f738ec3694c0020a5d670c4437bd[m
+Merge: 447dbd0 72d8d84
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 15:16:51 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/jordan-LibDev/templates/local/PCC into develop
+
+[33mcommit 447dbd01b397ab81e827b1b6857141080e0e62e5[m
+Merge: bf7d891 4853176
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 15:16:50 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/dear-LibDev/templates/local/PCC into develop
+
+[33mcommit 11fbbbf277b14dd0edc2702508c8681bc9e8d88b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 15:16:36 2014 -0700
+
+    copied statistics problems
+
+[33mcommit 72d8d846209f27bd7e6a817ac593996b6db581fa[m
+Merge: bf7d891 4853176
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 15:15:02 2014 -0700
+
+    Merge branch 'master' into develop
+
+[33mcommit bf7d891ade1cd93f053d15dfd273e7e339a1f56e[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 15:13:30 2014 -0700
+
+    copied statistics problems
+
+[33mcommit 4853176913bc7dfe12a4e734dc8db503f8b17933[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 15:10:55 2014 -0700
+
+    math 95 and math 243 set defs and math 95 headers
+
+[33mcommit f959f3d0dbb22951416aa41eb54161e4252dfe8b[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 13:22:59 2014 -0700
+
+    fixed issue with problem using Set object
+
+[33mcommit 7d30d6ea8dff88d3dbecd1c55c06d93743053b7d[m
+Merge: 9e4376e 8bdebf9
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 10:14:55 2014 -0700
+
+    Merge branch 'develop'
+
+[33mcommit 9e4376eae91aa137cd4cd06b41fac154a7d57ae1[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 10:14:38 2014 -0700
+
+    editing and renaming of 20/60/65 set defs and headers
+
+[33mcommit 8bdebf9da769ea96b85e22a257dd1f9eda09bd66[m
+Merge: b827b1b a757fd1
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 10:08:15 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit b827b1b25bdbe2ab47ad175301b0bd3eaac75bae[m
+Merge: d0671ae 925279b
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 10:08:15 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/vega-LibDev/templates/local/PCC into develop
+
+[33mcommit d0671aee757849cf90a0679e78c2436ce0319af2[m
+Merge: f133908 dcf322f
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 10:08:14 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/jordan-LibDev/templates/local/PCC into develop
+
+[33mcommit f133908d844e7fad980b78f3f09c1fe231267503[m
+Author: Doug Jones <cdjones@pcc.edu>
+Date:   Tue Sep 9 10:00:58 2014 -0700
+
+    added CompSci folder
+
+[33mcommit dcf322fa18ac59d5310c74885e02d019fab5fe67[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 9 09:59:33 2014 -0700
+
+    edited two functions problems that use Set objects; changed tex size on some number line graphs; renamed and edited some set definition files and onscreen headers for 20/60/65
+
+[33mcommit 925279b71b82330083320ea4a089f0cdfbbd11b4[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Tue Sep 9 09:55:46 2014 -0700
+
+    added two solutions to stats problems
+
+[33mcommit a757fd119f6e191f338f44797a471c7bbbf92d51[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Sep 9 09:52:04 2014 -0700
+
+    changed name on one onscreen header to conform to pattern
+
+[33mcommit b680230450e299f6525cb22061373e7954fe1849[m
+Merge: d9c1e25 eee8d92
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 15:04:00 2014 -0700
+
+    Merge branch 'develop'
+
+[33mcommit d9c1e2561f6898befd87e99aae56e8222fe822c8[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 15:03:49 2014 -0700
+
+    cleaning up mth 20 defs
+
+[33mcommit eee8d92ceb3ecd78ad6b33fee4636142c2d1e741[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 5 15:02:37 2014 -0700
+
+    cleaning up mth 20 set defs
+
+[33mcommit b0a51f293cb87177fea644527d45c7b96971dd78[m
+Merge: 0d04d1c 01dc2ae
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 14:28:24 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 01dc2aea359493254492e919a170f725a539fba0[m
+Merge: 7a1eae5 caa6345
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 5 14:27:49 2014 -0700
+
+    Merge branch 'master' into develop
+
+[33mcommit caa6345f5fd157ed8ce015067d5e8fe64c0d90cd[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 14:26:46 2014 -0700
+
+    working on mth20 set defintions
+
+[33mcommit 0d04d1c140438bfad15e88de727a57f064a14b75[m
+Merge: 78a38e4 7a1eae5
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 14:21:16 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 7a1eae59b2a182dbab286f34db3297d62922f718[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 5 14:20:22 2014 -0700
+
+    more work on mth 20 set defs
+
+[33mcommit 78a38e426b01bd0d03bd4a12de407e2f1ab2c572[m
+Merge: 0870f02 02ca302
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 13:52:09 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 0870f02002fa238bb51a05d16b64a5606162742d[m
+Merge: 76a90a6 0a68f05
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 13:52:09 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/dear-LibDev/templates/local/PCC into develop
+
+[33mcommit 02ca3027030c70630a3baf34cc75ecd740c0b942[m
+Merge: 45502b7 0a68f05
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 5 13:52:01 2014 -0700
+
+    Merge branch 'master' into develop
+
+[33mcommit 76a90a674054c5c2b91d3e175d7e174fe25c6846[m
+Merge: 4d73bce 45502b7
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 13:51:59 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit 0a68f0562d01b4a80e624d39434f291421ca0bc3[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 13:51:45 2014 -0700
+
+    working on mth20 default sets
+
+[33mcommit 45502b7a1050543aee8504087a2b914e29c69873[m
+Merge: d8dd7d5 f02f6b8
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 5 13:49:18 2014 -0700
+
+    Merge branch 'master' into develop
+
+[33mcommit 4d73bce7c33fd3a2b2988593f626fcb276fcfac2[m
+Merge: f02f6b8 d8dd7d5
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 13:48:09 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/yao-LibDev/templates/local/PCC into develop
+
+[33mcommit d8dd7d581421d92c028ea6c0c5aff9fb1f2cf2d1[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 5 13:47:44 2014 -0700
+
+    more working on MTH 20 default problem sets
+
+[33mcommit 105d7a629d85c726cc69245f10f167c846f10135[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 5 13:45:35 2014 -0700
+
+    working on MTH20 set definition files
+
+[33mcommit f02f6b8ab42c50b778f56fbcc021fbed84212e00[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 13:41:19 2014 -0700
+
+    more editing of Orientation problems
+
+[33mcommit 83f0f15500258965a82d4bfd3c84b83e653aafc1[m
+Merge: f2d9742 6a76436
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 12:55:17 2014 -0700
+
+    Merge branch 'develop'
+
+[33mcommit f2d9742f6a9f2647eafb360e27069473673d1134[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 12:55:08 2014 -0700
+
+    working on mth20 set headers
+
+[33mcommit 6a7643619c5aac4929f4c198bc27ff6d7edf3014[m
+Merge: 6339a14 8a3a285
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 5 12:50:53 2014 -0700
+
+    Merge branch 'master' into develop
+
+[33mcommit 8a3a28544e9d6179623e5a6151361c185758341a[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 12:50:44 2014 -0700
+
+    renamed some files to prevent conflicts and one typo
+
+[33mcommit 6339a148ebdedd91b328d074df0ac560af55980b[m
+Merge: a559140 61eda98
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 5 12:49:15 2014 -0700
+
+    Merge branch 'master' into develop
+
+[33mcommit 61eda9851a80886f34ef6c85756740699177253f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 12:48:48 2014 -0700
+
+    editing Orientation problems
+
+[33mcommit a5591402e89dfdf5f5dd3bb04de16d10ebe08048[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Fri Sep 5 12:47:45 2014 -0700
+
+    changed links in MTH20 set headers
+
+[33mcommit 541038048c15fdb4dc64f4dcc866a956295643be[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 10:58:23 2014 -0700
+
+    still setting up Orientation
+
+[33mcommit 5494395f40cb49483d5c4c9249b62839d486d771[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 10:57:20 2014 -0700
+
+    setting up Orientation
+
+[33mcommit 0d8a126b47e07b0594cca64c96eacb99066e6a64[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Sep 5 10:30:51 2014 -0700
+
+    added checkLibDevs to .gitignore
+
+[33mcommit e5b25955e9f09ce873f08d7789e14f860e7f0a54[m
+Merge: 3617c97 5269f3e
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Sep 4 17:34:17 2014 -0700
+
+    Merge branch 'develop'
+
+[33mcommit 3617c97b2dd0c1fe4f8757328c934a63740063d9[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Sep 4 17:34:08 2014 -0700
+
+    brought in old mth20 set definitions and headers
+
+[33mcommit 5269f3ec00cc33aa50db94bdb99c66f60ebe5f59[m
+Merge: 5c01075 5aa18bc
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Sep 4 17:30:16 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/dear-LibDev/templates/local/PCC into develop
+
+[33mcommit 5c010757b532dc27675135bc767c0b3055dc522c[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Sep 4 17:24:05 2014 -0700
+
+    brought in the old mth20 set definitions and headers
+
+[33mcommit 5aa18bcf527ef6f50aea287b6d35acb80d5e0ec8[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Sep 4 16:32:05 2014 -0700
+
+    typo in a set header
+
+[33mcommit 8e002dfde21c954778ebc3b0e39123a008845a57[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 3 18:55:42 2014 -0700
+
+    added a paragraph break
+
+[33mcommit 2304cac60940d931f707e7144942229538b44b22[m
+Merge: d284a1b c9a9000
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 3 18:52:54 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/jordan-LibDev/templates/local/PCC into develop
+
+[33mcommit d284a1b960bc6463ee43e3361c9a1abbdb4b3e94[m
+Merge: 164e7b8 378cdb5
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 3 18:52:53 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/dear-LibDev/templates/local/PCC into develop
+
+[33mcommit 164e7b885d102863f19f9390bbca82668229f0bf[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 3 18:52:23 2014 -0700
+
+    folders for headers
+
+[33mcommit c9a9000ec8ee0ac285e194353ea0066261f07441[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 3 18:50:43 2014 -0700
+
+    moved radio button from PGML to TEXT
+
+[33mcommit 378cdb58a78ef30ab02cf00bfc38286564815ac9[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 3 18:47:34 2014 -0700
+
+    deleted old set definitions and headers
+
+[33mcommit 9faf0b6221524f54700e12edb2c2ff3c3bfad6a6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 3 18:41:13 2014 -0700
+
+    set definitions and headers for 60 and 65
+
+[33mcommit ddd20a237bd70a0600c12dd3e82357ed414109b2[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Wed Sep 3 15:25:34 2014 -0700
+
+    made links accessible in MTH65 headers
+
+[33mcommit 905dc6352b9e91c822ce27a4c1fb9d7b7ca8e98c[m
+Merge: b994653 0408ca8
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 2 14:55:22 2014 -0700
+
+    Merge branch 'develop'
+
+[33mcommit 0408ca8bbad0f6382a421ff9c8e48b88ebc4e2e4[m
+Merge: bf2f103 a0f9c97
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 2 14:54:34 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/vega-LibDev/templates/local/PCC into develop
+
+[33mcommit b99465320ed89401905b8baa13019fc2d83ad4e6[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 2 14:48:09 2014 -0700
+
+    added .gitignore
+
+[33mcommit 6ded2f41edc752f914757a871fdc2f8f3891cbb2[m
+Merge: bf2f103 a0f9c97
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 2 13:28:36 2014 -0700
+
+    Merge branch 'develop' of /opt/webwork/courses/vega-LibDev/templates/local/PCC
+
+[33mcommit a0f9c97bbd7b555e39cc060c18f257a214341a1f[m
+Author: Emiliano Vega <emiliano.vega@pcc.edu>
+Date:   Tue Sep 2 13:24:14 2014 -0700
+
+    added a solution
+
+[33mcommit bf2f10362f25d61e91b3163adc3969102a895ed9[m
+Merge: 76df7e7 bc729f6
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Sep 2 12:06:23 2014 -0700
+
+    Merge branch 'master' into develop
+
+[33mcommit 76df7e7d9d21667db9a3512d33408f394ea2123f[m
+Author: Carl Yao <xiaolong.yao@pcc.edu>
+Date:   Tue Sep 2 11:56:23 2014 -0700
+
+    Added an exponents problem
+
+[33mcommit bc729f6e0986da59fe63ad1d83f8f5f6185c5bae[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Tue Sep 2 11:45:24 2014 -0700
+
+    made copies of problem files from my problem sets 1 and 2
+
+[33mcommit c384ed92631e0b35ef457df8be4aacdf6b673506[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Aug 18 17:17:51 2014 -0700
+
+    added Orientation files
+
+[33mcommit ebaf69e8928fd2f67f683525c08cba1365cbf631[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Mon Aug 18 16:58:35 2014 -0700
+
+    MTH 60/65 set definition files
+
+[33mcommit 0556cf507685b56f7324c8d1b4071101f837a210[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Aug 15 17:31:59 2014 -0700
+
+    set file permissions so that faculty owns everything, wwadmin is everythings group, and permissions are rwxr-xr-x
+
+[33mcommit f8a0e94ab2874b78cfe0bf7a0d762e00d45fd4ca[m
+Merge: 7ba7db5 91d764c
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Aug 15 14:02:16 2014 -0700
+
+    Merge branch 'develop'
+
+[33mcommit 7ba7db59b785d169f79a921984acc40dc1209ee2[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Aug 15 14:01:58 2014 -0700
+
+    manual edit of the lone stats file
+
+[33mcommit 91d764ca474f53c015a1bb8cfde7d84d6e11c1e4[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Aug 15 14:00:09 2014 -0700
+
+    added spaces to demo git
+
+[33mcommit 7fecf14ad060915c70735443de3ee253e1c4936f[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Fri Aug 15 13:52:18 2014 -0700
+
+    copied existing PCC libraries
+
+[33mcommit 2a8ae41d9f413e9c1a9a80e1ac92494e7dfac379[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Aug 14 21:20:29 2014 -0700
+
+    First statistics problem committed
+
+[33mcommit a90266b9fddfee1e963a2c7b304dd303d59efda2[m
+Author: Alex Jordan <alex.jordan@pcc.edu>
+Date:   Thu Aug 14 20:03:01 2014 -0700
+
+    empty folder for PCC problem libraries
