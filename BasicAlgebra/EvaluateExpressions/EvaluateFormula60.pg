@@ -47,11 +47,21 @@ $xcross = $base/random(2.5,4,0.1);
 $leftSide = round(sqrt($height**2+$xcross**2));
 $rightSide = round(sqrt($height**2+($base-$xcross)**2));
 
-$xmin = 0;         #The viewing window
-$xmax = $base*1.2;
-$ymin = 0;
-$ymax = max($height*1.2,$height+4);
+# Make a 20px buffer. Overall pixel width is 240.
+# So triangle's pixel width needs to be 200.
+# Triangle's scaled width is $base.
+# So set $xmax = $base*240/200.
+# Overall pixel height, H, needs to be calculated.
+# (H-40)/$height = 200/$base
+# So H = 200*$height/$base + 40
+# Trangle's pixel height needs to be 200*$height/$base.
+# So $ymax = $height*(200*$height/$base + 40)/(200*$height/$base)
 
+
+$xmin = 0;         #The viewing window
+$xmax = $base*240/200;
+$ymin = 0;
+$ymax = $height*(1+40/(200*$height/$base));
 
 
 @x = (($xmax-$base)/2,($xmax+$base)/2);
@@ -97,7 +107,7 @@ BEGIN_PGML
 
 A triangle's area can be calculated by the formula [`A=\frac{1}{2}bh`], where [`A`] stands for area, [`b`] for base and [`h`] for height. 
 
->>[@ image(insertGraph( $picture  ), tex_size=>400, height=>(240*$ymax/$xmax), width=>240, extra_html_tags => "alt = '$text' title = '$text' ") @]*<<
+>>[@ image(insertGraph( $picture  ), width=>240, extra_html_tags => "alt = '$text' title = '$text' ") @]*<<
 
 Find the triangle's area if [`b=[$baseU]`] and [`h=[$heightU]`]. [@KeyboardInstructions(q!(Use [|ft|]* for feet and [|ft^2|]* for square feet.)!)@]**
 
