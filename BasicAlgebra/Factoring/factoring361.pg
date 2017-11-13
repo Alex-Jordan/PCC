@@ -91,7 +91,7 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 
-[$output]*
+[$output]***
 
 END_PGML_SOLUTION
 ##############################################
