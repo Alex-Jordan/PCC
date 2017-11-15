@@ -31,7 +31,7 @@ loadMacros(
   "MathObjects.pl",      #Almost always needed
   "PGML.pl",             #Almost always needed
   "parserNumberWithUnits.pl",
-,
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -64,17 +64,15 @@ TEXT(beginproblem());
 #Current best practice is to use the PGML environment to write the body.
 BEGIN_PGML
 
-In your answers to this problem, use *m* for meters, and *s* for seconds.
-
 The formula  
 
     [``y=\frac{1}{2}\,a\,t^2 +v_0\,t + y_0``]  
 
-gives the vertical position of an object, at time [`t`], thrown with an initial velocity [`v_0`], from an initial position [`y_0`] in a place where the acceleration of gravity is [`a`]. 
+gives the vertical position of an object, at time [`t`], thrown with an initial velocity [`v_0`], from an initial position [`y_0`] in a place where the acceleration of gravity is [`a`]. The acceleration of gravity on earth is [`[$gU]`]. It is negative, because we consider the upward direction as positive in this situation, and gravity pulls down.
 
 What is the height of a baseball thrown with an initial velocity of [`v_0=[$v0U]`], from an initial position of [`y_0= [$y0U]`], and at time [`t=[$tU]`]? 
 
-Note that the acceleration of gravity on earth is [`[$gU]`]. It is negative, because we consider the upward direction as positive in this situation, while the gravity pulls the object down.
+[@KeyboardInstructions('In your answers to this problem, use [|m|] for meters, and [|s|] for seconds.')@]**
 
     After [`[$tU]`], the baseball was [__________]{$heightU} high in the air.
 
