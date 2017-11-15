@@ -72,7 +72,7 @@ BEGIN_PGML
 
 When a plant was purchased, it was [`[$yInt]`] inches tall. It grows [`[$rate]`] inches per day. How many days later will the plant be [`[$y1]`] inches tall?
 
-Assume the plant will be [`[$y1]`] inches tall [`[$var]`] days later. We can solve this problem by the equation:
+Assume the plant will be [`[$y1]`] inches tall [`[$var]`] days later. We can solve this problem using the equation:
 
     [``[$left]=[$right]``].
 

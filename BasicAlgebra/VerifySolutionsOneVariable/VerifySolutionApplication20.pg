@@ -70,15 +70,11 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-A cylinder's volume is [`[$volume]\pi`] cubic centimeters. Its height is [`[$height]`] centimeters. How long is the cylinder's radius?
-
-A cylinder's volume formula is
+A cylinder's volume is [`[$volume]\pi`] cubic centimeters. Its height is [`[$height]`] centimeters. Suppose we wanted to find how long is the cylinder's radius. A cylinder's volume formula is
 
     [``V=\pi r^2h``],
 
-where [`V`] stands for volume, [`r`] for radius and [`h`] for height.
-
-Assume the cylinder's radius is [`[$var]`] centimeters. We can solve this problem by the equation:
+where [`V`] stands for volume, [`r`] for radius and [`h`] for height. Let [`[$var]`] represent the cylinder's radius, in centimeters. We can solve this problem using the equation:
 
     [``[$left]=[$right]``].
 

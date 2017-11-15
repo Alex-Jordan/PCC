@@ -70,15 +70,11 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-A triangular slot's area is [`[$area]`] square meters. Its height is [`[$height]`] meters. How long is the triangle's base?
-
-A triangle's area formula is
+A triangle's area is [`[$area]`] square meters. Its height is [`[$height]`] meters. Suppose we wanted to find how long is the triangle's base. A triangle's area formula is
 
     [``A=\frac{1}{2}bh``],
 
-where [`A`] stands for area, [`b`] for base and [`h`] for height.
-
-Assume the triangle's base is [`[$var]`] meters. We can solve this problem by the equation:
+where [`A`] stands for area, [`b`] for base and [`h`] for height. If we let [`[$var]`] be the triangle's base, in meters, we can solve this problem using the equation:
 
     [``[$left]=[$right]``].
 

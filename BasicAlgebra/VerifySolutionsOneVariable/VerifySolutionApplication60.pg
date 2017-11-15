@@ -73,7 +73,7 @@ BEGIN_PGML
 
 A country's national debt was [`[$yInt]`] million dollars in 2010. The debt increased at [`[$rate]`] million dollars per year. If this trend continues, when will the country's national debt increase to [`[$y1]`] million dollars?
 
-Assume the country's national debt will become [`[$y1]`] million dollars [`y`] years after 2010. We can solve this problem by the equation:
+Assume the country's national debt will become [`[$y1]`] million dollars [`y`] years after 2010. We can solve this problem using the equation:
 
     [``[$left]=[$right]``].
 

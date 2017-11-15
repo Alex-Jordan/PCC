@@ -72,7 +72,7 @@ BEGIN_PGML
 
 A school district has a reserve fund worth [`[$yInt]`] million dollars. It plans to spend [`[$rate]`] million dollars per year. After how many years, will there be [`[$y1]`] million dollars left?
 
-Assume there will be [`[$y1]`] million dollars left after [`y`] years. We can solve this problem by the equation:
+Assume there will be [`[$y1]`] million dollars left after [`y`] years. We can solve this problem using the equation:
 
     [``[$left]=[$right]``].
 

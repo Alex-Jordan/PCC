@@ -72,7 +72,7 @@ BEGIN_PGML
 
 A water tank has [`[$yInt]`] gallons of water in it, and it is being drained at the rate of [`[$rate]`] gallons per minute. After how many minutes will there be [`[$y1]`] gallons of water left?
 
-Assume the tank will have [`[$y1]`] gallons of water after [`m`] minutes. We can solve this problem by the equation:
+Assume the tank will have [`[$y1]`] gallons of water after [`m`] minutes. We can solve this problem using the equation:
 
     [``[$left]=[$right]``].
 

@@ -69,15 +69,11 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-A rectangular frame's perimeter is [`[$perimeter]`] feet. If its length is [`[$length]`] feet, how long is its width?
-
-A rectangle's perimeter formula is
+A rectangular frame's perimeter is [`[$perimeter]`] feet. If its length is [`[$length]`] feet, suppose we want to find how long is its width. A rectangle's perimeter formula is
 
     [``P=2(l+w)``],
 
-where [`P`] stands for perimeter, [`l`] for length and [`w`] for width.
-
-Assume the rectangle's width is [`w`] feet. We can solve this problem by the equation:
+where [`P`] stands for perimeter, [`l`] for length and [`w`] for width. We can solve this problem using the equation:
 
     [``[$left]=[$right]``].
 
