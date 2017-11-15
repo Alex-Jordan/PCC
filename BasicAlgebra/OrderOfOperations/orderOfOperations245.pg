@@ -43,7 +43,7 @@ $ans = non_zero_random(-10,10,1);
 $num = $den*$ans;
 
 @factors = ( );
-for (my $i=2;$i<abs($num)/2;$i++) {
+for (my $i=2;$i<sqrt(abs($num))+1;$i++) {
    if (abs($num)%$i==0) {push @factors,$i;}
 }
 $a = $factors[random(0,$#factors,1)];
@@ -65,7 +65,7 @@ BEGIN_PGML
 
 Evaluate this expression:
 
-    [`` \frac{[$a]\mid [$b]-[$c] \mid}{[$d]-([$e])^2} =  ``]  [________]{$ans}
+    [`` \frac{[$a]\left\lvert [$b]-[$c] \right\rvert}{[$d]-([$e])^2} =  ``]  [________]{$ans}
 
 END_PGML
 
