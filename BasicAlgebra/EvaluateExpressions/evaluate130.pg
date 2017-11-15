@@ -62,10 +62,10 @@ BEGIN_PGML
 
 Evaluate the following expressions.
 
-1) Evaluate [`[$func1]`] when [`[$var1]=[$b]`].
+a. Evaluate [`[$func1]`] when [`[$var1]=[$b]`].
     [``[$func1]=``]  [_______]{$ans1}
 
-2) Evaluate [`[$func2]`] when [`[$var1]=[$b]`].
+a. Evaluate [`[$func2]`] when [`[$var1]=[$b]`].
     [``[$func2]=``]  [_______]{$ans2}
 
 END_PGML
@@ -74,7 +74,7 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 
-1) We evaluate [`[$func1]`] by replacing [`[$var1]`] with [`[$b]`] in the formula.
+a. We evaluate [`[$func1]`] by replacing [`[$var1]`] with [`[$b]`] in the formula.
 
     [``\begin{aligned}
     [$func1] &= [$a]([$b])^2 \\
@@ -82,7 +82,7 @@ BEGIN_PGML_SOLUTION
         &= [$ans1]
     \end{aligned}``]
 
-2) We evaluate [`[$func2]`] by replacing [`[$var1]`] with [`[$b]`] in the formula.
+a. We evaluate [`[$func2]`] by replacing [`[$var1]`] with [`[$b]`] in the formula.
 
     [``\begin{aligned}
     [$func2] &= ([$a]\cdot[$b])^2 \\

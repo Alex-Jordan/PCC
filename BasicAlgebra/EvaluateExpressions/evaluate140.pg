@@ -66,10 +66,10 @@ BEGIN_PGML
 
 Evaluate the following expressions.
 
-1) Evaluate [`[$func1]`] when [`[$var1]=[$a]`] and [`[$var2]=[$b]`].
+a. Evaluate [`[$func1]`] when [`[$var1]=[$a]`] and [`[$var2]=[$b]`].
     [``[$func1]=``]  [_______]{$ans1}
 
-2) Evaluate [`[$func2]`] when [`[$var1]=[$a]`] and [`[$var2]=[$b]`].
+a. Evaluate [`[$func2]`] when [`[$var1]=[$a]`] and [`[$var2]=[$b]`].
     [``[$func2]=``]  [_______]{$ans2}
 
 END_PGML
@@ -78,14 +78,14 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 
-1) We substitute [`[$var1]=[$a]`] and [`[$var2]=[$b]`] into [`[$func1]`]:
+a. We substitute [`[$var1]=[$a]`] and [`[$var2]=[$b]`] into [`[$func1]`]:
     [``\begin{aligned}
     [$func1] &= ([$a])^2([$b])^3 \\
         &= ([$a**2])([$b**3]) \\
         &= [$ans1]
     \end{aligned}``]
 
-2) We substitute [`[$var1]=[$a]`] and [`[$var2]=[$b]`] into [`[$func2]`]:
+a. We substitute [`[$var1]=[$a]`] and [`[$var2]=[$b]`] into [`[$func2]`]:
     [``\begin{aligned}
     [$func2] &= ([$a])^3([$b])^2 \\
         &= ([$a**3])([$b**2]) \\

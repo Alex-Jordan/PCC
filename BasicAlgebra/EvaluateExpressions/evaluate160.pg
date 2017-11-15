@@ -67,10 +67,10 @@ BEGIN_PGML
 
 Evaluate the following expressions.
 
-1) Evaluate [`[$func1]`] when [`[$var1]=[$b]`] and [`[$var2]=[$c]`].
+a. Evaluate [`[$func1]`] when [`[$var1]=[$b]`] and [`[$var2]=[$c]`].
     [``[$func1]=``]  [_______]{$ans1}
 
-2) Evaluate [`[$func2]`] when [`[$var1]=[$b]`] and [`[$var2]=[$c]`].
+a. Evaluate [`[$func2]`] when [`[$var1]=[$b]`] and [`[$var2]=[$c]`].
     [``[$func2]=``]  [_______]{$ans2}
 
 END_PGML
@@ -81,14 +81,14 @@ $s1 = ($a*$b)**2;
 
 BEGIN_PGML_SOLUTION
 
-1) We substitute [`[$var1]=[$b]`] and [`[$var2]=[$c]`] into [`[$func1]`]:
+a. We substitute [`[$var1]=[$b]`] and [`[$var2]=[$c]`] into [`[$func1]`]:
     [``\begin{aligned}
     [$func1] &= [$a]([$b])^2([$c]) \\
         &= [$a]([$b**2])([$c]) \\
         &= [$ans1]
     \end{aligned}``]
 
-2) We substitute [`[$var1]=[$b]`] and [`[$var2]=[$c]`] into [`[$func2]`]:
+a. We substitute [`[$var1]=[$b]`] and [`[$var2]=[$c]`] into [`[$func2]`]:
     [``\begin{aligned}
     [$func2] &= [[$a]([$b])]^2([$c]) \\
         &= [[$a*$b]]^2([$c]) \\

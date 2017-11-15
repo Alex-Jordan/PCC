@@ -59,10 +59,10 @@ BEGIN_PGML
 
 Evaluate the expression [`[$func]`]:
 
-1) When [`[$var1]=[$a]`], 
+a. When [`[$var1]=[$a]`], 
     [``[$func]=``]  [_______]{$ans1}
 
-2) When [`[$var1]=[$b]`], 
+a. When [`[$var1]=[$b]`], 
     [``[$func]=``]  [_______]{$ans2}
 
 END_PGML
@@ -71,7 +71,7 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 
-1) We evaluate [`[$func]`] by replacing [`[$var1]`] with [`[$a]`] in the formula.
+a. We evaluate [`[$func]`] by replacing [`[$var1]`] with [`[$a]`] in the formula.
 
     [``\begin{aligned}
     [$func] &= ([$a])^3 \\
@@ -79,7 +79,7 @@ BEGIN_PGML_SOLUTION
         &= [$ans1]
     \end{aligned}``]
 
-2) We evaluate [`[$func]`] by replacing [`[$var1]`] with [`[$b]`] in the formula.
+a. We evaluate [`[$func]`] by replacing [`[$var1]`] with [`[$b]`] in the formula.
 
     [``\begin{aligned}
     [$func] &= ([$b])^3 \\
