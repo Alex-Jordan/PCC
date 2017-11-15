@@ -75,7 +75,7 @@ BEGIN_PGML_SOLUTION
 
     [`
 \begin{aligned}
-\frac{[$a]\mid [$b]-[$c] \mid}{[$d]-([$e])^2} & = \frac{[$a]\mid [$b-$c] \mid}{[$d]-[$e2]} \\
+\frac{[$a]\left\lvert [$b]-[$c] \right\rvert}{[$d]-([$e])^2} & = \frac{[$a]\left\lvert [$b-$c] \right\rvert}{[$d]-[$e2]} \\
 & = \frac{[$a]\cdot[$c-$b]}{[$den]}  \\
 & = \frac {[$num]} {[$den]}  \\
 & = [$ans] 

@@ -53,7 +53,7 @@ BEGIN_PGML
 
 Evaluate this expression:
 
-    [`` [$a]-[$b]\mid [$c]-[$d] \mid + [$e] =  ``]  [________]{$ans}
+    [`` [$a]-[$b]\left\lvert [$c]-[$d] \right\rvert + [$e] =  ``]  [________]{$ans}
 
 END_PGML
 
@@ -65,8 +65,8 @@ BEGIN_PGML_SOLUTION
 
     [`
 \begin{aligned} 
-   [$a]-[$b]\mid [$c]-[$d] \mid + [$e] 
-& =  [$a]-[$b]\mid [$c-$d] \mid + [$e]  \\
+   [$a]-[$b]\left\lvert [$c]-[$d] \right\rvert + [$e] 
+& =  [$a]-[$b]\left\lvert [$c-$d] \right\rvert + [$e]  \\
 & =  [$a]-[$b]\cdot [$d-$c] + [$e]  \\
 & =  [$a]-[$s1] + [$e]  \\
 & =  [$a-$s1] + [$e]  \\

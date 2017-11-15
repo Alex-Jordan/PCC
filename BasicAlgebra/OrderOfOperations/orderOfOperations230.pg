@@ -5,7 +5,7 @@
 #
 # Evaluate these expressions:
 #
-# a)    [`` \mid [$a]-[$b]\mid ^{2}-\mid [$a]-[$b]^{2}\mid  =  ``]  [________]{$ans1} 
+# a)    [`` \left\lvert [$a]-[$b]\right\rvert ^{2}-\left\lvert [$a]-[$b]^{2}\right\rvert  =  ``]  [________]{$ans1} 
 #
 # b)    [`` ([$a]-[$b])^{2}-([$a]-[$b]^{2}) =  ``]  [________]{$ans2} 
 #
@@ -56,7 +56,7 @@ BEGIN_PGML
 
 Evaluate these expressions:
 
-a)    [`` \mid [$a]-[$b]\mid ^{2}-\mid [$a]-[$b]^{2}\mid  =  ``]  [________]{$ans1} 
+a)    [`` \left\lvert [$a]-[$b]\right\rvert ^{2}-\left\lvert [$a]-[$b]^{2}\right\rvert  =  ``]  [________]{$ans1} 
 
 b)    [`` ([$a]-[$b])^{2}-([$a]-[$b]^{2}) =  ``]  [________]{$ans2} 
 
@@ -74,9 +74,9 @@ $step16 = $step14**2;
 BEGIN_PGML_SOLUTION
 
 a)   [`\begin{aligned}[t]
- \mid [$a]-[$b]\mid ^{2}-\mid [$a]-[$b]^{2}\mid   & =  \mid [$step11]\mid ^{2}-\mid [$a]-[$b]^{2}\mid  \\
-& =  \mid [$step11]\mid ^{2}-\mid [$a]-[$step12]\mid  \\
-& =  \mid [$step11]\mid ^{2}-\mid [$step13]\mid  \\
+ \left\lvert [$a]-[$b]\right\rvert ^{2}-\left\lvert [$a]-[$b]^{2}\right\rvert   & =  \left\lvert [$step11]\right\rvert ^{2}-\left\lvert [$a]-[$b]^{2}\right\rvert  \\
+& =  \left\lvert [$step11]\right\rvert ^{2}-\left\lvert [$a]-[$step12]\right\rvert  \\
+& =  \left\lvert [$step11]\right\rvert ^{2}-\left\lvert [$step13]\right\rvert  \\
 & = [$step14]^{2}-[$step15] \\
 & = [$step16]-[$step15] \\
 & = [$ans1] 

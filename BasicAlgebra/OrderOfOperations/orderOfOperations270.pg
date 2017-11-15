@@ -5,7 +5,7 @@
 #
 # Evaluate these expressions:
 #
-#     [`` \mid [$frac1]-[$frac2]\mid -[$a]\mid [$frac2]-[$frac1]\mid =  ``]  [________]{$ans} 
+#     [`` \left\lvert [$frac1]-[$frac2]\right\rvert -[$a]\left\lvert [$frac2]-[$frac1]\right\rvert =  ``]  [________]{$ans} 
 # 
 # Last updated: Hughes, 6/26/13
 # ENDDESCRIPTION

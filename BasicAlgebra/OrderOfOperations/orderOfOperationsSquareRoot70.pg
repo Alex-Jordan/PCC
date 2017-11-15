@@ -65,7 +65,7 @@ BEGIN_PGML
 
 Evaluate this expression:
 
-    [`` \frac{ \sqrt{[$d]+[$b]\cdot[$c]} + \mid [$e]+[$f] \mid }{[$h]-([$g])^3} ``][________]{$ans}  
+    [`` \frac{ \sqrt{[$d]+[$b]\cdot[$c]} + \left\lvert [$e]+[$f] \right\rvert }{[$h]-([$g])^3} ``][________]{$ans}  
 
 END_PGML
 
@@ -78,7 +78,7 @@ BEGIN_PGML_SOLUTION
 
     [``
 \begin{aligned}[t] 
-   \frac{ \sqrt{[$d]+[$b]\cdot[$c]} + \mid [$e]+[$f] \mid }{[$h]-([$g])^3}  & = \frac{ \sqrt{[$d]+[$b*$c]} + \mid [$e+$f] \mid }{[$h]-([$g**3])}  \\
+   \frac{ \sqrt{[$d]+[$b]\cdot[$c]} + \left\lvert [$e]+[$f] \right\rvert }{[$h]-([$g])^3}  & = \frac{ \sqrt{[$d]+[$b*$c]} + \left\lvert [$e+$f] \right\rvert }{[$h]-([$g**3])}  \\
 & = \frac{ \sqrt{[$a2]} +[$s1] }{[$h]+[$s2]}  \\
 & = \frac{ [$a] +[$s1] }{[$den]}  \\
 & = \frac{ [$num] }{[$den]}  \\
