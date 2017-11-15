@@ -38,15 +38,18 @@ loadMacros(
 
 Context("LimitedNumeric");
 
+do {
 $den = random(2,9,1)*random(-1,1,2);
 $ans = non_zero_random(-10,10,1);
 $num = $den*$ans;
 
-@factors = ( );
+@factors = (1);
 for (my $i=2;$i<sqrt(abs($num))+1;$i++) {
    if (abs($num)%$i==0) {push @factors,$i;}
 }
 $a = $factors[random(0,$#factors,1)];
+} until ($a != 1);
+
 if ($num<0) {$a=-$a;}
 
 $numB = $num/$a;
