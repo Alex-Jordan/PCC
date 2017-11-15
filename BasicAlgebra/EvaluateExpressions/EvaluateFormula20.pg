@@ -44,7 +44,7 @@ Context("LimitedNumeric");
 #Create some random integers.
 $a = random(3,99,3);     #a random number from 1 to 9 taking steps of size 1
 $b = random(1,99,1);
-$c = random(2,98,2);
+$c = random(8,98,2);
 
 $area = (.5)*$a*$b*$c;
 $answer = NumberWithUnits((.5)*$a*$b*$c, "in^2");
