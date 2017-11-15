@@ -49,7 +49,7 @@ $ans3 = sqrt($num1*100);
 
 BEGIN_PGML
 
-Without using a calculator, find the square root of the following numbers.
+Find the square root of the following numbers without using a calculator.
 
 a.    [`` \sqrt{[$num1]} ``] = [_____________]{$ans1}
 

@@ -63,7 +63,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Divide the fraction by the integer: [``-\frac{[$num]}{[$den]} \div (-[$integer])  ``]
+Carry out the division: [``-\frac{[$num]}{[$den]} \div (-[$integer])  ``]
 
 [@KeyboardInstructions("If needed, use an improper fraction in your answer. Don't use a mixed number.")@]**
 

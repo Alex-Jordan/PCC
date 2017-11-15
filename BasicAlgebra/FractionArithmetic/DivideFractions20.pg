@@ -69,7 +69,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Divide one fraction into the other: [`` \frac{[$num1]}{[$den1]} \div \left(-\frac{[$den2]}{[$num2]}\right) ``]
+Carry out the division: [`` \frac{[$num1]}{[$den1]} \div \left(-\frac{[$den2]}{[$num2]}\right) ``]
 
 [@KeyboardInstructions("If needed, use an improper fraction in your answer. Don't use a mixed number.")@]**
 

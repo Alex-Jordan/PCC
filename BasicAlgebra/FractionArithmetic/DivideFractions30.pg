@@ -61,7 +61,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Divide the integer by the fraction: [``[$integer] \div \frac{[$den]}{[$num]} ``]
+Carry out the division: [``[$integer] \div \frac{[$den]}{[$num]} ``]
 
 [@KeyboardInstructions("If needed, use an improper fraction in your answer. Don't use a mixed number.")@]** 
 
