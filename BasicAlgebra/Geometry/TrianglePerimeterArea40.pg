@@ -54,7 +54,6 @@ A triangle's area is [`[$areaU]`]. Its base is [`[$baseU]`].
 
     Its height is [_____________]{$heightU}. 
 
-(Use *m* for meters.)
 
 END_PGML
 
