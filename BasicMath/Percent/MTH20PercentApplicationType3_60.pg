@@ -29,7 +29,7 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "parserNumberWithUnits.pl",
-#  "PCCmacros.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -51,11 +51,9 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-[`[$part]`] grams of pure alcohol was used to produce a bottle of [`[$per]%`] alcohol solution. What is the weight of the solution in grams?
+[`[$part]`] grams of pure alcohol was used to produce a bottle of [`[$per]%`] alcohol solution. What is the weight of the solution in grams? [@KeyboardInstructions('Use [|g|]* for grams.')@]**
 
 The alcohol solution weighs [_________]{$wholeU}.
-
-Use *g* for grams.
 
 END_PGML
 
