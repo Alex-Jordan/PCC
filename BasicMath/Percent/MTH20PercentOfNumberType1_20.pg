@@ -45,7 +45,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-[` [$p1]% `] of [` [$num] `] is [_______]{$ans1}?
+[` [$p1]% `] of [` [$num] `] is [_______]{$ans1}.
 
 END_PGML
 

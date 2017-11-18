@@ -45,7 +45,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-[` [$p1]% `] of [__________]{$whole} is [`[$part]`]?
+[` [$p1]% `] of [__________]{$whole} is [`[$part]`].
 
 END_PGML
 

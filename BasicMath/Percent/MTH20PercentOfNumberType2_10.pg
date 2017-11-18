@@ -53,9 +53,9 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Fill in the blank with percent:
+Fill in the blank with a percent:
 
-[`[$a1]`] is [____]{$ans1P} of [` [$b] `]?
+[`[$a1]`] is [____]{$ans1P} of [` [$b] `].
 
 END_PGML
 
