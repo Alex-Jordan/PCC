@@ -102,11 +102,9 @@ $PAR
 END_TEXT
 BEGIN_PGML
 
-The highlighted row means each serving of macaroni and cheese in this box contains [`[$partU]`] of fat, which is [`[$per]%`] of an average person's daily intake of fat. What's the recommended daily intake of fat for an average person?
+The highlighted row means each serving of macaroni and cheese in this box contains [`[$partU]`] of fat, which is [`[$per]%`] of an average person's daily intake of fat. What's the recommended daily intake of fat for an average person? [@KeyboardInstructions('Use [|g|]* for grams.')@]**
 
 The recommended daily intake of fat for an average person is [___________]{$wholeU}.
-
-Use *g* for grams.
 
 END_PGML
 
