@@ -76,7 +76,7 @@ BEGIN_PGML
 
 [$name] sells cars for a living. Each month, [$pronoun] earns [`[$baseC]`] of base pay, plus a certain percentage of commission from [$possessive] sales.
 
-One month, [$name] made [`[$wholeC]`] in sales, and earned a total of [`[$ansC]`] in that month (including base pay and commission). What percent of commission did [$name] earn?
+One month, [$name] made [`[$wholeC]`] in sales, and earned a total of [`[$ansC]`] in that month (including base pay and commission). What percent commission did [$name] earn?
 
 Fill in the blank with a percent.
 

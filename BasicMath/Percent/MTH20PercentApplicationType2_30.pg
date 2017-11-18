@@ -63,7 +63,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-A painting is on sale at [`[$newPriceC]`]. Its original price was [`[$wholeC]`]. What percentage is off its original price?
+A painting is on sale at [`[$newPriceC]`]. Its original price was [`[$wholeC]`]. What percentage is this off its original price?
 
 Fill in the blank with a percent.
 
