@@ -71,11 +71,9 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Use the distributive property to simplify the expression completely.
+Use the distributive property to simplify [` [$func]`] completely.
 
-    [` [$func]`]  
-
-    [`=`] [______________]{$ans} 
+    [______________]{$ans} 
 
 END_PGML
 
