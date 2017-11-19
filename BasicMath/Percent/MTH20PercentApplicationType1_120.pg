@@ -62,13 +62,13 @@ $downshift = -0.4;
 $radius = 1;
 $top = $scale/1.5;
 $bottom=-$scale;
-$xpixels=600;
+$xpixels=400;
 $ypixels=$xpixels*($top-$bottom)/(2*$scale);
 $gr = init_graph(-$scale,$bottom,$scale,$top,
-size=>[$xpixels/2,$ypixels/2]
+size=>[$xpixels,$ypixels]
 );
 
-$title = "Artist Signatures Collection";
+$title = "Collection of Signatures from Different Artists";
 $gr->lb( new Label(0, $top,$title,'black','center','top'));
 
 $xfunc = sub { my $t = shift();

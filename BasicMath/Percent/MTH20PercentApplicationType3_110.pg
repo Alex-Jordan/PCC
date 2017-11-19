@@ -52,13 +52,13 @@ $ystep = 1;
 $xCover = 10;
 $xstep = 1;
 
-$xmin = -$xstep/4;         #The viewing window
-$xmax = $xCover+$xstep/4;
+$xmin = -$xstep;         #The viewing window
+$xmax = $xCover+$xstep;
 $ymin = -$ystep;
 $ymax = $yCover+$ystep;
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[600/1.5,600/1.5]);
+      pixels=>[400,400]);
 $picture->lb('reset');
 
 for my $i (0..$yCover) {
@@ -95,16 +95,18 @@ BEGIN_TEXT
 The following is a nutrition fact label from a certain macaroni and cheese box. $PAR
 
 $BCENTER
-\{ image(insertGraph( $picture  ), tex_size=>400, width=>600, extra_html_tags => 'alt = "$alt" title = "$alt"') \}
+\{ image(insertGraph( $picture  ), tex_size=>400, height=>400, width=>400, extra_html_tags => 'alt = "$alt" title = "$alt"') \}
 $ECENTER
 $PAR
 
 END_TEXT
 BEGIN_PGML
 
-The highlighted row means each serving of macaroni and cheese in this box contains [`[$partU]`] of fat, which is [`[$per]%`] of an average person's daily intake of fat. What's the recommended daily intake of fat for an average person? [@KeyboardInstructions('Use [|g|]* for grams.')@]**
+The highlighted row means each serving of macaroni and cheese in this box contains [`[$partU]`] of fat, which is [`[$per]%`] of an average person's daily intake of fat. What's the recommended daily intake of fat for an average person?
 
 The recommended daily intake of fat for an average person is [___________]{$wholeU}.
+
+Use *g* for grams.
 
 END_PGML
 
