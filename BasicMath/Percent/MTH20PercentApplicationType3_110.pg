@@ -52,13 +52,13 @@ $ystep = 1;
 $xCover = 10;
 $xstep = 1;
 
-$xmin = -$xstep;         #The viewing window
-$xmax = $xCover+$xstep;
+$xmin = -$xstep/4;         #The viewing window
+$xmax = $xCover+$xstep/4;
 $ymin = -$ystep;
 $ymax = $yCover+$ystep;
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[400,400]);
+      pixels=>[600/1.5,600/1.5]);
 $picture->lb('reset');
 
 for my $i (0..$yCover) {
@@ -95,7 +95,7 @@ BEGIN_TEXT
 The following is a nutrition fact label from a certain macaroni and cheese box. $PAR
 
 $BCENTER
-\{ image(insertGraph( $picture  ), tex_size=>400, height=>400, width=>400, extra_html_tags => 'alt = "$alt" title = "$alt"') \}
+\{ image(insertGraph( $picture  ), tex_size=>400, width=>600, extra_html_tags => 'alt = "$alt" title = "$alt"') \}
 $ECENTER
 $PAR
 

@@ -62,13 +62,13 @@ $downshift = -0.4;
 $radius = 1;
 $top = $scale/1.5;
 $bottom=-$scale;
-$xpixels=400;
+$xpixels=600;
 $ypixels=$xpixels*($top-$bottom)/(2*$scale);
 $gr = init_graph(-$scale,$bottom,$scale,$top,
-size=>[$xpixels,$ypixels]
+size=>[$xpixels/2,$ypixels/2]
 );
 
-$title = "Collection of Signatures from Different Artists";
+$title = "Artist Signatures Collection";
 $gr->lb( new Label(0, $top,$title,'black','center','top'));
 
 $xfunc = sub { my $t = shift();
@@ -85,7 +85,7 @@ $gr->new_color("color3", 200,230,100);
 $gr->new_color("color4", 220,220,220);
 @color=("color0","color1","color2","color3","color4");
 
-@legend=("Beatles","Rolling Stone","Four Seasons","Michael Jackson","Sting");
+@legend=("Beatles","Rolling Stones","Four Seasons","Michael Jackson","Sting");
 
 @perCumulative = ();
 $perCumulative[0] = 0;

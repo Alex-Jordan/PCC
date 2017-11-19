@@ -76,7 +76,7 @@ $ymin = -$ystep/2;
 $ymax = $yCover+$ystep;
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[400,240]);
+      pixels=>[600/1.5,360/1.5]);
 $picture->lb('reset');
 
 $picture->moveTo(0,0);
@@ -127,7 +127,7 @@ BEGIN_TEXT
 A community college conducted a survey about the number of students riding each bus line available. The following bar graph is the result of the survey. $PAR
 
 $BCENTER
-\{ image(insertGraph( $picture  ), width=>400, extra_html_tags => 'alt = "$alt" title = "$alt"') \}
+\{ image(insertGraph( $picture  ), width=>600, extra_html_tags => 'alt = "$alt" title = "$alt"') \}
 $ECENTER
 $PAR
 
