@@ -57,7 +57,7 @@ BEGIN_PGML
 
 User a linear equation to solve the word problem.
 
-Two truck rental places have different rate. V-Haul has a base charge of [`[$aC]`], plus [`[$rateAC]`] per mile. W-Haul has a base charge of [`[$bC]`], plus [`[$rateBC]`] per mile. For how many miles would these two companies charge the same amount?
+Two truck rental companies have different rates. V-Haul has a base charge of [`[$aC]`], plus [`[$rateAC]`] per mile. W-Haul has a base charge of [`[$bC]`], plus [`[$rateBC]`] per mile. For how many miles would these two companies charge the same amount?
 
 If a driver drives [________]{$ans} miles, those two companies would charge the same amount of money.
 
