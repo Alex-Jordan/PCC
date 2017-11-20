@@ -128,21 +128,13 @@ Tell whether the following values are solutions to the given inequality.
 
     [` [$a] x +[$b] [$symbol] [$c] `]
 
-a. [`x=[$x0]`]
+a. [`x=[$x0]`] [__]{$popup0} a solution.
 
-    [__]{$popup0} a solution.
+b. [`x=[$x1]`] [__]{$popup1} a solution.
 
-b. [`x=[$x1]`]
+c. [`x=[$x2]`] [__]{$popup2} a solution.
 
-    [__]{$popup1} a solution.
-
-c. [`x=[$x2]`]
-
-    [__]{$popup2} a solution.
-
-d. [`x=[$x3]`]
-
-    [__]{$popup3} a solution.
+d. [`x=[$x3]`] [__]{$popup3} a solution.
 
 
 
