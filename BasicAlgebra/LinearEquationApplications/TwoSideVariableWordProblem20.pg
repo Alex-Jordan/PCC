@@ -48,7 +48,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-User a linear equation to solve the word problem.
+Use a linear equation to solve the word problem.
 
 Massage Heaven and Massage You are competitors. Massage Heaven has [`[$a]`] registered customers, and it gets approximately [`[$rateA]`] newly registered customers every month. Massage You has [`[$b]`] registered customers, and it gets approximately [`[$rateB]`] newly registered customers every month. How many months would it take Massage Heaven to catch up with Massage You in the number of registered customers?
 

@@ -76,7 +76,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-User a linear equation to solve the word problem.
+Use a linear equation to solve the word problem.
 
 [$name1] has [`[$aC]`] in [$possessive1] piggy bank, and [$pronoun1] spends [`[$rateAabsC]`] every day.
 
