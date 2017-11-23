@@ -73,7 +73,9 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Solve this inequality: [`` [$left] [$comp] [$right] ``]
+Solve this inequality.
+
+    [`` [$left] [$comp] [$right] ``]
 
 [@KeyboardInstructions(q!Please type: [|inf|]* for [`\infty`], [|>=|]* for [`\geq`], and [|<=|]* for [`\leq`]. The [| | |]* symbol is above the [|Enter|]* key.!)@]**
 
