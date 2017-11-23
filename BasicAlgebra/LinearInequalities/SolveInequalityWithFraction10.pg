@@ -75,10 +75,10 @@ Solve this inequality: [`` [$left] [$comp] [$right] ``]
 [@KeyboardInstructions(q!Please type: [|inf|]* for [`\infty`], [|>=|]* for [`\geq`], and [|<=|]* for [`\leq`].!)@]**
 
     In set-builder notation, the solution set is [______________]{$ans}.  
-    An example of set-builder notation is [`\{x\mid x>1\}`].  [@KeyboardInstructions(q!The [| | |]* symbol is above the [|Enter|]* key.!)@]**
+    [@KeyboardInstructions(q!The [| | |]* symbol is above the [|Enter|]* key.!)@]**
 
     In interval notation, the solution set is [______________]{$intans}.  
-    An example of interval notation is [`(1,\infty)`].
+
 
 END_PGML
 

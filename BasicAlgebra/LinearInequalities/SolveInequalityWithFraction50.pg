@@ -75,7 +75,7 @@ BEGIN_PGML
 
 Solve this inequality: [`` [$left] [$comp] [$right] ``]
 
-[@KeyboardInstructions(q!An example of set-builder notation is [`\{x\mid x>1\}`]. An example of interval notation is [`(1,\infty)`]. Please type: [|inf|]* for [`\infty`], [|>=|]* for [`\geq`], and [|<=|]* for [`\leq`]. The [| | |]* symbol is above the [|Enter|]* key.!)@]**
+[@KeyboardInstructions(q!Please type: [|inf|]* for [`\infty`], [|>=|]* for [`\geq`], and [|<=|]* for [`\leq`]. The [| | |]* symbol is above the [|Enter|]* key.!)@]**
 
     In set-builder notation, the solution set is [______________]{$options->cmp(correct_ans_latex_string=>$setans->TeX)}.  
     In interval notation, the solution set is [______________]{$intans}.  
