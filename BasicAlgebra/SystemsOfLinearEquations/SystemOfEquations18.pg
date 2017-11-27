@@ -74,11 +74,15 @@ $det = $a*$d-$b*$c;
 ($xside1,$yside1,$cside1) = (1,0,1);
 ($xside2,$yside2,$cside2) = (0,0,1);
 
-$s1 = Compute("$c*$x+$m*(-$a*$x-$e)")->reduce;
-$s2 = Compute("$c*$x-$m*$a*$x-$m*$e")->reduce;
-
 SystemOfLinearEquationsProblemSetup();
 
+Context()->variables->are($x=>'Real', $y=>'Real', constant=>'Real');
+$right1 = Compute("-$a*$x-$e")->reduce;
+$left2 = Compute("$c*$x+$m*$y");
+$s1 = Compute("$c*$x+$m*($right1)");
+$ma = $m*$a;
+$me = $m*$e;
+$s2 = Compute("-$c*$x+$ma*$x-$me")->reduce;
 
 ##############################################
 TEXT(beginproblem());
