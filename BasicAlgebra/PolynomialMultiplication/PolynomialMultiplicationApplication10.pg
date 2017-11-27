@@ -77,7 +77,7 @@ After substitution, we have:
 \begin{aligned}
    \text{area} &= (\text{length})\cdot(\text{width}) \\
                      &= ([$b]w-[$a])w \\
-                     &=[$b]w^2-[$a]w
+                     &=[$ans]
 \end{aligned}
     ``]
 
