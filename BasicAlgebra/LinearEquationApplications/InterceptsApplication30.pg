@@ -42,7 +42,7 @@ Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
 
 do {
-   $slope = random(-5,-1,0.5);
+   $slope = random(-5,-1.5,0.5);
    $xIntercept = random(20,50,5);
    $yIntercept = -$slope*$xIntercept;
 } until ($yIntercept==int($yIntercept));
@@ -56,18 +56,15 @@ $slopeAbs = abs($slope);
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.
-%scramble = ();
-%inverse = ();
+@scramble = NchooseK(4,4);
+@inverse = ();
 @answersShuffled = ();
 for my $i (0..3) {
-  do {$temp = list_random(0..3)} until !(grep(/^$temp$/,values %scramble) );
-  $scramble{$i} = $temp;
-  $inverse{$temp} = $i;
-  $answersShuffled[$i] = @answers[$scramble{$i}];
-  $answersShuffled[$i]=$answersShuffled[$i];
-};
+  $inverse[$scramble[$i]] = $i;
+  $answersShuffled[$i] = $answers[$scramble[$i]];
+}
 
-$correctAns = @answersShuffled[$inverse{0}];
+$correctAns = $answersShuffled[$inverse[0]];
 
 $radio = RadioButtons(
    ~~@answersShuffled,

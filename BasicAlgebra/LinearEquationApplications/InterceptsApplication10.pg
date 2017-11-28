@@ -69,13 +69,13 @@ $name = RandomName(sex=>$sex);
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.
+@a = NchooseK(4,4);
 %scramble = ();
 %inverse = ();
 @answersShuffled = ();
 for my $i (0..3) {
-  do {$temp = list_random(0..3)} until !(grep(/^$temp$/,values %scramble) );
-  $scramble{$i} = $temp;
-  $inverse{$temp} = $i;
+  $scramble{$i} = $a[$i];
+  $inverse{$a[$i]} = $i;
   $answersShuffled[$i] = @answers[$scramble{$i}];
   $answersShuffled[$i]=$answersShuffled[$i];
 };
