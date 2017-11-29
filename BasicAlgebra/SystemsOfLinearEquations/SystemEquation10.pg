@@ -34,6 +34,7 @@ loadMacros(
   "MathObjects.pl",
    "PGML.pl",
   "answerHints.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
