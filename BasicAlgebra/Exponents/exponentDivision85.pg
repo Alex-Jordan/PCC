@@ -86,7 +86,7 @@ $ans = Formula("$numerator*$var1^($total1)/($denom*$var2^($total2))");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Use the properties of exponents to simplify the following
+Use the properties of exponents to simplify the expression.
    
     [`
        \left(\displaystyle\frac{[$a][$var1]^{[$m]}}{[$b][$var2]^{[$n]}}\right)^{[$p]}=

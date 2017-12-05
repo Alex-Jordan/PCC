@@ -70,7 +70,9 @@ $ans = Formula("$coeffPower*$myvar1^($total)");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Use the properties of exponents to simplify: [`\left([$a][$myvar1]\right)^[$n]`]
+Use the properties of exponents to simplify the expression.
+
+    [`\left([$a][$myvar1]\right)^[$n]`]
 
     [____________]{$ans}
 

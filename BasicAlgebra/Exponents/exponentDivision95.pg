@@ -100,7 +100,7 @@ $ans = Formula("$ans");
 ##############################################
 TEXT(beginproblem());
 BEGIN_PGML
-Use the properties of exponents to simplify the following
+Use the properties of exponents to simplify the expression.
    
     [`\displaystyle\frac{[$myvar1]\cdot[$myvar3]}{[$myvar2]\cdot[$myvar4]}=`] [__________________________________]
 

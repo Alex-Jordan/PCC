@@ -93,7 +93,7 @@ $ans = Formula("$c*$var1^($total1)*$var2^($total2)")->reduce;
 TEXT(beginproblem());
 
 BEGIN_PGML
-Use the properties of exponents to simplify the following
+Use the properties of exponents to simplify the expression.
    
     [`\displaystyle\frac{[$myvar1]}{[$myvar2]}=`]  [__________________]
 

@@ -67,7 +67,7 @@ $ans2 = Compute($ans2);
 TEXT(beginproblem());
 
 BEGIN_PGML
-Use the properties of exponents to simplify the following:
+Use the properties of exponents to simplify the expression.
 
 a.
 

@@ -85,7 +85,9 @@ $ans = Compute($ans);
 ##############################################
 TEXT(beginproblem());
 BEGIN_PGML
-Use the properties of exponents to simplify: [`\left([$myvar]\right)^{[$n]}`]
+Use the properties of exponents to simplify the expression.
+
+    [`\left([$myvar]\right)^{[$n]}`]
 
     [____________]
 

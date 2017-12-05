@@ -70,7 +70,7 @@ $ans = Formula("$numerator/($denom*$var^($total))");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Use the properties of exponents to simplify the following
+Use the properties of exponents to simplify the expression.
    
     [`
        \left(\displaystyle\frac{[$a]}{[$b][$var]^{[$m]}}\right)^{[$n]}=
