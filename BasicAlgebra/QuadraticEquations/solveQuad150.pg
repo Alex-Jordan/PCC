@@ -70,6 +70,7 @@ Context()->flags->set(
                       );
                                
 parser::Assignment->Allow;
+Context()->noreduce("(-x)-y","(-x)+y");
 
 Context()->operators->redefine(',',using=>',',from=>'Numeric');
     Context()->operators->redefine('or',using=>',',from=>'Numeric');
