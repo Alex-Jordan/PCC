@@ -56,10 +56,10 @@ $step2 = Compute("2*pi*(h**2+$a2*h+$aSquare)+2*pi*h*(h+$a)")->reduce;
 $step3 = Compute("2*pi*h**2+2*$a2*pi*h+2*$aSquare*pi+2*pi*h**2+2*$a*pi*h")->reduce;
 
 @answers = (
-   "`$ans1`",
-   "`$ans2`",
-   "`$ans3`",
-   "`$ans4`",
+   main::math_ev3($ans1),
+   main::math_ev3($ans2),
+   main::math_ev3($ans3),
+   main::math_ev3($ans4),
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.
