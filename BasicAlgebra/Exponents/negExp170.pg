@@ -87,7 +87,7 @@ TEXT(beginproblem());
 #                       x^{mp+qs}
 
 BEGIN_PGML
-Simplify the following expression, and write your answer using only _positive_ exponents.
+Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
 
     [`
                 \displaystyle\frac{\left([$var1]^{[$m]}[$var2]^{[$n*(-1)]}\right)^{[$p*(-1)]}}{\left([$var1]^{[$q*(-1)]}[$var2]^{[$r]}\right)^{[$s*(-1)]}}=

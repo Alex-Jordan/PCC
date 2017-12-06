@@ -82,7 +82,7 @@ $ans = Formula("1/($totalCoeff*$var^($total))");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Simplify the following expression, and write your answer using only _positive_ exponents.
+Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
 
     [`
         \displaystyle\left(\frac{[$b*$a][$var]^{[$m]}}{[$a][$var]^{[$n]}}\right)^{[$p*(-1)]}=

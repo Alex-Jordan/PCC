@@ -74,7 +74,7 @@ $ans = Formula("1/($var^($total))");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Simplify the following expression, and write your answer using only _positive_ exponents.
+Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
 
     [`
         \displaystyle\left(\frac{[$var]^{[$m]}}{[$var]^{[$n]}}\right)^{[$p*(-1)]}=

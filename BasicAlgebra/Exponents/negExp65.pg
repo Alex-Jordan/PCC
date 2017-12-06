@@ -2,14 +2,14 @@
 # Portland Community College
 #
 # Template:
-# Here is an expression with negative exponents.
+# Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
 #
 #     1
 #    ----
 #    a^-n
 #
-# Evaluate the expression; in other words, write the answer 
-# without using exponents. 
+#  
+#  
 #
 # a is the base, and is integer on [-10,-2]. 
 #
@@ -64,14 +64,14 @@ $ans = Compute(($a)**$n);
 TEXT(beginproblem());
 
 BEGIN_PGML
-Here is an expression with negative exponents.
+Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
 
     [`
         \displaystyle\frac{1}{([$a])^{[$n*(-1)]}}=
      `][____________]{$ans}
 
-Evaluate the expression; in other words, write the answer 
-without using exponents. 
+ 
+ 
 
 END_PGML
 

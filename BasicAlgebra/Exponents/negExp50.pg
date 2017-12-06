@@ -77,7 +77,7 @@ $ans = Formula("$totalCoeff/($var^($total))");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Simplify the following expression, and write your answer using only _positive_ exponents.
+Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
 
     [`
         ([$a][$var]^{[$n*(-1)]})\cdot ([$b][$var]^{[$m]})=

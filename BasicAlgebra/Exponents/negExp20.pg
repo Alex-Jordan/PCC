@@ -2,13 +2,13 @@
 # Portland Community College
 #
 # Template:
-# Here is an expression with negative exponents.
+# Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
 #
 #     x^-m
 #     ----
 #     y^n
 #
-# Rewrite the expression using only positive exponents.
+# 
 #
 # m and n are integers on [2,20]. 
 # 
@@ -70,13 +70,13 @@ $ans = Formula("1/($var2^$n*$var1^$m)");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Here is an expression with negative exponents.
+Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
 
     [`
         \displaystyle\frac{[$var1]^{[$m*(-1)]}}{[$var2]^{[$n]}}=
      `][____________]
 
-Rewrite the expression using only positive exponents.
+
 
 [@KeyboardInstructions("Be careful to use grouping parenthesis appropriately. Remember that [|1/(2$var1)|]* is different from [|1/2$var1|]*.")@]**
 
