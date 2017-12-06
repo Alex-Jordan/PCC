@@ -102,8 +102,6 @@ Simplify the following expression, and write your answer using only _positive_ e
        \displaystyle \left( \frac{[$var1]^{[$m]}[$var2]^{[$n]}[$var3]^{[$p]}}{[$var1]^{[$q*(-1)]}[$var2]^{[$r*(-1)]}[$var3]^{[$s*(-1)]}}\right)^{[$t*(-1)]}=
      `][___________________________]
 
-This problem initially looks quite complicated, but as long as you gather each of the variables 
-together and remember your properties of exponents, it's not as bad as it first looks- honest!
 END_PGML
 
 ANS($ans -> cmp(
