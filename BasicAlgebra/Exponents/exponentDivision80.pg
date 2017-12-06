@@ -91,7 +91,7 @@ Use the properties of exponents to simplify the expression.
        \left(\displaystyle\frac{[$var1]^{[$m]}}{[$a][$var2]^{[$n]}[$var3]^{[$p]}}\right)^{[$k]}=
     `] [__________________________]
 
-Be careful to use grouping parenthesis appropriately- remember that 1/(2x) is different from 1/2x.
+[@KeyboardInstructions('Be careful to use grouping parenthesis appropriately. Remember that [|1/(2x)|]* is different from [|1/2x|]*.')@]**
 END_PGML
 
 ANS($ans -> cmp(
