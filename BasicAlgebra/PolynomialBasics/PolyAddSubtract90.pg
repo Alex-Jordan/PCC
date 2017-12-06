@@ -2,7 +2,7 @@
 # Portland Community College
 #
 # Template:
-# Subtract the two binomials, making sure to simplify your answer
+# Subtract the two binomials.
 # as much as possible.
 #
 #    (a x^m + b x^n) - (c x^k + d )
@@ -100,8 +100,8 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Subtract the two binomials, making sure to simplify your answer
-as much as possible.
+Subtract the two binomials.
+
 
     [`\left([$poly1]\right)-\left([$poly2]\right)`]
 

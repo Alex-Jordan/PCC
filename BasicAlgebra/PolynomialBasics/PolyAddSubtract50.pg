@@ -2,7 +2,7 @@
 # Portland Community College
 #
 # Template:
-# Add the two polynomials, making sure to simplify your answer
+# Add the two polynomials.
 # as much as possible.
 #
 #    (a x^5 + b x^4 + c x^2 + d) + (e x^5 + f x^3 + g)
@@ -102,8 +102,8 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Add the two polynomials, making sure to simplify your answer
-as much as possible.
+Add the two polynomials.
+
 
     [`\left([$poly1]\right)+\left([$poly2]\right)`]
 

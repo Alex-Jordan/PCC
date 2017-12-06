@@ -2,7 +2,7 @@
 # Portland Community College
 #
 # Template:
-# Add the two binomials, making sure to simplify your answer
+# Add the two binomials.
 # as much as possible.
 #
 #    (a x^2 + b x + c) + (d x^2 + e x + f)
@@ -96,8 +96,8 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Add the two trinomials, making sure to simplify your answer
-as much as possible.
+Add the two trinomials.
+
 
     [`\left([$poly1]\right)+\left([$poly2]\right)`]
 

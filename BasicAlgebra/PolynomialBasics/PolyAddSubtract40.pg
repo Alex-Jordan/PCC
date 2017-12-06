@@ -2,7 +2,7 @@
 # Portland Community College
 #
 # Template:
-# Add the two trinomials, making sure to simplify your answer
+# Add the two trinomials.
 # as much as possible.
 #
 #    (a x^3 + b x^2 + c) + (d x^3 + e x^2 + f)
@@ -97,8 +97,8 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Add the two trinomials, making sure to simplify your answer
-as much as possible.
+Add the two trinomials.
+
 
     [`\left([$poly1]\right)+\left([$poly2]\right)`]
 
