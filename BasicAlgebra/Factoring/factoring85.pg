@@ -71,7 +71,7 @@ Factor the given polynomial
 
     [`[$a][$var]^2+[$b]=`] [___________________]
 
-If the expression cannot be factored then answer with *prime*.
+[@KeyboardInstructions('If the expression cannot be factored then answer with [|prime|]*.')@]**
 END_PGML
 ANS($ans->cmp(typeMatch=>Formula("$a $var^2+$b"))->withPostFilter(AnswerHints(
    Formula("$a $var^2+$b") => "Are you trying to say that the polynomial is *prime*?"

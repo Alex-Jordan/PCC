@@ -80,7 +80,7 @@ Factor the given polynomial
 
     [`[$question]=`] [___________________]
 
-If the expression cannot be factored then answer with *prime*.
+[@KeyboardInstructions("If the expression cannot be factored then answer with [|prime|]*.")@]**
 END_PGML
 ANS($ans->cmp(typeMatch=>$question)->withPostFilter(AnswerHints(
     $question => "Are you trying to say that the polynomial is *prime*?"
