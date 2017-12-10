@@ -132,9 +132,9 @@ $mc -> qa ("In factoring \($p\), which factoring techniques/tools will be useful
 @correct
 );
 $mc -> extra(
-@extra
+@answers
 );
-$mc -> makeLast("None of the above$BR");
+$mc -> makeLast(@answers);
 Context()->normalStrings;
 
 BEGIN_PGML
