@@ -2,7 +2,7 @@
 # Portland Community College
 #
 # Template:
-# Solve the quadratic equation
+# Solve the equation.
 #
 #       a x^2 = - bx - c
 #
@@ -101,7 +101,7 @@ $ans = List(Formula("$var=($b1-sqrt($discriminant))/$a1"),Formula("$var=($b1+sqr
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
      [` [$questionFormula1]= [$questionFormula2] `]
 

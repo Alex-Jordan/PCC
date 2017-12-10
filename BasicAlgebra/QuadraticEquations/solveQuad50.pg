@@ -73,7 +73,7 @@ $ans = List(Formula("$var=$b"),Formula("$var=-$b"));
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
      [` [$a][$var]^2 = [$a*$b**2] `]
 

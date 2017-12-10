@@ -2,7 +2,7 @@
 # Portland Community College
 #
 # Template:
-# Solve the quadratic equation
+# Solve the equation.
 #
 #       a x^2 + bx + c = 0
 #
@@ -153,7 +153,7 @@ else
 ##############################################
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
      [` [$questionFormula]= 0 `]
 

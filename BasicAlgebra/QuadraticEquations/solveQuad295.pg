@@ -104,7 +104,7 @@ $ans = Compute("$var = $b1/$a");
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
     [` [$lhs]=[$rhs]`]
 

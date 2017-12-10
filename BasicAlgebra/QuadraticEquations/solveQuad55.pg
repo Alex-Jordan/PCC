@@ -83,7 +83,7 @@ $ans = Compute("$var = -$a, $var = $a");
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
     [` [$var]^2 = [$a**2] `]
 

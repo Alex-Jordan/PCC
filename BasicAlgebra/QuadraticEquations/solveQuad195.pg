@@ -82,7 +82,7 @@ $ans = List(Formula("$var=$a sqrt($b)"),Formula("$var=-$a sqrt($b)"));
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
      [` [$c][$var]^2 = [$c*$a**2 * $b] `]
 

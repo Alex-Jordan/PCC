@@ -81,7 +81,7 @@ $ans = Compute("$var = $frac1, $var = $frac2");
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
     [` [$questionFormula]=0`]
 

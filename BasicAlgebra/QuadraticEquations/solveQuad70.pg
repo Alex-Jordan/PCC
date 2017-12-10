@@ -76,7 +76,7 @@ $ans = List(Formula("$var=sqrt($c)/$b"), Formula("$var=-sqrt($c)/$b"));
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
      [` [$b][$var]^2  - [$a]= 0`]
 

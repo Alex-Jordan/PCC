@@ -72,7 +72,7 @@ $ans = List(Formula("$var=sqrt($a)"),Formula("$var=-sqrt($a)"));
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
      [` [$var]^2 = [$a] `]
 

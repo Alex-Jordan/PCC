@@ -88,7 +88,7 @@ $questionFormula1 = Formula("$var^2+2*$a*$var+$c")->reduce;
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
      [` [$questionFormula] = [$b**2] `]
 

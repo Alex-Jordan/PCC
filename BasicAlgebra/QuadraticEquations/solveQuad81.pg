@@ -79,7 +79,7 @@ $ans = List(Formula("$var=$soln1"),Formula("$var=$soln2"));
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
      [` [$d] - [$c] ( [$var]+[$a] )^2 = [$b] `]
 

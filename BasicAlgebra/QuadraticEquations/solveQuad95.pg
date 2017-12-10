@@ -77,7 +77,7 @@ $ans = List(Formula("$var=$soln1"),Formula("$var=$soln2"));
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
      [` ([$var]+[$a])([$var]+[$b]) = 0 `]
 

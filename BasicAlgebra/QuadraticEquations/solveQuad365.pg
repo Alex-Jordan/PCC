@@ -85,7 +85,7 @@ $ans = Compute("$var=0,$var = $soln1, $var = $soln2");
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the equation
+Solve the equation.
 
      [` [$question] = 0 `]
   

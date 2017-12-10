@@ -76,7 +76,7 @@ $ans = Compute("$var = -sqrt($d)/$b, $var = sqrt($d)/$b");
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
     [` [$a]-[$b][$var]^2 = [$c] `]
 

@@ -85,7 +85,7 @@ $question1 = Formula("$var**2+$aPlusB*$var+$ab")->reduce;
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation.
 
      [` [$question]= [$c] `]
 
