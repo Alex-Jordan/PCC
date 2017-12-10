@@ -31,6 +31,7 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "PCCgraphMacros.pl",
+  "PCCmacros.pl",
   "parserNumberWithUnits.pl",
   "PGcourse.pl",
 );
@@ -99,7 +100,7 @@ There is a rectangular lot in the garden, with [`[$lengthU]`] in length and [`[$
 
 >>[@ image(insertGraph( $picture  ), tex_size=>800, height=>400, width=>400, extra_html_tags=>"alt = '$alt' title = '$alt'" ) @]*<<
 
-You should expand the original lot by [_________]{$xU} in four directions. Please type "ft" to represent feet.
+You should expand the original lot by [_________]{$xU} in four directions. [@KeyboardInstructions('Please type [|ft|]* to represent feet.')@]**
 
 END_PGML
 
