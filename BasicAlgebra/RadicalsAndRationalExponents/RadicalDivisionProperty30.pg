@@ -58,7 +58,7 @@ $ans = Formula("sqrt($radAns)/$den1");
 
 BEGIN_PGML
 
-Simplify the radical expression or state that it is [|not a real number|]*.
+Simplify the expression.
 
 [@KeyboardInstructions("Use [|sqrt()|]* for the square root symbol. For example: [`\\sqrt{2}=`][|sqrt(2)|]*.")@]**
 
