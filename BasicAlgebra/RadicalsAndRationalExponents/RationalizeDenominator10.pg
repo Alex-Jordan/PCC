@@ -60,7 +60,7 @@ TEXT(beginproblem());
 BEGIN_PGML
 
 
-Simplify the following expression.
+Rationalize the denominator and simplify the expression.
  
       [``\frac{[$a]}{\sqrt{[$c]}}``]  =   [_________]{$answer} .
 
