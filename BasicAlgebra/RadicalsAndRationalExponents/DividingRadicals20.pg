@@ -29,6 +29,7 @@ loadMacros(
   "PGML.pl",
   "contextRationalFunction.pl",
   "bizarroArithmetic.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 

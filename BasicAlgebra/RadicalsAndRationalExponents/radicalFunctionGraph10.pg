@@ -31,6 +31,7 @@ loadMacros(
   "PGML.pl",
   "PGunion.pl",
   "imageChoice.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 
 );

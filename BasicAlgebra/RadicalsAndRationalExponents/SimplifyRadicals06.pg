@@ -29,6 +29,7 @@ loadMacros(
   "PGML.pl",
   "contextFraction.pl",
   "contextLimitedRadical.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 

@@ -18,6 +18,7 @@ loadMacros(
   "MathObjects.pl",
   "contextLimitedPowers.pl",
   "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 

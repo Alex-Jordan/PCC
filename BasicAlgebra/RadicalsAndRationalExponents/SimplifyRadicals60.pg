@@ -36,6 +36,7 @@ loadMacros(
   "MathObjects.pl",      #Almost always needed
   "PGML.pl",             #Almost always needed
   "contextLimitedRadical.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
