@@ -69,10 +69,10 @@ $ymax = $xmax;
 @y = (($ymax-$width)/2,($ymax+$width)/2);
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[400,400]);
+      pixels=>[240,240]);
 
-$picture->lb( new Label(($x[0]+$x[1])/2, $y[0]+0.5,"length: $length ft",'black','center','middle'));
-$picture->lb( new Label($x[1]-0.5,($y[0]+$y[1])/2,"width: $width ft",'black','right','middle'));
+$picture->lb( new Label(($x[0]+$x[1])/2, $y[0],"length: $length ft",'black','center','bottom'));
+$picture->lb( new Label($x[1],($y[0]+$y[1])/2,"width: $width ft",'black','right','middle'));
 
 $picture->moveTo($x[0],$y[0]);
 $picture->lineTo($x[1],$y[0], black,3);
@@ -98,7 +98,7 @@ BEGIN_PGML
 
 There is a rectangular lot in the garden, with [`[$lengthU]`] in length and [`[$widthU]`] in width. You plan to expand the lot by an equal length around its four sides, and make the area of the expanded rectangle [`[$area2U]`]. How long should you expand the original lot in four directions?
 
->>[@ image(insertGraph( $picture  ), tex_size=>800, height=>400, width=>400, extra_html_tags=>"alt = '$alt' title = '$alt'" ) @]*<<
+>>[@ image(insertGraph( $picture  ), tex_size=>800, width=>240, extra_html_tags=>"alt = '$alt' title = '$alt'" ) @]*<<
 
 You should expand the original lot by [_________]{$xU} in four directions. [@KeyboardInstructions('Please type [|ft|]* to represent feet.')@]**
 
