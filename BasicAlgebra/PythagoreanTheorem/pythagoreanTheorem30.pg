@@ -159,7 +159,7 @@ BEGIN_PGML
 >>[@image(insertGraph($picture), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$text' title = '$text'") @]*<<
 
 
-Find the value of [`x`]. Please round your answer to two decimal places.
+Find the value of [`x`], rounded to two decimal places.
 
     [` x={}`][_____________]{$ans}
 

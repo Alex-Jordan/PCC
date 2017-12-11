@@ -32,6 +32,7 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "contextLimitedRadical.pl",
+  "PCCmacros.pl",
   "PCCgraphMacros.pl",
   "PGcourse.pl",
 );
@@ -292,9 +293,7 @@ BEGIN_PGML
 >>[@image(insertGraph($picture), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$text' title = '$text'") @]*<<
 
 
-Find the value of [`x`]. Your answer should be a radical in simplified form. For example, [`\sqrt{8}`] should be simplified into [`2\sqrt{2}`].
-
-Use *sqrt()* to represent the square root symbol. For example, if the answer is [`2\sqrt{2}`], you should type in *2sqrt(2)* or *2\*sqrt(2)*.
+Find the exact value of [`x`]. [@KeyboardInstructions('Your answer should be a radical in simplified form. For example, [`\sqrt{8}`] should be simplified into [`2\sqrt{2}`]. Use [|sqrt()|]* to represent the square root symbol. For example, if the answer is [`2\sqrt{2}`], you should type in [|2sqrt(2)|]* or [|2*sqrt(2)|]*.')@]**
 
     [` x={}`][_____________]{$ans}
 
