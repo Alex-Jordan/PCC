@@ -154,7 +154,7 @@ BEGIN_PGML
 
 Simplify the radical [` [$sqrt1] `]. If it cannot be simplified, simply type its value as the answer.
 
-Use *sqrt()* for the square root symbol. For example: [`\sqrt{2} =`]  *sqrt(2)*.
+[@KeyboardInstructions("Use [|sqrt()|]* for the square root symbol. For example: [`\\sqrt{2}=`][|sqrt(2)|]*.")@]**
 
     [`` [$sqrt1] = ``] [_____________]{$ans}
 

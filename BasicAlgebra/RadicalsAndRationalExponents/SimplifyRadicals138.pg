@@ -55,7 +55,7 @@ $ans = Formula("$num-$co*sqrt($b)");
 TEXT(beginproblem());
 BEGIN_PGML
 
-Expand and simplify the expression. Use *sqrt()* for the square root symbol (Example: [`\sqrt{2} =`] *sqrt(2)*.)
+Expand and simplify the expression. [@KeyboardInstructions("Use [|sqrt()|]* for the square root symbol. For example: [`\\sqrt{2}=`][|sqrt(2)|]*.")@]**
 
     [`` [$problem] =``] [__________]{$ans}
 
