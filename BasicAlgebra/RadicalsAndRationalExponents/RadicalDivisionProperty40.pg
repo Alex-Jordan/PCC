@@ -171,7 +171,7 @@ if ($line3Center ne "") {$output13 = '&='.$line3Center;}
 
 BEGIN_PGML
 
-Simplify the expression [`` [$sqrt1] \cdot [$sqrt2]  ``].
+Simplify the radical expression or state that it is [|not a real number|]*.
 
 [@KeyboardInstructions("Use [|sqrt()|]* for the square root symbol. For example: [`\\sqrt{2}=`][|sqrt(2)|]*.")@]**
 
