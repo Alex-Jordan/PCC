@@ -57,7 +57,7 @@ BEGIN_PGML
 
 
 
-Evaluate [:sqrt(-[$a**2]):] or state that the expression is [|not a real number|]*.
+Simplify the radical expression or state that it is [|not a real number|]*.
 
 
 

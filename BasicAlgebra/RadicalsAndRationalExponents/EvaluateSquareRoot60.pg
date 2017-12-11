@@ -61,7 +61,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Evaluate the following expressions.
+Simplify the radical expression or state that it is [|not a real number|]*.
 
     a)    [::sqrt([$b2])-sqrt([$a2])=::] [______________]{$ans1}
 

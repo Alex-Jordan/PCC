@@ -66,7 +66,7 @@ BEGIN_PGML
 
 
 
-Evaluate [`\sqrt{-[$sq]}`] or state that the expression is [|not a real number|]*.
+Simplify the radical expression or state that it is [|not a real number|]*.
 
 
 
