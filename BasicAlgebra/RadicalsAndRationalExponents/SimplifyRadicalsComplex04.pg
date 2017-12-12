@@ -120,7 +120,7 @@ $ans = Formula("$outNum*i*sqrt($inNum)");
 
 BEGIN_PGML
 
-Simplify the radical [` [$problem] `] and write it into a complex number.
+Simplify the radical and write it into a complex number.
 
 [@KeyboardInstructions("Use [|sqrt()|]* for the square root symbol. For example: [`\\sqrt{2}=`][|sqrt(2)|]*.")@]**
 
