@@ -76,13 +76,12 @@ TEXT(beginproblem());
 BEGIN_PGML
 Solve the quadratic equation. Solutions could be complex numbers.
 
+[@KeyboardInstructions('Enter multiple answers separated by commas, like [|x=1,x=-1|]*. If you need to use the square root symbol, as in [`\sqrt{17}`], type it as [|sqrt(17)|]*.')@]**
+
      [` [$a]([$var]+[$g])^2+[$b] = [$d]  `]
 
      [__________________________________]
 
-* Enter multiple answers separated by commas, such as [`x=1,x=-1`]
-* If you need to use the square root symbol, 
-as in [`x=\sqrt{17}`], type it using: *sqrt(17)*
 
 END_PGML
 
