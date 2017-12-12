@@ -71,7 +71,7 @@ BEGIN_PGML
 
 [@instructions(~~@vArray)@]**
 
-    [`` [$left] = [$right]  ``]  
+    [` [$left] = [$right]  `]  
 
     [_______________________________] 
 
