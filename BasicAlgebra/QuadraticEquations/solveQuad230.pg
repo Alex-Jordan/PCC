@@ -34,9 +34,9 @@ loadMacros(
       "parserAssignment.pl",
       "answerHints.pl",
       "PGML.pl",
-     "contextFraction.pl",
-    ,
-  "PGcourse.pl",
+      "contextFraction.pl",
+      "PCCmacros.pl",
+      "PGcourse.pl",
 );
 
 ##############################################

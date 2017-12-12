@@ -43,7 +43,7 @@ loadMacros(
       "answerHints.pl",
       "PGML.pl",
      "contextFraction.pl",
-    ,
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
