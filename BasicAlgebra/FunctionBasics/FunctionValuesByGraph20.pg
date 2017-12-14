@@ -136,8 +136,7 @@ The graph of a function [`f`] is shown below.
 
 [@KeyboardInstructions('If there is more than one answer to a question, you can use commas and the word [|or|]*. When solving an equation for the variable [`x`], your answer should be in the form [|x=___|]*.')@]**
 
-    a. Evaluate [``f([$p0x])``].  
-    [``f([$p0x])={}``][_________]
+    a. [``f([$p0x])={}``][_________]
 
     a. Solve [``f(x)=[$p1y]``].  
     [_______________________]
