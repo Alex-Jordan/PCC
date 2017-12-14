@@ -68,7 +68,9 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Solve for [`x`] for each given values of the function [`[$fname](x)=[$func]`].
+Solve for [`x`] in each equation, where [`[$fname](x)=[$func]`].
+
+[@KeyboardInstructions('If there is more than one solution, use commas to separate your answers. If there is no real solution, type [|no real solution|]*.')@]**
 
 a. If [`[$fname](x)=[$y1]`], then [`x=`][____________]{$ans1}.
 b. If [`[$fname](x)=[$y2]`], then [`x=`][____________]{$ans2}. 
