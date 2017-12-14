@@ -33,6 +33,7 @@ loadMacros(
   "PGML.pl",
   "PCCgraphMacros.pl",
   "parserNumberWithUnits.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -132,6 +133,8 @@ BEGIN_PGML
 
 From a clifftop over the ocean [`[$cU]`] above sea level, an object was shot into the air with an initial vertical speed of [`[$bU]`]. On its way down it fell into the ocean. Its height (above sea level) as time passes can be modeled by the quadratic function [`f`], where [`f(t)=[$func]`]. Here [`t`] represents the number of seconds since the object's release, and [`f(t)`] represents the object's height (above sea level) in meters.
 
+[@KeyboardInstructions('(Use [|m|]* for meters, and [|s|]* for seconds.)')@]**
+
     1) After [____________]{$tMaxU}, this object reached its maximum height of [___________]{$hMaxU}.
 
     2) This object flew for [____________]{$tBackU} before it landed in the ocean.
@@ -139,8 +142,6 @@ From a clifftop over the ocean [`[$cU]`] above sea level, an object was shot int
     3) This object was [____________]{$h1U} above sea level [`[$t1U]`] after its release.
 
     4) This object was [`[$h2U]`] above sea level twice: once [____________]{$t2U} after its release, and again later [____________]{$t3U} after its release.
-
-(Use *m* for meters, and *s* for seconds.)
 
 END_PGML
 

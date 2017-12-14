@@ -33,6 +33,7 @@ loadMacros(
   "PGML.pl",
   "PCCgraphMacros.pl",
   "parserNumberWithUnits.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -126,6 +127,8 @@ BEGIN_PGML
 
 An object was shot up into the air at an initial vertical speed of [`[$initSpeed]`] feet per second. Its height as time passes can be modeled by the quadratic function [`f`], where [`f(t)=[$func]`]. Here [`t`] represents the number of seconds since the object's release, and [`f(t)`] represents the object's height in feet.
 
+[@KeyboardInstructions('(Use [|ft|]* for feet, and [|s|]* for seconds.)')@]**
+
     1) After [____________]{$tMaxU}, this object reached its maximum height of [___________]{$hMaxU}.
 
     2) This object flew for [____________]{$tBackU} before it landed on the ground.
@@ -134,7 +137,6 @@ An object was shot up into the air at an initial vertical speed of [`[$initSpeed
 
     4) This object was [`[$h2U]`] high at two times: once [____________]{$t2U} after its release, and again later [____________]{$t3U} after its release.
 
-(Use *ft* for feet, and *s* for seconds.)
 
 END_PGML
 
