@@ -43,6 +43,7 @@ $refreshCachedImages=1;
 Context("Numeric");
 
 do {
+do {
    $m1 = random(1,5,1);
    $func1 = Compute("$m1*x")->reduce;
    $e1 = random(2,5,1);
@@ -54,7 +55,7 @@ do {
    $x3 = random($e2+1,$e3-1,1);
    $y3 = $func2->eval(x=>$x3);
    $x2 = $y3/$m1;
-} until ( ($m1*$e1<=10) && ($y3==int($y3)) && ($x2==int($x2)) ); 
+} until ( ($m1*$e1<=10) && ($y3==int($y3)) && ($x2==int($x2)) && ($x2 != $x3));
 
 $px1 = $e1;
 $py1 = $m1*$e1;
@@ -65,6 +66,7 @@ do {$x1=random(1,9,1);} until ( ($x1!=$x2) && ($x1!=$x3) );
 if ($x1<$e1) {$y1=$x1*$m1;}
 elsif ($x1<$e2) {$y1=$py1;}
 else {$y1=$func2->eval(x=>$x1);}
+} until ($x1 != $y1);
 
 $y2 = $y3;
 
@@ -110,10 +112,10 @@ $alt[1] = "This is a graph with the x axis labeled as t in seconds, and y axis l
 
 
 @answers1 = (
-   "The particle was `$y1` feet away from the starting line `$x1` seconds since timing started.",
-   "The particle was `$x1` feet away from the starting line `$y1` seconds since timing started.",
-   "In the first `$x1` seconds, the particle moved a total of `$y1` feet.",
-   "In the first `$y1` seconds, the particle moved a total of `$x1` feet.",
+   "The particle was ".main::math_ev3($y1)." feet away from the starting line ".main::math_ev3($x1)." seconds since timing started.",
+   "The particle was ".main::math_ev3($x1)." feet away from the starting line ".main::math_ev3($y1)." seconds since timing started.",
+   "In the first ".main::math_ev3($x1)." seconds, the particle moved a total of ".main::math_ev3($y1)." feet.",
+   "In the first ".main::math_ev3($y1)." seconds, the particle moved a total of ".main::math_ev3($x1)." feet.",
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.
@@ -139,10 +141,10 @@ $radio1 = RadioButtons(
 $ans3 = List($x2,$x3);
 
 @answers2 = (
-   "The article was `$y2` feet from the starting line `$x2` seconds since timing started, and again `$x3` seconds since timing started.",
-   "The article was `$y2` feet from the starting line `$x2` seconds since timing started.",
-   "The article was `$y2` feet from the starting line `$x3` seconds since timing started.",
-   "The article was `$y2` feet from the starting line `$x2` seconds since timing started, or `$x3` seconds since timing started.",
+   "The article was ".main::math_ev3($y2)." feet from the starting line ".main::math_ev3($x2)." seconds since timing started, and again ".main::math_ev3($x3)." seconds since timing started.",
+   "The article was ".main::math_ev3($y2)." feet from the starting line ".main::math_ev3($x2)." seconds since timing started.",
+   "The article was ".main::math_ev3($y2)." feet from the starting line ".main::math_ev3($x3)." seconds since timing started.",
+   "The article was ".main::math_ev3($y2)." feet from the starting line ".main::math_ev3($x2)." seconds since timing started, or ".main::math_ev3($x3)." seconds since timing started.",
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.
@@ -190,7 +192,7 @@ c) Solve [`t`] for [`d(t)=[$y2]`]. Use commas to separate your answers if there 
 
     [``t=``][________]
 
-d) Interpret the meaning of Part C's solution(s):
+d) Interpret the meaning of part c's solution(s):
 
     [@$radio2->buttons()@]*
 

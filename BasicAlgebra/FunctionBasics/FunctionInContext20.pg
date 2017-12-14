@@ -68,10 +68,10 @@ $x1C = Currency($x1);
 #$name = RandomName(sex=>$sex);
 
 @answers = (
-   "Each pass costs `$x1C`, and it works for `$y1` days.",
-   "Each pass costs `$y1C`, and it works for `$x1` days.",
-   "If a pass costs `$y1C`, it will work for `$x1` days.",
-   "If a pass costs `$x1C`, it will work for `$y1` days.",
+   "Each pass costs ".math_ev3($x1C).", and it works for ".math_ev3($y1)." days.",
+   "Each pass costs ".math_ev3($y1C).", and it works for ".math_ev3($x1)." days.",
+   "If a pass costs ".math_ev3($y1C).", it will work for ".math_ev3($x1)." days.",
+   "If a pass costs ".math_ev3($x1C).", it will work for ".math_ev3($y1)." days.",
 );
 
 #Create a hash and its inverse that randomizes the order of the four choices.

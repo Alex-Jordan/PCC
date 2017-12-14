@@ -60,10 +60,10 @@ $y2 = $data[$x2];
 $y3 = $data[$x3];
 
 @answers1 = (
-   "There were `$y1` customers in the store `$x1` hours after the store opened.",
-   "There were `$x1` customers in the store `$y1` hours after the store opened.",
-   "In `$x1` hours since the store opened, there were a total of `$y1` customers.",
-   "In `$x1` hours since the store opened, the store had an average of `$y1` customers per hour.",
+   "There were ".math_ev3($y1)." customers in the store ".math_ev3($x1)." hours after the store opened.",
+   "There were ".math_ev3($x1)." customers in the store ".math_ev3($y1)." hours after the store opened.",
+   "In ".math_ev3($x1)." hours since the store opened, there were a total of ".math_ev3($y1)." customers.",
+   "In ".math_ev3($x1)." hours since the store opened, the store had an average of ".math_ev3($y1)." customers per hour.",
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.
@@ -89,10 +89,10 @@ $radio1 = RadioButtons(
 $ans3 = List($x2,$x3);
 
 @answers2 = (
-   "There were `$y2` customers in the store `$x2` hours after the store opened, and again `$x3` hours after the store opened.",
-   "There were `$y2` customers in the store `$x3` hours after the store opened.",
-   "There were `$y2` customers in the store `$x2` hours after the store opened.",
-   "There were `$y2` customers in the store either `$x2` hours after the store opened, or `$x3` hours after the store opened.",
+   "There were ".math_ev3($y2)." customers in the store ".math_ev3($x2)." hours after the store opened, and again ".math_ev3($x3)." hours after the store opened.",
+   "There were ".math_ev3($y2)." customers in the store ".math_ev3($x3)." hours after the store opened.",
+   "There were ".math_ev3($y2)." customers in the store ".math_ev3($x2)." hours after the store opened.",
+   "There were ".math_ev3($y2)." customers in the store either ".math_ev3($x2)." hours after the store opened, or ".math_ev3($x3)." hours after the store opened.",
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.

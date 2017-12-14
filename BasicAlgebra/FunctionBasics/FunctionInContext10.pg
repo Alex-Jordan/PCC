@@ -74,10 +74,10 @@ $possessive = 'her' if ($sex eq 'female');
 $name = RandomName(sex=>$sex);
 
 @answers = (
-   numberWord($x1,capital=>1)." days after $name started $possessive piggy bank, there were `$y1C` in it.",
-   numberWord($y1,capital=>1)." days after $name started $possessive piggy bank, there were `$x1C` in it.",
-   "The piggy bank started with `$y1C` in it, and $name saves `$x1C` each day.",
-   "The piggy bank started with `$x1C` in it, and $name saves `$y1C` each day.",
+   numberWord($x1,capital=>1)." days after $name started $possessive piggy bank, there were ".math_ev3($y1C)." in it.",
+   numberWord($y1,capital=>1)." days after $name started $possessive piggy bank, there were ".math_ev3($x1C)." in it.",
+   "The piggy bank started with ".math_ev3($y1C)." in it, and $name saves ".math_ev3($x1C)." each day.",
+   "The piggy bank started with ".math_ev3($x1C)." in it, and $name saves ".math_ev3($y1C)." each day.",
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.
