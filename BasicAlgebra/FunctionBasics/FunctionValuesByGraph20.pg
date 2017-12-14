@@ -34,7 +34,6 @@ loadMacros(
   "answerHints.pl",
   "PCCmacros.pl",
   "PGcourse.pl",
-  "PGinfo.pl",
 );
 
 
@@ -133,10 +132,9 @@ The graph of a function [`f`] is shown below.
 
 [@EnlargeImageStatementPGML()@]**
 
-
 >>[@image(insertGraph($gr[0]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT0' title = '$ALT0'") @]*<<
 
-Use the given graph of [`f`]. If there is more than one answer to a question, you can use commas and the word "or". When solving an equation for the variable [`x`], your answer should be in the form "x=[$US][$US][$US]".
+[@KeyboardInstructions('If there is more than one answer to a question, you can use commas and the word [|or|]*. When solving an equation for the variable [`x`], your answer should be in the form [|x=___|]*.')@]**
 
     a. Evaluate [``f([$p0x])``].  
     [``f([$p0x])={}``][_________]
