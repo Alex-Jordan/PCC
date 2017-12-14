@@ -139,14 +139,14 @@ BEGIN_PGML
 
 Does the following relation on [`x`] and [`y`] make for a function of [`x`]?
 
-    [`\Big[$LBRACE][$points3]\Big[$RBRACE]`]  
+    [`\Big\{[$points3]\Big\}`]  
 
     [_____]{$radio3}
 
-    What is the domain of the relation?  (Since a domain is a _set_ of numbers, you should be using [`[$LBRACE]`] and [`[$RBRACE]`] in your answer.)  
+    What is the domain of the relation?  (Since a domain is a _set_ of numbers, you should be using [`\{`] and [`\}`] in your answer.)  
     [______________]{Set($domain[3]->value)}
 
-    What is the range of the relation?  (Since a range is a _set_ of numbers, you should be using [`[$LBRACE]`] and [`[$RBRACE]`] in your answer.)  
+    What is the range of the relation?  (Since a range is a _set_ of numbers, you should be using [`\{`] and [`\}`] in your answer.)  
     [______________]{Set($range[3]->value)}
 
 END_PGML
@@ -182,7 +182,7 @@ for my $i (0..3) {
 
 BEGIN_PGML_SOLUTION
 
-   [`\Big[$LBRACE][$points3]\Big[$RBRACE]`]  
+   [`\Big\{[$points3]\Big\}`]  
 
     [$solnString3]**
 

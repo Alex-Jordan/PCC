@@ -141,51 +141,51 @@ BEGIN_PGML
 
 a.  Does the following relation on [`x`] and [`y`] make for a function of [`x`]?
 
-    [`\Big[$LBRACE][$points0]\Big[$RBRACE]`]  
+    [`\Big\{[$points0]\Big\}`]  
 
     [_____]{$radio0}
 
-    What is the domain of the relation?  (Since a domain is a _set_ of numbers, you should be using [`[$LBRACE]`] and [`[$RBRACE]`] in your answer.)  
+    What is the domain of the relation?  (Since a domain is a _set_ of numbers, you should be using [`\{`] and [`\}`] in your answer.)  
     [______________]{Set($domain[0]->value)}
 
-    What is the range of the relation?  (Since a range is a _set_ of numbers, you should be using [`[$LBRACE]`] and [`[$RBRACE]`] in your answer.)  
+    What is the range of the relation?  (Since a range is a _set_ of numbers, you should be using [`\{`] and [`\}`] in your answer.)  
     [______________]{Set($range[0]->value)}
     ----
 
 b.  Does the following relation on [`x`] and [`y`] make for a function of [`x`]?
 
-    [`\Big[$LBRACE][$points1]\Big[$RBRACE]`]  
+    [`\Big\{[$points1]\Big\}`]  
 
     [_____]{$radio1}
 
-    What is the domain of the relation?  (Since a domain is a _set_ of numbers, you should be using [`[$LBRACE]`] and [`[$RBRACE]`] in your answer.)  
+    What is the domain of the relation?  (Since a domain is a _set_ of numbers, you should be using [`\{`] and [`\}`] in your answer.)  
     [______________]{Set($domain[1]->value)}
 
-    What is the range of the relation?  (Since a range is a _set_ of numbers, you should be using [`[$LBRACE]`] and [`[$RBRACE]`] in your answer.)  
+    What is the range of the relation?  (Since a range is a _set_ of numbers, you should be using [`\{`] and [`\}`] in your answer.)  
     [______________]{Set($range[1]->value)}
     ----
 c.  Does the following relation on [`x`] and [`y`] make for a function of [`x`]?
 
-    [`\Big[$LBRACE][$points2]\Big[$RBRACE]`]  
+    [`\Big\{[$points2]\Big\}`]  
 
     [_____]{$radio2}
 
-    What is the domain of the relation?  (Since a domain is a _set_ of numbers, you should be using [`[$LBRACE]`] and [`[$RBRACE]`] in your answer.)  
+    What is the domain of the relation?  (Since a domain is a _set_ of numbers, you should be using [`\{`] and [`\}`] in your answer.)  
     [______________]{Set($domain[2]->value)}
 
-    What is the range of the relation?  (Since a range is a _set_ of numbers, you should be using [`[$LBRACE]`] and [`[$RBRACE]`] in your answer.)  
+    What is the range of the relation?  (Since a range is a _set_ of numbers, you should be using [`\{`] and [`\}`] in your answer.)  
     [______________]{Set($range[2]->value)}
     ----
 d.  Does the following relation on [`x`] and [`y`] make for a function of [`x`]?
 
-    [`\Big[$LBRACE][$points3]\Big[$RBRACE]`]  
+    [`\Big\{[$points3]\Big\}`]  
 
     [_____]{$radio3}
 
-    What is the domain of the relation?  (Since a domain is a _set_ of numbers, you should be using [`[$LBRACE]`] and [`[$RBRACE]`] in your answer.)  
+    What is the domain of the relation?  (Since a domain is a _set_ of numbers, you should be using [`\{`] and [`\}`] in your answer.)  
     [______________]{Set($domain[3]->value)}
 
-    What is the range of the relation?  (Since a range is a _set_ of numbers, you should be using [`[$LBRACE]`] and [`[$RBRACE]`] in your answer.)  
+    What is the range of the relation?  (Since a range is a _set_ of numbers, you should be using [`\{`] and [`\}`] in your answer.)  
     [______________]{Set($range[3]->value)}
     ----
 
@@ -223,7 +223,7 @@ for my $i (0..3) {
 
 BEGIN_PGML_SOLUTION
 
-a. [`\Big[$LBRACE][$points0]\Big[$RBRACE]`]  
+a. [`\Big\{[$points0]\Big\}`]  
 
     [$solnString0]**
 
@@ -232,7 +232,7 @@ a. [`\Big[$LBRACE][$points0]\Big[$RBRACE]`]
     The range is the set of [`y`]-values: [`[$range0]`]  
     ----
 
-b. [`\Big[$LBRACE][$points1]\Big[$RBRACE]`]  
+b. [`\Big\{[$points1]\Big\}`]  
 
     [$solnString1]**
 
@@ -241,7 +241,7 @@ b. [`\Big[$LBRACE][$points1]\Big[$RBRACE]`]
     The range is the set of [`y`]-values: [`[$range1]`]  
     ----
 
-c. [`\Big[$LBRACE][$points2]\Big[$RBRACE]`]  
+c. [`\Big\{[$points2]\Big\}`]  
 
     [$solnString2]**
 
@@ -250,7 +250,7 @@ c. [`\Big[$LBRACE][$points2]\Big[$RBRACE]`]
     The range is the set of [`y`]-values: [`[$range2]`]  
     ----
 
-d. [`\Big[$LBRACE][$points3]\Big[$RBRACE]`]  
+d. [`\Big\{[$points3]\Big\}`]  
 
     [$solnString3]**
 
