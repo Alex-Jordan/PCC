@@ -79,7 +79,7 @@ for my $i (0..1) {
   $gr[$i] = init_graph($min[0],$min[1],$max[0],$max[1],
    axes=>[0,0],
    grid=>[$ticknum[0],$ticknum[1]],
-   size=>[xPixels(),yPixels()]
+   size=>[240,240]
   );
   $gr[$i]->lb('reset');
   for my $j (@xticks) {
@@ -176,7 +176,7 @@ The following figure has the graph of function [`d(t)`], which models a particle
 
 [@EnlargeImageStatementPGML@]**
 
->>[@ image(insertGraph( $gr[0]  ), tex_size=>400, height=>400, width=>400,
+>>[@ image(insertGraph( $gr[0]  ), tex_size=>400, width=>240,
 extra_html_tags=>"alt= '$alt[0]' title= '$alt[0]'"
 ) @]*<<
 
@@ -213,7 +213,7 @@ BEGIN_PGML_SOLUTION
 
 [@EnlargeImageStatementPGML@]**
 
->>[@ image(insertGraph( $gr[1]  ), tex_size=>400, height=>400, width=>400,
+>>[@ image(insertGraph( $gr[1]  ), tex_size=>400, width=>240,
 extra_html_tags=>"alt= '$alt[1]' title= '$alt[1]'"
 ) @]*<<
 
