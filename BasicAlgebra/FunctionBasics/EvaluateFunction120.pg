@@ -74,9 +74,9 @@ $answer3 = Compute("undefined");
 
 BEGIN_PGML
 
-Consider the function [:[$fname]:] defined by [`[$fname](x)=[$f]`].
+Evaluate the function at the given values.
 
-Evaluate the following: 
+    [`[$fname](x)=[$f]`].
 
 a.    [`[$fname]([$asquared])=`] [__________]{$answer1}
 
