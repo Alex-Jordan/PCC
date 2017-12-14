@@ -26,7 +26,7 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "parserRadioButtons.pl",
+  "parserPopUp.pl",
   "PGML.pl",
   "PGcourse.pl",
 );
@@ -38,8 +38,8 @@ loadMacros(
 Context("Interval");
 
 
-$yes = "Yes, this relation describes a function of x.";
-$no = "No, this relation does not describe a function of x.";
+$yes = "describes";
+$no = "does not describe";
 
 $n = 'no';
 
@@ -100,28 +100,28 @@ $points3 = $points[3];
 
 
 
-$radio0 = RadioButtons(
-  [$yes,$no],
+$popup0 = PopUp(
+  ['?',$yes,$no],
   $function[0], # correct answer
-  last => [$no], # can be a list
+
 );
 
-$radio1 = RadioButtons(
-  [$yes,$no],
+$popup1 = PopUp(
+  ['?',$yes,$no],
   $function[1], # correct answer
-  last => [$no], # can be a list
+
 );
 
-$radio2 = RadioButtons(
-  [$yes,$no],
+$popup2 = PopUp(
+  ['?',$yes,$no],
   $function[2], # correct answer
-  last => [$no], # can be a list
+
 );
 
-$radio3 = RadioButtons(
-  [$yes,$no],
+$popup3 = PopUp(
+  ['?',$yes,$no],
   $function[3], # correct answer
-  last => [$no], # can be a list
+
 );
 
 
@@ -141,13 +141,9 @@ Does the following relation on [`x`] and [`y`] make for a function of [`x`]?
 
     [`\Big\{[$points3]\Big\}`]  
 
-    [_____]{$radio3}
+    The relation [_____]{$popup3} a function of [`x`].
 
-    What is the domain of the relation?  (Since a domain is a _set_ of numbers, you should be using [`\{`] and [`\}`] in your answer.)  
-    [______________]{Set($domain[3]->value)}
-
-    What is the range of the relation?  (Since a range is a _set_ of numbers, you should be using [`\{`] and [`\}`] in your answer.)  
-    [______________]{Set($range[3]->value)}
+    The domain of the relation is [______________]{Set($domain[3]->value)}. The range of the relation is [______________]{Set($range[3]->value)}.  (Since somains and ranges are _sets_ of numbers, you should be using [`\{`] and [`\}`] in your answers.)  
 
 END_PGML
 
