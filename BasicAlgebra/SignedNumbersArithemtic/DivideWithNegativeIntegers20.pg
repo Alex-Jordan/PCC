@@ -40,6 +40,7 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -75,7 +76,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Evaluate each of the following - if the result is undefined then say *undefined* (spelling counts).
+Evaluate each of the following. [@KeyboardInstruction('If the result is undefined then enter [|undefined|]*.')@]**
 
 a.    [`` \frac{[$num1]}{[$den1]}=  ``]  [________]{$ans1} 
 
