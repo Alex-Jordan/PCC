@@ -79,7 +79,7 @@ $name = RandomName(sex=>$sex);
    math_ev3($x1)." bowls and ".math_ev3($y1)." plates can be purchased.",
    math_ev3($y1)." bowls and ".math_ev3($x1)." plates can be purchased.",
    math_ev3($x1C)." will be used to purchase bowls, and ".math_ev3($y1C)." will be used to purchase plates.",
-   math_ev3($y1C)." will be used to purchase bowls, and ".math_ev3($X1C)." will be used to purchase plates.",
+   math_ev3($y1C)." will be used to purchase bowls, and ".math_ev3($x1C)." will be used to purchase plates.",
 );
 
 #Create a hash and its inverse that randomizes the order of the four choices.
@@ -122,7 +122,7 @@ BEGIN_PGML_SOLUTION
 
 For [`p(b)=[$func]`], the value of [`b`] represents the number of bowls to be purchased, and the value of [`p(b)`] represents the number of plates to be purchased.
 
-For [`p([$x1])=[$y1]`], [`[$x1]`] implies [`[$x1]`] bowls will be purchased, while [`[$y1]`] implies [`[$y1]`] plates will be purchased. The correct solution is [$correctAns]
+For [`p([$x1])=[$y1]`], [`[$x1]`] implies [`[$x1]`] bowls will be purchased, while [`[$y1]`] implies [`[$y1]`] plates will be purchased. The correct solution is [$radio->correct_ans].
 
 
 END_PGML_SOLUTION
