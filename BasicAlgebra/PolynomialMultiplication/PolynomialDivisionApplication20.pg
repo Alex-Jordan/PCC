@@ -57,7 +57,7 @@ $step1 = Compute("$a*pi*x**$exp1/($d*pi*x**2)+$b*pi*x**$exp2/($d*pi*x**2)+$c*pi*
 $ad = $a/$d;
 $bd = $b/$d;
 $cd = $c/$d;
-$ans = Compute("$ad*x**($exp1-1)+$bd*x**($exp2-1)+$cd*x**($exp3-1)")->reduce;
+$ans = Compute("$ad*x**($exp1-2)+$bd*x**($exp2-2)+$cd*x**($exp3-2)")->reduce;
 
 Context("LimitedPolynomial-Strict");
 $ans = Formula($ans);
