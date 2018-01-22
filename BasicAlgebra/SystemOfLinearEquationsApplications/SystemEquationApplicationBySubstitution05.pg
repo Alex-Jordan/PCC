@@ -59,7 +59,10 @@ END_PGML
 
 ##############################################
 
-
+$s1 = $m+1;
+$s2 = 2*$s1;
+$s3 = 2*$b;
+$s4 = $p-$s3;
 
 BEGIN_PGML_SOLUTION
 
@@ -79,10 +82,11 @@ To solve this system of equations, we substitute [`l=[$m]w+[$b]`] into the secon
     [``
 \begin{aligned}
    2(l+w) &= [$p] \\
-   2([$m]w+[$b]) &= [$p] \\
-   [$m*2]w+[$b*2] &= [$p] \\
-   [$m*2]w+[$b*2] \mathbf{{}-[$b*2]} &= [$p] \mathbf{{}-[$b*2]} \\
-   [$m*2]w &= [$p-$b*2] \\
+   2([$m]w+[$b]+w) &= [$p] \\
+   2([$s1]w+[$b]) &= [$p] \\
+   [$s2]w+[$s3] &= [$p] \\
+   [$s2]w+[$s3] \mathbf{{}-[$s3]} &= [$p] \mathbf{{}-[$s3]} \\
+   [$s2]w &= [$s4] \\
    w &= [$w]
 \end{aligned}
     ``]
