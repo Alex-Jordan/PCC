@@ -35,6 +35,7 @@ loadMacros(
   "contextCurrency.pl",
   "parserRadioButtons.pl",
   "contextFraction.pl",
+  "PGchoicemacros.pl",
 );
 
 ##############################################
@@ -83,17 +84,14 @@ $name = RandomName(sex=>$sex);
 );
 
 #Create a hash and its inverse that randomizes the order of the four choices.
-%scramble = ();
-%inverse = ();
+@scramble = NchooseK(4,4);
+@inverse = ();
 @answersShuffled = ();
 for my $i (0..3) {
-  do {$temp = list_random(0..3)} until !(grep(/^$temp$/,values %scramble) );
-  $scramble{$i} = $temp;
-  $inverse{$temp} = $i;
-  $answersShuffled[$i] = @answers[$scramble{$i}];
-};
-
-$correctAns = @answersShuffled[$inverse{0}];
+  $inverse[$scramble[$i]] = $i;
+  $answersShuffled[$i] = $answers[$scramble[$i]];
+}
+$correctAns = $answersShuffled[$inverse{0}];
 
 $radio = RadioButtons(
    ~~@answersShuffled,

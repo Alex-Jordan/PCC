@@ -69,18 +69,15 @@ $name = RandomName(sex=>$sex);
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.
-@a = NchooseK(4,4);
-%scramble = ();
-%inverse = ();
+@scramble = NchooseK(4,4);
+@inverse = ();
 @answersShuffled = ();
 for my $i (0..3) {
-  $scramble{$i} = $a[$i];
-  $inverse{$a[$i]} = $i;
-  $answersShuffled[$i] = @answers[$scramble{$i}];
-  $answersShuffled[$i]=$answersShuffled[$i];
-};
+  $inverse[$scramble[$i]] = $i;
+  $answersShuffled[$i] = $answers[$scramble[$i]];
+}
 
-$correctAns = @answersShuffled[$inverse{0}];
+$correctAns = $answersShuffled[$inverse[0]];
 
 $radio = RadioButtons(
    ~~@answersShuffled,
@@ -133,7 +130,7 @@ A line's [`x`]-intercept looks like [`(x,0)`]. To find its [`x`] intercept, we s
 
 The line's [`x`]-intercept is [`([$xIntercept],0)`].
 
-The correct solution is: [$correctAns]
+The correct solution is [$radio->correct_ans].
 
 END_PGML_SOLUTION
 
