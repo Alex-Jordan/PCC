@@ -78,14 +78,13 @@ center=>0,
 );
 \}
 
-
-
-
-Remember that when you are asked to solve an equation for \($var\), the answer should be in the form $BBOLD $var=23$EBOLD, and not simply give the numerical value of the solution, like 23.  If there are two solutions, use the word $BBOLD or$EBOLD, as in $BBOLD $var=23 or $var=12$EBOLD.  If you need to use the square root sign, as in \(\sqrt{23}\), type it as $BBOLD sqrt(23)$EBOLD.
-
 END_TEXT
-
 Context()->normalStrings;
+
+BEGIN_PGML
+[@KeyboardInstructions("The answer should be in the form [|$var=23|]*, and not simply give the numerical value of the solution, like [|23|]*.  If there are two solutions, use the word [|or|]*, as in [|$var=23 or $var=12|]*.  If you need to use the square root sign, as in [`\sqrt{23}`], type it like [|sqrt(23)|]*".@]**
+END_PGML
+
 
 ##############################################
 
