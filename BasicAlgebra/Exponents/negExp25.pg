@@ -2,7 +2,7 @@
 # Portland Community College
 #
 # Template:
-# Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
+# Rewrite the expression simplified and using only positive exponents.
 #
 #      1
 #   ------
@@ -73,7 +73,7 @@ $ans = Formula("$var^$n/$a");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
+Rewrite the expression simplified and using only positive exponents.
 
     [`
         \displaystyle\frac{1}{[$a][$var]^{[$n*(-1)]}}=

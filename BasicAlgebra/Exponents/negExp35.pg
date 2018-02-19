@@ -74,7 +74,7 @@ $ans = Formula("$b/($var^($total))");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
+Rewrite the expression simplified and using only positive exponents.
 
     [`
         \displaystyle\frac{[$totalCoeff][$var]^{[$m]}}{[$a][$var]^{[$n]}}=
