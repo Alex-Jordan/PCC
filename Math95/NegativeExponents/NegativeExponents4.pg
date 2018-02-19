@@ -46,9 +46,7 @@ else {$tell = Compute("$a x^($m-$n)")->reduce;}
 BEGIN_PGML
 Rewrite the expression simplified and using only positive exponents. 
 
-[`[$show]`]
-
-[___________________]{$tell}
+    [``\displaystyle [$show]= ``] [____________]{$tell}
 
 END_PGML
 
