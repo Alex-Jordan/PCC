@@ -137,13 +137,13 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Does the following relation on [`x`] and [`y`] make for a function of [`x`]?
+Does the following set of ordered pairs make for a function of [`x`]?
 
     [`\Big\{[$points3]\Big\}`]  
 
-    The relation [_____]{$popup3} a function of [`x`].
+    The set of ordered pairs [_____]{$popup3} a function of [`x`].
 
-    The domain of the relation is [______________]{Set($domain[3]->value)}. The range of the relation is [______________]{Set($range[3]->value)}.  (Since somains and ranges are _sets_ of numbers, you should be using [`\{`] and [`\}`] in your answers.)  
+    The domain of the set of ordered pairs is [______________]{Set($domain[3]->value)}. The range of the set of ordered pairs is [______________]{Set($range[3]->value)}.  [@KeyboardInstructions('Since domains and ranges are _sets_ of numbers, you should be using [`\{`] and [`\}`] in your answers.')@]** 
 
 END_PGML
 
@@ -156,11 +156,11 @@ END_PGML
 
 for my $i (0..3) {
   if ($function[$i] eq $yes) {
-  $solnString[$i] = "Since there are no instances of a value appearing for an input [`x`] more than once alongside _different_ outputs [`y`], this relation is a function of [`x`].";
+  $solnString[$i] = "Since there are no instances of a value appearing for an input [`x`] more than once alongside _different_ outputs [`y`], this set of ordered pairs is a function of [`x`].";
   if ($oneToOne[$i] eq 'no') {$solnString[$i] = $solnString[$i]." Note that it is fine for a function to have more than one input (like [`$twoinputs1[$i]`] and [`$twoinputs2[$i]`]) lead to the same output, in this case [`$oneoutput[$i]`]."};
 }
   else {
-  $solnString[$i] = "Since the input [`$badinput[$i]`] corresponds to more than one output ([`$badoutput1[$i]`] and [`$badoutput2[$i]`]), this relation is not a function of [`x`].";
+  $solnString[$i] = "Since the input [`$badinput[$i]`] corresponds to more than one output ([`$badoutput1[$i]`] and [`$badoutput2[$i]`]), this set of ordered pairs is not a function of [`x`].";
 }
 
 }
