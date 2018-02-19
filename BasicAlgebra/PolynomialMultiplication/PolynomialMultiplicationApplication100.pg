@@ -83,7 +83,7 @@ A rectangular prism's volume can be calculated by the formula:
 
     [`` V = lwh ``]
 
-where [`V`] stands for volume, [`l`] stands for the base's length, [`w`] stands for the base's height, and [`h`] stands for the cylinder's height.
+where [`V`] stands for volume, [`l`] stands for the base's length, [`w`] stands for the base's width, and [`h`] stands for the prism's height.
 
 For a rectangular prism, its base's length is [`[$aN]`] units [$longOrShort1] than its height, and its base's width is [`[$bN]`] units [$longOrShort2] than its height. Express the prism's volume in terms of its height, [`h`], with an expanded polynomial.
 
@@ -98,7 +98,7 @@ BEGIN_PGML_SOLUTION
 
 A rectangular prism's volume formula is:
 
-    [`` A = lwh ``]
+    [`` V = lwh ``]
 
 Since the prism base's length is [`[$aN]`] units [$longOrShort1] than its height, the length is [`h+[$a]`] units.
 

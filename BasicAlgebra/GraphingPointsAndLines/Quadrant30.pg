@@ -37,7 +37,7 @@ $refreshCachedImages=1;
 Context("Numeric");
 
 @conditions = (
-   ['I','III','IV','III',1,1],
+#   ['I','II','IV','III',1,1],
    ['II','I','III','IV',-1,1],
    ['III','IV','II','I',-1,-1],
    ['IV','III','I','II',1,-1],
@@ -45,8 +45,8 @@ Context("Numeric");
 
 %scramble = ();
 %inverse = ();
-for my $i (0..3) {
-  do {$temp = list_random(0..3)} until !(grep(/^$temp$/,values %scramble) );
+for my $i (0..2) {
+  do {$temp = list_random(0..2)} until !(grep(/^$temp$/,values %scramble) );
   $scramble{$i} = $temp;
   $inverse{$temp} = $i;
 };
