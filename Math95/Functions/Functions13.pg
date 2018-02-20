@@ -46,12 +46,12 @@ $fname = RandomVariableName(type=>function);
 Context("Numeric");
 $a = non_zero_random(1,3,1);
 $q = random(2,4,1);
-$s = random(1,$q);
+$s = random(0,$q);
 
 
 $f = Formula("$a sin(2*pi*(x-$s)/(4*$q))");
 
-$x1 = $s-random(0,3)*$q;
+$x1 = $s-random(1,3)*$q;
 $x2 = $s+random(0,3)*$q;
 
 $y1 = $f->eval(x=>$x1);

@@ -81,8 +81,8 @@ If \($f\) is a function defined by \($f($var) = $function\),$PAR
 
 \{
 LayoutTable(
-[["Find \($f(0)\).",ans_rule(25)],
-["Solve \($f($var)=0\).",ans_rule(25)]],
+[["Find \($f(0)\).",ans_rule(6)],
+["Solve \($f($var)=0\).",ans_rule(6)]],
 allcellcss=>"padding:6pt; text-align:left;",
 center=>0,
 );
