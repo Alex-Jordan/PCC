@@ -73,7 +73,7 @@ $ymax = $peak+3;
 $gr = init_graph($xmin,$ymin,$xmax,$ymax,
 axes=>[0,0],
 grid=>[$xmax-$xmin,$ymax-$ymin],
-size=>[400,400]
+size=>[240,240]
 );
 
 add_functions($gr, "$f for x in <$r[0],$r[2]>" . 
@@ -92,11 +92,11 @@ Use the graph of [`[$fname]`] below to estimate its domain and range.
 
 [@EnlargeImageStatementPGML()@]**
 
->>[@image(insertGraph($gr), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT' title = '$ALT'")@]*<<
+>>[@image(insertGraph($gr), width=>240, height=>240, tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT' title = '$ALT'")@]*<<
 
 
     The domain is [__________]{$domain} (in interval notation).   
-    If you need to enter [`\infty`], you can type *inf* or *infinity*.  If you need to union two (or more) intervals, use the letter *U*.  For example, to enter [`(-\infty,5)\cup(5,10]`] you can type *(-inf,5)U(5,10]*.
+    [@KeyboardInstructions('If you need to enter [`\infty`], you can type [|inf|]* or [|infinity|]*.  If you need to union two (or more) intervals, use the letter [|U|]*.  For example, to enter [`(-\infty,5)\cup(5,10]`] you can type [|(-inf,5)U(5,10]|]*.')@]**
 
 
     The range is [__________]{$range} (in interval notation).
