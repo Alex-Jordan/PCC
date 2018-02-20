@@ -59,7 +59,7 @@ size=>[400,400]
 
 
 add_functions($gr, "$f for x in <$xmin,$xmax>" . 
-  " using color:blue and weight:2");
+  " using color:blue and weight:1");
 
 #$gr->stamps( closed_circle(0,-1,'black') );
 #$gr->stamps( closed_circle(1.26,0,'black') );
