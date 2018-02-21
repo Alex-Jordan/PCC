@@ -22,6 +22,7 @@ loadMacros(
   "contextLimitedPowers.pl",
   "PGML.pl",
   "answerHints.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -58,10 +59,8 @@ $evaluator = $ans->cmp()->withPostFilter(AnswerHints(
 BEGIN_PGML
 
 Simplify the expression. Do not assume the variables take only positive values.
-* To enter [`\sqrt{x}`], type *sqrt(x)*.  
-* To enter [`x^y`], type *x^y*.  
-* To enter [`|x|`], type *|x|* or *abs(x)*.  
-* If a value is not defined as a real number or function, type *DNE* for "does not exist".
+
+[@KeyboardInstructions('To enter [`\sqrt{x}`], type [|sqrt(x)|]*. To enter [`|x|`], type [||x||]* or [|abs(x)|]*.@]**
 
 >>[``[$display]``]<<
 

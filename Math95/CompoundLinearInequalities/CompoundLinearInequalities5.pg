@@ -24,6 +24,8 @@ DOCUMENT();        # This should be the first executable line in the problem.
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",           # Customization file for the course
 );
 
@@ -34,24 +36,21 @@ TEXT(beginproblem());
 
 $a = random(-10,-1,1);
 $b = random(1,10,1);
+Context("Interval");
+$answer=Union("(-inf,$a)U[$b,inf)");
 
 ###################################
 # Main text
 
-BEGIN_TEXT
-Express the following inequality using interval notation. If you need to use the \(\infty\) symbol, type $BBOLD INF$EBOLD. If you need to use the union symbol \(\cup\), type $BBOLD U$EBOLD.
-\[$a > x \mbox{ or } x \geq $b\]
-\(x\) is in \{ans_rule(35)\}
-$PAR
-$INFINITY_UNION_MESSAGE
-END_TEXT
+BEGIN_PGML
+Express the following inequality using interval notation.
 
-###################################
-# Answers
+[@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
 
-$showPartialCorrectAnswers = 0;
+>>[``[$a] > x\text{ or } x \geq [$b]``]<<
 
-$ans1="(-inf,$a)U[$b,inf)";
-ANS(Union($ans1)->cmp);
+[`x`] is in [__]{$answer}{width=>20}
+END_PGML
+
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.;

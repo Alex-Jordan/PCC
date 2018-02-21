@@ -21,13 +21,11 @@
 DOCUMENT();        # This should be the first executable line in the problem.
 
 loadMacros(
-"PG.pl",
-"PGbasicmacros.pl",
-"PGchoicemacros.pl",
-"PGanswermacros.pl",
-"PGauxiliaryFunctions.pl",
-"PGasu.pl",
-"extraAnswerEvaluators.pl"
+"PGstandard.pl",
+"MathObjects.pl",
+"PGML.pl",
+"PCCmacros.pl",
+"PGcourse.pl",
 );
 
 TEXT(beginproblem());
@@ -35,22 +33,21 @@ TEXT(beginproblem());
 
 $a = random(15,25,1);
 $b = random(5,10,1);
+$ans1 = Formula("$a-10*x")->reduce;
+Context("Interval");
+$ans2 = Union("[$a - $b*10, $a]");
 
-$showPartialCorrectAnswers = 0;
+BEGIN_PGML
+As dry air moves upward, it expands. In so doing, it cools at a rate of about [`1^{\circ}\text{C}`]  for every [`100\,\text{m}`] rise, up to about [`12\,\text{km}`].
 
-TEXT(EV2(<<EOT));
-As dry air moves upward, it expands. In so doing, it cools at a rate of about \(1^{\circ}\)C  for every 100m rise, up to about 12 km.$BR
-a) If the ground temperature is \($a ^{\circ}\)C, write a formula for the temperature at height \(x\) km.$BR$BR
-\(T(x)=\) \{ans_rule(35) \}
-$BR$BR
-b) What range of temperature will a plane be exposed to if it takes off and reaches a maximum height of \($b\) km? Write answer in interval notation. If you need to use the \(\infty\) symbol, type $BBOLD INF$EBOLD. If you need to use the union symbol \(\cup\), type $BBOLD U$EBOLD.$BR$BR
-The range is \{ans_rule(35) \}
-$BR$BR
-EOT
-$ans1 = "$a-10*x";
-$ans2 = $a - $b *10;
-ANS(fun_cmp($ans1));
-ANS(interval_cmp("[$ans2,$a]"));
+a. If the ground temperature is [`[$a]^{\circ}\text{C}`], write a formula for the temperature at height [`x\,\text{km}`].
+    [`T(x)= `] [__]{$ans1}{width=>20}
+
+a. What range of temperature will a plane be exposed to if it takes off and reaches a maximum height of [`[$b]\,\text{km}`]? Write answer in interval notation.
+    [@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
+    The range is [__]{$ans2}{width=>20}
+
+END_PGML
 
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.;
