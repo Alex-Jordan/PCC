@@ -23,6 +23,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextInequalitiesAllowStrings.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl"
 );
 
@@ -39,11 +41,11 @@ $a = random(2,8,1);
 #  Main text
 
 
-BEGIN_TEXT
+BEGIN_PGML
 Solve the following inequality: \( |x| < $a  \)
-$PAR
+
 Answer: \{ans_rule(20) \}
-END_TEXT
+END_PGML
 
 
 ######################################

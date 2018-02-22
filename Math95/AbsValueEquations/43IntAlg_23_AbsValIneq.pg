@@ -23,6 +23,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextInequalitiesAllowStrings.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl"
 );
 
@@ -47,11 +49,14 @@ if($e1<$e2){$min=$e1 and $max=$e2} else {$min=$e2 and $max=$e1};
 #  Main text
 
 
-BEGIN_TEXT
-Solve: \( \displaystyle \left| \frac{$a x+ $b}{$c} \right| \le $d \)
-$PAR
+BEGIN_PGML
+Solve: [` \displaystyle \left| \frac{$a x+ $b}{$c} \right| \le $d `]
+
+[@KeyboardInstructions("If there is more than one solution, enter the solutions as a comma-separated list. If there are no solutions, enter [|NONE|]*.")@]**
+
+
 Answer: \{ans_rule(20) \}
-END_TEXT
+END_PGML
 
 
 ######################################

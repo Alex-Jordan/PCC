@@ -25,6 +25,8 @@ loadMacros(
   "PGgraphmacros.pl",
   "contextInequalitiesAllowStrings.pl",
   "parserUtils.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl"
 );
 
@@ -93,24 +95,24 @@ $Image = Image($graph,@imageoptions);
 ######################################
 #  Main text
 
-BEGIN_TEXT
+BEGIN_PGML
 $Image
 $BR $BR
 The graph of \( f(x) = $tf \) is given above with the line \( y = $a \).
 For what values of \(x\) are the following true?
-$PAR
+
 a) \( $tf = $a  \)
 $BR
 Answer: \{ans_rule(20) \}
-$PAR
+
 b) \( $tf < $a  \)
 $BR
 Answer: \{ans_rule(20) \}
-$PAR
+
 c) \( $tf > $a  \)
 $BR
 Answer: \{ans_rule(20) \}
-END_TEXT
+END_PGML
 
 ######################################
 #  Answer

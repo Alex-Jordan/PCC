@@ -23,6 +23,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextInequalitiesAllowStrings.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl"
 );
 
@@ -45,38 +47,24 @@ $RequiredFormat = "Enter your answer in the form: ".
 "For no solution, type ${BITALIC}NONE${EITALIC} and ".
 "if all real numbers are solutions, ".
 "type ${BITALIC}All real numbers${EITALIC}.";
+Context("Inequalities-AllowStrings");
+Context()->variables->are($var=>'Real');
+Context()->strings->add("No solution"=>{NONE});
+$ans = List(($a-$b*$c)/2, ($a+$b*$c)/2);
 
 ######################################
 #  Main text
 
 TEXT(beginproblem());
-BEGIN_TEXT
-Solve:  \(\displaystyle \left|\frac{2 $var - $a}{$b}\right| = $c \)
-$PAR
-Answer:  \{ ans_rule(20) \} 
-\{ knowlLink("help(entering answers)",
-value=>($RequiredFormat)) \}
-END_TEXT
+BEGIN_PGML
+Solve: [`\displaystyle \left\lvert\frac{2 [$var] - [$a]}{[$b]}\right\rvert = [$c] `]
 
-######################################
-#  Answer
+[@KeyboardInstructions("If there is more than one solution, enter the solutions as a comma-separated list. If there are no solutions, enter [|NONE|]*.")@]**
 
-Context("Inequalities-AllowStrings");
-Context()->variables->are($var=>'Real');
-Context()->strings->add("No solution"=>{NONE});
-sub errMsg {
-  my $ans = shift; 
-  $ans->{ans_message} =  $RequiredFormat
-    if $ans->{ans_message} =~ /it looks like/;
-  return $ans; 
-}
 
-$ans = Compute("$var=($a-$b*$c)/2 or $var=($a+$b*$c)/2")->reduce;
-ANS($ans->cmp->withPostFilter(~~&errMsg));
+[__]{$ans}{width=>20}
 
-$showPartialCorrectAnswers = 1;
 
-######################################
+END_PGML
 
-;
 ENDDOCUMENT();

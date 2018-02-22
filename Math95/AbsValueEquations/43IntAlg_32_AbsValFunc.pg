@@ -22,6 +22,8 @@ DOCUMENT(); # This should be the first executable line in the problem.
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl"
 );
 
@@ -40,13 +42,13 @@ if ($num1==$num2) {$num2=$num1-1;}
 ######################################
 #  Main text
 
-BEGIN_TEXT
+BEGIN_PGML
 For \( f(x) = |$a x -$b| - $c \), find:
-$PAR
+
 a) \( f($num1) = \)  \{ ans_rule(15) \} 
-$PAR
+
 b) \( f($num2) = \)  \{ ans_rule(15) \} 
-END_TEXT
+END_PGML
 
 ######################################
 #  Answer

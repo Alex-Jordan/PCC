@@ -23,6 +23,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextInequalitiesAllowStrings.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl"
 );
 
@@ -45,40 +47,23 @@ $RequiredFormat = "Enter your answer in the form: ".
 "For no solution, type ${BITALIC}NONE${EITALIC} and ".
 "if all real numbers are solutions, ".
 "type ${BITALIC}All real numbers${EITALIC}.";
+Context("Inequalities-AllowStrings");
+Context()->variables->are($var=>'Real');
+Context()->strings->add("No solution"=>{NONE}); 
+$ans = Compute("NONE");
 
 ######################################
 #  Main text
 
-BEGIN_TEXT
-Solve:  \( |$var| = $a \).
-$PAR
-Answer:  \{ ans_rule(20) \}
-\{ knowlLink("help(entering answers)",
-value=>($RequiredFormat)) \}
-END_TEXT
+BEGIN_PGML
+Solve: [` \left\lvert [$var] \right\rvert = [$a] `]
 
-######################################
-#  Answer
+[@KeyboardInstructions("If there is more than one solution, enter the solutions as a comma-separated list. If there are no solutions, enter [|NONE|]*.")@]**
 
-Context("Inequalities-AllowStrings");
-Context()->variables->are($var=>'Real');
-Context()->strings->add("No solution"=>{NONE}); 
-#This is not working, "No solution" is counted as incorrect
+[__]{$ans}{width=>20}
 
-sub errMsg {
-  my $ans = shift; 
-  $ans->{ans_message} =  $RequiredFormat
-    if $ans->{ans_message} =~ /it looks like/;
-  return $ans; 
-}
 
-$ans = Compute("NONE");
-ANS($ans->cmp->withPostFilter(~~&errMsg));
+END_PGML
 
-$showPartialCorrectAnswers = 1;
-
-######################################
-
-;
 ENDDOCUMENT();
 
