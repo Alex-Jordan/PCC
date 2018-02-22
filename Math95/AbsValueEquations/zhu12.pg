@@ -18,6 +18,8 @@ loadMacros(
   "PGchoicemacros.pl",
   "PGasu.pl",
   "extraAnswerEvaluators.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl"
 );
 
@@ -34,18 +36,18 @@ $e1=($d+$c-$b)/$a;
 $e2=(-$d-$c-$b)/$a;
 $e3=(-$d+$c-$b)/$a;
 $e4=($d-$c-$b)/$a;
+$ans = List($e1,$e2,$e3,$e4);
 
-
-TEXT(EV2(<<EOT));
+BEGIN_PGML
 Solve the following inequality. 
-If there is more than one answer, write them separated by commas (e.g., 1, 2, 3). 
-$BR
-\[ ||$a x+ $b|-$c| = $d \]
-$BR
-Answer: \{ans_rule(35) \}
-$BR
-EOT
-ANS(number_list_cmp("$e1,$e2,$e3,$e4"));
+
+>>[`` \big\lvert\left\lvert [$a] x+ [$b]\right\rvert-[$c]\big\rvert = [$d] ``]<<
+
+[@KeyboardInstructions('If there is more than one solution, enter the solutions as a comma-separated list.')@]**
+
+[__]{$ans}{width=>20}
+
+END_PGML
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.;
 

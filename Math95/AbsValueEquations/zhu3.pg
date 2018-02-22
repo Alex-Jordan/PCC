@@ -19,6 +19,8 @@ loadMacros(
   "PGchoicemacros.pl",
   "PGasu.pl",
   "extraAnswerEvaluators.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl"
 );
 
@@ -29,24 +31,25 @@ $a = random(1,5,1);
 $b = non_zero_random(-10,10,1);
 $c = random(6,10,1);
 $d = non_zero_random(-10,10,1);
-
-TEXT(EV2(<<EOT));
-Solve the following equation. 
-$BR
-\[ |$a x + $b | = |$c x +$d|  \]
-$BR
-Answer: \{ans_rule(35) \}
-$BR
-$BBOLD Note: $EBOLD
- If there is more than one answer, write them separated by commas (e.g., 1, 2). 
-EOT
 $e=$d-$b;
 $f=$a-$c;
 $g=-$d-$b;
 $h=$a+$c;
 $ans1 = "$e/$f";
 $ans2= "$g/$h";
-ANS(number_list_cmp("$ans1,$ans2"));
+$ans = List($ans1,$ans2);
+
+BEGIN_PGML
+Solve the following equation. 
+
+>>[``\left\lvert [$a] x + [$b] \right\rvert = \left\lvert[$c] x +[$d]\right\rvert  ``]<<
+
+[@KeyboardInstructions('If there is more than one solution, enter the solutions as a comma-separated list.')@]**
+
+[__]{$ans}{width=>20}
+
+END_PGML
+
 
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.;

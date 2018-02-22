@@ -19,6 +19,8 @@ DOCUMENT();        # This should be the first executable line in the problem.
 loadMacros(
   "PGstandard.pl",
   "PGchoicemacros.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl"
 );
 
@@ -37,28 +39,17 @@ $answer2 = ($b-$d)/($a+$c);
 if ($answer2 < $answer1) 
   { $dummy = $answer1; $answer1 = $answer2; $answer2 = $dummy; }
 
+$ans = List($answer1,$answer2);
 
-TEXT(EV2(<<EOT));
+BEGIN_PGML
+Solve the equation: 
+>>[`` \left\lvert [$a] x - [$b] \right\rvert = \left\lvert [$c] x + [$d]\right\rvert ``]<<
 
-$BR 
-The equation 
-\[ | $a x - $b | = | $c x + $d| \]
-has two solutions.  Enter the smaller here
-\{ ans_rule(20) \}
-EOT
-ANS(num_cmp($answer1));
-TEXT(EV2(<<EOT));
-and the larger here \{ ans_rule(20) \}
-EOT
-ANS(num_cmp($answer2));
+[@KeyboardInstructions('If there is more than one solution, enter the solutions as a comma-separated list.')@]**
 
-TEXT(EV3(<<'EOT'));
-$BR Hint: Remember that there are two possibilities for
-each of the absolute values and
-\{htmlLink("http://www.math.utah.edu/online/1010/abseq",   
-"check this page.")\}
-EOT
+[__]{$ans}{width=>20}
 
+END_PGML
 
 
 SOLUTION(EV3(<<'EOT'));

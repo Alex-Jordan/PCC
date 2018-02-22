@@ -26,6 +26,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "unionLists.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl"
 );
 
@@ -41,28 +43,24 @@ Context("Numeric");
 Context()->strings->add(none=>{},EmptySet=>{alias=>"none"});
 
 $a = random(4,7,1);
-$b = random(-3,-1,1);
+$x = random(2,4,1);
+$b = -$a*$x;
 
-$ans = List("-$b/$a");
-
-##############################################################
-
-Context()->texStrings;
-BEGIN_TEXT
-$PAR
-Solve the equation ${BITALIC} by inspection ${EITALIC} (meaning in your head).
-\[ 
-|$a x + $b| = 0
-\]
-$PAR
-$BBLOCKQUOTE
-Answers (separate by commas): \(x = \) \{ ans_rule(30) \}
-$EBLOCKQUOTE
-END_TEXT
-Context()->normalStrings;
+$ans = List("$x");
 
 ##############################################################
 
-ANS($ans->cmp);
+BEGIN_PGML
+Solve the equation _by inspection_ (meaning in your head).
+ 
+>>[``\left\lvert [$a]x - [$b]\right\rvert = 0 ``]<<
+
+[@KeyboardInstructions('If there are multiple solutions, enter the solutions as a comma-separated list.')@]**
+
+[__]{$ans}{width=>20}
+
+END_PGML
+
+##############################################################
 
 ENDDOCUMENT();        

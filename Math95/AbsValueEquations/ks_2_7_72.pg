@@ -29,6 +29,8 @@ loadMacros(
   "MathObjects.pl",
   "unionLists.pl",
   "contextInequalities.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl"
 );
 
@@ -46,26 +48,23 @@ Context()->strings->add(none=>{},EmptySet=>{alias=>"none"});
 $a = random(2,6,2);
 $b = random(-5,-1,2);
 
-$ans = Compute("(-$a-$b)/2");
+$ans = List("(-$a-$b)/2");
 
 ##############################################################
 
-Context()->texStrings;
-BEGIN_TEXT
-$PAR
-The equation \( |x|=|y| \) is satisfied if \( x=y \) or \( x=-y \).  Use this fact to solve the following equation.
-\[ 
-|x + $a | = | x + $b | 
-\] 
-Answer: \( x = \) \{ ans_rule(30) \}
-$HR
-$BBOLD Hint:$EBOLD ${BITALIC} There is only one solution.${EITALIC} 
-END_TEXT
-Context()->normalStrings;
+BEGIN_PGML
+The equation [` \lvert x\rvert =\lvert y\rvert `] is satisfied if [` x=y `] or [` x=-y `].  Use this fact to solve the following equation.
+
+>>[``\left\lvert x + [$a] \right\rvert = \left\lvert x + [$b] \right\rvert``]<<
+
+[@KeyboardInstructions('If there is more than one solution, enter the solutions as a comma-separated list.')@]**
+
+[__]{$ans}{width=>20}
+
+END_PGML
 
 ##############################################################
 
-ANS($ans->cmp);
 
 
 ENDDOCUMENT();        
