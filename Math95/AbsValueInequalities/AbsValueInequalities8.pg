@@ -24,6 +24,8 @@ loadMacros(
   "PGchoicemacros.pl",
   "unionTables.pl",            # Union College utilities
   "MathObjects.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "choiceUtils.pl",
   "PGcourse.pl",           # Customization file for the course
 );

@@ -113,31 +113,17 @@ BEGIN_PGML
 
 Decide whether the given value for the variable is a solution to the inequality.
 
-[@ $radio[0]->print_q() @]*
+a.  [@ $radio[0]->print_q() @]*
+    [@ $radio[0]->print_a() @]*
 
-[@ $radio[0]->print_a() @]*
+a.  [@ $radio[1]->print_q() @]*
+    [@ $radio[1]->print_a() @]*
 
-----
+a.  [@ $radio[2]->print_q() @]*
+    [@ $radio[2]->print_a() @]*
 
-[@ $radio[1]->print_q() @]*
-
-[@ $radio[1]->print_a() @]*
-
-----
-
-[@ $radio[2]->print_q() @]*
-
-[@ $radio[2]->print_a() @]*
-
-----
-
-[@ $radio[3]->print_q() @]*
-
-[@ $radio[3]->print_a() @]*
-
-
-
-
+a.  [@ $radio[3]->print_q() @]*
+    [@ $radio[3]->print_a() @]*
 
 
 

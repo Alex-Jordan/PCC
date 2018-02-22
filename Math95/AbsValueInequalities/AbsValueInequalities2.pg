@@ -22,6 +22,8 @@ DOCUMENT();        # This should be the first executable line in the problem.
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",           # Customization file for the course
   "contextInequalities.pl",
 );
@@ -41,23 +43,20 @@ $min = $a-$b*$c;
 $max = $a+$b*$c;
 $f = Formula("|($a-x)/$b|")->reduce;
 
+$answer = Union("(-INF,$min]U[$max,INF)");
 ###################################
 # Main text
 
-Context()->texStrings;
-BEGIN_TEXT
-Solve the following inequality. Enter the answer in interval notation. If you need to use the \(\infty\) symbol, type $BBOLD INF$EBOLD. If you need to use the union symbol \(\cup\), type $BBOLD U$EBOLD.
-\[ $f \geq $c  \]
-The solution set is: \{ans_rule(35)\}
-$PAR
-$INFINITY_UNION_MESSAGE
-END_TEXT
-Context()->normalStrings;
+BEGIN_PGML
+Solve the following inequality. Enter the answer in interval notation.
 
-###################################
-# Answers
+[@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
 
-$showPartialCorrectAnswers = 1;
-ANS(Union("(-INF,$min]U[$max,INF)")->cmp);
+>>[`` [$f] \geq [$c]  ``]<<
+
+The solution set is [__]{$answer}{width=>20}
+
+END_PGML
+
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.;

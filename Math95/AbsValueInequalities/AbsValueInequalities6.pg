@@ -23,6 +23,8 @@ DOCUMENT();        # This should be the first executable line in the problem.
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",           # Customization file for the course
 );
 
@@ -41,28 +43,22 @@ $min = $a-$b;
 $max = $a+$b;
 
 $f=Formula("|x-$a|")->reduce;
+$answer = Union("(-INF,$min)U($max,INF)");
 
 ###################################
 # Main text
 
-Context()->texStrings;
-BEGIN_TEXT
+BEGIN_PGML
+Solve the following inequality. Enter the answer in interval notation.
 
-Solve the following inequality. Enter the answer in interval notation. If you need to use the \(\infty\) symbol, type $BBOLD INF$EBOLD. If you need to use the union symbol \(\cup\), type $BBOLD U$EBOLD.
-\[ $f > $b  \]
+[@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
 
-Answer: \{ans_rule(35)\}
-$PAR
-$INFINITY_UNION_MESSAGE
+>>[`` [$f] > [$b]  ``]<<
 
-END_TEXT
-Context()->normalStrings;
+The solution set is [__]{$answer}{width=>20}
 
-###################################
-# Answers
+END_PGML
 
-$showPartialCorrectAnswers = 1;
-ANS(Union("(-INF,$min)U($max,INF)")->cmp);
 
 ###################################
 
