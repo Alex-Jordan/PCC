@@ -152,15 +152,15 @@ Context()->normalStrings;
 
 BEGIN_PGML
 
-a. What are the coordinates of the point \(P\)? [__________]
+a. What are the coordinates of the point [`P`]? [__________]
 
-a. What are the coordinates of the point \(Q\)? [__________]
+a. What are the coordinates of the point [`Q`]? [__________]
 
-a. Evaluate \(f(b)\). (The answer is symbolic, not a specific number.) [__________]
+a. Evaluate [`f(b)`]. (The answer is symbolic, not a specific number.) [__________]
 
-a. Solve \(f(x)=e\) for \(x\). (The answer is symbolic, not a specific number.) [__________]
+a. Solve [`f(x)=e`] for [`x`]. (The answer is symbolic, not a specific number.) [__________]
 
-a. Suppose \(c=f(z)\). Solve the equation \(z=f(x)\) for \(x\). (Hint: you should figure out what \(z\) is first.) [__________]
+a. Suppose [`c=f(z)`]. Solve the equation [`z=f(x)`] for [`x`]. (Hint: you should figure out what [`z`] is first.) [__________]
 
 END_PGML
 
