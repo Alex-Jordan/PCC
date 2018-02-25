@@ -14,6 +14,7 @@ loadMacros(
       "MathObjects.pl",
       "contextLimitedPowers.pl",
       "contextFraction.pl",
+      "PGML.pl",
       "contextRationalFunction.pl"
     );
 
@@ -42,38 +43,13 @@ else {$tell = Compute("$a x^($m-$n)")->reduce;}
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
+Rewrite the expression simplified and using only positive exponents. 
 
-BEGIN_TEXT
-Rewrite the expression simplified and using only positive exponents. $PAR
+    [``\displaystyle [$show]= ``] [____________]{$tell}
 
-$SPACE $SPACE $SPACE \($show\) $PAR
-
-
-\{ans_rule(20)\}
-
-
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
-$showPartialCorrectAnswers = 1;
-
-
-ANS($tell->cmp());
-
-
- 
-
-
-
- 
-
-
-
-
 
 ENDDOCUMENT();

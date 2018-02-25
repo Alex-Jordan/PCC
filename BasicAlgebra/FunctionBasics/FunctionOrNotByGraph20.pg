@@ -118,6 +118,7 @@ for my $i (0..3) {
   for my $j (0..1) {
      $fn[$i] = new Fun( $xfunc[$i], $yfunc[$i], $gr[$i] );
      $fn[$i] -> domain(0,6.28);
+     $fn[$i] -> weight(1);
   }
 
 }

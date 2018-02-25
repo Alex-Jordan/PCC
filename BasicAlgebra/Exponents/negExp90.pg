@@ -2,7 +2,7 @@
 # Portland Community College
 #
 # Template:
-# Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
+# Rewrite the expression simplified and using only positive exponents.
 #
 #    -a^-n
 #
@@ -60,7 +60,7 @@ $ans = Fraction("-1/($denominator)")->reduce;
 TEXT(beginproblem());
 
 BEGIN_PGML
-Simplify the following expression, and write your answer using only _positive_ exponents (or no exponents at all, if that is appropriate).
+Rewrite the expression simplified and using only positive exponents.
 
     [`
         [$a*(-1)]^{[$n*(-1)]}=

@@ -20,13 +20,11 @@
 DOCUMENT();        # This should be the first executable line in the problem.
 
 loadMacros(
-"PG.pl",
-"PGbasicmacros.pl",
-"PGchoicemacros.pl",
-"PGanswermacros.pl",
-"PGauxiliaryFunctions.pl",
-"PGasu.pl",
-"extraAnswerEvaluators.pl"
+"PGstandard.pl",
+"MathObject.pl",
+"PGML.pl",
+"PCCmacros.pl",
+"PGcourse.pl",
 );
 
 TEXT(beginproblem());
@@ -45,18 +43,20 @@ $e2=(-$d+$c-$b)/$a;
 
 if($e1<$e2){$min=$e1 and $max=$e2} else {$min=$e2 and $max=$e1};
 
+Context("Interval");
+$answer = Union("(-infinity,$e2]U[$e1,infinity)");
 
-TEXT(EV2(<<EOT));
-Solve the following inequality. Write the answer in interval notation.
-If you need to use the \(\infty\) symbol, type $BBOLD INF$EBOLD. If you need to use the union symbol \(\cup\), type $BBOLD U$EBOLD.
-$BR
-\[ $d -|$a x+ $b| \le $c \]
-$BR
-Answer: \{ans_rule(35) \}
-$BR
-EOT
+BEGIN_PGML
+Solve the following inequality. Enter the answer in interval notation.
 
-ANS(interval_cmp("(-infinity,$e2]U[$e1,infinity)"));
+[@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
+
+>>[`` [$d] - \left\lvert[$a]x + [$b]\right\rvert \leq [$c]  ``]<<
+
+The solution set is [__]{$answer}{width=>20}
+
+END_PGML
+
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.;
 

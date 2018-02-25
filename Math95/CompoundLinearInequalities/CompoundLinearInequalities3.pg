@@ -22,6 +22,8 @@ DOCUMENT();        # This should be the first executable line in the problem.
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",           # Customization file for the course
 );
 
@@ -33,28 +35,30 @@ TEXT(beginproblem());
 $a =  random(1,20,1);
 $b =  random(1,20,1);
 $c=-$a+5;
+Context("Interval");
+$left = $a+$b-5;
+$right =$a+$b;
+
+$answer=Union("[$left,$right)");
+
 
 ###################################
 # Main text
 
-BEGIN_TEXT
-Express the following inequality using interval notation. If you need to use the \(\infty\) symbol, type $BBOLD INF$EBOLD. If you need to use the union symbol \(\cup\), type $BBOLD U$EBOLD.
-\[ -$a < $b - x \leq $c \]
-\(x\) is in \{ans_rule(35)\}
-$PAR
-$INFINITY_UNION_MESSAGE
-END_TEXT
+BEGIN_PGML
+Express the following inequality using interval notation. 
+
+[@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
+
+>>[``-[$a] < [$b] - x \leq [$c]``]<<
+
+[`x`] is in [__]{$answer}{width=>20}
+END_PGML
 
 ###################################
 # Answers
 
 $showPartialCorrectAnswers = 0;
-
-$left2 = $a+$b-5;
-$right2 =$a+$b;
-
-$ans1 = "[  $left2, $right2 ) ";
-ANS(Union($ans1)->cmp);
 
 ###################################
 

@@ -38,12 +38,12 @@ $ymax = 6;
 $gr = init_graph($xmin,$ymin,$xmax,$ymax,
 axes=>[0,0],
 grid=>[$xmax-$xmin,$ymax-$ymin],
-size=>[400,400]
+size=>[240,240]
 );
 Context("Numeric");
 $h = non_zero_random(-3,3,1);
 add_functions($gr, "$m*(x-$h)+$b for x in <$xmin,$xmax>" . 
-  " using color:blue and weight:2");
+  " using color:blue and weight:1");
 
 
 ##############################################
@@ -54,13 +54,13 @@ Context()->texStrings;
 
 BEGIN_TEXT
 
-Find the slope of the line, or state that the slope is undefined ('DNE').
+A line's graph is shown below.
 $PAR
 
 
 $BBLOCKQUOTE
 \{ image( insertGraph($gr), 
-width=>200,height=>200,tex_size=>800 ) \}
+width=>240,height=>240,tex_size=>800 ) \}
 $BR
 (Click on graph to enlarge)
 

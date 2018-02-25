@@ -59,7 +59,7 @@ size=>[400,400]
 
 
 add_functions($gr, "$f for x in <$xmin,$xmax>" . 
-  " using color:blue and weight:2");
+  " using color:blue and weight:1");
 
 #$gr->stamps( closed_circle(0,-1,'black') );
 #$gr->stamps( closed_circle(1.26,0,'black') );
@@ -145,25 +145,25 @@ $BCENTER
 width=>400,height=>400,tex_size=>800,
 extra_html_tags=>"alt = '$alt'" ) \}
 $BR
-
-
-\{LayoutTable(
-[["$BBOLD(a)$EBOLD What are the coordinates of the point \(P\)?",ans_rule(20),],["$BBOLD(b)$EBOLD What are the coordinates of the point \(Q\)?",ans_rule(20),],["$BBOLD(c)$EBOLD Evaluate \(f(b)\). $BR(The answer is symbolic, not a specific number.)",ans_rule(20),],
-["$BBOLD(d)$EBOLD Solve \(f(x)=e\) for \(x\). $BR(The answer is symbolic, not a specific number.)",ans_rule(20),],
-["$BBOLD(e)$EBOLD Suppose \(c=f(z)\). Solve the equation \(z=f(x)\) for \(x\). $BR(Hint: you should figure out what \(z\) is first.) ",ans_rule(20),]],
-allcellcss=>"text-align:left; padding-left: 6pt; padding-right: 6pt;",
-texalignment=>"Xl",
-);\}
-
-
-
-
-
 $ECENTER
 
 END_TEXT
-
 Context()->normalStrings;
+
+BEGIN_PGML
+
+a. What are the coordinates of the point [`P`]? [__________]
+
+a. What are the coordinates of the point [`Q`]? [__________]
+
+a. Evaluate [`f(b)`]. (The answer is symbolic, not a specific number.) [__________]
+
+a. Solve [`f(x)=e`] for [`x`]. (The answer is symbolic, not a specific number.) [__________]
+
+a. Suppose [`c=f(z)`]. Solve the equation [`z=f(x)`] for [`x`]. (Hint: you should figure out what [`z`] is first.) [__________]
+
+END_PGML
+
 
 ##############################################
 

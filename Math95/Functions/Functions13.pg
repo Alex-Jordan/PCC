@@ -51,7 +51,7 @@ $s = random(0,$q);
 
 $f = Formula("$a sin(2*pi*(x-$s)/(4*$q))");
 
-$x1 = $s-random(0,3)*$q;
+$x1 = $s-random(1,3)*$q;
 $x2 = $s+random(0,3)*$q;
 
 $y1 = $f->eval(x=>$x1);
@@ -67,7 +67,7 @@ $ymax = 5;
 $gr = init_graph($xmin,$ymin,$xmax,$ymax,
 axes=>[0,0],
 grid=>[$xmax-$xmin,$ymax-$ymin],
-size=>[400,400]
+size=>[240,240]
 );
 
 add_functions($gr, "$f for x in <$xmin,$xmax>" . 
@@ -85,7 +85,7 @@ Use the graph of [`[$fname]`] below to evaluate the given expressions. (Estimate
 
 [@EnlargeImageStatementPGML()@]**
 
->>[@image(insertGraph($gr), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT' title = '$ALT'")@]*<<
+>>[@image(insertGraph($gr), width=>240, height=>240, tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT' title = '$ALT'")@]*<<
 
 
     [`[$fname]([$x1])={}`][_____]{$y1->cmp(tolType=>absolute, tolerance=>0.1)}
