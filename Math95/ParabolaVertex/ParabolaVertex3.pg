@@ -25,6 +25,7 @@ $a = non_zero_random(-10,10,1);
 $h = non_zero_random(-10,10,1);
 $k = non_zero_random(-10,10,1);
 
+Context()->noreduce('(-x)-y','(-x)+y');
 $f = Formula("$a (x-$h)^2+$k")->reduce;
 
 
