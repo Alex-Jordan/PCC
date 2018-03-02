@@ -42,6 +42,7 @@ Context()->noreduce('(-x)-y','(-x)+y');
 $var1 = 'd';
 Context()->variables->are($var1=>'Real');
 
+do {
 $diameter = random(4,7,0.2);
 $d1 = $diameter+random(0.5,$diameter-1,0.1);
 $d2 = $diameter-random(0.5,$diameter-1,0.1);
@@ -50,6 +51,7 @@ $base = random(3,7,0.5);
 $func = Compute("-$rate*abs($var1-$diameter)+$base")->reduce;
 $ans1 = -$rate*abs($d1-$diameter)+$base;
 $ans2 = -$rate*abs($d2-$diameter)+$base;
+} until ($ans1 > 0 and $ans2 > 0);
 
 $d1U = NumberWithUnits("$d1 ft");
 $d2U = NumberWithUnits("$d2 ft");

@@ -57,9 +57,7 @@ $vertex = Point($vertexX,$vertexY);
 TEXT(beginproblem());
 BEGIN_PGML
 
-With the skill of "completing the square," convert this quadratic function from standard form to vertex form, and then find this parabola's vertex.
-
-     [` f(x) = [$func] `]
+Convert the the formula [` f(x) = [$func] `] standard form to vertex form by completing the square. Then find this parabola's vertex.
 
      [`f(x)=`][____________________]{$ans}
 
