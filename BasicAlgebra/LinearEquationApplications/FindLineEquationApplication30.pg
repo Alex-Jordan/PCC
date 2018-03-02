@@ -100,7 +100,7 @@ a)    A line's equation in slope-intercept form looks like [` y=mx+b `], where [
 
     [`` \begin{aligned}\text{slope}&=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}\\&=\frac{[$y2]-[$outputy1]}{[$x2]-[$outputx1]}\\&=\frac{[$s1]}{[$s2]}\\&=[$m] \end{aligned}``]
 
-    This line's slope is [`[$m]`]. This implies that the tree is growing by [`[$m]`] feet per month.
+    This line's slope is [`[$m]`]. This implies that the tree is growing by [`[$m]`] feet each month.
 
     So now we have that [` y=[$m]x+b `]. The next step is to find the value of [`b`]. There are at least two ways.
 
