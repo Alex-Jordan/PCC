@@ -73,7 +73,7 @@ $ymin=0;
 $ymax=$xmax*$height2d/$width2d;
 
 $gr = init_graph($xmin,$ymin,$xmax,$ymax,
-size=>[282,282*$height2d/$width2d]
+size=>[240,240*$height2d/$width2d]
 );
 
 @x=(($xmax-$width2d)/2, ($xmax+$width2d)/2);
@@ -117,7 +117,7 @@ BEGIN_PGML
 
 A cylinder's base's radius is [`[$radiusU]`], and its height is [`[$heightU]`].
 
->>[@image( insertGraph($gr), width=>282, 
+>>[@image( insertGraph($gr), width=>240, 
     extra_html_tags => "alt = '$alt' title = '$alt'")@]*<<
 
 a) This cylinder's volume, in terms of [`\pi`], is [_____________]. [@KeyboardInstructions(q!(Type [|pi|]* for [`\pi`].)!)@]**

@@ -61,7 +61,7 @@ $yLabelShift = $ymax/40;
 $cornersize = min(($x[1]-$x[0]),($y[1]-$y[0]))/10;
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[282,282]);
+      pixels=>[240,240]);
 
 $picture->lb( new Label(($x[0]+$x[1])/2, $y[0]-$yLabelShift,"$base cm",'black','center','middle'));
 $picture->lb( new Label($x[1]+$xLabelShift,($y[0]+$y[1])/2,"$height cm",'black','left','middle'));
@@ -94,7 +94,7 @@ BEGIN_TEXT
 Find the perimeter and area of the right triangle.$PAR
 
 $BCENTER
-\{ image(insertGraph( $picture  ),  width=>282, extra_html_tags => 'alt = "$text" title = "$text"') \}
+\{ image(insertGraph( $picture  ),  width=>240, extra_html_tags => 'alt = "$text" title = "$text"') \}
 $ECENTER
 $PAR
 END_TEXT

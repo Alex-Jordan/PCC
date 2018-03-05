@@ -58,7 +58,6 @@ $y1=$m*$x1+$b;
 $left = Formula("y")->reduce;
 $right = Formula("$m*(x-$x1)+$y1")->reduce;
 
-parser::Assignment->Allow;
 $ansSI=Formula("y=$m*x+$b")->reduce;
 
 

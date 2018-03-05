@@ -98,7 +98,7 @@ $cornersize = 0.5;
 
 for my $i (0..2) {
    $picture[$i] = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[282,282*$height/$base]);
+      pixels=>[240,240*$height/$base]);
 
    if ( ($corner==0) || ($corner==3) ) {
       $picture[$i]->lb( new Label(($x[0]+$x[1])/2, $y[1]+$labelAdjust,"$baseU",'black','center','middle'));
@@ -214,7 +214,7 @@ BEGIN_PGML
 
 Find the perimeter and area of this shape.
 
->>[@ image(insertGraph( $picture[0]  ),  width=>282, extra_html_tags => "alt = '$alt[0]' title = '$alt[0]' ") @]*<<
+>>[@ image(insertGraph( $picture[0]  ),  width=>240, extra_html_tags => "alt = '$alt[0]' title = '$alt[0]' ") @]*<<
 
     Its perimeter is [_____________]{$perimeterU} and its area is [_____________]{$areaU}. 
 
@@ -230,7 +230,7 @@ BEGIN_PGML_SOLUTION
 
 To find this shape's perimeter, we need to find the lengths of missing sides in the following graph:
 
->>[@ image(insertGraph( $picture[1]  ),  width=>282, extra_html_tags => "alt = '$alt[1]' title = '$alt[1]' ") @]*<<
+>>[@ image(insertGraph( $picture[1]  ),  width=>240, extra_html_tags => "alt = '$alt[1]' title = '$alt[1]' ") @]*<<
 
 To find the shape's perimeter, we start from any corner of the shape, travel around it, and calculate the sum of all sides in the travel. If we start from the [$missingPosition[($corner+2)%4]] corner and travel [$height1Direction[$corner]], we have:
 
@@ -243,7 +243,7 @@ To find the shape's perimeter, we start from any corner of the shape, travel aro
 
 The shape's perimeter is [`[$perimeterU]`].
 
->>[@ image(insertGraph( $picture[2]  ),  width=>282, extra_html_tags => "alt = '$alt[2]' title = '$alt[2]' ") @]*<<
+>>[@ image(insertGraph( $picture[2]  ),  width=>240, extra_html_tags => "alt = '$alt[2]' title = '$alt[2]' ") @]*<<
 
 To find the shape's area, we will find the big rectangle's area, and then subtract the missing piece:
 
