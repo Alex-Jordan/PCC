@@ -52,7 +52,7 @@ $ymax = $xmax*$height/$base;
 $cornersize = min(($x[1]-$x[0]),($y[1]-$y[0]))/15;
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[282,282*$height/$base]);
+      pixels=>[240,240*$height/$base]);
 
 $picture->lb( new Label(($x[0]+$x[1])/2, $y[0],"$base m",'black','center','bottom'));
 $picture->lb( new Label($x[1],($y[0]+$y[1])/2,"$height m",'black','right','middle'));
@@ -91,7 +91,7 @@ BEGIN_TEXT
 Find the perimeter and area of the rectangle.$PAR
 
 $BCENTER
-\{ image(insertGraph( $picture  ),  width=>282, extra_html_tags => 'alt = "a rectangle with a base of $base m and a height of $height m" title = "a rectangle with a base of $base m and a height of $height m"') \}
+\{ image(insertGraph( $picture  ),  width=>240, extra_html_tags => 'alt = "a rectangle with a base of $base m and a height of $height m" title = "a rectangle with a base of $base m and a height of $height m"') \}
 $ECENTER
 $PAR
 

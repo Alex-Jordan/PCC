@@ -61,7 +61,7 @@ Context("Numeric");
 
 
 $aspectRatio = 1/8;
-$horPixel = 400;
+$horPixel = 240;
 $verPixel = $horPixel*$aspectRatio;
 $screenXSize = $horPixel;
 $screenYSize = $screenXSize*$aspectRatio;

@@ -59,7 +59,7 @@ $ymax = $xmax*$height2d/$base2d;
 @y = (($ymax-$height2d)/2, ($ymax-$height2d)/2+$base2*0.3, ($ymax-$height2d)/2+$height, ($ymax+$height2d)/2);
 
 $picture = init_graph($xmin-0.25*$base2d,$ymin,$xmax,$ymax,
-      pixels=>[282,282*$height2d/$base2d]);
+      pixels=>[240,240*$height2d/$base2d]);
 
 $picture->lb( new Label(($x[0]+$x[2])/2, $y[0],"x in",'black','center','top'));
 $picture->lb( new Label(($x[2]+$x[3])/2,($y[0]+$y[1])/2,'  '."x in",'black','left','top'));
@@ -124,7 +124,7 @@ BEGIN_PGML
 
 An engineer is designing an open (without top) rectangular prism with a square base. The box's volume must be [`[$volumeU]`]. The engineer wants to minimize the box's surface area.
 
->>[@ image(insertGraph( $picture  ),  width=>282, extra_html_tags => "alt = '$alt' title = '$alt' ") @]*<<
+>>[@ image(insertGraph( $picture  ),  width=>240, extra_html_tags => "alt = '$alt' title = '$alt' ") @]*<<
 
 Let the square base's side length be [`x`] in, and the prism's height be [`h`] in.
 

@@ -68,7 +68,7 @@ BEGIN_PGML
 
 Expand and simplify the expression.
 
-[``([$sqrt1] + [$sqrt2])([$sqrt1] - [$sqrt2]) =``] [__________________]{$answer}
+[``\left([$sqrt1] + [$sqrt2]\right)\left([$sqrt1] - [$sqrt2]\right) =``] [__________________]{$answer}
 
 END_PGML
 

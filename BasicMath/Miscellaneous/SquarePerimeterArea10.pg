@@ -53,7 +53,7 @@ $ymax = $base+3;
 $cornersize = min(($x[1]-$x[0]),($y[1]-$y[0]))/20;
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[282,282]);
+      pixels=>[240,240]);
 
 $picture->lb( new Label(($x[0]+$x[1])/2, $y[0]-0.5,"$base cm",'black','center','middle'));
 #$picture->lb( new Label($x[1]+1,($y[0]+$y[1])/2,"$height cm",'black','center','middle'));
@@ -92,7 +92,7 @@ BEGIN_PGML
 
 Find the perimeter and area of the square.
 
->>[@ image(insertGraph( $picture  ),  width=>282, extra_html_tags => "alt = '$alt' title = '$alt' ") @]*<<
+>>[@ image(insertGraph( $picture  ),  width=>240, extra_html_tags => "alt = '$alt' title = '$alt' ") @]*<<
 
 a.    The square's perimeter is [_____________]{$ansP}.
 a.    The square's area is [_____________]{$ansA}. 

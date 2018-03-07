@@ -59,7 +59,7 @@ $yLabelShift = $ymax/40;
 $cornersize = min(($x[1]-$x[0]),($y[1]-$y[0]))/20;
 
 $picture = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[282,282]);
+      pixels=>[240,240]);
 
 $xTop = $x[0]+$bigbase;
 
@@ -100,7 +100,7 @@ BEGIN_TEXT
 Find the perimeter and area of the triangle.$PAR
 
 $BCENTER
-\{ image(insertGraph( $picture  ),  width=>282, extra_html_tags => 'alt = "$text"  title = "$text"') \}
+\{ image(insertGraph( $picture  ),  width=>240, extra_html_tags => 'alt = "$text"  title = "$text"') \}
 $ECENTER
 $PAR
 END_TEXT

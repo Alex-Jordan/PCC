@@ -63,7 +63,7 @@ BEGIN_PGML
 
 Expand and simplify the expression.
 
-[``([$num] - [$sqrt])([$num] + [$sqrt]) =``] [______________________]{$answer}
+[``\left([$num] - [$sqrt]\right)\left([$num] + [$sqrt]\right) =``] [______________________]{$answer}
 
 END_PGML
 

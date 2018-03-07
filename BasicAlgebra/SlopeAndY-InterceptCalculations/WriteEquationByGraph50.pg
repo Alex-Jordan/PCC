@@ -66,8 +66,8 @@ $xmin = -5;
 $xmax = -$xmin;
 $ymin = -5*(int($y2 /5)+1);
 $ymax = -$ymin;
-$sizex = 400;
-$sizey = 400;
+$sizex = 240;
+$sizey = 240;
 
 #These two variables decide how many labels are on each axis.
 $xmark = ceil($xmax/10);
@@ -121,7 +121,7 @@ A line's graph is given.
 
 [@EnlargeImageStatementPGML()@]*
 
->>[@image( insertGraph($gr), width=>282, extra_html_tags=>'title="$ALTtext" alt="$ALTtext"'  )@]*<<
+>>[@image( insertGraph($gr), width=>240, extra_html_tags=>'title="$ALTtext" alt="$ALTtext"'  )@]*<<
 
 This line's equation is [__]{Compute($ansSI)}{width => 15}
 

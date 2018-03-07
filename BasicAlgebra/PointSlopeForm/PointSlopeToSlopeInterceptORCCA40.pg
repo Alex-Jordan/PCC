@@ -66,6 +66,17 @@ $s1 = $m*$x1;
 $s2 = $s1+$y1;
 $right2 = Formula("$m*x-$s1")->reduce;
 
+Context("Numeric");
+Context()->variables->are(x=>'Real', y=>'Real');
+parser::Assignment->Allow;
+Context()->flags->set(showExtraParens=>0);
+Context()->noreduce('(-x)-y','(-x)+y','(-x)*y','x*(-y)','-n');
+
+Context()->operators->set(
+'+' => {class => 'bizarro::BOP::add', isCommand => 1},
+'-' => {class => 'bizarro::BOP::subtract', isCommand => 1},
+);
+
 $ansSI=Formula("y=x+$b")->reduce;
 $ansSI = $ansSI->substitute(x=>Formula("$m x"));
 

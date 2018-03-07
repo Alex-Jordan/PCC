@@ -32,6 +32,7 @@ loadMacros(
   "bizarroArithmetic.pl",
   "contextFraction.pl",
   "PGcourse.pl",
+  "PGinfo.pl",
 );
 
 ##############################################
@@ -40,11 +41,6 @@ Context("Fraction");
 Context()->variables->add(y=>'Real');
 Context()->noreduce('(-x)-y','(-x)+y');
 Context()->flags->set(showExtraParens=>0);
-
-Context()->operators->set(
-'+' => {class => 'bizarro::BOP::add', isCommand => 1}, 
-'-' => {class => 'bizarro::BOP::subtract', isCommand => 1}, 
-);
 
 $num=random(1,9,1);
 $den=random(2,9,1);
@@ -64,9 +60,23 @@ $right1 = Formula("$m*(x-$x1)+$y1")->reduce;
 $left2 = Formula("y")->reduce;
 $right2 = Formula("$m*(x-$x2)+$y2")->reduce;
 
+Context("Numeric");
 parser::Assignment->Allow;
-$ansPS1 = ($y1!=0) ? Formula("y=$m(x-$x1)+$y1") : Formula("y=$m(x-$x1)");
-$ansPS2 = ($y2!=0) ? Formula("y=$m(x-$x2)+$y2") : Formula("y=$m(x-$x2)");
+Context()->variables->add(y=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(showExtraParens=>0);
+Context()->flags->set(reduceConstants=>0);
+Context()->flags->set(reduceConstantFormulas=>0);
+Context()->operators->set(
+'+' => {class => 'bizarro::BOP::add', isCommand => 1}, 
+'-' => {class => 'bizarro::BOP::subtract', isCommand => 1}, 
+);
+
+
+$shift1 = Formula("x-$x1")->reduce;
+$shift2 = Formula("x-$x2")->reduce;
+$ansPS1 = ($y1!=0) ? Formula("y=$m($shift1)+$y1") : Formula("y=$m($shift1)");
+$ansPS2 = ($y2!=0) ? Formula("y=$m($shift2)+$y2") : Formula("y=$m($shift2)");
 
 
 ##############################################
@@ -86,13 +96,13 @@ END_PGML
 ##############################################
 
 
-Context()->flags->set(reduceConstants=>0);
-Context()->flags->set(reduceConstantFormulas=>0);
-
 ANS($ansPS1 -> cmp(
       checker=>sub{
       my ( $correct, $student, $ansHash ) = @_; 
-      return 0 if $ansHash->{isPreview} || $correct != $student;
+#if ($correct != $student) {
+#Value::Error('This problem is being debugged at this very moment.'.$PAR.pp($correct).$PAR.pp($student).$PAR.pp($correct->cmp->evaluate($student->string)));
+#};
+      return 0 if $ansHash->{isPreview} || ($correct != $student and $student != $correct);
       $student = $ansHash->{student_formula};
       $correct = $correct->{original_formula} if defined $correct->{original_formula};
       $student = Formula("$student"); $correct = Formula("$correct");
@@ -103,7 +113,8 @@ ANS($ansPS1 -> cmp(
       Value->Error("Your answer is a line equation for the right line, but it is not in the expected point-slope form") unless (($correct == $student) or ($student == $correct));
       Context()->flags->set(bizarroAdd=>0,bizarroSub=>0);
       return 1;
-})); 
+}
+)); 
 
 
 ANS($ansPS2 -> cmp(
