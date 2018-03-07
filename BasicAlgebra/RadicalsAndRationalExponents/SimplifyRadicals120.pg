@@ -71,7 +71,7 @@ BEGIN_PGML
 
 Expand and simplify the expression. [@KeyboardInstructions("Use [|sqrt()|]* for the square root symbol. For example: [`\\sqrt{2}=`][|sqrt(2)|]*.")@]**
 
-    [``([$num1] + [$sqrt])([$num2] + [$sqrt]) =``] [__________]{$answer}
+    [``\left([$num1] + [$sqrt]\right)\left([$num2] + [$sqrt]\right) =``] [__________]{$answer}
 
 END_PGML
 

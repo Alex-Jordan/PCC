@@ -61,7 +61,7 @@ Context("Numeric");
 
 
 $aspectRatio = 1/8;
-$horPixel = 400;
+$horPixel = 240;
 $verPixel = $horPixel*$aspectRatio;
 $screenXSize = $horPixel;
 $screenYSize = $screenXSize*$aspectRatio;
@@ -127,7 +127,7 @@ BEGIN_TEXT
 Here is a graph of an interval.$PAR
 
 $BCENTER
-\{ image( insertGraph($gr[ $indices[0] ]), width=>$screenXSize, height=>$screenYSize, tex_size=>$hardCopyPercent, 
+\{ image( insertGraph($gr[ $indices[0] ]), width=>240, tex_size=>$hardCopyPercent, 
    extra_html_tags=>'title="$alt" alt="$alt" align="top"'  ) \}
 $ECENTER
 $PAR

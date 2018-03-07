@@ -43,7 +43,7 @@ Context("LimitedRadical");
 
 $a = random(1,9,1);
 $b = list_random(2,3,5,6,7);
-$problem = "($a+\sqrt{$b})^2";
+$problem = "\left($a+\sqrt{$b}\right)^2";
 $a2 = $a**2;
 $co = 2*$a;
 $num = $a2+$b;

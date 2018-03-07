@@ -43,7 +43,7 @@ Context()->variables->are($var=>'Real');
 $a = random(2,10,2);
 $b = random(2,6,2);
 
-$numText = ($b==2) ? "\text{twice}" : "$b \text{ times of}";
+$numText = ($b==2) ? "\text{twice}" : "$b \text{ times}";
 
 $c = $a/2;
 $d = $b/2;

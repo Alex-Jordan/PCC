@@ -47,7 +47,7 @@ do {$in = list_random(2,3,5,7);} until ($out!=$in);
 $a = $out*$in;
 $b = $out;
 $pm = (random(1,2,1)==1) ? "+" : "-";
-$problem = "(\sqrt{$a} $pm \sqrt{$b})^2";
+$problem = "\left(\sqrt{$a} $pm \sqrt{$b}\right)^2";
 $ab = $a*$b;
 $num = $a+$b;
 $out2 = 2*$out;

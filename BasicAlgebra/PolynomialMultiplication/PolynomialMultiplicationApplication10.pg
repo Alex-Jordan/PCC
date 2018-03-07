@@ -43,7 +43,7 @@ Context()->variables->are($var=>'Real');
 $a = random(1,10,1);
 $b = random(2,5,1);
 
-$numText = ($b==2) ? "\text{twice}" : "$b \text{ times of}";
+$numText = ($b==2) ? "\text{twice}" : "$b \text{ times}";
 
 $ans = Compute("$b*w**2-$a*w")->reduce;
 
