@@ -61,10 +61,12 @@ Context()->strings->add("no real solutions"=>{},
   );
 
 do {
+  do {
    $a = non_zero_random(-10,10,1);
    do {$b = non_zero_random(-10,10,1);} until (gcd($a,$b)==1);
    $c = non_zero_random(-10,10,1);
    do {$e = non_zero_random(-10,10,1);} until ($c!=$e);
+  } until ($a*$c-$a*$e-$b != 0);
    $x = $b*$e/($a*$c-$a*$e-$b);
 } until ( $x==int($x) && ($x!=-$c) && ($x!=-$e) );
 

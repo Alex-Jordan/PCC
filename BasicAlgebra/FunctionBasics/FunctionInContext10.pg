@@ -92,9 +92,11 @@ for my $i (0..3) {
 $correctAns = $answersShuffled[$inverse[0]];
 
 $radio = RadioButtons(
-   ~~@answersShuffled,
-   $correctAns, # correct answer
-   order => ~~@answersShuffled,
+[[   numberWord($x1,capital=>1)." days after $name started $possessive piggy bank, there were ".math_ev3($y1C)." in it.",
+   numberWord($y1,capital=>1)." days after $name started $possessive piggy bank, there were ".math_ev3($x1C)." in it.",
+   "The piggy bank started with ".math_ev3($y1C)." in it, and $name saves ".math_ev3($x1C)." each day.",
+   "The piggy bank started with ".math_ev3($x1C)." in it, and $name saves ".math_ev3($y1C)." each day.",
+]],0,
    labels => "ABC",
 );
 

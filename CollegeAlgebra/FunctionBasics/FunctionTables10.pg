@@ -138,7 +138,7 @@ for ($i=0;$i<=4;$i++) {
    $gr[$i] = init_graph($xmin,$ymin,$xmax,$ymax,
    axes=>[0,0],
    grid=>[$xmax-$xmin,($ymax-$ymin)/5],
-   size=>[xPixels(),yPixels()]
+   size=>[240,240]
    );
    $gr[$i]->lb('reset');
    for ($j=-$xmax+$xmark;$j<$xmax;$j=$j+$xmark) {
@@ -207,41 +207,41 @@ Context()->normalStrings;
 
 BEGIN_PGML
 
-Based on values in the table, choose the correct graph of [`[$f]`].
+Based on values in the table, sketch a graph of [`[$f]`].
 
-[@EnlargeImageStatementPGML()@]** 
+[%[@EnlargeImageStatementPGML()@]**%] 
 
 
 END_PGML
 
-Context()->texStrings;
-BEGIN_TEXT
-$PAR
-$BCENTER
-\{ 
-LayoutTable([[image( insertGraph($gr[$scramble{0}]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>'alt = "$alt[$scramble{0}]" title = "$alt[$scramble{0}]"'  ),
-image( insertGraph($gr[$scramble{1}]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>'alt = "$alt[$scramble{1}]" title = "$alt[$scramble{1}]"'  ),
-],
-[image( insertGraph($gr[$scramble{2}]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>'alt = "$alt[$scramble{2}]" title = "$alt[$scramble{2}]"'  ),
-image( insertGraph($gr[$scramble{3}]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>'alt = "$alt[$scramble{3}]" title = "$alt[$scramble{3}]"'  )
-]], allcellcss => "padding:20pt;")
+#Context()->texStrings;
+#BEGIN_TEXT
+#$PAR
+#$BCENTER
+#\{ 
+#LayoutTable([[image( insertGraph($gr[$scramble{0}]), width=>240, height=>240, tex_size=>TeXscalar(), extra_html_tags=>'alt = "$alt[$scramble{0}]" title = "$alt[$scramble{0}]"'  ),
+#image( insertGraph($gr[$scramble{1}]), width=>240, height=>240, tex_size=>TeXscalar(), extra_html_tags=>'alt = "$alt[$scramble{1}]" title = "$alt[$scramble{1}]"'  ),
+#],
+#[image( insertGraph($gr[$scramble{2}]), width=>240, height=>240, tex_size=>TeXscalar(), extra_html_tags=>'alt = "$alt[$scramble{2}]" title = "$alt[$scramble{2}]"'  ),
+#image( insertGraph($gr[$scramble{3}]), width=>240, height=>240, tex_size=>TeXscalar(), extra_html_tags=>'alt = "$alt[$scramble{3}]" title = "$alt[$scramble{3}]"'  )
+#]], allcellcss => "padding:20pt;")
 
-\}
-$ECENTER
-$PAR
+#\}
+#$ECENTER
+#$PAR
 
-END_TEXT
-Context()->normalStrings;
+#END_TEXT
+#Context()->normalStrings;
 
-BEGIN_PGML
-    The correct graph is graph    
-    [@$radio->buttons()@]*
-END_PGML
+#BEGIN_PGML
+#    The correct graph is graph    
+#    [@$radio->buttons()@]*
+#END_PGML
 
 ##############################################
 
 ANS( $multians->cmp() ); 
-ANS( $radio->cmp() );
+#ANS( $radio->cmp() );
 
 ##############################################
 
@@ -272,7 +272,7 @@ $rs[$i] = $right->substitute(x=>$x[$i]);
 Context()->texStrings;
 BEGIN_SOLUTION
 
-This solution will use the \(x\) values $xvals. The choice to use these \(x\)-values is arbitrary. Since they are small numbers, they might make calculations easier. It's important to include negative numbers if they are in the domain of the function.
+This solution will use the \(x\)-values $xvals. The choice to use these \(x\)-values is arbitrary. Since they are small numbers, they might make calculations easier. It's important to include negative numbers if they are in the domain of the function.
 
 One at a time, we substitute these \(x\)-values into the formula for \($f(x)\), and simplify:
 
@@ -297,9 +297,10 @@ DataTable([[{data=>"\(x\)",header=>"CH"},{data=>"\($f(x)\)",header=>"CH"},],
 ], allcellcss=>"border:1px solid;padding:4pt;text-align:center;width:60pt;", caption => "\($f(x)=$right\)", captioncss =>"padding:4pt; text-decoration:none;");
 \}  
 
-$PAR
-By values in the table, graph \{ $radio->correct_ans() \} is the correct graph.
-$PAR
+#$PAR
+#By values in the table, graph \{ $radio->correct_ans() \} is the correct graph.
+#$PAR
+Here is a graph of [`[$f]`].
 $BCENTER
 \{ image( insertGraph($gr[4]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>'alt = "$alt[$scramble{4}]" title = "$alt[$scramble{4}]"'  )  \}
 $ECENTER
