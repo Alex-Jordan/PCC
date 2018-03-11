@@ -181,7 +181,7 @@ $f =RandomVariableName(type=>'function');
 
 BEGIN_PGML
 
-Make a table of values for the function [`[$f]`], defined by [`[$f](x)=[$right]`]. Then, choose the correct graph for the function.
+Make a table of values for the function [`[$f]`], defined by [`[$f](x)=[$right]`]. Based on values in the table, sketch a graph of [`[$f]`].
 
 END_PGML
 
@@ -204,15 +204,6 @@ $PAR
 END_TEXT
 
 Context()->normalStrings;
-
-BEGIN_PGML
-
-Based on values in the table, sketch a graph of [`[$f]`].
-
-[%[@EnlargeImageStatementPGML()@]**%] 
-
-
-END_PGML
 
 #Context()->texStrings;
 #BEGIN_TEXT

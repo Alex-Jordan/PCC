@@ -54,7 +54,7 @@ $ymax = 8;
 
 $gr = init_graph($xmin,$ymin,$xmax,$ymax,
 axes=>[0,0],
-size=>[400,400]
+size=>[240,240]
 );
 
 
@@ -142,7 +142,7 @@ $PAR
 
 $BCENTER
 \{ image( insertGraph($gr), 
-width=>400,height=>400,tex_size=>800,
+width=>240,height=>240,tex_size=>800,
 extra_html_tags=>"alt = '$alt'" ) \}
 $BR
 $ECENTER

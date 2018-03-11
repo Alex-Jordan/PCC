@@ -68,7 +68,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Solve for [`x`] in each equation, where [`[$fname](x)=[$func]`].
+Solve for [`x`], where [`[$fname](x)=[$func]`].
 
 [@KeyboardInstructions('If there is more than one solution, use commas to separate your answers. If there is no real solution, type [|no real solution|]*.')@]**
 

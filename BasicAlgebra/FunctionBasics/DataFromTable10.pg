@@ -120,7 +120,7 @@ $radio2 = RadioButtons(
 
 BEGIN_PGML
 
-The function [`C(t)`] models the the number of customers in a store since the store opened on a certain day, where [`t`] stands for the number of hours since the store opened.
+The function [`C`] models the the number of customers in a store since the store opened on a certain day, where [`t`] stands for the number of hours since the store opened.
 
 [@DataTable(
   [
@@ -161,7 +161,6 @@ The function [`C(t)`] models the the number of customers in a store since the st
      ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',],
 );@]*
 
-Answer the following questions based on data in the table.
 
 a)  [`C([$x1])=`][_________]
 
@@ -169,11 +168,9 @@ b) Interpret the meaning of [`C([$x1])`]:
 
     [@$radio1->buttons()@]*
 
-c) Solve [`t`] for [`C(t)=[$y2]`]. Use commas to separate your answers if there are more than one solution.
+c) Solve [`C(t)=[$y2]`] for [`t`]. [@KeyboardInstructions('Use commas to separate your answers if there are more than one solution.')@]** [`t=`][________]
 
-    [``t=``][________]
-
-d) Interpret the meaning of Part C's solution(s):
+d) Interpret the meaning of Part c's solution(s):
 
     [@$radio2->buttons()@]*
 
