@@ -13,6 +13,7 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",  
   "PGchoicemacros.pl",
+  "parserPopUp.pl",
   "contextFraction.pl",
   "PGML.pl",
 );
@@ -24,8 +25,8 @@ TEXT(beginproblem());
 Context("Numeric");
 Context()->reductions->set('(-x)-y'=>0,'(-x)+y'=>0);
 
-$yes = "The given value is a solution.";
-$no = "The given value is not a solution.";
+$yes = "is";
+$no = "is not";
 
 
 $a[0] = random(1,9,1);
@@ -98,17 +99,12 @@ else {$ans[3] = $no;};
 Context()->texStrings;
 
 for my $i (0..2) {
-$radio[$i] = new_multiple_choice();
-$radio[$i]->qa("\($left1[$i] $comp1[$i] $right1[$i]\) $comb[$i] \($left2[$i] $comp2[$i] $right2[$i] \qquad $var[$i] = $x[$i]\)", "$ans[$i]");
-$radio[$i]->extra("$yes", "$no");
-$radio[$i]->makeLast("$no");
+$statement[$i] = "\($left1[$i] $comp1[$i] $right1[$i]\) $comb[$i] \($left2[$i] $comp2[$i] $right2[$i] \qquad $var[$i] = $x[$i]\)";
+$popup[$i] = PopUp([$yes,$no],"$ans[$i]");
 }
 
-$radio[3] = new_multiple_choice();
-$radio[3]->qa("\($left1[3] $comp1[3] $right1[3] $comp2[3] $right2[3] \qquad $var[$i] = $x[3]\)", "$ans[3]");
-$radio[3]->extra("$yes", "$no");
-$radio[3]->makeLast("$no");
-
+$statement[3] = "\($left1[3] $comp1[3] $right1[3] $comp2[3] $right2[3] \qquad $var[$i] = $x[3]\)";
+$popup[3] = PopUp([$yes,$no],"$ans[$i]");
 
 
 ##############################################
@@ -118,17 +114,17 @@ BEGIN_PGML
 
 Decide whether the given value for the variable is a solution.
 
-a.  [@ $radio[0]->print_q() @]*
-    [@ $radio[0]->print_a() @]*
+a.  [$statement[0]]*  
+The given value [__]{$popup[0]} a solution.
 
-a.  [@ $radio[1]->print_q() @]*
-    [@ $radio[1]->print_a() @]*
+a.  [$statement[1]]*  
+The given value [__]{$popup[1]} a solution.
 
-a.  [@ $radio[2]->print_q() @]*
-    [@ $radio[2]->print_a() @]*
+a.  [$statement[2]]*  
+The given value [__]{$popup[2]} a solution.
 
-a.  [@ $radio[3]->print_q() @]*
-    [@ $radio[3]->print_a() @]*
+a.  [$statement[3]]*  
+The given value [__]{$popup[3]} a solution.
 
 
 
@@ -138,9 +134,6 @@ END_PGML
 
 
 ##############################################
-
-for my $i (0..3){
-ANS( radio_cmp( $radio[$i]->correct_ans() ) );}
 
 
 

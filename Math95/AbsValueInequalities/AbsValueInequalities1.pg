@@ -13,6 +13,7 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",  
   "PGchoicemacros.pl",
+  "parserPopUp.pl",
   "contextFraction.pl",
   "PGML.pl",
 );
@@ -25,8 +26,8 @@ TEXT(beginproblem());
 Context("Numeric");
 Context()->reductions->set('(-x)-y'=>0,'(-x)+y'=>0);
 
-$yes = "The given value is a solution to the inequality.";
-$no = "The given value is not a solution to the inequality.";
+$yes = "is";
+$no = "is not";
 
 
 $a[0] = random(1,9,1);
@@ -97,13 +98,11 @@ $x[3] = "\pi";
 
 Context()->texStrings;
 
-for my $i (0..3) {
-$radio[$i] = new_multiple_choice();
-$radio[$i]->qa("\($left[$i] $comp[$i] $right[$i]\qquad $var[$i] = $x[$i]\)", "$ans[$i]");
-$radio[$i]->extra("$yes", "$no");
-$radio[$i]->makeLast("$no");
-}
 
+for my $i (0..3) {
+$statement[$i] = "\($left[$i] $comp[$i] $right[$i]\qquad $var[$i] = $x[$i]\)";
+$popup[$i] = PopUp([$yes,$no],"$ans[$i]");
+}
 
 
 ##############################################
@@ -111,29 +110,24 @@ $radio[$i]->makeLast("$no");
 
 BEGIN_PGML
 
-Decide whether the given value for the variable is a solution to the inequality.
+Decide whether the given value for the variable is a solution.
 
-a.  [@ $radio[0]->print_q() @]*
-    [@ $radio[0]->print_a() @]*
+a.  [$statement[0]]*  
+The given value [__]{$popup[0]} a solution.
 
-a.  [@ $radio[1]->print_q() @]*
-    [@ $radio[1]->print_a() @]*
+a.  [$statement[1]]*  
+The given value [__]{$popup[1]} a solution.
 
-a.  [@ $radio[2]->print_q() @]*
-    [@ $radio[2]->print_a() @]*
+a.  [$statement[2]]*  
+The given value [__]{$popup[2]} a solution.
 
-a.  [@ $radio[3]->print_q() @]*
-    [@ $radio[3]->print_a() @]*
+a.  [$statement[3]]*  
+The given value [__]{$popup[3]} a solution.
+
 
 
 
 END_PGML
-
-
-##############################################
-
-for my $i (0..3){
-ANS( radio_cmp( $radio[$i]->correct_ans() ) );}
 
 
 
