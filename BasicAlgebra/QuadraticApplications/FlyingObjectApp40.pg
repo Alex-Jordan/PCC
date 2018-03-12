@@ -93,13 +93,12 @@ BEGIN_PGML
 
 A submarine is traveling in the sea. Its depth can be modeled by [`d(t)=[$func]`], where [`t`] stands for time in seconds. Determine whether the submarine will hit the sea surface along this route.
 
-    [@$radio->buttons()@]*
+    [__]{$radio}
 
 END_PGML
 
 ##############################################
 
-ANS( $radio->cmp() );
 
 ##############################################
 
