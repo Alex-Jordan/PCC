@@ -12,8 +12,10 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
+  "PGML.pl",
   "contextFraction.pl",
   "parserRadioButtons.pl",
+  "parserPopUp.pl",
 
   
 );
@@ -57,30 +59,24 @@ $radio = RadioButtons(
 
 
 
+$popup = PopUp(["$real","$comp","$dbld","none of these"],$ans);
+
+
 ##############################################
 
-Context()->texStrings;
-
-BEGIN_TEXT
+BEGIN_PGML
 
 Determine the nature of the solutions to this quadratic equation.
-$PAR
 
-\[$left = $right \]
+[``[$left] = [$right]``]
 
-$PAR
-\{ $radio->buttons() \}
+[__]{$popup}
 
 
-END_TEXT
+END_PGML
 
-Context()->normalStrings;
 
 ##############################################
-$showPartialCorrectAnswers = 1;
-
-
-ANS( $radio->cmp() );
 
 
 ENDDOCUMENT();
