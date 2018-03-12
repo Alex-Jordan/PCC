@@ -29,6 +29,7 @@ loadMacros(
   "PGML.pl",
   "pccTables.pl",
   "PGchoicemacros.pl",
+  "parserPopUp.pl",
   "PGcourse.pl",
 );
 
@@ -47,20 +48,10 @@ $h = random(-20,20,1);
 $i = random(11,30,1);
 $j = random(-20,20,1);
 
-$mc1 = new_multiple_choice();
-  $mc1->qa("Could this be the table of values for a function?", "yes");
-  $mc1->extra("no");
-$mc2 = new_multiple_choice();
-  $mc2->qa("If not, which input has more than one possible output?", "None, the table could be the table of values of a function.");
-  $mc2->extra("\(2\)","\(4\)","\(6\)","\(8\)","\(-2\)" );
-  $mc2->makeLast("None, the table could be the table of values of a function.");
-$mc3 = new_multiple_choice();
-  $mc3->qa("Could this be the table of values for a function?", "no");
-  $mc3->extra("yes");
-$mc4 = new_multiple_choice();
-  $mc4->qa("If not, which input has more than one possible output?", "\(-3\)");
-  $mc4->extra("\(-4\)","\(-2\)","\(-1\)");
-  $mc4->makeLast("None, the table could be the table of values of a function.");
+$popup1 = PopUp(['yes','no'],0);
+$popup2 = PopUp(['-2','2','4','6','8','None, the table could be the table of values of a function.'],5);
+$popup3 = PopUp(['yes','no'],1);
+$popup4 = PopUp(['-4','-3','-2','-1','None, the table could be the table of values of a function.'],1);
 
 ##############################################
 
@@ -89,15 +80,9 @@ END_TEXT
 
 BEGIN_PGML
 
-    [@ $mc1->print_q() @]*
-    [@ $mc1->print_a() @]*
+Could this be the table of values for a function? [__]{$popup1}  
+If not, which input has more than one possible output? [__]{$popup2}
 
-
-
-    [@ $mc2->print_q() @]*
-    [@ $mc2->print_a() @]*
-
-----
 END_PGML
 
 
@@ -121,25 +106,13 @@ END_TEXT
 
 BEGIN_PGML
 
-    [@ $mc3->print_q() @]*
-    [@ $mc3->print_a() @]*
-
-
-
-    [@ $mc4->print_q() @]*
-    [@ $mc4->print_a() @]*
-
+Could this be the table of values for a function? [__]{$popup3}  
+If not, which input has more than one possible output? [__]{$popup4}
 
 END_PGML
 
 ##############################################
 
-ANS( radio_cmp( $mc1->correct_ans() ) );
-ANS( radio_cmp( $mc2->correct_ans() ) );
-ANS( radio_cmp( $mc3->correct_ans() ) );
-ANS( radio_cmp( $mc4->correct_ans() ) );
-
-##############################################
 
 BEGIN_PGML_SOLUTION
 

@@ -47,7 +47,7 @@ $x = RandomVariableName(type=>'variable');
 ##############################################
 
 BEGIN_PGML
-Given a function [`[$f]`] defined by [`[$f]([$x]) = \left|[$x] - [$b]\right|`], 
+Given [`[$f]`] defined by [`[$f]([$x]) = \left|[$x] - [$b]\right|`], 
 find and simplify [`[$f]([$a])`].
 
     [`[$f]([$a])={}`][___________]{abs($a-$b)}
