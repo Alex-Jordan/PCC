@@ -56,7 +56,7 @@ $domain = Interval("(-inf,inf)");
 
 
 BEGIN_PGML
-Find the domain of the function [:[$fname]:] where [:[$fname](x)=[$f]:].
+Find the domain of [:[$fname]:] where [:[$fname](x)=[$f]:].
 
     The domain is [_____________]{$domain} (in interval notation).  
 
