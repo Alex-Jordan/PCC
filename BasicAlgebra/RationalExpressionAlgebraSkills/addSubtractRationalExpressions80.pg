@@ -23,13 +23,13 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "PCCmacros.pl",
-  "contextLimitedFactor.pl",
+  "contextRestrictedDomains.pl",
   "PGcourse.pl",
 );
 
 ##############################################
 
-Context("LimitedFactor");
+Context("RestrictedDomains");
 Context()->noreduce('(-x)-y','(-x)+y');
 $var1 = RandomVariableName(type=>'variable');
 do {$var2 = RandomVariableName(type=>'variable');} until ($var1 ne $var2);
@@ -58,7 +58,8 @@ $question = Formula("$frac1+$frac2")->reduce;
 
    $crossed = Formula("$var1+$a")->reduce;
    $lostDomain = List(-$a);
-   $ans = Formula("-$b/($var1-$a)")->reduce;
+   $ans = Formula("-$b/($var1-$a), $var1 != -$a")->reduce;
+   $ans->{trueDomain} = Compute("$var1 != $a and $var1 != -$a");
 
 
 ##############################################

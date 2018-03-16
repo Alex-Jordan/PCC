@@ -23,13 +23,13 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "PCCmacros.pl",
-  "contextLimitedFactor.pl",
+  "contextRestrictedDomains.pl",
   "PGcourse.pl",
 );
 
 ##############################################
 
-Context("LimitedFactor");
+Context("RestrictedDomains");
 Context()->noreduce('(-x)-y','(-x)+y');
 $var1 = RandomVariableName(type=>'variable');
 do {$var2 = RandomVariableName(type=>'variable');} until ($var1 ne $var2);
@@ -60,7 +60,7 @@ $question = Formula("$frac1+$frac2")->reduce;
 $ansNum=$d/$factor;
 $ansDen=$c*$b/$factor;
 
-$ans = Formula("$ansNum*$var1/$ansDen")->reduce;
+$ans = Formula("$ansNum*$var1/$ansDen, (-inf,inf)")->reduce;
 
 ##############################################
 TEXT(beginproblem());
