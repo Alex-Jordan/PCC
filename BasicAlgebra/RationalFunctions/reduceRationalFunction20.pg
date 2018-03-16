@@ -23,13 +23,13 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "PCCmacros.pl",
-"contextLimitedFactor.pl",
+"contextRestrictedDomains.pl",
   "PGcourse.pl",
 );
 
 ##############################################
 
-Context("LimitedFactor");
+Context("RestrictedDomains");
 Context()->noreduce('(-x)-y','(-x)+y');
 $var = RandomVariableName(type=>'variable');
 Context()->variables->are($var=>'Real');
@@ -47,7 +47,8 @@ $step1Num = Formula("$var($var**2-$a2)")->reduce;
 $step1Den = Formula("$var($var**2+($a+$b)*$var+$a*$b)")->reduce;
 
 $function = Formula("$num/$den")->reduce;
-$ans = Formula("($var+$a)/($var+$b)")->reduce;
+$ans = Formula("($var+$a)/($var+$b), $var != -$a and $var != 0")->reduce;
+$ans->{trueDomain} = Compute("$var != -$a and $var != 0 and $var != -$b");
 
 $lostDomain = List(-$a,0);
 
@@ -57,15 +58,11 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Simplify the function:
+Simplify the function formula, and if applicable, write the restricted domain.  [@KeyboardInstructions("The problem accepts many ways to format the answers here, but one way is like typing [|$var^2 for $var!=1 and $var!=2|]* where [|!=|]* is how to type the [`\\neq`] symbol.")@]**
 
     [`` R([$var]) = [$function] ``]
 
-Don't forget to write the domain conditions lost during the simplification, if any. For example, when we do the simplification [`\frac{x^2}{x} =x`], we must write [`x \ne 0`].
-
     Reduced [`R([$var])=`] [___________________]{$ans}
-
-The domain condition(s) lost during the simplification is (are) [`[$var] \ne`][_____]{$lostDomain}. If you need to enter more than one number, use comma to separate them.
 
 END_PGML
 
@@ -73,7 +70,7 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 
-To simplify the expression, we first factor both the numerator and denominator, and then cross out common terms.
+To simplify the expression, we first factor both the numerator and denominator, and then cancel common factors.
 
     [``
 \begin{aligned}
@@ -84,7 +81,7 @@ To simplify the expression, we first factor both the numerator and denominator, 
 \end{aligned}
     ``]
 
-Since [`[$var]([$var]+[$a])`] was crossed out, the domain condition lost during the reduction is [` [$var] \ne [$lostDomain] `].
+Since [`[$var]([$var]+[$a])`] was canceled, the domain condition lost during the reduction is [` [$var] \ne [$lostDomain] `].
 
 END_PGML_SOLUTION
 ##############################################

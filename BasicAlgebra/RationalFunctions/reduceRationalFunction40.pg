@@ -24,13 +24,13 @@ loadMacros(
   "PGML.pl",
   "PCCmacros.pl",
   "contextFraction.pl",
-   "contextLimitedFactor.pl",
+   "contextRestrictedDomains.pl",
   "PGcourse.pl",
 );
 
 ##############################################
 
-Context("LimitedFactor");
+Context("RestrictedDomains");
 Context()->noreduce('(-x)-y','(-x)+y');
 $var = RandomVariableName(type=>'variable');
 Context()->variables->are($var=>'Real');
@@ -49,7 +49,8 @@ $step1Num = Formula("$var**2*($a*$var+$b)")->reduce;
 $step1Den = Formula("$var*($a*$var**2+$d*$var+$b*$c)")->reduce;
 
 $function = Formula("$num/$den")->reduce;
-$ans = Formula("$var/($var+$c)")->reduce;
+$ans = Formula("$var/($var+$c), $var != -$b/$a and $var != 0")->reduce;
+$ans->{trueDomain} = Compute("$var != -$b/$a and $var != 0 and $var != -$c");
 
 Context("LimitedFraction")->flags->set(
             reduceFractions => 0,
@@ -71,15 +72,11 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Simplify the function:
+Simplify the function formula, and if applicable, write the restricted domain.  [@KeyboardInstructions("The problem accepts many ways to format the answers here, but one way is like typing [|$var^2 for $var!=1 and $var!=2|]* where [|!=|]* is how to type the [`\\neq`] symbol.")@]**
 
     [`` R([$var]) = [$function] ``]
 
-Don't forget to write the domain conditions lost during the simplification, if any. For example, when we do the simplification [`\frac{x^2}{x} =x`], we must write [`x \ne 0`].
-
     Reduced [`R([$var])=`] [___________________]{$ans}
-
-The domain condition(s) lost during the simplification is (are) [`[$var] \ne`][_____]. If you need to enter more than one number, use comma to separate them.
 
 END_PGML
 
@@ -103,7 +100,7 @@ $showPartialCorrectAnswers = 1;
 
 BEGIN_PGML_SOLUTION
 
-To simplify the expression, we first factor both the numerator and denominator, and then cross out common terms.
+To simplify the expression, we first factor both the numerator and denominator, and then cancel common factors.
 
     [``
 \begin{aligned}
@@ -114,7 +111,7 @@ To simplify the expression, we first factor both the numerator and denominator, 
 \end{aligned}
     ``]
 
-The expression [`[$var]([$a][$var]+[$b])`] was crossed out. To find what values would cause the crossed out expression to be [`0`], we solve the equation:
+The expression [`[$var]([$a][$var]+[$b])`] was canceled. To find what values would cause the crossed out expression to be [`0`], we solve the equation:
 
     [``
 \begin{aligned}

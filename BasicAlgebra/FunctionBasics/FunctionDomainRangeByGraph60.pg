@@ -115,9 +115,7 @@ A function's graph is shown below.
 
 >>[@image(insertGraph($gr[0]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT' title = '$ALT' ") @]*<<
 
-Note that the function has a horizontal asymptote and a vertical asymptote.
-
-Use interval notation to answer the following questions. [@KeyboardInstructions("Use upper case letter [|U|]* to represent the union symbol in set notation.")@]**
+Note that the function has a horizontal asymptote and a vertical asymptote. Use interval notation to answer the following questions. [@KeyboardInstructions("Use upper case letter [|U|]* to represent the union symbol in set notation.")@]**
 
     The domain of this function is [___________]{$intDomain}.
 

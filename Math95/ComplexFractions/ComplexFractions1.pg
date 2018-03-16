@@ -13,6 +13,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextRationalFunction.pl",
+  "PCCmacros.pl",
+  "PGML.pl",
   
 );
 
@@ -37,39 +39,16 @@ $ans = Formula("($b $var[1])/$a");
 
 ##############################################
 
-Context()->texStrings;
-
-BEGIN_TEXT
+BEGIN_PGML
 
 
-Simplify the complex fraction.  
+Simplify this expression. [@KeyboardInstructions('Just enter the simplified expression. Do not try to enter its restricted domain.')@]**
 
-\[\frac{$num}{$den}\]
+[``\frac{[$num]}{[$den]}=``][__]{$ans}{width=>40}
 
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-$PAR
-
-There may be some values of \($var[0]\) and \($var[1]\) where the simplification is not valid.  If there are any such values, what are they?  (You may leave an entry blank if there are no such values. If there is more than one value for an answer blank, use commas to separate them.)
-
-$PAR
-
-$SPACE $SPACE $SPACE \($var[0]\neq\) $SPACE\{ans_rule(5)\} $BR
-$SPACE $SPACE $SPACE \($var[1]\neq\) $SPACE\{ans_rule(5)\} 
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
-$showPartialCorrectAnswers = 1;
-
-ANS( $ans->cmp(tolerance=>0.01));
-ANS( Compute("0")->cmp());
-ANS( Compute("0")->cmp());
 
 
 ENDDOCUMENT();

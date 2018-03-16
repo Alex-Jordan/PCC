@@ -21,7 +21,7 @@ DOCUMENT();        # This should be the first executable line in the problem.
 
 loadMacros(
 "PGstandard.pl",
-"MathObject.pl",
+"MathObjects.pl",
 "PGML.pl",
 "PCCmacros.pl",
 "PGcourse.pl",
