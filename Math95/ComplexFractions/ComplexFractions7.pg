@@ -12,16 +12,16 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "contextRationalFunction.pl",
-  "contextArbitraryString.pl",
-  
+  "PGML.pl",
+  "PCCmacros.pl",
+  "contextRestrictedDomains.pl",
 );
 
 ##############################################
 TEXT(beginproblem());
 
 
-Context("Numeric");
+Context("RestrictedDomains");
 $index = random(0,4,1);
 $var[0] = ('x','a','s','p','m')[$index];
 $var[1] = ('y','b','t','q','n')[$index];
@@ -37,64 +37,21 @@ $num = Formula("1/($var[2]+$a)+$b/($var[2]-$a)");
 $den = Formula("$c-1/($var[2]-$a)");
 
 
-Context("RationalFunction");
 Context()->variables->are($var[0]=>'Real',$var[1]=>'Real',$var[2]=>'Real');
-$ans = Formula("(($b+1)*$var[2]+($b-1)*$a)/($c $var[2]^2-$var[2]-($c*$a**2+$a))")->reduce;
+$ans = Formula("(($b+1)*$var[2]+($b-1)*$a)/($c $var[2]^2-$var[2]-($c*$a**2+$a)), $var[2] != $a")->reduce;
+$ans->{trueDomain} = Compute("$var[2] != $a and $var[2] != -$a and $var[2] != $a+1/$c");
 
 ##############################################
 
-Context()->texStrings;
+BEGIN_PGML
 
-BEGIN_TEXT
+Simplify this expression, and if applicable, write the restricted domain.  [@KeyboardInstructions("The problem accepts many ways to format the answers here, but one way is like typing [|$var[2]^2 for $var[2]!=1 and $var[2]!=2|]* where [|!=|]* is how to type the [`\\neq`] symbol.")@]**
 
+[``\frac{[$num]}{[$den]}=``] [__]{$ans}{width=>40}
 
-Simplify the complex fraction.  
-
-\[\frac{$num}{$den}\]
-
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(20)\}
-
-$PAR
-
-There may be some values where the simplification is not valid.  If there are any such values, what are they?  (You may leave an entry blank if there are no such values. If there is more than one value for an answer blank, use commas to separate them.)
-
-$PAR
-
-$SPACE $SPACE $SPACE \($var[2]\neq\) $SPACE\{ans_rule(5)\} $BR
-
-
-END_TEXT
-
-Context()->normalStrings;
+END_PGML
 
 ##############################################
-$showPartialCorrectAnswers = 1;
-
-ANS( $ans->cmp());
-
-Context("ArbitraryString");
-
-ANS( Compute("$a")->cmp(typeMatch=>List,checker => sub {
-my ($correct,$student,$ans) = @_;
-$correct = $correct->value; # get perl string from String object
-$student = $student->value; # ditto
-
-Context("Interval");
-my $smallSet = Set("$a");
-my $largeSet = Set("$a,-$a,$a+1/$c");
-
-$student = Set("{$student}");
-
-return $student->contains($smallSet) && $student->isSubsetOf($largeSet);
-
-
-
-
-}));
-
-
 
 
 ENDDOCUMENT();
