@@ -66,7 +66,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Solve this linear equation for [`[$var1]`]:
+Solve this equation for [`[$var1]`]:
 
     [`` \frac{1}{[$a][$var1]} = \frac{1}{[$var2]} ``]  
 

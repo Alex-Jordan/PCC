@@ -35,7 +35,7 @@ $f = Formula("sqrt(x-$a)")->reduce;
 
 
 Context("Interval");
-$answer = Compute("[$a,inf)");
+$domain = Compute("[$a,inf)");
 
 
 ##############################################
@@ -43,22 +43,14 @@ $answer = Compute("[$a,inf)");
 
 BEGIN_PGML
 
-Find the domain of the function [`f`] where
+Find the domain of [`f`] where [`f(x)=[$f]`].
 
->>[``f(x)=[$f]``]<<
+[@KeyboardInstructions('Use interval notation. If you need to enter [`\infty`], you can type  [|inf|]* or  [|infinity|]*.  If you need to union two (or more) intervals, use the letter [|U|]*.  For example, to enter [`(\infty,5)\cup(5,10]`] you can type [|(-inf,5) U (5,10]|]*.')@]**
 
-Express the domain in interval notation. To enter infinity, type *inf*.
+[____________________]{$domain}
 
-    [__________]
 
 END_PGML
-
-
-##############################################
-$showPartialCorrectAnswers = 1;
-
-
-ANS($answer->cmp());
 
 
 ##############################################
