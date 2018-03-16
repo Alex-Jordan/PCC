@@ -78,7 +78,7 @@ To simplify the expression, we first factor both the numerator and denominator, 
 \end{aligned}
     ``]
 
-Since the term [`[$var]+[$a]`] was crossed out, the domain condition lost during the simplification is:
+Since the factor [`[$var]+[$a]`] was canceled, the domain condition lost during the simplification is:
 
     [``
 \begin{aligned}
