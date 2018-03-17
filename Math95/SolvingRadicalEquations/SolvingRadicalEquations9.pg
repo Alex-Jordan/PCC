@@ -20,6 +20,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",  
   "contextFraction.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
   "PGML.pl",
   "PGcourse.pl",
 );
