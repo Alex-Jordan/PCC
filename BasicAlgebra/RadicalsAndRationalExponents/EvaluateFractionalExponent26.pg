@@ -72,7 +72,7 @@ $ans = Compute("$ans");
 
 BEGIN_PGML
 
-Without using a calculator, evaluate the expression:
+Without using a calculator, evaluate the expression.
 
     [`` (\frac{1}{[$num]})^{-\frac{[$d]}{[$c]}} = ``][__________]{$ans}
 

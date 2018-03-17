@@ -21,6 +21,8 @@ loadMacros(
   "MathObjects.pl",
   "contextLimitedPowers.pl",
   "PGML.pl",
+  "PCCmacros.pl",
+  "bizarroArithmetic.pl",
   "PGcourse.pl",
 );
 
@@ -31,6 +33,12 @@ loadMacros(
 TEXT(beginproblem());
 
 Context("Numeric");
+Context()->operators->set(
+'/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+'/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+'//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+);
 $var = list_random('x','y','z','t','r','m','n','a','b','c');
 Context()->variables->are($var=>'Real',limits=>[0,1]);
 Context()->flags->set(reduceConstants=>0);
@@ -45,28 +53,33 @@ Context()->functions->undefine('sqrt','abs');
 
 $ans = Formula("$var^(2/$n)");
 
+$evaluator = $ans->cmp(
+     checker=>sub{
+      my ( $correct, $student, $ansHash ) = @_;
+      return 0 if $ansHash->{isPreview} || $correct != $student;
+      $student = $ansHash->{student_formula};
+      $correct = $correct->{original_formula} if defined $correct->{original_formula};
+      $student = Formula("$student"); $correct = Formula("$correct");
+      return 0 unless ($correct == $student);
+      Context()->flags->set(bizarroDiv=>1);
+      delete $correct->{test_values};
+      delete $student->{test_values};
+      Value->Error("Your answer is not in the expected form") unless (($correct == $student) or ($student == $correct));
+      Context()->flags->set(bizarroDiv=>0);
+      return 1;
+  }
+);
 
 ##############################################
 
 
 BEGIN_PGML
 
-Simplify the expression. Write your answers with a rational exponent, like [`x`]^[`(1/2)`].
+Simplify the expression, answering with rational exponents and not radicals. [@KeyboardInstructions('To enter [`x^{m/n}`], type [|x^(m/n)|]*.')@]**
 
-For this problem you may assume that all variables are positive.
-
->>[``\sqrt[[$n]]{[$var]}\sqrt[[$n]]{[$var]}``]<<
-
-    [_________________]
+[``\sqrt[[$n]]{[$var]}\,\sqrt[[$n]]{[$var]}=``] [_________________]{$evaluator}
 
 END_PGML
-
-
-##############################################
-$showPartialCorrectAnswers = 1;
-
-
-ANS( $ans->cmp());
 
 
 ##############################################

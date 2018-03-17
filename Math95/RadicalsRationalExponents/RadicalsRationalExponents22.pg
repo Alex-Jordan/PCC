@@ -24,6 +24,8 @@ loadMacros(
   "contextFraction.pl",
   "unionTables.pl",
   "PGML.pl",
+  "PCCmacros.pl",
+  "bizarroArithmetic.pl",
   "PGcourse.pl",
 );
 
@@ -51,6 +53,13 @@ Context("Fraction");
 $frac = Fraction(1,$mn);
 
 Context("Numeric");
+Context()->operators->set(
+'/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+'/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+'//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+);
+
 Context()->variables->are($var=>'Real');
 Context()->flags->set(reduceConstants=>0);
 Context()->flags->set(limits=>[2,5]);
@@ -59,6 +68,22 @@ Context()->operators->undefine('+');
 Context()->functions->undefine('sqrt');
 
 $ans = Formula("$var^($frac)");
+$evaluator = $ans->cmp(
+     checker=>sub{
+      my ( $correct, $student, $ansHash ) = @_;
+      return 0 if $ansHash->{isPreview} || $correct != $student;
+      $student = $ansHash->{student_formula};
+      $correct = $correct->{original_formula} if defined $correct->{original_formula};
+      $student = Formula("$student"); $correct = Formula("$correct");
+      return 0 unless ($correct == $student);
+      Context()->flags->set(bizarroDiv=>1);
+      delete $correct->{test_values};
+      delete $student->{test_values};
+      Value->Error("Your answer is not in the expected form") unless (($correct == $student) or ($student == $correct));
+      Context()->flags->set(bizarroDiv=>0);
+      return 1;
+  }
+);
 
 
 ##############################################
@@ -66,9 +91,9 @@ $ans = Formula("$var^($frac)");
 
 BEGIN_PGML
 
-Simplify the expression and write it using a single exponent.  For this problem you may assume that all variables are positive.
+Simplify the expression, answering with rational exponents and not radicals. [@KeyboardInstructions('To enter [`x^{m/n}`], type [|x^(m/n)|]*.')@]**
 
-    [``[$question]=``][______________]{$ans}
+[``[$question]=``]    [_________________]{$evaluator}
 
 END_PGML
 

@@ -62,7 +62,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Evaluate [`` \sqrt[3]{[$num]} ``] or state that the expression is [|not a real number|]*.
+Without using a calculator, evaluate the expression.
 
     [`` \sqrt[3]{[$num]}= ``] [______________]{$answer}.
 

@@ -73,7 +73,7 @@ $ans = Fraction(1,$e);
 
 BEGIN_PGML
 
-Without using a calculator, evaluate the expression:
+Without using a calculator, evaluate the expression.
 
     [`` [$num]^{-\frac{[$d]}{[$c]}} = ``][__________]{$ans}
 

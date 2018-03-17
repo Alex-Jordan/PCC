@@ -21,6 +21,9 @@ loadMacros(
   "MathObjects.pl",
   "niceTables.pl",
   "PGML.pl",
+  "PCCmacros.pl",
+  "parserRoot.pl",
+  "bizarroArithmetic.pl",
   "PGcourse.pl",
 );
 
@@ -29,6 +32,14 @@ loadMacros(
 TEXT(beginproblem());
 
 Context("Numeric");
+parser::Root->Enable;
+Context()->operators->set(
+'/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+'/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+'//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+);
+
 $var = list_random('x','y','z','t','r','m','n','a','b','c');
 Context()->variables->are($var=>'Real');
 Context()->reductions->set('(-x)+y'=>0,'(-x)-y'=>0);
@@ -44,10 +55,26 @@ while (int($a**(1/$n)) == $a) {$a = random(2,20,1);}
 
 $display = Formula("$a^(1/$n) $var^($m/$n)");
 
+Context()->flags->set(limits=>[0.5,5]);
 
+$ans = Formula("root($n,$a $var^($m))");
 
-$ans[0] = Formula("$n");
-$ans[1] = Formula("$a $var^($m)");
+$evaluator = $ans->cmp(
+     checker=>sub{
+      my ( $correct, $student, $ansHash ) = @_;
+      return 0 if $ansHash->{isPreview} || $correct != $student;
+      $student = $ansHash->{student_formula};
+      $correct = $correct->{original_formula} if defined $correct->{original_formula};
+      $student = Formula("$student"); $correct = Formula("$correct");
+      return 0 unless ($correct == $student);
+      Context()->flags->set(bizarroDiv=>1);
+      delete $correct->{test_values};
+      delete $student->{test_values};
+      Value->Error("Your answer is not in the expected form") unless (($correct == $student) or ($student == $correct));
+      Context()->flags->set(bizarroDiv=>0);
+      return 1;
+  }
+);
 
 
 ##############################################
@@ -55,35 +82,15 @@ $ans[1] = Formula("$a $var^($m)");
 
 BEGIN_PGML
 
-Convert the expression to radical notation.  
+Convert the expression to radical notation.
 
->>[``[$display]``]<<
+[@KeyboardInstructions('To enter something like [`\sqrt[3]{x+1}`], type [|root(3,x+1)|]*.')@]**
 
-[@ LayoutTable(
-[
-[
-[ans_rule(1),cellcss=>'vertical-align:top;'],
-'\(\sqrt{\phantom{\Bigg|}}\)',
-[ans_rule(6),cellcss=>'vertical-align:bottom; border-top: solid black 1px'],
-]
-],
-allcellcss=>'padding:0pt;'
-) @]*
+[``[$display]``] = [__]{$evaluator}{width=>20}
 
 END_PGML
 
-
 ##############################################
-$showPartialCorrectAnswers = 1;
-
-
-ANS( $ans[0]->cmp());
-ANS( $ans[1]->cmp());
-
-
-##############################################
-
-
 BEGIN_PGML_SOLUTION
 
 When we have fractions as exponents, the numerator indicates the power while the denominator indicates the radical: [` x^\frac{m}{n} = \sqrt[n]{x^m} `]. So we can rewrite our expression as follows. We then use radical properties to simplify.

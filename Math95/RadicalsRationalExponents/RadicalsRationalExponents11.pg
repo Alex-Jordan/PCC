@@ -21,6 +21,7 @@ loadMacros(
   "MathObjects.pl",
   "contextLimitedPowers.pl",
   "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -35,7 +36,7 @@ $var = list_random('x','y','z','t','r','m','n','a','b','c');
 Context()->variables->are($var=>'Real');
 Context()->flags->set(reduceConstants=>0);
 
-$n = random(2,5,1);
+$n = random(2,9,1);
 
 if ($n==2) {$problem="\sqrt{$var}";}
 else {$problem = "\sqrt[$n]{$var}";}
@@ -43,7 +44,7 @@ else {$problem = "\sqrt[$n]{$var}";}
 Context()->functions->undefine('sqrt');
 
 $ans = Formula("$var^(1/$n)");
-
+Context()->flags->set(limits=>[0.5,5]);
 
 ##############################################
 
@@ -52,7 +53,7 @@ BEGIN_PGML
 
 Use rational exponents to write the expression. 
 
-* To enter [`x^y`], type *x^y*.  
+[@KeyboardInstructions('To enter [`x^{m/n}`], type [|x^(m/n)|]*.@]**  
 
     [``[$problem]``]=[_________________]{$ans}
 

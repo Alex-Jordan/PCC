@@ -41,6 +41,8 @@ $a2 = $a**2;
 $b2 = $b**2;
 $c2 = $c**2;
 
+Context()->flags->set(limits=>[0.5,5]);
+
 Context()->functions->undefine('sqrt');
 
 $ans1 = Formula("($var**2+$a2)**(1/2)");
@@ -55,15 +57,15 @@ BEGIN_PGML
 
 Simplify the following expression if possible, and then use rational exponents to write the answers. Assume all variables are positive.
 
-* To enter [`x^y`], type *x^y*.  
+[@KeyboardInstructions('To enter [`x^{m/n}`], type [|x^(m/n)|]*.@]**
 
-1)    [`` \sqrt{[$var]^2+[$a2]} = ``][_____________]{$ans1}
+a.    [`` \sqrt{[$var]^2+[$a2]} = ``][_____________]{$ans1}
 
-2)    [`` \sqrt{[$b2]-[$var]^2} = ``][_____________]{$ans2}
+a.    [`` \sqrt{[$b2]-[$var]^2} = ``][_____________]{$ans2}
 
-3)    [`` \sqrt{([$var]+[$a])^2} = ``][_____________]{$ans3}
+a.    [`` \sqrt{([$var]+[$a])^2} = ``][_____________]{$ans3}
 
-4)    [`` \sqrt{[$c2] [$var]^2} = ``][_____________]{$ans4}
+a.    [`` \sqrt{[$c2] [$var]^2} = ``][_____________]{$ans4}
 
 
 END_PGML

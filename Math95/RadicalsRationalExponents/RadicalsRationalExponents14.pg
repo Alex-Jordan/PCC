@@ -21,6 +21,8 @@ loadMacros(
   "MathObjects.pl",
   "contextLimitedPowers.pl",
   "PGML.pl",
+  "PCCmacros.pl",
+  "bizarroArithmetic.pl",
   "PGcourse.pl",
 );
 
@@ -31,6 +33,7 @@ loadMacros(
 TEXT(beginproblem());
 
 Context("Numeric");
+
 $var = list_random('x','y','z','t','r','m','n','a','b','c');
 Context()->variables->are($var=>'Real');
 Context()->flags->set(reduceConstants=>0);
@@ -58,6 +61,12 @@ if ($den==2) {
 }
 
 Context("Numeric");
+Context()->operators->set(
+'/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+'/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+'//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+);
 Context()->variables->are($var=>'Real');
 Context()->flags->set(reduceConstants=>0);
 Context()->operators->undefine('+');
@@ -67,19 +76,34 @@ Context()->flags->set(limits=>[2,5]);
 
 $ans = Formula("$a $var^($num/$den)");
 
+$evaluator = $ans->cmp(
+     checker=>sub{
+      my ( $correct, $student, $ansHash ) = @_;
+      return 0 if $ansHash->{isPreview} || $correct != $student;
+      $student = $ansHash->{student_formula};
+      $correct = $correct->{original_formula} if defined $correct->{original_formula};
+      $student = Formula("$student"); $correct = Formula("$correct");
+      return 0 unless ($correct == $student);
+      Context()->flags->set(bizarroDiv=>1,bizarroPow=>1);
+      delete $correct->{test_values};
+      delete $student->{test_values};
+      Value->Error("Your answer is not in the expected form") unless (($correct == $student) or ($student == $correct));
+      Context()->flags->set(bizarroDiv=>0,bizarroPow=>0);
+      return 1;
+  }
+);
 
 ##############################################
 
 
 BEGIN_PGML
 
-Use rational exponents to write the expression.  
+Simplify the expression, answering with rational exponents and not radicals. [@KeyboardInstructions('To enter [`x^{m/n}`], type [|x^(m/n)|]*.')@]**
 
-* To enter [`x^y`], type *x^y*.  
-
-    [``[$question]=``][______________]{$ans}
+[``[$question]=``]  [_________________]{$evaluator}
 
 END_PGML
+                    
 
 
 ##############################################
