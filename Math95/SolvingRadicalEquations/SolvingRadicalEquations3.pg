@@ -51,7 +51,7 @@ $r[0] = Fraction("($d-$c)**2-$b","$a");
 $h2 = sqrt($a*$r[0]+$b);                             #helper variable 2
 
 
-Context("Interval");
+Context("FiniteSolutionSets");
 Context()->parens->set('{'=>{type=>'Set'});
 Context()->flags->set(formatStudentAnswer=>'parsed');
 $ans = Compute("{$r[0]}");

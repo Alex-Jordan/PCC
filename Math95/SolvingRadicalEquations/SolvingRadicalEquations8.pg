@@ -65,7 +65,7 @@ $h4[$i] = sprintf("%0.5f",sqrt($a*$d[$i]+$b));         # helper variable to chec
 $h5[$i] = sprintf("%0.5f",sqrt($d[$i]));                    # helper variable to check solutions
 }
 
-Context("Interval");
+Context("FiniteSolutionSets");
 Context()->parens->set('{'=>{type=>'Set'});
 Context()->flags->set(formatStudentAnswer=>'parsed');
 if (sqrt($a*$r[0]+$b)+sqrt($r[0]) == $c) 

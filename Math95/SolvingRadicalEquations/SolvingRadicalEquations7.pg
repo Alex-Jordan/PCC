@@ -53,7 +53,7 @@ $r[0] = Fraction("-$a**2+$b","1");
 $h3 = sqrt($b-$r[0]);            # helper variable for checking solution
 $h4 = sqrt($b-$h2);             # helper variable for checking solution
 
-Context("Interval");
+Context("FiniteSolutionSets");
 Context()->parens->set('{'=>{type=>'Set'});
 Context()->flags->set(formatStudentAnswer=>'parsed');
 $ans = Compute("{$r[0]}");

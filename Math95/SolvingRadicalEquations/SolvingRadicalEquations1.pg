@@ -46,7 +46,7 @@ $right = Formula("$b")->reduce;
 
 $r[0] = Fraction("$b**2","$a");
 
-Context("Interval");
+Context("FiniteSolutionSets");
 Context()->parens->set('{'=>{type=>'Set'});
 Context()->flags->set(formatStudentAnswer=>'parsed');
 $ans = Compute("{$r[0]}");
