@@ -34,6 +34,7 @@ loadMacros(
   "MathObjects.pl",  
   "parserNumberWithUnits.pl",
   "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -68,7 +69,7 @@ A pendulum has the length [`L`] ft. The time period [`T`] that it takes to once 
 
 >>[``[$left] = [$right]``]<<
 
-If you need to use a square root, type *sqrt(23)* for [`\sqrt{23}`] (for example). To enter [`\pi`], type *pi*.
+[@KeyboardInstructions('If you need to use a square root, type [|sqrt(23)|]* for [`\sqrt{23}`] (for example).')@]**
 
     The pendulum is [__________]{$ans} long.
 

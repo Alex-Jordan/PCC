@@ -49,7 +49,7 @@ Solve the equation for [`R`]. Assume that [`R`] is positive.
 
 >>[``[$left] = [$right]``]<<
 
-If you need to use a square root, type *sqrt(23)* for [`\sqrt{23}`] (for example).
+[@KeyboardInstructions('If you need to use a square root, type [|sqrt(23)|]* for [`\sqrt{23}`] (for example).')@]**
 
     [`R = `] [____________________].
 
