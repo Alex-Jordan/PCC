@@ -23,35 +23,18 @@ loadMacros(
    "parserAssignment.pl",
    "answerHints.pl",
    "PGML.pl",
-   "contextLimitedRadical.pl",
+   "contextFiniteSolutionSets.pl",
    "PCCmacros.pl",
    "PGcourse.pl",
 );
 
 ##############################################
     
-Context("LimitedRadical");
+Context("FiniteSolutionSets");
 $var = RandomVariableName(type=>'variable');
 Context()->variables->are($var=>'Real');
 Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0, formatStudentAnswer=>parsed);
                                
-parser::Assignment->Allow;
-
-Context()->operators->redefine(',',using=>',',from=>'Numeric');
-    Context()->operators->redefine('or',using=>',',from=>'Numeric');
-    Context()->operators->set(
-      ','=>{string=>' or ',TeX=>'\hbox{ or }'},
-      'or'=>{string=>' or ',TeX=>'\hbox{ or }'}
-    );
-    Context()->lists->set(List => {separator => " or "});
-
-# add solution strings to context- this means that if
-# students enter these (and they are not correct), then 
-# WW will not give a Context warning
-Context()->strings->add("no real solutions"=>{},
-  "no real solution"=>{alias=>'no real solutions'}, 
-  "none"=>{alias=>'no real solutions'}, 
-  );
 
 
    $a = random(2,5,1);
@@ -63,31 +46,22 @@ $solution = $b2/$a;
 
 $left = Compute("sqrt($a*$var)")->reduce;
 $right = Compute("$b")->reduce;
-$ans = List(Formula("$var=$solution"));
+$ans = Formula("{$solution}");
 
 ##############################################
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the radical equation.
-
-* Enter multiple answers separated by commas, such as [`x=1,x=-1`]
-* If there are no real solutions, enter *no real solutions*
+Solve the equation.
 
      [`` [$left] = [$right] ``]
 
-     [__________________________________]
+     [__________________________________]{$ans}
 
 END_PGML
 
 ##############################################
 
-
-$showPartialCorrectAnswers = 1;
-ANS($ans->cmp(list_checker => ~~&radicalListCheck));
-
-
-##############################################
 
 BEGIN_PGML_SOLUTION
 
@@ -105,7 +79,6 @@ To remove the square root, we square both sides of the equation:
 
 Whenever we square both sides of an equation, we could create extraneous solutions. We must check our solution. This part is left as exercise.
 
-For this problem, the solution [`[$ans]`] is checked.
 
 END_PGML_SOLUTION
 
