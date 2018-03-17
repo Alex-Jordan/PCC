@@ -21,7 +21,6 @@ loadMacros(
   "MathObjects.pl",  
   "contextFraction.pl",
   "PCCmacros.pl",
-  "contextFiniteSolutionSets.pl",
   "PGML.pl",
   "PGcourse.pl",
 );
@@ -65,7 +64,7 @@ $h4[$i] = sprintf("%0.5f",sqrt($a*$d[$i]+$b));         # helper variable to chec
 $h5[$i] = sprintf("%0.5f",sqrt($d[$i]));                    # helper variable to check solutions
 }
 
-Context("FiniteSolutionSets");
+Context("Interval");
 Context()->parens->set('{'=>{type=>'Set'});
 Context()->flags->set(formatStudentAnswer=>'parsed');
 if (sqrt($a*$r[0]+$b)+sqrt($r[0]) == $c) 
