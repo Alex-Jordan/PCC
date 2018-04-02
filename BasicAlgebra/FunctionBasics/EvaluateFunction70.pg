@@ -43,7 +43,7 @@ Context()->variables->are($var=>'Real');
 
 $cons = non_zero_random(-10,10,1);
 $f = Formula("$cons")->reduce;
-$a = random(1,5,1);
+$a = do {random(1,5,1);} until ($a != $b);
 $b = $cons;
 $c = 0;
 

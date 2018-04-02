@@ -59,18 +59,35 @@ Context("Fraction");
 Context()->variables->are($var=>'Real');
 
 $a = Fraction($constant,$leadingCoefficient);
+($num, $den) = $a->value;
+$newnum = $num*$den;
+$squarepart = 1;
+for my $i (2..$newnum/2) {
+  if ($newnum % $i**2 == 0) {
+    $squarepart = $i;
+  }
+}
+
+$newnewnum = $newnum/$squarepart**2;
+$b = Fraction($squarepart,$den);
 
 
 Context("Numeric");
 Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstantFunctions=>0);
 
 parser::Assignment->Allow;
 Context()->operators->redefine('or',using=>',',from=>'Numeric');
 Context()->operators->set(","=>{string=>"or",TeX=>"or ",perl=>","});
 
 
+$c = Formula("sqrt($newnewnum)");
+if ($c == 1) {$c = ''};
 
-$solvefequals0 = Compute("$var=sqrt($a) or $var=-sqrt($a)");
+if ($b == 1 and $c ne '') {$b = ''};
+
+
+$solvefequals0 = Compute("$var=$b $c or $var=-$b $c");
 
 
 
