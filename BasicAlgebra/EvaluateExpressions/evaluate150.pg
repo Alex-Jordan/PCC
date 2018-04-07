@@ -67,9 +67,11 @@ BEGIN_PGML
 Evaluate the following expressions.
 
 a. Evaluate [`[$func1]`] when [`[$var1]=[$b]`].
+
     [``[$func1]=``]  [_______]{$ans1}
 
 a. Evaluate [`[$func2]`] when [`[$var1]=[$b]`].
+
     [``[$func2]=``]  [_______]{$ans2}
 
 END_PGML
@@ -79,6 +81,7 @@ END_PGML
 BEGIN_PGML_SOLUTION
 
 a. We substitute [`[$var1]=[$b]`] into [`[$func1]`]:
+
     [``\begin{aligned}
     [$func1] &= [ [$a]([$b]) ]^2 \\
         &= [ [$a*$b] ]^2 \\
@@ -86,6 +89,7 @@ a. We substitute [`[$var1]=[$b]`] into [`[$func1]`]:
     \end{aligned}``]
 
 a. We substitute [`[$var1]=[$b]`] into [`[$func2]`]:
+
     [``\begin{aligned}
     [$func2] &= [ [$a]([$b]) ]^3 \\
         &= [ [$a*$b] ]^3 \\
