@@ -60,12 +60,12 @@ $fractionsquared = $answer2 * $answer2;
 
 
 Context("LimitedNumeric");
-Context()->strings->add("undefined"=>{},
-  "none"=>{alias=>'no real solutions'}, 
+Context()->strings->add("not a real number"=>{},
+  "undefined"=>{alias=>'not a real number'}, 
   );
 
 $answer1 = Compute($answer1);
-$answer3 = Compute("undefined");
+$answer3 = Compute("not a real number");
 
 
 ##############################################
@@ -74,7 +74,7 @@ $answer3 = Compute("undefined");
 
 BEGIN_PGML
 
-Evaluate the function at the given values.
+Evaluate the function at the given values. [@KeyboardInstructions('If it is not possible to evaluate the function value as a real number, you may answer with [|not a real number|]* or [|undefined|]*.')@]**
 
     [`[$fname](x)=[$f]`].
 
