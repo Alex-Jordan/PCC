@@ -89,7 +89,7 @@ do
           $points[$i] = $points[$i]."($dom[$i][$j],$ran[$i][$j])";
           $points[$i] = $points[$i].',' if ($j < $i+1);
        };
-#       $oneToOne[$i] = 'yes' if ($funciton[$i] eq $yes);
+#       $oneToOne[$i] = 'yes' if ($function[$i] eq $yes);
    };
 } 
 until ( grep( /^$yes$/, @function ) and grep( /^$no$/, @function ) and grep( /^$n$/, @oneToOne ) );#make sure each happens at least once

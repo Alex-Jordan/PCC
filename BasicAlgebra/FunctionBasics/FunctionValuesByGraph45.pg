@@ -95,8 +95,8 @@ for my $i (0..1) {
    add_functions($gr[$i], "$e1*$m1 for x in <$e1,$e2> using color:blue and weight:1");
    add_functions($gr[$i], "$func2 for x in <$e2,$e3> using color:blue and weight:1");
 
-   $gr[$i]->lb( new Label($max[0], $max[1]/50, "t in seconds",'black','right','bottom'));
-   $gr[$i]->lb( new Label($max[0]/50, $max[1]-$max[1]/30, "d(t) in feet",'black','left','middle'));
+   $gr[$i]->lb( new Label($max[0], $max[1]/50, "t (seconds)",'black','right','bottom'));
+   $gr[$i]->lb( new Label($max[0]/50, $max[1]-$max[1]/30, "y (feet)",'black','left','middle'));
 }
 
 $gr[1]->stamps( closed_circle($x1,$y1,'red') );
@@ -106,9 +106,9 @@ $gr[1]->lb( new Label($x2+$max[0]/50, $y2, "($x2,$y2)",'red','left','bottom'));
 $gr[1]->stamps( closed_circle($x3,$y3,'red') );
 $gr[1]->lb( new Label($x3-$max[0]/50, $y3, "($x3,$y3)",'red','right','bottom'));
 
-$alt[0] = "This is a graph with the x axis labeled as t in seconds, and y axis labeled as d(t) in feet. There are 3 line segments. The first segments starts at (0,0) and ends at ($px1,$py1). The second segment starts at ($px1,$py1) and ends at ($px2,$py2). The third segment starts at ($px2,$py2) and ends at ($e3,0).";
+$alt[0] = "This is a graph with the x axis labeled as t in seconds, and y axis labeled as y in feet. There are 3 line segments. The first segments starts at (0,0) and ends at ($px1,$py1). The second segment starts at ($px1,$py1) and ends at ($px2,$py2). The third segment starts at ($px2,$py2) and ends at ($e3,0).";
 
-$alt[1] = "This is a graph with the x axis labeled as t in seconds, and y axis labeled as d(t) in feet. There are 3 line segments. The first segments starts at (0,0) and ends at ($px1,$py1). The second segment starts at ($px1,$py1) and ends at ($px2,$py2). The third segment starts at ($px2,$py2) and ends at ($e3,0). The points ($x1,$y1), ($x2,$y2) and ($x3,$y3) are plotted and labeled.";
+$alt[1] = "This is a graph with the x axis labeled as t in seconds, and y axis labeled as y in feet. There are 3 line segments. The first segments starts at (0,0) and ends at ($px1,$py1). The second segment starts at ($px1,$py1) and ends at ($px2,$py2). The third segment starts at ($px2,$py2) and ends at ($e3,0). The points ($x1,$y1), ($x2,$y2) and ($x3,$y3) are plotted and labeled.";
 
 
 @answers1 = (
@@ -172,7 +172,7 @@ $radio2 = RadioButtons(
 
 BEGIN_PGML
 
-The following figure has the graph of function [`d(t)`], which models a particle's distance from the starting line in feet, where [`t`] stands for time in seconds since timing started.
+The following figure has the graph [`y=d(t)`], which models a particle's distance from the starting line in feet, where [`t`] stands for time in seconds since timing started.
 
 [@EnlargeImageStatementPGML@]**
 

@@ -30,6 +30,8 @@ loadMacros(
   "unionLists.pl",
   "extraAnswerEvaluators.pl",
   "PGML.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextFraction.pl",
   "PCCmacros.pl",
   "PGcourse.pl"
 );
@@ -42,11 +44,11 @@ $showPartialCorrectAnswers = 1;
 
 ##############################################################
 
+do{
 Context("Numeric");
 Context()->strings->add(none=>{},EmptySet=>{alias=>"none"});
 Context()->noreduce('(-x)+y','(-x)-y');
 
-do{
 do{
 $a = non_zero_random(-4,4,1);
 $b = non_zero_random(-4,4,1);
@@ -57,11 +59,13 @@ $d = non_zero_random(-4,4,1);
 $f = Formula("$a x + $b")->reduce;
 $g = Formula("$c x + $d")->reduce;
 
-$an1 = Compute("($d-$b)/($a-$c)");
-$an2 = Compute("(+$d+$b)/(+$a+$c)");
+Context("Fraction");
+$an1 = Fraction($d-$b,$a-$c);
+$an2 = Fraction(-$d-$b,$a+$c);
 } until ($an1 != $an2);
 
-$ans = List("$an1, $an2");
+Context("FiniteSolutionSets");
+$ans = Formula("{$an1, $an2}");
 
 ##############################################################
 

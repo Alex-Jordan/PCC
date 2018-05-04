@@ -111,7 +111,7 @@ $evaluator = $ans -> cmp(
 
 BEGIN_PGML
 
-A graph of a funciton [`f`] is given. Use the graph to write a formula for [`f`] in vertex form. You will need to identify the vertex and also one more point on the graph to find the leading coefficient [`a`].
+A graph of a function [`f`] is given. Use the graph to write a formula for [`f`] in vertex form. You will need to identify the vertex and also one more point on the graph to find the leading coefficient [`a`].
 
 [@EnlargeImageStatementPGML()@]**
 

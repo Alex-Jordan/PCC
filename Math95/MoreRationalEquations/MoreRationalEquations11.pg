@@ -21,6 +21,7 @@ TEXT(beginproblem());
 
 
 Context("Fraction");
+do{
 $a = non_zero_random(-8,8,1);
 $b = non_zero_random(-6,6,1);
 $c = random(1,10,1);
@@ -28,6 +29,7 @@ $d = $c**2+$a*$c+$b;
 
 
 $sol[0] = Fraction("-$a-$c","1");
+} until ($c != $sol[0]);
 #$sol[1] = Fraction("-$d*($a*$b+$b*$c*$p+$b**2*$c-$a*$p-$a*$b-$a*$d)","$a*($p+$d)+$c*$p*($p+$b)");
 
 Context("Numeric");

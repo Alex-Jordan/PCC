@@ -121,6 +121,10 @@ for my $i (0..3) {
      $fn[$i] -> weight(1);
   }
 
+  $gr[$i]->lb( new Label($max[0], 0, 'x','black','right','bottom'));
+  $gr[$i]->lb( new Label(0, $max[1], 'y','black','right','top'));
+
+
 }
 
 $ALT0 = $ALT[0];

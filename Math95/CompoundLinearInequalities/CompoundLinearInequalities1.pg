@@ -92,7 +92,7 @@ $comp1[3] = "$LTE";
 $comp2[3] = "$LTE";
 $comb[3] = "and";
 if (($left1[3]->eval(x=>$x[3]) <= $right1[3]->eval(x=>$x[3]))
-&& ($left2[3]->eval(x=>$x[3]) <= $right2[3]->eval(x=>$x[3])))
+and ($left2[3]->eval(x=>$x[3]) <= $right2[3]->eval(x=>$x[3])))
 {$ans[3] = $yes;}
 else {$ans[3] = $no;};
 
@@ -100,11 +100,11 @@ Context()->texStrings;
 
 for my $i (0..2) {
 $statement[$i] = "\($left1[$i] $comp1[$i] $right1[$i]\) $comb[$i] \($left2[$i] $comp2[$i] $right2[$i] \qquad $var[$i] = $x[$i]\)";
-$popup[$i] = PopUp([$yes,$no],"$ans[$i]");
+$popup[$i] = PopUp(['?',$yes,$no],"$ans[$i]");
 }
 
-$statement[3] = "\($left1[3] $comp1[3] $right1[3] $comp2[3] $right2[3] \qquad $var[$i] = $x[3]\)";
-$popup[3] = PopUp([$yes,$no],"$ans[$i]");
+$statement[3] = "\($left1[3] $comp1[3] $right1[3] $comp2[3] $right2[3] \qquad $var[3] = $x[3]\)";
+$popup[3] = PopUp(['?',$yes,$no],"$ans[3]");
 
 
 ##############################################

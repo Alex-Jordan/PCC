@@ -112,6 +112,9 @@ for my $i (0..3) {
     $gr[$i]->lb( new Label($marksep[0]/8, $j, $j,'black','left','middle'));
   }
 
+  $gr[$i]->lb( new Label($max[0], 0, 'x','black','right','bottom'));
+  $gr[$i]->lb( new Label(0, $max[1], 'y','black','right','top'));
+
   for my $j (0..$numPoints-1) {
     $gr[$i]->stamps( closed_circle($px[$i][$j],$py[$i][$j],'blue') );
     $gr[$i]->lb( new Label($px[$i][$j],$py[$i][$j]-$sign*$marksep[1]/8, "($px[$i][$j],$py[$i][$j])", 'blue','center','top'));

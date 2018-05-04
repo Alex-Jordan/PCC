@@ -24,7 +24,9 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextInequalitiesAllowStrings.pl",
+  "contextFraction.pl",
   "PGML.pl",
+  "contextFiniteSolutionSets.pl",
   "PCCmacros.pl",
   "PGcourse.pl"
 );
@@ -51,7 +53,10 @@ $RequiredFormat = "Enter your answer in the form: ".
 Context("Inequalities-AllowStrings");
 Context()->variables->are($var=>'Real');
 Context()->strings->add("No solution"=>{NONE});
-$ans = List((-$b-$a)/2, ($b-$a)/2);
+Context("Fraction");
+@sol = (Fraction(-$b-$a,2),Fraction($b-$a,2));
+Context("FiniteSolutionSets");
+$ans = Formula("$sol[0],$sol[1]");
 
 ######################################
 #  Main text
