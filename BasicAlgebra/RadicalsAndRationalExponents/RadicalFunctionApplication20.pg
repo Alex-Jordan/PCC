@@ -51,7 +51,7 @@ A factory manufactures toy plastic balls. For a ball with a certain volume, V in
 
     [`` r(V) = \sqrt[3]{\frac{3V}{4 \pi}} ``]
 
-[@KeyboardInstructions('Don't round [`\pi`] to [`3.14`] at the beginning. Use your calculator'."'".'s [`\pi`] button instead. At the end of your calculation, you may round your answers to two decimal places.')@]**
+[@KeyboardInstructions("Don't round [`\\pi`] to [`3.14`] at the beginning. Use your calculator's [`\\pi`] button instead. At the end of your calculation, you may round your answers to two decimal places.")@]**
 
 a. If a ball's volume is [`[$a]`] cubic centimeters, its radius must be [__________]{$ans1} centimeters.
 

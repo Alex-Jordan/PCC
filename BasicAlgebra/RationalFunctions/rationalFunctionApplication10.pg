@@ -73,7 +73,7 @@ a. How many deer will live in this forest [`[$x2]`] years later? Round your answ
 a. After how many years, the deer population will be [`[$y3]`]? Round your answer to an integer.  
 [__________]{$ans3}
 
-a. Use a calculator to answer this question: _Very many_ years in the future, about how many deer will live in this forest?  
+a. Use a calculator to answer this question: As time goes on, the population levels off at about how many deer?  
 [__________]{$ans4}
 
 END_PGML

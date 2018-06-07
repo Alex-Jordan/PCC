@@ -76,7 +76,7 @@ $answer = ($conj eq 'and') ? $sol[0]->intersect($sol[1])->reduce : Union($sol[0]
 # Main text
 
 BEGIN_PGML
-Solve the compound inequality using interval notation. 
+Solve the compound inequality. Write the solution set in interval notation.
 
 [@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
 

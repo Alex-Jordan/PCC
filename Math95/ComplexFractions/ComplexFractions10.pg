@@ -39,7 +39,7 @@ $den = Formula("1/($var[2]+$a**2)")->reduce;
 
 
 Context()->variables->are($var[0]=>'Real',$var[1]=>'Real',$var[2]=>'Real');
-$ans = Formula("($var[2]-1)*($var[2]+$a**2)/($var[2]^2-$a**2), $var[2] != -$a**2")->reduce;
+$ans = Formula("($var[2]-1)*($var[2]+$a**2)/(($var[2]+$a)($var[2]-$a)), $var[2] != -$a**2")->reduce;
 $ans->{trueDomain} = Compute("$var[2] != -$a**2 and $var[2] != -$a and $var[2] != $a");
 
 

@@ -37,8 +37,10 @@ while ($a*$c+$b==0) {$c = non_zero_random(-10,10,1);}
 $num = Formula("($a $var[0]+$b)/$var[0]")->reduce;
 $den = Formula("($var[0]-$c)/($var[0])")->reduce;
 
-
-$ans = Formula("($a*$var[0]+$b)/($var[0]-$c), $var[0] != 0")->reduce;
+$g = gcd($a, $b);
+$A = $a/$g;
+$B = $b/$g;
+$ans = Formula("$g($A*$var[0]+$B)/($var[0]-$c), $var[0] != 0")->reduce->reduce;
 $ans->{trueDomain} = Compute("$var[0] != 0 and $var[0] != $c");
 
 ##############################################

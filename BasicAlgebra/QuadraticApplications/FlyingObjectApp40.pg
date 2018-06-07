@@ -53,13 +53,18 @@ do {
 
 $func = Compute("$a*t**2+$b*t+$c")->reduce;
 
-$discriminant = Real(($b)**2-4*$a*$c);
+$discriminant = Real("($b)**2-4*$a*$c");
 $correct = ($discriminant>=0) ? "Yes" : "No";
 
 $nb = -$b;
 $a2 = $a*2;
 
-if ($discriminant>=0) {
+if ($discriminant==0) {
+   $e = int(100*(0.005))/100;
+   $x1 = int(100*(0.005+($nb+$e)/$a2))/100;
+   $x2 = int(100*(0.005+($nb-$e)/$a2))/100;
+}
+elsif ($discriminant>0) {
    $e = int(100*(0.005+sqrt($discriminant)))/100;
    $x1 = int(100*(0.005+($nb+$e)/$a2))/100;
    $x2 = int(100*(0.005+($nb-$e)/$a2))/100;

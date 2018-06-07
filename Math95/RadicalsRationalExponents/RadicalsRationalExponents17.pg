@@ -82,6 +82,7 @@ Context()->operators->undefine('+');
 Context()->functions->undefine('sqrt');
 
 $ans = ($num1==1) ? Formula("$a*$var^($frac)") : Formula("$a*$var^($frac)");
+Context()->variables->set($var=>{limits=>[2,5]});
 
 $evaluator = $ans->cmp(
      checker=>sub{

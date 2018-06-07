@@ -38,7 +38,7 @@ $den = Formula("1/($var[1]-$b)-1/$c");
 
 
 Context()->variables->are($var[0]=>'Real',$var[1]=>'Real',$var[2]=>'Real');
-$ans = Formula("($a*$c $var[1]+($c-$a*$b*$c))/(-$var[1]+($b+$c)), $var[1] != $b")->reduce->reduce;
+$ans = Formula("$c ($a $var[1]+(1-$a*$b))/(-$var[1]+($b+$c)), $var[1] != $b")->reduce->reduce;
 $ans->{trueDomain} = Compute("$var[1] != $b and $var[1] != $b+$c");
 
 ##############################################

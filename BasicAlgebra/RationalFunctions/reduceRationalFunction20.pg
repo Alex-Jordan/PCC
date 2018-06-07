@@ -47,7 +47,7 @@ $step1Num = Formula("$var($var**2-$a2)")->reduce;
 $step1Den = Formula("$var($var**2+($a+$b)*$var+$a*$b)")->reduce;
 
 $function = Formula("$num/$den")->reduce;
-$ans = Formula("($var+$a)/($var+$b), $var != -$a and $var != 0")->reduce;
+$ans = Formula("($var-$a)/($var+$b), $var != -$a and $var != 0")->reduce;
 $ans->{trueDomain} = Compute("$var != -$a and $var != 0 and $var != -$b");
 
 $lostDomain = List(-$a,0);

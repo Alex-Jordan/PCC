@@ -326,9 +326,7 @@ The following two triangles are similar to each other. Find the length of the mi
 
 [@KeyboardInstructions(q!Use [|ft|]* for feet.!)@]**
 
-The first missing side's length is [`x=`][__________]{$ans0U}.
-
-The second missing side's length is [`y=`][__________]{$ans1U}.
+The length of the side labeled [`x`] is [__________]{$ans0U} and the length of the side labeled [`y`] is [__________]{$ans1U}.
 
 END_PGML
 

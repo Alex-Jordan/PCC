@@ -183,9 +183,9 @@ BEGIN_PGML
 >>[@image(insertGraph($picture), width=>240, tex_size=>TeXscalar(), extra_html_tags=>"alt = '$text' title = '$text'") @]*<<
 
 
-Find the value of [`x`], rounded to two decimal places.
+Find the value of [`x`], accurate to at least two decimal places.
 
-    [` x={}`][_____________]{$ans}
+    [` x\approx{}`][_____________]{$ans}
 
 END_PGML
 

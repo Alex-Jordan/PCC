@@ -43,7 +43,7 @@ $answer=Union("(-inf,$a)U[$b,inf)");
 # Main text
 
 BEGIN_PGML
-Express the following inequality using interval notation.
+Solve the compound inequality. Write the solution set in interval notation.
 
 [@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
 

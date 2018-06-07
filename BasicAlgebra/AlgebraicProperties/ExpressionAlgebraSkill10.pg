@@ -100,20 +100,19 @@ When we add/subtract expressions, we cannot combine "unlike terms." For example,
 
 When we multiply expressions, we can multiply "unlike terms." For example, [`[$func4]=[$ans4]`].
 
-1)    
+a)    
     [`` [$func1]=[$ans1] ``] 
 
-2)    
+a)    
     [`` [$func2]=[$ans2] ``] 
 
-3)    
+a)    
     [`` [$func3]=[$ans3] ``] 
 
-4)    
+a)    
     [`` [$func4]=[$ans4] ``] 
 
 END_PGML_SOLUTION
 
 ENDDOCUMENT();
-
 
