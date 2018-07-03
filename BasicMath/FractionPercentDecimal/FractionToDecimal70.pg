@@ -70,7 +70,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Change the following mixed numbers to decimals. Do no round your answers.
+Change the following mixed numbers to decimals. Do not round your answers.
 
 a.    [`[$frac1]`] = [___________]{$dec1}
 

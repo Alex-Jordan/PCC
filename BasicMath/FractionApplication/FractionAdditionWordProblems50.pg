@@ -32,6 +32,7 @@ loadMacros(
   "PGML.pl",
 #  "parserNumberWithUnits.pl",
   "contextFraction.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -97,11 +98,10 @@ $refreshCachedImages = 1;
 
 BEGIN_PGML
 
-Find the perimeter of the rectangle.
+The perimeter of the rectangle below is [_____________]{$perimeter} meters. [@KeyboardInstructions('(Use a fraction in your answer.)')@]**
 
 >>[@ image(insertGraph( $picture  ), tex_size=>400, height=>(240*$ymax/$xmax), width=>240, extra_html_tags => 'alt = "a rectangle with a base of $base m and a height of $height m" title = "a rectangle with a base of $base m and a height of $height m"') @]*<<
 
-Its perimeter is [_____________]{$perimeter} meters. (Use a fraction in your answer.)
 
 END_PGML
 

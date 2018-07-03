@@ -1,10 +1,10 @@
-# WeBWorK problem written by Carl Yao
+# WeBWorK problem written by Alex Jordan
 # Portland Community College
 #
 # 
 # Compute absolute value. 
 #
-# Last edited: Jordan 6/20/13
+# Last edited: Jordan 7/2/2018
 #
 # ENDDESCRIPTION
 
@@ -39,7 +39,7 @@ loadMacros(
 ##############################################
 
 Context("LimitedNumeric");
-$num = random(-10,10,1);
+$num = list_random(-1,1)*random(0.01,100,0.01);
 $absnum = abs($num);
 
 ##############################################
@@ -50,7 +50,7 @@ BEGIN_PGML
 
 Evaluate the following.
 
-    [`` |{[$num]}|= ``] [______]{$absnum}
+    [`` \left\lvert[$num]\right\rvert= ``] [______]{$absnum}
 
 END_PGML
 

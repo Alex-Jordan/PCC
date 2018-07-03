@@ -31,6 +31,7 @@ loadMacros(
   "PGML.pl",
 #  "parserNumberWithUnits.pl",
   "contextFraction.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -95,11 +96,10 @@ $refreshCachedImages = 1;
 
 BEGIN_PGML
 
-Find the area of the rectangle.
+The area of the rectangle below is [_____________]{$area} square meters. [@KeyboardInstructions('(Use a fraction in your answer.)')@]**
 
 >>[@image(insertGraph( $picture  ), tex_size=>400, height=>(240*$height/$base), width=>240, extra_html_tags => 'alt = "a rectangle with a base of $base m and a height of $height m" title = "a rectangle with a base of $base m and a height of $height m"') @]*<<
 
-Its area is [_____________]{$area} square meters. (Use a fraction in your answer.)
 
 END_PGML
 

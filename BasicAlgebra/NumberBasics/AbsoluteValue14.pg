@@ -1,10 +1,10 @@
-# WeBWorK problem written by Carl Yao
+# WeBWorK problem written by Alex Jordan
 # Portland Community College
 #
 # 
 # Compute absolute value. 
 #
-# Last edited: Jordan 6/20/13
+# Last edited: Jordan 7/3/18
 #
 # ENDDESCRIPTION
 
@@ -38,9 +38,10 @@ loadMacros(
 
 ##############################################
 
-Context("LimitedNumeric");
-$num = random(-10,10,1);
-$absnum = abs($num);
+Context("Fraction");
+do {$number = Fraction(non_zero_random(-100,100),non_zero_random(-100,100))} until (($number->value)[1] != 1);
+Context("LimitedFraction");
+$absnum = Fraction(($number->value)[0],($number->value)[1]);
 
 ##############################################
 
@@ -50,7 +51,7 @@ BEGIN_PGML
 
 Evaluate the following.
 
-    [`` |{[$num]}|= ``] [______]{$absnum}
+    [`` \left\lvert[$number]\right\rvert= ``] [______]{$absnum}
 
 END_PGML
 

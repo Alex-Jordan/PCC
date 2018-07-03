@@ -31,6 +31,7 @@ loadMacros(
   "PGML.pl",
 #  "parserNumberWithUnits.pl",
   "contextFraction.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -113,11 +114,10 @@ $refreshCachedImages = 1;
 
 BEGIN_PGML
 
-Find the area of the triangle.
+The area of the triangle below is [_____________]{$area} square feet. [@KeyboardInstructions('(Use a fraction in your answer.)')@]**
 
 >>[@ image(insertGraph( $picture  ), width=>240, extra_html_tags => 'alt = "a triangle with one side parallel to the ground; this side is $base ft long; the height is $height ft long." title = "a triangle with one side parallel to the ground; this side is $base ft long; the height is $height ft long."') @]*<<
 
-Its area is [_____________]{$area} square feet. (Use a fraction in your answer.)
 
 END_PGML
 

@@ -54,7 +54,6 @@ $T = random(2,10,2);
 $TU = NumberWithUnits("$T s");
 
 Context("LimitedNumeric");
-Context()->{format}{number} = "%.1f";
 $L = Real(8*$T**2 / pi**2);
 $LU = NumberWithUnits("$L ft");
 $ans = $LU;

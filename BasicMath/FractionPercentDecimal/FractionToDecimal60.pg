@@ -61,7 +61,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Change the following fractions to decimals. Do no round your answers.
+Change the following fractions to decimals. Do not round your answers.
 
 a.    [`[$frac1]`] = [___________]{$dec1}
 
