@@ -48,7 +48,7 @@ Context("Numeric");
 ##############################################
 
 BEGIN_PGML
-Give examples of each type of number. If no such number exists, enter [|DNE|]* or [|NONE|]*.
+[@KeyboardInstructions('For each part, if no such number exists, enter [|DNE|]* or [|NONE|]*.')@]**
 
 a. Give an example of a whole number that is not an integer.
 

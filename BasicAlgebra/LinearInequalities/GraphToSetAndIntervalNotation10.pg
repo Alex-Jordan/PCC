@@ -90,19 +90,19 @@ for $leftType ('open','closed', 'inf')
       $tempgr->arrowTo($reach-2*$pixel,0,'black',1);
       $tempgr->moveTo(0,0);
       $tempgr->arrowTo(-$reach+2*$pixel,0,'black',1);
-      $tempgr->lb( new Label($reach-$pixel,-$verticalSpace/5,$var,'black','right','top'));
+      $tempgr->lb( new Label($reach-$pixel,-$verticalSpace/5,$var,'black','right','top','large'));
       @ticks = ();
       for my $j ((-$reach+1)..($reach-1)) {push(@ticks,$j);};
 
       $tempgr->h_ticks(0,"black",@ticks);
-      $tempgr->lb( new Label(0,-$verticalSpace/5,0,'black','center','top'));
-      $tempgr->lb( new Label(4,-$verticalSpace/5,4,'black','center','top'));
-      $tempgr->lb( new Label(-4,-$verticalSpace/5,-4,'black','center','top'));
+      $tempgr->lb( new Label(0,-$verticalSpace/5,0,'black','center','top','large'));
+      $tempgr->lb( new Label(4,-$verticalSpace/5,4,'black','center','top','large'));
+      $tempgr->lb( new Label(-4,-$verticalSpace/5,-4,'black','center','top','large'));
 
       $shadingoffset = $verticalSpace/2;
       if (($leftType eq 'inf' or $rightType eq 'inf') and !(($leftType eq 'inf' and $rightType eq 'inf'))) 
       {
-         $tempgr->lb( new Label($a,$verticalSpace,$a,'blue','center','bottom'));
+         $tempgr->lb( new Label($a,$verticalSpace,$a,'blue','center','bottom','large'));
          if ($leftType eq 'open' or $rightType eq 'open')
          {
 	     my $bracket = ($leftType eq 'open') ? '(' : ')';
@@ -148,10 +148,12 @@ Context()->normalStrings;
 BEGIN_PGML
 [@KeyboardInstructions(q!Please type [|INF|]* for [`\infty`], [|<=|]* for [`\leq`], and [|>=|]* for [`\geq`].!)@]** 
 
-    Write this inequality in set-builder notation: [_____________________]
+    Write this inequality in set-builder notation.
+    [_____________________]
 
 
-    Write this inequality in interval notation: [_____________________]  
+    Write this inequality in interval notation.
+    [_____________________]  
 
 
 
