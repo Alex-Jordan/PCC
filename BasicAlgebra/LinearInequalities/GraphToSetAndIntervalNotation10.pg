@@ -148,11 +148,11 @@ Context()->normalStrings;
 BEGIN_PGML
 [@KeyboardInstructions(q!Please type [|INF|]* for [`\infty`], [|<=|]* for [`\leq`], and [|>=|]* for [`\geq`].!)@]** 
 
-    Write this inequality in set-builder notation.
+    Write this inequality in set-builder notation.  
     [_____________________]
 
 
-    Write this inequality in interval notation.
+    Write this inequality in interval notation.  
     [_____________________]  
 
 

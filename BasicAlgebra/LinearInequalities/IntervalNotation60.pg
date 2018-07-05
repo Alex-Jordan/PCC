@@ -55,7 +55,7 @@ Change the following inequality from set-builder notation to interval notation:
 
 [@KeyboardInstructions(q!Please use [|INF|]* to represent [`\infty`].!)@]**
 
-    The interval notation is [_____________]{$ans}.
+    [_____________]{$ans}
 
 END_PGML
 
