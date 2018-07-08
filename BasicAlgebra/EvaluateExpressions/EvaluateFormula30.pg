@@ -68,7 +68,7 @@ BEGIN_PGML
 
 The formula  
 
-    [``y=\frac{1}{2}\,a\,t^2 +v_0\,t + y_0``]  
+    [```y=\frac{1}{2}\,a\,t^2 +v_0\,t + y_0```]  
 
 gives the vertical position of an object, at time [`t`], thrown with an initial velocity [`v_0`], from an initial position [`y_0`] in a place where the acceleration of gravity is [`a`]. The acceleration of gravity on earth is [`[$gU]`]. It is negative, because we consider the upward direction as positive in this situation, and gravity pulls down.
 

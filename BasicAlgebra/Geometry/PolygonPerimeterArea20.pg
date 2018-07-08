@@ -44,18 +44,20 @@ Context()->flags->set(
 
 $unit = "cm";
 
-$base = random(14,25,1);
-$radius = $base/2;
-do {$height = random(5,13,1);} until ($radius!=$height);
+do {
+   $base = random(14,25,1);
+   $radius = $base/2;
+   $height = random(5,13,1);
+   $fullheight = $radius+$height;
+} until ($fullheight<$base);
 
 $xmin = 0;         #The viewing window
-$max = max($height+$radius,$base);
-$xmax = $max*1.2;
+$xmax = $base*240/210;
 $ymin = 0;
-$ymax = $xmax;
+$ymax = (210*$fullheight/$base+30)*$fullheight/(210*$fullheight/$base);
 
 $labelShift = $xmax/40;
-$cornersize = 0.8;
+$cornersize = $xmax*10/240;
 
 $perimeter = $base + 2*$height + pi*$base/2;
 $area = $base*$height + $radius**2*pi/2;
@@ -80,10 +82,10 @@ $areaU = NumberWithUnits("$area $unit^2");
 @picture = ();
 for my $i (0..1) {
    $picture[$i] = init_graph($xmin,$ymin,$xmax,$ymax,
-      pixels=>[240,240]);
+      pixels=>[240,240*$ymax/$xmax]);
 
-   $picture[$i]->lb( new Label($x[1],$y[0]-$labelShift,"$baseU",'black','center','middle'));
-   $picture[$i]->lb( new Label($x[2]-$labelShift,($y[0]+$y[1])/2,"$heightU",'black','right','middle'));
+   $picture[$i]->lb( new Label($x[1],$y[0],"$baseU",'black','center','top','large'));
+   $picture[$i]->lb( new Label($x[2],($y[0]+$y[1])/2,"$heightU",'black','center','bottom','large','vertical'));
 
    $picture[$i]->new_color("darkblue",  100,100,255); 
 
@@ -93,12 +95,12 @@ for my $i (0..1) {
    $picture[$i]->lineTo($x[2],$y[1], darkblue,3);
 
    $picture[$i]->moveTo($x[0],$y[0]+$cornersize);
-   $picture[$i]->lineTo($x[0]+$cornersize,$y[0]+$cornersize, darkblue,3);
-   $picture[$i]->lineTo($x[0]+$cornersize,$y[0], darkblue,3);
+   $picture[$i]->lineTo($x[0]+$cornersize,$y[0]+$cornersize, darkblue,1);
+   $picture[$i]->lineTo($x[0]+$cornersize,$y[0], darkblue,1);
 
    $picture[$i]->moveTo($x[2],$y[0]+$cornersize);
-   $picture[$i]->lineTo($x[2]-$cornersize,$y[0]+$cornersize, darkblue,3);
-   $picture[$i]->lineTo($x[2]-$cornersize,$y[0], darkblue,3);
+   $picture[$i]->lineTo($x[2]-$cornersize,$y[0]+$cornersize, darkblue,);
+   $picture[$i]->lineTo($x[2]-$cornersize,$y[0], darkblue,1);
 
    $picture[$i]->moveTo($x[0],$y[1]);
    $picture[$i]->lineTo($x[1],$y[1], darkblue,1,"dashed");
@@ -118,7 +120,7 @@ $picture[1]->stamps( closed_circle($x[1],$y[1],'red') );
 $picture[1]->stamps( closed_circle($x[2],$y[1],'red') );
 $picture[1]->moveTo($x[1],$y[1]);
 $picture[1]->lineTo($x[2],$y[1], red,1,"dashed");
-$picture[1]->lb( new Label(($x[1]+$x[2])/2,$y[1]+$labelShift,"$base/2 = $radiusU",'red','center','middle'));
+$picture[1]->lb( new Label(($x[1]+$x[2])/2,$y[1]+$labelShift,"$base/2 = $radiusU",'red','center','middle','large'));
 
 @alt = ();
 $alt[0] = "The graph shows a shape with a rectangle at the bottom and a semicircle on top of it. The diameter of the semicircle overlaps the top base of the rectangle. For the rectangle, its base is $baseU, and its height is $heightU.";

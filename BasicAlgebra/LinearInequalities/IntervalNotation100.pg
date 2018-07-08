@@ -61,7 +61,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Change the following inequality from set-builder notation to interval notation:
+A set is written using set-builder notation. Write it using interval notation.
 
     [`` \left\{ x \mid {[$left]} [$comp] [$right] \right\} ``]
 

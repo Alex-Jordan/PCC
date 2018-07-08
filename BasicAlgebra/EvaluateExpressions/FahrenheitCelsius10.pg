@@ -66,7 +66,7 @@ BEGIN_PGML
 
 To convert a temperature measured in degrees Fahrenheit to degrees Celsius, there is a formula:
 
-     [`` C=[$func] ``]
+     [``` C=[$func] ```]
 
 where [`C`] represents the temperature in degrees Celsius and [`F`] represents the temperature in degrees Fahrenheit.
 
