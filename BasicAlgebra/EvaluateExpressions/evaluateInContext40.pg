@@ -64,11 +64,9 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-The height inside a camping tent when you are [`d`] feet from the edge of the tent is given by
+The height inside a camping tent when you are [`d`] feet from the edge of the tent is given by [```h=[$func]```] where [`h`] stands for height in feet. 
 
-    [```h=[$func]```]
-
-where [`h`] stands for height in feet. Determine the height when you are:
+Determine the height when you are:
 
 a. [`[$d1U]`] from the edge.  
    The height inside a camping tent when you [`[$d1U]`] from the edge of the tent is [__________]{$ans1U}
