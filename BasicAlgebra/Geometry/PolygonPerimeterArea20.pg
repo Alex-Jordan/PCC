@@ -137,11 +137,10 @@ Find the perimeter and area of this shape, which is a semicircle on top of a rec
 
 >>[@ image(insertGraph( $picture[0]  ),  width=>240, extra_html_tags => "alt = '$alt[0]' title = '$alt[0]' ") @]*<<
 
-Use decimals in your answers. Don't leave [`\pi`] as it is.
+[@KeyboardInstructions(q!(Use [|cm|]* for centimeters and [|cm^2|]* for square centimeters. Use a decimal approximation in your answer.)!)@]**
 
     Its perimeter is [_____________]{$perimeterU} and its area is [_____________]{$areaU}. 
 
-[@KeyboardInstructions(q!(Use [|cm|]* for centimeters and [|cm^2|]* for square centimeters.)!)@]**
 
 END_PGML
 

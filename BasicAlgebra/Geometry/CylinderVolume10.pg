@@ -42,8 +42,8 @@ loadMacros(
 Context("Numeric");
 Context()->flags->set(reduceConstants=>0);
 
-do {$height = random(2,10,1);
-$radius = random(2,10,1);} until (abs($height-2*$radius)<4);
+$height = random(2,9,1);
+$radius = random(2,9,1);
 
 $width2d = 2*$radius;
 $height2d = 1.25*$height;
@@ -67,16 +67,16 @@ Context()->variables->set(pi => {TeX=>'\pi'});
 $ansVolumePIU = FormulaWithUnits("$piConstant pi m^3");
 $ansVolumeDEU = NumberWithUnits("$volumeDE m^3");
 
-$xmin=$width2d*0.1;
-$xmax=$width2d*1.3;
+$xmin=0;
+$xmax=$width2d*240/220;
 $ymin=0;
-$ymax=$xmax*$height2d/$width2d;
+$ymax=(20+220*$height2d/$width2d)/240*$xmax;
 
 $gr = init_graph($xmin,$ymin,$xmax,$ymax,
-size=>[240,240*$height2d/$width2d]
+size=>[240,240*$ymax/$xmax]
 );
 
-@x=(($xmax-$width2d)/2, ($xmax+$width2d)/2);
+@x=(5/240*$xmax, 5/240*$xmax+$width2d);
 @y=(($ymax-$height2d)/2 + $height/8, ($ymax+$height2d)/2 - $height/8);
 
 $gr->moveTo($x[0],$y[0]);
@@ -97,11 +97,11 @@ $Bot2 = new Fun( $xfunc, $yfuncBot, $gr );
 $Bot2->domain(3.14159/5, 4*3.14159/5);
 $Bot2->weight(1);
 $gr->lb( new Label($x[1],($y[0]+$y[1])/2,$heightU,
-    'black','left','middle'));
+    'black','center','top','large','vertical'));
 $gr->moveTo(($x[0]+$x[1])/2,$y[1]);
 $gr->lineTo($x[1],$y[1],'blue',1);
 $gr->lb( new Label(($x[0]+3*$x[1])/4,$y[1],$radiusU,
-    'black','center','bottom'));
+    'black','center','bottom','large'));
 $gr->new_color("darkblue",  100,100,255);
 $gr->new_color("lightblue", 214,230,244);
 $gr->fillRegion([$xmax/2,$ymax/2,"darkblue"]);
@@ -115,7 +115,7 @@ $alt = "a cylinder of height $heightU and base radius $radiusU";
 
 BEGIN_PGML
 
-A cylinder's base's radius is [`[$radiusU]`], and its height is [`[$heightU]`].
+Find the volume of this cylinder.
 
 >>[@image( insertGraph($gr), width=>240, 
     extra_html_tags => "alt = '$alt' title = '$alt'")@]*<<
