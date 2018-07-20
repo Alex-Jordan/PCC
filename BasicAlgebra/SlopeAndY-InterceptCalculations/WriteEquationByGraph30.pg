@@ -112,11 +112,11 @@ $gr = init_graph($xmin,$ymin,$xmax,$ymax,
 );
 $gr->lb('reset');
 for ($j=-$xmax+$xmark;$j<$xmax;$j=$j+$xmark) {
-   $gr->lb( new Label($j,  -0.1, $j,'black','center','top'));
+   $gr->lb( new Label($j,  -0.1, $j,'black','center','top','large'));
 }
 for ($j=-$ymax+$ymark;$j<$ymax;$j=$j+$ymark) {
    if (Real($j) == 0) {next;}
-   $gr->lb( new Label(0,  $j,' '.$j,'black','left','middle'));
+   $gr->lb( new Label(0,  $j,' '.$j,'black','left','middle','large'));
 }
 add_functions($gr, "$m*x+$b for x in <$xmin,$xmax> using color:blue and weight:1");
 $gr->stamps( closed_circle($x1,$y1,'blue') );
