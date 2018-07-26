@@ -26,8 +26,9 @@ $n = random(1,5,1);
 $d = random(max(1,$n-3),$n+3,1);
 
 $m = Fraction("$n","$d");
-$b = random(-3,3,1);
-$b = Compute("$b");
+$mperl = $n/$d;
+$bperl = random(-3,3,1);
+$b = Compute("$bperl");
 $ans = $m;
 
 $xmin = -6;
@@ -42,8 +43,11 @@ size=>[240,240]
 );
 Context("Numeric");
 $h = non_zero_random(-3,3,1);
-add_functions($gr, "$m*(x-$h)+$b for x in <$xmin,$xmax>" . 
-  " using color:blue and weight:1");
+($start,$stop) = (num_sort($xmin,$xmax,($ymin-$bperl)/$mperl+$h,($ymax-$bperl)/$mperl+$h))[1,2];
+$gr->moveTo($h,$bperl);
+$gr->arrowTo($start,$mperl*($start-$h)+$bperl,'blue',1);
+$gr->moveTo($h,$bperl);
+$gr->arrowTo($stop,$mperl*($stop-$h)+$bperl,'blue',1);
 
 
 ##############################################
@@ -61,8 +65,6 @@ $PAR
 $BBLOCKQUOTE
 \{ image( insertGraph($gr), 
 width=>240,height=>240,tex_size=>800 ) \}
-$BR
-(Click on graph to enlarge)
 
 $PAR
 The slope is \{ ans_rule(10) \}.

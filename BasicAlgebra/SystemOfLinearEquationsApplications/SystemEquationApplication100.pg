@@ -27,6 +27,7 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGML.pl",
+  "PCCmacros.pl",
   "parserNumberWithUnits.pl",
   "PGcourse.pl",
 );
@@ -67,7 +68,7 @@ Write and solve a system of equations to answer the following questions.
 
     The river current's speed was [______________]{$speedCurrentU}.
 
-Use *mi* for miles, and *hr* for hours.
+[@KeyboardInstructions('Use [|mi|]* for miles, and [|hr|]* for hours.')@]**
 
 END_PGML
 

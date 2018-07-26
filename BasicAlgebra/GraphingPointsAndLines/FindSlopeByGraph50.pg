@@ -95,7 +95,12 @@ for my $i (0,1) {
     $gr[$i]->lb( new Label($marksep[0]/8, $j, $j,'black','left','middle','large'));
   }
 
-add_functions($gr[$i], "$m*x+$b for x in <$min[0],$max[0]> using color:blue and weight:2");
+($start,$stop) = ($min[0],$max[0])[1,2];
+$gr[$i]->moveTo($x1,$y1);
+$gr[$i]->arrowTo($start,$mperl*$start+$b,'blue',1);
+$gr[$i]->moveTo($x1,$y1);
+$gr[$i]->arrowTo($stop,$mperl*$stop+$b,'blue',1);
+
 }
 
 
@@ -103,7 +108,7 @@ add_functions($gr[$i], "$m*x+$b for x in <$min[0],$max[0]> using color:blue and 
 Context("LimitedNumeric");
 BEGIN_PGML
 
-A line's graph is shown below. [@EnlargeImageStatementPGML()@]**
+Below is a line's graph. [@EnlargeImageStatementPGML()@]**
 
 
 END_PGML

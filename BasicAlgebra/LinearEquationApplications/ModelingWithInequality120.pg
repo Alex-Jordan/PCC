@@ -78,7 +78,7 @@ Context()->flags->set(showExtraParens=>0);
 $max = random(4,8,0.1);
 $rate = random(0.8,1.5,1);
 $seconds = random(1.5,$max/$rate-0.5,0.1);
-$left = $max-$rate*$seconds;
+$left = Real($max-$rate*$seconds);
 
 $ansString = "$max-$rate*t<=$left";
 Context()->variables->set(t=>{limits=>[$seconds-10,$seconds+10]});

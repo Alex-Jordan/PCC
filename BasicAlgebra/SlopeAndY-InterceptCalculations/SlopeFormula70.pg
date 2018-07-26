@@ -78,20 +78,20 @@ BEGIN_PGML_SOLUTION
 
 To find a line's slope, we can use the slope formula:
 
-    [`` \text{slope}=\frac{y_{2}-y_{1}}{x_{2}-x_{1}} ``]
+    [``` \text{slope}=\frac{y_{2}-y_{1}}{x_{2}-x_{1}} ```]
 
 First, we mark which number corresponds to which variable in the formula:
 
-    [`` ([$x1],[$y1]) \longrightarrow (x_{1},y_{1}) ``]
+    [``` ([$x1],[$y1]) \longrightarrow (x_{1},y_{1}) ```]
 
-    [`` ([$x2],[$y2]) \longrightarrow (x_{2},y_{2}) ``]
+    [``` ([$x2],[$y2]) \longrightarrow (x_{2},y_{2}) ```]
 
 Now we substitute these numbers into the corresponding variables in the slope formula:
 
-    [``\begin{aligned} \text{slope}&=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}\\
+    [```\begin{aligned} \text{slope}&=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}\\
 &=\frac{[$y2]-[$outputy1]}{[$x2]-[$outputx1]}\\
 &=\frac{[$s1]}{[$s2]}\\
-&=-\frac{[$num]}{[$den]} \end{aligned}``]
+&=-\frac{[$num]}{[$den]} \end{aligned}```]
 
 So the line's slope is [``-\frac{[$num]}{[$den]}``].
 
