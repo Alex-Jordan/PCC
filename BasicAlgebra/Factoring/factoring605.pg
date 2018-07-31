@@ -83,9 +83,7 @@ if(abs($a)>5 or abs($b)>5)
      $hint .= "$hintvalb = $b^3";
    }
 Context()->texStrings;
-BEGIN_TEXT
-\($hint\)
-END_TEXT
+    TEXT($PAR,$hint);
 }
 
 

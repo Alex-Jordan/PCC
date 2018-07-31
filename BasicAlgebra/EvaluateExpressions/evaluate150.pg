@@ -82,19 +82,19 @@ BEGIN_PGML_SOLUTION
 
 a. We substitute [`[$var1]=[$b]`] into [`[$func1]`]:
 
-    [``\begin{aligned}
+    [```\begin{aligned}
     [$func1] &= [ [$a]([$b]) ]^2 \\
         &= [ [$a*$b] ]^2 \\
         &= [$ans1]
-    \end{aligned}``]
+    \end{aligned}```]
 
 a. We substitute [`[$var1]=[$b]`] into [`[$func2]`]:
 
-    [``\begin{aligned}
+    [```\begin{aligned}
     [$func2] &= [ [$a]([$b]) ]^3 \\
         &= [ [$a*$b] ]^3 \\
         &= [$ans2]
-    \end{aligned}``]
+    \end{aligned}```]
 
 END_PGML_SOLUTION
 

@@ -77,7 +77,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Find the product of the two *bi*nomials.
+Find the product.
 
     [`\left([$poly1]\right)\left([$poly2]\right)= `][________________________________]{$ans}
 

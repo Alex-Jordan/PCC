@@ -91,7 +91,9 @@ $ans = Compute("no solution");
 ##############################################
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the following system of equations. [```\left\{\begin{aligned}
+Solve the following system of equations.
+
+[```\left\{\begin{aligned}
   [$topLeft] & =  [$e] \\
   [$botLeft] & =  [$f] 
 \end{aligned}\right.```]

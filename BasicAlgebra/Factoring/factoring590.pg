@@ -73,11 +73,9 @@ END_PGML
 if(abs($b)>5)
 {
     $hintval = $b**3;
-    $hint = "\text{Hint}: $hintval=$b^3" ;
+    $hint = "Hint: \($hintval=$b^3\)" ;
     Context()->texStrings;
-BEGIN_TEXT
-     \($hint\)
-END_TEXT
+    TEXT($PAR,$hint);
 }
 
 $step = Formula("$a$var")->reduce;
