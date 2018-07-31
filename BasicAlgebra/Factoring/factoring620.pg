@@ -2,7 +2,7 @@
 # Portland Community College
 #
 # Template:
-# Factor the given polynomial 
+# Factor the given polynomial. 
 #
 #     a x^3 y^3 + b^3
 #
@@ -66,7 +66,7 @@ $hint = "\text{Hint}: $hintval=$b^3" if(abs($b)>5);
 TEXT(beginproblem());
 
 BEGIN_PGML
-Factor the given polynomial 
+Factor the given polynomial. 
 
     [`[$question]=`] [___________________]{$ans}
 

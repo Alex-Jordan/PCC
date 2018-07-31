@@ -2,7 +2,7 @@
 # Portland Community College
 #
 # Template:
-# Factor the given polynomial 
+# Factor the given polynomial. 
 #
 #    x^n ( a x^3 + b^3 )
 #
@@ -62,7 +62,7 @@ $ans = Formula("$var^$n($a*$var+$b)($leading*$var^2+$middle*$var+$end)")->reduce
 TEXT(beginproblem());
 
 BEGIN_PGML
-Factor the given polynomial 
+Factor the given polynomial. 
 
     [`[$question]=`] [___________________]{$ans}
 
