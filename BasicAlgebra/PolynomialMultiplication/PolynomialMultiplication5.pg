@@ -91,13 +91,11 @@ END_PGML
 BEGIN_PGML_SOLUTION
 
 We multiply the monomial by each term in the binomial, using 
-the properties of exponents to help us
-
-    [`
+the properties of exponents to help us.  [```
       \begin{aligned}
               [$poly1]([$poly2])&=[$ans]
       \end{aligned}
-    `]
+    ```]
 END_PGML_SOLUTION
 ##############################################
 

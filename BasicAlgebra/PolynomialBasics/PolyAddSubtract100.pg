@@ -96,10 +96,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Subtract the two trinomials.
-
-
-    [`\left([$poly1]\right)-\left([$poly2]\right)`]
+Subtract the two trinomials. [```\left([$poly1]\right)-\left([$poly2]\right)```]
 
     [________________]{$ans}
 

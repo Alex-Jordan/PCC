@@ -72,9 +72,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Is the following expression a monomial, binomial, or trinomial?
-
-    [`[$poly1]`]
+Is the following expression a monomial, binomial, or trinomial? [```[$poly1]```]
 
     [@$popup->menu()@]*
 

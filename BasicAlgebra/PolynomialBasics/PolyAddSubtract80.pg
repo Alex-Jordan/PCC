@@ -92,10 +92,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Subtract the two binomials.
-
-
-    [`\left([$poly1]\right)-\left([$poly2]\right)`]
+Subtract the two binomials. [```\left([$poly1]\right)-\left([$poly2]\right)```]
 
     [________________]{$ans}
 

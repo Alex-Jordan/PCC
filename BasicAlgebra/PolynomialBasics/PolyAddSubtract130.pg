@@ -128,11 +128,9 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Simplify the following expression
-
-    [`
+Simplify the following expression [```
      \left[[$poly1] - \left([$poly2]\right)\right] - \left([$poly3]\right)
-    `]
+    ```]
 
     [________________________]{$ans}
 

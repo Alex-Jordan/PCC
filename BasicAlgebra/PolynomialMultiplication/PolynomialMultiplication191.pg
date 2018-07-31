@@ -4,19 +4,18 @@
 # Template:
 # Find product of the two binomials
 #
-#    (ax^2+b)(cx^2+d)
+#    (x+a)^2
 #
 #
-# a and c are integers on [2,6]
-# b and d are integers on the interval [-10,-1], and $b!=$c
+# a is an integer on the interval [1,10].
 # 
-# Last updated: Carl Yao, 7/04/13
+# Last updated: Hughes 9/6/13, Carl Yao, 7/04/13
 # ENDDESCRIPTION
 
 ## DBsubject('Algebra')
 ## DBchapter('Polynomial and Rational Functions')
 ## DBsection('Polynomial Functions')
-## KEYWORDS('exponent','multiply','polynomial','binomial','FOIL')
+## KEYWORDS('exponent','multiply','polynomial','binomial','FOIL','square')
 ## DBCCSS('A-APR.1')
 ## TitleText1('')
 ## EditionText1('')
@@ -36,6 +35,7 @@ loadMacros(
   "PGML.pl",
   "PCCmacros.pl",
   "contextLimitedPolynomial.pl",
+  "answerHints.pl",
   "PGcourse.pl",
 );
 
@@ -46,18 +46,11 @@ Context()->noreduce('(-x)-y','(-x)+y');
 $var = RandomVariableName(type=>'variable');
 Context()->variables->are($var=>'Real');
 
-# setup the first binomial: ($a x + $b)
-$a = random(2,6,1);
-$b=$a;
-$b = random(-10,-1,1) while(abs($b)==abs($a));
-@poly1array = ($a,0,$b);
-
-# setup the binomial: ($cx+$d)
-$c=$a;
-$c = random(1,6,1) while($c==$a);
-$d=$c;
-$d = random(-10,-1,1) while(abs($d)==abs($c));
-@poly2array = ($c,0,$d);
+# setup the first binomial: (x+$a)
+$a = random(1,10,1);
+$c = random(2,7,1);
+@poly1array = (1,$a);
+@poly2array = @poly1array;
 
 # reduction check
 $poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
@@ -66,9 +59,9 @@ $poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce-
 
 # for the solution
 
-$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+@sq = PolyMult(~~@poly1array,~~@poly2array);
+$ans = Formula(PolyMult(~~@sq,[$c],output=>simplified,var=>$var))->reduce->reduce;
 
-$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
 
 
 Context("LimitedPolynomial-Strict");
@@ -81,21 +74,35 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Find the product of the two *bi*nomials.
+Find the product.
 
-    [`\left([$poly1]\right)\left([$poly2]\right)= `][________________________________]{$ans}
+    [`[$c]\left([$poly1]\right)^2= `][________________________________]
 
 END_PGML
 
+$wrong=$a**2*$c;
+ANS($ans -> cmp() ->
+  withPostFilter(AnswerHints(
+    [Formula("$c*$var^2+$wrong")] =>
+    "Remember to use the FOIL technique- you need the Inside and the Outside terms.")));
 
 BEGIN_PGML_SOLUTION
 
-We use the FOIL technique: *F*irst *O*utside *I*nside *L*ast. [```
+Observe that there is a square of _the sum of two terms_, in which case we may use the formula 
+
+     [``(a+b)^2=a^2+2ab+b^2``] 
+
+and write
+
+     [`
       \begin{aligned}
-              \left([$poly1]\right)([$poly2])&=[$soln1]\\
+              [$c]\left([$poly1]\right)([$poly2])&=[$c]\left([$var]^2+2\cdot[$a]\cdot [$var]+[$a]^2\right)\\
+				&=[$c]\left([$var]^2+[@2*$a@]\cdot [$var]+[@$a**2@]\right)\\
                                 &=[$ans]
       \end{aligned}
-    ```]
+      `]
+
+
 END_PGML_SOLUTION
 ##############################################
 
