@@ -97,7 +97,9 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Add the two trinomials. [```\left([$poly1]\right)+\left([$poly2]\right)```]
+Add the two trinomials. 
+
+[```\left([$poly1]\right)+\left([$poly2]\right)```]
 
     [________________]{$ans}
 

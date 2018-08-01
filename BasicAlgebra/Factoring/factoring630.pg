@@ -59,6 +59,23 @@ $end = $b**2;
 $question = Formula("$a**3*$var^4+$b^3$var")->reduce;
 $ans = Formula("$var($a*$var+$b)($leading*$var^2+$middle*$var+$end)")->reduce;
 
+if(abs($a)>5 or abs($b)>5)
+{
+$hintvala = $a**3;
+$hintvalb= $b**3;
+if(abs($a)<=5 and abs($b)>5)
+{
+    $hint = 'Hint: [`[$hintvalb]=[$b]^3`].';
+}
+elsif(abs($b)<=5 and abs($a)>5)
+{
+    $hint = 'Hint: [`[$hintvala]=[$a]^3`].';
+}
+elsif(abs($b)>5 and abs($a)>5)
+{
+    $hint = 'Hint: [`[$hintvala]=[$a]^3`], [`[$hintvalb]=[$b]^3`].';
+}
+}
 ##############################################
 TEXT(beginproblem());
 
@@ -67,29 +84,12 @@ Factor the given polynomial.
 
     [`[$question]=`] [_______________________________]{$ans}
 
+[@$hint@]**
+
 [@KeyboardInstructions("If the expression cannot be factored then answer with [|prime|]*.")@]**
 
 END_PGML
 
-if(abs($a)>5 or abs($b)>5)
-{
-$hintvala = $a**3;
-$hintvalb= $b**3;
-if(abs($a)<=5 and abs($b)>5)
-{
-    $hint = "\text{Hint}: $hintvalb=$b^3";
-}
-elsif(abs($b)<=5 and abs($a)>5)
-{
-    $hint = "\text{Hint}: $hintvala=$a^3";
-}
-elsif(abs($b)>5 and abs($a)>5)
-{
-    $hint = "\text{Hint}: $hintvala=$a^3\text{, } $hintvalb=$b^3";
-}
-Context()->texStrings;
-    TEXT($PAR,$hint);
-}
 
 $step = Formula("$a$var")->reduce;
 BEGIN_PGML_SOLUTION

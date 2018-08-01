@@ -58,6 +58,12 @@ $end = $b**2;
 $question = Formula("$a**3*$var^3+$b^3")->reduce;
 $ans = Formula("($a*$var+$b)($leading*$var^2+$middle*$var+$end)")->reduce;
 
+if(abs($b)>5)
+{
+    $hintval = $b**3;
+    $hint = 'Hint: [`[$hintval]=[$b]^3`].' ;
+}
+
 ##############################################
 TEXT(beginproblem());
 
@@ -66,17 +72,11 @@ Factor the given polynomial.
 
     [`[$question]=`] [___________________]{$ans}
 
+[@$hint@]**
+
 [@KeyboardInstructions("If the expression cannot be factored then answer with [|prime|]*.")@]**
 
 END_PGML
-
-if(abs($b)>5)
-{
-    $hintval = $b**3;
-    $hint = "\text{Hint}: $hintval=$b^3" ;
-    Context()->texStrings;
-    TEXT($PAR,$hint);
-}
 
 $step = Formula("$a$var")->reduce;
 BEGIN_PGML_SOLUTION

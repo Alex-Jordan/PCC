@@ -98,7 +98,9 @@ $ans = Formula("@sum");
 TEXT(beginproblem());
 
 BEGIN_PGML
-Add the two polynomials [```\left([$poly1]\right)+\left([$poly2]\right)```]
+Add the two polynomials. 
+
+[```\left([$poly1]\right)+\left([$poly2]\right)```]
 
     [_________________________]{$ans}
 

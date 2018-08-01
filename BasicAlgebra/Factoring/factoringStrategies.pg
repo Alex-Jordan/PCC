@@ -108,10 +108,10 @@ if ($main eq 'prime') {
 "Factoring by grouping$BR",
 "Finding two numbers that multiply to \(c\) and sum to \(b\)$BR",
 "The AC Method$BR",
-"Difference of Squares pattern$BR",
-"Difference of Cubes pattern$BR",
-"Sum of Cubes pattern$BR",
-"Perfect Square Trinomial pattern$BR",
+"Difference of Squares$BR",
+"Difference of Cubes$BR",
+"Sum of Cubes$BR",
+"Perfect Square Trinomial$BR",
 "None of the above$BR"
 );
 
