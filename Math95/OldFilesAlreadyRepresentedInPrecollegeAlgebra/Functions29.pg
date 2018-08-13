@@ -29,7 +29,7 @@ size=>[400,400]
 );}
 
 $yes = "represents a function";
-$no = "does not represent a funciton";
+$no = "does not represent a function";
 
 
 $a = non_zero_random(-5,5,1);

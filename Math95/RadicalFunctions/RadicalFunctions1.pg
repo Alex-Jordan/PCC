@@ -44,7 +44,7 @@ $domain = Compute("[$a,inf)");
 
 BEGIN_PGML
 
-Find the domain of the funciton.
+Find the domain of the function.
 
 [`f(x)=[$f]`]
 
