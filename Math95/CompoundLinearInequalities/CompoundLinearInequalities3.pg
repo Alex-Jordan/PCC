@@ -46,9 +46,9 @@ $answer=Union("[$left,$right)");
 # Main text
 
 BEGIN_PGML
-Solve the compound inequality. Write the solution set in interval notation.
+Solve the compound inequality algebraically.
 
-[@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
+[@KeyboardInstructions('Write the solution set in interval notation. If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
 
 >>[``-[$a] < [$b] - x \leq [$c]``]<<
 

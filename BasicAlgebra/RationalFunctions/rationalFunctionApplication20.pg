@@ -49,7 +49,7 @@ BEGIN_PGML
 
 In a certain store, cashiers can serve [`[$a]`] customers per hour on average. If [`x`] customers arrive at the store in a given hour, then the average number of customers [`C`] waiting in line can be modeled by the function
 
-    [`` C(x) = [$func] ``]
+    [``` C(x) = [$func] ```]
 
 where [`x<[$a]`].
 

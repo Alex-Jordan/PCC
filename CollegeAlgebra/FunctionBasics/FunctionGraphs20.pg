@@ -37,7 +37,6 @@ TEXT(beginproblem());
 
 ##############################################
 
-
 Context("Numeric");
 
 
@@ -61,34 +60,49 @@ size=>[240,240]
 add_functions($gr, "$f for x in <$xmin,$xmax>" . 
   " using color:blue and weight:1");
 
-#$gr->stamps( closed_circle(0,-1,'black') );
-#$gr->stamps( closed_circle(1.26,0,'black') );
-$gr->stamps( closed_circle(2,3,'black') );
-$gr->stamps( closed_circle(-1.5,-2.6975,'black') );
+$gr->stamps( closed_circle(2,3,'blue') );
+$gr->stamps( closed_circle(-1.5,-2.6975,'blue') );
 
-$gr->lb( new Label(0.1,3,'a',
-    'black','left','middle'));
 
-$gr->lb( new Label(0.1,-2.6975,'e',
-    'black','left','middle'));
+$labela = new Label(0,3,'a',
+    'black','right','middle');
+$labela->font(GD::Font->Large);
+$gr -> lb($labela);
 
-$gr->lb( new Label(0.1,-1,'c',
-    'black','left','middle'));
+$labele = new Label(0,-2.6975,'e',
+    'black','right','middle');
+$labele->font(GD::Font->Large);
+$gr -> lb($labele);
 
-$gr->lb( new Label(2,-0.1,'b',
-    'black','center','top'));
+$labelc = new Label(0,-1,'c',
+    'black','right','middle',);
+$labelc->font(GD::Font->Large);
+$gr -> lb($labelc);
 
-$gr->lb( new Label(1.26,-0.1,'h',
-    'black','center','top'));
+$labelb = new Label(2,0,'b',
+    'black','center','top',);
+$labelb->font(GD::Font->Large);
+$gr -> lb($labelb);
 
-$gr->lb( new Label(-1.5,-0.1,'d',
-    'black','center','top'));
+$labelh = new Label(1.26,0,'h',
+    'black','center','top',);
+$labelh->font(GD::Font->Large);
+$gr -> lb($labelh);
 
-$gr->lb( new Label(2.2,2.8,'P',
-    'black','right','bottom'));
+$labeld = new Label(-1.5,0,'d',
+    'black','center','top',);
+$labeld->font(GD::Font->Large);
+$gr -> lb($labeld);
 
-$gr->lb( new Label(-1.3,-2.8975,'Q',
-    'black','right','bottom'));
+$labelP = new Label(2,3,'P',
+    'black','left','top',);
+$labelP->font(GD::Font->Large);
+$gr -> lb($labelP);
+
+$labelQ = new Label(-1.5,-2.6975,'Q',
+    'black','left','top',);
+$labelQ->font(GD::Font->Large);
+$gr -> lb($labelQ);
 
 $gr->moveTo(-.05,3);
 $gr->lineTo(0.05,3,'black',1);
@@ -107,7 +121,6 @@ $gr->lineTo(-1.5,0.05,'black',1);
 
 $gr->moveTo(1.26,-0.05);
 $gr->lineTo(1.26,0.05,'black',1);
-
 
 
 
@@ -160,7 +173,7 @@ a. Evaluate [`f(b)`]. (The answer is symbolic, not a specific number.) [________
 
 a. Solve [`f(x)=e`] for [`x`]. (The answer is symbolic, not a specific number.) [__________]
 
-a. Suppose [`c=f(z)`]. Solve the equation [`z=f(x)`] for [`x`]. (Hint: you should figure out what [`z`] is first.) [__________]
+a. Suppose [`c=f(z)`]. Solve the equation [`z=f(x)`] for [`x`]. [__________]
 
 END_PGML
 

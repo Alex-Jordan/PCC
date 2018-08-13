@@ -76,7 +76,7 @@ $PAR
 \{ 
 BeginTable(border=>1, tex_border=>"1pt", spacing=>0, padding=>4).
 AlignedRow(["\(x\)","\($x[0]\)","\($x[1]\)","\($x[2]\)","\($x[3]\)","\($x[4]\)","\($x[5]\)","\($x[6]\)"], align=>LEFT, separation=>0).
-AlignedRow(["\($fname(x)\)", ans_rule(3), ans_rule(3), ans_rule(3), ans_rule(3), ans_rule(3), ans_rule(3), ans_rule(3)], align=>LEFT, separation=>0).
+AlignedRow(["\($fname(x)\)", ans_rule(1), ans_rule(1), ans_rule(1), ans_rule(1), ans_rule(1), ans_rule(1), ans_rule(1)], align=>LEFT, separation=>0).
 EndTable()
 \}
 

@@ -38,12 +38,13 @@ $ans = Interval("[-$a, $b) U ($b, infinity)");
 ##############################################
 
 BEGIN_PGML
-Using interval notation, the domain of the function [`[$f]`] defined by    
-    [``[$f](x)= \frac{\sqrt{[$a] + x}}{[$b] - x}``]
 
-is [__________________________________]{$ans}
+Find the domain of [`[$f]`] where [``[$f](x)= \frac{\sqrt{[$a] + x}}{[$b] - x}``].
 
-[@KeyboardInstructions('If the answer includes more than one interval write the intervals separated by the union symbol, which you can type as [|U|]*. If the answer uses [`\infty`], you may type it as [|inf|]*.')@]**
+[@KeyboardInstructions('Answer using interval notation. If you need to enter [`\infty`], you can type  [|inf|]* or  [|infinity|]*.  If you need to union two (or more) intervals, use the letter [|U|]*.  For example, to enter [`(\infty,5)\cup(5,10]`] you can type [|(-inf,5) U (5,10]|]*.')@]**
+
+    [_______________________]{$ans}
+
 END_PGML
 
 ##############################################

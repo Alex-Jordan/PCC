@@ -71,8 +71,38 @@ grid=>[$xmax-$xmin,$ymax-$ymin],
 size=>[240,240]
 );
 
-add_functions($gr, "$f for x in <$xmin,$xmax>" . 
+  $gr->lb('reset');
+  for my $j ($xmin+1..$xmax-1) {
+    if (abs($j)<10**(-10) or $j%2 == 1) {next;}
+    $gr->lb( new Label($j,0, $j,'black','center','top','large'));
+  }
+
+  for my $j ($ymin+1..$ymax-1) {
+    if (abs($j)<10**(-10) or $j%2 == 1) {next;}
+    $gr->lb( new Label(0, $j, $j,'black','right','middle','large'));
+  }
+
+@xvalues = ($xmin,$xmax);
+if ($a > 0) {
+  push(@xvalues,sqrt(($ymax-$k)/$a)+$h);
+  push(@xvalues,-sqrt(($ymax-$k)/$a)+$h);
+}
+else {
+  push(@xvalues,sqrt(($ymin-$k)/$a)+$h);
+  push(@xvalues,-sqrt(($ymin-$k)/$a)+$h);
+}
+@xvalues = num_sort(@xvalues);
+$start = $xvalues[1];
+$stop = $xvalues[2];
+$pixel = ($xmax-$xmin)/240;
+
+add_functions($gr, "$f for x in <$start,$stop>" . 
   " using color:blue and weight:1");
+
+$gr->moveTo($start+$pixel,$a*($start+$pixel-$h)**2+$k);
+$gr->arrowTo($start,$a*($start-$h)**2+$k,'blue',1);
+$gr->moveTo($stop-$pixel,$a*($stop-$pixel-$h)**2+$k);
+$gr->arrowTo($stop,$a*($stop-$h)**2+$k,'blue',1);
 
 $direction = ($a == 1) ? "upward" : "downward";
 $yint = $f->eval(x=>0);

@@ -63,11 +63,11 @@ BEGIN_PGML
 
 The quadratic expression [`[$vertexform]`] is written in vertex form.
 
-a. Write the expression in standard form [`ax^2 + bx + c`].
+a. Write the expression in standard form.
 
     [_________________]{$expandedform}
 
-b. Write the expression in factored form [`k(ax+b)(cx+d) `].
+b. Write the expression in factored form.
 
     [_________________]{$factoredform}
 

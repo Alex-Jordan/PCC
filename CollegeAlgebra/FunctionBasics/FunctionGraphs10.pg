@@ -72,8 +72,8 @@ $ans[4] = $hevaluated[$pt2+3] + 3;
 
 $xmin = $leftRoot-1;
 $xmax = $rightRoot+2;
-$ymin = $h->eval(x=>$leftRoot-1);
-$ymax = max(@hevaluated)+5;
+$ymin = min((@hevaluated)[1..5])-4;
+$ymax = max((@hevaluated)[1..5])+4;
 
 $refreshCachedImages=1;
 
@@ -82,6 +82,19 @@ axes=>[0,0],
 grid=>[$xmax-$xmin,$ymax-$ymin],
 size=>[240,240]
 );
+
+  $gr->lb('reset');
+  for my $j ($xmin+1..$xmax-1) {
+    if (abs($j)<10**(-10)) {next;}
+    $gr->lb( new Label($j,0, $j,'black','center','top','large'));
+  }
+
+$ysep = max(1,int(log($ymax-$ymin)/log(2)));
+  for my $j ($ymin+1..$ymax-1) {
+    if (abs($j)<10**(-10) or $j%$ysep != 0) {next;}
+    $gr->lb( new Label(0, $j, $j,'black','right','middle','large'));
+  }
+
 
 
 add_functions($gr, "$h for x in <$xmin,$xmax>" . 
@@ -111,34 +124,24 @@ Use the graph of [`[$f]`] in the figure to fill in the table.
 width=>240,height=>240,tex_size=>400, extra_html_tags => "alt = '$alt'" ) @]* <<
     
     
-END_PGML
-BEGIN_TEXT
-$PAR
-\{
+[@
   DataTable(
 [[{data=>'\(x\)', header=>'RH'},'\(-2\)','\(-1\)','\(0\)','\(1\)','\(2\)',],
-[{data=>'\($f(x)\)', header=>'RH'}, ans_rule(5),ans_rule(5),ans_rule(5),ans_rule(5),ans_rule(5),]],
+[{data=>"\\\($f(x)\\\)", header=>'RH'}, ans_rule(5),ans_rule(5),ans_rule(5),ans_rule(5),ans_rule(5),]],
 allcellcss=>"text-align:center; border:solid; border-width:1px;",
 headercss=>"text-align:left",
 );
-\}
-$PAR
+@]*
 
-\{
-  LayoutTable(
-[["Evaluate \($f($pt1)-$f($pt2)\).",ans_rule(5)],
-["Evaluate \($f($pt3)-$f($pt4)\).",ans_rule(5)],
-["Evaluate \(2$f($pt4)\).",ans_rule(5)],
-["Evaluate \($f($pt2)+3\).",ans_rule(5)]],
-allcellcss=>"text-align:left; padding-left: 12pt;",
-);
-\}
+a. Evaluate [`[$f]([$pt1])-[$f]([$pt2])`]. [_____]
 
+a. Evaluate [`[$f]([$pt3])-[$f]([$pt4])`]. [_____]
 
+a. Evaluate [`2[$f]([$pt4])`]. [_____]
 
+a. Evaluate [`[$f]([$pt2])+3`]. [_____]
 
-
-END_TEXT
+END_PGML
 
 
 ##############################################

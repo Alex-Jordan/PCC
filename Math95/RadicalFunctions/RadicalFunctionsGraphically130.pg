@@ -75,6 +75,17 @@ grid=>[$xmax-$xmin,$ymax-$ymin],
 size=>[240,240]
 );
 
+  $gr->lb('reset');
+  for my $j ($xmin+1..$xmax-1) {
+    if (abs($j)<10**(-10) or $j%2 != 0) {next;}
+    $gr->lb( new Label($j, 0, $j,'black','center','top','large'));
+  }
+
+  for my $j ($ymin+1..$ymax-1) {
+    if (abs($j)<10**(-10) or $j%2 != 0) {next;}
+    $gr->lb( new Label(0, $j, $j,'black','right','middle','large'));
+  }
+
 add_functions($gr, "$f for x in <$left,$right>" . 
   " using color:blue and weight:1");
 $gr->stamps( closed_circle($left,$f->eval(x=>$left),'blue') );
@@ -92,18 +103,15 @@ $ALT = "a graph of a square root function, which is a curve that starts at ($lef
 
 BEGIN_PGML
 
-Use the graph of [`[$fname]`] below to estimate its domain and range.
+A function is graphed.
 
 [@EnlargeImageStatementPGML()@]**
 
 >>[@image(insertGraph($gr), width=>240, height=>240, tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT' title = '$ALT'")@]*<<
 
-
-    The domain is [__________]{$domain} (in interval notation).   
     [@KeyboardInstructions('If you need to enter [`\infty`], you can type [|inf|]* or [|infinity|]*.  If you need to union two (or more) intervals, use the letter [|U|]*.  For example, to enter [`(-\infty,5)\cup(5,10]`] you can type [|(-inf,5)U(5,10]|]*.')@]**
 
-
-    The range is [__________]{$range} (in interval notation).
+    The function has domain [__________]{$domain} and range [__________]{$range}.
 
 
 END_PGML

@@ -60,7 +60,7 @@ BEGIN_PGML
 
 The population of deer in a forest can be modeled by
 
-    [`` P(x) = [$func] ``]
+    [``` P(x) = [$func] ```]
 
 where [`x`] is the number of years in the future. Answer the following questions.
 

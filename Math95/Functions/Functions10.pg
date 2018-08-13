@@ -71,23 +71,17 @@ BEGIN_PGML
 Below is all of the information that exists about a function [`[$fname]`].
 
     [`\begin{aligned}
-[$fname]([$a])=[$b]\\
-[$fname]([$c])=[$d]\\
-[$fname]([$e])=[$f]\\
+[$fname]([$a])&=[$b]&
+[$fname]([$c])&=[$d]&
+[$fname]([$e])&=[$f]
 \end{aligned}`]
 
 
-Write [`[$fname]`] as a set of ordered pairs. Remember that a *set* is written with *{* and *}* surrounding the list.
+Write [`[$fname]`] as a set of ordered pairs. [@KeyboardInstructions('Remember that a _set_ is written with [|{|]* and [|}|]* surrounding the list.')@]**
 
     [____________________]
 
-What is the domain of [`[$fname]`]?
-
-    [____________________]
-
-What is the range of [`[$fname]`]?
-
-    [____________________]
+[`[$fname]`] has domain [____________________] and range [____________________].
 
 
 END_PGML

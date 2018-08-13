@@ -79,7 +79,7 @@ Give a numeric representation of \($fname\):
 \{ 
 BeginTable(border=>1, tex_border=>"1pt", spacing=>0, padding=>4).
 AlignedRow(["\(x\)","\(0\)","\(1\)","\(2\)","\(3\)","\(4\)"], align=>LEFT, separation=>0).
-AlignedRow(["\($fname(x)\)", ans_rule(3), ans_rule(3), ans_rule(3), ans_rule(3), ans_rule(3)], align=>RIGHT, separation=>0).
+AlignedRow(["\($fname(x)\)", ans_rule(2), ans_rule(2), ans_rule(2), ans_rule(2), ans_rule(2)], align=>RIGHT, separation=>0).
 EndTable()
 \}
 

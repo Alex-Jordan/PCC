@@ -47,13 +47,13 @@ $answer = Union("(-INF,$min]U[$max,INF)");
 # Main text
 
 BEGIN_PGML
-Solve the following inequality. Enter the answer in interval notation.
+Solve the inequality. 
 
-[@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
+[@KeyboardInstructions('Enter the answer in interval notation. If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
 
 >>[`` [$f] \geq [$c]  ``]<<
 
-The solution set is [__]{$answer}{width=>20}
+[__]{$answer}{width=>20}
 
 END_PGML
 

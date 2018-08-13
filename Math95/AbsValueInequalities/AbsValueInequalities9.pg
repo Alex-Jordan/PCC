@@ -47,13 +47,13 @@ Context("Interval");
 $answer = Union("(-infinity,$e2]U[$e1,infinity)");
 
 BEGIN_PGML
-Solve the following inequality. Enter the answer in interval notation.
+Solve the inequality. 
 
-[@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
+[@KeyboardInstructions('Enter the answer in interval notation. If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
 
 >>[`` [$d] - \left\lvert[$a]x + [$b]\right\rvert \leq [$c]  ``]<<
 
-The solution set is [__]{$answer}{width=>20}
+[__]{$answer}{width=>20}
 
 END_PGML
 

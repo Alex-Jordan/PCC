@@ -42,9 +42,9 @@ $answer = Union("[$ans1,$ans2]");
 
 BEGIN_PGML
 
-Solve the following inequality. Write the answer in interval notation.
+Solve the compound inequality algebraically.
 
-[@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
+[@KeyboardInstructions('Write the solution set in interval notation. If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
 
 >>[`` [$a] \le \frac{5}{9}(F-32) \le [$b] ``]<<
 
