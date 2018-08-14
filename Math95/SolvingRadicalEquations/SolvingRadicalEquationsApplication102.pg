@@ -85,9 +85,7 @@ $ans = $yU;
 
 BEGIN_PGML
 
-In a coordinate system, the distance [`r`] of a point [`(x,y)`] from the origin [`(0,0)`] is given by the following equation:
-
->>[``[$left] = [$right]``]<<
+In a coordinate system, the distance [`r`] of a point [`(x,y)`] from the origin [`(0,0)`] is given by the following equation. [```[$left] = [$right]```]
 
 If a point in a coordinate system is [`[$rU]`] away from the origin and its x coordinate is [`[$xU]`], what is its [`y`] coordinate? Assume that [`y`] is positive.
 

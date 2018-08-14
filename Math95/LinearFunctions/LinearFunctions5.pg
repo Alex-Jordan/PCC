@@ -12,6 +12,8 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "parserAssignment.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
   
 );
 
@@ -30,24 +32,19 @@ $fun = Formula("f(x)=10x");
 
 ##############################################
 
-Context()->texStrings;
 
-BEGIN_TEXT
-Suppose that \(f\) is the function that tells you how many dimes are in \(x\) dollars.  Write a symbolic representation for \(f\).  You need to write the entire formula, including $BBOLD f(x)=$EBOLD.
+BEGIN_PGML
+Suppose that [`f`] is the function that tells you how many dimes are in [`x`] dollars.  Write a formula for [`f`].  [@KeyboardInstructions('You need to write the entire formula, including [|f(x)=|]*.')@]**
 
-$PAR
-
-$SPACE $SPACE $SPACE \{ans_rule(15)\}
+[__]{$fun}{width=>20}
 
 
 
-END_TEXT
+END_PGML
 
-Context()->normalStrings;
 
 ##############################################
 
-ANS($fun->cmp());
 
 
 

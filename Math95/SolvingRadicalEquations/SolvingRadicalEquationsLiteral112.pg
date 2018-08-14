@@ -60,7 +60,7 @@ BEGIN_PGML
 
 In an electric circuit, resonance occurs when the frequency [`f`], inductance [`L`], and capacitance [`C`] fulfill the following equation:
 
->>[``[$left] = [$right]``]<<
+[```[$left] = [$right]```]
 
 Solve the equation for the inductance  [`L`].
 

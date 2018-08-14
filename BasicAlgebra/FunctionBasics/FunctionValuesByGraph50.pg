@@ -191,8 +191,6 @@ A function is graphed.
 
 >>[@image(insertGraph($gr[0]), width=>240, tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT0' title = '$ALT0'") @]*<<
 
-    [`f([$x0])`]=[_________]{$ans}
-
 [@KeyboardInstructions("If needed, use the upper case letter [|U|]* to represent the union symbol.")@]**
 
 The function has domain [_____________]{$domain} and range [_____________]{$range}.

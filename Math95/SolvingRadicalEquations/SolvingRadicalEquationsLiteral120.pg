@@ -60,7 +60,7 @@ BEGIN_PGML
 
 A pendulum has the length [`L`]. The time period [`T`] that it takes to once swing back and forth can be found with the following formula:
 
->>[``[$left] = [$right]``]<<
+[```[$left] = [$right]```]
 
 Solve the equation for the length  [`L`].
 

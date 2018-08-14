@@ -154,12 +154,6 @@ A function is graphed.
 
 >>[@image(insertGraph($gr[0]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT0' title = '$ALT0'") @]*<<
 
-[@KeyboardInstructions('If there is more than one answer for a blank, use commas to separate your answers.')@]**
-
-    [`f(0)`]=[_________]{$b0}
-
-    [`f(`][_______]{$xIntercepts}[`)=0`]
-
 The function has domain [_____________]{$domain} and range [_____________]{$range}.
 
 END_PGML
