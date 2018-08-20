@@ -82,6 +82,10 @@ size=>[240,240]
     $gr->lb( new Label(0, $j, $j,'black','right','middle','large'));
   }
 
+  $gr->lb(new Label($xmax,0,'x','black','right','bottom','large'));
+  $gr->lb(new Label(0,$ymax,'y','black','left','top','large'));
+
+
 $gr->moveTo($x[0],$y[0]);
 $gr->arrowTo($xmin+1,$ymax,'blue','1');
 $gr->moveTo($x[0],$y[0],);

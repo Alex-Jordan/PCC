@@ -97,7 +97,7 @@ BEGIN_PGML
 
 A trapezoid's area can be calculated by the formula [`A=\frac{1}{2}(b_1+b_2)h`], where [`A`] stands for area, [`b_1`] for the first base's length, [`b_2`] for the second base's length, and [`h`] for height.
 
-Find the area of the trapeoid below. [@KeyboardInstructions(q!(Use [|m|]* for meters and [|m^2|]* for square meters.)!)@]**
+Find the area of the trapezoid below. [@KeyboardInstructions(q!(Use [|m|]* for meters and [|m^2|]* for square meters.)!)@]**
 
 >>[@ image(insertGraph( $picture  ), width=>240, extra_html_tags => "alt = '$alt' title = '$alt' ") @]*<<
 

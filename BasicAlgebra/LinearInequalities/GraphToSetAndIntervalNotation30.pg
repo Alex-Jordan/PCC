@@ -46,7 +46,7 @@ $symbol = '<';
 
 InequalitySetBuilder::UseVerticalSuchThat();
 Context("InequalitySetBuilder-Only");
-$var = RandomVariableName();
+do {$var = RandomVariableName();} until ($var ne 'y' and $var ne 'p' and $var ne 'q' and $var ne 'g');
 do {Context()->variables->add($var => 'Real');} unless ($var eq 'x');
 $setans = Compute("{ $var | $var $symbol $a}");
 

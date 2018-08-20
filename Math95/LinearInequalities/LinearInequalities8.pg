@@ -54,7 +54,7 @@ A car rental company offers the following two plans for renting a car:
 
     Plan A: [`\$[$b]`] per day and [`[$a]`] cents per mile
 
-    Plan B: [`\$[$c]`] dollars per day with free unlimited mileage
+    Plan B: [`\$[$c]`] per day with free unlimited mileage
 
 How many miles must one drive in order to justify choosing Plan B?
 

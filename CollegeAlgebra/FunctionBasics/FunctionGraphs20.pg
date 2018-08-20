@@ -122,6 +122,9 @@ $gr->lineTo(-1.5,0.05,'black',1);
 $gr->moveTo(1.26,-0.05);
 $gr->lineTo(1.26,0.05,'black',1);
 
+  $gr->lb(new Label($xmax,0,'x','black','right','bottom','large'));
+  $gr->lb(new Label(0,$ymax,'y','black','left','top','large'));
+
 
 
 Context("Point");

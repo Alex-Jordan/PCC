@@ -20,6 +20,7 @@ loadMacros(
   "PGasu.pl",
   "extraAnswerEvaluators.pl",
   "PGML.pl",
+  "MathObjects.pl",
   "PCCmacros.pl",
   "PGcourse.pl"
 );
@@ -38,11 +39,12 @@ $h=$a+$c;
 $ans1 = "$e/$f";
 $ans2= "$g/$h";
 $ans = List($ans1,$ans2);
+$f = Formula("$a x + $b")->reduce;
 
 BEGIN_PGML
 Solve the following equation. 
 
->>[``\left\lvert [$a] x + [$b] \right\rvert = \left\lvert[$c] x +[$d]\right\rvert  ``]<<
+>>[``\left\lvert [$f] \right\rvert = \left\lvert[$c] x +[$d]\right\rvert  ``]<<
 
 [@KeyboardInstructions('If there is more than one solution, enter the solutions as a comma-separated list.')@]**
 

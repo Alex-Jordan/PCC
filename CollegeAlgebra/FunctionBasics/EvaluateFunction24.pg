@@ -60,7 +60,7 @@ $answer = Compute($formula->eval($x=>$a));
 ##############################################
 
 BEGIN_PGML
-Given [`[$f]`] defined by [`[$f]([$x]) = [$formula]`], 
+Given [`[$f]([$x]) = [$formula]`], 
 find and simplify [`[$f]([$a])`].
 
     [`[$f]([$a])={}`][___________]{$answer}

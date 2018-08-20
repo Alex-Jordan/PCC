@@ -34,6 +34,7 @@ loadMacros(
   "MathObjects.pl",  
   "contextLimitedRadical.pl",
   "PGML.pl",
+  "PCCmacros.pl",
   "PGcourse.pl",
 );
 
@@ -57,13 +58,13 @@ $ans = Formula("sqrt(r^2-x^2)");
 
 BEGIN_PGML
 
-In a coordinate system, the distance [`r`] of a point [`(x,y)`] from the origin [`(0,0)`] is given by the following equation:
+In a coordinate system, the distance [`r`] from a point [`(x,y)`] to the origin [`(0,0)`] is given by the following equation:
 
->>[``[$left] = [$right]``]<<
+[```[$left] = [$right]```]
 
 Solve the equation for the coordinate [`y`]. Assume that [`y`] is positive.
 
-If you need to use a square root, type *sqrt(23)* for [`\sqrt{23}`] (for example).
+[@KeyboardInstructions('If you need to use a square root, type [|sqrt(23)|]* for [`\sqrt{23}`] (for example).')@]**
 
     [`y = `] [____________________]{$ans}.
 

@@ -36,12 +36,12 @@ TEXT(beginproblem());
 #  Vertex form
 #
 Context("Numeric");
-$n = list_random(4,6);
-$a = random(2,4,1);
+$n = random(2,8,2);
+$a = non_zero_random(-5,5,1);
 $b = ($a+$n);
 $h = ($b-$a)/2;
 $k = $h**2+$a*$b;
-$vertexform = Compute("(x-$h)^2-$k");
+$vertexform = Compute("(x-$h)^2-$k")->reduce;
 
 #
 #  Expanded form

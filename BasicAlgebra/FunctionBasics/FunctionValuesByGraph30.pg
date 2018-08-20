@@ -125,6 +125,10 @@ for my $i (0..2) {
    $gr[$i]->arrowTo($start,$a*($start-$b)**2+$c,'blue',1);
    $gr[$i]->moveTo($stop-$pixel, $a*($stop-$pixel-$b)**2+$c);
    $gr[$i]->arrowTo($stop,$a*($start-$b)**2+$c,'blue',1);
+
+  $gr[$i]->lb(new Label($max[0],0,'x','black','right','bottom','large'));
+  $gr[$i]->lb(new Label(0,$max[1],'y','black','left','top','large'));
+
 }
 
 $ALT0 = "graph of a parabola passing through the points ($p0x,$p0y), ($p1x,$p1y) and ($p2x,$p2y)";
