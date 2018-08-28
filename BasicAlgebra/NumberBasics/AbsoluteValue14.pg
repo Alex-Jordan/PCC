@@ -41,6 +41,7 @@ loadMacros(
 Context("Fraction");
 do {$number = Fraction(non_zero_random(-100,100),non_zero_random(-100,100))} until (($number->value)[1] != 1);
 Context("LimitedFraction");
+Context()->flags->set(showMixedNumbers=>0);
 $absnum = abs(Fraction(($number->value)[0],($number->value)[1]));
 
 ##############################################
@@ -59,7 +60,7 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 
-The absolute value of [`[$num]`] is the distance between [`[$num]`] and [`0`] on the number line. In this case, since [`[$num]`] is [`[$absnum]`] units away from 0, the answer is [`[$absnum]`].
+The absolute value of [`[$number]`] is the distance between [`[$number]`] and [`0`] on the number line. In this case, since [`[$number]`] is [`[$absnum]`] units away from 0, the answer is [`[$absnum]`].
 
 END_PGML_SOLUTION
 
