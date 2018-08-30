@@ -57,7 +57,8 @@ Find the vertical asymptotes of the function [`f`] defined by:
 
     [`` f(x)=\frac{x-[$b]}{(x-[$b])(x^2-[$c])}``]
 
-If there is more than one answer, enter as a comma-separated list. For example, [`x=1,x=2`]. Enter *none* if there are no vertical asymptotes.
+* If there is more than one answer, enter as a comma-separated list. For example, [`x=1,x=2`].
+* Enter *none* if there are no vertical asymptotes.
 
     The equation(s) of the vertical asymptote(s) of [`f`] is/are [_________________]{$ans}
 
