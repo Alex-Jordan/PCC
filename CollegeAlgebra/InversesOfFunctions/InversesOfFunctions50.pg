@@ -90,7 +90,7 @@ g\left(f(x)\right) & = g\left([$f]\right)\\
 &= [@$g->substitute(x=>$f)@]\cdot\frac{[$a]x+[$b]}{[$a]x+[$b]}\\
 &= \frac{[$c]([$a]x+[$b])-[$b]([$c])}{[$a]([$c])}\\
 &= \frac{[$a]x+[$b]-[$b]}{[$a]}\\
-&= \frac{[$a]x]}{[$a]}\\
+&= \frac{[$a]x}{[$a]}\\
 &= x
 \end{aligned}`]
 
