@@ -67,7 +67,7 @@ The compound interest formula is
 
     [`` A(t) = P(1+\frac{r}{n})^{nt} ``]
     
-where [`A(t)`] models the amount of money, [`t`] is the number of years, [`P`] is the initial amount, [`r`] is the annual interest and [`n`] is the number of compoudings per year.
+where [`A(t)`] models the amount of money, [`t`] is the number of years, [`P`] is the initial amount, [`r`] is the annual interest and [`n`] is the number of compoundings per year.
 
 [$name] saved [`[$initialC]`] in an account with an annual interest of [`[$r]%`]. Answer the following questions:
 
