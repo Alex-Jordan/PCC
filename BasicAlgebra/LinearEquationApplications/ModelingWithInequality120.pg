@@ -94,8 +94,8 @@ $evaluator = $ans->cmp(
        Value::Error('Write an inequality, not an equation.') if ($sign eq '=');
        Value::Error('Your inequality is not using the correct sign.') if ($sign eq '<' or $sign eq '>');
        # distinguish between good/bad uses of >=/<=
-       my $left = Formula($student->{tree}->{lop})->eval(g=>0);
-       my $right = Formula($student->{tree}->{rop})->eval(g=>0);
+       my $left = Formula($student->{tree}->{lop})->eval(t=>0);
+       my $right = Formula($student->{tree}->{rop})->eval(t=>0);
        $OK = ($sign eq '>=') ? ($left >= $right) : ($left <= $right);
        Value::Error('Your inequality is not using the correct sign.') unless ($OK);
        return $OK;
@@ -137,7 +137,7 @@ Assume [`t`] seconds pass. Since [$name] exhales at a rate of [`[$rate]`] liters
 
 Since we are interested in having at least [`[$left]`] liters of air left, we can write the inequality:
 
-    [``[$max]-[$rate]s\geq[$left]``]
+    [``[$max]-[$rate]t\geq[$left]``]
 
 END_PGML_SOLUTION
 
