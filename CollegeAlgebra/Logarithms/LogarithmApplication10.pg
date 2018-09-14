@@ -64,6 +64,7 @@ $x2Show = int($x2*1000+0.5)/1000;
 $x2R = int($x2*10+0.5)/10;
 
 Context("Currency");
+$initialC = Currency($initial);
 $y1C = Currency($y1);
 $y2C = Currency($y2);
 
