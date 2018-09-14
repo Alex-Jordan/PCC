@@ -91,7 +91,7 @@ BEGIN_PGML
 
 For the logarithm expression
 
-    [`` \log_{[$base]}\left( \frac{[$var1]}{[$value][$var2]^{[$a]}  \right) ``],
+    [`` \log_{[$base]}\left( \frac{[$var1]}{[$value][$var2]^{[$a]}}  \right) ``],
 
 an equivalent expression is [@ $pop->menu() @]*.
 

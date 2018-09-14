@@ -58,7 +58,7 @@ $question = "\frac{\ln($a)+\ln($b)}{\ln($c)-\ln($d)}";
 
 @choices = ();
 $choices[0] = "\log_{\frac{$c}{$d}}($top)";
-$choices[1] = "\log_{$top}\left(\frac{$c}{$d}}\right)";
+$choices[1] = "\log_{$top}\left(\frac{$c}{$d}\right)";
 $choices[2] = "\ln \left( \frac{$fNum}{$fDen} \right)";
 $choices[3] = "\ln \left( \frac{$fDen}{$fNum} \right)";
 
@@ -99,13 +99,13 @@ For the logarithm expression
 
 an equivalent expression is [@ $pop->menu() @]*.
 
-    [`` \text{A.   } [$choices[[$shuffle->{0}]]] ``]
+    [`` \text{A.   } [$choices[$shuffle->{0}]] ``]
     
-    [`` \text{B.   } [$choices[[$shuffle->{1}]]] ``]
+    [`` \text{B.   } [$choices[$shuffle->{1}]] ``]
     
-    [`` \text{C.   } [$choices[[$shuffle->{2}]]] ``]
+    [`` \text{C.   } [$choices[$shuffle->{2}]] ``]
     
-    [`` \text{D.   } [$choices[[$shuffle->{3}]]] ``]
+    [`` \text{D.   } [$choices[$shuffle->{3}]] ``]
 
 END_PGML
 
