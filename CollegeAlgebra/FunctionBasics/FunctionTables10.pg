@@ -67,6 +67,7 @@ for my $i (0..4) {
 
 $multians = MultiAnswer(@defaultAnswers)->with(
   singleResult => 1,
+  allowBlankAnswers => 1,
   checker => sub {
       my ( $correct, $student, $self ) = @_;
       my @sxy = @{$student};
@@ -82,6 +83,8 @@ $multians = MultiAnswer(@defaultAnswers)->with(
        #
        #  Check that the student's answers are Reals
        #
+       Value->Error("Enter a number for your $ith x-value") if ($xs[$i] eq "");
+       Value->Error("Enter a number for your $ith y-value") if ($ys[$i] eq "");
        Value->Error("Your $ith x-value is not a number") if ($xs[$i]->type ne "Number");
        Value->Error("Your $ith y-value is not a number") if ($ys[$i]->type ne "Number");
        #
