@@ -53,7 +53,7 @@ $y3=$m*$x3+$b;
 $x4=random(50,60,1);
 $y4=$m*$x4+$b;
 
-$rate = NumberWithUnits("$m ft/yr");
+$rate = NumberWithUnits("$m ft/mo");
 
 ##############################################
 
@@ -61,9 +61,9 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-A biologist has been observing a tree's height. [@ ucfirst( numberWord($x1) )@] months into the observation, the tree was [`[$y1]`] feet tall. [@ ucfirst( numberWord($x2) )@] months into the observation, the tree was [`[$y2]`] feet tall. What is the rate at which the tree is growing? In other words, what is the slope if you plotted heigth versus time?
+A biologist has been observing a tree's height. [@ ucfirst( numberWord($x1) )@] months into the observation, the tree was [`[$y1]`] feet tall. [@ ucfirst( numberWord($x2) )@] months into the observation, the tree was [`[$y2]`] feet tall. What is the rate at which the tree is growing? In other words, what is the slope if you plotted height versus time?
 
-[@KeyboardInstructions('Use [|ft|]* for feet and [|yr|]* for years.')@]**
+[@KeyboardInstructions('Use [|ft|]* for feet and [|mo|]* for months.')@]**
 
 [__]{$rate}{width=>15} 
 
