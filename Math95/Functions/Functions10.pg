@@ -59,8 +59,8 @@ $R = Point("($e,$f)");
 Context()->parens->set('{'=>{type=>'List'});
 $pairs = List("{$P,$Q,$R}");
 
-Context("Numeric");
-Context()->parens->set('{'=>{type=>'Set'},'('=>{type=>'Point'},'['=>{type=>'Interval'});
+Context("Interval");
+#Context()->parens->set('{'=>{type=>'Set'},'('=>{type=>'Point'},'['=>{type=>'Interval'});
 $domain = Set("{$a,$c,$e}");
 $range = Set("{$b,$d,$f}");
 

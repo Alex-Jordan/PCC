@@ -68,7 +68,7 @@ a) [`\begin{aligned}[t]
 a) [`\begin{aligned}[t]
 \frac{[$fn](a+h)-[$fn](a)}{h} &= \frac{[@$f->substitute(x=>Formula("a+h"))@]-\left([$ans1]\right)}{h}\\
 &= \frac{[$ans2]-\left([$ans1]\right)}{h}\\
-&= \frac{[$a] h}{[$a]}\\
+&= \frac{[$a] h}{h}\\
 &=[$ans3]
 \end{aligned}`]
 
