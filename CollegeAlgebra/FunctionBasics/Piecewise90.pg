@@ -40,21 +40,25 @@ TEXT(beginproblem());
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
 
-$m1 = random(-2,2,0.5);
-$b1 = random(-3,3,1);
-$func1 = Compute("$m1*x+$b1")->reduce;
-$x1 = random(-7,-4,1);
-$y1 = $func1->eval(x=>$x1);
-$x2 = random(-3,-1,1);
-$y2 = $func1->eval(x=>$x2);
+do {
+   $m1 = random(-2,2,0.5);
+   $b1 = random(-3,3,1);
+   $func1 = Compute("$m1*x+$b1")->reduce;
+   $x1 = random(-7,-4,1);
+   $y1 = $func1->eval(x=>$x1);
+   $x2 = random(-3,-1,1);
+   $y2 = $func1->eval(x=>$x2);
+} until $y1 != $y2;
 
-$m2 = random(-2,2,0.5);
-$b2 = random(-3,3,1);
-$func2 = Compute("$m2*x+$b2")->reduce;
-$x4 = random(1,3,1);
-$y4 = $func2->eval(x=>$x4);
-$x5 = random(4,7,1);
-$y5 = $func2->eval(x=>$x5);
+do {
+   $m2 = random(-2,2,0.5);
+   $b2 = random(-3,3,1);
+   $func2 = Compute("$m2*x+$b2")->reduce;
+   $x4 = random(1,3,1);
+   $y4 = $func2->eval(x=>$x4);
+   $x5 = random(4,7,1);
+   $y5 = $func2->eval(x=>$x5);
+} until $y4 != $y5;
 
 $x3 = random(0,1,1) ? $x2 : $x4;
 if (random(0,1,1) == 0) {
