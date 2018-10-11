@@ -70,11 +70,10 @@ BEGIN_PGML
 
 Is the following expression a monomial, binomial, or trinomial?
 
-[``[$poly1]``] is a  [@$popup->menu()@]* of degree [_____]{$m}
+[``[$poly1]``] is a  [__]{$popup} of degree [_____]{$m}
 
 END_PGML
 
-ANS( $popup->cmp() );
 
 ##############################################
 
