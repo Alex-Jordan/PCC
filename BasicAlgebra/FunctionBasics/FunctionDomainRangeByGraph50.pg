@@ -47,7 +47,7 @@ $yAsymptote = random(-3,3,1);
 $k = random(1,3,1)*random(-1,1,2);
 $func = Compute("$k/(x-$xAsymptote)+$yAsymptote")->reduce;
 
-($min[0], $max[0], $min[1], $max[1], $ticknum[0], $ticknum[1], $xticks_ref, $yticks_ref, $marksep[0], $marksep[1]) = NiceGraphParameters([-3,3],[-3,3],centerOrigin=>1);
+($min[0], $max[0], $min[1], $max[1], $ticknum[0], $ticknum[1], $xticks_ref, $yticks_ref, $marksep[0], $marksep[1]) = NiceGraphParameters([-4,4],[-4,4],centerOrigin=>1);
 
 @xticks = @$xticks_ref;
 @yticks = @$yticks_ref;
