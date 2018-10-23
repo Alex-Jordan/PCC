@@ -88,7 +88,7 @@ for my $i (0..0) {
    $t1 = -$bound-2; $t2 = $bound+2;
    add_functions($gr[0], "$ans for x in <$t1,$t2> using color:blue and weight:1");
 
-   $px = ($max[0]-$min[0])/240;
+   my $px = ($max[0]-$min[0])/240;
 
    $yexit = ($a > 0) ? $max[1] : $min[1];
    @xvalues = num_sort(($min[0],$max[0],sqrt(($yexit-$k)/$a)+$h,-sqrt(($yexit-$k)/$a)+$h));
