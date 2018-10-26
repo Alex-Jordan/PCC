@@ -49,6 +49,8 @@ Context()->operators->set(
 '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
 ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1},
 '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+'+' => {class => 'bizarro::BOP::add', isCommand => 1},
+'-' => {class => 'bizarro::BOP::subtract', isCommand => 1},
 );
 
 $f = Formula("$a*x**2+$b*x")->reduce;
@@ -58,11 +60,11 @@ $evaluator1 = $ans1->cmp(
    checker=>sub{
       my ( $correct, $student, $ansHash ) = @_;
       return 0 if $ansHash->{isPreview} || $correct != $student;
-      Context()->flags->set(bizarroMul=>1);
+      Context()->flags->set(bizarroAdd=>1,bizarroSub=>1);
       delete $correct->{test_values};
       delete $student->{test_values};
       my $OK = ($correct == $student);
-      Context()->flags->set(bizarroMul=>0);
+      Context()->flags->set(bizarroAdd=>0,bizarroSub=>0);
       Value::Error("Your answer is equivalent to the correct answer, but not in the expected form${BR}Maybe it needs to be simplified more") unless $OK;
       return $OK;
 });
