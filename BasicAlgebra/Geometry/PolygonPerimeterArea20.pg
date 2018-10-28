@@ -148,6 +148,8 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 
+When you enter [`\pi`]'s value in a calculator, don't round it to [`3.14`]. Use the [`\pi`] button on your calculator instead. This way, your result is more accurate.
+
 >>[@ image(insertGraph( $picture[1]  ),  width=>240, extra_html_tags => "alt = '$alt[1]' title = '$alt[1]' ") @]*<<
 
 The perimeter of this shape has a semicircle, and three sides of a rectangle.
@@ -162,7 +164,7 @@ For this shape, the semicircle's diameter is simply the rectangle's base. Note t
 
     [``\begin{aligned}[t]
    \text{semicircle's circumferemce} &= \frac{1}{2}\pi d \\
-   &\approx \frac{1}{2}(3.1415926...)([$base]) \\
+   &= \frac{1}{2}(3.1415926\ldots)([$base]) \\
    &\approx [$base*3.1415926*0.5]
      \end{aligned}``]
 
@@ -185,7 +187,7 @@ where [`r`] is the circle's radius. Note that a semicircle's area is half of a c
 
     [``\begin{aligned}[t]
        \text{semicircle area} &= \frac{1}{2} \pi r^2\\
-       &\approx \frac{1}{2} (3.1415926...) ([$radius])^2 \\
+       &= \frac{1}{2} (3.1415926\ldots) ([$radius])^2 \\
        &\approx [$radius*$radius*3.1415926*0.5]
      \end{aligned}``]
 
