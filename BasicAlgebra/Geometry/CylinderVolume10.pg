@@ -41,6 +41,10 @@ loadMacros(
 
 Context("Numeric");
 Context()->flags->set(reduceConstants=>0);
+Context()->flags->set(
+  tolerance => 0.005,
+  tolType => "absolute",
+);
 
 $height = random(2,9,1);
 $radius = random(2,9,1);
@@ -122,7 +126,7 @@ Find the volume of this cylinder.
 
 a) This cylinder's volume, in terms of [`\pi`], is [_____________]. [@KeyboardInstructions(q!(Type [|pi|]* for [`\pi`].)!)@]**
 
-b) This cylinder's volume, rounded to the hundredth place, is [_____________].
+b) This cylinder's volume, rounded to the hundredths place, is [_____________].
 
 [@KeyboardInstructions(q!(Use [|m^3|]* for cubic meters.)!)@]**
 
@@ -143,7 +147,7 @@ ANS($ansVolumePIU->cmp(
 ))
 );
 
-ANS($ansVolumeDEU->cmp(tolType=>absolute,tolerance=>0.005));
+ANS($ansVolumeDEU->cmp());
 
 ##############################################
 
@@ -158,6 +162,8 @@ Putting together these two formulas, we have a cylinder's volume formula:
     [`` V= \pi r^{2} h ``]
 
 Throughout these computations, all quantities have units attached, and we only show them in the final step.
+
+When you enter [`\pi`]'s value in a calculator, don't round it to [`3.14`]. Use the [`\pi`] button on your calculator instead. This way, your result is more accurate.
 
 a)    Using the volume formula, we have:
 
@@ -174,7 +180,7 @@ b)  To find the decimal version, we replace [`\pi`] with its decimal value, and 
 
     [``\begin{aligned}[t]
       V& = [$s1] \pi \\
-       & \approx [$s1] \cdot 3.14\ldots \\
+       & \approx [$s1] \cdot 3.1415926\ldots \\
        & \approx [$ansVolumeDEU]
      \end{aligned}``]
 
