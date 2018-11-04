@@ -49,7 +49,7 @@ $k = random(2,5,1);
 $hN = -$h;
 @holex = ( );
 @holey = ( );
-do {$holex[0] = non_zero_random(-4,4,1);} until ($holex[0]!=$h);
+do {$holex[0] = non_zero_random(-4,4,1);} until (abs($holex[0])!=abs($h));
 
 $func = Formula("$k*(x-$holex[0])/((x+$h)*(x-$holex[0]))+$v")->reduce;
 $funcF = Formula("$k*(x-$holex[0])/((x+$h)*(x-$holex[0]))")->reduce;
