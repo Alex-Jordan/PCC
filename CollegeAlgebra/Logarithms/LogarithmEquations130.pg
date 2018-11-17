@@ -35,13 +35,7 @@ loadMacros(
 ##############################################
 
 TEXT(beginproblem());
-Context("FiniteSolutionSets");
-Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0, formatStudentAnswer=>parsed);
-Context()->reduction->set('(-x)-y'=>0);    #So that the displayed inequalities
-Context()->reduction->set('(-x)+y'=>0);    #will look as intended
 
-$var = RandomVariableName('type' => variable);
-Context()->variables->are($var => 'Real');
 
 do {
    $base = random(2,3,1);
@@ -53,12 +47,24 @@ do {
    $num = $a-$va;
 } until ( ($value<=125) && ($a-$num/$den>0) && ($a+$num/$den>0) );
 
-$ans = Formula("{$num/$den}");
+Context("Fraction");
+$x = Fraction($num,$den)->reduce;
+($numR,$denR) = $x->value;
+
+Context("FiniteSolutionSets");
+Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0, formatStudentAnswer=>parsed);
+Context()->reduction->set('(-x)-y'=>0);    #So that the displayed inequalities
+Context()->reduction->set('(-x)+y'=>0);    #will look as intended
+
+$var = RandomVariableName('type' => variable);
+Context()->variables->are($var => 'Real');
+
+$ans = Formula("{$numR/$denR}");
 $exp1 = Compute("$a-$var")->reduce;
 $exp2 = Compute("$a+$var")->reduce;
 
-Context("Fraction");
-$x = Fraction($num,$den);
+
+
 
 ##############################################
 
