@@ -50,6 +50,7 @@ $base = random(2,9,1);
 
 $f = Compute("$a*e**($b-x)+$c")->reduce;
 $ans = Compute("$b-ln((x-[$c])/$a)")->reduce;
+$ans->{limits} = [$c+1,$c+10];
 
 ##############################################
 
