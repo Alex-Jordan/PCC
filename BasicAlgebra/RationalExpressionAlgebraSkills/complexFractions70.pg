@@ -57,7 +57,10 @@ $dPluse = $d+$e;
 $be = $b*$e;
 $bd = $b*$d;
 $o = $be-$bd;
-$ans = Formula("($c*$var1**2+$a*$var1-$b2c)/($dPluse*$var1+$o), $var1 != -$b and $var1 != $b")->reduce;
+$G = gcd($dPluse,$o);
+$dPluseG = $dPluse/$G;
+$oG = $o/$G;
+$ans = Formula("($c*$var1**2+$a*$var1-$b2c)/($G($dPluseG*$var1+$oG)), $var1 != -$b and $var1 != $b")->reduce;
 $ans->{trueDomain} = Compute("$var1 != -$b and $var1 != $b and $var1 != -$o/$dPluse");
 
 ##############################################
