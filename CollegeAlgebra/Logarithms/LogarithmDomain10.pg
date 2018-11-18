@@ -45,7 +45,7 @@ $f = Formula("log($a-x)")->reduce;   #generate a radical function
 
 
 Context("Interval");
-$domain = Compute("(-inf,$a]");
+$domain = Compute("(-inf,$a)");
 
 ##############################################
 
@@ -69,9 +69,8 @@ To ensure that we are not taking the logarithm of a negative number, we need to 
 
 
    [`\begin{aligned}[t]
-[$a]-x & \geq 0\\
-[$a]-x+x  & \geq 0+x\\
-[$a] & \geq x
+[$a]-x & \gt 0\\
+[$a] & \gt x
 \end{aligned}`]
 
 This tells us that [`x`] must be less than or equal to [`[$a]`] or be in the interval [`[$domain]`].    
