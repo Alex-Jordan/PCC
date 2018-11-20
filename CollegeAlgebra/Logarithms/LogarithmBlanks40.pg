@@ -36,16 +36,17 @@ Context()->reduction->set('(-x)-y'=>0);    #So that the displayed inequalities
 Context()->reduction->set('(-x)+y'=>0);    #will look as intended
 
 @nums = ([2,6],[3,4],[4,3],[5,3],[6,2],[7,2],[8,2],[9,2],[10,2]);
-$index0 = random(0,8,1);
-do {$index1 = random(0,8,1);} until ($index1!=$index0);
 
 do {
+   $index0 = random(0,8,1);
+   $index1 = random(0,8,1);
+   
    $base0 = $nums[$index0][0];
    $base1 = $nums[$index1][0];
 
    $ex0 = -random(2,$nums[$index0][1],1);
    $ex1 = -random(2,$nums[$index1][1],1);
-} until ($ex0 != $ex1);
+} until $ex0 != $ex1 && $index1!= $index0;
 
 $value0 = $base0**(-$ex0);
 $value1 = $base1**(-$ex1);
