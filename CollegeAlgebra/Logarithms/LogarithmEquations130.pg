@@ -59,7 +59,7 @@ Context()->reduction->set('(-x)+y'=>0);    #will look as intended
 $var = RandomVariableName('type' => variable);
 Context()->variables->are($var => 'Real');
 
-$ans = Formula("{$numR/$denR}");
+$ans = $denR==1 ? Formula("{$numR}") : Formula("{$numR/$denR}");
 $exp1 = Compute("$a-$var")->reduce;
 $exp2 = Compute("$a+$var")->reduce;
 
