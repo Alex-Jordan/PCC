@@ -23,6 +23,7 @@ loadMacros(
       "PGML.pl",
       "PCCmacros.pl",
       "PGcourse.pl",
+      "parserOneOf.pl",
     );
 
 TEXT(beginproblem());
@@ -40,9 +41,14 @@ $e = $c**2-$b;
 
 $expression = "\dfrac{$a}{\sqrt{$b}+$c}";
 $stringans = "($d-$a sqrt($b))/$e";
+$G = gcd($a,$d);
+$D = $d/$G;
+$A = $a/$G;
+$factored = "$G($D-$A sqrt($b))/$e";
 
 Context("LimitedRadical");
 $ans = Formula("$stringans");
+if ($G != 1) {$ans = OneOf(Formula("$stringans"),Formula("$factored"));};
 
 
 ##############################################
