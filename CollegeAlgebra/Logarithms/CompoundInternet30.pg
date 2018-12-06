@@ -48,7 +48,7 @@ $rd = $r/100;
 $y = random($initial+2000, 1.5*$initial, 1000);
 $n = list_random(4,12,365);
 
-$x = ln($y/$initial)/ln(1+$rd/4)/$n;
+$x = ln($y/$initial)/ln(1+$rd/$n)/$n;
 $xR = int($x*10+0.5)/10;
 
 Context("Currency");

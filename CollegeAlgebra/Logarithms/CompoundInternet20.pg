@@ -41,13 +41,14 @@ $name = RandomName();
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
 Context()->variables->add(t => 'Real');
+Context()->{format}{number} = "%.7g";
 
 $initial = random(5000,10000,1000);
 $r = random(8,20,0.1);
 $rd = $r/100;
 do {
    $x1 = random(3,15,1);
-   $y1 = $initial*Real(e)*($rd*$x1);
+   $y1 = $initial*Real(e)**($rd*$x1);
    $y2 = random($initial+2000,$initial*2.5,1000);
    $x2 = ln($y2/$initial)/$rd;
 } until (abs($x1-$x2)>3);
