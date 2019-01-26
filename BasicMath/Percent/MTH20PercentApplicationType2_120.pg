@@ -137,7 +137,7 @@ BEGIN_PGML
 
 What percent of students ride Bus [$busName]? 
 
-[@KeyboardInstrucitons('Fill in the blank with a percent. Round your percent to whole numbers, like [`11%`].')@]**
+[@KeyboardInstructions('Fill in the blank with a percent. Round your percent to whole numbers, like [`11%`].')@]**
 
 Approximately [_________]{$perP} of students ride Bus [$busName]. 
 
