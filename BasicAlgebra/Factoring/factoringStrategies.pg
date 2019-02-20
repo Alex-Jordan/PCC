@@ -63,7 +63,7 @@ if ($main eq 'trinomial-product' or $main eq 'diff-squares' or $main eq 'perfect
     if ($b_gcf == 0) {$p = Formula("$a*$c $x^2+($a*$d+$b*$c) $x $y + $b*$d $y^2")->reduce->reduce;}
     else {
       $g = random(2,9,1);
-      $p = Formula("$g*$a*$c $x^(2+$gcf_v)  +  ($a*$d+$b*$c) $x^(1+$gcf_v) $y + $g*$b*$d $x^($gcf_v) $y^2")->reduce->reduce;
+      $p = Formula("$g*$a*$c $x^(2+$gcf_v)  +  $g*($a*$d+$b*$c) $x^(1+$gcf_v) $y + $g*$b*$d $x^($gcf_v) $y^2")->reduce->reduce;
     };
   };
 };
