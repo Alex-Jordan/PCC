@@ -59,10 +59,10 @@ BEGIN_PGML
 
 Evaluate the expression [`[$func]`]:
 
-a. For [`[$var1]=[$a]`].               
+a. For [`[$var1]=[$a]`].  
    [_______]{$ans1}
 
-a. For [`[$var1]=[$b]`]. 
+a. For [`[$var1]=[$b]`].  
    [_______]{$ans2}
 
 END_PGML
