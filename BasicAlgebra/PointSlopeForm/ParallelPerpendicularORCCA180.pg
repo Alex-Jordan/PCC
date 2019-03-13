@@ -77,6 +77,8 @@ $ansSI = Formula("y=$l")->reduce;
 $PSeval = $ansPS->cmp(checker => sub {
       my ( $correct, $student, $ansHash ) = @_;
       return 0 if $ansHash->{isPreview} || $correct != $student;
+      $correct = Formula("$correct");
+      $student = Formula("$student");
       Context()->flags->set(bizarroAdd=>1,bizarroSub=>1);
       delete $correct->{test_values};
       delete $student->{test_values};
@@ -89,6 +91,8 @@ $PSeval = $ansPS->cmp(checker => sub {
 $SIeval = $ansSI->cmp(checker => sub {
       my ( $correct, $student, $ansHash ) = @_;
       return 0 if $ansHash->{isPreview} || $correct != $student;
+      $correct = Formula("$correct");
+      $student = Formula("$student");
       Context()->flags->set(bizarroAdd=>1,bizarroSub=>1);
       delete $correct->{test_values};
       delete $student->{test_values};
