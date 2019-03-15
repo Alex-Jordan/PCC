@@ -66,7 +66,6 @@ TEXT(beginproblem());
 BEGIN_PGML
 
 Subtract the following.
-
 a. [` -[$a]-([$b])  `]  
    [________]{$ans1} 
 

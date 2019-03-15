@@ -67,7 +67,6 @@ TEXT(beginproblem());
 BEGIN_PGML
 
 Add the following.
-
 a. [` [$a]+[$b]  `]  
    [________]{$ans1} 
 

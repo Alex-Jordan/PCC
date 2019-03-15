@@ -77,7 +77,6 @@ TEXT(beginproblem());
 BEGIN_PGML
 
 Evaluate the following. [@KeyboardInstructions('If the result is undefined then enter [|undefined|]*.')@]**
-
 a. [` \frac{[$num1]}{[$den1]}  `]  
    [________]{$ans1} 
 

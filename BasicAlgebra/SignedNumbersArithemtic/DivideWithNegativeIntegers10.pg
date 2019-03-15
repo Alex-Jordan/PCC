@@ -82,7 +82,6 @@ TEXT(beginproblem());
 BEGIN_PGML
 
 Evaluate the following.
-
 a. [` \frac{[$num1]}{[$den1]}  `]  
    [________]{$ans1->cmp(studentsMustReduceFractions=>1)}
 
