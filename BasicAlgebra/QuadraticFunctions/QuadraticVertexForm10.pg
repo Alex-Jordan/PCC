@@ -47,7 +47,7 @@ Context()->operators->set(
 
 $a = non_zero_random(-9,9,1);
 $h = non_zero_random(-9,9,1);
-$k = non_zero_random(-9,9,1);
+do {$k = non_zero_random(-9,9,1);} until (abs($h)!=abs($k));
 $ans = Compute("$a*(x-$h)^2+$k");
 if ($a == 1) {$ans = Compute("(x-$h)^2+$k");};
 if ($a == -1) {$ans = Compute("-(x-$h)^2+$k");};
@@ -84,6 +84,8 @@ END_PGML
 
 
 BEGIN_PGML_SOLUTION
+
+A quadratic function's vertex form looks like [` f(x) = a(x-h)^2+k `], where [`(h, k)`] is the parabola's vertex.
 
 The solution is [` f(x) = [$a](x-[$h])^2+[$k] `].
 
