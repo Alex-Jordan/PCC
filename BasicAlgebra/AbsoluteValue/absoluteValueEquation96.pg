@@ -35,7 +35,7 @@ $var = RandomVariableName(type=>variable);
 Context()->variables->are($var=>'Real');
 
 do {
-   $b = random(2,5,1)*random(-1,1,2);
+   $b = -random(2,5,1);
    $c = non_zero_random(-5,5,1);
    $e = random(1,10,1);
 } until ( ( ($e-$c)%$b==0 ) && ( (-$e-$c)%$b==0) );
@@ -50,7 +50,7 @@ TEXT(beginproblem());
 BEGIN_PGML
 Solve this equation
 
-     [` \left| [$b][$var]+[$c] \right| = [$e] `]
+     [` \left| [$c]+[$b][$var] \right| = [$e] `]
 
 * Enter solutions in set notation.
 
@@ -64,17 +64,17 @@ $s2 = -$e-$c;
 
 BEGIN_PGML_SOLUTION
 
-We will break the absolute value equation into two parts. As an easier example, when we solve the equation [`|x|=1`], we break it into:
+We will break the absolute value equation into two parts. As an easier example, when we solve the equation [`\left|x\right|=1`], we break it into:
 
     [`x=1 \text{   or   } x=-1`].
 
-Similarly, to remove the absolute value symbol, we break [`\left|[$b][$var]+[$c]\right| = [$e]`] into two parts:
+Similarly, to remove the absolute value symbol, we break [`\left|[$c]+[$b][$var]\right| = [$e]`] into two parts:
 
     [``
 \begin{aligned}[t]
-   &&\left|[$b][$var]+[$c]\right| = [$e] \\
-   [$b][$var]+[$c] &= [$e] &\text{ or }&& [$b][$var]+[$c] &= -[$e] \\
-   [$b][$var]+[$c] \mathbf{{}-[$c]} &= [$e] \mathbf{{}-[$c]} &\text{ or }&& [$b][$var]+[$c] \mathbf{{}-[$c]} &= -[$e] \mathbf{{}-[$c]} \\
+   &&\left|[$c]+[$b][$var]\right| = [$e] \\
+   [$c]+[$b][$var] &= [$e] &\text{ or }&& [$c]+[$b][$var] &= -[$e] \\
+   [$c]+[$b][$var] \mathbf{{}-[$c]} &= [$e] \mathbf{{}-[$c]} &\text{ or }&& [$c]+[$b][$var] \mathbf{{}-[$c]} &= -[$e] \mathbf{{}-[$c]} \\
    [$b][$var] &= [$e-$c] &\text{ or }&& [$b][$var] &= [$s2] \\
    \frac{[$b][$var]}{[$b]} &= \frac{[$e-$c]}{[$b]} &\text{ or }&& \frac{[$b][$var]}{[$b]} &= \frac{[$s2]}{[$b]} \\
    [$var] &= [$ans1] &\text{ or }&& [$var] &= [$ans2]
