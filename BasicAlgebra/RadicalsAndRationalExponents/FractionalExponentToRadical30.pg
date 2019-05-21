@@ -35,7 +35,7 @@ loadMacros(
 ######################################
 
 TEXT(beginproblem());
-Context("Numeric");
+Context("Form");
 $var = list_random('x','y','z','t','r','m','n','a','b','c');
 Context()->variables->are($var=>'Real');
 $showPartialCorrectAnswers = 1;
