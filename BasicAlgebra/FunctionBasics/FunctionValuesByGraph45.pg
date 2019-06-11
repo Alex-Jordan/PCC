@@ -141,10 +141,10 @@ $radio1 = RadioButtons(
 $ans3 = List($x2,$x3);
 
 @answers2 = (
-   "The article was ".main::math_ev3($y2)." feet from the starting line ".main::math_ev3($x2)." seconds since timing started, and again ".main::math_ev3($x3)." seconds since timing started.",
-   "The article was ".main::math_ev3($y2)." feet from the starting line ".main::math_ev3($x2)." seconds since timing started.",
-   "The article was ".main::math_ev3($y2)." feet from the starting line ".main::math_ev3($x3)." seconds since timing started.",
-   "The article was ".main::math_ev3($y2)." feet from the starting line ".main::math_ev3($x2)." seconds since timing started, or ".main::math_ev3($x3)." seconds since timing started.",
+   "The particle was ".main::math_ev3($y2)." feet from the starting line ".main::math_ev3($x2)." seconds since timing started, and again ".main::math_ev3($x3)." seconds since timing started.",
+   "The particle was ".main::math_ev3($y2)." feet from the starting line ".main::math_ev3($x2)." seconds since timing started.",
+   "The particle was ".main::math_ev3($y2)." feet from the starting line ".main::math_ev3($x3)." seconds since timing started.",
+   "The particle was ".main::math_ev3($y2)." feet from the starting line ".main::math_ev3($x2)." seconds since timing started, or ".main::math_ev3($x3)." seconds since timing started.",
 );
 
 #Create a hash and its inverse that randomizes the order of the four graphs.
@@ -220,7 +220,7 @@ b) Answer is Part A implies the particle was [`[$y1]`] feet away from the starti
 
 c) According to data in the table, [`d([$x2])=[$y2]`] and [`d([$x3])=[$y3]`]. So the answer is [`[$ans3]`].
 
-d) Answer is Part C implies the article was [`[$y2]`] feet from the starting line [`[$x2]`] seconds since timing started, and again [`[$x3]`] seconds since timing started.
+d) Answer is Part C implies the particle was [`[$y2]`] feet from the starting line [`[$x2]`] seconds since timing started, and again [`[$x3]`] seconds since timing started.
 
 
 END_PGML_SOLUTION
