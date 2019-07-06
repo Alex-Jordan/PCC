@@ -135,7 +135,7 @@ $refreshCachedImages = 1;
 
 Context()->texStrings;
 BEGIN_TEXT
-Here is an interval:$PAR
+For the interval expressed in the number line, write it using set-builder notation and interval notation.$PAR
 
 $BCENTER
 \{ image( insertGraph($gr[ $indices[0] ]), width=>$screenXSize, tex_size=>$hardCopyPercent, 
@@ -148,12 +148,9 @@ Context()->normalStrings;
 BEGIN_PGML
 [@KeyboardInstructions(q!Please type [|INF|]* for [`\infty`], [|<=|]* for [`\leq`], and [|>=|]* for [`\geq`].!)@]** 
 
-    Write the interval using set-builder notation.  
-    [_____________________]
+    In set-builder notation: [_____________________]
 
-
-    Write the interval using interval notation.  
-    [_____________________]  
+    In interval notation: [_____________________]
 
 
 
