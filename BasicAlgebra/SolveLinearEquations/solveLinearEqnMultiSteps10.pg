@@ -68,9 +68,10 @@ TEXT(beginproblem());
 BEGIN_PGML
 
 [@instructions(~~@vArray)@]**
-    [`` [$left]=[$right]  ``]  
 
-    [_______________________________] 
+    [`` [$left] = [$right]  ``]
+
+    [_______________________________]
 
 END_PGML
 
