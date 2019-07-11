@@ -59,7 +59,7 @@ BEGIN_PGML
 
 A line passes through the points [`([$x1],[$y1])`] and [`([$x2],[$y2])`]. Find this line's equation in slope-intercept form.
 
-[______________]{$ansSI}.
+[______________]{$ansSI}
 
 END_PGML
 
