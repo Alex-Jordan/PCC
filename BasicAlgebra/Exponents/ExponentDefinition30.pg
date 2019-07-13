@@ -53,10 +53,10 @@ TEXT(beginproblem());
 BEGIN_PGML
 
 Evaluate the following.
-a. [` ([$a])^{2} `]
+a. [` ([$a])^{2} `]  
    [________]{$ans1}
 
-a. [` [$b]^{2} `]
+a. [` [$b]^{2} `]  
    [________]{$ans2}
 
 

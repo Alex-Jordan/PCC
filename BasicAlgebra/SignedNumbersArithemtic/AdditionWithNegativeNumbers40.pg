@@ -67,13 +67,13 @@ TEXT(beginproblem());
 BEGIN_PGML
 
 Add the following.
-a. [` [$a]+([$b])  `]
+a. [` [$a]+([$b])  `]  
    [________]{$ans1}
 
-a. [` [$c]+[$d]  `]
+a. [` [$c]+[$d]  `]  
    [________]{$ans2}
 
-a. [` [$e]+([$f])  `]
+a. [` [$e]+([$f])  `]  
    [________]{$ans3}
 
 

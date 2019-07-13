@@ -68,16 +68,16 @@ TEXT(beginproblem());
 BEGIN_PGML
 
 Multiply the following.
-a. [` ([$a])\cdot([$b])  `]
+a. [` ([$a])\cdot([$b])  `]  
    [________]{$ans1}
 
-a. [` ([$c])\cdot[$d]  `]
+a. [` ([$c])\cdot[$d]  `]  
    [________]{$ans2}
 
-a. [` [$e]\cdot([$f])  `]
+a. [` [$e]\cdot([$f])  `]  
    [________]{$ans3}
 
-a. [` ([$g])\cdot[$h]  `]
+a. [` ([$g])\cdot[$h]  `]  
    [________]{$ans4}
 
 END_PGML
