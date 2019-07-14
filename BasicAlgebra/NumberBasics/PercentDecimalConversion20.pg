@@ -53,7 +53,7 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Convert the following decimals into percentage.
+Write the following percentages as decimals.
 
 a. [`` [$a] = ``] [_____]{$ans1}
 
