@@ -158,7 +158,7 @@ $PAR
 
 $BCENTER
 \{ image( insertGraph($gr), 
-width=>240,height=>120,tex_size=>800,
+width=>240,
 extra_html_tags=>"alt = '$alt'" ) \}
 $BR
 $ECENTER
