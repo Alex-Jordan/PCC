@@ -176,20 +176,21 @@ The following figure has the graph [`y=d(t)`], which models a particle's distanc
 
 [@EnlargeImageStatementPGML@]**
 
->>[@ image(insertGraph( $gr[0]  ), tex_size=>400, width=>240,
+>>[@ image(insertGraph( $gr[0]  ), width=>240,
 extra_html_tags=>"alt= '$alt[0]' title= '$alt[0]'"
 ) @]*<<
 
 
-a)  [`d([$x1])=`][_________]
+a. Find [`d([$x1])`].  
+   [_________]
 
-b) Interpret the meaning of [`d([$x1])`]:
+a. Interpret the meaning of [`d([$x1])`].
 
     [@$radio1->buttons()@]*
 
-c) Solve [`d(t)=[$y2]`] for [`t`]. [@KeyboardInstructions('Use commas to separate your answers if there are more than one solution.')@]** [`t=`][________]
+a. Solve [`d(t)=[$y2]`] for [`t`]. [@KeyboardInstructions('Use commas to separate your answers if there are more than one solution.')@]** [`t=`][________]
 
-d) Interpret the meaning of part c's solution(s):
+a. Interpret the meaning of part c's solution(s).
 
     [@$radio2->buttons()@]*
 

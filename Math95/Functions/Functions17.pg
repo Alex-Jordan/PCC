@@ -31,6 +31,7 @@ loadMacros(
   "unionTables.pl",
   "PGML.pl",
   "PCCmacros.pl",
+  "parserAssignment.pl",
   "PGcourse.pl",
 
 );
@@ -63,12 +64,17 @@ $y[$i] = Compute($f->eval(x=>$i));
 
 $multiplybyi = $MultiplyBy[$i];
 
+Context("Numeric");
+parser::Assignment->Allow;
+parser::Assignment->Function("$fname");
+$formula = Formula("$fname(x)=$f");
+
 ##############################################
 
 BEGIN_PGML
-Here is a verbal representation of a function [`[$fname]`].
+Here is a verbal description of a function [`[$fname]`].
 
-    [$multiplybyi] the input [`x`] and then subtract [@numberWord($j)@] to obtain the output [`y`].
+"[$multiplybyi] the input [`x`] and then subtract [@numberWord($j)@] to obtain the output [`y`]."
 
 Give a numeric representation of [`[$fname]`]:
 [@
@@ -79,9 +85,11 @@ EndTable()
 @]*
 
 
-Give a symbolic representation of [`[$fname]`]:
+Give a formula for [`[$fname]`].
+[@KeyboardInstructions(qw!Include the function's name and an equals sign in the formula.!)@]**
 
-    [`[$fname](x)={}`][__________]
+[__________]
+
 
 END_PGML
 
@@ -92,7 +100,7 @@ END_PGML
 for my $i (0..4) {
 ANS($y[$i]->cmp);
 }
-ANS($f->cmp);
+ANS($formula->cmp);
 
 
 

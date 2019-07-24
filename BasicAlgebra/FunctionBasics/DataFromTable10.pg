@@ -161,15 +161,16 @@ The function [`C`] models the the number of customers in a store [`t`] hours sin
 );@]*
 
 
-a)  [`C([$x1])=`][_________]
+a) Find [`C([$x1])`].  
+   [_________]
 
-b) Interpret the meaning of [`C([$x1])`]:
+b) Interpret the meaning of [`C([$x1])`].
 
     [@$radio1->buttons()@]*
 
 c) Solve [`C(t)=[$y2]`] for [`t`]. [@KeyboardInstructions('Use commas to separate your answers if there are more than one solution.')@]** [`t=`][________]
 
-d) Interpret the meaning of Part c's solution(s):
+d) Interpret the meaning of Part c's solution(s).
 
     [@$radio2->buttons()@]*
 
