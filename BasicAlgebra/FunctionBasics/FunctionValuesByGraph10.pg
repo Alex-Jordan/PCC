@@ -177,7 +177,7 @@ a. Find [``f([$ansXNoDup])``].
    [_]{Compute($ansYNoDup)}{10}
 
 a. Solve [``f(x)=[$ansYDup]``].  
-    [_]{$ansXDupList}{20}
+   [_]{$ansXDupList}{20}
 
 END_PGML
 
