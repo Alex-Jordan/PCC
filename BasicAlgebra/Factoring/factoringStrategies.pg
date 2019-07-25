@@ -149,10 +149,10 @@ $mc -> makeLast(@answers);
 Context()->normalStrings;
 
 BEGIN_PGML
-
-In factoring [`[$p]`], which factoring techniques/tools will be useful? Check all that apply.
-
+Which factoring techniques/tools will be useful for factoring the polynomial below? Check all that apply.
 [@ $mc -> print_a() @]*
+
+[`[$p]`] 
 
 END_PGML
 
