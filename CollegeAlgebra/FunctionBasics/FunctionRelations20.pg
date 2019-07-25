@@ -90,14 +90,14 @@ Some equations involving [`x`] and [`y`] define [`y`] as a function of
 [`y`] is not a function of [`x`], since for a given positive value
 of [`x`], the value of [`y`] could equal [`\sqrt{x}`] or it could equal [`-\sqrt{x}`].  
  
-[@ $mc -> print_q() @]*
+Select all of the following relations that make [`y`] a function of [`x`]. There are several correct answers.
 
 [@ $mc -> print_a() @]*
 
 
 On the other hand, some equations involving [`x`] and [`y`] define [`x`] as a function of [`y`] (the other way round). 
 
-[@ $mc2 -> print_q() @]*
+Select all of the following relations that make [`x`] a function of [`y`]. There are several correct answers.
 
 [@ $mc2 -> print_a() @]*
 
