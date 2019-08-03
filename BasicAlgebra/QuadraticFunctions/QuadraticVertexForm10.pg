@@ -24,6 +24,7 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "bizarroArithmetic.pl",
+  "parserAssignment.pl",
   "PGcourse.pl",
 );
 
@@ -32,6 +33,8 @@ loadMacros(
 TEXT(beginproblem()); 
 
 Context("Numeric");
+parser::Assignment->Allow;
+parser::Assignment->Function("f");
 Context()->operators->set(
 '+' => {class => 'bizarro::BOP::add', isCommand => 1},
 '-' => {class => 'bizarro::BOP::subtract', isCommand => 1},
@@ -48,7 +51,7 @@ Context()->operators->set(
 $a = non_zero_random(-9,9,1);
 $h = non_zero_random(-9,9,1);
 do {$k = non_zero_random(-9,9,1);} until (abs($h)!=abs($k));
-$ans = Compute("$a*(x-$h)^2+$k");
+$ans = Compute("f(x)=$a*(x-$h)^2+$k");
 if ($a == 1) {$ans = Compute("(x-$h)^2+$k");};
 if ($a == -1) {$ans = Compute("-(x-$h)^2+$k");};
 
@@ -76,7 +79,7 @@ BEGIN_PGML
 
 Write the vertex form for the quadratic function [`f`], whose vertex is [`([$h],[$k]) `] and has leading coefficient [`a=[$a]`].
 
-    [`` f(x) =``] [_________________]{$evaluator}
+[_________________]{$evaluator}
 
 END_PGML
 
