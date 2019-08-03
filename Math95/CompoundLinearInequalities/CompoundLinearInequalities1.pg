@@ -99,7 +99,7 @@ else {$ans[3] = $no;};
 Context()->texStrings;
 
 for my $i (0..2) {
-$statement[$i] = "\($left1[$i] $comp1[$i] $right1[$i]\) $comb[$i] \($left2[$i] $comp2[$i] $right2[$i] \qquad $var[$i] = $x[$i]\)";
+$statement[$i] = general_math_ev3("$left1[$i] $comp1[$i] $right1[$i]".'\quad\text{'."$comb[$i]".'}\quad '."$left2[$i] $comp2[$i] $right2[$i] \qquad $var[$i] = $x[$i]");
 $popup[$i] = PopUp(['?',$yes,$no],"$ans[$i]");
 }
 
