@@ -103,7 +103,7 @@ $statement[$i] = general_math_ev3("$left1[$i] $comp1[$i] $right1[$i]".'\quad\tex
 $popup[$i] = PopUp(['?',$yes,$no],"$ans[$i]");
 }
 
-$statement[3] = "\($left1[3] $comp1[3] $right1[3] $comp2[3] $right2[3] \qquad $var[3] = $x[3]\)";
+$statement[3] = general_math_ev3("$left1[3] $comp1[3] $right1[3] $comp2[3] $right2[3] \qquad $var[3] = $x[3]");
 $popup[3] = PopUp(['?',$yes,$no],"$ans[3]");
 
 

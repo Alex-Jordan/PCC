@@ -45,7 +45,7 @@ a. If the ground temperature is [`[$a]^{\circ}\text{C}`], write a formula for th
 
 a. What range of temperature will a plane be exposed to if it takes off and reaches a maximum height of [`[$b]\,\text{km}`]? Write answer in interval notation.
     [@KeyboardInstructions('If you need to use the [`\infty`] symbol, type [|INF|]*. If you need to use the union symbol [`\cup`], type [|U|]*.')@]**
-    The range is [__]{$ans2}{width=>20}
+    The range is [__]{$ans2}{width=>20}.
 
 END_PGML
 
