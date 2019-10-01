@@ -33,7 +33,8 @@ When you use this button, you should write a message to your instructor (or TA) 
 
 Writing for help is OK! Yes, it is last on this list, but that is just because it is good for you to try to be self sufficient. There is a lot you can gain from WeBWorK's feedback, your textbook, and your notes. If you feel it is appropriate to contact your instructor for help, then do so!
 
-This answer blank is expecting a certain answer: [___________]{Real(112358)->cmp(tolType=>absolute,tolerance=>0.1)}. The only way to get the answer is to use the *Email Instructor* button and politely ask for it. (Instructors: you can check the _Show correct answers_ box to see the answer and write a response to your student.)
+This answer blank is expecting a certain answer: [___________]{Real(112358)->cmp(tolType=>absolute,tolerance=>0.1)}. The only way to get the answer is to use the *Email Instructor* button and politely ask for it. (Instructors: you can check the box show "Correct Answers", then use either the "Check" or "Submit" button to see the answer and write a response to your student.)
+
 
 
 
