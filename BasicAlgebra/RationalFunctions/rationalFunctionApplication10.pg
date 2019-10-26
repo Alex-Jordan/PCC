@@ -73,7 +73,7 @@ a. How many deer live in this forest [`[$x2]`] years after 1900? [@KeyboardInstr
 a. How many years since 1900 was it (or will it be) when the deer population was (or will be) [`[$y3]`]? [@KeyboardInstructions('Round your answer to an integer.')@]*  
 [__________]{$ans3}
 
-a. Use a calculator or graphing calculaor to answer this question: As time goes on, the population levels off at about how many deer?  
+a. Use a calculator or graphing calculator to answer this question: As time goes on, the population levels off at about how many deer?  
 [__________]{$eval4}
 
 END_PGML
