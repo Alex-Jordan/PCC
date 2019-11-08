@@ -1,0 +1,108 @@
+# Given values for f(a0) and f(a1), find a formula for linear f(x)
+# This version: slope and y-intercept both non-integer
+# Also the data values are all two- or three-digit integers
+
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author(Alex Jordan)
+## Institution(Portland Community College)
+## Language(en-US)
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextFraction.pl",
+  "PGchoicemacros.pl",
+  "parserAssignment.pl",
+  "bizarroArithmetic.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+
+$xmin= 11;
+$xmax= 999;
+$ymin= 11;
+$ymax= 999;
+
+Context("Fraction");
+do {
+  @a = ($xmin..$xmax)[(NchooseK($xmax-$xmin+1,2))];
+  @b = ($ymin..$ymax)[(NchooseK($ymax-$ymin+1,2))];
+  $m = Fraction($b[1]-$b[0], $a[1]-$a[0]);
+  $yint = Fraction($b[0] - ($b[1]-$b[0])/($a[1]-$a[0]) * $a[0]);
+} until (($yint->value)[1] != 1 and ($m->value)[1] != 1);
+
+Context("Numeric");
+Parser::Number::NoDecimals();
+Context()->noreduce('(-x)-y','(-x)+y');
+$fname = RandomVariableName(type=>'function');
+parser::Assignment->Allow;
+parser::Assignment->Function("$fname");
+Context()->operators->set(
+  '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+  ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+  '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+  '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+  ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+  '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+  '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+);
+$f = Formula("$fname(x) = $m x + $yint")->reduce;
+
+$evaluator = $f -> cmp(
+   checker=>sub{
+      my ( $correct, $student, $ansHash ) = @_;
+      return 0 if $ansHash->{isPreview} || $correct != $student;
+      Context()->flags->set(bizarroMul=>1,bizarroDiv=>1);
+      delete $correct->{test_values};
+      delete $student->{test_values};
+      my $OK = ($correct == $student);
+      Context()->flags->set(bizarroMul=>0,bizarroDiv=>0);
+      Value::Error("Your answer is equivalent to the correct answer, but not in the expected form.
+                    Maybe it needs to be simplified, factored, expanded, have its denominator rationalized, etc.") unless $OK;
+      return $OK;
+});
+
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+
+A linear function [`[$fname]`] is such that [`[$fname]([$a[0]])=[$b[0]]`] and [`[$fname]([$a[1]])=[$b[1]]`]. Find a formula for this function in the form [`[$fname](x)=mx+b`].
+
+[_]{$evaluator}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
