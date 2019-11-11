@@ -1,0 +1,129 @@
+# Given two populations of a country at different times,
+# find a formula for linear P(t)
+
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1()
+## Problem1()
+## Author(Alex Jordan)
+## Institution(Portland Community College)
+## Language(en-US)
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextFraction.pl",
+  "PGchoicemacros.pl",
+  "parserAssignment.pl",
+  "bizarroArithmetic.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup
+############################################################
+
+%pops = (
+  'the United States' => {
+    2010=>309,
+    2011=>312,
+    2012=>314,
+    2013=>316,
+    2014=>319,
+    2015=>321,
+    2016=>323,
+    2017=>326,
+    2018=>327,
+    },
+  'Mexico' => {
+    2010=>117,
+    2011=>119,
+    2012=>121,
+    2013=>123,
+    2014=>124,
+    2015=>126,
+    2016=>128,
+    2017=>129,
+    2018=>131,
+    },
+  'Indonesia' => {
+    2010=>243,
+    2011=>246,
+    2012=>249,
+    2013=>252,
+    2014=>255,
+    2015=>258,
+    2016=>261,
+    2017=>264,
+    2018=>267,
+    },
+  'Niger' => {
+    2010=>16.4,
+    2011=>17.1,
+    2012=>17.7,
+    2013=>18.4,
+    2014=>19.2,
+    2015=>19.9,
+    2016=>20.7,
+    2017=>21.5,
+    2018=>22.3,
+    },
+);
+
+$country = list_random(lex_sort(keys %pops));
+%countrypops = %{$pops{$country}};
+@years = num_sort(keys %countrypops);
+@a = num_sort((@years)[NchooseK(scalar @years,2)]);
+@b = map{$countrypops{$_}}(@a);
+
+Context("Numeric");
+Context()->flags->set(reduceConstants=>0);
+Context()->noreduce('(-x)-y','(-x)+y');
+$fname = 'P';
+Context()->variables->add(t=>'Real');
+parser::Assignment->Allow;
+parser::Assignment->Function("$fname");
+$m = ($b[1] - $b[0])/($a[1] - $a[0]);
+$yint = $b[0] - $m*$a[0];
+$f = Formula("$fname(x) = $m x + $yint")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+
+The population of [$country] in the year [$a[0]] was [$b[0]] million,
+and then later in year [$a[1]] was [$b[1]] million. Assume that the population
+of [$country], [`P`], in millions, is a linear function of time [`t`], the year. Find a formula for [`P(t)`] in the form [`[$fname](t)=m t+b`].
+
+[_]{$f}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+

@@ -44,13 +44,15 @@ $xmax= 99;
 $ymin= 11;  #will be divided by 100
 $ymax= 999; #will be dividd by 100
 
-Context("Fraction");
-do {
+#Context("Fraction");
+#do {
   @a = ($xmin..$xmax)[(NchooseK($xmax-$xmin+1,2))];
   @b = map{$_/100}(($ymin..$ymax)[(NchooseK($ymax-$ymin+1,2))]);
-  $m = Fraction($b[1]-$b[0], $a[1]-$a[0]);
-  $yint = Fraction($b[0] - ($b[1]-$b[0])/($a[1]-$a[0]) * $a[0]);
-} until (($yint->value)[1] != 1 and ($m->value)[1] != 1);
+  $m = ($b[1]-$b[0])/($a[1]-$a[0]);
+  #$m = Fraction($b[1]-$b[0], $a[1]-$a[0]);
+  $yint = $b[0] - ($b[1]-$b[0])/($a[1]-$a[0]) * $a[0];
+  #$yint = Fraction($b[0] - ($b[1]-$b[0])/($a[1]-$a[0]) * $a[0]);
+#} until (($yint->value)[1] != 1 and ($m->value)[1] != 1);
 
 #Commenting out below allows decimals
 Context("Numeric");
@@ -70,7 +72,7 @@ parser::Assignment->Function("$fname");
 #);
 $f = Formula("$fname(x) = $m x + $yint")->reduce;
 
-$evauator = $f;
+$evaluator = $f;
 #$evaluator = $f -> cmp(
 #   checker=>sub{
 #      my ( $correct, $student, $ansHash ) = @_;

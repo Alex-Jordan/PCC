@@ -1,6 +1,7 @@
 # Given values for f(a0) and f(a1), find a formula for linear f(x)
 # This version: slope and y-intercept both non-integer
-# Also the data values are all two- or three-digit integers
+# Also the data values are all two-digit integers
+# and the y-intercept is such that its numerator is not more than 200 in absolute value
 
 ## DBsubject()
 ## DBchapter()
@@ -40,19 +41,19 @@ TEXT(beginproblem());
 ############################################################
 
 $xmin= 11;
-$xmax= 999;
+$xmax= 99;
 $ymin= 11;
-$ymax= 999;
+$ymax= 99;
 
 Context("Fraction");
+Context()->flags->set(reduceConstants=>0);
 do {
   @a = ($xmin..$xmax)[(NchooseK($xmax-$xmin+1,2))];
   @b = ($ymin..$ymax)[(NchooseK($ymax-$ymin+1,2))];
   $m = Fraction($b[1]-$b[0], $a[1]-$a[0]);
   $yint = Fraction($b[0] - ($b[1]-$b[0])/($a[1]-$a[0]) * $a[0]);
-} until (($yint->value)[1] != 1 and ($m->value)[1] != 1);
+} until (($yint->value)[1] != 1 and ($m->value)[1] != 1 and abs(($yint->value)[0]) < 200);
 
-Context("Numeric");
 Parser::Number::NoDecimals();
 Context()->noreduce('(-x)-y','(-x)+y');
 $fname = RandomVariableName(type=>'function');
@@ -67,7 +68,7 @@ Context()->operators->set(
   '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
   '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
 );
-$f = Formula("$fname(x) = $m x + $yint")->reduce;
+$f = Formula("$fname(x) = $m x + $yint");
 
 $evaluator = $f -> cmp(
    checker=>sub{
