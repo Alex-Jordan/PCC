@@ -99,6 +99,55 @@ END_PGML
 # Solution
 ############################################################
 
+$s3 = $m*$a[0];
+$s3N = -$s3;
+$s4 = $s3>0 ? "-$s3" : "+$s3N";
+$s6 = $b[0]>=0 ? "$b[0]" : "($b[0])";
+$s7 = $a[0]>=0 ? "$a[0]" : "($a[0])";
+$yintN = -$yint;
+$s8 = $yint>0 ? "+$yint" : "-$yintN";
+if ($yint==0) {$s8 = "";}
+
+BEGIN_PGML_SOLUTION
+
+The slope-intercept form of a linear function has the form [` f(x)=mx+b `] where [`m`] is the slope and [`b`] is the [`y`]-coordinate of the [`y`]-intercept. To find a linear function's slope-intercept equation, we first try to find the line's slope.
+
+Since [`[$fname]([$a[0]])=[$b[0]]`] and [`[$fname]([$a[1]])=[$b[1]]`], the function [`[$fname](x)`] passes the points [`([$a[0]],[$b[0]])`] and [`([$a[1]],[$b[1]])`]. We will use the slope formula:
+
+    [`` \text{slope}=\frac{y_{2}-y_{1}}{x_{2}-x_{1}} ``]
+
+First, we mark which number corresponds to which variable in the formula:
+
+    [`` ([$a[0]],[$b[0]]) \longrightarrow (x_{1},y_{1}) ``]
+
+    [`` ([$a[1]],[$b[1]]) \longrightarrow (x_{2},y_{2}) ``]
+
+Now we substitute these numbers into the corresponding variables in the slope formula:
+
+    [`` \begin{aligned}
+   \text{slope}
+      &=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}\\
+      &=\frac{[$b[1]]-[$s6]}{[$a[1]]-[$s7]}\\
+      &=\frac{[$b[1]-$b[0]]}{[$a[1]-$a[0]]}\\
+      &=[$m] 
+    \end{aligned} ``]
+
+Now we have [` [$fname](x)=[$m]x+b `]. The next step is to find the value of [`b`]. We will substitute one of the given points into [` [$fname](x)=[$m]x+b `].  We choose to use [`([$a[0]],[$b[0]])`].
+
+    [``
+\begin{aligned}
+  [$fname](x) &= [$m]x + b \\
+  [$b[0]] &= [$m]([$a[0]]) + b \\
+  [$b[0]] &= [$s3] + b \\
+  [$b[0]][$s4] &= b \\
+  [$yint] &= b
+\end{aligned}
+    ``]
+
+This linear function's slope-intercept equation is [` [$fname](x)=[$m]x[$s8] `].
+
+END_PGML_SOLUTION
+
 
 ############################################################
 # End Problem
