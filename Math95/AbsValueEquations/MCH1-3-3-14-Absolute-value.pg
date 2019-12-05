@@ -107,7 +107,7 @@ a.  Write the equation [`[$eqn]`] as two separate equations.  Neither of your eq
     [__]{$multians}{width=>30}
     [__]{$multians}{width=>30}
 
-a.  Solve both equations above. [@KeyboardInstructions('Enter your solutions as a comma-separated list.')@]**
+a.  Solve the equation [`[$eqn]`], possibly by solving each equation from part a.
 
     [__]{$sol}{width=>10}
 
