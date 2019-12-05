@@ -51,7 +51,7 @@ $c = non_zero_random(-10,10,1);
 $d = -$c;
 $e = $a**2 * $b;
 $f = non_zero_random(-10,10,1);
-$ans = Formula("$d+$a sqrt($b),$d-$a sqrt($b)");
+$ans = Formula("{$d+$a sqrt($b),$d-$a sqrt($b)}");
 
 ##############################################
 

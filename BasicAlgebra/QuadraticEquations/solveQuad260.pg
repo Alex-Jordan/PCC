@@ -60,7 +60,7 @@ $soln2 = -$d;
 $question = Formula("$a*$c*$var^2+($a*$d+$b*$c)*$var")->reduce->reduce;
 $rhs = Formula("-$b*$d")->reduce->reduce;
 Context("FiniteSolutionSets");
-$ans = Formula("$soln1,$soln2");
+$ans = Formula("{$soln1,$soln2}");
 
 TEXT(beginproblem());
 BEGIN_PGML

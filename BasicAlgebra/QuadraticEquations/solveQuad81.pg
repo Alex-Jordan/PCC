@@ -51,7 +51,7 @@ $a = non_zero_random(-10,10,1);
 
 $soln1 = sqrt($factor)-$a;
 $soln2 = -sqrt($factor)-$a;
-$ans = Formula("$soln1,$soln2");
+$ans = Formula("{$soln1,$soln2}");
 
 ##############################################
 

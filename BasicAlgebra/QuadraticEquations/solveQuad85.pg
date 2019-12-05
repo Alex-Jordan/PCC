@@ -69,7 +69,7 @@ $soln1 = Fraction(-$c-$b,$a);
 $soln2 = Fraction($c-$b,$a);
 
 Context("FiniteSolutionSets");
-$ans = Formula("$soln1, $soln2");
+$ans = Formula("{$soln1, $soln2}");
 
 ##############################################
 

@@ -42,7 +42,7 @@ $var = "x";
 #Context()->variables->are($var=>'Real');
 $a = random(2,10,1);
 $b = random(2,5,1);
-$ans = Formula("$b,-$b");
+$ans = Formula("{$b,-$b}");
 
 ##############################################
 

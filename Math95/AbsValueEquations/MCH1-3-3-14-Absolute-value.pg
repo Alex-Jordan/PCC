@@ -96,7 +96,7 @@ Context()->{error}{convert} = sub {
 
 Context("FiniteSolutionSets");
 $sol1 = $b*($a-$c); $sol2 = $b*($a+$c);
-$sol = Formula("$sol1,$sol2");
+$sol = Formula("{$sol1,$sol2}");
 
 ###################################
 # Main text

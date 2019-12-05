@@ -94,7 +94,7 @@ $b1 = $b*-1;
 $discriminant = $b**2-4*$a*$c;
 $a1 = 2*$a;
 Context("FiniteSolutionSets");
-$ans = Formula("($b1-sqrt($discriminant))/$a1,($b1+sqrt($discriminant))/$a1");
+$ans = Formula("{($b1-sqrt($discriminant))/$a1,($b1+sqrt($discriminant))/$a1}");
 ##############################################
 TEXT(beginproblem());
 BEGIN_PGML

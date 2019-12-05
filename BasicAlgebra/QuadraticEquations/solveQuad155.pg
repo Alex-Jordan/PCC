@@ -111,17 +111,17 @@ if($B==2*round($B/2))
     # this check shouldn't really be necessary, but reduce seems to go too far
     if($d1==1)
     {
-        $ans = Formula("$b1-sqrt($C),$b1+sqrt($C)");
+        $ans = Formula("{$b1-sqrt($C),$b1+sqrt($C)}");
     }
     else
     {
-        $ans = Formula("$b1-$d1*sqrt($C),$b1+$d1*sqrt($C)");
+        $ans = Formula("{$b1-$d1*sqrt($C),$b1+$d1*sqrt($C)}");
     }
 }
 else
 {
     # B is odd
-    $ans = Formula("($b1-$D*sqrt($C))/$a1,($b1+$D*sqrt($C))/$a1");
+    $ans = Formula("{($b1-$D*sqrt($C))/$a1,($b1+$D*sqrt($C))/$a1}");
 }
 ##############################################
 TEXT(beginproblem());
