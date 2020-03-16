@@ -142,6 +142,7 @@ END_PGML
 
 $s1 = $initialPrice*$numLoss;
 $s2 = $raise*$initialAmount;
+$s3 = sqrt($discriminant);
 
 BEGIN_PGML_SOLUTION
 
@@ -218,7 +219,7 @@ Next, we can solve this quadratic equation with the Quadratic Formula. Identify 
    x &= \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
    x &= \frac{-([$b]) \pm \sqrt{([$b])^{2}-4([$a])([$c])}}{2([$a])} \\
    x &= \frac{[$b*-1] \pm \sqrt{[$discriminant]}}{[$a*2]} \\
-   x &= \frac{[$b*-1] \pm [$s1]}{[$a*2]} \\
+   x &= \frac{[$b*-1] \pm [$s3]}{[$a*2]} \\
    x&=\frac{[$b*-1] + [$s1]}{[$a*2]} \text{  or  } x=\frac{[$b*-1] - [$s1]}{[$a*2]} \\
    x&=[$x1] \text{  or  } x=[$x2]
 \end{aligned}
