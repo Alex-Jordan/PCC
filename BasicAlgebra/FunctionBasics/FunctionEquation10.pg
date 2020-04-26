@@ -57,8 +57,8 @@ $y2 = $func->eval(x=>$x2);
 $s1 = Compute("$m*x")->reduce;
 
 Context("FiniteSolutionSets");
-$ans1 = List(Formula("{$x1}"));
-$ans2 = List(Formula("{$x2}"));
+$ans1 = Formula("{$x1}");
+$ans2 = Formula("{$x2}");
 
 
 ##############################################
