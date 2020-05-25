@@ -25,7 +25,6 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "unionLists.pl",
   "PGML.pl",
   "PCCmacros.pl",
   "contextFiniteSolutionSets.pl",
@@ -41,7 +40,6 @@ $showPartialCorrectAnswers = 1;
 ##############################################################
 
 Context("FiniteSolutionSets");
-Context()->strings->add(none=>{},EmptySet=>{alias=>"none"});
 
 $a = random(4,7,1);
 $x = random(2,4,1);
