@@ -200,13 +200,13 @@ $horshiftA = abs($horshift);
 
 BEGIN_PGML_SOLUTION
 
-Identify that the parent function, before transformation, is [`y=\left| x\right|}`].
+Identify that the parent function, before transformation, is [`y=\left| x\right|`].
 
 Before doing transformation for [`f(x)=[$f[0]]`], since there is a number in front of the independent variable [`x`], we need to factor the expression and convert the function to:
 
     [``f(x)=[$f[0]]=[$funcFactored]``]
 
-To transform from [`y=\left| x\right|}`] to [`[$funcFactored]`], there is a horizontal [$soc] the [`y`]-axis by a factor of [`\frac{1}{[$a]}`], and a horizontal shift to the [$lor] by [`[$horshiftA]`] units.
+To transform from [`y=\left| x\right|`] to [`[$funcFactored]`], there is a horizontal [$soc] the [`y`]-axis by a factor of [`\frac{1}{[$a]}`], and a horizontal shift to the [$lor] by [`[$horshiftA]`] units.
 
 By order of transformations, first we need to do the [$soc1] on [`y=\left| x\right|`], and then the shift. The correct graph for [`f(x)=[$f[0]]`] is Graph [`[$answer]`].
 
