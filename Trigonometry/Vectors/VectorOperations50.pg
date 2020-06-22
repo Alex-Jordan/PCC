@@ -31,7 +31,8 @@ loadMacros(
   "contextLimitedPoint.pl",
   "PGML.pl",
   "PCCmacros.pl",
-  "PGcourse.pl"
+  "specialTrigValues.pl",
+  "PGcourse.pl",
 );
 
 TEXT(beginproblem());

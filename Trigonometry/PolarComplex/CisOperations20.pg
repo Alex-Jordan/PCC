@@ -27,7 +27,8 @@ loadMacros(
   "contextFraction.pl",
   "PGML.pl",
   "PCCmacros.pl",
-  "PGcourse.pl",
+  "specialTrigValues.pl",
+  "PGcourse.pl",,
 );
 
 ##############################################

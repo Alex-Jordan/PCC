@@ -29,7 +29,8 @@ loadMacros(
   "PCCmacros.pl",
   "parserOneOf.pl",
   "contextFraction.pl",
-  "PGcourse.pl"
+  "specialTrigValues.pl",
+  "PGcourse.pl",
 );
 
 TEXT(beginproblem());

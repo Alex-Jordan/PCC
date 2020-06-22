@@ -27,7 +27,8 @@ loadMacros(
   "contextFraction.pl",
   "PCCmacros.pl",
   "parserAssignment.pl",
-  "PGcourse.pl"
+  "specialTrigValues.pl",
+  "PGcourse.pl",
 );
 $refreshCachedImages=1;
 TEXT(beginproblem());
