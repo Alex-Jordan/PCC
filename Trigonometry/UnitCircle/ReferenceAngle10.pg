@@ -1,0 +1,83 @@
+# DESCRIPTION
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# ENDDESCRIPTION
+
+## DBsubject('')
+## DBchapter('')
+## DBsection('')
+## KEYWORDS('')
+## DBCCSS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Carl Yao')
+## Institution('PCC')
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextFraction.pl",
+  "contextLimitedRadical.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl"
+);
+
+TEXT(beginproblem());
+
+Context("LimitedFraction");
+Context()->flags->set(requirePureFractions=>1);
+Context()->flags->set(showMixedNumbers=>0);
+
+do {
+  $den0 = random(2,10,1);
+  $num0 = random(1,2*$den0-1,1);
+} until (gcd($den0,$num0)==1);
+$ans0 = Fraction($num0,$den0);
+$ans0 = ($ans0+random(0,1,1))->reduce;
+
+$off = random(2,5,1);
+$frac = ($ans0+2*$off)->reduce;
+
+Context("LimitedRadical");
+($num,$den) = $ans0->value;
+$ans = Compute("$num*pi/$den");
+
+##############################################
+
+BEGIN_PGML
+
+Find the reference angle of [`[$frac]\pi`]. 
+
+[@KeyboardInstructions(
+"\n"
+.'* Use fractions in your answer if needed.'
+."\n"
+.'* Enter [|pi|]* to represent [`\pi`].'
+)@]**
+
+    [__________]{$ans}[`\text{ radians}`]
+
+END_PGML
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+The difference between an angle and its reference angle must be a multiple of [`2\pi`].
+
+A reference angle must in the range of [`[0,2\pi)`].
+
+We can calculate the reference angle of [`[$frac]\pi`] by:
+
+    [``[$frac]\pi-[$off]\cdot2\pi = [$ans0]\pi``]
+
+END_PGML_SOLUTION
+
+ENDDOCUMENT();

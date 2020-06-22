@@ -1,0 +1,290 @@
+# DESCRIPTION
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# ENDDESCRIPTION
+
+## DBsubject('')
+## DBchapter('')
+## DBsection('')
+## KEYWORDS('')
+## DBCCSS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Carl Yao')
+## Institution('PCC')
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "PGgraphmacros.pl",
+  "MathObjects.pl",
+  "contextLimitedRadical.pl",
+  "PCCmacros.pl",
+  "PGML.pl",
+  "parserOneOf.pl",
+  "contextFraction.pl",
+  "PGcourse.pl"
+);
+
+TEXT(beginproblem());
+$refreshCachedImages=1;
+
+Context("Numeric");
+ 
+%values = (
+#key is trig value
+#first array: [num string, den string, num value, den value
+#second array: [TeX sin^-1, string sin^-1, 1st solution, 2nd solution]
+#third array: [TeX cos^-1, string cos^-1, 1st solution, 2nd solution]
+#fourth array: [TeX tan^-1, string tan^-1, solution]
+ "1/2" => [
+    ["1","2",Formula("1"),Formula("2")],
+    ["\frac{\pi}{6}","pi/6","pi/6","(5pi)/6"],  
+    ["\frac{\pi}{3}","pi/3","pi/3","(5pi)/3"], 
+    ["DNE"], 
+  ],
+ "-1/2" => [
+    ["-1","2",Formula("-1"),Formula("2")],
+    ["-\frac{\pi}{6}","-pi/6","(11pi)/6","(7pi)/6"],  
+    ["\frac{2\pi}{3}","(2pi)/3","(2pi)/3","(4pi)/3"], 
+    ["DNE"], 
+  ],
+ "sqrt(2)/2" => [
+    ["\sqrt{2}","2",Formula("sqrt(2)"),Formula("2")],
+    ["\frac{\pi}{4}","pi/4","pi/4","(3pi)/4"],  
+    ["\frac{\pi}{4}","pi/4","pi/4","(7pi)/4"], 
+    ["DNE"], 
+  ],
+ "-sqrt(2)/2" => [
+    ["-\sqrt{2}","2",Formula("-sqrt(2)"),Formula("2")],
+    ["-\frac{\pi}{4}","-pi/4","(7pi)/4","(5pi)/4"],  
+    ["\frac{3\pi}{4}","(3pi)/4","(3pi)/4","(5pi)/4"], 
+    ["DNE"], 
+  ],
+ "sqrt(3)/2" => [
+    ["\sqrt{3}","2",Formula("sqrt(3)"),Formula("2")],
+    ["\frac{\pi}{3}","pi/3","pi/3","(2pi)/3"],  
+    ["\frac{\pi}{6}","pi/6","pi/6","(11pi)/6"], 
+    ["DNE"],  
+  ],
+ "-sqrt(3)/2" => [
+    ["-\sqrt{3}","2",Formula("-sqrt(3)"),Formula("2")],
+    ["-\frac{\pi}{3}","-pi/3","(5pi)/3","(4pi)/3"],  
+    ["\frac{5\pi}{6}","(5pi)/6","(5pi)/6","(7pi)/6"], 
+    ["DNE"], 
+  ],
+ "1" => [
+    ["1","1",Formula("1"),Formula("1")],
+    ["\frac{\pi}{2}","pi/2","pi/2","DNE"],  
+    ["0","0","0","DNE"], 
+    ["\frac{\pi}{4}","pi/4","pi/4"],  
+  ],
+ "-1" => [
+    ["-1","1",Formula("-1"),Formula("1")],
+    ["-\frac{\pi}{2}","-pi/2","(3pi)/2","DNE"],  
+    ["\pi","pi","pi","DNE"], 
+    ["-\frac{\pi}{4}","-pi/4","(7pi)/4"],  
+  ],
+ "sqrt(3)/3" => [
+    ["\sqrt{3}","3",Formula("sqrt(3)"),Formula("3")],
+    ["DNE"], 
+    ["DNE"], 
+    ["\frac{\pi}{6}","pi/6","pi/6"],  
+  ],
+ "-sqrt(3)/3" => [
+    ["-\sqrt{3}","3",Formula("-sqrt(3)"),Formula("3")],
+    ["DNE"], 
+    ["DNE"], 
+    ["-\frac{\pi}{6}","-pi/6","(11pi)/6"],  
+  ],
+ "sqrt(3)" => [
+    ["\sqrt{3}","1",Formula("sqrt(3)"),Formula("1")],
+    ["DNE"], 
+    ["DNE"], 
+    ["\frac{\pi}{3}","pi/3","pi/3"],  
+  ],
+ "-sqrt(3)" => [
+    ["-\sqrt{3}","1",Formula("-sqrt(3)"),Formula("1")],
+    ["DNE"],  
+    ["DNE"], 
+    ["-\frac{\pi}{3}","-pi/3","(5pi)/3"],  
+  ],
+);
+
+@hashKeys = lex_sort(keys %values);
+do {
+  $tanValue = $hashKeys[random(0,$#hashKeys,1)];
+} until ($values{$tanValue}[3][0] ne "DNE");
+
+%flip = (
+  "1" => "1",
+  "-1" => "-1",
+  "sqrt(3)/3" => "\sqrt{3}",
+  "-sqrt(3)/3" => "-\sqrt{3}",
+  "sqrt(3)" => "\frac{1}{\sqrt{3}}",
+  "-sqrt(3)" => "-\frac{1}{\sqrt{3}}",
+);
+
+Context("LimitedRadical");
+$left = "\cot(2x)";
+$right = $flip{$tanValue};
+
+Context("Fraction");
+Context()->flags->set(requirePureFractions=>1);
+Context()->flags->set(showMixedNumbers=>0);
+
+Context()->strings->add("no solution"=>{},
+"no solutions"=>{alias=>'no solution'}, 
+"none"=>{alias=>'no solution'}, 
+);
+
+sub addPi {
+  Context("Fraction");
+  my $f = shift;
+  my @a = split(/~~//, $f);
+  $a[1] = ($a[1] eq "") ? "1" : $a[1];
+  if ($a[0]==1) {return Formula("pi/$a[1]");}
+    elsif ($a[0]==-1) {return -Formula("pi/$a[1]");}
+    else {
+      my $n = -$a[0];
+      return ($a[0]>0) ? Formula("$a[0]*pi/$a[1]") : -Formula("$n*pi/$a[1]");
+    }
+}
+
+#ans2x is the solution of the "2x" part of cot(2x)=right
+$ans2x = $values{$tanValue}[3][1];
+#ans2xF is the fraction part of $ans2x without pi
+$ans2xF = $ans2x;
+$ans2xF =~ s/pi/(1)/;
+$ans2xF = Formula("$ans2xF");
+$ans2xF_half = ($ans2xF/2)->reduce;
+$ans2xF_half_PI = addPi($ans2xF_half);
+
+@k = ();
+@ansF = ();
+for my $i (-4..4) {
+  my $f = Fraction(1/2)*$i+$ans2xF_half;
+  if ( ($f>0) && ($f<2) ) {
+    $ansF[$#ansF+1]=$f;
+    $k[scalar(@k)] = $i;
+  }
+}
+@ansF = num_sort(@ansF);
+@ansF = do { my %seen; grep { !$seen{$_}++ } @ansF };
+$points = "";
+for my $i (0..$#ansF) {
+  $ansF[$i] = addPi($ansF[$i]);
+  $points .= "$ansF[$i], ";
+}
+$points = substr($points,0,length($points)-2);
+$ans = List(@ansF);
+
+$r = 5;
+$graph = init_graph(-6,-6,6,6,'axes'=>[0,0],'grid'=>[1,1]);
+$graph->lb('reset');
+
+$xfuncAlpha = sub { my $t = shift();
+  return $r*cos($t); };
+$yfuncAlpha = sub { my $t = shift();
+  return $r*sin($t); };
+$fnAlpha = new Fun( $xfuncAlpha, $yfuncAlpha, $graph );
+$fnAlpha->domain(0,2*pi);
+
+for my $i (0..$#ansF) {
+  $Px = Compute("$r*cos($ansF[$i])")->reduce;
+  $Py = Compute("$r*sin($ansF[$i])")->reduce;
+  $graph->stamps(closed_circle($Px,$Py,red));
+  $graph->moveTo(0,0);
+  $graph->lineTo($Px,$Py,red,2);
+  $graph->lineTo($Px,0,red,2);
+  $graph->lineTo(0,0,red,2);
+
+  if ( ($Px!=0) && ($Py!=0) ) {
+    $xShift = ($Px>0) ? -0.4 : 0.4;
+    $yShift = ($Py>0) ? 0.4 : -0.4;
+    $graph->moveTo($Px,$yShift);
+    $graph->lineTo($Px+$xShift,$yShift,red,2);
+    $graph->lineTo($Px+$xShift,0,red,2);
+  }
+
+  $td = $Py>=0 ? 'bottom' : 'top';
+  $graph->lb(new Label($Px,$Py,"$ansF[$i]",'red','center',$td,large));
+}
+
+$alt = "This is the graph of a circle with points $points on the circle.";
+
+$fig = image(insertGraph($graph),'width'=>400,'height'=>400,'tex_size'=>700, extra_html_tags => "alt = '$alt' title = '$alt' ");
+
+
+##############################################################
+
+BEGIN_PGML
+
+[$s]
+
+Solve the equation
+
+    [``[$left]=[$right]\text{ where }x\in[0,2\pi)``]
+
+[@KeyboardInstructions(
+"\n"
+.'* Enter multiple answers separated by commas, as in [|pi/4, 3pi/4|]*.'
+."\n"
+.'* Use [|pi|]* to represent [`\pi`].'
+."\n"
+.'* Type [|no solution|]* if there is no solution.'
+)@]**
+
+    [`x=`][________________________________________]{$ans}
+    
+    
+END_PGML
+
+##############################################################
+
+($n,$d) = ($values{$tanValue}[0][0],$values{$tanValue}[0][1]);
+if (substr($n,0,1) eq '-') {
+  $n = substr($n,1);
+  $s1 = ($d==1) ? "-$n" : "-\frac{$n}{$d}";
+} else {
+  $s1 = ($d==1) ? "$n" : "\frac{$n}{$d}";
+}
+
+$s2 = "";
+for my $i (0..scalar(@k)-1) {
+  $s2 .= "x &= ".$ans2xF_half_PI->TeX."+\frac{($k[$i])\pi}{2} = ".$ansF[$i]->TeX." \\";
+}
+
+##############################################################
+
+BEGIN_PGML_SOLUTION
+
+    [``\begin{aligned}
+  [$left] &= [$right] \\
+  \frac{1}{\tan(2x)} &= [$right] \\
+  \tan(2x) &= [$s1] \\
+  2x &= \tan^{-1}\left([$s1]\right) \\
+  2x &= [$values{$tanValue}[3][0]]+k\pi \\
+  x &= [$ans2xF_half_PI] +\frac{k\pi}{2}
+    \end{aligned}``]
+
+Next, we need to substitute in different [`k`] values to find all solutions in the range [`x\in[0,2\pi)`]:
+
+    [``\begin{aligned}
+  [$s2]
+    \end{aligned}``]
+    
+>>[@ $fig @]*<<
+
+>> (To enlarge, click on graph, then press Ctrl+ or Command+) <<
+
+The solution of the equation [`[$left]=[$right]`], where [`x\in[0,2\pi)`], is: [`[$ans]`].
+
+END_PGML_SOLUTION
+
+ENDDOCUMENT();
