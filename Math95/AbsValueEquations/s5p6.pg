@@ -20,6 +20,8 @@ loadMacros(
   "PGstandard.pl",
   "PGchoicemacros.pl",
   "PGML.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextFraction.pl",
   "PCCmacros.pl",
   "PGcourse.pl"
 );
@@ -33,13 +35,15 @@ $a = random(2,8,2);
 $b = random(2,9,1);
 $c = random(3,9,2);
 $d = random(2,9,1);
-$answer1 = ($b+$d)/($a-$c);
-$answer2 = ($b-$d)/($a+$c);
+Context("Fraction");
+$answer1 = Fraction($b+$d,$a-$c);
+$answer2 = Fraction($b-$d,$a+$c);
 
 if ($answer2 < $answer1) 
   { $dummy = $answer1; $answer1 = $answer2; $answer2 = $dummy; }
 
-$ans = List($answer1,$answer2);
+Context("FiniteSolutionSets");
+$ans = Formula("{$answer1,$answer2}");
 
 BEGIN_PGML
 Solve the equation: 

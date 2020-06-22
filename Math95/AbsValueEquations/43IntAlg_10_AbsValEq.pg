@@ -23,7 +23,7 @@ DOCUMENT(); # This should be the first executable line in the problem.
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "contextInequalitiesAllowStrings.pl",
+  "contextFiniteSolutionSets.pl",
   "PGML.pl",
   "PCCmacros.pl",
   "PGcourse.pl"
@@ -42,18 +42,11 @@ $a = random(1,9,2);
 $b = random(2,8,2);
 $c = random(2,6,2);
 
-$RequiredFormat = "Enter your answer in the form: ".
-"${BITALIC}$var=m.$EITALIC $BR For more than one answer: ".
-"${BITALIC}$var=m$EITALIC or ${BITALIC}$var=n$EITALIC ".
-"(include the word ${BBOLD}or$EBOLD between the solutions), ".
-"or enter your answer as a set ${BITALIC}{m, n}${EITALIC}. $BR".
-"For no solution, type ${BITALIC}NONE${EITALIC} and ".
-"if all real numbers are solutions, ".
-"type ${BITALIC}All real numbers${EITALIC}.";
-Context("Inequalities-AllowStrings");
+Context("FiniteSolutionSets");
 Context()->variables->are($var=>'Real');
-Context()->strings->add("No solution"=>{NONE});
-$ans = List(-$c-$b-$a, $c+$b-$a);
+$d = -$c-$b-$a;
+$e = $c+$b-$a;
+$ans = Formula("{$d, $e}");
 
 ######################################
 #  Main text
