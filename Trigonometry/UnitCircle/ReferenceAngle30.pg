@@ -1,0 +1,65 @@
+# DESCRIPTION
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# ENDDESCRIPTION
+
+## DBsubject('')
+## DBchapter('')
+## DBsection('')
+## KEYWORDS('')
+## DBCCSS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Carl Yao')
+## Institution('PCC')
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextFraction.pl",
+  "PGML.pl",
+  "PGcourse.pl"
+);
+
+TEXT(beginproblem());
+
+Context("Numeric");
+
+$ans = random(5,355,1);
+
+$off = random(2,5,1);
+$angle = $ans+$off*360;
+
+Context()->operators->undefine("+","-","*","^","**");
+
+##############################################
+
+BEGIN_PGML
+
+Find the reference angle of [`[$angle]^{\circ}`].
+
+    [__________]{$ans}[`^{\circ}`]
+
+END_PGML
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+The difference between an angle and its reference angle must be a multiple of [`360^{\circ}`].
+
+A reference angle must in the range of [`[0,360)`].
+
+We can calculate the reference angle of [`[$angle]`] by:
+
+    [``[$angle]^{\circ}-[$off]\cdot360^{\circ} = [$ans]^{\circ}``]
+
+END_PGML_SOLUTION
+
+ENDDOCUMENT();
