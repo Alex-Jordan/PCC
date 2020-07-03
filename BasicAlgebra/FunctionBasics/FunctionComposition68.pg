@@ -51,9 +51,9 @@ Context()->operators->set(
 'u-' => {class => 'bizarro::UOP::minus', isCommand => 1},
 );
 
-$f = Formula("$a*x**2+$b*x")->reduce;
+$f = Compute("$a*x**2+$b*x")->reduce;
 
-$ans1 = Formula("-$a*x**2-$b*x")->reduce;
+$ans1 = Compute("-$a*x**2-$b*x")->reduce;
 $evaluator1 = $ans1->cmp(
    checker=>sub{
       my ( $correct, $student, $ansHash ) = @_;
@@ -67,7 +67,7 @@ $evaluator1 = $ans1->cmp(
       return $OK;
 });
 
-$ans2 = Formula("$a*x**2-$b*x")->reduce;
+$ans2 = Compute("$a*x**2-$b*x")->reduce;
 $evaluator2 = $ans2->cmp(
    checker=>sub{
       my ( $correct, $student, $ansHash ) = @_;

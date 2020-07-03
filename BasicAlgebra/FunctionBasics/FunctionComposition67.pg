@@ -52,7 +52,7 @@ Context()->operators->set(
 'u-' => {class => 'bizarro::UOP::minus', isCommand => 1},
 );
 
-$ans1 = Formula("-$a*x-$b")->reduce;
+$ans1 = Compute("-$a*x-$b")->reduce;
 $evaluator1 = $ans1->cmp(
    checker=>sub{
       my ( $correct, $student, $ansHash ) = @_;
@@ -66,7 +66,7 @@ $evaluator1 = $ans1->cmp(
       return $OK;
 });
 
-$ans2 = Formula("-$a*x+$b")->reduce;
+$ans2 = Compute("-$a*x+$b")->reduce;
 $evaluator2 = $ans2->cmp(
    checker=>sub{
       my ( $correct, $student, $ansHash ) = @_;
