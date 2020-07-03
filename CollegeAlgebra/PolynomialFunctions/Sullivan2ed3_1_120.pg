@@ -16,8 +16,8 @@ loadMacros(
   "contextFraction.pl",
   "PGgraphmacros.pl",
   "parserRadioButtons.pl",
-
-
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 
@@ -27,11 +27,13 @@ loadMacros(
 TEXT(beginproblem());
 Context("Fraction");
 
-$a = random(1,2,1);
+$a = random(2,3,1);
 $b = $a+random(1,3,1);
 $c = $b+random(1,2,1);
 
-$zeropower = list_random(0,1,1,2);
+$zeropower = list_random(0,1,2);
+$deg = 6+$zeropower;
+$turn = $deg-1;
 
 $s = random(-1,1,2);
 
@@ -139,5 +141,38 @@ ANS( $radiodegree->cmp() );
 ANS( $radiolead->cmp() );
 ANS( $radiosym->cmp() );
 ANS( Compute("$n")->cmp() );
+
+##############################################
+
+$s1 = ($deg%2==0) ? 'the same infinity' : 'opposite infinities';
+if ($s>0) {
+  $s2 = ($deg%2==0) ? '\infty' : '-\infty';
+  $s3 = 'positive';
+} else {
+  $s2 = ($deg%2==0) ? '-\infty' : '\infty';
+  $s3 = 'negative';
+}
+
+BEGIN_PGML_SOLUTION
+
+###Part a
+
+When [`x \rightarrow -\infty`] and [`x \rightarrow \infty`], the function is approaching [$s1], implying the function has [$degree] degrees.
+
+###Part b
+
+Recall the end behaviors of [`y=x^2`] and [`y=x^3`].
+
+Since the function has [$degree] degrees, and [`y \rightarrow [$s2]`] as [`x \rightarrow -\infty`], we can tell the leading coefficient is [$s3].
+
+###Part c
+
+By the graph, the function has [$sym].
+
+###Part d
+
+The function's graph has [`[$turn]`] turns, implying its minimum degree is [`[$deg]`].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();

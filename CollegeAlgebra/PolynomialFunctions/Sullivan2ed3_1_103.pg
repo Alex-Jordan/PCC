@@ -14,8 +14,8 @@ loadMacros(
   "MathObjects.pl",
   "unionTables.pl",
   "contextFraction.pl",
-
-
+  "PGML.pl",
+  "PGcourse.pl",
 );
 
 
@@ -52,9 +52,9 @@ $denominator = (-$a[0])**($m[0])*(-$a[1])**($m[1])*(-$a[2])**($m[2]);}
 
 $e = Fraction("$d","$denominator");
 
-Context("Numeric");
+#Context("Numeric");
 
-$f = Compute("$e (x-$a[0])^($m[0])(x-$a[1])^($m[1])(x-$a[2])^($m[2])")->reduce;
+$f = Formula("$e (x-$a[0])^($m[0])(x-$a[1])^($m[1])(x-$a[2])^($m[2])")->reduce;
 
 
 
@@ -94,8 +94,32 @@ Context()->normalStrings;
 
 $showPartialCorrectAnswers = 1;
 
+$s1 = Compute("(x-$a[1])**$m[1]")->reduce;
+if ($m[1]==1) {$s1 = "(".$s1->TeX.")";}
+$s2 = Compute("(x-$a[2])**$m[2]")->reduce;
+$s3 = $m[1]==1 ? "" : "^{$m[1]}";
 
 ANS( $f->cmp() ); 
 
+BEGIN_PGML_SOLUTION
+
+Since [$a[0]] is a zero with multiplicity [$m[0]], [`(x-[$a[0]])^{[$m[0]]}`] is a factor.
+
+Similarly, [`[$s1]`] and [`([$s2])`] are factors.
+
+Now we have [`f(x)= a(x-[$a[0]])^{[$m[0]]}[$s1]([$s2])`]. 
+
+It's given that the [`y`]-intercept is [`[$d]`], we can substitute in [`x=0`] and [`y=[$d]`], and we have:
+
+    [``\begin{aligned}
+  f(x) &= a(x-[$a[0]])^{[$m[0]]}[$s1]([$s2]) \\
+  [$d] &= a(0-[$a[0]])^{[$m[0]]}(0-[$a[1]])[$s3](0-[$a[2]]) \\
+  [$d] &= [$denominator]a \\
+  [$e] &= a
+    \end{aligned}``]
+
+The function is [`f(x)=[$f]`].
+
+END_PGML_SOLUTION
 
 ENDDOCUMENT();
