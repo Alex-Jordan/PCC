@@ -28,9 +28,6 @@ loadMacros(
 );
 TEXT(beginproblem());
 
-
-TEXT(beginproblem());
-
 ##############################################
 
 
