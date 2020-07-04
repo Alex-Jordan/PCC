@@ -42,7 +42,7 @@ Context()->flags->set(showMixedNumbers=>0);
   Formula("(2pi)/3"), Formula("(3pi)/4"), Formula("(5pi)/6"), 1, 
   Formula("(7pi)/6"), Formula("(5pi)/4"), Formula("(4pi)/3"),
   Formula("(3pi)/2"), Formula("(5pi)/3"), Formula("(7pi)/4"), 
-  Formula("(11pi)/6"), 2
+  Formula("(11pi)/6"), Formula("2pi")
 );
 
 $showPartialCorrectAnswers = 1;
