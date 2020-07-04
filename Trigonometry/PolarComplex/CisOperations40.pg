@@ -56,9 +56,9 @@ $n = random(2,4,1);
 $rn = random(2,5,1);
 $r = $rn**$n;
 
+Context()->variables->add(i=>"Real");
 for my $k (0..$n-1) {
   $angle[$k] = specialAngle(Compute($angleO/$n+2*$k*pi/$n),(1..24));
-  Context()->variables->add(i=>"Real");
   $com[$k] = Formula("$rn*(cos($angle[$k])+i*sin($angle[$k]))");
 }
 
