@@ -83,7 +83,7 @@ $in1 = random(0,1,1);
 $mc = new_checkbox_multiple_choice();
 
 $mc -> qa (
-"Use your knowledge of the Unit Circle, find equivalent expressions of \( $values[$in0][$in1] \). There may be more than one correct answer.", 
+"Using your knowledge of cofunctions, find equivalent expressions of \( $values[$in0][$in1] \). There may be more than one correct answer.", 
   "\( $values[$in0][($in1+1)%2] \) $BR",
 );
 
