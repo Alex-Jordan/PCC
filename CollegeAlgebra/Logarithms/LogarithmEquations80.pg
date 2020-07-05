@@ -72,7 +72,7 @@ Context()->{error}{msg}{"Unexpected character '='"}
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation
 
      [`` 10^{[$c][$var]}+[$a]=[$b] ``]
      

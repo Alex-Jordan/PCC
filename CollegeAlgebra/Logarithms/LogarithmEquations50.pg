@@ -59,7 +59,7 @@ $ans = Formula("$var=$x");
 
 TEXT(beginproblem());
 BEGIN_PGML
-Solve the quadratic equation
+Solve the equation
 
      [`` e^{[$var]}=[$a] ``]
 
