@@ -51,7 +51,7 @@ Context("LimitedRadical");
   ["\displaystyle \tan^{-1}\left(\sqrt{3}\right)",Formula("pi/3")],
 );
 
-@perm = NchooseK(9,4);
+@perm = NchooseK(7,4);
 
 
 ##########################################################

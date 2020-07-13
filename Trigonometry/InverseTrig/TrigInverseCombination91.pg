@@ -95,7 +95,7 @@ sub rationalize {
     } elsif ($num==-1) {
       return ($in1==1) ? -1 : Formula("-sqrt($in1)");
     } else {
-      return ($in1==1) ? $num : Formula("$num*sqrt($in1)");
+      return ($in1==1) ? Formula("$num") : Formula("$num*sqrt($in1)");
     }
   } else {
     if ($num==1) {
