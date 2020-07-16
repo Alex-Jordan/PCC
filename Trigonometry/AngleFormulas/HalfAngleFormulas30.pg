@@ -84,11 +84,11 @@ sub rationalize {
   Context("LimitedRadical");
   if ($den==1) {
     if ($num==1) {
-      return ($in1==1) ? 1 : Formula("sqrt($in1)");
+      return ($in1==1) ? Formula("1") : Formula("sqrt($in1)");
     } elsif ($num==-1) {
-      return ($in1==1) ? -1 : Formula("-sqrt($in1)");
+      return ($in1==1) ? Formula("-1") : Formula("-sqrt($in1)");
     } else {
-      return ($in1==1) ? $num : Formula("$num*sqrt($in1)");
+      return ($in1==1) ? Formula("$num") : Formula("$num*sqrt($in1)");
     }
   } else {
     if ($num==1) {
