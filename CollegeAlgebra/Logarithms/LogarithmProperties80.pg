@@ -47,10 +47,9 @@ do {
    $a = random(2,9,1);
    $b = random(2,5,1);
    $c = $a**$b;
-} until ($c < 100);
+   $ab = $a*$b;
+} until ( ($c < 100) && ($c != $ab) );
 $d = random(2,5,1);
-
-$ab = $a*$b;
 
 $question = "$b \log($a) - $d \log($var1)";
 
