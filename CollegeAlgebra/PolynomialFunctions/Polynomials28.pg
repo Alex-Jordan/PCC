@@ -115,7 +115,7 @@ $size = 220;
 
 add_functions($graphs[$i], "$f[$i] for x in <-10,10> " .
     "using color:blue and weight:2");
-
+($graphs[$i]->fn)[0]->steps(200);
 }
 
 sub shufflemap {
