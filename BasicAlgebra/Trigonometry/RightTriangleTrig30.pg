@@ -187,7 +187,7 @@ BEGIN_PGML
 
 Find the length of [`x`]. Round your answer to two decimal places if needed.
 
-    [`x=`][___________]{$height}
+    [`x=`][___________]{$base}
 
 END_PGML
 
