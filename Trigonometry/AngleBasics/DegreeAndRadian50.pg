@@ -100,55 +100,55 @@ BEGIN_PGML_SOLUTION
 
 To convert [` 30^{\circ} `] to radians, multiply by [` \frac{\pi}{180^{\circ}} `]:
 
-    [`` 30^{\circ} \cdot \left( \frac{\pi}{180^{\circ}} \right) = [$r[0]]\pi \text{ radians}``]
+    [`` 30^{\circ} \cdot \left( \frac{\pi}{180^{\circ}} \right) = [$r[0]] \text{ radians}``]
     
-Starting [` 30^{\circ} = [$r[0]]\pi `], list multiples of [` 30^{\circ} `]:
+Starting [` 30^{\circ} = [$r[0]] `], list multiples of [` 30^{\circ} `]:
 
-    [`` 30^{\circ} = [$r[0]]\pi ``]
+    [`` 30^{\circ} = [$r[0]] ``]
     
-    [`` 60^{\circ} = 2\cdot[$r[0]]\pi = [$r[2]]\pi``]
+    [`` 60^{\circ} = 2\cdot[$r[0]] = [$r[2]]``]
     
-    [`` 90^{\circ} = 3\cdot[$r[0]]\pi = [$r[3]]\pi``]
+    [`` 90^{\circ} = 3\cdot[$r[0]] = [$r[3]]``]
     
-    [`` 120^{\circ} = 4\cdot[$r[0]]\pi = [$r[4]]\pi``]
+    [`` 120^{\circ} = 4\cdot[$r[0]] = [$r[4]]``]
     
-    [`` 150^{\circ} = 5\cdot[$r[0]]\pi = [$r[6]]\pi``]
+    [`` 150^{\circ} = 5\cdot[$r[0]] = [$r[6]]``]
     
-    [`` 180^{\circ} = 6\cdot[$r[0]]\pi = [$r[7]]\pi``]
+    [`` 180^{\circ} = 6\cdot[$r[0]] = [$r[7]]``]
     
-    [`` 210^{\circ} = 7\cdot[$r[0]]\pi = [$r[8]]\pi``]
+    [`` 210^{\circ} = 7\cdot[$r[0]] = [$r[8]]``]
     
-    [`` 240^{\circ} = 8\cdot[$r[0]]\pi = [$r[10]]\pi``]
+    [`` 240^{\circ} = 8\cdot[$r[0]] = [$r[10]]``]
     
-    [`` 270^{\circ} = 9\cdot[$r[0]]\pi = [$r[11]]\pi``]
+    [`` 270^{\circ} = 9\cdot[$r[0]] = [$r[11]]``]
     
-    [`` 300^{\circ} = 10\cdot[$r[0]]\pi = [$r[12]]\pi``]
+    [`` 300^{\circ} = 10\cdot[$r[0]] = [$r[12]]``]
     
-    [`` 330^{\circ} = 11\cdot[$r[0]]\pi = [$r[14]]\pi``]
+    [`` 330^{\circ} = 11\cdot[$r[0]] = [$r[14]]``]
     
-    [`` 360^{\circ} = 12\cdot[$r[0]]\pi = [$r[15]]\pi``]
+    [`` 360^{\circ} = 12\cdot[$r[0]] = [$r[15]]``]
 
 ----
 
 To convert [` 45^{\circ} `] to radians, multiply by [` \frac{\pi}{180^{\circ}} `]:
 
-    [`` 45^{\circ} \cdot \left( \frac{\pi}{180^{\circ}} \right) = [$r[2]]\pi \text{ radians}``]
+    [`` 45^{\circ} \cdot \left( \frac{\pi}{180^{\circ}} \right) = [$r[1]] \text{ radians}``]
     
-Starting [` 45^{\circ} = [$r[1]]\pi `], list multiples of [` 45^{\circ} `]:
+Starting [` 45^{\circ} = [$r[1]] `], list multiples of [` 45^{\circ} `]:
 
-    [`` 90^{\circ} = 2\cdot[$r[1]]\pi = [$r[3]]\pi ``]
+    [`` 90^{\circ} = 2\cdot[$r[1]] = [$r[3]] ``]
     
-    [`` 135^{\circ} = 3\cdot[$r[1]]\pi = [$r[5]]\pi ``]
+    [`` 135^{\circ} = 3\cdot[$r[1]] = [$r[5]] ``]
     
-    [`` 180^{\circ} = 4\cdot[$r[1]]\pi = [$r[7]]\pi ``]
+    [`` 180^{\circ} = 4\cdot[$r[1]] = [$r[7]] ``]
     
-    [`` 225^{\circ} = 5\cdot[$r[1]]\pi = [$r[9]]\pi ``]
+    [`` 225^{\circ} = 5\cdot[$r[1]] = [$r[9]]``]
     
-    [`` 270^{\circ} = 6\cdot[$r[1]]\pi = [$r[11]]\pi ``]
+    [`` 270^{\circ} = 6\cdot[$r[1]] = [$r[11]] ``]
     
-    [`` 315^{\circ} = 7\cdot[$r[1]]\pi = [$r[13]]\pi ``]
+    [`` 315^{\circ} = 7\cdot[$r[1]] = [$r[13]] ``]
     
-    [`` 360^{\circ} = 8\cdot[$r[1]]\pi = [$r[15]]\pi ``]
+    [`` 360^{\circ} = 8\cdot[$r[1]] = [$r[15]] ``]
 END_PGML_SOLUTION
 
 ENDDOCUMENT();

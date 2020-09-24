@@ -48,9 +48,9 @@ $longU = NumberWithUnits("$long $unit");
 $hour = random(2,11,0.25);
 $hourU = NumberWithUnits("$hour hr");
 
-$arcLong = Compute("$long*$minuteDegree*pi/180");
+$arcLong = Compute("$long*$hour*360*pi/180");
 $arcLongU = NumberWithUnits("$arcLong $unit");
-$arcShort = Compute("$short*$hourDegree*pi/180");
+$arcShort = Compute("$short*$hour*30*pi/180");
 $arcShortU = NumberWithUnits("$arcShort $unit");
 
 Context()->operators->undefine("+","-","*","/","^","**");
@@ -59,7 +59,7 @@ Context()->operators->undefine("+","-","*","/","^","**");
 
 BEGIN_PGML
 
-A clock's minute hand is [`[$longU]`] in length, and its hour hand is [`[$shortU]`] in length. If the clock ran [`[$hourU]`], how long did the tip of the hour hand travel? How long did the tip of the minute hand travel?
+A clock's minute hand is [`[$longU]`] in length, and its hour hand is [`[$shortU]`] in length. If the clock ran [`[$hourU]`], how far did the tip of the hour hand travel? How far did the tip of the minute hand travel?
 
 [@KeyboardInstructions(
 "\n"

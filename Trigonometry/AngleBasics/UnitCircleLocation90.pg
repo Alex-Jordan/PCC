@@ -42,7 +42,6 @@ do {
   $num0 = random(1,2*$den0-1,1);
 } until (gcd($den0,$num0)==1);
 $ans0 = Fraction($num0,$den0);
-$ans0 = ($ans0+random(0,1,1))->reduce;
 $ans1 = ($ans0-2)->reduce;
 
 $off = random(2,10,1)*random(-1,1,2);
@@ -102,7 +101,7 @@ We can calculate the coterminal angle of [`[$frac]\pi`] in the range of [`[0,2\p
     
 The coterminal angle of [`[$frac]\pi`] in the range of [`[-2\pi,0]`] is:
 
-    [``[$ans0]\pi-2\pi = [$ans1]``]
+    [``[$ans0]-2\pi = [$ans1]``]
 
 END_PGML_SOLUTION
 
