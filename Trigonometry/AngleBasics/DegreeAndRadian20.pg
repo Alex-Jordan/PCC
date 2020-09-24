@@ -23,7 +23,7 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextFraction.pl",
-  "contextLimitedRadical.pl",
+  "specialTrigValues.pl",
   "PCCmacros.pl",
   "PGML.pl",
   "PGcourse.pl"
@@ -39,18 +39,14 @@ do {$a = -15*random(1,29,1);} until ($a != -180);
 $frac = Fraction($a,180)->reduce;
 ($num,$den) = $frac->value;
 
-Context("LimitedRadical");
-$ans1 = Formula("$num*pi/$den");
-
 Context("Numeric");
 Context()->flags->set(
   tolerance => 0.005,
   tolType => "absolute",
 );
 
+$ans1 = specialAngle($num*pi/$den, (2,3,4,5,6,8,10,12,15,18));
 $dec = Real("$a*pi/180");
-
-Context()->operators->undefine("+","-","*","/","^","**");
 
 $showPartialCorrectAnswers = 1;
 
@@ -81,9 +77,9 @@ BEGIN_PGML_SOLUTION
 
 To convert [` [$a]^{\circ} `] to radians, multiply by [` \frac{\pi}{180^{\circ}} `]:
 
-    [`` [$a]^{\circ} \cdot \left( \frac{\pi}{180^{\circ}} \right) = [$frac]\pi \text{ radians}``]
+    [`` [$a]^{\circ} \cdot \left( \frac{\pi}{180^{\circ}} \right) = [$ans1] \text{ radians}``]
 
-A calculator can convert [`[$frac]\pi`] to [`[$dec]`].
+A calculator can convert [`[$ans1]`] to [`[$dec]`].
 
 
 END_PGML_SOLUTION
