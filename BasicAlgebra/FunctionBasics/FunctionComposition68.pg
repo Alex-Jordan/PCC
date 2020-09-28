@@ -42,7 +42,7 @@ $a = random(2,5,1)*random(-1,1,2);
 $b = random(2,5,1)*random(-1,1,2);
 
 Context("Numeric");
-Context()->noreduce('(-x)-y','(-x)+y', 'x-(-y)');
+Context()->noreduce('(-x)-y','(-x)+y');
 
 Context()->operators->set(
 '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
