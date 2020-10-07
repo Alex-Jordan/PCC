@@ -92,7 +92,7 @@ Context("LimitedRadical");
 
 BEGIN_PGML
 
-Using your knowledge of [`45-45-90`] right triangle, write each trigonometry expression's exact value.
+Using your knowledge of [`30-60-90`] and [`45-45-90`] right triangles, write each trigonometry expression's exact value.
 
 [@KeyboardInstructions(
 "\n"
