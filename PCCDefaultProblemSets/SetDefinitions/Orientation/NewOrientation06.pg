@@ -22,7 +22,7 @@ $a = random(5,10,1);
 BEGIN_PGML
 ## Navigating WeBWorK ##
 
-[@ if($envir{QUIZ_PREFIX}) {*Important:* This page is informational only and features described applies mostly to homework (not used in this course) rather than quizzes.'} @]*
+[@ if($envir{QUIZ_PREFIX}) {'*Important:* This page is informational only and features described applies mostly to homework (not used in this course) rather than quizzes.'} @]**
 
 That's enough for now about how you enter your answers. Let's spend some time learning how to navigate WeBWorK so that you can use it more effectively.
 
