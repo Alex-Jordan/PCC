@@ -214,7 +214,7 @@ $PAR
 (2,$a[4])&\to(2,$k[4])
 \end{aligned}\]
 
-And so we find \(k(-2)=$k[0]\), \(k(-1)=$k[1]\), \(k(0)=$k[2]\), \(k(1)=$k[3]\), and \(k(2)=$k[3]\), giving us all five values for the table for \(k\). 
+And so we find \(k(-2)=$k[0]\), \(k(-1)=$k[1]\), \(k(0)=$k[2]\), \(k(1)=$k[3]\), and \(k(2)=$k[4]\), giving us all five values for the table for \(k\).
 $PAR
 
 \(m\) is the function \(f\) shifted \(1\) unit to the right and \(3\) units up. So the points that are represented in the table for \(f\) need to be shifted \(1\) unit right and \(3\) up to get points that are on \(m\)'s graph:
