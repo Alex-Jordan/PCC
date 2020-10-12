@@ -39,13 +39,7 @@ On the left of the screen there are three panels. The middle panel is just a qui
 * *Grades*: Go here to see how you have performed in your assignments.
 * *Achievements*: If your instructor is using Math Achievements, then you can earn badges and level up as you complete homework problems. Go here to view your level and badges. Also, if you have earned any items that can be applied to your homework sets, you will see them here.
 
-Different mechanisms can be used to display the math content that you see on screen. In the *User Settings* menu, you can choose between _MathJax_,  _images_ or plainText. Try changing the options and coming back to this problem to view the math below:
-
-    [``\frac{x^2+1}{2^x+\sin(y)}\qquad y=\frac{23}{2}x+\frac{3}{22}\qquad \int_0^x\sqrt{e^{3t}}\,dt``]
-
-Why are there different options? Some web browsers will work well with some options, but not with others. If you have impaired vision, MathJax is the best option (and see your instructor in person to learn how to get the most out of it.)
-
-Also in *User Settings*, you may choose either to see or not see your previously entered answers, and choose whether or not to enable the math editor (the tool to the right of any answer blank).
+Also in *User Settings*, you may choose either to see or not see your previously entered answers, and choose whether or not to enable the math editing tool (this is only an option if the instructor has turned on that tool in the first place).
 
 When you are ready, move on to the next problem.
 
