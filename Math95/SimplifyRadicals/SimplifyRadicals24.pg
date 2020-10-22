@@ -19,7 +19,7 @@ DOCUMENT();
 loadMacros(
       "PGstandard.pl", 
       "MathObjects.pl",
-      "contextLimitedRadical.pl",
+      "contextForm.pl",
       "PGML.pl",
       "PCCmacros.pl",
       "PGcourse.pl",
@@ -46,9 +46,9 @@ $D = $d/$G;
 $A = $a/$G;
 $factored = "$G($D-$A sqrt($b))/$e";
 
-Context("LimitedRadical");
+Context("Form");
 $ans = Formula("$stringans");
-if ($G != 1) {$ans = OneOf(Formula("$stringans"),Formula("$factored"));};
+#if ($G != 1) {$ans = OneOf(Formula("$stringans"),Formula("$factored"));};
 
 
 ##############################################
