@@ -32,6 +32,7 @@ loadMacros(
   "PGML.pl",
   "PCCmacros.pl",
   "PCCgraphMacros.pl",
+  "PGchoicemacros.pl",
   "PGcourse.pl",
 );
 
@@ -55,9 +56,13 @@ for my $i (0..$numPoints-1) {
 }
 
 #Intentionally create a duplicate y value in two points.
+#But make sure x-values are separated by at least 3 so labels do not overlap
 $dup0 = random(0,$numPoints-1);
 do {$dup1=random(0,$numPoints-1);} until ($dup0!=$dup1);
 $py[$dup0]=$py[$dup1];
+if (abs($px[$dup0] - $px[$dup1]) < 3) {
+  ($px[$dup0],$px[$dup1]) = (-8..8)[NchooseK(17,2)];
+}
 
 #Duplicated y-value should have a corresponding x-value that is at least 2 away form the other x-value, to avoid coordinates crowding in image.
 while (abs($px[$dup0] - $px[$dup1]) < 2)
