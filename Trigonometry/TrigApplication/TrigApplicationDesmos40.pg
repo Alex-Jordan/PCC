@@ -122,7 +122,7 @@ if ($ld==1) {$th = "st";}
 
 BEGIN_PGML
 
-Assume a year has 365 days, and [`d=1`] represents Jan. 1. A city's temperature over the year, [`T(d)`], follows the pattern of a periodic function. The city's highest temperature, [`[$highest]^{\circ} C`], happens on Jan. [`[$c]`]; its lowest temperature, [`[$low]^\circ C`], happens in July.
+Assume a year has 365 days, and [`d=1`] represents Jan. 1. A city's temperature over the year, [`T(d)`], follows the pattern of a periodic function. The city's highest temperature, [`[$high]^{\circ} C`], happens on Jan. [`[$c]`]; its lowest temperature, [`[$low]^\circ C`], happens in July.
 
 *Use graphing technology* to answer the following questions.
 
