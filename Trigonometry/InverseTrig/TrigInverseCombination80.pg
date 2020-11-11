@@ -136,9 +136,9 @@ Find the following values:
 [@DataTable(
   [
     [
-     [PF('[`\cos\left(\sin^{-1}\left( [$ans[0]] \right)\right)=`][_____]{$ans[0]}'),
+     [PF('[`\cos\left(\sin^{-1}\left( [$ans[0]] \right)\right)=`][_____]{$ans[1]}'),
         cellcss => 'border-right: 1px solid; '],
-     [PF('[`\sec\left(\sin^{-1}\left( [$ans[0]] \right)\right)=`][_____]{$ans[3]}')],
+     [PF('[`\sec\left(\sin^{-1}\left( [$ans[0]] \right)\right)=`][_____]{$ans[4]}')],
     ],
     [
      [PF('[`\tan\left(\sin^{-1}\left( [$ans[0]] \right)\right)=`][_____]{$ans[2]}'),

@@ -93,6 +93,10 @@ Context("LimitedRadical");
   ($base==1) ? Formula("$height") : Formula("$height/$base"),
 );
 
+for my $i (0..5) {
+  $ans[$i]->{limits} = (0,1);
+}
+
 $Ax = 0;
 $Ay = 0;
 $Cx = sqrt(3);

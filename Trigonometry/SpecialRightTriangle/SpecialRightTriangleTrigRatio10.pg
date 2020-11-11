@@ -81,17 +81,14 @@ Context("LimitedRadical");
 
 @prob = (
   ["\displaystyle \sin(30^{\circ})",Formula("1/2")],
-  ["\displaystyle \sin(45^{\circ})",Formula("sqrt(2)/2")],
   ["\displaystyle \sin(60^{\circ})",Formula("sqrt(3)/2")],
   ["\displaystyle \cos(30^{\circ})",Formula("sqrt(3)/2")],
-  ["\displaystyle \cos(45^{\circ})",Formula("sqrt(2)/2")],
   ["\displaystyle \cos(60^{\circ})",Formula("1/2")],
   ["\displaystyle \tan(30^{\circ})",Formula("sqrt(3)/3")],
-  ["\displaystyle \tan(45^{\circ})",Formula("1")],
   ["\displaystyle \tan(60^{\circ})",Formula("sqrt(3)")],
 );
 
-@perm = NchooseK(9,4);
+@perm = NchooseK(6,4);
 
 
 ##########################################################

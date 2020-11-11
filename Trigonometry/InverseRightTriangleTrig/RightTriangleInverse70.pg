@@ -215,7 +215,7 @@ Since we need to relate the hypotenuse and the angle's adjacent leg, we choose t
 
     [``
 \begin{aligned}
-   \cos{[$alpha]} &= \frac{[$height]}{[$hypotenuse]} \\
+   \cos{x} &= \frac{[$height]}{[$hypotenuse]} \\
    x &= \cos^{-1}\left(\frac{[$height]}{[$hypotenuse]}\right) \\
    x &\approx [$alpha]^{\circ}
 \end{aligned}

@@ -45,9 +45,9 @@ $b = random(-10,-1.1,0.1);
 
 @prob = (
   ["\displaystyle \cos^{-1}\left(-1\right)",Formula("pi")],
-  ["\displaystyle \cos^{-1}\left(-\frac{1}{2}\right)",Formula("5pi/6")],
+  ["\displaystyle \cos^{-1}\left(-\frac{1}{2}\right)",Formula("2pi/3")],
   ["\displaystyle \cos^{-1}\left(-\frac{\sqrt{2}}{2}\right)",Formula("3pi/4")],
-  ["\displaystyle \cos^{-1}\left(-\frac{\sqrt{3}}{2}\right)",Formula("2pi/3")],
+  ["\displaystyle \cos^{-1}\left(-\frac{\sqrt{3}}{2}\right)",Formula("5pi/6")],
   ["\displaystyle \cos^{-1}\left(0\right)",Formula("pi/2")],
   ["\displaystyle \cos^{-1}\left(\frac{1}{2}\right)",Formula("pi/3")],
   ["\displaystyle \cos^{-1}\left(\frac{\sqrt{2}}{2}\right)",Formula("pi/4")],

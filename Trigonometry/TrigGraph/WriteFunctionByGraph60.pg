@@ -101,6 +101,10 @@ $OxAbs = abs($Ox);
 $asymptoteL = ($Ox-$pf2)->reduce;
 $asymptoteR = ($Ox+$pf2)->reduce;
 
+$Px = $cf+$pf2/2;
+$Py = $func1->eval(x=>$Px);
+$PxAbs = abs($Px);
+
 @graph = ();
 ($xmin, $xmax) = (-3*pi/4,3*pi/4);
 ($ymin, $ymax) = (-3,3);
@@ -109,6 +113,8 @@ $graph[0]->lb('reset');
 
 $graph[0]->stamps(closed_circle(0,0,red));
 $graph[0]->lb(new Label(0,0,"O",'red','right','bottom',large));
+$graph[0]->stamps(closed_circle(pi/4,1,red));
+$graph[0]->lb(new Label(pi/4,1,"P",'red','right','bottom',large));
 
 $graph[0]->moveTo(-pi/2,$ymin);
 $graph[0]->lineTo(-pi/2,$ymax,blue,2,dashed);
@@ -121,7 +127,7 @@ $l = -pi/2+0.01;
 $r = pi/2-0.01;
 add_functions($graph[0], "tan(x) for x in <$l,$r> using color:blue and weight:2");
 
-$alt[0] = "This is the graph of one period of the function tan(x). The center is marked as O. Two asymptotes are on the left and rigth of the function: x=$asymptoteL and x=$asymptoteR.";
+$alt[0] = "This is the graph of one period of the function tan(x). The center is marked as O. Point P is also marked on the function, in the middle of Point O and the asymptote x=$asymptoteR. Two asymptotes are on the left and rigth of the function: x=$asymptoteL and x=$asymptoteR.";
 
 $fig0 = image(insertGraph($graph[0]),'width'=>400,'height'=>400,'tex_size'=>700, extra_html_tags => "alt = '$alt[0]' title = '$alt[0]' ");
 
@@ -143,7 +149,7 @@ BEGIN_PGML
 
 >> (To enlarge, click on graph, then press Ctrl+ or Command+) <<
 
-In this figure, if the coordinates of Point [`O`] are [` O([$Ox],[$Oy])`], and if the function's two asymptotes are [`x=[$asymptoteLS]`] and [`x=[$asymptoteR]`], fill in the following blanks. 
+In this figure, if the coordinates of Point [`O`] are [` O([$Ox],[$Oy])`], the coordinates of Point [`P`] are [` P([$Px],[$Py])`], and if the function's two asymptotes are [`x=[$asymptoteL]`] and [`x=[$asymptoteR]`], fill in the following blanks. 
 
 [@KeyboardInstructions(
 "\n"
@@ -152,11 +158,15 @@ In this figure, if the coordinates of Point [`O`] are [` O([$Ox],[$Oy])`], and i
 .'* Use [|pi|]* to represent [`\pi`].'
 )@]**
 
+Find the function's equation in the form of [`f(x)=a\tan(b(x-c))+d`].
+
 a) The function's midline is at [`y=`][______]{$d}.
     
 b) The function's period is [______]{$pf}.
 
-c) The function, as a transformation of [`y=\tan(x)`], is [`f(x)=`][________________________]{$func1}.
+c) The value of [`a`] determines the function's vertical stretch/compression: [`a=`][______]{$a}.
+
+d) The function, as a transformation of [`y=\tan(x)`], is [`f(x)=`][________________________]{$func1}.
 
 END_PGML
 
@@ -181,6 +191,10 @@ If the function's formula is [`f(x)=a\tan(b(x-c))+d`], by the formula [`\text{ne
     [`` b = \frac{\text{old period}}{\text{new period}} = \frac{\pi}{[$pf]} = [$bShow]``]
 
 ###Part c
+
+In the graph of [`y=\tan{x}`], the vertical distance between [`(0,0)`] and [`\left(\frac{\pi}{4},1\right)`] is [`1`]. In this function's graph, the vertical distance between [` O([$Ox],[$Oy])`] and [` P([$Px],[$Py])`] is [`[$Py]-([$Oy])=[$a]`]. So the value of [`a`] in [`f(x)=a\tan(b(x-c))+d`] is [`a=[$a]`].
+
+###Part d
 
 If the function's "parent function" is [`y=\tan(x)`], its center is at [`(0,0)`]. Point [`O([$Ox],[$Oy])`] is the image of [`(0,0)`] after transformations, so its [`x`]-value tells us the horizontal shift.
 
