@@ -60,7 +60,7 @@ do {
 } until ( ($c2<0) && ($c2n != 1) && (abs($b2n)!=1) );
 
 $f = Compute("$b1*$var+$c1")->reduce;
-
+$e1 = Compute("$b2h*$var")->reduce;
 
 ##############################################
 
@@ -68,7 +68,7 @@ BEGIN_PGML
 
 Solve the exponential equation
 
-     [` e^{[$f]} = \frac{e^{[$var]^2}}{e^{[$c2n]}}\cdot \left(e^{[$b2h][$var]}\right)^2 `]
+     [` e^{[$f]} = \frac{e^{[$var]^2}}{e^{[$c2n]}}\cdot \left(e^{[$e1]}\right)^2 `]
      
 * Enter multiple answers in set notation, such as [`\{1,-1\}`], or separated by commas, such as [` x=1, x=-1 `].
 * If there are no real solutions, enter *no real solutions*
