@@ -55,8 +55,8 @@ sub nextPrime {
       if ($isPrime==1) {return $p;}
    }
 }
-   
-# Input is a number n. Output is ($out, $in) 
+
+# Input is a number n. Output is ($out, $in)
 # in the simplified form of $out*sqrt($in).
 sub radSimplify {
    my $n = shift;
@@ -117,9 +117,12 @@ sub rationalize {
     $hypotenuse0In = 1;
     ($base0Out,$base0In) = &radSimplify($hypotenuse0Out**2-$height0Out**2*$height0In);
     ($out,$in) = &radSimplify(abs($height0In*$base0In));
-  } until (!($base0In==1 && $height0In==1 && $hypotenuse0In==1)) && !(($base0Out>0) && ($height0Out>0)) && ($in<=5);
-  
-
+  } until
+     (!($base0In==1 && $height0In==1 && $hypotenuse0In==1))
+     && !(($base0Out>0)
+     && ($height0Out>0))
+     && ($in<=5)
+     && (sqrt($height0In*$base0In) != int(sqrt($height0In*$base0In)));
 
   $base0Out = $base0Out*random(-1,1,2);
   if ($base0Out*$height0Out>0) {
@@ -316,7 +319,7 @@ sub produceLine0 {
     $numS0 = ($trigs1[2]>0) ? "-".$trigs1[2]->TeX : "+".$tN->TeX;
   }
   $line0Num .= $numS0;
-  
+
   $line0Den = "";
   Context("Fraction");
   my ($num1,$den1) = Fraction($tan0Out*$height1,$tan0Den*$base1)->reduce->value;
@@ -348,7 +351,7 @@ sub produceLine1 {
   my ($f1n,$f1d) = $f1->value;
   my ($f2n,$f2d) = $f2->value;
   my ($f3n,$f3d) = $f3->value;
-  
+
   my $com = lcm(lcm($f1d,$f2d),$f3d);
   $r = "\frac{\left(".$lineNum."\right)\cdot$com}{\left(".$lineDen."\right)\cdot$com}";
   return ($r,$com);
@@ -359,7 +362,7 @@ sub produceLine2 {
   my ($f1n,$f1d) = $f1->value;
   my ($f2n,$f2d) = $f2->value;
   my ($f3n,$f3d) = $f3->value;
-  
+
   my $lineNum = "";
   my $a = $com/$f1d*$f1n;
   my $b = $com/$f2d*$f2n;
@@ -374,9 +377,9 @@ sub produceLine2 {
   my $c = $com/$f3d*$f3n;
   my $cN = -$c;
   if (abs($c)!=1) {
-    $lineDen .= ($c>0) ? "$com$sN$c\sqrt{$sq}}" : "$com$s$cN\sqrt{$sq}";
+    $lineDen .= ($c>0) ? "$com$sN$c\sqrt{$sq}" : "$com$s$cN\sqrt{$sq}";
   } else {
-    $lineDen .= ($c==1) ? "$com$sN\sqrt{$sq}}" : "$com$s\sqrt{$sq}";
+    $lineDen .= ($c==1) ? "$com$sN\sqrt{$sq}" : "$com$s\sqrt{$sq}";
   }
   return ($lineNum,$lineDen,$a,$b,$com,$c);
 }
@@ -385,7 +388,7 @@ sub produceLine3 {
   my ($num,$den,$c,$d,$sq,$s) = @_;
   my $sN = ($s eq "+") ? "-" : "+";
   my $conj = "";
-  
+
   if (abs($d)==1) {
     $conj = ($d>0) ? "\left($c$s\sqrt{$sq}\right)" : "\left($c$sN\sqrt{$sq}\right)";
   } else {
@@ -492,7 +495,7 @@ It's given that [`\sin(\alpha)=[$trigs0[0]]`] and [`\alpha\in[$int0]`]. We can s
 
 >> (To enlarge, click on graph, then press Ctrl+ or Command+) <<
 
-The triangle's base is calculated by [`\sqrt{([$hypotenuse0])^2-\left([$height0]\right)^2}=[$absBase0]`]. 
+The triangle's base is calculated by [`\sqrt{([$hypotenuse0])^2-\left([$height0]\right)^2}=[$absBase0]`].
 
 We can see [`\tan(\alpha)=\frac{[$height0]}{[$base0]}=[$trigs0[2]]`].
 
@@ -504,7 +507,7 @@ It's given that [`\cos(\beta)=[$trigs1[1]]`] and [`\beta\in[$int1]`]. We can ske
 
 >> (To enlarge, click on graph, then press Ctrl+ or Command+) <<
 
-The triangle's height is calculated by [`\sqrt{([$hypotenuse1])^2-\left([$base1]\right)^2}=[$absHeight1]`]. 
+The triangle's height is calculated by [`\sqrt{([$hypotenuse1])^2-\left([$base1]\right)^2}=[$absHeight1]`].
 
 We can see [`\tan(\beta)=[$trigs1[2]]`].
 
@@ -517,7 +520,7 @@ We can see [`\tan(\beta)=[$trigs1[2]]`].
   &= [$line1] \\
   &= [$line2] \\
   &= [$line3] \\
-  &= [$line4] 
+  &= [$line4]
     \end{aligned}``]
 
 ###Calculating [` \tan(\alpha-\beta) `]
@@ -529,7 +532,7 @@ We can see [`\tan(\beta)=[$trigs1[2]]`].
   &= [$line11] \\
   &= [$line12] \\
   &= [$line13] \\
-  &= [$line14] 
+  &= [$line14]
     \end{aligned}``]
 
 END_PGML_SOLUTION
