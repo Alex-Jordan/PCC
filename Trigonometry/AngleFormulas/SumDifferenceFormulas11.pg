@@ -331,7 +331,7 @@ Context("Numeric");
 Context()->noreduce('(-x)-y');
 Context()->noreduce('(-x)-y','(-x)+y');
 $ans0 = Compute("-$ans{$aSum}[0]");
-$ans1 = Compute("-$ans{$aSum}[1]");
+$ans1 = Compute("$ans{$aSum}[1]");
 $ans2 = Compute("-$ans{$aSum}[2]");
 
 Context("LimitedRadical");
