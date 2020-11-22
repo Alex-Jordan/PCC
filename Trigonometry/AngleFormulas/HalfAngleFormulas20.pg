@@ -220,7 +220,7 @@ Context("Numeric");
 Context()->noreduce('(-x)-y');
 Context()->noreduce('(-x)-y','(-x)+y');
 $ans0 = -$a{$angle}[0];
-$ans1 = -$a{$angle}[1];
+$ans1 = $a{$angle}[1];
 $ans2 = -$a{$angle}[2];
 
 Context("LimitedRadical");
