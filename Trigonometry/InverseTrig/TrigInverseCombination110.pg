@@ -94,9 +94,9 @@ Context("LimitedRadical");
 );
 
 for my $i (0..5) {
-  if ($in==0) {$ans[$i]->{limits} = (max(-($b)**2/$c,-$b/$a),max(-($b)**2/$c,-$b/$a)+1);}
-  if ($in==2) {$ans[$i]->{limits} = (0,$a);}
-  if ($in==3) {$ans[$i]->{limits} = ($a,$a+1);}
+  if ($in==0) {$ans[$i]->{limits} = [max(-($b)**2/$c,-$b/$a),max(-($b)**2/$c,-$b/$a)+1];}
+  if ($in==2) {$ans[$i]->{limits} = [0,$a];}
+  if ($in==3) {$ans[$i]->{limits} = [$a+1,$a+2];}
 }
 
 $Ax = 0;
