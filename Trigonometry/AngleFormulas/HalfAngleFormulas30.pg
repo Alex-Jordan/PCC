@@ -84,9 +84,9 @@ sub rationalize {
   Context("LimitedRadical");
   if ($den==1) {
     if ($num==1) {
-      return ($in1==1) ? Formula("1") : Formula("sqrt($in1)");
+      return ($in1==1) ? 1 : Formula("sqrt($in1)");
     } elsif ($num==-1) {
-      return ($in1==1) ? Formula("-1") : Formula("-sqrt($in1)");
+      return ($in1==1) ? -1 : Formula("-sqrt($in1)");
     } else {
       return ($in1==1) ? Formula("$num") : Formula("$num*sqrt($in1)");
     }
@@ -295,7 +295,7 @@ It's given that [`\tan(\theta)=[$trigs[0][2]]`] and [`\theta\in[$int[0]]`]. We c
 
 >> (To enlarge, click on graph, then press Ctrl+ or Command+) <<
 
-The triangle's height is calculated by [`\sqrt{([$hypotenuse[0]])^2-\left([$base[0]]\right)^2}=[$absHeight[0]]`]. 
+The triangle's hypotenuse is calculated by [`\sqrt{([$absBase[0]])^2+\left([$absHeight[0]]\right)^2}=[$hypotenuse[0]]`]. 
 
 We can see [`\cos(\theta)=[$trigs[0][1]]`].
 
