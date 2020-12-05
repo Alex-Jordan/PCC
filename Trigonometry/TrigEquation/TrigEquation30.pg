@@ -175,6 +175,9 @@ $graph->lb(new Label($Px,$Py,"P: $ans0",'red','center',$td,large));
 $alt = "This is the graph of a circle with point P: $ans0 on the circle.";
 
 $ans1 = $values{$tanValue}[2][2];
+$ans1alt = $values{$tanValue}[2][3];
+$ans1k = Formula("$ans1+k*pi");
+$ans1altk = Formula("$ans1alt+k*pi");
 if ($ans1 ne "DNE") {
   $Qr = Compute("$ans1");
   $Qx = $r*cos($Qr);
