@@ -114,8 +114,6 @@ for my $i (0..3) {
   $fig[$i] = image(insertGraph($graph[$i]),'width'=>400,'height'=>400,'tex_size'=>700, extra_html_tags => "alt = '$alt[$i]' title = '$alt[$i]' ");
 }
 
-$id = random(1,3,1);
-
 ##############################################
 
 BEGIN_PGML
