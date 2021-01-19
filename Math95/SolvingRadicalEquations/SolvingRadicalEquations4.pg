@@ -54,6 +54,7 @@ $h3 = sqrt($r[0]);            # helper variable for checking solution
 $h4 = sqrt($h2);             # helper variable for checking solution
 
 Context("FiniteSolutionSets");
+Context()->variables->are($var=>'Real');
 $ans = Formula("{$r[0]}");
 
 

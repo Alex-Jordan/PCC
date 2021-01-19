@@ -56,6 +56,7 @@ Context("Fraction");
 $sol1 = Fraction($a-$b*$c,2);
 $sol2 = Fraction($a+$b*$c,2);
 Context("FiniteSolutionSets");
+Context()->variables->are($var=>'Real');
 $ans = Formula("{$sol1,$sol2}");
 
 ######################################
