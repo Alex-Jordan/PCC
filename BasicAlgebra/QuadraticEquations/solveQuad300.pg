@@ -39,6 +39,7 @@ loadMacros(
      "answerHints.pl",
      "PGML.pl",
      "contextFraction.pl",
+      "contextFiniteSolutionSets.pl",
   "PCCmacros.pl",
   "PGcourse.pl",
 );
@@ -102,6 +103,9 @@ Context()->strings->add("no real solutions"=>{},
 $b1 = $b*-1;
 $ans = Compute("$var = $b1/$a");
 
+Context("FiniteSolutionSets");
+$ans = Formula("{$b1/$a}");
+
 ##############################################
 
 TEXT(beginproblem());
@@ -110,53 +114,13 @@ Solve the equation.
 
     [` [$lhs]=[$rhs]`]
 
-    [__________________________]
+    [__________________________]{$ans}
 
-[@KeyboardInstructions("Enter multiple answers separated by commas, as in [|x=1, x=-1|]*. If you need to use the square root symbol, as in [`x=\\sqrt{17}`], type it as [|x=sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
+[@KeyboardInstructions("If you need to use the square root symbol, as in [`x=\\sqrt{17}`], type it as [|x=sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
+
 END_PGML
 
 ##############################################
-ANS($ans->cmp(
-  checker => sub {
-    my ($correct,$student,$ans) = @_;
-    # count the number of student answers
-    my $fullStudent = $ans->{student_formula};
-    my @fullStudentValue = $fullStudent->value;
-    my $n = scalar(@fullStudentValue);  # number of student answers
-    if($n>1)
-    {
-      $student->context->setError("Does this equation have more than one unique solution?","",undef,undef,$Value::CMP_WARNING)
-         unless $ans->{isPreview};
-      return;
-    }
-    # if the student has said no real solutions, ask them about it
-    if($student eq "no real solutions")
-    {
-      $student->context->setError("This equation does have some solutions- try factoring or using the quadratic formula","",undef,undef,$Value::CMP_WARNING)
-         unless $ans->{isPreview};
-      return;
-    }
-    # check that the student has written x=
-    if ($student->type ne "Assignment" && $ans->{student_formula}->type ne "Assignment") {
-      $student->context->setError("Your entry should be written $var = $US$US$US","",undef,undef,$Value::CMP_WARNING)
-         unless $ans->{isPreview};
-      return;
-    }
-    return $correct == $student;
-  }
-)->withPostFilter(sub {
-  my $ansHash = shift;
-  if ($ansHash->{score}) {
-    my ($cvar,$cfrac) = $ansHash->{correct_value}->value; # get
-    my ($svar,$sfrac) = $ansHash->{student_value}->value; # get
-    my $check = $cfrac->cmp->evaluate($sfrac->string); # do a
-     $ansHash->{score} = $check->{score};
-     $ansHash->{ans_message} = $check->{ans_message}; # and any
-   }
-     return $ansHash;
-     },
-     ),
-);
 
 ##############################################
 
