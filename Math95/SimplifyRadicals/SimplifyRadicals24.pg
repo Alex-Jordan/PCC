@@ -41,10 +41,14 @@ $e = $c**2-$b;
 
 $expression = "\dfrac{$a}{\sqrt{$b}+$c}";
 $stringans = "($d-$a sqrt($b))/$e";
+if ($e == 1) {$stringans = "$d-$a sqrt($b)";};
+if ($e == -1) {$stringans = "-$d+$a sqrt($b)";};
 $G = gcd($a,$d);
 $D = $d/$G;
 $A = $a/$G;
 $factored = "$G($D-$A sqrt($b))/$e";
+if ($e == 1) {$factored = "$G($D-$A sqrt($b))";};
+if ($e == -1) {$factored = "$G(-$D+$A sqrt($b))";};
 
 Context("Form");
 $ans = Formula("$stringans");
