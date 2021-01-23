@@ -29,6 +29,8 @@ loadMacros(
   "extraAnswerEvaluators.pl",
   "PGML.pl",
   "PCCmacros.pl",
+  "contextFraction.pl",
+  "contextFiniteSolutionSets.pl",
   "PGcourse.pl"
 );
 
@@ -45,12 +47,21 @@ $e=-($b+$c);
 $ans1 = "$d/$a";
 $ans2= "$e/$a";
 
+Context("Fraction");
+$ans1 = Fraction($d,$a);
+$ans2 = Fraction($e,$a);
+
+Context("FiniteSolutionSets");
+$ans = Formula("{$ans1,$ans2}");
+
 BEGIN_PGML
-Solve the following equation. [@KeyboardInstructions('If there is more than one solution, write them separated by commas.')@]** 
+Solve the equation. 
 
->>[`` \left\lvert [$pol]  \right\rvert = [$c]  ``]<<
+[`` \left\lvert [$pol]  \right\rvert = [$c]  ``]
 
-[__]{List($ans1,$ans2)}{width=>20}
+[@KeyboardInstructions("If there are no solutions, you may type [|no solutions|]*.")@]**
+
+[__]{$ans}{width=>20}
 
 END_PGML
 

@@ -46,10 +46,11 @@ Context("FiniteSolutionSets");
 $ans = Formula("{$answer1,$answer2}");
 
 BEGIN_PGML
-Solve the equation: 
->>[`` \left\lvert [$a] x - [$b] \right\rvert = \left\lvert [$c] x + [$d]\right\rvert ``]<<
+Solve the equation. 
 
-[@KeyboardInstructions('If there is more than one solution, enter the solutions as a comma-separated list.')@]**
+[`` \left\lvert [$a] x - [$b] \right\rvert = \left\lvert [$c] x + [$d]\right\rvert ``]
+
+[@KeyboardInstructions("If there are no solutions, you may type [|no solutions|]*.")@]**
 
 [__]{$ans}{width=>20}
 

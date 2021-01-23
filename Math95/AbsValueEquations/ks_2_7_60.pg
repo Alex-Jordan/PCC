@@ -52,9 +52,9 @@ $ans = Formula("{-$x}");
 BEGIN_PGML
 Solve the equation _by inspection_ (meaning in your head).
  
->>[``\left\lvert [$a]x + [$b]\right\rvert = 0 ``]<<
+[``\left\lvert [$a]x + [$b]\right\rvert = 0 ``]
 
-[@KeyboardInstructions('If there are multiple solutions, enter the solutions as a comma-separated list.')@]**
+[@KeyboardInstructions("If there are no solutions, you may type [|no solutions|]*.")@]**
 
 [__]{$ans}{width=>20}
 

@@ -59,9 +59,9 @@ $ans = Formula("{$c}");
 BEGIN_PGML
 The equation [` \lvert x\rvert =\lvert y\rvert `] is satisfied if [` x=y `] or [` x=-y `].  Use this fact to solve the following equation.
 
->>[``\left\lvert x + [$a] \right\rvert = \left\lvert x + [$b] \right\rvert``]<<
+[``\left\lvert x + [$a] \right\rvert = \left\lvert x + [$b] \right\rvert``]
 
-[@KeyboardInstructions('If there is more than one solution, enter the solutions as a comma-separated list.')@]**
+[@KeyboardInstructions("If there are no solutions, you may type [|no solutions|]*.")@]**
 
 [__]{$ans}{width=>20}
 

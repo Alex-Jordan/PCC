@@ -68,8 +68,11 @@ $ans = Formula("{$v1, $v2}");
 #  Main text
 
 BEGIN_PGML
-Solve: [` \left\lvert [$a] - 3[$var] \right\rvert = [$b] `]
+Solve the equation.
 
+[`` \left\lvert [$a] - 3[$var] \right\rvert = [$b] ``]
+
+[@KeyboardInstructions("If there are no solutions, you may type [|no solutions|]*.")@]**
 
 [__]{$ans}{width=>20}
 

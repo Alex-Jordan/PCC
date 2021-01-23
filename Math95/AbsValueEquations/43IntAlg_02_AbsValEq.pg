@@ -63,9 +63,11 @@ $ans = Formula("{$ans1, $ans2}");
 #  Main text
 
 BEGIN_PGML
-Solve: [` \left\lvert [$var] - [$a] \right\rvert = [$b] `]
+Solve the equation.
 
+[`` \left\lvert [$var] - [$a] \right\rvert = [$b] ``]
 
+[@KeyboardInstructions("If there are no solutions, you may type [|no solutions|]*.")@]**
 
 [__]{$ans}{width=>20}
 

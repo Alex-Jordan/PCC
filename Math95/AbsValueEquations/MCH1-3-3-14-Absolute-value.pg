@@ -104,7 +104,7 @@ $sol = Formula("{$sol1,$sol2}");
 BEGIN_PGML
 a.  Write the equation [`[$eqn]`] as two separate equations.  Neither of your equations should use absolute value.
 
-    [__]{$multians}{width=>30}
+    [__]{$multians}{width=>30}  
     [__]{$multians}{width=>30}
 
 a.  Solve the equation [`[$eqn]`], possibly by solving each equation from part a.

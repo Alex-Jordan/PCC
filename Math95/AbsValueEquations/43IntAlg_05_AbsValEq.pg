@@ -47,7 +47,9 @@ $ans = Compute("no solutions");
 #  Main text
 
 BEGIN_PGML
-Solve the equation: [` \left\lvert [$var] \right\rvert = [$a] `]
+Solve the equation.
+
+[`` \left\lvert [$var] \right\rvert = [$a] ``]
 
 [@KeyboardInstructions("If there are no solutions, you may type [|no solutions|]*.")@]**
 

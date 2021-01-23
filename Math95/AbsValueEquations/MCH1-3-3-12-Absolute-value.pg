@@ -34,6 +34,8 @@ loadMacros(
   "AnswerFormatHelp.pl",
   "PGML.pl",
   "PCCmacros.pl",
+  "contextFraction.pl",
+  "contextFiniteSolutionSets.pl",
   "PGcourse.pl"
 );
 
@@ -91,6 +93,12 @@ Context()->{error}{convert} = sub {
  return $message;
 };
 
+Context("Fraction");
+$soln1 = Fraction(($a+$b)/$c);
+$soln2 = Fraction(-($a+$b)/$c);
+
+Context("FiniteSolutionSets");
+$sol = Formula("{$soln1,$soln2}");
 
 ###################################
 # Main text
@@ -98,10 +106,10 @@ Context()->{error}{convert} = sub {
 BEGIN_PGML
 a.  Write the equation [`[$eqn]`] as two separate equations.  Neither of your equations should use absolute value.
 
-    [__]{$multians}{width=>30} 
+    [__]{$multians}{width=>30}   
     [__]{$multians}{width=>30}
 
-a.  Solve both equations above. [@KeyboardInstructions('Enter your solutions as a comma-separated list.')@]**
+a.  Solve the original equation by solveing each of the equations above.
 
     [__]{$sol}{width=>20}
 
