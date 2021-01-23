@@ -37,6 +37,7 @@ loadMacros(
       "answerHints.pl",
       "PGML.pl",
       "contextLimitedRadical.pl",
+      "contextFiniteSolutionSets.pl",
       "PCCmacros.pl",
     ,
   "PGcourse.pl",
@@ -90,6 +91,9 @@ $questionFormula = Formula("$a*$var^2+$b*$var+$c")->reduce;
 $b1 = $b*-1;
 $a1 = 2*$a;
 $ans = List(Formula("$var=($b1-sqrt($discriminant))/$a1"),Formula("$var=($b1+sqrt($discriminant))/$a1"));
+
+Context("FiniteSolutionSets");
+$ans = Formula("{($b1-sqrt($discriminant))/$a1,($b1+sqrt($discriminant))/$a1}");
 ##############################################
 
 TEXT(beginproblem());
@@ -98,9 +102,9 @@ Solve the equation.
 
      [` [$questionFormula]= 0 `]
 
-     [_____________________________]
+     [_____________________________]{$ans}
 
-[@KeyboardInstructions("Enter multiple answers separated by commas, like [|x=1, x=-1|]*. Enter solutions like [`\\frac{1+\\sqrt{3}}{2}`] using [|(1+sqrt(3))/2|]* and note the grouping parentheses. If there are no real solutions, enter [|no real solutions|]*.")@]**
+[@KeyboardInstructions("Enter solutions like [`\\frac{1+\\sqrt{3}}{2}`] using [|(1+sqrt(3))/2|]* and note the grouping parentheses. If there are no real solutions, enter [|no real solutions|]*.")@]**
 
 END_PGML
 
@@ -109,7 +113,6 @@ END_PGML
 
 
 $showPartialCorrectAnswers = 1;
-ANS($ans->cmp(list_checker => ~~&radicalListCheck));
 
 ##############################################
 

@@ -52,6 +52,7 @@ loadMacros(
       "answerHints.pl",
       "PGML.pl",
       "contextLimitedRadical.pl",
+      "contextFiniteSolutionSets.pl",
       "PCCmacros.pl",
     ,
   "PGcourse.pl",
@@ -124,6 +125,9 @@ $b1 = $B*-1;
 
 $ans = List(Formula("$var=($b1-$D*sqrt($C))/$A"),Formula("$var=($b1+$D*sqrt($C))/$A"));
 
+Context("FiniteSolutionSets");
+$ans = Formula("{($b1-$D*sqrt($C))/$A,($b1+$D*sqrt($C))/$A}");
+
 ##############################################
 TEXT(beginproblem());
 BEGIN_PGML
@@ -131,9 +135,10 @@ Solve the equation.
 
      [` [$questionFormula]= 0 `]
 
-     [_____________________________]
+     [_____________________________]{$ans}
 
-[@KeyboardInstructions("Enter multiple answers separated by commas, like [|x=1, x=-1|]*. Enter solutions like [`\\frac{1+\\sqrt{3}}{2}`] using [|(1+sqrt(3))/2|]* and note the grouping parentheses. If there are no real solutions, enter [|no real solutions|]*.")@]**
+[@KeyboardInstructions("Enter solutions like [`\\frac{1+\\sqrt{3}}{2}`] using [|(1+sqrt(3))/2|]* and note the grouping parentheses. If there are no real solutions, enter [|no real solutions|]*.")@]**
+
 
 END_PGML
 
@@ -142,7 +147,6 @@ END_PGML
 
 
 $showPartialCorrectAnswers = 1;
-ANS($ans->cmp(list_checker => ~~&radicalListCheck));
 
 ##############################################
 BEGIN_PGML_SOLUTION

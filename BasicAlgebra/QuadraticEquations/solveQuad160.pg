@@ -52,6 +52,7 @@ loadMacros(
       "answerHints.pl",
       "PGML.pl",
       "contextLimitedRadical.pl",
+      "contextFiniteSolutionSets.pl",
       "PCCmacros.pl",
     ,
   "PGcourse.pl",
@@ -130,6 +131,8 @@ $questionFormula = Formula("$a*$var^2+$b*$var+$c")->reduce;
 $b1 = $b*-1;
 $a1 = 2*$a;
 
+Context("FiniteSolutionSets");
+
 if($B==2*round($B/2))
 {
     # B is even
@@ -138,17 +141,18 @@ if($B==2*round($B/2))
     # this check shouldn't really be necessary, but reduce seems to go too far
     if($d1==1)
     {
-        $ans = List(Formula("$var=$b1-sqrt($C)"),Formula("$var=$b1+sqrt($C)"));
+        $ans = Formula("{$b1-sqrt($C),$b1+sqrt($C)}");
     }
     else
     {
-        $ans = List(Formula("$var=$b1-$d1*sqrt($C)"),Formula("$var=$b1+$d1*sqrt($C)"));
+        $ans = Formula("{$b1-$d1*sqrt($C),$b1+$d1*sqrt($C)}");
     }
 }
 else
 {
     # B is odd
     $ans = List(Formula("$var=($b1-$D*sqrt($C))/$a1"),Formula("$var=($b1+$D*sqrt($C))/$a1"));
+    $ans = Formula("{($b1-$D*sqrt($C))/$a1,($b1+$D*sqrt($C))/$a1}");
 }
 ##############################################
 TEXT(beginproblem());
@@ -157,9 +161,11 @@ Solve the equation.
 
      [` [$questionFormula]= 0 `]
 
-     [_____________________________]
+     [_____________________________]{$ans}
 
-[@KeyboardInstructions("Enter multiple answers separated by commas, like [|x=1, x=-1|]*. Enter solutions like [`\\frac{1+\\sqrt{3}}{2}`] using [|(1+sqrt(3))/2|]* and note the grouping parentheses. If there are no real solutions, enter [|no real solutions|]*.")@]**
+[@KeyboardInstructions("Enter solutions like [`\\frac{1+\\sqrt{3}}{2}`] using [|(1+sqrt(3))/2|]* and note the grouping parentheses. If there are no real solutions, enter [|no real solutions|]*.")@]**
+
+
 
 END_PGML
 
@@ -168,7 +174,6 @@ END_PGML
 
 
 $showPartialCorrectAnswers = 1;
-ANS($ans->cmp(list_checker => ~~&radicalListCheck));
 
 ##############################################
 BEGIN_PGML_SOLUTION
