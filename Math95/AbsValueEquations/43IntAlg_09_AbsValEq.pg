@@ -57,8 +57,8 @@ Context()->strings->add("No solution"=>{NONE});
 $ans = List(($c+$a)/$b, (-$c+$a)/$b);
 
 Context("Fraction");
-$soln1 = Fraction($c+$a,$b);
-$soln2 = Fraction(-$c+$a,$b);
+$soln1 = Fraction(($c+$a)/$b);
+$soln2 = Fraction((-$c+$a)/$b);
 
 Context("FiniteSolutionSets");
 Context()->flags->remove("NumberCheck");
