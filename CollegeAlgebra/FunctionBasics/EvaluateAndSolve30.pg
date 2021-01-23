@@ -26,6 +26,7 @@ loadMacros(
   "unionTables.pl",
   "parserAssignment.pl",
   "contextFraction.pl",
+  "contextFiniteSolutionSets.pl",
   "pccTables.pl",
   "PGML.pl",
   "PCCmacros.pl",
@@ -69,7 +70,9 @@ Context()->operators->set(","=>{string=>"or",TeX=>"\text{ or }",perl=>","});Cont
 
 $solvefequals0 = Compute("$var=$root1 or $var=$root2");
 
-
+Context("FiniteSolutionSets");
+Context()->variables->are($var=>'Real');
+$ans = Formula("{$root1, $root2}");
 
 ##############################################
 
@@ -81,8 +84,9 @@ a. Find [`[$f](0)`].
    [_]{$fof0}{20}
 
 a. Solve [`[$f]([$var])=0`].  
-   [@KeyboardInstructions("The answer should be in the form [|$var=23|]*, and not simply give the numerical value of the solution, like [|23|]*.  If there are two solutions, use the word [|or|]*, as in [|$var=23 or $var=12|]*.  If you need to use the square root sign, as in [`\\sqrt{23}`], type it like [|sqrt(23)|]*.")@]**  
-   [_]{$solvefequals0}{20}
+   [@KeyboardInstructions("If you need to use the square root symbol, as in [`x=\\sqrt{17}`], type it as [|x=sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**  
+   [_]{$ans}{20}
+
 
 END_PGML
 
