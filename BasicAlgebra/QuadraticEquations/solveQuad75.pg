@@ -33,6 +33,7 @@ loadMacros(
       "answerHints.pl",
       "PGML.pl",
       "contextLimitedRadical.pl",
+      "contextFiniteSolutionSets.pl",
       "PCCmacros.pl",
     ,
   "PGcourse.pl",
@@ -74,6 +75,8 @@ $a = $primes[$index1];
 $b = $primes[$index2];
 
 # for the answer
+
+Context("FiniteSolutionSets");
 $ans = Compute("no real solutions");
 
 ##############################################
@@ -84,26 +87,14 @@ Solve the equation.
 
      [` [$b][$var]^2  + [$a]= 0`]
 
-     [_______________________]
+     [_______________________]{$ans}
 
-[@KeyboardInstructions("Enter multiple answers separated by commas, as in [|x=1, x=-1|]*. If you need to use the square root symbol, as in [`x=\\sqrt{17}`], type it as [|x=sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
+[@KeyboardInstructions("If you need to use the square root symbol, as in [`x=\\sqrt{17}`], type it as [|x=sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
 
 END_PGML
 
 ##############################################
 
-ANS($ans->cmp(checker=>sub {
-     my ($correct,$student,$ansHash) = @_;
-     if(!Value::String->typeMatch($student))
-     {
-        Value->Error("$mymsg");
-        return 0;
-     }
-        $check = ($student->value eq "no real solutions");
-        Value->Error("$mymsg") unless($check);
-        return $check;
-    },
-));
 
 
 ##############################################

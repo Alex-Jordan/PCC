@@ -33,6 +33,7 @@ loadMacros(
       "answerHints.pl",
       "PGML.pl",
       "contextLimitedRadical.pl",
+      "contextFiniteSolutionSets.pl",
       "PCCmacros.pl",
   "PGcourse.pl",
 );
@@ -77,6 +78,9 @@ $c = non_zero_random(-10,10,1);
 $d = -$c;
 $ans = List(Formula("$var=$d+$a sqrt($b)"),Formula("$var=$d-$a sqrt($b)"));
 
+Context("FiniteSolutionSets");
+$ans = Formula("{$d+$a sqrt($b),$d-$a sqrt($b)}");
+
 ##############################################
 
 TEXT(beginproblem());
@@ -85,9 +89,10 @@ Solve the equation.
 
      [` ([$var]+[$c])^2 = [$a**2 * $b] `]
 
-     [_______________________]
+     [_______________________]{$ans}
 
-[@KeyboardInstructions("Enter multiple answers separated by commas, as in [|x=1, x=-1|]*. If you need to use the square root symbol, as in [`x=\\sqrt{17}`], type it as [|x=sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
+[@KeyboardInstructions("If you need to use the square root symbol, as in [`x=\\sqrt{17}`], type it as [|x=sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
+
 
 END_PGML
 
@@ -96,7 +101,6 @@ END_PGML
 
 
 $showPartialCorrectAnswers = 1;
-ANS($ans->cmp(list_checker => ~~&radicalListCheck));
 
 ##############################################
 

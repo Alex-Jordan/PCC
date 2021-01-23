@@ -34,6 +34,7 @@ loadMacros(
      "answerHints.pl",
      "PGML.pl",
      "contextFraction.pl",
+      "contextFiniteSolutionSets.pl",
   "PCCmacros.pl",
   "PGcourse.pl",
 );
@@ -77,6 +78,9 @@ else
 $c = Fraction($a,$b);
 $ans = Compute("$var = -$c, $var = $c");
 
+Context("FiniteSolutionSets");
+$ans = Formula("{-$c,$c}");
+
 ##############################################
 
 TEXT(beginproblem());
@@ -85,51 +89,15 @@ Solve the equation.
 
     [` [$b**2][$var]^2 = [$a**2] `]
 
-    [______________________]
+    [______________________]{$ans}
 
-[@KeyboardInstructions("Enter multiple answers separated by commas, as in [|x=1, x=-1|]*. If you need to use the square root symbol, as in [`x=\\sqrt{17}`], type it as [|x=sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
+[@KeyboardInstructions("If you need to use the square root symbol, as in [`x=\\sqrt{17}`], type it as [|x=sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
+
 END_PGML
 
 ##############################################
 
 $showPartialCorrectAnswers = 1;
-ANS($ans->cmp(
-  entry_type => "a solution",
-  checker => sub {
-    my ($correct,$student,$ans,$nth,$value) = @_;
-    if ($correct->type eq "Assignment") {
-      my ($svar,$sfrac) = $student->value; # get the variable and fraction
-      return 0 unless Value::classMatch($sfrac,'Fraction') && $sfrac->isReduced;
-    }
-    return $correct == $student;
-  },
-  extra => sub {
-    my ($student,$ansHash,$nth,$value) = @_;
-    if($student eq "no real solutions")
-    {
-         $student->context->setError("This equation does have some solutions- try using the square root method","",undef,undef,$Value::CMP_WARNING)
-         unless $ans->{isPreview};
-         return;
-    }
-    if ($student->type ne "Assignment" && $ansHash->{student_formula}->type ne "Assignment") {
-      $student->context->setError("Your $nth solution should be written $var = $US$US$US","",undef,undef,$Value::CMP_WARNING)
-         unless $ans->{isPreview};
-      return;
-    }
-    my ($svar,$sfrac) = $student->value; # get the variable and fraction
-    if (Value::classMatch($sfrac,'Fraction') && !$sfrac->isReduced) {
-      $student->context->setError("Your $nth $value is not reduced","",undef,undef,$Value::CMP_WARNING)
-         unless $ans->{isPreview};
-      return;
-    }
-    return Value::Real->typeMatch($student);
-  }
-)->withPostFilter(AnswerHints(
-  ["$var=$c","$var=-$c"] => "This is correct, but are you sure you have all the solutions?",
-  [$c,-$c] => ["Your solution is a correct one, but you should write $var = $US$US$US<br>Are you sure you have all the solutions?",replaceMessage=>1],
-  ["$c,-$c","-$c,$c"] => ["Your solutions are correct, but you should write $var = $US$US$US",replaceMessage=>1],
-)));
-
 ##############################################
 
 BEGIN_PGML_SOLUTION
