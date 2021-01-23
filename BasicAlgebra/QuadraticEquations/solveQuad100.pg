@@ -32,6 +32,7 @@ loadMacros(
       "answerHints.pl",
       "PGML.pl",
       "contextLimitedRadical.pl",
+      "contextFiniteSolutionSets.pl",
       "PCCmacros.pl",
     ,
   "PGcourse.pl",
@@ -71,12 +72,13 @@ $b = $a;
 $b = non_zero_random(-12,12,1) while($b==$a or $b==-$a);
 $soln1 = $a*-1;
 $soln2 = $b*-1;
-$ans = List(Formula("$var=$soln1"),Formula("$var=$soln2"));
 
 $aPlusB = $a+$b;
 $ab = $a*$b;
 $question = Formula("$var**2+$aPlusB*$var+$ab")->reduce;
 
+Context("FiniteSolutionSets");
+$ans = Formula("{$soln1,$soln2}");
 ##############################################
 
 TEXT(beginproblem());
@@ -85,9 +87,9 @@ Solve the equation.
 
      [` [$question]= 0 `]
 
-     [__________________________________]
+     [__________________________________]{$ans}
 
-[@KeyboardInstructions("Enter multiple answers separated by commas, as in [|x=1, x=-1|]*. If you need to use the square root symbol, as in [`x=\\sqrt{17}`], type it as [|x=sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
+[@KeyboardInstructions("If you need to use the square root symbol, as in [`x=\\sqrt{17}`], type it as [|x=sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
 
 END_PGML
 
@@ -95,7 +97,6 @@ END_PGML
 
 
 $showPartialCorrectAnswers = 1;
-ANS($ans->cmp(list_checker => ~~&radicalListCheck));
 
 ##############################################
 
