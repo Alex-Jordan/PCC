@@ -115,6 +115,38 @@ END_PGML
 
 $showPartialCorrectAnswers=1;
 
+Context("Numeric")->variables->are($var=>'Real');
+$leading = Formula("$leadingCoefficient*$var^2")->reduce;
+
+$solve = '';
+
+if ($leadingCoefficient == 1) {
+  $solve = '[$f]([$var]) &= 0\\
+            [$function]  &= 0\\
+            [$var]^2     &= [$a]\\
+            [$var]       &= \pm\sqrt{[$a]}\\';
+  if ($c eq '') {$solve .= '&= \pm [$b]';}
+  elsif ($b ne '') {$solve .= '&= \pm [$b] [$c]';}
+} elsif ($den == 1 or $den == 4) {
+  $solve = '[$f]([$var]) &= 0\\
+            [$function]  &= 0\\
+            [$leading]   &= [$constant]\\
+            [$var]^2     &= [$a]\\
+            [$var]       &= \pm\sqrt{[$a]}\\';
+  if ($c eq '') {$solve .= '&= \pm [$b]';}
+  elsif ($b ne '') {$solve .= '&= \pm\sqrt{[$squarepart**2]\cdot[$newnewnum]}\\ &= \pm [$b] [$c]';}
+} else {
+  $solve = '[$f]([$var]) &= 0\\
+            [$function]  &= 0\\
+            [$leading]   &= [$constant]\\
+            [$var]^2     &= [$a]\\
+            [$var]       &= \pm\sqrt{[$a]}\\
+            [$var]       &= \pm\sqrt{[$a]\cdot\frac{[$den]}{[$den]}}\\
+            [$var]       &= \pm\sqrt{\frac{[$num*$den]}{[$den*$den]}}\\
+            [$var]       &= \pm\sqrt{\frac{[$squarepart**2]\cdot[$newnewnum]}{[$den*$den]}}\\';
+  if ($c eq '') {$solve .= '&= \pm [$b]';}
+  elsif ($b ne '') {$solve .= '&= \pm [$b] [$c]';}
+};
 
 
 ##############################################
@@ -124,8 +156,7 @@ BEGIN_PGML_SOLUTION
 To evaluate [`[$f](0)`],
 
     [`\begin{aligned}
-[$f](0) 
-&= [$leadingCoefficient]*(0)^2-[$constant]\\
+[$f](0) &= [$leadingCoefficient]*(0)^2-[$constant]\\
 &= [$leadingCoefficient]*(0)-[$constant]\\
 &= 0-[$constant]\\
 &= -[$constant]\\
@@ -135,19 +166,10 @@ To evaluate [`[$f](0)`],
 To solve [`[$f]([$var])=0`],
 
     [`\begin{aligned}
-[$f]([$var]) 
-&= 0\\
-[$leadingCoefficient]*([$var])^2-[$constant]
-&= 0\\
-[$leadingCoefficient]*([$var])^2
-&=[$constant]\\
-([$var])^2
-&=[$a]\\
-[$var]
-&=\sqrt{[$a]}\mbox{ or }{-\sqrt{[$a]}}\\
-[$var]
-&=[@sqrt($a)@]\mbox{ or }{-[@sqrt($a)@]}\\
+[$solve]**
 \end{aligned}`]
+
+So the solution set is [`[$ans]`].
 
 END_PGML_SOLUTION
 
