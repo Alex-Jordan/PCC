@@ -143,14 +143,14 @@ A person got into a cabin on a Ferris wheel for a ride. [`[$pH]`] minutes into t
 
 Part a: The function, as a transformation of [`y=-\cos(x)`], is [`h(t)=`][________________________]{$func}.
 
-Part b: After [`[$t[0]]`] seconds (since the person entered the cabin), the person was [_______________]{$h[0]} meters high in the air.
+Part b: After [`[$t[0]]`] minutes (since the person entered the cabin), the person was [_______________]{$h[0]} meters high in the air.
 
 [@KeyboardInstructions(
 "\n"
 ."* In the next part, use a comma to separate your answers."
 )@]**
 
-Part c: The person exited the cabin after one round. During this time, the person was [`[$h[1]]`] meters in the air twice: [________________]{$ans} seconds.
+Part c: The person exited the cabin after one round. During this time, the person was [`[$h[1]]`] meters in the air twice: [________________]{$ans} minutes.
 
 END_PGML
 
@@ -188,7 +188,7 @@ The function's amplitude can be calculated by:
 
 To travel from the top point to the bottom point, it takes half a period, so the height's period is:
 
-    [`` 2([$p]-[$pH]) = [$p]\text{ seconds}``]
+    [`` 2([$p]-[$pH]) = [$p]\text{ minutes}``]
 
 For the function [`h(t)=-a\cos\left(bt\right)+d`], by the period formula [`\text{new period}=\frac{\text{old period}}{b}`], we have:
 
