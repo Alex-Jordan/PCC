@@ -28,6 +28,7 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "parserImplicitPlane.pl",
+  "parserNumberWithUnits.pl",
   "contextTypeset.pl",
   "PGcourse.pl",
 );
@@ -39,13 +40,15 @@ Context()->variables->are(h=>"Real");
 Context()->flags->set(reduceConstants=>0);
 Context()->flags->set(showExtraParens=>0);
 
-$base1 = random(1,2,0.5)*12;
-$base2 = random(1,2,0.5)*12;
-$height = random(1,2,0.5)*12;
-$volume = $base1*$base2*$height/1728;
-$volumeInch = $volume*1728;
+$base1 = random(1,2,0.1);
+$base2 = Round($base1*1.6,1);
+$b1U = NumberWithUnits("$base1 ft");
+$b2U = NumberWithUnits("$base2 ft");
+$volume = Round($base1*$base2*random(0.25,0.75,0.05));
+$vU = NumberWithUnits("$volume ft^3");
+$height = $volume/($base1*$base2);
 
-$ansString = "$base1*$base2*h=$volumeInch";
+$ansString = "$volume=$base1*$base2*h";
 $ans = Compute("$ansString");
 
 
@@ -55,9 +58,9 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-A cat litter box has a rectangular base that is [`[$base1]`] inches by [`[$base2]`] inches. What will the height of the cat litter be if [`[$volume]`] cubic feet of cat litter is poured? (Hint: [`1 \text{ ft}^3 = 1728 \text{ in}^3`])
+The base of a cat litter box is [`[$b1U]`] by [`[$b2U]`]. What will be the height of the cat litter if [`[$vU]`] of cat litter is poured? (The volume of a rectangular box is [`wdh`], where [`w`] is the width, [`d`] is the depth, and [`h`] is the height.)
 
-Assume [`h`] inches will be the height of the cat litter if [`[$volume]`] cubic feet of cat litter is poured. Write an equation to model this scenario. There is no need to solve it.
+Let [`h`] be the number of ft high that the cat litter will occupy if [`[$vU]`] of cat litter is poured. Write an equation to model this scenario. There is no need to solve it.
 
     [_________________________]
 
@@ -91,13 +94,9 @@ The volume of a rectangular prism can be calculated by the formula:
 
     [``\text{Volume}=\text{base1}\cdot\text{base2}\cdot\text{height}``]
 
-In this problem, we must first convert all units to the same. It's easier to convert [`[$volume]`] cubic feet to cubic inches:
+So  we can write an equation based on the volume formula:
 
-    [``[$volume]\text{ ft}^3\cdot\frac{1728\text{ in}^3}{1\text{ ft}^3}=[$volume]\cdot1728\text{ in}^3=[$volumeInch]\text{ in}^3``]
-
-Next, we can write an equation based on the volume formula:
-
-    [``[$base1]\cdot[$base2]h=[$volumeInch]``]
+    [``[$volume]=[$base1]\cdot[$base2]h``]
 
 END_PGML_SOLUTION
 
