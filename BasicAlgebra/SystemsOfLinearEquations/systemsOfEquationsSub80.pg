@@ -4,7 +4,7 @@
 # Solve the system of linear equations
 #     a x + b y = e
 #     c x + d y = f
-# where a, b, c, d are integer values on the interval [1,5]
+# where a, b, c, d are fractions. 
 #
 # The solution is (x,y) where x and y are both fractions with numerators
 # and denominators on the interval [-10,10].
@@ -86,11 +86,11 @@ $c=1;
 $d=1;
 
 # set up $a, $b, $c, $d
-while($a*$d -$c*$b == 0){
-$a=random(1,5,1)*random(-1,1,2);
-$b=random(1,5,1)*random(-1,1,2);
-$c=random(1,5,1)*random(-1,1,2);
-$d=random(1,5,1)*random(-1,1,2);
+while(1/$a*1/$d -1/$c*1/$b == 0){
+$a=Fraction(1,random(2,5,1)*random(-1,1,2));
+$b=Fraction(1,random(2,5,1)*random(-1,1,2));
+$c=Fraction(1,random(2,5,1)*random(-1,1,2));
+$d=Fraction(1,random(2,5,1)*random(-1,1,2));
 }
 
 $topLeft = Formula("$a*x+$b*y")->reduce;
