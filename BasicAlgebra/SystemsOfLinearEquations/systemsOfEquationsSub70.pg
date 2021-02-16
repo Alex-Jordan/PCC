@@ -94,7 +94,7 @@ $d=random(2,5,1)*random(-1,1,2);;
 #make sure one of them is 1
 if (list_random(1,0,0,0)) {$a = 1;}
 elsif (list_random(1,0,0)) {$b = 1;}
-elsif (list_random(1,0)) {$c = 1};
+elsif (list_random(1,0)) {$c = 1}
 else {$d = 1};
 }
 
