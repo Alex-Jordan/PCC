@@ -23,7 +23,7 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "contextLimitedRadical.pl",
+  "parserFunction.pl",
   "contextFraction.pl",
   "PGML.pl",
   "PCCmacros.pl",
@@ -42,21 +42,21 @@ Context()->flags->set(
   reduceConstantFunctions => 0,
 );
 
-
-
-do {
-  $den = list_random(3,4,6);
-  $num = random(1,2*$den-1,1);
-} until gcd($num,$den)==1;
 @angle = ();
-$angle[0] = specialAngle($num*pi/$den);
 
-do {
-  $n = random(2,5,1);
-  $r = random(2,5,1);
-  $rn = $r**$n;
-} until $rn<=125;
-$angle[1] = specialAngle($n*Compute($angle[0]));
+  do {
+    $den = list_random(3,4,6);
+    $num = random(1,2*$den-1,1);
+  } until gcd($num,$den)==1;
+  $angle[0] = specialAngle($num*pi/$den);
+
+  do {
+    $n = random(2,5,1);
+    $r = random(2,5,1);
+    $rn = $r**$n;
+  } until $rn<=125;
+  $angle[1] = specialAngle($n*Compute($angle[0]));
+
 $angle[2] = $angle[1];
 while ($angle[2]>=Compute("2*pi")) {
   $angle[2] = Compute($angle[2]-2*pi);
@@ -68,26 +68,8 @@ Context()->variables->add(i=>"Real");
 $com[0] = Formula("$r*(cos($angle[0])+i*sin($angle[0]))");
 $com[1] = Formula("$rn*(cos($angle[2])+i*sin($angle[2]))");
 
-package my::Complex;
-our @ISA = ('Value::Complex');
-
-sub cis {
-  my $z = shift;
-  return cos($z) + main::i * sin($z);
-}
-
-package main;
-
 Context("Complex");
-
-Context()->{value}{Complex} = 'my::Complex';
-Context()->constants->set(i => {value => my::Complex->new(0,1)});
-Context()->functions->add(cis => {
-  class => 'Parser::Function::complex', TeX => '\operatorname{cis}',
-  complex => 1, isCommand => 1
-});
-
-sub cis {Parser::Function->call("cis", my::Complex->new(@_))}
+parserFunction("cis(z)" => "cos(z) + i*sin(z)");
 Context()->flags->set(reduceConstantFunctions => 0);
 
 $c = Formula("$r*cis($angle[0])");

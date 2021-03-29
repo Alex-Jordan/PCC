@@ -28,6 +28,7 @@ loadMacros(
   "PGML.pl",
   "PCCmacros.pl",
   "specialTrigValues.pl",
+  "parserFunction.pl",
   "PGcourse.pl",,
 );
 
@@ -70,27 +71,8 @@ for my $j (0..1) {
 $r[2] = $r[0]*$r[1];
 $com[2] = Formula("$r[2]*(cos($angle[3])+i*sin($angle[3]))");
 
-package my::Complex;
-our @ISA = ('Value::Complex');
-
-sub cis {
-  my $z = shift;
-  return cos($z) + main::i * sin($z);
-}
-
-package main;
-
 Context("Complex");
-
-Context()->{value}{Complex} = 'my::Complex';
-Context()->constants->set(i => {value => my::Complex->new(0,1)});
-Context()->functions->add(cis => {
-  class => 'Parser::Function::complex', TeX => '\operatorname{cis}',
-  complex => 1, isCommand => 1
-});
-
-sub cis {Parser::Function->call("cis", my::Complex->new(@_))}
-
+parserFunction("cis(z)" => "cos(z) + i*sin(z)");
 Context()->flags->set(reduceConstantFunctions => 0);
 
 for my $j (0..1) {

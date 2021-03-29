@@ -23,12 +23,13 @@ DOCUMENT();
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
-  "contextLimitedRadical.pl",
+  "parserFunction.pl",
   "contextFraction.pl",
   "PGML.pl",
   "PCCmacros.pl",
   "specialTrigValues.pl",
-  "PGcourse.pl",,
+  "parserOneOf.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -73,32 +74,18 @@ for my $j (0..1) {
 }
 $com[2] = Formula("$r[2]*(cos($angle[3])+i*sin($angle[3]))");
 
-package my::Complex;
-our @ISA = ('Value::Complex');
-
-sub cis {
-  my $z = shift;
-  return cos($z) + main::i * sin($z);
-}
-
-package main;
-
 Context("Complex");
-
-Context()->{value}{Complex} = 'my::Complex';
-Context()->constants->set(i => {value => my::Complex->new(0,1)});
-Context()->functions->add(cis => {
-  class => 'Parser::Function::complex', TeX => '\operatorname{cis}',
-  complex => 1, isCommand => 1
-});
-
-sub cis {Parser::Function->call("cis", my::Complex->new(@_))}
+parserFunction("cis(z)" => "cos(z) + i*sin(z)");
 Context()->flags->set(reduceConstantFunctions => 0);
 
 for my $j (0..1) {
   $c[$j] = Formula("$r[$j]*cis($angle[$j])");
 }
-$ans = Formula("$r[2]*cis($angle[3])");
+
+@ans = ();
+$ans[0] = Formula("$r[2]*cis($angle[2])");
+$ans[1] = Formula("$r[2]*cis($angle[3])");
+$ans = OneOf($ans[0],$ans[1]);
 
 
 ##############################################
@@ -116,12 +103,6 @@ END_PGML
 
 ##############################################
 
-Context("Fraction");
-$s2 = "";
-if ( Compute($angle[3]) != Compute($angle[2]) ) {
-  $s2 = "&= $r[2] \left( \cos\left(".$angle[3]->TeX."\right)+i\sin\left(".$angle[3]->TeX."\right) \right) \\";
-}
-
 BEGIN_PGML_SOLUTION
 
 If [`z_1=r_1\left(\cos(\theta_1)+i\sin(\theta_1)\right)`] and [`z_2=r_2\left(\cos(\theta_2)+i\sin(\theta_2)\right)`], then
@@ -135,7 +116,7 @@ We have:
   &= \frac{[$com[0]]}{[$com[1]]} \\
   &= [$r[2]]\left( \cos\left([$angle[0]]-[$angle[1]]\right)+i\sin\left([$angle[0]]-[$angle[1]]\right) \right) \\
   &= [$r[2]]\left( \cos\left([$angle[2]]\right)+i\sin\left([$angle[2]]\right) \right) \\
-  [$s2] &= [$ans]
+  &= [$ans[0]]
     \end{aligned}``]
 
 END_PGML_SOLUTION
