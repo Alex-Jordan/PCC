@@ -33,6 +33,7 @@ TEXT(beginproblem());
 
 Context("Numeric");
 Context()->variables->are(x=>"Real",y=>"Real");
+Context()->noreduce("(-x)-y","(-x)+y");
 $a = non_zero_random(-10,10,1);
 $b = non_zero_random(-10,10,1);
 $left = Compute("x**2+$a*x+y**2+$b*y")->reduce;
@@ -44,7 +45,7 @@ Context()->variables->are(
   t     => ['Real',TeX=>'\theta'],
   theta => ['Real',TeX=>'\theta'],
 );
-$answer = Formula("r = -$a*sin(t)-$b*cos(t)")->reduce;
+$answer = Formula("r = -$a*cos(t)-$b*sin(t)")->reduce;
 
 # Get the test points for the function to use the same values for t and theta
 $test_points = [];
@@ -87,8 +88,8 @@ To convert between Cartesian equation and polar equation, use the following form
 
     [``\begin{aligned}
   r^2 &= x^2+y^2 \\
-  x &= r\sin(\theta) \\
-  y &= r\cos(\theta)
+  x &= r\cos(\theta) \\
+  y &= r\sin(\theta)
     \end{aligned}``]
 
 We have:
@@ -104,6 +105,8 @@ We have:
 [`r=0`] is not a true solution, so the polar equation form of [`[$left]=[$right]`] is
 
     [``[$answer]``]
+
+When you enter the answer, you can use *t* to represent [`\theta`].
 
 END_PGML_SOLUTION
 

@@ -145,7 +145,7 @@ The line's slope can be calculated by
 
     [``\begin{aligned}
   \text{slope} &= \frac{\text{change in y}}{\text{change in x}} \\
-  &= \frac{[$PyShow]}{[$PyShow]} \\
+  &= \frac{[$PyShow]}{[$PxShow]} \\
   &= [$m]
     \end{aligned}``]
 

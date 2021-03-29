@@ -78,8 +78,8 @@ To convert between Cartesian equation and polar equation, use the following form
 
     [``\begin{aligned}
   r^2 &= x^2+y^2 \\
-  x &= r\sin(\theta) \\
-  y &= r\cos(\theta)
+  x &= r\cos(\theta) \\
+  y &= r\sin(\theta)
     \end{aligned}``]
 
 We have:
