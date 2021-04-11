@@ -53,8 +53,9 @@ do {
    $p = -$a*($x1+$x2)/2;
    $q = $a*$x1*$x2;
    $d = ($p)**2-4*$o*$q;
-   $x3 = (-$p+sqrt($d))/(2*$o);
-   $x4 = (-$p-sqrt($d))/(2*$o);
+   $x3 = Real((-$p+sqrt($d))/(2*$o));
+   $x4 = Real((-$p-sqrt($d))/(2*$o));
+   ($x3,$x4) = num_sort($x3,$x4);
    $y3 = $func->eval(x=>$x3);
    $y4 = $func->eval(x=>$x4);
 } until ( (abs($y1)<10) && (abs($y2)<10) && (abs($y3)<10) && (abs($y4)<10) );
@@ -96,11 +97,11 @@ for my $i (0..0) {
 Context("Interval");
 
 if ($a>0) {
-   $ALT = "This is a graph of a function starting at the top left, going down till the point ($x4,$y4), turning up to the inflection point ($x1,$y1), continuing up till the point (0,0), turning down to the inflection point ($x2,$y2), continuing down till the point ($x3,$y3), and finally turning up to the top right.";
+   $ALT = "This is a graph of a function starting at the top left, going down till the point ($x3,$y3), turning up to the inflection point ($x1,$y1), continuing up till the point (0,0), turning down to the inflection point ($x2,$y2), continuing down till the point ($x4,$y4), and finally turning up to the top right.";
    $ansDown = Compute("($x1,$x2)");
    $ansUp = Compute("(-inf,$x1)U($x2,inf)");
 } else {
-   $ALT = "This is a graph of a function starting at the bottom left, going up till the point ($x4,$y4), turning down to the inflection point ($x1,$y1), continuing down till the point (0,0), turning up to the inflection point ($x2,$y2), continuing up till the point ($x3,$y3), and finally turning down to the bottom right.";
+   $ALT = "This is a graph of a function starting at the bottom left, going up till the point ($x3,$y3), turning down to the inflection point ($x1,$y1), continuing down till the point (0,0), turning up to the inflection point ($x2,$y2), continuing up till the point ($x4,$y4), and finally turning down to the bottom right.";
    $ansUp = Compute("($x1,$x2)");
    $ansDown = Compute("(-inf,$x1)U($x2,inf)");
 }

@@ -44,12 +44,12 @@ do {
    $x1 = random(-4,-2,1);
    $x2 = random(-1,1,1);
    $x3 = random(2,4,1);
-   $a = random(0.005,0.01,0.001)*random(-1,1,2);
-   $b = random(-5,5,1);
-   $func = Compute("$a/4*x**4-$a*($x1+$x2+$x3)/3*x**3+$a*($x1*$x2+$x1*$x3+$x2*$x3)/2*x**2-$a*$x1*$x2*$x3*x+$b");
-   $y1 = $func->eval(x=>$x1);
-   $y2 = $func->eval(x=>$x2);
-   $y3 = $func->eval(x=>$x3);
+   		$a = random(0.005,0.01,0.001)*random(-1,1,2);
+   		$b = random(-5,5,1);
+   		$func = Compute("$a/4*x**4-$a*($x1+$x2+$x3)/3*x**3+$a*($x1*$x2+$x1*$x3+$x2*$x3)/2*x**2-$a*$x1*$x2*$x3*x+$b");
+   		$y1 = $func->eval(x=>$x1);
+   		$y2 = $func->eval(x=>$x2);
+   		$y3 = $func->eval(x=>$x3);
 } until ( (abs($y1)<10) && (abs($y2)<10) && (abs($y3)<10) && ($x2-$x1>1) && ($x3-$x2>1) );
 
 $x4 = $x1-1;
@@ -64,11 +64,11 @@ $y4 = Round($y4,2);
 $y5 = Round($y5,2);
 
 %points = (
-   $y1  => $x1,
-   $y2  => $x2,
-   $y3  => $x3,
-   $y4  => $x4,
-   $y5  => $x5,
+   $x1  => $y1,
+   $x2  => $y2,
+   $x3  => $y3,
+   $x4  => $y4,
+   $x5  => $y5,
 );
 
 if ($a > 0) {
@@ -80,9 +80,17 @@ if ($a > 0) {
 }
 
 $globalMinY = min($y1,$y2,$y3,$y4,$y5);
-$globalMinX = Real($points{$globalMinY});
+my @minx;
+for my $xx ($x1,$x2,$x3,$x4,$x5) {
+	push (@minx,$xx) if ($points{$xx} == $globalMinY);
+}
+$globalMinX = List(@minx);
 $globalMaxY = max($y1,$y2,$y3,$y4,$y5);
-$globalMaxX = Real($points{$globalMaxY});
+my @maxx;
+for my $xx ($x1,$x2,$x3,$x4,$x5) {
+	push (@maxx,$xx) if ($points{$xx} == $globalMaxY);
+}
+$globalMaxX = List(@maxx);
 
 ($min[0], $max[0], $min[1], $max[1], $ticknum[0], $ticknum[1], $xticks_ref, $yticks_ref, $marksep[0], $marksep[1]) = NiceGraphParameters([$x4,$x5],[$y1,$y2,$y3,$y4,$y5],centerOrigin=>0);
 
@@ -133,7 +141,7 @@ A function's graph is shown below. A few points are highlighted for your referen
 
 >>[@image(insertGraph($gr[0]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT' title = '$ALT'") @]*<<
 
-If a value doesn't exist, type *DNE* (meaning "does not exist"). Use commas to separate your answers if needed.
+If a value doesn't exist, type [|DNE|]* (meaning "does not exist"). Use commas to separate your answers if needed.
 
 The function has a local minimum at [_______]{$localMinX}.
 

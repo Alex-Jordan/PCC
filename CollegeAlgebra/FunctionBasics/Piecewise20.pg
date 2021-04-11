@@ -86,9 +86,9 @@ $ans3 = List(Formula("x = $s1"), Formula("x = $s2"));
 BEGIN_PGML
 
 Let  [` f(x)=\begin{cases}
-                    [$f1] & [$x1]<x<[$x2]\\
+                    [$f1] & [$x1]\lt x\lt[$x2]\\
 		    [$f2] & [$x2] \leq x \leq [$x3]\\
-		    [$f3] &  x > [$x3]
+		    [$f3] &  x \gt [$x3]
                     \end{cases}
 		    `]
 
