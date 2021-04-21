@@ -57,10 +57,10 @@ END_TEXT
 
 Context("Percent");
 ANS(Percent($ans1)->cmp);
-Context()->flags->set(
-	  decimalPlaces => 2,
-	  tolerance => .00005,
-	);
-ANS(Percent($ans2)->cmp);
+Context("Percent")->flags->set(
+         decimalPlaces => 2,
+         tolerance => .00005,
+       );
+ANS(Percent($ans2)->cmp());
 
 ENDDOCUMENT();       # This should be the last executable line in the problem.
