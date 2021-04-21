@@ -61,7 +61,7 @@ $soln1 = Fraction(($c+$a)/$b);
 $soln2 = Fraction((-$c+$a)/$b);
 
 Context("FiniteSolutionSets");
-Context()->flags->remove("NumberCheck");
+#Context()->flags->remove("NumberCheck");
 Context()->variables->are($var=>'Real');
 $ans = Formula("{$soln1,$soln2}");
 
