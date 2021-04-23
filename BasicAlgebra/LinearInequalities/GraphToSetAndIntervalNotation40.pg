@@ -33,6 +33,7 @@ loadMacros(
   "parserPopUp.pl",
   "contextInequalitySetBuilder.pl",
   "PCCmacros.pl",
+  "PGtikz.pl",
   "PGcourse.pl",
 );
 
@@ -42,91 +43,50 @@ Context("Numeric");
 
 $a = random(-4,4,0.5);
 
-$symbol = '<';
+$symbol = '\leq';
 
 InequalitySetBuilder::UseVerticalSuchThat();
 Context("InequalitySetBuilder-Only");
-do {$var = RandomVariableName();} until ($var ne 'y' and $var ne 'p' and $var ne 'q' and $var ne 'g');
+$var = list_random('a'..'d','f'..'k','m','n','p'..'r','t'..'z');
 do {Context()->variables->add($var => 'Real');} unless ($var eq 'x');
-$setans = Compute("{ $var | $var<= $a}");
+$setans = Compute("{ $var | $var <= $a}");
 
 Context("Interval");
 Context()->flags->set("formatStudentAnswer"=>'parsed');
 $intans = Compute("(-inf,$a]");
 Context("Numeric");
 
-%answer = (leftType => 'inf',
-           rightType => 'closed',   #use 'inf' regardles of +/- inf
-           );
-
-
-$aspectRatio = 1/5;
-$horPixel = 240;
-$verPixel = $horPixel*$aspectRatio;
-$screenXSize = $horPixel;
-$screenYSize = $screenXSize*$aspectRatio;
-$reach = 6;
-$pixel = 2*$reach/240;
-$verticalSpace = $reach*$aspectRatio;
-$hardCopyPercent = 1000; #meaning 100%
-
-
-#initializing...
-@gr=();
-
-#indices will be 0..$#gr in some order, with the index of the correct graph in the 0th position.
-@indices=();
-
-
-#make the graphs
-for $leftType ('open','closed', 'inf') 
-{
-   for $rightType ('open','closed', 'inf')
-   {
-      my $tempgr = init_graph(-$reach,-$verticalSpace,$reach,2*$verticalSpace,
-                              size=>[$horPixel,$verPixel]
-                             );
-      $tempgr->moveTo(0,0);
-      $tempgr->arrowTo($reach-2*$pixel,0,'black',1);
-      $tempgr->moveTo(0,0);
-      $tempgr->arrowTo(-$reach+2*$pixel,0,'black',1);
-      $tempgr->lb( new Label($reach-$pixel,-$verticalSpace/5,$var,'black','right','top','large'));
-      @ticks = ();
-      for my $j ((-$reach+1)..($reach-1)) {push(@ticks,$j);};
-
-      $tempgr->h_ticks(0,"black",@ticks);
-      $tempgr->lb( new Label(0,-$verticalSpace/5,0,'black','center','top','large'));
-      $tempgr->lb( new Label(4,-$verticalSpace/5,4,'black','center','top','large'));
-      $tempgr->lb( new Label(-4,-$verticalSpace/5,-4,'black','center','top','large'));
-
-      $shadingoffset = $verticalSpace/2;
-      if (($leftType eq 'inf' or $rightType eq 'inf') and !(($leftType eq 'inf' and $rightType eq 'inf')))
-      {
-         $tempgr->lb( new Label($a,$verticalSpace,$a,'blue','center','bottom','large'));
-         if ($leftType eq 'open' or $rightType eq 'open')
-         {
-             my $bracket = ($leftType eq 'open') ? '(' : ')';
-             my $halign = ($leftType eq 'open') ? 'left' : 'right';
-             $pixeloffset = ($leftType eq 'open') ? -2*$pixel : 4*$pixel;
-             $tempgr->lb( new Label($a+$pixeloffset,$shadingoffset,$bracket,'blue',$halign,'middle','giant'));
-         }
-         else
-         {
-             my $bracket = ($leftType eq 'closed') ? '[' : ']';
-             my $halign = ($leftType eq 'closed') ? 'left' : 'right';
-             $pixeloffset = ($leftType eq 'closed') ? -2*$pixel : 4*$pixel;
-             $tempgr->lb( new Label($a+$pixeloffset,$shadingoffset,$bracket,'blue',$halign,'middle','giant'));
-         };
-         $tempgr->moveTo($a,$shadingoffset);
-         if ($leftType eq 'inf') {$tempgr->arrowTo(-$reach+2*$pixel,$shadingoffset,'blue',1)}
-                            else {$tempgr->arrowTo($reach-2*$pixel,$shadingoffset,'blue',1)};
-         push(@gr,$tempgr);
-         if ($answer{leftType} ne $leftType or $answer{rightType} ne $rightType)
-            {push(@indices, $#gr);}
-            else {unshift(@indices, $#gr);}
-      }
-
-}};
+$numberline = createTikZImage();
+$numberline->ext('png');
+$numberline->texPackages([ pgfplots => "" ]);
+$numberline->tikzLibraries("arrows,arrows.meta");
+$numberline->BEGIN_TIKZ
+\begin{axis}
+  [
+    xmin=-6,
+    xmax=6,
+    ymin=-1,
+    ymax=1,
+    axis y line=none,
+    xlabel={},
+    xtick={-5,0,...,5},
+    minor xtick={-5,-4,...,5},
+    axis lines=middle,
+    axis lines=middle,
+    axis equal image,
+    clip=false,
+    xlabel = {\($var\)},
+    x tick style={thick},
+  ]
+  \addplot[
+    color=blue,
+    mark=none,
+    ultra thick,
+    {Kite}-{Bracket}
+  ] coordinates {(-6,0) ($a,0)};
+  \path (axis cs:0,0) node [anchor=north,yshift=-0.075cm] {0};
+\end{axis}
+END_TIKZ
 
 $alt = "Graph of an interval on a number line. There is a right bracket at $a and everything left of that is shaded. To the right of the axis, there is a letter $var.";
 
@@ -136,26 +96,24 @@ $refreshCachedImages = 1;
 BEGIN_PGML
 For the interval expressed in the number line, write it using set-builder notation and interval notation.
 
->> [@image( insertGraph($gr[ $indices[0] ]), width=>$screenXSize, tex_size=>$hardCopyPercent,
-   extra_html_tags=>'title="$alt" alt= "$alt" align="top"'  ) @]* <<
+>> [@image(insertGraph($numberline), width => 360, tex_size => 1000, alt => "$alt") @]* <<
 
-[@KeyboardInstructions(q!Please type [|INF|]* for [`\infty`], [|<=|]* for [`\leq`], and [|>=|]* for [`\geq`].!)@]**
+[@KeyboardInstructions(q!Type [|INF|]* for [`\infty`], [|<=|]* for [`\leq`], and [|>=|]* for [`\geq`].!)@]**
 
-    In set-builder notation: [_____________________]
+[@KeyboardInstructions(q!Enter the set in set-builder notation here.!)@]**
 
-    In interval notation: [_____________________]
+[_]{$setans}{30}
 
+[@KeyboardInstructions(q!Enter the set in interval notation here.!)@]**
 
+[_]{$intans}{30}
 
 END_PGML
 
 
 
+
 ##############################################
-
-ANS( $setans->cmp() );
-
-ANS( $intans->cmp() );
 
 BEGIN_PGML_SOLUTION
 
