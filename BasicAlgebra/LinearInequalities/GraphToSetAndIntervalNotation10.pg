@@ -34,6 +34,7 @@ loadMacros(
   "contextInequalitySetBuilder.pl",
   "PCCmacros.pl",
   "PGtikz.pl",
+  "ORCCA.pl",
   "PGcourse.pl",
 );
 
@@ -57,34 +58,18 @@ $intans = Compute("($a,inf)");
 Context("Numeric");
 
 $numberline = createTikZImage();
-$numberline->ext('png');
-$numberline->texPackages([ pgfplots => "" ]);
-$numberline->tikzLibraries("arrows,arrows.meta");
+$numberline->addToPreamble(latexImagePreamble());
 $numberline->BEGIN_TIKZ
 \begin{axis}
   [
+    numberline,
     xmin=-6,
     xmax=6,
-    ymin=-1,
-    ymax=1,
-    axis y line=none,
-    xlabel={},
     xtick={-5,0,...,5},
     minor xtick={-5,-4,...,5},
-    axis lines=middle,
-    axis lines=middle,
-    axis equal image,
-    clip=false,
     xlabel = {\($var\)},
-    x tick style={thick},
   ]
-  \addplot[
-    color=blue,
-    mark=none,
-    ultra thick,
-    {Parenthesis}-{Kite}
-  ] coordinates {($a,0) (6,0)};
-  \path (axis cs:0,0) node [anchor=north,yshift=-0.075cm] {0};
+  \addplot[openinfiniteinterval] coordinates {($a,0) (6,0)};
 \end{axis}
 END_TIKZ
 
