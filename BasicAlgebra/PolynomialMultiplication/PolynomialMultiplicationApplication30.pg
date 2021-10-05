@@ -76,7 +76,7 @@ The trapezoid's height is [`h`] feet. Since the trapezoid's top base is [`[$a]`]
    A &= \frac{1}{2}(a+b)h \\
       &= \frac{1}{2}(h+[$a]+h+[$b])h \\
       &= \frac{1}{2}h(2h+[$a+$b]) \\
-      &= \frac{1}{2}2h^2+\frac{1}{2}[$a+$b] \\
+      &= \frac{1}{2}2h^2+\frac{1}{2}[$a+$b]h \\
       &= [$ans]
 \end{aligned}
     ``]
