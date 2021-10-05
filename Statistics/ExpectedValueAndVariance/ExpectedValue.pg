@@ -39,7 +39,8 @@ $prob0 = ($d-1-$e);
 $prize1=list_random(@gprize);
 $prize2=list_random(@sprize);
 
-$ans=($a-$c)*(1/$d)+($b-$c)*($e/$d)-$c*($d-1-$e)/$d;
+$ans= ($a-$c)*(1/$d)+($b-$c)*($e/$d)-$c*($d-1-$e)/$d;
+$ans = Currency(Round($ans->value,2));
 
 BEGIN_TEXT
 A charity holds a raffle in which each ticket is sold for \($c\). A total of  \($d\) tickets are sold. They raffle one grand prize which is a $prize1 valued at  \($a\) along with \($e\) second prizes of $prize2 motorcycles valued at \($b\) each. What are the expected winnings for a single ticket buyer?  \{ans_rule(20)\}
@@ -60,4 +61,4 @@ $ECENTER
 $PAR
 Using this table we can find \(\text{E}(X)=\mu = (-$c \cdot \frac{$prob0}{$d}) + ($b \cdot \frac{1}{$d}) + ($a \cdot \frac{$e}{$d}) = $ans\).
 END_SOLUTION
-ENDDOCUMENT();      
+ENDDOCUMENT();
