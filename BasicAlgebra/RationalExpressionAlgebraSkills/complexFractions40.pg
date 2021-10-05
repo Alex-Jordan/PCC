@@ -40,7 +40,7 @@ do {
    $b = non_zero_random(-6,6,1);
    $c = random(1,6,1);
    $d = non_zero_random(-6,6,1);
-} until ( (gcd($c,abs($d))==1) && (abs($a*$d*$c)<=40) );
+} until ( (gcd($c,abs($d))==1) && (abs($a*$d*$c)<=40) && ($c*$b != $d));
 
 $commonDenominator = Formula("$var1*$var2");
 
