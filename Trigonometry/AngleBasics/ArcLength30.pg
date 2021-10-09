@@ -44,7 +44,6 @@ $arc = int($arc);
 $radian = Compute("$arc/$radius")->reduce;
 $degree = Compute("$radian*180/pi")->reduce;
 
-Context()->operators->undefine("+","-","*","/","^","**");
 
 ####################################
 
