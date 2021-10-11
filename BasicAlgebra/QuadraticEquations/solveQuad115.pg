@@ -79,6 +79,7 @@ $d = -$c;
 $ans = List(Formula("$var=$d+$a sqrt($b)"),Formula("$var=$d-$a sqrt($b)"));
 
 Context("FiniteSolutionSets");
+Context()->variables->are($var=>'Real');
 $ans = Formula("{$d+$a sqrt($b),$d-$a sqrt($b)}");
 
 ##############################################
