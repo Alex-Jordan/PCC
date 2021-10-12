@@ -102,7 +102,7 @@ $ansA = NumberWithUnits("$area $unit^2");
 BEGIN_PGML
 Find the area of the traepzoid.
 
->> [@image(insertGraph($picture), width=>600, extra_html_tags=>qq!alt=""!)@]*  <<
+>> [@image(insertGraph($picture), width=>600, extra_html_tags => "alt = '$alt' title = '$alt' ")@]*  <<
 
 Its area is [________]{$ansA}.
 
@@ -118,7 +118,7 @@ BEGIN_PGML_SOLUTION
 A trapezoid's area can be calculated by this formula:
 
 >> [``\newcommand{\amp}{&}\begin{aligned}
-\text{trapezoid area}\amp= \frac{1}{2}(\text{base1}+\text{base2})cdot\text{height}\\
+\text{trapezoid area}\amp= \frac{1}{2}(\text{base1}+\text{base2})\cdot\text{height}\\
  \amp= \frac{1}{2}([$base1U]+[$base2U])([$heightU])\\
 \amp = [$ansA]
 \end{aligned}``] <<
