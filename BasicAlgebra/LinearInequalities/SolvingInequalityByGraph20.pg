@@ -188,7 +188,7 @@ for my $i (0..1) {
       $alt[$i+1] .= $s1[1];
       &highlightEnds($i+1);
     } else {
-      $ans[$i] = $s2[0];
+      $ans[$i] = $s2[1];
       $alt[$i+1] .= $s1[0];
       &highlightBetween($i+1);
     }
