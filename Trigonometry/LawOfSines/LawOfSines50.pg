@@ -94,7 +94,9 @@ BEGIN_PGML
 
 In a triangle [`\Delta ABC`], [`\angle A`] faces side [`a`], [`\angle B`] faces side [`b`], and [`\angle C`] faces side [`c`].
 
-In this triangle, if [`m\angle B=[$B]^{\circ}`], [`c=[$c]`] units and [`b=[$b]`] units, solve for this triangle.
+In this triangle, if [`m\angle B=[$B]^{\circ}`], [`c=[$c]`] units and [`b=[$c]\cdot \sin{[$B]^{\circ}`] units, solve for this triangle.
+
+Note that the length of [`b`] was not changed to decimals to keep the value more accurate.
 
 [@KeyboardInstructions(
 "\n"
@@ -121,8 +123,7 @@ To determine how many possible triangles would satisfy the given conditions, we 
     [``\begin{aligned}[t]
   \sin(B) &= \frac{h}{c} \\
   h &= c\cdot\sin(B) \\
-  h &= [$c]\cdot\sin([$B]^{\circ}) \\
-  h &= [$h]
+  h &= [$c]\cdot\sin([$B]^{\circ}) 
      \end{aligned}``]
 
 Since [`h=b`], there is one triangle which can satisfy the given conditions. In other words, the length of [`b`] barely touches side [`a`], creating a right triangle.
