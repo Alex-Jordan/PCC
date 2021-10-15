@@ -32,6 +32,7 @@ loadMacros(
   "PCCgraphMacros.pl",
   "parserAssignment.pl",
   "answerHints.pl",
+  "contextFiniteSolutionSets.pl",
   "PCCmacros.pl",
   "PGtikz.pl",
   "ORCCA.pl",
@@ -167,8 +168,6 @@ Function [`f`] is graphed.
 
 >>[@image($gr[0], width=>300, tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT0' title = '$ALT0'") @]*<<
 
-[@KeyboardInstructions('If there is more than one answer to a question, you can use commas and the word [|or|]*. When solving an equation for the variable [`x`], your answer should be in the form [|x=___|]*.')@]**
-
 a. Find [``f([$p0x])``].  
    [__________]
 
@@ -181,47 +180,12 @@ END_PGML
 $showPartialCorrectAnswers = 1;
 
 ANS(Compute($p0y)->cmp);
-ANS($xeqp1x->cmp(
-  checker => sub {
-    my ($correct,$student,$ans) = @_;
-    # count the number of student answers
-    my $fullStudent = $ans->{student_formula};
-    my @fullStudentValue = $fullStudent->value;
-    my $n = scalar(@fullStudentValue);  # number of student answers
-    if($n>1)
-    {
-      $student->context->setError("Does this equation have more than one unique solution?","",undef,undef,$Value::CMP_WARNING)
-         unless $ans->{isPreview};
-      return;
-    }
-    # if the student has said no real solutions, ask them about it
-    if($student eq "no real solutions")
-    {
-      $student->context->setError("This equation does have some solutions- try factoring or using the quadratic formula","",undef,undef,$Value::CMP_WARNING)
-         unless $ans->{isPreview};
-      return;
-    }
-    # check that the student has written x=
-    if ($student->type ne "Assignment" && $ans->{student_formula}->type ne "Assignment") {
-      $student->context->setError("Your entry should be written $var = $US$US$US","",undef,undef,$Value::CMP_WARNING)
-         unless $ans->{isPreview};
-      return;
-    }
-    return $correct == $student;
-  }
-)->withPostFilter(sub {
-  my $ansHash = shift;
-  if ($ansHash->{score}) {
-    my ($cvar,$cfrac) = $ansHash->{correct_value}->value; # get
-    my ($svar,$sfrac) = $ansHash->{student_value}->value; # get
-    my $check = $cfrac->cmp->evaluate($sfrac->string); # do a
-     $ansHash->{score} = $check->{score};
-     $ansHash->{ans_message} = $check->{ans_message}; # and any
-   }
-     return $ansHash;
-     },
-     ),
-);
+
+Context("FiniteSolutionSets");
+$solset = Formula("{$p1x}");
+
+ANS($solset->cmp());
+
 
 ##############################################
 

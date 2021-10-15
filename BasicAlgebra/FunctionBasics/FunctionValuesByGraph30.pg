@@ -35,6 +35,7 @@ loadMacros(
   "PCCmacros.pl",
   "PGtikz.pl",
   "ORCCA.pl",
+  "contextFiniteSolutionSets.pl",
   "PGcourse.pl",
 );
 
@@ -180,6 +181,9 @@ Context()->operators->set(","=>{string=>"or",TeX=>"or ",perl=>","});
 $xeqansList = List(Formula("x=$p1x"),Formula("x=$p2x"));
 
 
+Context("FiniteSolutionSets");
+$solset = Formula("{$p1x,$p2x}");
+
 ##############################################
 Context("LimitedNumeric");
 BEGIN_PGML
@@ -191,13 +195,12 @@ Function [`f`] is graphed.
 
 >>[@image($gr[0], width=>300, tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT0' title = '$ALT0'") @]*<<
 
-[@KeyboardInstructions('If there is more than one answer to a question, you can use commas and the word [|or|]*. When solving an equation for the variable [`x`], your answer should be in the form [|x=___|]*.')@]**
 
 a. Find [``f([$p0x])``].  
    [_]{Compute($p0y)}{10}
 
 a. Solve [``f(x)=[$p1y]``].  
-   [_]{$xeqansList}{20}
+   [_]{$solset}{20}
 
 END_PGML
 
