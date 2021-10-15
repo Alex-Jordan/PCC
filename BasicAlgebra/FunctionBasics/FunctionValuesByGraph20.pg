@@ -98,12 +98,12 @@ $gr[0]->BEGIN_TIKZ
     ymin = $min[1],
     ymax = $max[1],
     xtick =,
-    xtick =,
+    ytick =,
     minor xtick = {$min[0],...,$max[0]},
     minor ytick = {$min[1],...,$max[1]},
   ]
   \addplot+[domain=$xvalues[1]:$xvalues[2]] {$func};
-  \legend{\(y=$fname(x)\)};
+  \legend{\(y=f(x)\)};
 \end{axis}
 END_TIKZ
 
@@ -117,12 +117,12 @@ $gr[1]->BEGIN_TIKZ
     ymin = $min[1],
     ymax = $max[1],
     xtick =,
-    xtick =,
+    ytick =,
     minor xtick = {$min[0],...,$max[0]},
     minor ytick = {$min[1],...,$max[1]},
   ]
   \addplot+[domain=$xvalues[1]:$xvalues[2]] {$func};
-  \legend{\(y=$fname(x)\)};
+  \legend{\(y=f(x)\)};
   \addplot[soliddot] coordinates {($p0x,$p0y)} node[right] {\(($p0x,$p0y)\)};
   \addplot[asymptote] coordinates {($p0x,$min[1]) ($p0x,$max[1])};
 \end{axis}
@@ -138,12 +138,12 @@ $gr[2]->BEGIN_TIKZ
     ymin = $min[1],
     ymax = $max[1],
     xtick =,
-    xtick =,
+    ytick =,
     minor xtick = {$min[0],...,$max[0]},
     minor ytick = {$min[1],...,$max[1]},
   ]
   \addplot+[domain=$xvalues[1]:$xvalues[2]] {$func};
-  \legend{\(y=$fname(x)\)};
+  \legend{\(y=f(x)\)};
   \addplot[soliddot] coordinates {($p1x,$p1y)} node[below] {\(($p1x,$p1y)\)};
   \addplot[asymptote] coordinates {($min[0],$p1y) ($max[0],$p1y)};
 \end{axis}
