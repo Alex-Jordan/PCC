@@ -69,8 +69,8 @@ $gr->BEGIN_TIKZ
     minor xtick =,
     minor ytick =,
   ]
-  \addplot[firstcurve,domain=$min[0]:$xplot1,samples=50] {$func};
-  \addplot[firstcurve,domain=$xplot2:$max[0],samples=50] {$func};
+  \addplot[firstcurve,domain=$min[0]:$xplot1,samples=50] {$k/(x-$xAsymptote)+$yAsymptote};
+  \addplot[firstcurve,domain=$xplot2:$max[0],samples=50] {$k/(x-$xAsymptote)+$yAsymptote};
   \addplot[asymptote] coordinates {($xAsymptote,$min[0]) ($xAsymptote,$max[0])};
   \addplot[asymptote] coordinates {($min[1],$yAsymptote) ($max[1],$yAsymptote)};
 \end{axis}
