@@ -58,7 +58,8 @@ $f = Formula("$a x^3+$b x^2+$c x + $d");
 $crit = (-2*$b+sqrt(4*$b**2-12*$a*$c))/(6*$a);
 
 $peak = random(2,5,1);
-$f = $f*$peak/($f->eval(x=>$crit));
+$ch = $f->eval(x=>$crit);
+$f = $f*$peak/$ch;
 
 Context("Interval");
 $domain = Interval("[$r[0],$r[2])");
@@ -69,6 +70,8 @@ $xmin = min(-5,$r[0]-3);
 $xmax = max(5,$r[2]+3);
 $ymin = -$peak-3;
 $ymax = $peak+3;
+
+TEXT($peak);
 
 $gr = createTikZImage();
 $gr->addToPreamble(latexImagePreamble());
@@ -83,7 +86,7 @@ $gr->BEGIN_TIKZ
     minor xtick =,
     minor ytick =,
   ]
-  \addplot+[-,domain=$r[0]:$r[2]] {$a*x^3+$b*x^2+$c*x + $d};
+  \addplot+[-,domain=$r[0]:$r[2],samples=50] {($a*x^3+$b*x^2+$c*x + $d)*$peak/$ch};
   \addplot[soliddot] coordinates {($r[0],0)};
   \addplot[hollowdot] coordinates {($r[2],0)};
 \end{axis}

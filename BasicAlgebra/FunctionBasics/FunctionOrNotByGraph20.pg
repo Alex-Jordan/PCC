@@ -176,7 +176,7 @@ The following graphs show two relationships. Decide whether each graph shows a r
 
 [@EnlargeImageStatementPGML()@]**
 
->>[@image(insertGraph($gr[0]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT0' title = '$ALT0'") @]* [@SPACE@]* [@SPACE@]* [@SPACE@]* [@SPACE@]* [@image(insertGraph($gr[1]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT1' title = '$ALT1'") @]* <<
+>>[@image($gr[0], width=>300, tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT0' title = '$ALT0'") @]* [@SPACE@]* [@SPACE@]* [@SPACE@]* [@SPACE@]* [@image($gr[1], width=>300, tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT1' title = '$ALT1'") @]* <<
 
 The first graph [__]{$popup[0]} give a function of [`x`].  The second graph [__]{$popup[1]} give a function of [`x`].
 
@@ -203,7 +203,7 @@ BEGIN_PGML_SOLUTION
 
 If a graph represents [`y`] as a function of [`x`], it has to pass the vertical line test. 
 
->>[@image(insertGraph($gr[2]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT2' title = '$ALT2'") @]* [@SPACE@]* [@SPACE@]* [@SPACE@]* [@SPACE@]* [@image(insertGraph($gr[3]), width=>xScreen(), height=>yScreen(), tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT3' title = '$ALT3'") @]*<<
+>>[@image($gr[2], width=>300, tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT2' title = '$ALT2'") @]* [@SPACE@]* [@SPACE@]* [@SPACE@]* [@SPACE@]* [@image($gr[3], width=>300, tex_size=>TeXscalar(), extra_html_tags=>"alt = '$ALT3' title = '$ALT3'") @]*<<
 
 The first graph [$graph1Output1] the test, and thus it [$graph1Output2] [`y`] as a function of [`x`].
 The second graph [$graph2Output1] the test, and thus it [$graph2Output2] [`y`] as a function of [`x`].
