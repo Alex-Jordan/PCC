@@ -95,9 +95,9 @@ for my $i (2..3) {
 
 ($min[0], $max[0], $min[1], $max[1], $ticknum[0], $ticknum[1], $xticks_ref, $yticks_ref, $marksep[0], $marksep[1]) = NiceGraphParameters([$h+1, $h-1,$b+1, $b-1],[$k+1, $k-1,$c, $c+1, $c-1],centerOrigin=>1);
 
-if ($a > 1) {@top = (sqrt(($max[1]-$k)/$a)+$h, -sqrt(($max[1]-$k)/$a)+$h)}
+if ($a > 0) {@top = (sqrt(($max[1]-$k)/$a)+$h, -sqrt(($max[1]-$k)/$a)+$h)}
     else {@top = (sqrt(($min[1]-$k)/$a)+$h, -sqrt(($min[1]-$k)/$a)+$h)};
-if ($d > 1) {@right = (sqrt(($max[0]+$b)*$d)+$c, -sqrt(($max[0]+$b)*$d)+$c)}
+if ($d > 0) {@right = (sqrt(($max[0]+$b)*$d)+$c, -sqrt(($max[0]+$b)*$d)+$c)}
     else {@right = (sqrt(($min[0]+$b)*$d)+$c, -sqrt(($min[0]+$b)*$d)+$c)};
 
 
