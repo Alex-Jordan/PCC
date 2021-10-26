@@ -123,20 +123,20 @@ if ($ld==1) {$th = "st";}
 
 BEGIN_PGML
 
-Assume a year has 365 days, and [`d=1`] represents Jan. 1. A city's temperature over the year, [`T(d)`], follows the pattern of a periodic function. The city's lowest temperature, [`[$low]^{\circ} C`], happens on Jan. [`[$c]`]; its highest temperature, [`[$high]^\circ C`], happens in July.
+Assume a year has 365 days, and [`d=1`] represents Jan. 1. A city's daily maximum temperature over the year, [`T(d)`], follows the pattern of a periodic function. The city's lowest daily maximum temperature, [`[$low]^{\circ} C`], happens on Jan. [`[$c]`]; its highest daily maximum temperature, [`[$high]^\circ C`], happens in July.
 
 *Use graphing technology* to answer the following questions.
 
 Part a: The function, as a transformation of [`y=-\cos(x)`], is [`T(d)=`][________________________]{$func}.
 
-Part b: On the [`[$t[0]]`][$th] day of the year, the temperature was [_______________]{$T[0]} [`^{\circ} C`].
+Part b: On the [`[$t[0]]`][$th] day of the year, the daily maximum temperature was [_______________]{$T[0]} [`^{\circ} C`].
 
 [@KeyboardInstructions(
 "\n"
 ."* In the next part, use a comma to separate your answers."
 )@]**
 
-Part c: During this year, the city's temporature was [`[$T[1]]^{\circ} C`] twice, on days [________________]{$ans}.
+Part c: During this year, the city's daily maximum temperature was [`[$T[1]]^{\circ} C`] twice, on days [________________]{$ans}.
 
 END_PGML
 
@@ -146,7 +146,7 @@ BEGIN_PGML_SOLUTION
 
 ###Part a
 
-We could use [`y=\sin(x), y=\cos(x)`] and [`y=-\cos(x)`] to model periodic data. In this situation, when [`d=[$c]`], the function has it's minimum value at [`([$c],[$low])`]. Then the function increases. This change matches the graph of [`y=-\cos(x)`], which is at its minimum value when [`x=0`], and then increases. So we should choose to use the following function to model the temporature:
+We could use [`y=\sin(x), y=\cos(x)`] and [`y=-\cos(x)`] to model periodic data. In this situation, when [`d=[$c]`], the function has it's minimum value at [`([$c],[$low])`]. Then the function increases. This change matches the graph of [`y=-\cos(x)`], which is at its minimum value when [`x=0`], and then increases. So we should choose to use the following function to model the daily maximum temperature:
 
     [``T(d)=-a\cos\left(b(d-c)\right)+e``]
 
@@ -186,15 +186,15 @@ Step 2: In the first textbox, enter [` T(d) = [$func] `].
 
 ###Part b
 
-To find the temperature on the [`[$t[0]]`][$th] day, we need to substitute the function's [`d`] value with [`[$t[0]]`] to get the corresponding [`y`] value.
+To find the daily maximum temperature on the [`[$t[0]]`][$th] day, we need to substitute the function's [`d`] value with [`[$t[0]]`] to get the corresponding [`y`] value.
 
 Step 3: In the second textbox, enter [` T([$t[0]]) `]. Desmos shows [`[$T0Show]`].
 
-On the [`[$t[0]]`][$th] day of the year, the temperature was [`[$T0Show] ^{\circ} C`].
+On the [`[$t[0]]`][$th] day of the year, the daily maximum temperature was [`[$T0Show] ^{\circ} C`].
 
 ###Part c
 
-To find when the temperature was [`[$T[1]]^{\circ} C`], we need to create a second function [`y=[$T[1]]`], and then let desmos find the intersection between [`T(d)`] and [`y=[$T[1]]`].
+To find when the daily maximum temperature was [`[$T[1]]^{\circ} C`], we need to create a second function [`y=[$T[1]]`], and then let desmos find the intersection between [`T(d)`] and [`y=[$T[1]]`].
 
 Step 3: In the second textbox, enter [`y=[$T[1]]`].
 
@@ -202,7 +202,7 @@ Step 4: Zoom out on the window, if needed, until you can see the intersection of
 
 Step 5: Click on the intersection of [`T(d)`] and [`y=[$T[1]]`] in the first period. Desmos shows [`([$tShow[1]],[$T[1]])`] and [`([$tShow[2]],[$T[1]])`].
 
-During this year, the city's temporature was [`[$T[1]]^{\circ} C`] twice, on days [`[$tShow[1]], [$tShow[2]]`].
+During this year, the city's daily maximum temperature was [`[$T[1]]^{\circ} C`] twice, on days [`[$tShow[1]], [$tShow[2]]`].
 
 Below is the function's graph with solutions of this problem:
 

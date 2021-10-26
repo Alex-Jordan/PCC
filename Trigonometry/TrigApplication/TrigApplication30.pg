@@ -171,20 +171,20 @@ if ($ld==1) {$th = "st";}
 
 BEGIN_PGML
 
-Assume a year has 365 days, and [`d=1`] represents Jan. 1. A city's temperature over the year, [`T(d)`], follows the pattern of a periodic function. The city's lowest temperature, [`[$low]^{\circ} C`], happens on Jan. [`[$c]`]; its highest temperature, [`[$high]^\circ C`], happens in July.
+Assume a year has 365 days, and [`d=1`] represents Jan. 1. A city's daily maximum temperature over the year, [`T(d)`], follows the pattern of a periodic function. The city's lowest daily maximum temperature, [`[$low]^{\circ} C`], happens on Jan. [`[$c]`]; its highest daily maximum temperature, [`[$high]^\circ C`], happens in July.
 
 Answer the following questions.
 
 Part a: The function, as a transformation of [`y=-\cos(x)`], is [`T(d)=`][________________________]{$func}.
 
-Part b: On the [`[$t[0]]`][$th] day of the year, the temperature was [_______________]{$T[0]} [`^{\circ} C`].
+Part b: On the [`[$t[0]]`][$th] day of the year, the daily maximum temperature was [_______________]{$T[0]} [`^{\circ} C`].
 
 [@KeyboardInstructions(
 "\n"
 ."* In the next part, use a comma to separate your answers."
 )@]**
 
-Part c: During this year, the city's temporature was [`[$T[1]]^{\circ} C`] twice, on days [________________]{$ans}.
+Part c: During this year, the city's daily maximum temperature was [`[$T[1]]^{\circ} C`] twice, on days [________________]{$ans}.
 
 END_PGML
 
@@ -201,7 +201,7 @@ BEGIN_PGML_SOLUTION
 
 ###Part a
 
-We could use [`y=\sin(x), y=\cos(x)`] and [`y=-\cos(x)`] to model periodic data. In this situation, when [`d=[$c]`], the function has it's minimum value at [`([$c],[$low])`]. Then the function increases. This change matches the graph of [`y=-\cos(x)`], which is at its minimum value when [`x=0`], and then increases. So we should choose to use the following function to model the temporature:
+We could use [`y=\sin(x), y=\cos(x)`] and [`y=-\cos(x)`] to model periodic data. In this situation, when [`d=[$c]`], the function has it's minimum value at [`([$c],[$low])`]. Then the function increases. This change matches the graph of [`y=-\cos(x)`], which is at its minimum value when [`x=0`], and then increases. So we should choose to use the following function to model the daily maximum temperature:
 
     [``T(d)=-a\cos\left(b(d-c)\right)+e``]
 
@@ -235,7 +235,7 @@ The function's formula is
 
 ###Part b
 
-To find the temperature on the [`[$t[0]]`][$th] day, substitute [`d=[$t[0]]`] into [`T(d)`], we have:
+To find the daily maximum temperature on the [`[$t[0]]`][$th] day, substitute [`d=[$t[0]]`] into [`T(d)`], we have:
 
     [``\begin{aligned}
   T(d) &= [$func] \\
@@ -243,11 +243,11 @@ To find the temperature on the [`[$t[0]]`][$th] day, substitute [`d=[$t[0]]`] in
   &= [$T[0]]^{\circ} C
     \end{aligned}``]
 
-On the [`[$t[0]]`][$th] day of the year, the temperature was [`[$T[0]] ^{\circ} C`].
+On the [`[$t[0]]`][$th] day of the year, the daily maximum temperature was [`[$T[0]] ^{\circ} C`].
 
 ###Part c
 
-To find when the temperature was [`[$T[1]]^{\circ} C`], substitute [`T(d)=[$T[1]]`] into the function, and solve for [`d`]. We have:
+To find when the daily maximum temperature was [`[$T[1]]^{\circ} C`], substitute [`T(d)=[$T[1]]`] into the function, and solve for [`d`]. We have:
 
     [``\begin{aligned}
   T(d) &= [$func] \\
@@ -283,7 +283,7 @@ We need to substitute in various [`k`] values and find all [`t`] values in one p
   d &= [$s3] + 365(1) = [$t[2]]
     \end{aligned}``]
 
-During this year, the city's temporature was [`[$T[1]]^{\circ} C`] twice, on days [`[$ans]`].
+During this year, the city's daily maximum temperature was [`[$T[1]]^{\circ} C`] twice, on days [`[$ans]`].
 
 Below is the function's graph with solutions of this problem:
 
