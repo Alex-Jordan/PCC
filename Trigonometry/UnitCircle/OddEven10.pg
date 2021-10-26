@@ -157,7 +157,7 @@ If [`\csc(D)=[$values[3]]`], then [`\csc(-D)=`][`[$ans[3]]`].
 
 ###Cosine function and secant function
 
-Note that [`\cos(H)=\frac{b}{c}`] and [`\cos(-H)=\frac{b}{c}`]. Since [`\cos(-H)=\cos(H)`], [`y=\cos(x)`] is an even function.
+Note that [`\cos(H)=\frac{a}{c}`] and [`\cos(-H)=\frac{a}{c}`]. Since [`\cos(-H)=\cos(H)`], [`y=\cos(x)`] is an even function.
 
 As a result, if [`\cos(B)=[$values[1]]`], then [`\cos(-B)=`][`[$ans[1]]`].
 

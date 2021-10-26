@@ -174,7 +174,7 @@ BEGIN_PGML
 
 >> (To enlarge, click on graph, then press Ctrl+ or Command+) <<
 
-In this figure, if the coordinates of Point [`A`] and [`B`] are
+In this figure, if the coordinates of Point [`B`] and [`D`] are
 
     [`` B([$Bx],[$By]) \text{ and } D([$Dx],[$Dy])``]
     
@@ -208,9 +208,9 @@ BEGIN_PGML_SOLUTION
 
 ###Part a
 
-Point [`C`] is on the function's midline, so the [`y`]-value of [`C`] determines the function's midline. The [`y`]-value of [`C`] is simply the average [`y`]-values of points [`B([$BxShow],[$By]) \text{ and } D([$DxShow],[$Dy])`]:
+Point [`C`] is on the function's midline, so the [`y`]-value of [`C`] determines the function's midline. The [`y`]-value of [`C`] is simply the average [`y`]-values of points [`B([$Bx],[$By]) \text{ and } D([$Dx],[$Dy])`]:
 
-    [`` y-\text{value of }C = \frac{[$By]+([$Dy])}{2} = [$d]``]
+    [`` y \text{-value of }C = \frac{[$By]+([$Dy])}{2} = [$d]``]
 
 The function's midline is [`y=[$d]`].
 
