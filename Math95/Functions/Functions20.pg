@@ -71,7 +71,6 @@ $xmax = max(5,$r[2]+3);
 $ymin = -$peak-3;
 $ymax = $peak+3;
 
-TEXT($peak);
 
 $gr = createTikZImage();
 $gr->addToPreamble(latexImagePreamble());
