@@ -28,7 +28,8 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "parserPopUp.pl",
-  "PGgraphmacros.pl",
+  "PGtikz.pl",
+  "ORCCA.pl",
   "PCCgraphMacros.pl",
   "PGcourse.pl",
 );
@@ -73,49 +74,30 @@ $ymark = 2;
 
 $shift = 0.2;
 
-$gr = init_graph($xmin,$ymin,$xmax,$ymax,
-   axes=>[0,0],
-   grid=>[($xmax-$xmin)/$xmark,($ymax-$ymin)/$ymark],
-   size=>[xPixels(),yPixels()]
-);
-
-$gr->lb('reset');
-for ($j=-$xmax+$xmark;$j<$xmax;$j=$j+$xmark) {
-   if (Real($j) == 0) {$gr->lb( new Label(0.1,  -0.1, ' '.$j,'black','left','top'));}
-   else {$gr->lb( new Label($j,  -0.1, $j,'black','center','top'));}
-}
-for ($j=$ymin+$ymark;$j<$ymax;$j=$j+$ymark) {
-   if (Real($j) == 0) {next;}
-   $gr->lb( new Label(0,  $j,' '.$j,'black','left','middle'));
-}
-$gr->lb( new Label($xmax, $shift, "x ",'black','right','bottom'));
-$gr->lb( new Label(0, $ymax-$shift, " y",'black','left','top'));
-
-$sample1 = 3;
-$sample2 = 5;
-$sample3 = 6;
-$gr->stamps(closed_circle($sample1,$sample1,'blue'));
-$gr->stamps(closed_circle(-$sample1,$sample1,'blue'));
-$gr->stamps(closed_circle(-$sample1,-$sample1,'blue'));
-$gr->stamps(closed_circle($sample1,-$sample1,'blue'));
-$gr->stamps(closed_circle(0,$sample2,'blue'));
-$gr->stamps(closed_circle(0,-$sample2,'blue'));
-$gr->stamps(closed_circle($sample2,0,'blue'));
-$gr->stamps(closed_circle(-$sample2,0,'blue'));
-
-$gr->lb( new Label($sample1, $sample1+$shift, "($sample1,$sample1)",'blue','center','bottom'));
-$gr->lb( new Label(-$sample1, $sample1+$shift, "(-$sample1,$sample1)",'blue','center','bottom'));
-$gr->lb( new Label(-$sample1, -$sample1-$shift, "(-$sample1,-$sample1)",'blue','center','top'));
-$gr->lb( new Label($sample1, -$sample1-$shift, "($sample1,-$sample1)",'blue','center','top'));
-$gr->lb( new Label(-$shift, $sample2, "(0,$sample2)",'blue','right','middle'));
-$gr->lb( new Label(-$shift, -$sample2, "(0,-$sample2)",'blue','right','middle'));
-$gr->lb( new Label($sample2, $shift, "($sample2,0)",'blue','center','bottom'));
-$gr->lb( new Label(-$sample2, $shift, "(-$sample2,0)",'blue','center','bottom'));
-
-$gr->lb( new Label($sample3, $sample3, "Quadrant I",'red','right','middle'));
-$gr->lb( new Label(-$sample3, $sample3, "Quadrant II",'red','left','middle'));
-$gr->lb( new Label(-$sample3, -$sample3, "Quadrant III",'red','left','middle'));
-$gr->lb( new Label($sample3, -$sample3, "Quadrant IV",'red','right','middle'));
+$gr = createTikZImage();
+$gr->addToPreamble(latexImagePreamble());
+$gr->BEGIN_TIKZ
+\begin{axis}[
+    xmin = $xmin,
+    xmax = $xmax,
+    ymin = $ymin,
+    ymax = $ymax,
+    xtick =,
+    ytick =,
+    minor xtick = {$xmin,...,$xmax},
+    minor ytick = {$ymin,...,$ymax},
+  ]
+  \addplot[soliddot] coordinates {(5,0)} node[above] {\((5,0)\)};
+  \addplot[soliddot] coordinates {(3,3)} node[above] {\((3,3)\)};
+  \addplot[soliddot] coordinates {(0,5)} node[above] {\((0,-5)\)};
+  \addplot[soliddot] coordinates {(-3,3)} node[above] {\((-3,3)\)};
+  \addplot[soliddot] coordinates {(-5,0)} node[above] {\((-5,0)\)};
+  \addplot[soliddot] coordinates {(-3,-3)} node[above] {\((-3,-3)\)};
+  \addplot[soliddot] coordinates {(0,-5)} node[above] {\((0,-5)\)};
+  \addplot[soliddot] coordinates {(3,-3)} node[above] {\((3,-3)\)};
+  \node[below left] at (axis cs: 6,6) {Quadrant I};
+\end{axis}
+END_TIKZ
 
 $alt = "This is a coordinate system with the x-axis and y-axis. The following points are marked and labeled: ($sample1, $sample1) in Quadrant I, (-$sample1, $sample1) in Quadrant II, (-$sample1, -$sample1) in Quadrant III, ($sample1, -$sample1) in Quadrant IV, ($sample2, 0) and (-$sample2, 0) on the x-axis, and (0, $sample2) and (0, -$sample2) on the y-axis.";
 
@@ -161,17 +143,17 @@ The following graph has some points and their coordinates. They should help you 
 
 The correct answers are:
 
-    For the point [`(x,y)`], if [$conditions[$scramble{0}][0]], then the point is in/on [@$popup0->correct_ans()@]*.
+    For the point [`(x,y)`], if [`[$conditions[$scramble{0}][0]]`], then the point is in/on [@$popup0->correct_ans()@]*.
 
-    For the point [`(x,y)`], if [$conditions[$scramble{1}][0]], then the point is in/on [@$popup1->correct_ans()@]*.
+    For the point [`(x,y)`], if [`[$conditions[$scramble{1}][0]]`], then the point is in/on [@$popup1->correct_ans()@]*.
 
-    For the point [`(x,y)`], if [$conditions[$scramble{2}][0]], then the point is in/on [@$popup2->correct_ans()@]*.
+    For the point [`(x,y)`], if [`[$conditions[$scramble{2}][0]]`], then the point is in/on [@$popup2->correct_ans()@]*.
 
-    For the point [`(x,y)`], if [$conditions[$scramble{3}][0]], then the point is in/on [@$popup3->correct_ans()@]*.
+    For the point [`(x,y)`], if [`[$conditions[$scramble{3}][0]]`], then the point is in/on [@$popup3->correct_ans()@]*.
 
-    For the point [`(x,y)`], if [$conditions[$scramble{4}][0]], then the point is in/on [@$popup4->correct_ans()@]*.
+    For the point [`(x,y)`], if [`[$conditions[$scramble{4}][0]]`], then the point is in/on [@$popup4->correct_ans()@]*.
 
-    For the point [`(x,y)`], if [$conditions[$scramble{5}][0]], then the point is in/on [@$popup5->correct_ans()@]*.
+    For the point [`(x,y)`], if [`[$conditions[$scramble{5}][0]]`], then the point is in/on [@$popup5->correct_ans()@]*.
 
 END_PGML_SOLUTION
 
