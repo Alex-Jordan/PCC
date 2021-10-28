@@ -89,13 +89,16 @@ $gr->BEGIN_TIKZ
   ]
   \addplot[soliddot] coordinates {(5,0)} node[above] {\((5,0)\)};
   \addplot[soliddot] coordinates {(3,3)} node[above] {\((3,3)\)};
-  \addplot[soliddot] coordinates {(0,5)} node[above] {\((0,-5)\)};
+  \addplot[soliddot] coordinates {(0,5)} node[right] {\((0,-5)\)};
   \addplot[soliddot] coordinates {(-3,3)} node[above] {\((-3,3)\)};
   \addplot[soliddot] coordinates {(-5,0)} node[above] {\((-5,0)\)};
   \addplot[soliddot] coordinates {(-3,-3)} node[above] {\((-3,-3)\)};
-  \addplot[soliddot] coordinates {(0,-5)} node[above] {\((0,-5)\)};
+  \addplot[soliddot] coordinates {(0,-5)} node[right] {\((0,-5)\)};
   \addplot[soliddot] coordinates {(3,-3)} node[above] {\((3,-3)\)};
-  \node[below left] at (axis cs: 6,6) {Quadrant I};
+  \node[above left] at (axis cs: 6,6) {Quadrant I};
+  \node[above right] at (axis cs: -6,6) {Quadrant II};
+  \node[below right] at (axis cs: -6,-6) {Quadrant III};
+  \node[below left] at (axis cs: 6,-6) {Quadrant IV};
 \end{axis}
 END_TIKZ
 
