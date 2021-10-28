@@ -89,7 +89,7 @@ $gr->BEGIN_TIKZ
   ]
   \addplot[soliddot] coordinates {(5,0)} node[above] {\((5,0)\)};
   \addplot[soliddot] coordinates {(3,3)} node[above] {\((3,3)\)};
-  \addplot[soliddot] coordinates {(0,5)} node[right] {\((0,-5)\)};
+  \addplot[soliddot] coordinates {(0,5)} node[right] {\((0,5)\)};
   \addplot[soliddot] coordinates {(-3,3)} node[above] {\((-3,3)\)};
   \addplot[soliddot] coordinates {(-5,0)} node[above] {\((-5,0)\)};
   \addplot[soliddot] coordinates {(-3,-3)} node[above] {\((-3,-3)\)};
