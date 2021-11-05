@@ -210,7 +210,7 @@ Because the range of [`\cos^{-1}(x)`] is [`\left[ 0,\pi \right]`], measure of mi
 Because the range of [`\cos^{-1}(x)`] is [`\left[ 0,\pi \right]`], measure of minor arc EB is the answer to this part. We have:
 
     [``\begin{aligned}
-  \cos^{-1} \left( \sin \cos( [$num[3]] \right) \right) 
+  \cos^{-1} \left( \sin \left( \cos( [$num[3]] ) \right) \right) 
   &= \cos^{-1} \left( \text{length of }OC \right) \\
   &= \text{measure of minor arc }EB \\
   &= \text{measure of minor arc }EA \\
