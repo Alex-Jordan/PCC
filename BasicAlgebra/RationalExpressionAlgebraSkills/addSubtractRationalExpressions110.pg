@@ -86,6 +86,7 @@ $s3 = Formula("($a*$var1+$g+$c*$var1+$h)/(($var1+$b)($var1+$d))")->reduce;
 
 ###################################################
 
+$final = Formula("($e*$var1+$f)/( ($var1+$b)*($var1+$d))")->reduce;
 BEGIN_PGML_SOLUTION
 
     [``
@@ -94,7 +95,7 @@ BEGIN_PGML_SOLUTION
       &= [$frac1] \cdot \frac{([$var1]+[$d])}{([$var1]+[$d])} [$s1]  \\
       &= [$s2] \\
       &= [$s3] \\
-      &= [$ans]
+      &= [$final]
 \end{aligned}
     ``]
 
