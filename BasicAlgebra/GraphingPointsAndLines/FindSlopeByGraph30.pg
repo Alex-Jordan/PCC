@@ -40,7 +40,7 @@ loadMacros(
 TEXT(beginproblem());
 
 Context("Fraction");
-$refreshCachedImages=1;
+
 
 $num=random(3,9,1);
 do {$den=random(3,9,1);} until (gcd($den,$num)==1);

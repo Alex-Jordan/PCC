@@ -33,7 +33,7 @@ loadMacros(
 
 ##############################################
 
-$refreshCachedImages=1;
+
 Context("Numeric");
 
 @conditions = (

@@ -38,7 +38,7 @@ sub PF {PGML::Format(@_)};
 
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
-$refreshCachedImages=1;
+
 
 $a = non_zero_random(-3,3,1);
 $direction = (random(-1,1,2)>0) ? "horizontal" : "vertical";

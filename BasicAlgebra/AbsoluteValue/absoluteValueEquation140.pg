@@ -38,7 +38,7 @@ loadMacros(
 
 ##############################################
 TEXT(beginproblem());
-$refreshCachedImages = 1;
+
 
 Context("FiniteSolutionSets");
 

@@ -84,7 +84,7 @@ $gr->lb( new Label($b,$shadingoffset,$rightType,'blue','center','middle','giant'
 $alt = "This is graph of an interval on a number line. There is a $leftType at $a and a $rightType at $b. The segment in between is shaded.";
 
 ##############################################
-$refreshCachedImages = 1;
+
 
 BEGIN_PGML
 For the interval expressed in the number line, write it in interval notation.

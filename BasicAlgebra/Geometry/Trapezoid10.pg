@@ -13,7 +13,7 @@ loadMacros(
   "parserNumberWithUnits.pl",
   "PGcourse.pl",
 );
-$refreshCachedImages= 1;
+
 ############################################################
 # Header
 ############################################################
@@ -23,7 +23,7 @@ TEXT(beginproblem());
 # PG Setup
 ############################################################
 Context("Numeric");
-$refreshCachedImages = 1;
+
 
 $unit = "cm";
 

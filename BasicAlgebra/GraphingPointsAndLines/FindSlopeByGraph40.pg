@@ -40,7 +40,7 @@ loadMacros(
 TEXT(beginproblem());
 
 Context("Fraction");
-$refreshCachedImages=1;
+
 
 
 $num=random(1,9,1);

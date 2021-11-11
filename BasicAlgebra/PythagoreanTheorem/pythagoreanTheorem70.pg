@@ -196,7 +196,7 @@ $s1 = $ratioHypotenuse**2-$ratioHeight**2;
 $s2 = $baseLength**2/$s1;
 $x = sqrt($s2);
 
-$refreshCachedImages = 1;
+
 BEGIN_PGML_SOLUTION
 
 We will draw a diagram for the garden.

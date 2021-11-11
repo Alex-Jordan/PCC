@@ -109,7 +109,7 @@ $ansTangentS = Compute("s/r");
 $text = "This is a right triangle. The right angle is at the bottom right corner of the picture. Acute angle alpha is at the bottom left, and acute angle beta is at the top right. Angle alpha faces side r; Angle beta faces side s; the right angle faces side t.";
 
 ##############################################
-$refreshCachedImages = 1;
+
 TEXT(beginproblem());
 
 BEGIN_PGML

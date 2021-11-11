@@ -90,7 +90,7 @@ $ansA = NumberWithUnits("$area ft^2");
 
 
 ##############################################
-$refreshCachedImages = 1;
+
 TEXT(beginproblem());
 
 $text = "a triangle with one side parallel to the ground; this side is $base ft long; the left side is $leftSide ft long; the right side is $rightSide ft long; the height is $height ft";

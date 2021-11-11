@@ -108,7 +108,7 @@ $text[0] = "This is a right triangle with one side parallel to the ground; this 
 $text[1] = "This is a right triangle with one side parallel to the ground; this side is marked as c=$a miles; the top point is marked as C (boat). The left endpoint is marked as A, and right endpoint is marked as B. The angle of elevation from A to the boat is $B degrees, and the angle of elevation from B to the boat is 90 degrees. The boat is right above Point B, making Angle B inside the triangle a right angle. The side AC is marked as b, and the side BC is marked as a.";
 
 ##############################################
-$refreshCachedImages = 1;
+
 TEXT(beginproblem());
 
 BEGIN_PGML

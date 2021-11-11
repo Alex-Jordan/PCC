@@ -41,7 +41,7 @@ loadMacros(
 TEXT(beginproblem());
 
 Context("Numeric");
-$refreshCachedImages=1;
+
 
 
 #Decide whether each graphs shows a function or non-function.

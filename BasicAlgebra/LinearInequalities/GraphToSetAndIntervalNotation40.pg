@@ -76,7 +76,7 @@ END_TIKZ
 $alt = "Graph of an interval on a number line. There is a right bracket at $a and everything left of that is shaded. To the right of the axis, there is a letter $var.";
 
 ##############################################
-$refreshCachedImages = 1;
+
 
 BEGIN_PGML
 For the interval expressed in the number line, write it using set-builder notation and interval notation.

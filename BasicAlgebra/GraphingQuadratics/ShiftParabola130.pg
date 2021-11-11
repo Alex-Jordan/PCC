@@ -41,7 +41,7 @@ Context("Numeric");
 Context()->variables->add(y=>'Real');
 Context()->flags->set(showExtraParens=>0, reduceConstants=>0);
 Context()->noreduce("(-x)-y","(-x)+y");
-$refreshCachedImages=1;
+
 
 #These arrays store value of a,h,k in y= a(x+h)^2+k.
 # [0] are used in the correct graph. The others are used in wrong graphs.

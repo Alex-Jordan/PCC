@@ -99,7 +99,7 @@ END_PGML
 #   the Generic Rectangle Method
 #
 
-$refreshCachedImages = 1;
+
 
 # This subroutine fills empty terms in the parameter array like ['x',2,1,0]
 #   with 1 if the variable is missing, and

@@ -92,7 +92,7 @@ $triangle->lineTo(-0.45,-0.5+0.1,"darkblue",1);
 $triangle->lineTo(-0.5,-0.5+0.1,"darkblue",1);
 
 ##############################################
-$refreshCachedImages=1;
+
 
 TEXT(beginproblem());
 BEGIN_TEXT

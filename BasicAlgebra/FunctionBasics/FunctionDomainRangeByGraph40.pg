@@ -40,7 +40,7 @@ TEXT(beginproblem());
 
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
-$refreshCachedImages=1;
+
 
 $a = random(-1,1,2);
 $h = random(-2,2,1);

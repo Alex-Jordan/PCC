@@ -42,7 +42,7 @@ loadMacros(
 TEXT(beginproblem());
 
 Context("Interval");
-$refreshCachedImages=1;
+
 
 #Decide the number of points in the graph.
 $numPoints = 3;

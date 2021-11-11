@@ -40,7 +40,7 @@ loadMacros(
 TEXT(beginproblem());
 
 Context("Numeric");
-$refreshCachedImages=1;
+
 
 #Decide the number of points in the graph.
 $numPoints = 3;

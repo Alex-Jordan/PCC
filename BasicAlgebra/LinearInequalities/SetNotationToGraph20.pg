@@ -137,7 +137,7 @@ $pop = PopUp( [qw(? A B C D)], $ar_choice[$zero] );
 
 
 ##############################################
-$refreshCachedImages = 1;
+
 TEXT(beginproblem());
 Context()->texStrings;
 

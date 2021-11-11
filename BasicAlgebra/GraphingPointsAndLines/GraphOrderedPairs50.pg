@@ -36,7 +36,7 @@ loadMacros(
 ##############################################
 TEXT(beginproblem());
 Context("Numeric");
-$refreshCachedImages=1;
+
 
 $px1 = random(3,8,1)*random(-1,1,2);
 $py1 = random(3,8,1);

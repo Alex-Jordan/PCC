@@ -42,7 +42,7 @@ TEXT(beginproblem());
 
 Context("Numeric");
 Context()->noreduce('(-x)-y','(-x)+y');
-$refreshCachedImages=1;
+
 
 $a = 6;
 $exclude1 = random(-6,-1,1);

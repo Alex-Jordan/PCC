@@ -39,7 +39,7 @@ loadMacros(
 TEXT(beginproblem());
 
 Context("Numeric");
-$refreshCachedImages=1;
+
 
 $m = 0;
 $b = non_zero_random(-4,4,1);

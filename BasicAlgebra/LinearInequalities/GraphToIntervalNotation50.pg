@@ -88,7 +88,7 @@ $gr->arrowTo($reach-2*$pixel,$shadingoffset,'blue',1);
 $alt = "This is graph of an interval on a number line. There is a $leftType at $a and everything to the left of $a is shaded; there is a $rightType at $b and everything to the right of $b is shaded.";
 
 ##############################################
-$refreshCachedImages = 1;
+
 
 BEGIN_PGML
 For the interval expressed in the number line, write it in interval notation.
