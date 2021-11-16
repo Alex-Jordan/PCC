@@ -131,47 +131,27 @@ do {
   "-sqrt(3)" => "-\frac{1}{\sqrt{3}}",
 );
 
-Context("LimitedRadical");
-$left = "\cot(2x)";
-$right = $flip{$tanValue};
+$a = 2;
 
-Context("Fraction");
-Context()->flags->set(requirePureFractions=>1);
-Context()->flags->set(showMixedNumbers=>0);
+$left = "\cot($a x)";
+$right = $flip{$tanValue};
 
 Context()->strings->add("no solution"=>{},
 "no solutions"=>{alias=>'no solution'}, 
 "none"=>{alias=>'no solution'}, 
 );
 
-sub addPi {
-  Context("Fraction");
-  my $f = shift;
-  my @a = split(/~~//, $f);
-  $a[1] = ($a[1] eq "") ? "1" : $a[1];
-  if ($a[0]==1) {return Formula("pi/$a[1]");}
-    elsif ($a[0]==-1) {return -Formula("pi/$a[1]");}
-    else {
-      my $n = -$a[0];
-      return ($a[0]>0) ? Formula("$a[0]*pi/$a[1]") : -Formula("$n*pi/$a[1]");
-    }
-}
-
-#ans2x is the solution of the "2x" part of cot(2x)=right
-$ans2x = $values{$tanValue}[3][1];
-#ans2xF is the fraction part of $ans2x without pi
-$ans2xF = $ans2x;
-$ans2xF =~ s/pi/(1)/;
-$ans2xF = Formula("$ans2xF");
-$ans2xF_half = ($ans2xF/2)->reduce;
-$ans2xF_half_PI = addPi($ans2xF_half);
+#ansax is the solution of the "2x" part of cot(2x)=right
+$ansax = Compute("$values{$tanValue}[3][1]");
+#$ansaxd is the first part of the solution after dividing by $a
+$ansaxd = specialAngle($ansax/$a,2,3,4,5,6,8,9,10,12,18);
 
 @k = ();
 @ansF = ();
 for my $i (-4..4) {
-  my $f = Fraction(1/2)*$i+$ans2xF_half;
-  if ( ($f>0) && ($f<2) ) {
-    $ansF[$#ansF+1]=$f;
+  my $f = specialAngle(pi*$i/$a+$ansax/$a,2,3,4,5,6,8,9,10,12,18);
+  if ( ($f>0) && ($f<2*pi) ) {
+    $ansF[$#ansF+1]= $f;
     $k[scalar(@k)] = $i;
   }
 }
@@ -179,7 +159,6 @@ for my $i (-4..4) {
 @ansF = do { my %seen; grep { !$seen{$_}++ } @ansF };
 $points = "";
 for my $i (0..$#ansF) {
-  $ansF[$i] = addPi($ansF[$i]);
   $points .= "$ansF[$i], ";
 }
 $points = substr($points,0,length($points)-2);
@@ -226,8 +205,6 @@ $fig = image(insertGraph($graph),'width'=>400,'height'=>400,'tex_size'=>700, ext
 
 BEGIN_PGML
 
-[$s]
-
 Solve the equation
 
     [``[$left]=[$right]\text{ where }x\in[0,2\pi)``]
@@ -258,7 +235,7 @@ if (substr($n,0,1) eq '-') {
 
 $s2 = "";
 for my $i (0..scalar(@k)-1) {
-  $s2 .= "x &= ".$ans2xF_half_PI->TeX."+\frac{($k[$i])\pi}{2} = ".$ansF[$i]->TeX." \\";
+  $s2 .= "x &= ".$ansaxd->TeX."+\frac{($k[$i])\pi}{$a} = ".$ansF[$i]->TeX." \\";
 }
 
 ##############################################################
@@ -267,11 +244,11 @@ BEGIN_PGML_SOLUTION
 
     [``\begin{aligned}
   [$left] &= [$right] \\
-  \frac{1}{\tan(2x)} &= [$right] \\
-  \tan(2x) &= [$s1] \\
-  2x &= \tan^{-1}\left([$s1]\right) \\
-  2x &= [$values{$tanValue}[3][0]]+k\pi \\
-  x &= [$ans2xF_half_PI] +\frac{k\pi}{2}
+  \frac{1}{\tan([$a]x)} &= [$right] \\
+  \tan([$a]x) &= [$s1] \\
+  [$a]x &= \tan^{-1}\left([$s1]\right) \\
+  [$a]x &= [$values{$tanValue}[3][0]]+k\pi \\
+  x &= [$ansaxd] +\frac{k\pi}{[$a]}
     \end{aligned}``]
 
 Next, we need to substitute in different [`k`] values to find all solutions in the range [`x\in[0,2\pi)`]:
