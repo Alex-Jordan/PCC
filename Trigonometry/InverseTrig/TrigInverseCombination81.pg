@@ -119,7 +119,6 @@ Context("LimitedRadical");
     ($baseOut,$baseIn) = &radSimplify($hypotenuseOut**2-$heightOut**2*$heightIn);
   } until (!($baseIn==1 && $heightIn==1 && $hypotenuseIn==1)) && !(($baseOut>0) && ($heightOut>0)) && ($baseIn<=30);
 
-  $baseOut = $baseOut*random(-1,1,2);
   if ($baseOut*$heightOut>0) {
     $Q = ($baseOut>0) ? "I" : "III";
   } else {
