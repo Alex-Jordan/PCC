@@ -148,12 +148,12 @@ $ans[0] = $values{$sinValue}[1][2];
 $ans[1] = $values{$sinValue}[1][3];
 
 $points = "";
-if ($ans1 eq "DNE") {
+if ($ans[1] eq "DNE") {
   $ans = Formula($ans[0]);
-  $points = "$ans[0]";
+  $points = "point $ans[0]";
 } else {
   $ans = List(Formula($ans[0]),Formula($ans[1]));
-  $points = "$ans[0], $ans[1]";
+  $points = "points $ans[0], $ans[1]";
 }
 
 $r = 5;
@@ -194,7 +194,7 @@ for my $i (0..1) {
   $graph->lb(new Label($Px,$Py,"$ans[$i]",'red','center',$td,large));
 }
 
-$alt = "This is the graph of a circle with points $points on the circle.";
+$alt = "This is the graph of a circle with $points on the circle.";
 
 if ( ($sinValue ne "1") && ($sinValue ne "-1") ) {
   $alt .= " From each point, a vertical line is drawn until it reaches the x-axis, showing they have the same distance to the x-axis.";
@@ -256,7 +256,7 @@ $s2 = fracDisplay($aT,$bT);
 
 $output1 = "";
 if (substr($values{$sinValue}[1][0],0,1) eq '-') {
-  my $a = Formula($ans0);
+  my $a = Formula($ans[0]);
   $output1 .= "\text{But }x\in[0,2\pi),\text{ so we have to change }".$values{$sinValue}[1][0]."\text{ into that range by }\\".$values{$sinValue}[1][0]."+2\pi=".$a->TeX;
 }
 
