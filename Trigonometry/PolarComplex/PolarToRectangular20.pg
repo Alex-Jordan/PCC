@@ -60,7 +60,8 @@ if ($den==3) {
 if ($den==6) {
   $b = Fraction(sin(Compute($angle)));
   $br = Fraction($r*sin(Compute($angle)));
-  $br = Formula($br*i);
+  Context()->variables->are(i=>"Real");
+  $br = Formula("$br*i");
 } else {
   $b = specialRadical(sin(Compute($angle)));
   $br = specialRadicalComplex($r*sin(Compute($angle)));
@@ -71,7 +72,13 @@ Context("LimitedRadical");
 Context()->noreduce('(-x)-y','(-x)+y');
 Context()->variables->are(i=>"Real");
 
-$ans = ($b>0) ? Formula("$ar+$br") : Formula("$ar-$brn");
+if ($a==0) {
+  $ans = ($b>0) ? Formula("$br") : Formula("-$brn");
+} elsif ($b==0) {
+  $ans = Formula("$ar");
+} else {
+  $ans = ($b>0) ? Formula("$ar+$br") : Formula("$ar-$brn");
+}
 
 ##############################################
 
