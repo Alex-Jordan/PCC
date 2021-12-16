@@ -68,8 +68,7 @@ do {
   Compute($angle[2]) == Compute($angle[3]) 
   &&( Compute($angle[2]) == 0 
   || Compute($angle[2]) == Compute(pi/2)
-  || Compute($angle[2]) == Compute(pi) 
-  || Compute($angle[2]) == Compute(3*pi/2) );
+  || Compute($angle[2]) == Compute(pi) );
 
 @r = ();
 do {
