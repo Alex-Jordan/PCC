@@ -65,9 +65,9 @@ do {
   $angle[3] = specialAngle(abs(Compute($angle[0])-Compute($angle[1])));
 } until 
   Compute($angle[2]) == Compute($angle[3]) 
-  && Compute($angle[2]) != 0 
-  && Compute($angle[2]) != Compute(pi/2)
-  && Compute($angle[2]) != Compute(pi);
+  && Compute($angle[2]) < pi 
+  && Compute($angle[2]) > 0 
+  && Compute($angle[2]) != Compute(pi/2);
 
 @r = ();
 do {
