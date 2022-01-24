@@ -94,7 +94,7 @@ BEGIN_PGML
 
 In a triangle [`\Delta ABC`], [`\angle A`] faces side [`a`], [`\angle B`] faces side [`b`], and [`\angle C`] faces side [`c`].
 
-In this triangle, if [`m\angle B=[$B]^{\circ}`], [`c=[$c]`] units and [`b=[$c]\cdot \sin{[$B]^{\circ}`] units, solve for this triangle.
+In this triangle, if [`m\angle B=[$B]^{\circ}`], [`c=[$c]`] units and [`b=[$c]\cdot \sin{[$B]^{\circ}}`] units, solve for this triangle.
 
 Note that the length of [`b`] was not changed to decimals to keep the value more accurate.
 
