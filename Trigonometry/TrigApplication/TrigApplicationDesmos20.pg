@@ -86,7 +86,7 @@ do {
       $h[0] = $func->eval(t=>$t[0]);
       $h0Show = Round($h[0],3);
       $h[1] = random($base+5,$base+2*$a-5,1);
-    } until abs($h[0]-$h[1])>10;
+    } until abs($h[0]-$h[1])>10  && $t[0]!=$p && $t[0]!=$p/2;
     $h[2] = $h[1];
   } until abs(($d-$h[1])/$a)<1;
   $rad = arccos(($d-$h[1])/$a);
