@@ -41,8 +41,8 @@ $degree = random(5,355,5);
 $arc = Compute("$radius*$degree*pi/180");
 
 $arc = int($arc);
-$radian = Compute("$arc/$radius")->reduce;
-$degree = Compute("$radian*180/pi")->reduce;
+$radian = $arc/$radius;
+$degree = $radian*180/pi;
 
 
 ####################################
@@ -51,9 +51,9 @@ BEGIN_PGML
 
 If the arc length on a circle of radius [`[$radius]`] units is [`[$arc]`] units. Find the corresponding central angle's measure in both radian and degrees.
 
-    Angle (in radian) = [____________]{$radian}
+    Angle (in radian) = [____________]{$radian} radians
 
-    Angle (in degree) = [____________]{$degree}
+    Angle (in degree) = [____________]{$degree} degrees
 
 END_PGML
 

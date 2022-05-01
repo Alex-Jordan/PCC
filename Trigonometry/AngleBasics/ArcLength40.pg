@@ -48,9 +48,9 @@ $longU = NumberWithUnits("$long $unit");
 $hour = random(2,11,0.25);
 $hourU = NumberWithUnits("$hour hr");
 
-$arcLong = Compute("$long*$hour*360*pi/180");
+$arcLong = $long*$hour*360*pi/180;
 $arcLongU = NumberWithUnits("$arcLong $unit");
-$arcShort = Compute("$short*$hour*30*pi/180");
+$arcShort = $short*$hour*30*pi/180;
 $arcShortU = NumberWithUnits("$arcShort $unit");
 
 Context()->operators->undefine("+","-","*","/","^","**");

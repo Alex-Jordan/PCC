@@ -39,14 +39,14 @@ Context()->flags->set(
 $radius = random(2,9,1);
 
 $angle = random(5,355,5);
-$answer = Compute("$radius*$angle*pi/180");
+$answer = $radius*$angle*pi/180;
 
 ####################################
 
 BEGIN_PGML
 Find the length of an arc on a circle of radius [`[$radius]`] units corresponding to an angle of [`[$angle]^{\circ}`].
 
-    Arc length = [____________]{$answer}
+    Arc length = [____________]{$answer} units
 
 END_PGML
 

@@ -42,7 +42,7 @@ $arc = Compute("$radius*$degree*pi/180");
 
 $arc = int($arc);
 $radian = Compute("$arc/$radius");
-$degree = Compute("$radian*180/pi");
+$degree = $radian*180/pi;
 
 Context()->operators->undefine("+","-","*","/","^","**");
 
@@ -52,7 +52,7 @@ BEGIN_PGML
 
 A person walked [`[$arc]`] miles along the bank of a circular lake. If the radius of the lake is [`[$radius]`] miles, what's the angle, in degrees, of the person's final position relative to his starting position?
 
-    Angle (in degree) = [____________]{$degree}
+    Angle (in degree) = [____________]{$degree} degrees
 
 END_PGML
 

@@ -49,7 +49,7 @@ Context()->operators->undefine("+","-","*","/","^","**");
 BEGIN_PGML
 Find the length of an arc on a circle of diameter [`[$diameter]`] units corresponding to an angle of [`[$angle]`] radians.
 
-    Arc length = [____________]{$answer}
+    Arc length = [____________]{$answer} units
 
 END_PGML
 

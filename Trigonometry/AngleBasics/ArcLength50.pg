@@ -44,7 +44,7 @@ $degreeA = random(5,15,0.1);
 $degreeDif = random(1,10,0.1);
 $degreeB = $degreeA + $degreeDif;
 
-$arc = Compute("$degreeDif*3960*pi/180");
+$arc = $degreeDif*3960*pi/180;
 $arcU = NumberWithUnits("$arc $unit");
 
 Context()->operators->undefine("+","-","*","/","^","**");
