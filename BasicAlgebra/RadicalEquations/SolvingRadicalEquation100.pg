@@ -40,7 +40,7 @@ do {
       $r = non_zero_random(-10,10,1);
       do {$p = non_zero_random(-10,10,1);} until (abs($r)!=abs($p));
       $s = ($r**2-$p)/(2*$r);
-   } until ( $s>0 );
+   } until ( $s>0 && ($r**2+$p)/(2*$r) < 0);
 } until (sqrt($s)==int(sqrt($s)));
 $solution = $s**2;
 
