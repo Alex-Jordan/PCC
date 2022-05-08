@@ -89,7 +89,7 @@ BEGIN_PGML_SOLUTION
     [``
 \begin{aligned}
    [$frac1] \cdot [$frac2] &= \frac{[$num1] \cdot [$num2]}{[$den1] \cdot [$den2]} \\
-                                      &= \frac{[$a] \cdot [$c] \cdot [$var1]^{[$e1+$e4]} \cdot [$var2]^{[$e2+$e4]}}{[$b] \cdot [$d] \cdot [$var1][$s1] \cdot [$var2][$s2]} \\
+                                      &= \frac{[$a] \cdot [$c] \cdot [$var1]^{[$e1+$e4]} \cdot [$var2]^{[$e2+$e5]}}{[$b] \cdot [$d] \cdot [$var1][$s1] \cdot [$var2][$s2]} \\
                                       &= [$ans]
 \end{aligned}
     ``]
