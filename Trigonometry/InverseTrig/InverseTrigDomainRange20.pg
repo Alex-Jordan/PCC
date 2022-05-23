@@ -85,12 +85,13 @@ $frac3 = Fraction($num,$den);
   [&output($frac0), $popupSine0, $popupCosine0, $popupTangent0],
   [&output($frac1), $popupSine1, $popupCosine0, $popupTangent1],
   [&output($frac2), $popupSine0, $popupCosine1, $popupTangent0],
-  [&output(list_random(Fraction(1,2),Fraction(-1,2))), $popupSine0, $popupCosine0, $popupTangent1],
+  [&output(Fraction(1,2)), $popupSine0, $popupCosine0, $popupTangent1],
+  [&output(Fraction(-1,2)), $popupSine0, $popupCosine1, $popupTangent1],
   [&output($frac3), $popupSine1, $popupCosine1, $popupTangent1],
   [&output($frac4), $popupSine1, $popupCosine1, $popupTangent1],
 );
 
-@perm = NchooseK(6,3);
+@perm = NchooseK(7,3);
 
 
 ##########################################################
