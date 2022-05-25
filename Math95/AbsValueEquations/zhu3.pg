@@ -49,6 +49,7 @@ $ans2 = Fraction($g,$h);
 
 Context("FiniteSolutionSets");
 $ans = Formula("{$ans1,$ans2}");
+if ($ans1 == $ans2) {$ans = Formula("{$ans1}");};
 
 BEGIN_PGML
 Solve the equation. 
