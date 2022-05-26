@@ -67,11 +67,11 @@ BEGIN_PGML
 The manufacturer of a computer is offering two discounts on last year's model computer.  The first discount is at a [`\$[$rebate]`] rebate and the second discount is [`[$perc]%`] off the regular price [`p`].
 
 
-a) Write a formula for a function [`f`] that that represents the sale price as a function of the regular price if only the rebate applies.  Your answer should be in the form *f(p)=...*.  
+a) Write a formula for a function [`f`] that represents the sale price as a function of the regular price if only the rebate applies.  Your answer should be in the form *f(p)=...*.
 
     [______________________]
 
-a) Write a formula for a function [`g`] that that represents the sale price as a function of the regular price if only the [`[$perc]%`] discount applies. Your answer should be in the form *g(p)=...*.  
+a) Write a formula for a function [`g`] that represents the sale price as a function of the regular price if only the [`[$perc]%`] discount applies. Your answer should be in the form *g(p)=...*.
 
     [______________________]
 
