@@ -171,7 +171,7 @@ The function's period is [`365`] days. By the period formula [`\text{new period}
 
     [`` b = \frac{\text{old period}}{\text{new period}} = \frac{2\pi}{[$p]} ``]
 
-Finally, the function's minimum value is at [`([$c],[$high])`], which matches [`(0,1)`] on [`y=\cos(x)`]. The graph of [`y=-cos(x)`] needs to shift to the right by [`[$c]`] units to match the graph of [`T(d)`], implying [`c=[$c]`] in [`T(d)=a\cos\left(b(d-c)\right)+e`].
+Finally, the function's maximum value is at [`([$c],[$high])`], which matches [`(0,1)`] on [`y=\cos(x)`]. The graph of [`y=-cos(x)`] needs to shift to the right by [`[$c]`] units to match the graph of [`T(d)`], implying [`c=[$c]`] in [`T(d)=a\cos\left(b(d-c)\right)+e`].
 
 The function's formula is
 
