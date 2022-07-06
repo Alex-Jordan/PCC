@@ -67,7 +67,7 @@ $gr[1]->lb( new Label(0,9,'Distance','black','left','middle'));
 $gr[1]->lb( new Label(9,0,'Time','black','left','bottom'));
 
 @problems = (
-   ["A runner completes a 100-meter dash race. The function models the runner's distance from the starting line as time passes.",
+   ["A runner completes a 100-meter dash race. He started from a speed of zero, and then sped up during the whole race. The function models the runner's distance from the starting line as time passes.",
    "increasing",
    "concave up",
    "The distance increases as time passes, so the function is increasing.",
