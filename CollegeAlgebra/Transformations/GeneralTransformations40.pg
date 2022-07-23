@@ -76,11 +76,11 @@ BEGIN_PGML_SOLUTION
 
 a) If [`g(x) = f(x) + [$a1]`], then [`g`] has a modification from [`f`] that is external to [`f`]'s formula, so the transformation is of a vertical nature. Vertical transformations work in an intuitive way, where addition means shifting up and subtraction means shifting down. So The graph of [`g`] is obtained by shifting the graph of [`f`] [@$popupa->correct_ans@] one unit.
 
-a) If [`g(x) = f(x+[$a2])`], then [`g`] has a modification from [`f`] that is internal to [`f`]'s formula, so the transformation is of a horizontal nature. Horizontal transformations work in a counterintuitive way, where addition means shifting left and subtraction means shifting right. So The graph of [`g`] is obtained by shifting the graph of [`f`] [@$popupa->correct_ans@] one unit.
-
-a) If [`g(x) = -f(x)`], then [`g`] has a modification from [`f`] that is external to [`f`]'s formula, so the transformation is of a vertical nature. The negation implies a reflection about one of the main axes, and a vertical reflection would be over the [`x`]-axis.
+a) If [`g(x) = f(x+[$a2])`], then [`g`] has a modification from [`f`] that is internal to [`f`]'s formula, so the transformation is of a horizontal nature. Horizontal transformations work in a counterintuitive way, where addition means shifting left and subtraction means shifting right. So The graph of [`g`] is obtained by shifting the graph of [`f`] [@$popupb->correct_ans@] one unit.
 
 a) If [`g(x) = f(-x)`], then [`g`] has a modification from [`f`] that is internal to [`f`]'s formula, so the transformation is of a horizontal nature. The negation implies a reflection about one of the main axes, and a vertical reflection would be over the [`y`]-axis.
+
+a) If [`g(x) = -f(x)`], then [`g`] has a modification from [`f`] that is external to [`f`]'s formula, so the transformation is of a vertical nature. The negation implies a reflection about one of the main axes, and a vertical reflection would be over the [`x`]-axis.
 
 END_PGML_SOLUTION
 
