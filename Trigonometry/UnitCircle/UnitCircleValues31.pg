@@ -201,7 +201,7 @@ For those points on the Unit Circle, you should come up with values in the table
   [
     [
      [PF('[`A\left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)`]')],
-     [PF('[`B\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)`]')],
+     [PF('[`B\left(-\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)`]')],
      [PF('[`C\left(-\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)`]')],
      [PF('[`D\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)`]')],
     ],
