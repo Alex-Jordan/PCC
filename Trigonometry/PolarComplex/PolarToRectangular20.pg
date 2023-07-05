@@ -24,61 +24,31 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "contextLimitedRadical.pl",
-  "contextFraction.pl",
   "PGML.pl",
   "PCCmacros.pl",
   "specialTrigValues.pl",
-  "PGcourse.pl",,
+  "PGcourse.pl",
 );
 
 ##############################################
 
-Context("Fraction");
-Context()->flags->set(
-  requirePureFractions => 1,
-  showMixedNumbers => 0,
-  reduceConstants => 0,
-  reduceConstantFunctions => 0,
-);
+Context("Complex");
 
 do {
   $den = list_random(3,4,6);
-  $num = random(1,2*$den-1,1);
+  $num = non_zero_random(-(2*$den-1),(2*$den-1));
 } until gcd($den,$num)==1;
-$num = $num*random(-1,1,2);
 $angle = specialAngle($num*pi/$den);
 
 $r = random(2,10,1);
-if ($den==3) {
-  $a = Fraction(cos(Compute($angle)));
-  $ar = Fraction($r*cos(Compute($angle)));
-} else {
-  $a = specialRadical(cos(Compute($angle)));
-  $ar = specialRadical($r*cos(Compute($angle)));
-}
 
-if ($den==6) {
-  $b = Fraction(sin(Compute($angle)));
-  $br = Fraction($r*sin(Compute($angle)));
-  Context()->variables->are(i=>"Real");
-  $br = Formula("$br*i");
-} else {
-  $b = specialRadical(sin(Compute($angle)));
-  $br = specialRadicalComplex($r*sin(Compute($angle)));
-}
-$brn = specialRadicalComplex(-$r*sin(Compute($angle)));
+$ans = Formula(specialRadical("$r*cos($angle)+$r*i sin($angle)"));
 
 Context("LimitedRadical");
 Context()->noreduce('(-x)-y','(-x)+y');
 Context()->variables->are(i=>"Real");
 
-if ($a==0) {
-  $ans = ($b>0) ? Formula("$br") : Formula("-$brn");
-} elsif ($b==0) {
-  $ans = Formula("$ar");
-} else {
-  $ans = ($b>0) ? Formula("$ar+$br") : Formula("$ar-$brn");
-}
+$ans = Formula("$ans");
 
 ##############################################
 
