@@ -180,7 +180,7 @@ $fig1 = image(insertGraph($graph[1]),'width'=>400,'height'=>400,'tex_size'=>700,
 
 BEGIN_PGML
 
-A Ferris wheel is [`[$a]`] meters in diameter and boarded from a platform that is [`[$base]`] meter above the ground. The six o’clock position on the Ferris wheel is level with the loading platform. The wheel completes 1 full revolution in [`[$p]`] minutes. The function [`h(t)`] gives a person’s height in meters above the ground [`t`] minutes after the wheel begins to turn.
+A Ferris wheel is [`[$a]`] meters in radius and boarded from a platform that is [`[$base]`] meter above the ground. The six o’clock position on the Ferris wheel is level with the loading platform. The wheel completes 1 full revolution in [`[$p]`] minutes. The function [`h(t)`] gives a person’s height in meters above the ground [`t`] minutes after the wheel begins to turn.
 
 Answer the following questions about the function [`h(t)`].
 

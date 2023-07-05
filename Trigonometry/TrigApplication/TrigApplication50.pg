@@ -64,7 +64,7 @@ do {
   } until abs(($d-$h[1])/$a)<1;
   $rad[1] = arcsin(($h[1]-$d)/$a);
   $rad[2] = ($rad[1]>0) ? pi-$rad[1] : -pi-$rad[1];
-} until (abs($rad[1]*180/pi)>20) && (abs($rad[1]*180/pi)<75);
+} until (abs($rad[1]*180/pi)>20) && (abs($rad[1]*180/pi)<75) && ($t[0]/($p/2) != int($t[0]/($p/2)) );
 
 $p2 = $p/2;
 $p4 = $p/4;
